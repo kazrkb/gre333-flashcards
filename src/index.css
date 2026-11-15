@@ -99,6 +99,8 @@
   }
   html {
     -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    touch-action: manipulation;
   }
   body {
     background: var(--background);

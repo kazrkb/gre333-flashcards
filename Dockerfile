@@ -5,6 +5,7 @@ COPY package.json package-lock.json ./
 RUN npm ci
 COPY index.html vite.config.ts tsconfig.json ./
 COPY src ./src
+COPY public ./public
 RUN npm run build
 
 # ---- 2) FastAPI serves the API and the built app ----

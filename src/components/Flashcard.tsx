@@ -95,7 +95,7 @@ export function Flashcard({
   );
 
   return (
-    <div className="flip-scene h-[440px] sm:h-[390px]">
+    <div className="flip-scene h-[420px] sm:h-[390px]">
       <div
         role="button"
         tabIndex={0}
@@ -120,12 +120,13 @@ export function Flashcard({
           </div>
           <div className="flex flex-1 flex-col items-center justify-center text-center">
             <span className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">{word.pos}</span>
-            <h2 className="mt-3 break-words text-5xl font-semibold tracking-tight text-card-foreground sm:text-6xl">
+            <h2 className="mt-3 max-w-full break-words text-[2.75rem] font-semibold leading-tight tracking-tight text-card-foreground sm:text-6xl">
               {word.word}
             </h2>
           </div>
           <p className="text-center text-sm text-muted-foreground">
-            Tap the card to see the meaning
+            <span className="pointer-coarse:hidden">Click the card to see the meaning</span>
+            <span className="hidden pointer-coarse:inline">Tap to see the meaning · swipe for next</span>
           </p>
         </div>
 

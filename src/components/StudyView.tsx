@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, PartyPopper, RotateCcw, Shuffle, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Flashcard } from "@/components/Flashcard";
@@ -58,6 +58,7 @@ export function StudyView({
   active: boolean;
 }) {
   const [flipped, setFlipped] = useState(false);
+  const touch = useRef<{ x: number; y: number } | null>(null);
   const { deck, index, filter, shuffle } = session;
   const id = deck[index];
   const word = id ? WORD_BY_ID.get(id) : undefined;
@@ -119,14 +120,14 @@ export function StudyView({
     <div className="flex flex-col gap-4">
       {/* Controls */}
       <div className="flex items-center gap-2">
-        <div className="-mx-1 flex min-w-0 flex-1 gap-1.5 overflow-x-auto px-1 py-0.5 [scrollbar-width:none]">
+        <div className="-mx-1 flex min-w-0 flex-1 gap-1.5 overflow-x-auto px-1 py-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden max-sm:[mask-image:linear-gradient(to_right,black_85%,transparent)] max-sm:pr-6">
           {FILTERS.map((f) => (
             <button
               key={f.key}
               type="button"
               onClick={() => rebuild(f.key, shuffle)}
               className={cn(
-                "inline-flex h-8 shrink-0 items-center gap-1.5 rounded-full border px-3.5 text-[13px] font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                "inline-flex h-9 shrink-0 items-center gap-1.5 rounded-full border px-3.5 text-[13px] sm:h-8 font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                 filter === f.key
                   ? "border-foreground bg-foreground text-background"
                   : "border-border bg-card text-muted-foreground hover:border-border-strong hover:text-foreground",
@@ -172,7 +173,7 @@ export function StudyView({
           </div>
         </div>
       ) : done ? (
-        <div className="animate-card-in flex h-[440px] flex-col items-center justify-center rounded-xl border border-border bg-card-back p-8 text-center sm:h-[390px]">
+        <div className="animate-card-in flex h-[420px] flex-col items-center justify-center rounded-xl border border-border bg-card-back p-8 text-center sm:h-[390px]">
           <div className="grid size-14 place-items-center rounded-full bg-primary text-primary-foreground">
             <PartyPopper className="size-6" />
           </div>
@@ -194,7 +195,23 @@ export function StudyView({
         </div>
       ) : (
         word && (
-          <div key={word.id} className="animate-card-in">
+          <div
+            key={word.id}
+            className="animate-card-in"
+            onTouchStart={(e) => {
+              const t = e.touches[0];
+              touch.current = { x: t.clientX, y: t.clientY };
+            }}
+            onTouchEnd={(e) => {
+              const start = touch.current;
+              touch.current = null;
+              if (!start) return;
+              const t = e.changedTouches[0];
+              const dx = t.clientX - start.x;
+              const dy = t.clientY - start.y;
+              if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) go(dx < 0 ? index + 1 : index - 1);
+            }}
+          >
             <Flashcard
               word={word}
               entry={progress.get(word.id)}
@@ -208,7 +225,8 @@ export function StudyView({
 
       {/* Actions */}
       {!done && word && (
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/85 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur-md sm:static sm:z-auto sm:border-0 sm:bg-transparent sm:p-0 sm:backdrop-blur-none">
+        <div className="mx-auto flex max-w-2xl items-center gap-2 sm:gap-3">
           <Button variant="ghost" size="icon" aria-label="Previous card" onClick={() => go(index - 1)} disabled={index === 0}>
             <ArrowLeft />
           </Button>
@@ -222,9 +240,10 @@ export function StudyView({
             <ArrowRight />
           </Button>
         </div>
+        </div>
       )}
 
-      <p className="hidden text-center font-mono text-[11px] text-muted-foreground/80 md:block">
+      <p className="hidden text-center font-mono text-[11px] text-muted-foreground/80 md:block pointer-coarse:hidden">
         <Kbd>Space</Kbd> flip · <Kbd>←</Kbd> <Kbd>→</Kbd> move · <Kbd>1</Kbd> still learning · <Kbd>2</Kbd> know it ·{" "}
         <Kbd>S</Kbd> star · <Kbd>P</Kbd> pronounce
       </p>

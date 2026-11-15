@@ -1,0 +1,14 @@
+{
+  "name": "GRE 333 Flashcards",
+  "short_name": "GRE 333",
+  "description": "Barron's 333 high-frequency GRE words with Bangla meanings",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EDEDF0",
+  "theme_color": "#EDEDF0",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
