@@ -8,10 +8,37 @@ export type Entry = {
   status: Status;
   starred: boolean;
   reviews: number;
+  level: number; // spaced-repetition box (0 = never reviewed)
+  due: string | null; // next review day, YYYY-MM-DD
+  misses: number; // times answered wrong
+  firstSeen: string | null; // day first studied, YYYY-MM-DD
   updatedAt: string; // ISO
 };
 
-type ServerEntry = { status: Status; starred: boolean; reviews: number; updated_at: string };
+type ServerEntry = {
+  status: Status;
+  starred: boolean;
+  reviews: number;
+  level: number;
+  due: string | null;
+  misses: number;
+  first_seen: string | null;
+  updated_at: string;
+};
+
+type Patch = Partial<Pick<Entry, "status" | "starred" | "level" | "due" | "misses" | "firstSeen">>;
+
+/** Days until the next review for each box. Right answers move a word up a box, wrong answers back to box 1. */
+export const INTERVALS = [0, 1, 3, 7, 16, 35, 90];
+
+export function addDays(day: string, n: number) {
+  const [y, m, d] = day.split("-").map(Number);
+  return localDay(new Date(y, m - 1, d + n));
+}
+
+export function isDue(e: Entry, today = localDay()) {
+  return e.status !== "new" && (!e.due || e.due <= today);
+}
 type Snapshot = { progress: Record<string, ServerEntry>; days: Record<string, number> };
 
 export type SyncState = "connecting" | "synced" | "saving" | "offline";
@@ -22,7 +49,16 @@ const K_PENDING = "gre333.pending.v1"; // word ids changed but not yet saved on 
 const K_DAYS = "gre333.days.v1";
 const K_PENDING_DAYS = "gre333.pendingDays.v1"; // reviews done while offline
 
-const EMPTY: Entry = { status: "new", starred: false, reviews: 0, updatedAt: new Date(0).toISOString() };
+const EMPTY: Entry = {
+  status: "new",
+  starred: false,
+  reviews: 0,
+  level: 0,
+  due: null,
+  misses: 0,
+  firstSeen: null,
+  updatedAt: new Date(0).toISOString(),
+};
 
 export function localDay(d = new Date()) {
   const y = d.getFullYear();
@@ -39,7 +75,16 @@ export function normalizeCode(input: string) {
 function fromServer(map: Record<string, ServerEntry>): Record<string, Entry> {
   const out: Record<string, Entry> = {};
   for (const [id, e] of Object.entries(map)) {
-    out[id] = { status: e.status, starred: e.starred, reviews: e.reviews, updatedAt: e.updated_at };
+    out[id] = {
+      status: e.status,
+      starred: e.starred,
+      reviews: e.reviews,
+      level: e.level ?? 0,
+      due: e.due ?? null,
+      misses: e.misses ?? 0,
+      firstSeen: e.first_seen ?? null,
+      updatedAt: e.updated_at,
+    };
   }
   return out;
 }
@@ -76,7 +121,12 @@ async function api<T>(path: string, code: string | null, init?: RequestInit): Pr
 
 export function useProgress() {
   const [code, setCodeState] = useState<string | null>(() => readJSON<string | null>(K_CODE, null));
-  const [progress, setProgress] = useState<Record<string, Entry>>(() => readJSON(K_PROGRESS, {}));
+  const [progress, setProgress] = useState<Record<string, Entry>>(() => {
+    const stored = readJSON<Record<string, Partial<Entry>>>(K_PROGRESS, {});
+    const out: Record<string, Entry> = {};
+    for (const [id, e] of Object.entries(stored)) out[id] = { ...EMPTY, ...e };
+    return out;
+  });
   const [days, setDays] = useState<Record<string, number>>(() => readJSON(K_DAYS, {}));
   const [sync, setSync] = useState<SyncState>("connecting");
 
@@ -103,10 +153,19 @@ export function useProgress() {
 
   /** Push everything saved only in this browser to `target`, then load the server's copy. */
   const pushAndPull = useCallback(async (target: string) => {
-    const items: Record<string, { status: Status; starred: boolean; updated_at: string }> = {};
+    const items: Record<string, Record<string, unknown>> = {};
     for (const id of pending.current) {
       const e = progressRef.current[id];
-      if (e) items[id] = { status: e.status, starred: e.starred, updated_at: e.updatedAt };
+      if (e)
+        items[id] = {
+          status: e.status,
+          starred: e.starred,
+          level: e.level,
+          due: e.due,
+          misses: e.misses,
+          first_seen: e.firstSeen,
+          updated_at: e.updatedAt,
+        };
     }
     const snap = await api<Snapshot>("/api/progress/sync", target, {
       method: "POST",
@@ -169,7 +228,7 @@ export function useProgress() {
   }, [connect]);
 
   const update = useCallback(
-    (id: string, patch: Partial<Pick<Entry, "status" | "starred">>, reviewed = false) => {
+    (id: string, patch: Patch, reviewed = false) => {
       const prev = progressRef.current[id] ?? EMPTY;
       const next: Entry = {
         ...prev,
@@ -193,7 +252,17 @@ export function useProgress() {
       setSync((s) => (s === "offline" ? s : "saving"));
       api(`/api/progress/${encodeURIComponent(id)}`, c, {
         method: "PUT",
-        body: JSON.stringify({ ...patch, reviewed, updated_at: next.updatedAt, day }),
+        body: JSON.stringify({
+          status: patch.status,
+          starred: patch.starred,
+          level: patch.level,
+          due: patch.due,
+          misses: patch.misses,
+          first_seen: patch.firstSeen,
+          reviewed,
+          updated_at: next.updatedAt,
+          day,
+        }),
       })
         .then(() => {
           if (progressRef.current[id]?.updatedAt === next.updatedAt || !progressRef.current[id]) {
@@ -211,7 +280,23 @@ export function useProgress() {
     [],
   );
 
-  const setStatus = useCallback((id: string, status: Status) => update(id, { status }, true), [update]);
+  /** Record an answer: right moves the word up a box (reviewed later), wrong sends it back to box 1 (tomorrow). */
+  const grade = useCallback(
+    (id: string, correct: boolean) => {
+      const prev = progressRef.current[id] ?? EMPTY;
+      const today = localDay();
+      const level = correct ? (prev.level === 0 ? 2 : Math.min(prev.level + 1, INTERVALS.length - 1)) : 1;
+      const patch: Patch = {
+        status: correct ? "known" : "learning",
+        level,
+        due: addDays(today, INTERVALS[level]),
+        misses: prev.misses + (correct ? 0 : 1),
+      };
+      if (!prev.firstSeen && prev.status === "new") patch.firstSeen = today;
+      update(id, patch, true);
+    },
+    [update],
+  );
   const toggleStar = useCallback(
     (id: string) => update(id, { starred: !(progressRef.current[id]?.starred ?? false) }),
     [update],
@@ -269,17 +354,25 @@ export function useProgress() {
     let known = 0;
     let learning = 0;
     let starred = 0;
+    let due = 0;
+    let weak = 0;
+    let newToday = 0;
+    const today = localDay();
     for (const w of WORDS) {
       const e = progress[w.id];
-      if (e?.status === "known") known++;
-      else if (e?.status === "learning") learning++;
-      if (e?.starred) starred++;
+      if (!e) continue;
+      if (e.status === "known") known++;
+      else if (e.status === "learning") learning++;
+      if (e.starred) starred++;
+      if (isDue(e, today)) due++;
+      if (e.misses > 0) weak++;
+      if (e.firstSeen === today) newToday++;
     }
-    return { known, learning, new: WORDS.length - known - learning, starred, total: WORDS.length };
+    return { known, learning, new: WORDS.length - known - learning, starred, due, weak, newToday, total: WORDS.length };
   }, [progress]);
 
   const today = days[localDay()] ?? 0;
   const streak = useMemo(() => computeStreak(days), [days]);
 
-  return { code, get, setStatus, toggleStar, reset, switchCode, counts, sync, today, streak, retry: connect };
+  return { code, get, grade, toggleStar, reset, switchCode, counts, sync, today, streak, retry: connect };
 }

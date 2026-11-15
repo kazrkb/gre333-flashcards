@@ -1,17 +1,20 @@
 import { useEffect, useState } from "react";
-import { BookOpen, ClipboardCheck, Flame, Layers, List, Moon, RotateCcw, Sun } from "lucide-react";
+import { BookOpen, ClipboardCheck, Flame, List, Moon, RotateCcw, Shapes, Sun, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { StudyView, loadSession, type Session } from "@/components/StudyView";
 import { WordList } from "@/components/WordList";
 import { QuizView } from "@/components/QuizView";
+import { GroupsView } from "@/components/GroupsView";
 import { useProgress } from "@/lib/progress";
 import { SyncDialog } from "@/components/SyncDialog";
 import { readJSON, writeJSON } from "@/lib/storage";
 import { WORDS } from "@/lib/words";
 import { cn } from "@/lib/utils";
 
-type Tab = "study" | "quiz" | "list";
+type Tab = "study" | "quiz" | "groups" | "list";
+
+const GOALS = [5, 10, 15, 20, 25, 30];
 
 function useTheme() {
   const [dark, setDark] = useState<boolean>(() =>
@@ -29,9 +32,26 @@ export default function App() {
   const [dark, setDark] = useTheme();
   const [tab, setTab] = useState<Tab>(() => readJSON<Tab>("gre333.tab", "study"));
   const [session, setSession] = useState<Session>(loadSession);
+  const [goal, setGoalState] = useState<number>(() => readJSON<number>("gre333.goal", 15));
+  const [quizRequest, setQuizRequest] = useState<{ ids: string[]; key: number } | null>(null);
   const { counts } = progress;
 
   useEffect(() => writeJSON("gre333.tab", tab), [tab]);
+  const setGoal = (g: number) => {
+    setGoalState(g);
+    writeJSON("gre333.goal", g);
+  };
+
+  const studyDeck = (title: string, ids: string[]) => {
+    setSession({ filter: "custom", title, shuffle: false, deck: ids, index: 0 });
+    setTab("study");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const quizWords = (ids: string[]) => {
+    setQuizRequest({ ids, key: Date.now() });
+    setTab("quiz");
+  };
 
   const openWord = (id: string) => {
     const deck = WORDS.map((w) => w.id);
@@ -97,14 +117,14 @@ export default function App() {
       <section className="mt-4 rounded-xl border border-border bg-card p-4 sm:mt-5 sm:p-5">
         <div className="flex items-end justify-between gap-3 sm:gap-4">
           <div className="min-w-0">
-            <p className="whitespace-nowrap font-mono text-[10px] uppercase tracking-[0.14em] text-muted-foreground sm:text-[11px] sm:tracking-[0.18em]">Words you know</p>
+            <p className="whitespace-nowrap font-mono text-[10px] uppercase tracking-[0.14em] text-muted-foreground sm:text-[11px] sm:tracking-[0.18em]"><span className="sm:hidden">Known</span><span className="hidden sm:inline">Words you know</span></p>
             <p className="mt-1 text-3xl font-semibold tracking-tight tabular-nums sm:text-4xl">
               {counts.known}
               <span className="text-lg font-medium text-muted-foreground sm:text-xl"> / {counts.total}</span>
             </p>
           </div>
           <div className="flex shrink-0 gap-2">
-            <StatTile icon={<Layers className="size-3.5" />} label="Today" value={progress.today} />
+            <GoalTile done={counts.newToday} goal={goal} remaining={counts.new} onChange={setGoal} />
             <StatTile
               icon={<Flame className={cn("size-3.5", progress.streak > 0 && "text-primary")} />}
               label="Streak"
@@ -126,12 +146,13 @@ export default function App() {
       </section>
 
       {/* Tabs */}
-      <nav className="mt-4 grid sm:mt-5 grid-cols-3 rounded-full border border-border bg-card p-1" role="tablist">
+      <nav className="mt-4 grid sm:mt-5 grid-cols-4 rounded-full border border-border bg-card p-1" role="tablist">
         {(
           [
-            ["study", "Flashcards", <BookOpen key="i" className="size-4 max-[400px]:hidden" />],
-            ["quiz", "Quiz", <ClipboardCheck key="i" className="size-4 max-[400px]:hidden" />],
-            ["list", "Word list", <List key="i" className="size-4 max-[400px]:hidden" />],
+            ["study", "Cards", <BookOpen key="i" className="size-4 max-sm:hidden" />],
+            ["quiz", "Quiz", <ClipboardCheck key="i" className="size-4 max-sm:hidden" />],
+            ["groups", "Groups", <Shapes key="i" className="size-4 max-sm:hidden" />],
+            ["list", "Words", <List key="i" className="size-4 max-sm:hidden" />],
           ] as const
         ).map(([key, label, icon]) => (
           <button
@@ -155,8 +176,11 @@ export default function App() {
           <StudyView progress={progress} session={session} setSession={setSession} active={tab === "study"} />
         </div>
         <div hidden={tab !== "quiz"}>
-          <QuizView progress={progress} active={tab === "quiz"} />
+          <QuizView progress={progress} active={tab === "quiz"} request={quizRequest} />
         </div>
+        {tab === "groups" && (
+          <GroupsView progress={progress} onStudy={studyDeck} onQuiz={quizWords} onOpenWord={openWord} />
+        )}
         {tab === "list" && <WordList progress={progress} onOpen={openWord} />}
       </main>
     </div>
@@ -165,6 +189,99 @@ export default function App() {
 
 function loadSessionFresh(): Session {
   return { filter: "all", shuffle: false, deck: WORDS.map((w) => w.id), index: 0 };
+}
+
+function GoalTile({
+  done,
+  goal,
+  remaining,
+  onChange,
+}: {
+  done: number;
+  goal: number;
+  remaining: number;
+  onChange: (g: number) => void;
+}) {
+  const r = 15;
+  const c = 2 * Math.PI * r;
+  const frac = Math.min(done / goal, 1);
+  const met = done >= goal;
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <button
+          type="button"
+          title="Daily goal: new words learned today"
+          className="flex items-center gap-2 rounded-lg bg-muted/70 py-1.5 pl-1.5 pr-2.5 text-left transition hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:py-2 sm:pl-2 sm:pr-3"
+        >
+          <svg viewBox="0 0 36 36" className="size-8 shrink-0 -rotate-90 sm:size-9" aria-hidden>
+            <circle cx="18" cy="18" r={r} fill="none" strokeWidth="4" className="stroke-mist dark:stroke-border-strong" />
+            <circle
+              cx="18"
+              cy="18"
+              r={r}
+              fill="none"
+              strokeWidth="4"
+              strokeLinecap="round"
+              strokeDasharray={c}
+              strokeDashoffset={c * (1 - frac)}
+              className="stroke-primary transition-[stroke-dashoffset] duration-700"
+            />
+          </svg>
+          <span>
+            <span className="flex items-center gap-1 text-[11px] text-muted-foreground">
+              <Target className="size-3" /> {met ? "Goal met!" : "New today"}
+            </span>
+            <span className="block text-lg font-semibold leading-tight tabular-nums">
+              {done}
+              <span className="text-xs font-medium text-muted-foreground">/{goal}</span>
+            </span>
+          </span>
+        </button>
+      </DialogTrigger>
+      <DialogContent>
+        <DialogTitle>Daily goal</DialogTitle>
+        <DialogDescription>How many new words do you want to learn each day?</DialogDescription>
+        <div className="mt-5 grid grid-cols-3 gap-2">
+          {GOALS.map((g) => (
+            <button
+              key={g}
+              type="button"
+              onClick={() => onChange(g)}
+              aria-pressed={goal === g}
+              className={cn(
+                "rounded-lg border px-3 py-3 text-center transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                goal === g ? "border-foreground bg-foreground text-background" : "border-border bg-card hover:border-border-strong",
+              )}
+            >
+              <span className="block text-lg font-semibold tabular-nums">{g}</span>
+              <span className={cn("block text-[11px]", goal === g ? "text-background/70" : "text-muted-foreground")}>
+                words / day
+              </span>
+            </button>
+          ))}
+        </div>
+        <p className="mt-4 rounded-lg bg-card-back px-3 py-2.5 text-sm">
+          {remaining === 0 ? (
+            "You've studied every word! Keep up your daily reviews."
+          ) : (
+            <>
+              At <b>{goal}</b> a day you'll finish the remaining <b>{remaining}</b> words in about{" "}
+              <b>{Math.ceil(remaining / goal)} days</b>.
+            </>
+          )}
+        </p>
+        <p className="mt-2 text-[13px] text-muted-foreground">
+          Today you've learned {done} new {done === 1 ? "word" : "words"}. Reviews of older words don't count toward this goal.
+        </p>
+        <div className="mt-5 flex justify-end">
+          <DialogClose asChild>
+            <Button>Done</Button>
+          </DialogClose>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
 }
 
 function StatTile({ icon, label, value }: { icon: React.ReactNode; label: string; value: number }) {

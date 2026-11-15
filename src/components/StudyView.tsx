@@ -1,35 +1,42 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, Check, PartyPopper, RotateCcw, Shuffle, Star } from "lucide-react";
+import { ArrowLeft, ArrowRight, CalendarCheck, Check, PartyPopper, RotateCcw, Shuffle, Star, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Flashcard } from "@/components/Flashcard";
 import { cn } from "@/lib/utils";
 import { readJSON, writeJSON } from "@/lib/storage";
 import { speak, WORD_BY_ID, WORDS } from "@/lib/words";
-import type { useProgress } from "@/lib/progress";
+import { isDue, localDay, type useProgress } from "@/lib/progress";
 
-export type Filter = "all" | "new" | "learning" | "known" | "starred";
+export type Filter = "all" | "due" | "new" | "learning" | "known" | "weak" | "starred" | "custom";
 
-export type Session = { filter: Filter; shuffle: boolean; deck: string[]; index: number };
+/** `title` is set when studying a custom deck (e.g. a word group). */
+export type Session = { filter: Filter; shuffle: boolean; deck: string[]; index: number; title?: string };
 
 const K_SESSION = "gre333.session.v1";
 
 const FILTERS: { key: Filter; label: string }[] = [
   { key: "all", label: "All" },
+  { key: "due", label: "Review" },
   { key: "new", label: "New" },
   { key: "learning", label: "Learning" },
   { key: "known", label: "Known" },
+  { key: "weak", label: "Weak" },
   { key: "starred", label: "Starred" },
 ];
 
 type Progress = ReturnType<typeof useProgress>;
 
 function buildDeck(filter: Filter, shuffle: boolean, p: Progress): string[] {
+  const today = localDay();
   let ids = WORDS.filter((w) => {
     const e = p.get(w.id);
     if (filter === "all") return true;
     if (filter === "starred") return e.starred;
+    if (filter === "due") return isDue(e, today);
+    if (filter === "weak") return e.misses > 0;
     return e.status === filter;
   }).map((w) => w.id);
+  if (filter === "weak") ids.sort((a, b) => p.get(b).misses - p.get(a).misses);
   if (shuffle) {
     ids = [...ids];
     for (let i = ids.length - 1; i > 0; i--) {
@@ -76,12 +83,15 @@ export function StudyView({
     setSession({ filter: f, shuffle: sh, deck: buildDeck(f, sh, progress), index: 0 });
 
   const mark = useCallback(
-    (status: "known" | "learning") => {
+    (correct: boolean) => {
       if (!id) return;
-      progress.setStatus(id, status);
-      go(index + 1);
+      progress.grade(id, correct);
+      // In a review session, a missed card comes back once at the end.
+      if (!correct && filter === "due" && deck.indexOf(id, index + 1) === -1) {
+        setSession({ ...session, deck: [...deck, id], index: index + 1 });
+      } else go(index + 1);
     },
-    [id, progress, go, index],
+    [id, progress, go, index, filter, deck, session, setSession],
   );
 
   // Keyboard shortcuts
@@ -96,8 +106,8 @@ export function StudyView({
         setFlipped((f) => !f);
       } else if (e.key === "ArrowRight") go(index + 1);
       else if (e.key === "ArrowLeft") go(index - 1);
-      else if (e.key === "1") mark("learning");
-      else if (e.key === "2") mark("known");
+      else if (e.key === "1") mark(false);
+      else if (e.key === "2") mark(true);
       else if (e.key.toLowerCase() === "s") progress.toggleStar(id);
       else if (e.key.toLowerCase() === "p" && word) speak(word.word);
     };
@@ -113,6 +123,8 @@ export function StudyView({
     if (filter === "learning") return "No words in “Learning” yet. Cards you mark “Still learning” show up here.";
     if (filter === "known") return "No known words yet. Mark cards with “I know it” and they’ll collect here.";
     if (filter === "new") return "You’ve seen every word. Nice work!";
+    if (filter === "due") return "Nothing to review today. Come back tomorrow, or learn some new words!";
+    if (filter === "weak") return "No weak words yet. Words you get wrong will collect here so you can practice them.";
     return "No words to show.";
   }, [filter]);
 
@@ -120,8 +132,10 @@ export function StudyView({
     <div className="flex flex-col gap-4">
       {/* Controls */}
       <div className="flex items-center gap-2">
-        <div className="-mx-1 flex min-w-0 flex-1 gap-1.5 overflow-x-auto px-1 py-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden max-sm:[mask-image:linear-gradient(to_right,black_85%,transparent)] max-sm:pr-6">
-          {FILTERS.map((f) => (
+        <div className="-mx-1 flex min-w-0 flex-1 gap-1.5 overflow-x-auto px-1 py-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [mask-image:linear-gradient(to_right,black_88%,transparent)] pr-6">
+          {FILTERS.map((f) => {
+            const n = f.key === "due" ? progress.counts.due : f.key === "weak" ? progress.counts.weak : 0;
+            return (
             <button
               key={f.key}
               type="button"
@@ -135,8 +149,19 @@ export function StudyView({
             >
               {f.key === "starred" && <Star className="size-3.5" />}
               {f.label}
+              {n > 0 && (
+                <span
+                  className={cn(
+                    "rounded-full px-1.5 font-mono text-[10px] tabular-nums",
+                    filter === f.key ? "bg-background/20" : f.key === "due" ? "bg-primary text-primary-foreground" : "bg-muted",
+                  )}
+                >
+                  {n}
+                </span>
+              )}
             </button>
-          ))}
+            );
+          })}
         </div>
         <Button
           variant={shuffle ? "dark" : "outline"}
@@ -149,6 +174,39 @@ export function StudyView({
           <span className="hidden sm:inline">Shuffle</span>
         </Button>
       </div>
+
+      {/* Custom deck title (e.g. a word group) */}
+      {filter === "custom" && session.title && (
+        <div className="flex items-center justify-between gap-3 rounded-lg border border-border bg-card px-4 py-2.5">
+          <p className="min-w-0 truncate text-sm">
+            <span className="text-muted-foreground">Studying: </span>
+            <span className="font-medium">{session.title}</span>
+          </p>
+          <Button variant="ghost" size="sm" onClick={() => rebuild("all", shuffle)}>
+            <X /> Close
+          </Button>
+        </div>
+      )}
+
+      {/* Review reminder */}
+      {filter !== "due" && progress.counts.due > 0 && (
+        <button
+          type="button"
+          onClick={() => rebuild("due", true)}
+          className="flex items-center gap-3 rounded-xl border border-primary/40 bg-accent-soft/60 px-4 py-3 text-left transition hover:bg-accent-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <span className="grid size-9 shrink-0 place-items-center rounded-full bg-primary text-primary-foreground">
+            <CalendarCheck className="size-[18px]" />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-[15px] font-medium">
+              {progress.counts.due} {progress.counts.due === 1 ? "word" : "words"} to review today
+            </span>
+            <span className="block text-[13px] text-muted-foreground">Reviewing at the right time helps you remember for good.</span>
+          </span>
+          <span className="shrink-0 text-sm font-medium text-primary">Review →</span>
+        </button>
+      )}
 
       {/* Deck progress */}
       {deck.length > 0 && (
@@ -173,11 +231,13 @@ export function StudyView({
           </div>
         </div>
       ) : done ? (
-        <div className="animate-card-in flex h-[420px] flex-col items-center justify-center rounded-xl border border-border bg-card-back p-8 text-center sm:h-[390px]">
+        <div className="animate-card-in flex h-[470px] flex-col items-center justify-center rounded-xl border border-border bg-card-back p-8 text-center sm:h-[440px]">
           <div className="grid size-14 place-items-center rounded-full bg-primary text-primary-foreground">
             <PartyPopper className="size-6" />
           </div>
-          <h2 className="mt-5 text-2xl font-semibold tracking-tight">Round complete!</h2>
+          <h2 className="mt-5 text-2xl font-semibold tracking-tight">
+            {filter === "due" ? "Today's review is done!" : "Round complete!"}
+          </h2>
           <p className="mt-2 max-w-xs text-[15px] text-muted-foreground">
             You went through {deck.length} {deck.length === 1 ? "card" : "cards"}. You know{" "}
             <span className="font-medium text-foreground">{progress.counts.known}</span> of {progress.counts.total} words so far.
@@ -230,10 +290,10 @@ export function StudyView({
           <Button variant="ghost" size="icon" aria-label="Previous card" onClick={() => go(index - 1)} disabled={index === 0}>
             <ArrowLeft />
           </Button>
-          <Button variant="outline" size="lg" className="flex-1" onClick={() => mark("learning")}>
+          <Button variant="outline" size="lg" className="flex-1" onClick={() => mark(false)}>
             <RotateCcw /> Still learning
           </Button>
-          <Button size="lg" className="flex-1" onClick={() => mark("known")}>
+          <Button size="lg" className="flex-1" onClick={() => mark(true)}>
             <Check /> I know it
           </Button>
           <Button variant="ghost" size="icon" aria-label="Next card" onClick={() => go(index + 1)}>

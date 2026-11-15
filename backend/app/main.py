@@ -20,7 +20,7 @@ from fastapi import Depends, FastAPI, Header, HTTPException, Request
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
-from sqlalchemy import Boolean, Date, DateTime, Integer, String, create_engine, delete, select
+from sqlalchemy import Boolean, Date, DateTime, Integer, String, create_engine, delete, inspect, select, text
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -91,6 +91,10 @@ class Progress(Base):
     status: Mapped[str] = mapped_column(String(16), default="new")
     starred: Mapped[bool] = mapped_column(Boolean, default=False)
     reviews: Mapped[int] = mapped_column(Integer, default=0)
+    level: Mapped[int] = mapped_column(Integer, default=0)  # spaced-repetition box, 0 = never reviewed
+    due: Mapped[date | None] = mapped_column(Date, nullable=True)  # next review date
+    misses: Mapped[int] = mapped_column(Integer, default=0)  # times answered wrong
+    first_seen: Mapped[date | None] = mapped_column(Date, nullable=True)  # day first studied (daily goal)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 
@@ -105,6 +109,24 @@ class ReviewDay(Base):
 
 
 Base.metadata.create_all(engine)
+
+
+def migrate():
+    """Add columns introduced after the first release to existing tables (Postgres or SQLite)."""
+    cols = {c["name"] for c in inspect(engine).get_columns("word_progress")}
+    added = {
+        "level": "INTEGER NOT NULL DEFAULT 0",
+        "due": "DATE",
+        "misses": "INTEGER NOT NULL DEFAULT 0",
+        "first_seen": "DATE",
+    }
+    with engine.begin() as conn:
+        for name, ddl in added.items():
+            if name not in cols:
+                conn.execute(text(f"ALTER TABLE word_progress ADD COLUMN {name} {ddl}"))
+
+
+migrate()
 
 
 # ---------- simple in-memory rate limit (per IP) for code creation / lookup ----------
@@ -127,6 +149,10 @@ def rate_limit(request: Request, limit: int = 20, window: float = 60.0):
 class ProgressIn(BaseModel):
     status: Status | None = None
     starred: bool | None = None
+    level: int | None = Field(default=None, ge=0, le=10)
+    due: date | None = None
+    misses: int | None = Field(default=None, ge=0, le=100000)
+    first_seen: date | None = None
     reviewed: bool = False  # true when the learner just answered this card
     updated_at: datetime | None = None
     day: date | None = None  # learner's local date, for the streak
@@ -136,6 +162,10 @@ class ProgressOut(BaseModel):
     status: Status
     starred: bool
     reviews: int
+    level: int
+    due: date | None
+    misses: int
+    first_seen: date | None
     updated_at: datetime
 
 
@@ -170,7 +200,16 @@ def learner_code(x_sync_code: str = Header(default="")) -> str:
 
 
 def to_out(p: Progress) -> ProgressOut:
-    return ProgressOut(status=p.status, starred=p.starred, reviews=p.reviews, updated_at=as_aware(p.updated_at))
+    return ProgressOut(
+        status=p.status,
+        starred=p.starred,
+        reviews=p.reviews or 0,
+        level=p.level or 0,
+        due=p.due,
+        misses=p.misses or 0,
+        first_seen=p.first_seen,
+        updated_at=as_aware(p.updated_at),
+    )
 
 
 def snapshot(db: Session, code: str) -> SyncOut:
@@ -195,7 +234,9 @@ def apply(db: Session, code: str, word_id: str, body: ProgressIn, *, only_if_new
     if stamp > utcnow() + timedelta(minutes=5):  # don't trust clocks far in the future
         stamp = utcnow()
     if row is None:
-        row = Progress(learner=code, word_id=word_id, status="new", starred=False, reviews=0, updated_at=stamp)
+        row = Progress(
+            learner=code, word_id=word_id, status="new", starred=False, reviews=0, level=0, misses=0, updated_at=stamp
+        )
         db.add(row)
     elif only_if_newer and as_aware(row.updated_at) >= stamp:
         return row
@@ -203,6 +244,14 @@ def apply(db: Session, code: str, word_id: str, body: ProgressIn, *, only_if_new
         row.status = body.status
     if body.starred is not None:
         row.starred = body.starred
+    if body.level is not None:
+        row.level = body.level
+    if body.due is not None:
+        row.due = body.due
+    if body.misses is not None:
+        row.misses = body.misses
+    if body.first_seen is not None and row.first_seen is None:
+        row.first_seen = body.first_seen
     if body.reviewed:
         row.reviews = (row.reviews or 0) + 1
         add_reviews(db, code, body.day or date.today(), 1)

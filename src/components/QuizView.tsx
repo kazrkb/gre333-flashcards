@@ -1,34 +1,47 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowRight, Check, ClipboardCheck, RotateCcw, Trophy, Volume2, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { readJSON, writeJSON } from "@/lib/storage";
 import { speak, WORD_BY_ID, WORDS, type Word } from "@/lib/words";
-import type { useProgress } from "@/lib/progress";
+import { GROUPS } from "@/data/groups";
+import { isDue, localDay, type useProgress } from "@/lib/progress";
 
 type Progress = ReturnType<typeof useProgress>;
 
-type Pool = "recent" | "learning" | "known" | "starred" | "all";
-type Kind = "meaning" | "word" | "blank";
+type Pool = "recent" | "due" | "learning" | "weak" | "known" | "starred" | "all";
+type Kind = "meaning" | "word" | "bangla" | "blank" | "type" | "se";
 type Mode = Kind | "mixed";
 
-type Question = { id: string; kind: Kind; options: string[] };
-type Answer = { id: string; chosen: string; correct: boolean };
+type Question = {
+  id: string; // main word
+  kind: Kind;
+  options: string[]; // word ids (multiple choice / GRE)
+  answers?: string[]; // GRE "pick 2": the two right words
+  sentence?: string; // GRE "pick 2" sentence
+};
+type Answer = { correct: boolean; chosen: string[]; typed?: string; close?: boolean };
 
-type Quiz = { questions: Question[]; answers: Answer[]; index: number };
+export type QuizState = { questions: Question[]; answers: Answer[]; index: number };
 type LastResult = { score: number; total: number; at: string };
 
-const K_SETTINGS = "gre333.quiz.settings.v1";
+const K_SETTINGS = "gre333.quiz.settings.v2";
 const K_LAST = "gre333.quiz.last.v1";
 
 const COUNTS = [10, 20, 30, 50];
 
-const MODES: { key: Mode; label: string }[] = [
-  { key: "mixed", label: "Mixed" },
-  { key: "meaning", label: "Word → meaning" },
-  { key: "word", label: "Meaning → word" },
-  { key: "blank", label: "Fill in the blank" },
+const MODES: { key: Mode; label: string; hint: string }[] = [
+  { key: "mixed", label: "Mixed", hint: "A bit of everything" },
+  { key: "meaning", label: "Word → meaning", hint: "Pick the right meaning" },
+  { key: "word", label: "Meaning → word", hint: "Pick the right word" },
+  { key: "bangla", label: "বাংলা → English", hint: "See the Bangla, pick the word" },
+  { key: "blank", label: "Fill in the blank", hint: "Complete the sentence" },
+  { key: "type", label: "Type the word", hint: "Hardest: spell it yourself" },
+  { key: "se", label: "GRE: pick 2", hint: "Two words that both fit" },
 ];
+
+const MIXED: Kind[] = ["meaning", "word", "bangla", "blank", "type"];
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -44,9 +57,7 @@ function stemRegex(word: string) {
   return new RegExp(`\\b${stem}\\w*`, "i");
 }
 
-function blankSentence(w: Word) {
-  return w.example.replace(stemRegex(w.word), "_____");
-}
+const blankSentence = (w: Word) => w.example.replace(stemRegex(w.word), "_____");
 
 function pickDistractors(target: Word, n: number): string[] {
   const valid = (w: Word) =>
@@ -56,16 +67,62 @@ function pickDistractors(target: Word, n: number): string[] {
   return [...samePos, ...others].slice(0, n).map((w) => w.id);
 }
 
+function editDistance(a: string, b: string) {
+  const dp = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
+  for (let j = 1; j <= b.length; j++) dp[0][j] = j;
+  for (let i = 1; i <= a.length; i++)
+    for (let j = 1; j <= b.length; j++)
+      dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return dp[a.length][b.length];
+}
+
 function makeQuestions(ids: string[], mode: Mode): Question[] {
   return ids.map((id, i) => {
     const w = WORD_BY_ID.get(id)!;
-    let kind: Kind = mode === "mixed" ? (["meaning", "word", "blank"] as const)[i % 3] : mode;
+    let kind: Kind = mode === "mixed" ? MIXED[i % MIXED.length] : mode;
     if (kind === "blank" && !stemRegex(w.word).test(w.example)) kind = "meaning";
-    return { id, kind, options: shuffle([id, ...pickDistractors(w, 3)]) };
+    return { id, kind, options: kind === "type" ? [] : shuffle([id, ...pickDistractors(w, 3)]) };
   });
 }
 
-export function QuizView({ progress, active }: { progress: Progress; active: boolean }) {
+/** GRE Sentence Equivalence: a sentence, six choices, exactly two right answers. */
+function makeGreQuestions(count: number, prefer: Set<string>): Question[] {
+  const items = GROUPS.flatMap((g) => g.sentences.map((s) => ({ g, s })));
+  // Sentences that use words from the chosen group of words come first.
+  const scored = shuffle(items).sort(
+    (a, b) =>
+      b.s.answers.filter((x) => prefer.has(x)).length - a.s.answers.filter((x) => prefer.has(x)).length,
+  );
+  return scored.slice(0, count).map(({ g, s }) => {
+    const preferred = shuffle(s.answers.filter((x) => prefer.has(x)));
+    const rest = shuffle(s.answers.filter((x) => !prefer.has(x)));
+    const answers = [...preferred, ...rest].slice(0, 2);
+    const pos = WORD_BY_ID.get(answers[0])!.pos;
+    const inOtherGroups = new Set(GROUPS.filter((o) => o.id !== g.id).flatMap((o) => o.words));
+    const blocked = new Set([...g.words, ...s.answers]);
+    const candidates = WORDS.filter((w) => w.pos === pos && !blocked.has(w.id));
+    const distractors = [
+      ...shuffle(candidates.filter((w) => inOtherGroups.has(w.id))),
+      ...shuffle(candidates.filter((w) => !inOtherGroups.has(w.id))),
+    ]
+      .slice(0, 4)
+      .map((w) => w.id);
+    return { id: answers[0], kind: "se", answers, sentence: s.text, options: shuffle([...answers, ...distractors]) };
+  });
+}
+
+const GRE_TOTAL = GROUPS.reduce((n, g) => n + g.sentences.length, 0);
+
+export function QuizView({
+  progress,
+  active,
+  request,
+}: {
+  progress: Progress;
+  active: boolean;
+  /** Start a quiz on these words right away (e.g. from the Groups tab). */
+  request?: { ids: string[]; key: number } | null;
+}) {
   const saved = readJSON<{ pool: Pool; count: number; mode: Mode }>(K_SETTINGS, {
     pool: "recent",
     count: 10,
@@ -74,19 +131,23 @@ export function QuizView({ progress, active }: { progress: Progress; active: boo
   const [pool, setPool] = useState<Pool>(saved.pool);
   const [count, setCount] = useState<number>(saved.count);
   const [mode, setMode] = useState<Mode>(saved.mode);
-  const [quiz, setQuiz] = useState<Quiz | null>(null);
+  const [quiz, setQuiz] = useState<QuizState | null>(null);
   const [last, setLast] = useState<LastResult | null>(() => readJSON<LastResult | null>(K_LAST, null));
 
   useEffect(() => writeJSON(K_SETTINGS, { pool, count, mode }), [pool, count, mode]);
 
-  // Words available for each pool. "Recent" = words you've studied, newest first.
   const pools = useMemo(() => {
+    const today = localDay();
     const studied = WORDS.filter((w) => progress.get(w.id).status !== "new").sort(
       (a, b) => Date.parse(progress.get(b.id).updatedAt) - Date.parse(progress.get(a.id).updatedAt),
     );
     return {
       recent: studied.map((w) => w.id),
+      due: WORDS.filter((w) => isDue(progress.get(w.id), today)).map((w) => w.id),
       learning: WORDS.filter((w) => progress.get(w.id).status === "learning").map((w) => w.id),
+      weak: WORDS.filter((w) => progress.get(w.id).misses > 0)
+        .sort((a, b) => progress.get(b.id).misses - progress.get(a.id).misses)
+        .map((w) => w.id),
       known: WORDS.filter((w) => progress.get(w.id).status === "known").map((w) => w.id),
       starred: WORDS.filter((w) => progress.get(w.id).starred).map((w) => w.id),
       all: WORDS.map((w) => w.id),
@@ -94,7 +155,9 @@ export function QuizView({ progress, active }: { progress: Progress; active: boo
   }, [progress]);
 
   const POOLS: { key: Pool; label: string; hint: string }[] = [
-    { key: "recent", label: "Recently studied", hint: `The last ${count} words you marked` },
+    { key: "recent", label: "Recently studied", hint: `The last ${count} words you studied` },
+    { key: "due", label: "Due for review", hint: "Words scheduled for today" },
+    { key: "weak", label: "Weak words", hint: "The words you miss most" },
     { key: "learning", label: "Learning", hint: "Words you're still learning" },
     { key: "known", label: "Known", hint: "Check you really remember them" },
     { key: "starred", label: "Starred", hint: "Your saved words" },
@@ -102,17 +165,37 @@ export function QuizView({ progress, active }: { progress: Progress; active: boo
   ];
 
   const available = pools[pool];
-  const total = Math.min(count, available.length);
+  const total = mode === "se" ? Math.min(count, GRE_TOTAL) : Math.min(count, available.length);
 
-  const start = (ids?: string[]) => {
-    let chosen: string[];
-    if (ids) chosen = shuffle(ids);
-    else if (pool === "recent") chosen = shuffle(available.slice(0, count));
-    else chosen = shuffle(available).slice(0, count);
-    if (!chosen.length) return;
-    setQuiz({ questions: makeQuestions(chosen, mode), answers: [], index: 0 });
+  const begin = (questions: Question[]) => {
+    if (!questions.length) return;
+    setQuiz({ questions, answers: [], index: 0 });
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const start = () => {
+    if (mode === "se") return begin(makeGreQuestions(count, new Set(available)));
+    const chosen =
+      pool === "recent" || pool === "weak" ? shuffle(available.slice(0, count)) : shuffle(available).slice(0, count);
+    begin(makeQuestions(chosen, mode));
+  };
+
+  const retry = (q: QuizState) => {
+    const missed = q.questions.filter((_, i) => !q.answers[i]?.correct);
+    begin(
+      shuffle(missed).map((m) =>
+        m.kind === "se" ? { ...m, options: shuffle(m.options) } : m.kind === "type" ? m : { ...m, options: shuffle(m.options) },
+      ),
+    );
+  };
+
+  // Quiz requested from another tab (e.g. "Quiz this group").
+  const lastRequest = useRef<number | null>(null);
+  useEffect(() => {
+    if (!request || request.key === lastRequest.current) return;
+    lastRequest.current = request.key;
+    begin(makeQuestions(shuffle(request.ids), "mixed"));
+  }, [request]);
 
   if (!quiz) {
     return (
@@ -125,8 +208,8 @@ export function QuizView({ progress, active }: { progress: Progress; active: boo
             <div>
               <h2 className="text-lg font-semibold tracking-tight">Test yourself</h2>
               <p className="mt-0.5 text-sm text-muted-foreground">
-                Pick the right answer from 4 choices. Right answers move a word to <b className="font-medium text-foreground">Known</b>;
-                wrong answers move it to <b className="font-medium text-foreground">Learning</b> so you practice it again.
+                Right answers move a word to <b className="font-medium text-foreground">Known</b> and schedule it for a later
+                review. Wrong answers move it to <b className="font-medium text-foreground">Learning</b> so it comes back tomorrow.
               </p>
             </div>
           </div>
@@ -138,7 +221,30 @@ export function QuizView({ progress, active }: { progress: Progress; active: boo
           )}
         </section>
 
-        <Section title="Which words?">
+        <Section title="Question type">
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+            {MODES.map((m) => (
+              <button
+                key={m.key}
+                type="button"
+                onClick={() => setMode(m.key)}
+                aria-pressed={mode === m.key}
+                className={cn(
+                  "rounded-lg border px-3 py-2.5 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                  mode === m.key ? "border-foreground bg-foreground text-background" : "border-border bg-card hover:border-border-strong",
+                  m.key === "mixed" && "col-span-2 sm:col-span-1",
+                )}
+              >
+                <span className={cn("block text-sm font-medium", m.key === "bangla" && "font-bangla")}>{m.label}</span>
+                <span className={cn("block text-[12px]", mode === m.key ? "text-background/70" : "text-muted-foreground")}>
+                  {m.hint}
+                </span>
+              </button>
+            ))}
+          </div>
+        </Section>
+
+        <Section title={mode === "se" ? "Focus on (sentences using these words come first)" : "Which words?"}>
           <div className="grid gap-2 sm:grid-cols-2">
             {POOLS.map((p) => {
               const n = pools[p.key].length;
@@ -183,30 +289,22 @@ export function QuizView({ progress, active }: { progress: Progress; active: boo
           </div>
         </Section>
 
-        <Section title="Question type">
-          <div className="grid grid-cols-2 gap-2">
-            {MODES.map((m) => (
-              <Chip key={m.key} selected={mode === m.key} onClick={() => setMode(m.key)}>
-                {m.label}
-              </Chip>
-            ))}
-          </div>
-        </Section>
-
-        {available.length === 0 ? (
+        {mode !== "se" && available.length === 0 ? (
           <p className="rounded-xl border border-dashed border-border-strong/60 bg-card/50 p-5 text-center text-[15px] text-muted-foreground">
             {pool === "starred"
               ? "You haven't starred any words yet. Star words on the flashcards, or pick another group."
-              : pool === "all"
-                ? "No words found."
-                : "No words here yet. Study some flashcards first, or choose “All words”."}
+              : pool === "due"
+                ? "Nothing is due for review today. Pick another group of words."
+                : pool === "weak"
+                  ? "No weak words yet. Words you get wrong will show up here."
+                  : "No words here yet. Study some flashcards first, or choose “All words”."}
           </p>
         ) : (
-          <Button size="lg" className="w-full" onClick={() => start()}>
+          <Button size="lg" className="w-full" onClick={start}>
             Start quiz · {total} {total === 1 ? "question" : "questions"}
           </Button>
         )}
-        {available.length > 0 && available.length < count && (
+        {mode !== "se" && available.length > 0 && available.length < count && (
           <p className="-mt-2 text-center text-[13px] text-muted-foreground">
             Only {available.length} {available.length === 1 ? "word is" : "words are"} in this group, so the quiz has {total}.
           </p>
@@ -226,7 +324,7 @@ export function QuizView({ progress, active }: { progress: Progress; active: boo
         setLast(r);
         writeJSON(K_LAST, r);
       }}
-      onRetry={(ids) => start(ids)}
+      onRetry={() => retry(quiz)}
       onExit={() => setQuiz(null)}
     />
   );
@@ -241,12 +339,12 @@ function QuizRunner({
   onRetry,
   onExit,
 }: {
-  quiz: Quiz;
-  setQuiz: (q: Quiz) => void;
+  quiz: QuizState;
+  setQuiz: (q: QuizState) => void;
   progress: Progress;
   active: boolean;
   onFinish: (score: number, total: number) => void;
-  onRetry: (ids: string[]) => void;
+  onRetry: () => void;
   onExit: () => void;
 }) {
   const { questions, answers, index } = quiz;
@@ -255,15 +353,52 @@ function QuizRunner({
   const answer = answers[index];
   const word = q ? WORD_BY_ID.get(q.id)! : undefined;
   const score = answers.filter((a) => a.correct).length;
+  const [picked, setPicked] = useState<string[]>([]); // GRE "pick 2" selection
+  const [typed, setTyped] = useState("");
+  const inputRef = useRef<HTMLInputElement>(null);
 
-  const choose = useCallback(
-    (optionId: string) => {
+  useEffect(() => {
+    setPicked([]);
+    setTyped("");
+    if (q?.kind === "type") window.setTimeout(() => inputRef.current?.focus(), 50);
+  }, [index, q?.kind]);
+
+  const record = useCallback(
+    (a: Answer) => {
       if (!q || answer) return;
-      const correct = optionId === q.id;
-      progress.setStatus(q.id, correct ? "known" : "learning");
-      setQuiz({ ...quiz, answers: [...answers, { id: q.id, chosen: optionId, correct }] });
+      if (q.kind === "se") q.answers!.forEach((id) => progress.grade(id, a.correct));
+      else progress.grade(q.id, a.correct);
+      setQuiz({ ...quiz, answers: [...answers, a] });
     },
     [q, answer, progress, quiz, answers, setQuiz],
+  );
+
+  const choose = useCallback((optionId: string) => record({ correct: optionId === q?.id, chosen: [optionId] }), [record, q]);
+
+  const checkPair = useCallback(() => {
+    if (!q?.answers || picked.length !== 2) return;
+    record({ correct: picked.every((p) => q.answers!.includes(p)), chosen: picked });
+  }, [q, picked, record]);
+
+  const checkTyped = useCallback(
+    (giveUp = false) => {
+      if (!word) return;
+      const guess = typed.trim().toLowerCase();
+      if (!guess && !giveUp) return;
+      const target = word.word.toLowerCase();
+      const exact = guess === target;
+      const close = !exact && target.length >= 5 && editDistance(guess, target) === 1;
+      record({ correct: !giveUp && (exact || close), chosen: [], typed: typed.trim(), close });
+    },
+    [word, typed, record],
+  );
+
+  const togglePick = useCallback(
+    (id: string) => {
+      if (answer) return;
+      setPicked((p) => (p.includes(id) ? p.filter((x) => x !== id) : p.length < 2 ? [...p, id] : [p[1], id]));
+    },
+    [answer],
   );
 
   const next = useCallback(() => {
@@ -274,26 +409,39 @@ function QuizRunner({
   }, [answer, index, questions.length, onFinish, score, quiz, setQuiz]);
 
   useEffect(() => {
-    if (!active || finished) return;
+    if (!active || finished || !q) return;
     const onKey = (e: KeyboardEvent) => {
-      if ((e.target as HTMLElement).closest("input, textarea, [role=dialog]") || e.metaKey || e.ctrlKey) return;
-      const n = Number(e.key);
-      if (!answer && n >= 1 && n <= 4 && q) choose(q.options[n - 1]);
-      else if (answer && (e.key === "Enter" || e.key === " " || e.key === "ArrowRight")) {
+      if (e.metaKey || e.ctrlKey || (e.target as HTMLElement).closest("[role=dialog]")) return;
+      const inInput = (e.target as HTMLElement).closest("input, textarea");
+      // Inside the typing box, the form handles Enter itself.
+      if (answer && !inInput && (e.key === "Enter" || e.key === " " || e.key === "ArrowRight")) {
         e.preventDefault();
         next();
+        return;
       }
+      if (inInput || answer) return;
+      const n = Number(e.key);
+      if (q.kind === "se") {
+        if (n >= 1 && n <= q.options.length) togglePick(q.options[n - 1]);
+        else if (e.key === "Enter") {
+          // Stop the same Enter press from also "clicking" the Next button that appears.
+          e.preventDefault();
+          checkPair();
+        }
+      } else if (q.kind !== "type" && n >= 1 && n <= q.options.length) choose(q.options[n - 1]);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [active, finished, answer, q, choose, next]);
+  }, [active, finished, answer, q, choose, next, togglePick, checkPair]);
 
   if (finished) {
-    const missed = answers.filter((a) => !a.correct);
     const pct = Math.round((score / questions.length) * 100);
+    const missedCount = questions.length - score;
     const message =
       pct === 100 ? "Perfect score!" : pct >= 80 ? "Great job!" : pct >= 50 ? "Good effort. Keep practicing!" : "Keep going. Practice makes perfect!";
-    const sorted = [...answers].sort((a, b) => Number(a.correct) - Number(b.correct));
+    const rows = questions
+      .map((qq, i) => ({ qq, a: answers[i] }))
+      .sort((x, y) => Number(x.a?.correct) - Number(y.a?.correct));
     return (
       <div className="flex flex-col gap-4">
         <section className="animate-card-in rounded-xl border border-border bg-card-back p-6 text-center">
@@ -305,12 +453,15 @@ function QuizRunner({
           </p>
           <p className="mt-1 text-[15px] font-medium">{message}</p>
           <p className="mt-1 text-sm text-muted-foreground">
-            {pct}% correct. {missed.length > 0 ? `${missed.length} missed ${missed.length === 1 ? "word is" : "words are"} now in Learning.` : "All these words are now marked Known."}
+            {pct}% correct.{" "}
+            {missedCount > 0
+              ? "Missed words are back in Learning and will come up again tomorrow."
+              : "These words are scheduled for a later review."}
           </p>
           <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:justify-center">
-            {missed.length > 0 && (
-              <Button onClick={() => onRetry(missed.map((a) => a.id))}>
-                <RotateCcw /> Retry missed words ({missed.length})
+            {missedCount > 0 && (
+              <Button onClick={onRetry}>
+                <RotateCcw /> Retry missed ({missedCount})
               </Button>
             )}
             <Button variant="outline" onClick={onExit}>
@@ -324,23 +475,30 @@ function QuizRunner({
             Your answers
           </h3>
           <ul>
-            {sorted.map((a) => {
-              const w = WORD_BY_ID.get(a.id)!;
+            {rows.map(({ qq, a }, i) => {
+              const ids = qq.kind === "se" ? qq.answers! : [qq.id];
               return (
-                <li key={a.id} className="flex items-start gap-3 border-b border-border px-4 py-3 last:border-b-0">
+                <li key={i} className="flex items-start gap-3 border-b border-border px-4 py-3 last:border-b-0">
                   <span
                     className={cn(
                       "mt-0.5 grid size-5 shrink-0 place-items-center rounded-full",
-                      a.correct ? "bg-primary text-primary-foreground" : "bg-stone text-white",
+                      a?.correct ? "bg-primary text-primary-foreground" : "bg-stone text-white",
                     )}
                   >
-                    {a.correct ? <Check className="size-3" strokeWidth={3} /> : <X className="size-3" strokeWidth={3} />}
+                    {a?.correct ? <Check className="size-3" strokeWidth={3} /> : <X className="size-3" strokeWidth={3} />}
                   </span>
-                  <span className="min-w-0">
-                    <span className="font-medium">{w.word}</span>
-                    <span className="block text-sm text-muted-foreground">
-                      {w.en} · <span lang="bn" className="font-bangla">{w.bn}</span>
-                    </span>
+                  <span className="min-w-0 space-y-1">
+                    {ids.map((id) => {
+                      const w = WORD_BY_ID.get(id)!;
+                      return (
+                        <span key={id} className="block">
+                          <span className="font-medium">{w.word}</span>
+                          <span className="block text-sm text-muted-foreground">
+                            {w.en} · <span lang="bn" className="font-bangla">{w.bn}</span>
+                          </span>
+                        </span>
+                      );
+                    })}
                   </span>
                 </li>
               );
@@ -353,38 +511,83 @@ function QuizRunner({
 
   if (!q || !word) return null;
 
-  const prompt =
-    q.kind === "meaning" ? (
-      <>
-        <Label>What does this word mean?</Label>
-        <div className="mt-3 flex items-center gap-2">
-          <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl">{word.word}</h2>
-          <button
-            type="button"
-            aria-label="Pronounce"
-            onClick={() => speak(word.word)}
-            className="grid size-9 place-items-center rounded-full text-muted-foreground transition hover:bg-muted hover:text-foreground"
-          >
-            <Volume2 className="size-[18px]" />
-          </button>
-        </div>
-        <p className="mt-1 font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">{word.pos}</p>
-      </>
-    ) : q.kind === "word" ? (
-      <>
-        <Label>Which word means this?</Label>
-        <p className="mt-3 text-xl font-medium leading-snug sm:text-2xl">{word.en}</p>
-        <p lang="bn" className="mt-1.5 font-bangla text-xl font-medium text-primary">
-          {word.bn}
-        </p>
-      </>
-    ) : (
-      <>
-        <Label>Fill in the blank</Label>
-        <p className="mt-3 text-xl font-medium leading-relaxed sm:text-2xl">{blankSentence(word)}</p>
-        <p className="mt-2 text-[13px] text-muted-foreground">The word may change form here (for example, -ed or -s).</p>
-      </>
-    );
+  const prompt = (() => {
+    switch (q.kind) {
+      case "meaning":
+        return (
+          <>
+            <Label>What does this word mean?</Label>
+            <div className="mt-3 flex items-center gap-2">
+              <h2 className="break-words text-4xl font-semibold tracking-tight sm:text-5xl">{word.word}</h2>
+              <button
+                type="button"
+                aria-label="Pronounce"
+                onClick={() => speak(word.word)}
+                className="grid size-9 shrink-0 place-items-center rounded-full text-muted-foreground transition hover:bg-muted hover:text-foreground"
+              >
+                <Volume2 className="size-[18px]" />
+              </button>
+            </div>
+            <p className="mt-1 font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">{word.pos}</p>
+          </>
+        );
+      case "word":
+        return (
+          <>
+            <Label>Which word means this?</Label>
+            <p className="mt-3 text-xl font-medium leading-snug sm:text-2xl">{word.en}</p>
+            <p lang="bn" className="mt-1.5 font-bangla text-xl font-medium text-primary">
+              {word.bn}
+            </p>
+          </>
+        );
+      case "bangla":
+        return (
+          <>
+            <Label>Which English word means this?</Label>
+            <p lang="bn" className="mt-3 font-bangla text-2xl font-medium leading-snug text-primary sm:text-3xl">
+              {word.bn}
+            </p>
+            <p className="mt-1 font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">{word.pos}</p>
+          </>
+        );
+      case "blank":
+        return (
+          <>
+            <Label>Fill in the blank</Label>
+            <p className="mt-3 text-xl font-medium leading-relaxed sm:text-2xl">{blankSentence(word)}</p>
+            <p className="mt-2 text-[13px] text-muted-foreground">The word may change form here (for example, -ed or -s).</p>
+          </>
+        );
+      case "type":
+        return (
+          <>
+            <Label>Type the word</Label>
+            <p className="mt-3 text-xl font-medium leading-snug sm:text-2xl">{word.en}</p>
+            <p lang="bn" className="mt-1.5 font-bangla text-xl font-medium text-primary">
+              {word.bn}
+            </p>
+            <p className="mt-2 font-mono text-[13px] text-muted-foreground">
+              Starts with “{word.word[0].toUpperCase()}” · {word.word.length} letters
+            </p>
+          </>
+        );
+      case "se":
+        return (
+          <>
+            <Label>GRE: pick the 2 words that both fit</Label>
+            <p className="mt-3 text-xl font-medium leading-relaxed sm:text-2xl">{q.sentence}</p>
+            <p className="mt-2 text-[13px] text-muted-foreground">Choose two answers that give the sentence the same meaning.</p>
+          </>
+        );
+    }
+  })();
+
+  const optionState = (id: string) => {
+    const right = q.kind === "se" ? q.answers!.includes(id) : id === q.id;
+    const chosen = answer ? answer.chosen.includes(id) : picked.includes(id);
+    return { right, chosen };
+  };
 
   return (
     <div className="flex flex-col gap-4 pb-24 sm:pb-0">
@@ -407,87 +610,147 @@ function QuizRunner({
         {prompt}
       </section>
 
-      <div className="grid gap-2" role="group" aria-label="Answer choices">
-        {q.options.map((optId, i) => {
-          const opt = WORD_BY_ID.get(optId)!;
-          const isAnswer = optId === q.id;
-          const isChosen = answer?.chosen === optId;
-          return (
-            <button
-              key={optId}
-              type="button"
-              disabled={!!answer}
-              onClick={() => choose(optId)}
-              className={cn(
-                "flex min-h-14 items-center gap-3 rounded-lg border px-4 py-3 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-default",
-                !answer && "border-border bg-card hover:border-border-strong hover:bg-muted/40 active:scale-[0.99]",
-                answer && isAnswer && "border-primary bg-accent-soft",
-                answer && isChosen && !isAnswer && "border-stone bg-muted",
-                answer && !isAnswer && !isChosen && "border-border bg-card opacity-55",
-              )}
-            >
-              <span
+      {q.kind === "type" ? (
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (answer) next();
+            else checkTyped();
+          }}
+          className="flex flex-col gap-2"
+        >
+          <Input
+            ref={inputRef}
+            value={answer ? (answer.typed ?? "") : typed}
+            onChange={(e) => setTyped(e.target.value)}
+            readOnly={!!answer}
+            placeholder="Type your answer…"
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="none"
+            spellCheck={false}
+            aria-label="Your answer"
+            className={cn(
+              "h-12 text-lg",
+              answer && (answer.correct ? "border-primary bg-accent-soft" : "border-stone bg-muted"),
+            )}
+          />
+          {!answer && (
+            <div className="flex gap-2">
+              <Button type="submit" className="flex-1" disabled={!typed.trim()}>
+                Check
+              </Button>
+              <Button type="button" variant="outline" onClick={() => checkTyped(true)}>
+                I don't know
+              </Button>
+            </div>
+          )}
+        </form>
+      ) : (
+        <div className={cn("grid gap-2", q.kind === "se" && "grid-cols-2")} role="group" aria-label="Answer choices">
+          {q.options.map((optId, i) => {
+            const opt = WORD_BY_ID.get(optId)!;
+            const { right, chosen } = optionState(optId);
+            return (
+              <button
+                key={optId}
+                type="button"
+                disabled={!!answer}
+                aria-pressed={q.kind === "se" ? chosen : undefined}
+                onClick={() => (q.kind === "se" ? togglePick(optId) : choose(optId))}
                 className={cn(
-                  "grid size-7 shrink-0 place-items-center rounded-full border font-mono text-xs",
-                  answer && isAnswer
-                    ? "border-primary bg-primary text-primary-foreground"
-                    : answer && isChosen
-                      ? "border-stone bg-stone text-white"
-                      : "border-border text-muted-foreground",
+                  "flex min-h-14 items-center gap-3 rounded-lg border px-4 py-3 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-default",
+                  !answer && !chosen && "border-border bg-card hover:border-border-strong hover:bg-muted/40 active:scale-[0.99]",
+                  !answer && chosen && "border-foreground bg-foreground/5",
+                  answer && right && "border-primary bg-accent-soft",
+                  answer && chosen && !right && "border-stone bg-muted",
+                  answer && !right && !chosen && "border-border bg-card opacity-55",
                 )}
               >
-                {answer && isAnswer ? (
-                  <Check className="size-3.5" strokeWidth={3} />
-                ) : answer && isChosen ? (
-                  <X className="size-3.5" strokeWidth={3} />
-                ) : (
-                  i + 1
-                )}
-              </span>
-              {q.kind === "meaning" ? (
-                <span className="min-w-0">
-                  <span className="block text-[15px] font-medium">{opt.en}</span>
-                  <span lang="bn" className="block font-bangla text-[15px] text-muted-foreground">
-                    {opt.bn}
-                  </span>
+                <span
+                  className={cn(
+                    "grid size-7 shrink-0 place-items-center rounded-full border font-mono text-xs",
+                    answer && right
+                      ? "border-primary bg-primary text-primary-foreground"
+                      : answer && chosen
+                        ? "border-stone bg-stone text-white"
+                        : chosen
+                          ? "border-foreground bg-foreground text-background"
+                          : "border-border text-muted-foreground",
+                  )}
+                >
+                  {answer && right ? (
+                    <Check className="size-3.5" strokeWidth={3} />
+                  ) : answer && chosen ? (
+                    <X className="size-3.5" strokeWidth={3} />
+                  ) : (
+                    i + 1
+                  )}
                 </span>
-              ) : (
-                <span className="text-[17px] font-medium">{opt.word}</span>
-              )}
-            </button>
-          );
-        })}
-      </div>
+                {q.kind === "meaning" ? (
+                  <span className="min-w-0">
+                    <span className="block text-[15px] font-medium">{opt.en}</span>
+                    <span lang="bn" className="block font-bangla text-[15px] text-muted-foreground">
+                      {opt.bn}
+                    </span>
+                  </span>
+                ) : (
+                  <span className="min-w-0 break-words text-[17px] font-medium">{opt.word}</span>
+                )}
+              </button>
+            );
+          })}
+        </div>
+      )}
+
+      {q.kind === "se" && !answer && (
+        <Button size="lg" onClick={checkPair} disabled={picked.length !== 2}>
+          {picked.length === 2 ? "Check answer" : `Pick ${2 - picked.length} more`}
+        </Button>
+      )}
 
       {answer && (
         <section className="animate-card-in rounded-xl border border-border bg-card-back p-4" aria-live="polite">
           <p className={cn("flex items-center gap-1.5 font-medium", answer.correct ? "text-primary" : "text-foreground")}>
             {answer.correct ? <Check className="size-4" /> : <X className="size-4" />}
-            {answer.correct ? "Correct!" : `Not quite. The answer is “${word.word}”.`}
+            {answer.correct
+              ? answer.close
+                ? `Almost! Check the spelling: “${word.word}”.`
+                : "Correct!"
+              : q.kind === "se"
+                ? "Not quite. Both answers must fit."
+                : `Not quite. The answer is “${word.word}”.`}
           </p>
-          <p className="mt-2 text-[15px]">
-            <span className="font-semibold">{word.word}</span> — {word.en}
-          </p>
-          <p lang="bn" className="font-bangla text-[17px] font-medium text-primary">
-            {word.bn}
-          </p>
-          <p className="mt-1.5 text-sm text-muted-foreground">{word.example}</p>
+          {(q.kind === "se" ? q.answers! : [q.id]).map((id) => {
+            const w = WORD_BY_ID.get(id)!;
+            return (
+              <div key={id} className="mt-2">
+                <p className="text-[15px]">
+                  <span className="font-semibold">{w.word}</span> — {w.en}
+                </p>
+                <p lang="bn" className="font-bangla text-[17px] font-medium text-primary">
+                  {w.bn}
+                </p>
+              </div>
+            );
+          })}
+          {q.kind !== "se" && <p className="mt-1.5 text-sm text-muted-foreground">{word.example}</p>}
         </section>
       )}
 
       {answer && (
         <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/85 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur-md sm:static sm:z-auto sm:border-0 sm:bg-transparent sm:p-0 sm:backdrop-blur-none">
           <div className="mx-auto max-w-2xl">
-            <Button size="lg" className="w-full" onClick={next} autoFocus>
+            <Button size="lg" className="w-full" onClick={next} autoFocus={q.kind !== "type"}>
               {index + 1 >= questions.length ? "See results" : "Next question"} <ArrowRight />
             </Button>
           </div>
         </div>
       )}
 
-      {!answer && (
+      {!answer && q.kind !== "type" && (
         <p className="hidden text-center font-mono text-[11px] text-muted-foreground/80 md:block pointer-coarse:hidden">
-          Press 1–4 to answer · Enter for next
+          {q.kind === "se" ? "Press 1–6 to pick · Enter to check" : "Press 1–4 to answer"} · Enter for next
         </p>
       )}
     </div>

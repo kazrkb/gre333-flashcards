@@ -9,6 +9,15 @@ a Bangla meaning (বাংলা অর্থ) and an example sentence.
   Enter that code on another device to continue there. If the server can't be reached, progress is kept
   in the browser and sent when it's back.
 
+## Features
+
+- **Flashcards** with simple English meaning, Bangla meaning, an example sentence and a memory tip (word root or trick)
+- **Daily review (spaced repetition):** right answers come back after 3, 7, 16, 35, 90 days; wrong ones tomorrow
+- **Quiz:** word → meaning, meaning → word, বাংলা → English, fill in the blank, type the word, GRE "pick 2"
+- **Word groups:** 40 families of synonyms (with opposites) and GRE Sentence Equivalence practice
+- **Daily goal** ring for new words, day streak, weak-words list
+- Works offline and opens instantly (service worker); can be added to the phone home screen
+
 ## Run it (two terminals)
 
 ```bash

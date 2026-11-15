@@ -1,4 +1,4 @@
-import { Star, Volume2 } from "lucide-react";
+import { Lightbulb, Star, Volume2 } from "lucide-react";
 import type { Entry } from "@/lib/progress";
 import { speak, type Word } from "@/lib/words";
 import { cn } from "@/lib/utils";
@@ -95,7 +95,7 @@ export function Flashcard({
   );
 
   return (
-    <div className="flip-scene h-[420px] sm:h-[390px]">
+    <div className="flip-scene h-[470px] sm:h-[440px]">
       <div
         role="button"
         tabIndex={0}
@@ -164,6 +164,15 @@ export function Flashcard({
               <p className="mt-1.5 text-[15px] leading-relaxed text-card-foreground">
                 <Highlight sentence={word.example} word={word.word} />
               </p>
+              {word.tip && (
+                <p className="mt-3 flex gap-2 border-t border-border-strong/30 pt-3 text-[13px] leading-snug text-muted-foreground">
+                  <Lightbulb className="mt-px size-3.5 shrink-0 text-primary" aria-hidden />
+                  <span>
+                    <span className="sr-only">Memory tip: </span>
+                    {word.tip}
+                  </span>
+                </p>
+              )}
             </section>
           </div>
         </div>
