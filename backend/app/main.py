@@ -1,0 +1,293 @@
+"""GRE 333 flashcards API.
+
+No user accounts. Each browser gets a learner record identified by a short
+sync code (e.g. "K7QM-4ZXP"). Entering the same code on another device shows
+the same progress.
+
+Uses Postgres when DATABASE_URL is set, otherwise a local SQLite file.
+"""
+
+import os
+import secrets
+import time
+from collections import defaultdict, deque
+from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
+from typing import Literal
+
+from dotenv import load_dotenv
+from fastapi import Depends, FastAPI, Header, HTTPException, Request
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel, Field
+from sqlalchemy import Boolean, Date, DateTime, Integer, String, create_engine, delete, select
+from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")
+
+
+def database_url() -> str:
+    url = os.getenv("DATABASE_URL", "").strip()
+    if not url:
+        return f"sqlite:///{BASE_DIR / 'gre.db'}"
+    # Hosts like Neon/Render hand out postgres:// or postgresql:// URLs; use the psycopg 3 driver.
+    for prefix in ("postgres://", "postgresql://"):
+        if url.startswith(prefix):
+            return "postgresql+psycopg://" + url[len(prefix):]
+    return url
+
+
+DB_URL = database_url()
+# prepare_threshold=None keeps psycopg compatible with pooled (PgBouncer) connections like Neon's.
+engine = create_engine(
+    DB_URL,
+    pool_pre_ping=True,
+    pool_recycle=300,
+    connect_args={"prepare_threshold": None} if DB_URL.startswith("postgresql+psycopg") else {},
+)
+
+Status = Literal["new", "learning", "known"]
+
+# No 0/O/1/I/L so codes are easy to read and type.
+CODE_ALPHABET = "23456789ABCDEFGHJKMNPQRSTUVWXYZ"
+
+
+def utcnow() -> datetime:
+    return datetime.now(timezone.utc)
+
+
+def as_aware(dt: datetime) -> datetime:
+    return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+
+
+def new_code() -> str:
+    raw = "".join(secrets.choice(CODE_ALPHABET) for _ in range(8))
+    return f"{raw[:4]}-{raw[4:]}"
+
+
+def normalize_code(code: str) -> str:
+    raw = "".join(ch for ch in code.upper() if ch.isalnum())
+    return f"{raw[:4]}-{raw[4:]}" if len(raw) == 8 else ""
+
+
+class Base(DeclarativeBase):
+    pass
+
+
+class Learner(Base):
+    __tablename__ = "learners"
+
+    code: Mapped[str] = mapped_column(String(9), primary_key=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    last_seen: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class Progress(Base):
+    __tablename__ = "word_progress"
+
+    learner: Mapped[str] = mapped_column(String(9), primary_key=True)
+    word_id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    status: Mapped[str] = mapped_column(String(16), default="new")
+    starred: Mapped[bool] = mapped_column(Boolean, default=False)
+    reviews: Mapped[int] = mapped_column(Integer, default=0)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class ReviewDay(Base):
+    """How many cards a learner reviewed on each day (for the streak)."""
+
+    __tablename__ = "review_log"
+
+    learner: Mapped[str] = mapped_column(String(9), primary_key=True)
+    day: Mapped[date] = mapped_column(Date, primary_key=True)
+    count: Mapped[int] = mapped_column(Integer, default=0)
+
+
+Base.metadata.create_all(engine)
+
+
+# ---------- simple in-memory rate limit (per IP) for code creation / lookup ----------
+_hits: dict[str, deque[float]] = defaultdict(deque)
+
+
+def rate_limit(request: Request, limit: int = 20, window: float = 60.0):
+    fwd = request.headers.get("x-forwarded-for", "")
+    ip = fwd.split(",")[0].strip() or (request.client.host if request.client else "?")
+    now = time.monotonic()
+    q = _hits[ip]
+    while q and now - q[0] > window:
+        q.popleft()
+    if len(q) >= limit:
+        raise HTTPException(429, "Too many requests, please wait a minute.")
+    q.append(now)
+
+
+# ---------- schemas ----------
+class ProgressIn(BaseModel):
+    status: Status | None = None
+    starred: bool | None = None
+    reviewed: bool = False  # true when the learner just answered this card
+    updated_at: datetime | None = None
+    day: date | None = None  # learner's local date, for the streak
+
+
+class ProgressOut(BaseModel):
+    status: Status
+    starred: bool
+    reviews: int
+    updated_at: datetime
+
+
+class SyncIn(BaseModel):
+    items: dict[str, ProgressIn] = Field(default_factory=dict)
+    days: dict[date, int] = Field(default_factory=dict)  # reviews done while offline
+
+
+class SyncOut(BaseModel):
+    progress: dict[str, ProgressOut]
+    days: dict[date, int]
+
+
+class LearnerOut(BaseModel):
+    code: str
+
+
+app = FastAPI(title="GRE 333 Flashcards API")
+
+
+def learner_code(x_sync_code: str = Header(default="")) -> str:
+    code = normalize_code(x_sync_code)
+    if not code:
+        raise HTTPException(400, "Missing or invalid sync code")
+    with Session(engine) as db:
+        learner = db.get(Learner, code)
+        if learner is None:
+            raise HTTPException(404, "Sync code not found")
+        learner.last_seen = utcnow()
+        db.commit()
+    return code
+
+
+def to_out(p: Progress) -> ProgressOut:
+    return ProgressOut(status=p.status, starred=p.starred, reviews=p.reviews, updated_at=as_aware(p.updated_at))
+
+
+def snapshot(db: Session, code: str) -> SyncOut:
+    progress = {p.word_id: to_out(p) for p in db.scalars(select(Progress).where(Progress.learner == code))}
+    days = {d.day: d.count for d in db.scalars(select(ReviewDay).where(ReviewDay.learner == code))}
+    return SyncOut(progress=progress, days=days)
+
+
+def add_reviews(db: Session, code: str, day: date, n: int):
+    if n <= 0:
+        return
+    row = db.get(ReviewDay, (code, day))
+    if row is None:
+        db.add(ReviewDay(learner=code, day=day, count=n))
+    else:
+        row.count += n
+
+
+def apply(db: Session, code: str, word_id: str, body: ProgressIn, *, only_if_newer: bool = False) -> Progress:
+    row = db.get(Progress, (code, word_id))
+    stamp = as_aware(body.updated_at) if body.updated_at else utcnow()
+    if stamp > utcnow() + timedelta(minutes=5):  # don't trust clocks far in the future
+        stamp = utcnow()
+    if row is None:
+        row = Progress(learner=code, word_id=word_id, status="new", starred=False, reviews=0, updated_at=stamp)
+        db.add(row)
+    elif only_if_newer and as_aware(row.updated_at) >= stamp:
+        return row
+    if body.status is not None:
+        row.status = body.status
+    if body.starred is not None:
+        row.starred = body.starred
+    if body.reviewed:
+        row.reviews = (row.reviews or 0) + 1
+        add_reviews(db, code, body.day or date.today(), 1)
+    row.updated_at = stamp
+    return row
+
+
+# ---------- routes ----------
+@app.get("/api/health")
+def health():
+    return {"ok": True, "database": engine.dialect.name}
+
+
+@app.post("/api/learners", response_model=LearnerOut, dependencies=[Depends(rate_limit)])
+def create_learner():
+    with Session(engine) as db:
+        for _ in range(10):
+            code = new_code()
+            if db.get(Learner, code) is None:
+                db.add(Learner(code=code))
+                db.commit()
+                return LearnerOut(code=code)
+    raise HTTPException(500, "Could not create a sync code")
+
+
+@app.get("/api/learners/{code}", response_model=LearnerOut, dependencies=[Depends(rate_limit)])
+def check_learner(code: str):
+    norm = normalize_code(code)
+    with Session(engine) as db:
+        if not norm or db.get(Learner, norm) is None:
+            raise HTTPException(404, "Sync code not found")
+    return LearnerOut(code=norm)
+
+
+@app.get("/api/progress", response_model=SyncOut)
+def get_progress(code: str = Depends(learner_code)):
+    with Session(engine) as db:
+        return snapshot(db, code)
+
+
+@app.put("/api/progress/{word_id}", response_model=ProgressOut)
+def put_progress(word_id: str, body: ProgressIn, code: str = Depends(learner_code)):
+    if len(word_id) > 64:
+        raise HTTPException(400, "word id too long")
+    with Session(engine) as db:
+        row = apply(db, code, word_id, body)
+        db.commit()
+        db.refresh(row)
+        return to_out(row)
+
+
+@app.post("/api/progress/sync", response_model=SyncOut)
+def sync_progress(body: SyncIn, code: str = Depends(learner_code)):
+    """Merge progress saved in the browser while offline; the newer change wins."""
+    if len(body.items) > 1000 or len(body.days) > 3660:
+        raise HTTPException(400, "too many items")
+    with Session(engine) as db:
+        for word_id, item in body.items.items():
+            if len(word_id) <= 64:
+                apply(db, code, word_id, item.model_copy(update={"reviewed": False}), only_if_newer=True)
+        for day, n in body.days.items():
+            add_reviews(db, code, day, min(n, 2000))
+        db.commit()
+        return snapshot(db, code)
+
+
+@app.delete("/api/progress")
+def reset_progress(code: str = Depends(learner_code)):
+    with Session(engine) as db:
+        db.execute(delete(Progress).where(Progress.learner == code))
+        db.execute(delete(ReviewDay).where(ReviewDay.learner == code))
+        db.commit()
+    return {"ok": True}
+
+
+# Serve the built frontend (npm run build) so one server runs the whole app.
+DIST = Path(os.getenv("FRONTEND_DIST", BASE_DIR.parent / "dist"))
+if DIST.exists():
+    app.mount("/assets", StaticFiles(directory=DIST / "assets"), name="assets")
+
+    @app.get("/{path:path}", include_in_schema=False)
+    def spa(path: str):
+        if path.startswith("api/"):
+            raise HTTPException(404)
+        file = (DIST / path).resolve()
+        if path and file.is_file() and DIST.resolve() in file.parents:
+            return FileResponse(file)
+        return FileResponse(DIST / "index.html")

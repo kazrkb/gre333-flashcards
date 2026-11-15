@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: gre
+      POSTGRES_PASSWORD: gre
+      POSTGRES_DB: gre
+    ports:
+      - "5432:5432"
+    volumes:
+      - gre-data:/var/lib/postgresql/data
+volumes:
+  gre-data:

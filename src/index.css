@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Frozen mist palette
+   stone #7C7D75 · ash #ADACA7 · cream #FCF8D8 · mist #D9DADF · ember #DD700B */
+:root {
+  --stone: #7c7d75;
+  --ash: #adaca7;
+  --cream: #fcf8d8;
+  --mist: #d9dadf;
+  --ember: #dd700b;
+
+  --background: #ededf0;
+  --foreground: #22221f;
+  --card: #fdfdfb;
+  --card-back: var(--cream);
+  --card-foreground: #22221f;
+  --muted: #e3e4e8;
+  --muted-foreground: #5d5e57;
+  --border: var(--mist);
+  --border-strong: var(--ash);
+  --input: var(--mist);
+  --primary: var(--ember);
+  --primary-hover: #c76409;
+  --primary-foreground: #ffffff;
+  --secondary: #e4e4e1;
+  --secondary-foreground: #2d2d29;
+  --accent-soft: #fbe7d3;
+  --ring: var(--ember);
+  --known: var(--ember);
+  --learning: var(--stone);
+  --new: var(--ash);
+  --radius: 1rem;
+}
+
+.dark {
+  --background: #161614;
+  --foreground: #f4f1dc;
+  --card: #22221f;
+  --card-back: #2b2a22;
+  --card-foreground: #f4f1dc;
+  --muted: #2a2a27;
+  --muted-foreground: #adaca7;
+  --border: #33332f;
+  --border-strong: #4a4a45;
+  --input: #33332f;
+  --primary: #e8800f;
+  --primary-hover: #f08d22;
+  --primary-foreground: #1b1206;
+  --secondary: #2c2c29;
+  --secondary-foreground: #ece9d6;
+  --accent-soft: #3a2a17;
+  --learning: #9c9d94;
+  --new: #5c5c57;
+}
+
+@theme inline {
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-bangla: "Hind Siliguri", "Noto Sans Bengali", "Vrinda", sans-serif;
+
+  --color-stone: var(--stone);
+  --color-ash: var(--ash);
+  --color-cream: var(--cream);
+  --color-mist: var(--mist);
+  --color-ember: var(--ember);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-back: var(--card-back);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-input: var(--input);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent-soft: var(--accent-soft);
+  --color-ring: var(--ring);
+  --color-known: var(--known);
+  --color-learning: var(--learning);
+  --color-new: var(--new);
+
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100dvh;
+  }
+  ::selection {
+    background: var(--accent-soft);
+  }
+}
+
+/* 3D flip card */
+.flip-scene {
+  perspective: 1600px;
+}
+.flip-inner {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.flip-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-card-in {
+  animation: card-in 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner,
+  .animate-card-in {
+    transition: none;
+    animation: none;
+  }
+}
