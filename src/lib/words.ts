@@ -161,6 +161,15 @@ if (typeof window !== "undefined" && window.speechSynthesis) {
   window.speechSynthesis.addEventListener?.("voiceschanged", () => (ukVoice = undefined));
 }
 
+/** Name of the voice that will actually speak, or null when the browser hides its voice list. */
+export function currentVoiceName(): string | null {
+  try {
+    return britishVoice()?.name.replace(/\s*\(.*\)$/, "") ?? null;
+  } catch {
+    return null;
+  }
+}
+
 /** Say a word aloud in British English. The default is a little slow so it is easy to catch; 0.5 is very slow. */
 export function speak(text: string, rate = 0.75) {
   try {
