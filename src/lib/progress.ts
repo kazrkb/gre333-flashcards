@@ -143,7 +143,8 @@ async function api<T>(path: string, code: string | null, init?: RequestInit): Pr
   return res.json() as Promise<T>;
 }
 
-export function useProgress() {
+/** `wordsVersion` changes when the active word list changes (Word Smart locked/unlocked). */
+export function useProgress(wordsVersion = 0) {
   const [code, setCodeState] = useState<string | null>(() => readJSON<string | null>(K_CODE, null));
   const [progress, setProgress] = useState<Record<string, Entry>>(() => {
     const stored = readJSON<Record<string, Partial<Entry>>>(K_PROGRESS, {});
@@ -395,7 +396,7 @@ export function useProgress() {
       if (e.firstSeen === today) newToday++;
     }
     return { known, learning, new: WORDS.length - known - learning, starred, due, weak, newToday, total: WORDS.length };
-  }, [progress]);
+  }, [progress, wordsVersion]);
 
   const today = days[localDay()] ?? 0;
   const streak = useMemo(() => computeStreak(days), [days]);

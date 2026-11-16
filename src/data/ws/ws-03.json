@@ -1,0 +1,2681 @@
+[
+ {
+  "id": "chimera",
+  "word": "Chimera",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a wild, unrealistic dream; a monster made of mixed parts",
+  "bn": "অলীক কল্পনা; মিশ্র কাল্পনিক দানব",
+  "s": [
+   "Winning the lottery is a chimera.",
+   "His plan to get rich overnight was only a chimera.",
+   "The {audacious} promise of a perfect society proved a chimera that no leader could deliver."
+  ],
+  "sbn": [
+   "লটারি জেতা একটা অলীক কল্পনা (chimera)।",
+   "রাতারাতি ধনী হওয়ার তার পরিকল্পনা ছিল শুধু একটা অলীক স্বপ্ন (chimera)।",
+   "নিখুঁত সমাজের সেই দুঃসাহসী প্রতিশ্রুতি ছিল এমন এক অলীক কল্পনা (chimera), যা কোনো নেতাই পূরণ করতে পারত না।"
+  ],
+  "tip": "Chimera was a Greek monster of lion, goat and snake parts: a mixed, unreal thing."
+ },
+ {
+  "id": "choleric",
+  "word": "Choleric",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "easily angered; bad-tempered",
+  "bn": "রগচটা; খিটখিটে",
+  "s": [
+   "The choleric man shouted at everyone.",
+   "Our choleric boss turns red whenever a deadline is missed.",
+   "The {caustic} and choleric critic stormed out after reading the review."
+  ],
+  "sbn": [
+   "রগচটা (choleric) লোকটা সবার ওপর চিৎকার করল।",
+   "আমাদের রগচটা (choleric) বস ডেডলাইন মিস হলেই লাল হয়ে যান।",
+   "সেই কটুভাষী ও রগচটা (choleric) সমালোচক রিভিউ পড়ে রেগে বেরিয়ে গেলেন।"
+  ],
+  "tip": "Old medicine blamed too much 'choler' (yellow bile) for anger: choleric = hot-tempered."
+ },
+ {
+  "id": "chortle",
+  "word": "Chortle",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to laugh in a happy, noisy way",
+  "bn": "খুশিতে হেসে ওঠা; খিকখিক করে হাসা",
+  "s": [
+   "He began to chortle at the joke.",
+   "She could not help but chortle when she saw the puppy's silly face.",
+   "The crowd began to chortle at the {banal} jokes, delighted by their sheer silliness."
+  ],
+  "sbn": [
+   "সে ঠাট্টাটা শুনে খিকখিক করে হেসে (chortle) উঠল।",
+   "কুকুরছানাটার বোকা মুখ দেখে সে না হেসে (chortle) পারল না।",
+   "সাধারণ মামুলি রসিকতায়ও দর্শকরা আনন্দে হেসে (chortle) উঠল।"
+  ],
+  "tip": "Coined by Lewis Carroll: chuckle + snort = chortle."
+ },
+ {
+  "id": "chronic",
+  "word": "Chronic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "lasting a long time or constantly returning",
+  "bn": "দীর্ঘস্থায়ী; পুরনো (রোগ)",
+  "s": [
+   "She has a chronic cough.",
+   "Chronic traffic jams make the daily trip to Dhaka exhausting.",
+   "The {austere} budget could not fix the chronic shortage of doctors in rural clinics."
+  ],
+  "sbn": [
+   "তার দীর্ঘস্থায়ী (chronic) কাশি আছে।",
+   "ঢাকায় যাতায়াতে দীর্ঘস্থায়ী (chronic) জ্যাম রোজকার যাত্রাকে ক্লান্তিকর করে তোলে।",
+   "কঠোর বাজেট গ্রামের ক্লিনিকে ডাক্তারের দীর্ঘস্থায়ী (chronic) অভাব মেটাতে পারেনি।"
+  ],
+  "tip": "Greek chronos = time. Chronic = lasting through time."
+ },
+ {
+  "id": "chronicle",
+  "word": "Chronicle",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a detailed record of events in time order; to record events",
+  "bn": "ঘটনাপঞ্জি; বিবরণ; লিপিবদ্ধ করা",
+  "s": [
+   "The book is a chronicle of the war.",
+   "She keeps a chronicle of her family's history.",
+   "The historian chose to chronicle the {tumultuous} years after independence in careful detail."
+  ],
+  "sbn": [
+   "বইটা যুদ্ধের একটা ঘটনাপঞ্জি (chronicle)।",
+   "সে তার পরিবারের ইতিহাসের একটা বিবরণ (chronicle) রাখে।",
+   "ঐতিহাসিক স্বাধীনতার পরের উত্তাল বছরগুলো খুঁটিয়ে লিপিবদ্ধ (chronicle) করার সিদ্ধান্ত নিলেন।"
+  ],
+  "tip": "Greek chronos = time: a chronicle lists events in time order."
+ },
+ {
+  "id": "churl",
+  "word": "Churl",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a rude, bad-mannered person",
+  "bn": "অভদ্র লোক; ছোটলোক",
+  "s": [
+   "Don't be a churl to the guests.",
+   "Everyone avoided the churl who mocked the waiter.",
+   "The {boorish} churl ignored every rule of courtesy at the wedding."
+  ],
+  "sbn": [
+   "অতিথিদের সঙ্গে অভদ্র (churl) হয়ো না।",
+   "যে অভদ্র লোকটা (churl) ওয়েটারকে ঠাট্টা করল, সবাই তাকে এড়িয়ে চলল।",
+   "সেই অমার্জিত অভদ্র (churl) লোকটা বিয়েতে সব ভদ্রতার নিয়ম উপেক্ষা করল।"
+  ],
+  "tip": "Churl sounds like 'curl up in disgust' at rude people."
+ },
+ {
+  "id": "chutzpah",
+  "word": "Chutzpah",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "shameless nerve; bold cheek",
+  "bn": "নির্লজ্জ সাহস; ধৃষ্টতা",
+  "s": [
+   "He had the chutzpah to ask for a raise.",
+   "It takes chutzpah to criticize the teacher in front of everyone.",
+   "The {audacious} intern showed real chutzpah by challenging the director's plan."
+  ],
+  "sbn": [
+   "বেতন বাড়াতে চাওয়ার মতো ধৃষ্টতা (chutzpah) তার ছিল।",
+   "সবার সামনে শিক্ষকের সমালোচনা করতে বেশ দুঃসাহস (chutzpah) লাগে।",
+   "সেই দুঃসাহসী ইন্টার্ন পরিচালকের পরিকল্পনাকে চ্যালেঞ্জ করে সত্যিকারের ধৃষ্টতা (chutzpah) দেখাল।"
+  ],
+  "tip": "Yiddish word; say 'HUTS-pah' and picture someone boldly walking in without asking."
+ },
+ {
+  "id": "cipher",
+  "word": "Cipher",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a secret code; a person of no importance; zero",
+  "bn": "গুপ্ত সংকেত; শূন্য; তুচ্ছ লোক",
+  "s": [
+   "The spy wrote in a cipher.",
+   "Only a few officers could read the cipher used in the letters.",
+   "Treated as a mere cipher by the board, he quietly built a {clandestine} network of allies."
+  ],
+  "sbn": [
+   "গুপ্তচর গুপ্ত সংকেতে (cipher) লিখল।",
+   "চিঠিতে ব্যবহৃত সংকেত (cipher) মাত্র কয়েকজন অফিসারই পড়তে পারতেন।",
+   "বোর্ড তাকে নিছক তুচ্ছ লোক (cipher) ভাবলেও সে গোপনে মিত্রদের একটা জাল গড়ে তুলল।"
+  ],
+  "tip": "From Arabic 'sifr' = zero, so a cipher can mean zero or a coded message."
+ },
+ {
+  "id": "circuitous",
+  "word": "Circuitous",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "indirect and longer than necessary",
+  "bn": "ঘুরপথের; প্যাঁচানো",
+  "s": [
+   "We took a circuitous road home.",
+   "The circuitous route added an hour to our trip.",
+   "His {ambiguous} and circuitous reply never answered the simple question."
+  ],
+  "sbn": [
+   "আমরা ঘুরপথের (circuitous) রাস্তায় বাড়ি ফিরলাম।",
+   "ঘুরপথের (circuitous) রাস্তাটা আমাদের যাত্রায় এক ঘণ্টা বাড়িয়ে দিল।",
+   "তার অস্পষ্ট ও প্যাঁচানো (circuitous) উত্তর সহজ প্রশ্নটার জবাবই দিল না।"
+  ],
+  "tip": "Latin circuitus = going around, like a circuit."
+ },
+ {
+  "id": "circumlocution",
+  "word": "Circumlocution",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "roundabout, wordy speech",
+  "bn": "ঘুরিয়ে বলা; বাক্যের আড়ম্বর",
+  "s": [
+   "His circumlocution annoyed the listeners.",
+   "Instead of a plain no, she used long circumlocution.",
+   "The politician's {ambiguous} circumlocution hid the fact that he had no real answer."
+  ],
+  "sbn": [
+   "তার ঘুরিয়ে বলা (circumlocution) শ্রোতাদের বিরক্ত করল।",
+   "সোজা 'না' বলার বদলে সে অনেক ঘুরিয়ে বলল (circumlocution)।",
+   "রাজনীতিবিদের এড়িয়ে যাওয়া ঘোরানো কথা (circumlocution) লুকিয়ে ফেলল যে তাঁর কোনো আসল উত্তর নেই।"
+  ],
+  "tip": "Latin circum (around) + locution (speech): talking around the point."
+ },
+ {
+  "id": "circumnavigate",
+  "word": "Circumnavigate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to sail or travel all the way around",
+  "bn": "প্রদক্ষিণ করা; ঘুরে আসা",
+  "s": [
+   "Magellan's crew circumnavigated the globe.",
+   "It took months to circumnavigate the island by boat.",
+   "Few sailors dared to circumnavigate the globe alone, an {arduous} feat of endurance."
+  ],
+  "sbn": [
+   "ম্যাগেলানের নাবিকরা পৃথিবী প্রদক্ষিণ (circumnavigated) করেছিল।",
+   "নৌকায় দ্বীপটা ঘুরে আসতে (circumnavigate) কয়েক মাস লেগে গেল।",
+   "খুব কম নাবিকই একা পৃথিবী প্রদক্ষিণ (circumnavigate) করার সাহস করেছে, যা এক কষ্টসাধ্য সহনশীলতার কাজ।"
+  ],
+  "tip": "Latin circum (around) + navigare (to sail)."
+ },
+ {
+  "id": "circumscribe",
+  "word": "Circumscribe",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to limit narrowly; to draw a line around",
+  "bn": "সীমাবদ্ধ করা; গণ্ডি টানা",
+  "s": [
+   "Strict rules circumscribe our freedom.",
+   "The law will circumscribe the powers of the police.",
+   "Her role was {tenuous}, tightly circumscribed by a nervous manager."
+  ],
+  "sbn": [
+   "কড়া নিয়ম আমাদের স্বাধীনতা সীমাবদ্ধ (circumscribe) করে।",
+   "আইনটা পুলিশের ক্ষমতা সীমাবদ্ধ (circumscribe) করবে।",
+   "তার ভূমিকা ছিল দুর্বল, ভীতু ম্যানেজারের হাতে কঠোরভাবে সীমাবদ্ধ (circumscribed)।"
+  ],
+  "tip": "Latin circum (around) + scribere (write): draw a line around."
+ },
+ {
+  "id": "circumspect",
+  "word": "Circumspect",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "careful and cautious, thinking of risks",
+  "bn": "সতর্ক; হুঁশিয়ার",
+  "s": [
+   "Be circumspect when you sign a contract.",
+   "He was circumspect about sharing his plans.",
+   "A circumspect investor, she studied every {ambiguous} clause before agreeing."
+  ],
+  "sbn": [
+   "চুক্তিতে সই করার সময় সতর্ক (circumspect) থেকো।",
+   "নিজের পরিকল্পনা জানানোর ব্যাপারে সে হুঁশিয়ার (circumspect) ছিল।",
+   "সতর্ক (circumspect) বিনিয়োগকারী হিসেবে সে রাজি হওয়ার আগে প্রতিটি অস্পষ্ট ধারা খুঁটিয়ে দেখল।"
+  ],
+  "tip": "Latin circum (around) + specere (look): look around before acting."
+ },
+ {
+  "id": "circumvent",
+  "word": "Circumvent",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to get around a rule or obstacle, often cleverly",
+  "bn": "এড়িয়ে যাওয়া; কৌশলে পাশ কাটানো",
+  "s": [
+   "Some people circumvent the rules.",
+   "He tried to circumvent the tax by hiding money.",
+   "The firm used {chicanery} to circumvent the safety law."
+  ],
+  "sbn": [
+   "কেউ কেউ নিয়ম এড়িয়ে (circumvent) যায়।",
+   "সে টাকা লুকিয়ে কর ফাঁকি দেওয়ার (circumvent) চেষ্টা করল।",
+   "প্রতিষ্ঠানটি চালাকি করে নিরাপত্তা আইন পাশ কাটাল (circumvent)।"
+  ],
+  "tip": "Latin circum (around) + venire (come): come around the barrier."
+ },
+ {
+  "id": "citadel",
+  "word": "Citadel",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a strong fortress; a stronghold",
+  "bn": "দুর্গ; ঘাঁটি",
+  "s": [
+   "The king hid in the citadel.",
+   "The old citadel on the hill overlooks the whole town.",
+   "The university remained a citadel of free thought, {bolstered} by its fierce independence."
+  ],
+  "sbn": [
+   "রাজা দুর্গে (citadel) লুকালেন।",
+   "পাহাড়ের ওপরের পুরনো দুর্গটা (citadel) পুরো শহরের দিকে তাকিয়ে আছে।",
+   "বিশ্ববিদ্যালয়টি মুক্তচিন্তার ঘাঁটি (citadel) হয়ে রইল, তার তীব্র স্বাধীনতায় আরও শক্তিশালী হয়ে।"
+  ],
+  "tip": "Related to 'city': a citadel guards the city."
+ },
+ {
+  "id": "civil",
+  "word": "Civil",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "polite; relating to ordinary citizens",
+  "bn": "ভদ্র; নাগরিক",
+  "s": [
+   "Please be civil to everyone.",
+   "They had a civil talk despite their anger.",
+   "Though {contentious}, the debate stayed civil from start to finish."
+  ],
+  "sbn": [
+   "সবার সঙ্গে ভদ্র (civil) থেকো।",
+   "রাগ থাকা সত্ত্বেও তারা ভদ্রভাবে (civil) কথা বলল।",
+   "বিতর্কিত হলেও আলোচনাটা শুরু থেকে শেষ পর্যন্ত ভদ্র (civil) ছিল।"
+  ],
+  "tip": "Latin civis = citizen: civil behavior suits a good citizen."
+ },
+ {
+  "id": "clandestine",
+  "word": "Clandestine",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "secret, often because it is illegal",
+  "bn": "গোপন; লুকানো",
+  "s": [
+   "They held a clandestine meeting.",
+   "The clandestine trade in stolen goods grew at night.",
+   "Officers uncovered a clandestine plot to {abscond} with the funds."
+  ],
+  "sbn": [
+   "তারা একটা গোপন (clandestine) বৈঠক করল।",
+   "চোরাই মালের গোপন (clandestine) ব্যবসা রাতে বেড়ে গেল।",
+   "কর্মকর্তারা টাকা নিয়ে পালানোর একটা গোপন (clandestine) চক্রান্ত ফাঁস করলেন।"
+  ],
+  "tip": "Think 'clan + destiny': a clan's secret plan."
+ },
+ {
+  "id": "classic",
+  "word": "Classic",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "of lasting quality; a typical example",
+  "bn": "চিরায়ত; আদর্শ নমুনা",
+  "s": [
+   "This is a classic film.",
+   "The story is a classic tale of love and loss.",
+   "Her {meticulous} study became a classic in the field."
+  ],
+  "sbn": [
+   "এটা একটা চিরায়ত (classic) সিনেমা।",
+   "গল্পটা ভালোবাসা ও হারানোর এক চিরায়ত (classic) কাহিনি।",
+   "তার নিখুঁত গবেষণাটি এই ক্ষেত্রে একটা চিরায়ত (classic) কাজ হয়ে উঠল।"
+  ],
+  "tip": "Latin classicus = of the top class of citizens: top quality."
+ },
+ {
+  "id": "cleave",
+  "word": "Cleave",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to split apart; to stick firmly to",
+  "bn": "চিরে ফেলা; আঁকড়ে থাকা",
+  "s": [
+   "The axe will cleave the log.",
+   "He cleaves to his old beliefs.",
+   "A deep river seemed to cleave the valley, yet the villagers cleave to their {parochial} traditions."
+  ],
+  "sbn": [
+   "কুড়াল কাঠের গুঁড়িটা চিরে (cleave) ফেলবে।",
+   "সে তার পুরনো বিশ্বাস আঁকড়ে (cleaves) থাকে।",
+   "গভীর নদী উপত্যকাটাকে চিরে (cleave) ফেলেছে মনে হয়, তবু গ্রামবাসীরা তাদের সংকীর্ণ ঐতিহ্য আঁকড়ে (cleave) থাকে।"
+  ],
+  "tip": "Cleave is its own opposite: split apart OR cling together. Learn both."
+ },
+ {
+  "id": "clemency",
+  "word": "Clemency",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "mercy, especially in punishment",
+  "bn": "দয়া; ক্ষমা",
+  "s": [
+   "The judge showed clemency.",
+   "The prisoner begged for clemency from the court.",
+   "The governor granted clemency to the {contrite} young man."
+  ],
+  "sbn": [
+   "বিচারক দয়া (clemency) দেখালেন।",
+   "বন্দি আদালতের কাছে ক্ষমা (clemency) চাইল।",
+   "গভর্নর অনুতপ্ত তরুণটিকে ক্ষমা (clemency) করলেন।"
+  ],
+  "tip": "Latin clemens = mild, gentle."
+ },
+ {
+  "id": "cliche",
+  "word": "Cliche",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "an overused phrase or idea",
+  "bn": "পুরনো গতানুগতিক কথা; ক্লিশে",
+  "s": [
+   "'Time heals all' is a cliche.",
+   "The movie was full of cliches.",
+   "The speech was a {banal} string of cliches that inspired no one."
+  ],
+  "sbn": [
+   "'সময়ই সব সারায়' একটা গতানুগতিক বুলি (cliche)।",
+   "সিনেমাটা ক্লিশেতে (cliches) ভরা ছিল।",
+   "বক্তৃতাটা ছিল একঘেয়ে গতানুগতিক বুলির (cliches) সারি, যা কাউকে অনুপ্রাণিত করেনি।"
+  ],
+  "tip": "French: the printer's metal plate that stamped the same words again and again."
+ },
+ {
+  "id": "climatic",
+  "word": "Climatic",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "relating to climate (weather over many years)",
+  "bn": "জলবায়ু সংক্রান্ত",
+  "s": [
+   "Climatic changes harm the crops.",
+   "Climatic conditions in the delta are often harsh.",
+   "Scientists link the {anomalous} floods to wider climatic shifts."
+  ],
+  "sbn": [
+   "জলবায়ুগত (climatic) পরিবর্তন ফসলের ক্ষতি করে।",
+   "ব-দ্বীপ অঞ্চলের জলবায়ুগত (climatic) অবস্থা প্রায়ই কঠিন।",
+   "বিজ্ঞানীরা অস্বাভাবিক বন্যাকে বৃহত্তর জলবায়ুগত (climatic) পরিবর্তনের সঙ্গে যুক্ত করেন।"
+  ],
+  "tip": "Don't confuse with climactic (peak moment). Climatic has no 'c' before 'tic', like climate."
+ },
+ {
+  "id": "clique",
+  "word": "Clique",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a small, closed group of friends",
+  "bn": "উপদল; ছোট গোষ্ঠী",
+  "s": [
+   "She joined a clique at school.",
+   "A clique of senior students ran the club.",
+   "The {contentious} clique shut out anyone who disagreed with it."
+  ],
+  "sbn": [
+   "সে স্কুলে একটা উপদলে (clique) যোগ দিল।",
+   "সিনিয়র ছাত্রদের একটা ছোট গোষ্ঠী (clique) ক্লাবটা চালাত।",
+   "সেই বিতর্কপ্রিয় উপদল (clique) ভিন্নমতের সবাইকে বাইরে রাখল।"
+  ],
+  "tip": "Say 'cleek': a click of friends who stick together."
+ },
+ {
+  "id": "cloister",
+  "word": "Cloister",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a quiet, sheltered place; a monastery; to shut away",
+  "bn": "মঠ; নিরিবিলি আশ্রয়; আড়ালে রাখা",
+  "s": [
+   "The monks walked in the cloister.",
+   "He cloistered himself to write his thesis.",
+   "Life in the cloister was {austere}, with little talk and few comforts."
+  ],
+  "sbn": [
+   "সন্ন্যাসীরা মঠের বারান্দায় (cloister) হাঁটছিলেন।",
+   "থিসিস লেখার জন্য সে নিজেকে নির্জনে আটকে (cloistered) রাখল।",
+   "মঠের (cloister) জীবন ছিল কঠোর, কথা কম আর আরামও কম।"
+  ],
+  "tip": "Latin claustrum = enclosed place, like 'closet'."
+ },
+ {
+  "id": "clone",
+  "word": "Clone",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an exact genetic copy; to make such a copy",
+  "bn": "হুবহু প্রতিলিপি; ক্লোন করা",
+  "s": [
+   "Scientists made a clone of a sheep.",
+   "The new phone is just a clone of a famous brand.",
+   "Cheap clone apps copied the original with {artless} haste, almost line by line."
+  ],
+  "sbn": [
+   "বিজ্ঞানীরা একটা ভেড়ার ক্লোন (clone) বানালেন।",
+   "নতুন ফোনটা একটা নামী ব্র্যান্ডের নকল প্রতিলিপি (clone)।",
+   "সস্তা ক্লোন (clone) অ্যাপগুলো মূল অ্যাপটাকে সরল তাড়াহুড়োয় প্রায় লাইন ধরে নকল করল।"
+  ],
+  "tip": "Greek klon = twig: a new plant grown from a cutting is a copy."
+ },
+ {
+  "id": "clout",
+  "word": "Clout",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "influence and power",
+  "bn": "প্রভাব; ক্ষমতা",
+  "s": [
+   "She has clout in the company.",
+   "A journalist with clout can change public opinion.",
+   "His family's clout helped him {circumvent} the usual rules."
+  ],
+  "sbn": [
+   "কোম্পানিতে তার প্রভাব (clout) আছে।",
+   "প্রভাবশালী (clout) সাংবাদিক জনমত বদলে দিতে পারেন।",
+   "পরিবারের প্রভাব (clout) তাকে সাধারণ নিয়ম এড়াতে সাহায্য করল।"
+  ],
+  "tip": "Old word for a heavy blow: clout hits hard, like power."
+ },
+ {
+  "id": "cloy",
+  "word": "Cloy",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make someone sick of something too sweet or too much",
+  "bn": "অতিরিক্ততায় বিরক্ত ধরানো; অরুচি ধরানো",
+  "s": [
+   "Too much candy will cloy you.",
+   "The sweet music began to cloy after an hour.",
+   "The {saccharine} film cloyed even its most loyal fans."
+  ],
+  "sbn": [
+   "বেশি মিষ্টি খেলে অরুচি ধরে (cloy) যাবে।",
+   "এক ঘণ্টা পরে মিষ্টি গানটা একঘেয়ে লাগতে (cloy) শুরু করল।",
+   "অতি মিষ্টি সিনেমাটা তার একনিষ্ঠ ভক্তদেরও বিরক্ত (cloyed) করল।"
+  ],
+  "tip": "Remember: 'cloy' = 'enough, no more' of sweets."
+ },
+ {
+  "id": "coalesce",
+  "word": "Coalesce",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to come together and form one whole",
+  "bn": "মিলে এক হওয়া; একত্রিত হওয়া",
+  "s": [
+   "Small groups coalesce into one party.",
+   "The drops coalesce into a stream.",
+   "Scattered protests began to coalesce into a powerful, {autonomous} movement."
+  ],
+  "sbn": [
+   "ছোট দলগুলো মিলে একটা দল হয় (coalesce)।",
+   "ফোঁটাগুলো মিলে একটা ধারা হয় (coalesce)।",
+   "ছড়ানো বিক্ষোভগুলো মিলে একটা শক্তিশালী সুসংহত আন্দোলনে রূপ (coalesce) নিতে লাগল।"
+  ],
+  "tip": "Latin co (together) + alescere (grow): grow together."
+ },
+ {
+  "id": "coddle",
+  "word": "Coddle",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to treat too gently; to pamper",
+  "bn": "বেশি আদর দিয়ে নষ্ট করা; আহ্লাদ দেওয়া",
+  "s": [
+   "Don't coddle the child.",
+   "Parents who coddle their kids may stunt their growth.",
+   "The {indulgent} grandmother coddled him until he couldn't tie his own shoes."
+  ],
+  "sbn": [
+   "বাচ্চাকে বেশি আদর দিয়ো না (coddle)।",
+   "বাচ্চাদের বেশি আহ্লাদ দিলে (coddle) তাদের বিকাশ আটকে যেতে পারে।",
+   "প্রশ্রয়দাত্রী দাদি তাকে এত আদর দিলেন (coddled) যে সে নিজের জুতোর ফিতাও বাঁধতে পারত না।"
+  ],
+  "tip": "Coddle sounds like 'cuddle': too much cuddling spoils."
+ },
+ {
+  "id": "coerce",
+  "word": "Coerce",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to force someone by threats or pressure",
+  "bn": "জোর করা; চাপ দিয়ে বাধ্য করা",
+  "s": [
+   "Do not coerce him to sign.",
+   "The gang tried to coerce the shopkeeper into paying.",
+   "The regime did not persuade but coerced, forcing {compliant} citizens to obey."
+  ],
+  "sbn": [
+   "তাকে সই করতে জোর (coerce) করো না।",
+   "দলটা দোকানদারকে টাকা দিতে বাধ্য (coerce) করার চেষ্টা করল।",
+   "শাসকগোষ্ঠী বোঝাত না, বরং জোর (coerced) করত, বাধ্য নাগরিকদের আনুগত্যে ঠেলে দিত।"
+  ],
+  "tip": "Latin coercere = to hold in. Coerce = hold someone in by force."
+ },
+ {
+  "id": "cogitate",
+  "word": "Cogitate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to think deeply about something",
+  "bn": "গভীরভাবে ভাবা; চিন্তা করা",
+  "s": [
+   "Let me cogitate on that.",
+   "He sat alone to cogitate about his future.",
+   "The philosopher would cogitate for hours over one {abstruse} problem."
+  ],
+  "sbn": [
+   "আমাকে এটা নিয়ে ভাবতে (cogitate) দাও।",
+   "নিজের ভবিষ্যৎ নিয়ে গভীরভাবে ভাবতে (cogitate) সে একা বসল।",
+   "দার্শনিক একটা দুর্বোধ্য সমস্যা নিয়ে ঘণ্টার পর ঘণ্টা গভীর চিন্তা (cogitate) করতেন।"
+  ],
+  "tip": "Latin cogitare = to think. 'Cogito, ergo sum' = I think, therefore I am."
+ },
+ {
+  "id": "cognitive",
+  "word": "Cognitive",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "relating to thinking and understanding",
+  "bn": "বোধগত; মানসিক চিন্তাসংক্রান্ত",
+  "s": [
+   "Reading builds cognitive skills.",
+   "Sleep helps children's cognitive growth.",
+   "Cognitive tests revealed an {anomalous} pattern in how patients recalled words."
+  ],
+  "sbn": [
+   "পড়াশোনা বোধগত (cognitive) দক্ষতা বাড়ায়।",
+   "ঘুম শিশুদের চিন্তাশক্তির (cognitive) বিকাশে সাহায্য করে।",
+   "চিন্তাশক্তির (cognitive) পরীক্ষায় রোগীদের শব্দ মনে রাখার একটা অস্বাভাবিক ধরন ধরা পড়ল।"
+  ],
+  "tip": "Latin cognoscere = to know. Cognitive = about knowing and thinking."
+ },
+ {
+  "id": "cognizant",
+  "word": "Cognizant",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "aware of something",
+  "bn": "সচেতন; অবহিত",
+  "s": [
+   "Be cognizant of the risks.",
+   "Is he cognizant of the new rule?",
+   "Cognizant of the {precarious} situation, the captain ordered a retreat."
+  ],
+  "sbn": [
+   "ঝুঁকিগুলো সম্পর্কে সচেতন (cognizant) থেকো।",
+   "সে কি নতুন নিয়মটা সম্পর্কে অবহিত (cognizant)?",
+   "অনিশ্চিত পরিস্থিতি সম্পর্কে সচেতন (cognizant) হয়ে ক্যাপ্টেন পিছু হটার আদেশ দিলেন।"
+  ],
+  "tip": "Latin cognoscere = to know, same root as 'recognize'."
+ },
+ {
+  "id": "coherent",
+  "word": "Coherent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "logical, clear and well connected",
+  "bn": "সুসংগত; যুক্তিপূর্ণ",
+  "s": [
+   "Give a coherent answer.",
+   "Her essay was clear and coherent.",
+   "The {ambiguous} draft became a coherent argument after careful editing."
+  ],
+  "sbn": [
+   "একটা সুসংগত (coherent) উত্তর দাও।",
+   "তার রচনাটা পরিষ্কার ও সুসংগত (coherent) ছিল।",
+   "অস্পষ্ট খসড়াটা যত্ন করে সম্পাদনার পর একটা সুসংগত (coherent) যুক্তিতে পরিণত হল।"
+  ],
+  "tip": "Latin co (together) + haerere (stick): ideas stick together."
+ },
+ {
+  "id": "cohort",
+  "word": "Cohort",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a group of people with something in common; a companion",
+  "bn": "সহযাত্রী দল; সঙ্গী",
+  "s": [
+   "Our cohort starts school together.",
+   "The study followed a cohort of students for ten years.",
+   "The leader and his cohorts were charged in the {collusion} case."
+  ],
+  "sbn": [
+   "আমাদের দলটা (cohort) একসঙ্গে স্কুল শুরু করে।",
+   "গবেষণাটা একদল ছাত্রকে (cohort) দশ বছর ধরে অনুসরণ করল।",
+   "নেতা ও তার সঙ্গীরা (cohorts) যোগসাজশের মামলায় অভিযুক্ত হল।"
+  ],
+  "tip": "A Roman cohort was a group of soldiers marching together."
+ },
+ {
+  "id": "colloquial",
+  "word": "Colloquial",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "used in everyday casual speech",
+  "bn": "কথ্য; চলিত",
+  "s": [
+   "'Gonna' is colloquial English.",
+   "Colloquial speech is fine among friends.",
+   "Her {artless} colloquial style made the lecture lively and easy to follow."
+  ],
+  "sbn": [
+   "'Gonna' হল ইংরেজির কথ্য (colloquial) রূপ।",
+   "বন্ধুদের মধ্যে কথ্য (colloquial) ভাষা চলে।",
+   "তার সহজ সরল চলিত (colloquial) ভঙ্গি বক্তৃতাটাকে প্রাণবন্ত ও সহজবোধ্য করল।"
+  ],
+  "tip": "Latin colloquium = conversation: colloquial = like casual chat."
+ },
+ {
+  "id": "collusion",
+  "word": "Collusion",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "secret cooperation to cheat or deceive",
+  "bn": "যোগসাজশ; গোপন সমঝোতা",
+  "s": [
+   "They were caught in collusion.",
+   "The shops fixed prices in collusion.",
+   "Evidence of collusion between officials and bidders led to an {egregious} scandal."
+  ],
+  "sbn": [
+   "তারা যোগসাজশে (collusion) ধরা পড়ল।",
+   "দোকানগুলো যোগসাজশ করে (collusion) দাম ঠিক করল।",
+   "কর্মকর্তা ও দরদাতাদের মধ্যে যোগসাজশের (collusion) প্রমাণ এক জঘন্য কেলেঙ্কারির জন্ম দিল।"
+  ],
+  "tip": "Latin col (together) + ludere (play): playing together in secret."
+ },
+ {
+  "id": "commemorate",
+  "word": "Commemorate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to honor the memory of a person or event",
+  "bn": "স্মরণ করা; স্মরণোৎসব পালন করা",
+  "s": [
+   "We commemorate Language Martyrs' Day.",
+   "A statue was built to commemorate the hero.",
+   "The nation gathered to commemorate those who made a {momentous} sacrifice."
+  ],
+  "sbn": [
+   "আমরা শহীদ দিবস স্মরণ (commemorate) করি।",
+   "বীরের স্মরণে (commemorate) একটা মূর্তি তৈরি হল।",
+   "যাঁরা এক যুগান্তকারী ত্যাগ করেছেন, তাঁদের স্মরণ (commemorate) করতে জাতি একত্র হল।"
+  ],
+  "tip": "Latin com (together) + memorare (remember): remember together."
+ },
+ {
+  "id": "commiserate",
+  "word": "Commiserate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to share sorrow with someone; to sympathize",
+  "bn": "সহানুভূতি জানানো; দুঃখে শরিক হওয়া",
+  "s": [
+   "I came to commiserate with you.",
+   "Friends gathered to commiserate after the loss.",
+   "She called to commiserate with her friend, who felt {contrite} about it, after the failed exam."
+  ],
+  "sbn": [
+   "আমি তোমার দুঃখে সহানুভূতি জানাতে (commiserate) এসেছি।",
+   "হারের পর বন্ধুরা সমবেদনা জানাতে (commiserate) জড়ো হল।",
+   "পরীক্ষায় ফেল করা অনুতপ্ত বন্ধুকে সমবেদনা জানাতে (commiserate) সে ফোন করল।"
+  ],
+  "tip": "Same root as 'misery': com + miser = feel misery together."
+ },
+ {
+  "id": "commodious",
+  "word": "Commodious",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "roomy and comfortable",
+  "bn": "প্রশস্ত; আরামদায়ক",
+  "s": [
+   "The house is commodious.",
+   "We enjoyed a commodious seat on the train.",
+   "The {opulent} but commodious villa could host fifty guests."
+  ],
+  "sbn": [
+   "বাড়িটা প্রশস্ত (commodious)।",
+   "ট্রেনে আমরা প্রশস্ত আরামদায়ক (commodious) আসন পেয়ে খুশি হলাম।",
+   "জাঁকজমকপূর্ণ কিন্তু প্রশস্ত (commodious) ভিলাটায় পঞ্চাশ জন অতিথি থাকতে পারত।"
+  ],
+  "tip": "Latin commodus = convenient. Commodious = convenient because of space."
+ },
+ {
+  "id": "compatible",
+  "word": "Compatible",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "able to work or live well together",
+  "bn": "খাপ খায় এমন; সামঞ্জস্যপূর্ণ",
+  "s": [
+   "This charger is compatible with my phone.",
+   "They are compatible roommates.",
+   "Their goals were {contentious} at first but became compatible after talks."
+  ],
+  "sbn": [
+   "এই চার্জারটা আমার ফোনের সঙ্গে খাপ খায় (compatible)।",
+   "তারা মানানসই (compatible) রুমমেট।",
+   "তাদের লক্ষ্য প্রথমে অসংগত ছিল, কিন্তু আলোচনার পর সামঞ্জস্যপূর্ণ (compatible) হল।"
+  ],
+  "tip": "Latin com (together) + pati (suffer): able to bear each other."
+ },
+ {
+  "id": "compelling",
+  "word": "Compelling",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "very convincing or very interesting",
+  "bn": "বাধ্যকারী; প্রবল আকর্ষণীয়",
+  "s": [
+   "She gave a compelling speech.",
+   "The lawyer made a compelling case for his client.",
+   "A {cogent} and compelling argument swayed even the skeptics."
+  ],
+  "sbn": [
+   "সে একটা প্রভাবশালী (compelling) বক্তৃতা দিল।",
+   "উকিল মক্কেলের পক্ষে একটা জোরালো (compelling) যুক্তি দিলেন।",
+   "একটা যুক্তিসম্পন্ন ও প্রবল (compelling) যুক্তি সন্দেহবাদীদেরও টলিয়ে দিল।"
+  ],
+  "tip": "From 'compel' = force: a compelling story forces you to listen."
+ },
+ {
+  "id": "competent",
+  "word": "Competent",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "having the skill to do something well",
+  "bn": "দক্ষ; যোগ্য",
+  "s": [
+   "She is a competent driver.",
+   "A competent doctor will find the problem quickly.",
+   "The team, though not brilliant, was competent and {assiduous}."
+  ],
+  "sbn": [
+   "সে একজন দক্ষ (competent) চালক।",
+   "একজন যোগ্য (competent) ডাক্তার দ্রুত সমস্যা ধরবেন।",
+   "দলটা অসাধারণ না হলেও দক্ষ (competent) ও পরিশ্রমী ছিল।"
+  ],
+  "tip": "Latin competere = be suitable. Competent = suited for the job."
+ },
+ {
+  "id": "compile",
+  "word": "Compile",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to collect information into a list or book",
+  "bn": "সংকলন করা; জড়ো করা",
+  "s": [
+   "I will compile a list of names.",
+   "She compiled data from many surveys.",
+   "The scholar spent years to compile a {compendium} of folk tales."
+  ],
+  "sbn": [
+   "আমি নামের একটা তালিকা তৈরি (compile) করব।",
+   "সে অনেক জরিপ থেকে তথ্য সংকলন (compile) করল।",
+   "পণ্ডিত লোককথার একটা সংকলন (compendium) তৈরি করতে (compile) কয়েক বছর কাটালেন।"
+  ],
+  "tip": "Latin compilare = to pile together; compile = pile up info."
+ },
+ {
+  "id": "complacent",
+  "word": "Complacent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "too satisfied and not trying to improve",
+  "bn": "আত্মতুষ্ট; নিশ্চিন্ত",
+  "s": [
+   "Don't be complacent after one win.",
+   "A complacent student may fail the exam.",
+   "The {lethargic} and complacent team ignored the growing threat."
+  ],
+  "sbn": [
+   "একটা জয়ে আত্মতুষ্ট (complacent) হয়ো না।",
+   "আত্মতুষ্ট (complacent) ছাত্র পরীক্ষায় ফেল করতে পারে।",
+   "অলস ও আত্মতুষ্ট (complacent) দলটা বাড়তে থাকা হুমকি উপেক্ষা করল।"
+  ],
+  "tip": "Latin complacere = to please greatly: pleased with yourself. Not complaisant."
+ },
+ {
+  "id": "complement",
+  "word": "Complement",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "something that completes or goes well with another; to complete",
+  "bn": "পরিপূরক; পূর্ণ করা",
+  "s": [
+   "Rice is a complement to curry.",
+   "The blue scarf complements her dress.",
+   "The two scholars' skills complement each other, {bolstering} the whole project."
+  ],
+  "sbn": [
+   "ভাত তরকারির পরিপূরক (complement)।",
+   "নীল স্কার্ফটা তার পোশাকের সঙ্গে মানানসই (complements)।",
+   "দুই পণ্ডিতের দক্ষতা একে অপরের পরিপূরক (complement), পুরো প্রকল্পকে শক্তিশালী করছে।"
+  ],
+  "tip": "Complement has 'complete'; compliment (with i) means praise."
+ },
+ {
+  "id": "complicity",
+  "word": "Complicity",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "involvement in a wrongdoing",
+  "bn": "অপকর্মে অংশীদারিত্ব; সহযোগিতা",
+  "s": [
+   "He denied any complicity in the theft.",
+   "Her silence suggested complicity in the lie.",
+   "The officer's complicity in the {chicanery} was exposed in court."
+  ],
+  "sbn": [
+   "চুরিতে তার যে কোনো সম্পৃক্ততা (complicity) ছিল, সে তা অস্বীকার করল।",
+   "তার নীরবতা মিথ্যায় সহযোগিতার (complicity) ইঙ্গিত দিল।",
+   "চালাকিতে কর্মকর্তার সহযোগিতা (complicity) আদালতে ফাঁস হয়ে গেল।"
+  ],
+  "tip": "Same root as 'accomplice': a partner in crime."
+ },
+ {
+  "id": "comply",
+  "word": "Comply",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to obey a rule or do what is asked",
+  "bn": "মেনে চলা; পালন করা; সম্মত হওয়া",
+  "s": [
+   "You must comply with the rules.",
+   "Factories that do not comply with safety laws can be shut down.",
+   "The {recalcitrant} firm refused to comply until regulators threatened a {punitive} fine."
+  ],
+  "sbn": [
+   "তোমাকে নিয়মগুলো মেনে চলতে (comply) হবে।",
+   "যেসব কারখানা নিরাপত্তা আইন মেনে চলে না (comply), সেগুলো বন্ধ করে দেওয়া হতে পারে।",
+   "একগুঁয়ে প্রতিষ্ঠানটা নিয়ম মানতে (comply) রাজি হয়নি, যতক্ষণ না নিয়ন্ত্রকেরা কঠোর শাস্তিমূলক জরিমানার হুমকি দিলেন।"
+  ],
+  "tip": "Comply and compliant go together: you do what is asked. It goes back to Latin complere = to fulfil."
+ },
+ {
+  "id": "composed",
+  "word": "Composed",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "calm and in control of one's feelings",
+  "bn": "শান্ত; স্থির; ধীরস্থির",
+  "s": [
+   "She stayed composed during the exam.",
+   "Even when the crowd booed, the speaker remained composed and finished her talk.",
+   "The pilot stayed composed and {imperturbable}, and her steady voice reassured the {apprehensive} passengers."
+  ],
+  "sbn": [
+   "পরীক্ষার সময় সে শান্ত (composed) ছিল।",
+   "দর্শকেরা দুয়ো দিলেও বক্তা স্থির (composed) থেকে নিজের বক্তৃতা শেষ করলেন।",
+   "পাইলট শান্ত (composed) ও অবিচল রইলেন, আর তাঁর স্থির কণ্ঠ উদ্বিগ্ন যাত্রীদের আশ্বস্ত করল।"
+  ],
+  "tip": "To compose is to put together; a composed person has their feelings put together."
+ },
+ {
+  "id": "comprehensive",
+  "word": "Comprehensive",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "complete; including everything or nearly everything",
+  "bn": "ব্যাপক; সর্বাঙ্গীণ; পূর্ণাঙ্গ",
+  "s": [
+   "We need a comprehensive plan.",
+   "The final exam is comprehensive, covering every chapter from the semester.",
+   "The {exhaustive} report offered a comprehensive {synthesis} of fifty years of research."
+  ],
+  "sbn": [
+   "আমাদের একটা পূর্ণাঙ্গ (comprehensive) পরিকল্পনা দরকার।",
+   "ফাইনাল পরীক্ষাটা ব্যাপক (comprehensive), সেমিস্টারের প্রতিটি অধ্যায় এতে আছে।",
+   "বিস্তারিত প্রতিবেদনটা পঞ্চাশ বছরের গবেষণার একটা সর্বাঙ্গীণ (comprehensive) সমন্বয় তুলে ধরেছিল।"
+  ],
+  "tip": "To comprehend is to grasp fully; something comprehensive grasps everything."
+ },
+ {
+  "id": "comprise",
+  "word": "Comprise",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to consist of; to be made up of",
+  "bn": "নিয়ে গঠিত হওয়া; অন্তর্ভুক্ত করা",
+  "s": [
+   "The team comprises eleven players.",
+   "Bangladesh comprises eight divisions, each with its own districts.",
+   "The committee comprises {disparate} experts whose views often {diverge}."
+  ],
+  "sbn": [
+   "দলটা এগারোজন খেলোয়াড় নিয়ে গঠিত (comprises)।",
+   "বাংলাদেশ আটটি বিভাগ নিয়ে গঠিত (comprises), আর প্রতিটির নিজস্ব জেলা আছে।",
+   "কমিটিটা ভিন্ন ভিন্ন ধরনের বিশেষজ্ঞদের নিয়ে গঠিত (comprises), যাদের মত প্রায়ই আলাদা হয়ে যায়।"
+  ],
+  "tip": "The whole comprises the parts, with no 'of': a team comprises players."
+ },
+ {
+  "id": "compromise",
+  "word": "Compromise",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an agreement where each side gives up something; (verb) to weaken or put at risk",
+  "bn": "আপস; সমঝোতা; ঝুঁকিতে ফেলা",
+  "s": [
+   "They reached a compromise.",
+   "After hours of talks, both sides agreed to a compromise on the new working hours.",
+   "The {intransigence} of both parties made compromise impossible, and the talks reached an {impasse}."
+  ],
+  "sbn": [
+   "তারা একটা সমঝোতায় (compromise) পৌঁছাল।",
+   "কয়েক ঘণ্টা আলোচনার পর দুই পক্ষ নতুন কর্মঘণ্টা নিয়ে আপসে (compromise) রাজি হলো।",
+   "দুই দলেরই একগুঁয়েমির কারণে আপস (compromise) অসম্ভব হয়ে পড়ল, আর আলোচনা অচলাবস্থায় আটকে গেল।"
+  ],
+  "tip": "Latin com- + promittere = to promise together: both sides promise to give a little."
+ },
+ {
+  "id": "compunction",
+  "word": "Compunction",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a feeling of guilt or regret that may stop you from doing wrong",
+  "bn": "অনুশোচনা; বিবেকের দংশন; অপরাধবোধ",
+  "s": [
+   "He lied without compunction.",
+   "She felt some compunction about skipping her friend's party.",
+   "The {callous} con man felt no compunction about cheating {gullible} pensioners."
+  ],
+  "sbn": [
+   "সে কোনো অপরাধবোধ (compunction) ছাড়াই মিথ্যা বলল।",
+   "বন্ধুর পার্টিতে না যাওয়ায় তার কিছুটা অনুশোচনা (compunction) হচ্ছিল।",
+   "নির্দয় প্রতারক সহজে বিশ্বাস করা পেনশনভোগীদের ঠকাতে একটুও বিবেকের দংশন (compunction) অনুভব করত না।"
+  ],
+  "tip": "Latin com- + pungere = to prick: compunction is a prick of conscience."
+ },
+ {
+  "id": "concave",
+  "word": "Concave",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "curved inward, like the inside of a bowl",
+  "bn": "অবতল; ভেতরের দিকে বাঁকা",
+  "s": [
+   "A spoon has a concave side.",
+   "The concave mirror made his face look huge when he stood close.",
+   "The {edifice} had a concave front meant to {evoke} an open, welcoming hand."
+  ],
+  "sbn": [
+   "চামচের একটা দিক অবতল (concave)।",
+   "কাছে দাঁড়ালে অবতল (concave) আয়নাটা তার মুখটা বিশাল দেখাত।",
+   "বিশাল ভবনটার সামনের অংশ ছিল অবতল (concave), যাতে খোলা, স্বাগত জানানো একটা হাতের কথা মনে পড়ে।"
+  ],
+  "tip": "Concave goes in, like a cave."
+ },
+ {
+  "id": "concede",
+  "word": "Concede",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to admit something is true, often unwillingly; to give up or surrender",
+  "bn": "স্বীকার করা; মেনে নেওয়া; ছেড়ে দেওয়া",
+  "s": [
+   "He conceded that he was wrong.",
+   "After the votes were counted, the candidate conceded defeat and congratulated her rival.",
+   "The {obdurate} minister finally conceded the point, though he refused to {recant} his earlier remarks."
+  ],
+  "sbn": [
+   "সে স্বীকার করল (conceded) যে সে ভুল ছিল।",
+   "ভোট গণনার পর প্রার্থী পরাজয় মেনে নিলেন (conceded) এবং প্রতিদ্বন্দ্বীকে অভিনন্দন জানালেন।",
+   "একগুঁয়ে মন্ত্রী শেষমেশ বিষয়টা মেনে নিলেন (conceded), যদিও আগের মন্তব্য প্রত্যাহার করতে রাজি হলেন না।"
+  ],
+  "tip": "Latin concedere = to yield, give way."
+ },
+ {
+  "id": "concentric",
+  "word": "Concentric",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "having the same center, like circles inside one another",
+  "bn": "সমকেন্দ্রিক",
+  "s": [
+   "A dartboard has concentric circles.",
+   "Throwing a stone into the pond made concentric ripples spread across the water.",
+   "The city grew in concentric rings, with {opulent} villas at the center and {dilapidated} slums at the edge."
+  ],
+  "sbn": [
+   "ডার্টবোর্ডে সমকেন্দ্রিক (concentric) বৃত্ত থাকে।",
+   "পুকুরে ঢিল ছুড়লে পানিতে সমকেন্দ্রিক (concentric) ঢেউ ছড়িয়ে পড়ল।",
+   "শহরটা সমকেন্দ্রিক (concentric) বলয়ে বেড়েছে, কেন্দ্রে বিলাসবহুল বাড়ি আর প্রান্তে জরাজীর্ণ বস্তি।"
+  ],
+  "tip": "con- = together + centric = center: circles that share one center."
+ },
+ {
+  "id": "concert",
+  "word": "Concert",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a musical performance; (in concert) working together",
+  "bn": "সংগীতানুষ্ঠান; সম্মিলিত প্রচেষ্টা; একযোগে",
+  "s": [
+   "We went to a rock concert.",
+   "The two countries acted in concert to stop smuggling across the border.",
+   "Working in concert, the {disparate} factions managed to {thwart} the dictator's plans."
+  ],
+  "sbn": [
+   "আমরা একটা রক কনসার্টে (concert) গিয়েছিলাম।",
+   "সীমান্তে চোরাচালান বন্ধ করতে দুই দেশ একযোগে (in concert) কাজ করল।",
+   "একযোগে (in concert) কাজ করে ভিন্ন ভিন্ন দলগুলো স্বৈরশাসকের পরিকল্পনা ভেস্তে দিতে পারল।"
+  ],
+  "tip": "In concert means together, like musicians playing as one group."
+ },
+ {
+  "id": "concise",
+  "word": "Concise",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "short and clear; saying a lot in few words",
+  "bn": "সংক্ষিপ্ত; সারগর্ভ; অল্প কথায়",
+  "s": [
+   "Keep your answer concise.",
+   "Her concise report fit on one page but covered every key point.",
+   "Unlike his {verbose} rivals, the {laconic} writer was praised for his concise style."
+  ],
+  "sbn": [
+   "তোমার উত্তর সংক্ষিপ্ত (concise) রাখো।",
+   "তার সংক্ষিপ্ত (concise) প্রতিবেদনটা এক পাতায় এঁটে গেলেও প্রতিটি মূল বিষয় তুলে ধরেছিল।",
+   "শব্দবহুল প্রতিদ্বন্দ্বীদের বিপরীতে স্বল্পভাষী লেখক তার সারগর্ভ (concise) লেখার ধরনের জন্য প্রশংসা পেলেন।"
+  ],
+  "tip": "Latin concidere = to cut up; concise writing is cut down to the essentials."
+ },
+ {
+  "id": "concoct",
+  "word": "Concoct",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make up a story or excuse; to make a dish by mixing things",
+  "bn": "বানানো; মনগড়া কিছু তৈরি করা; মিশিয়ে রান্না করা",
+  "s": [
+   "He concocted an excuse for being late.",
+   "She concocted a tasty soup from leftover vegetables.",
+   "The swindler concocted a {plausible} tale to {dupe} investors."
+  ],
+  "sbn": [
+   "দেরি হওয়ার জন্য সে একটা অজুহাত বানাল (concocted)।",
+   "বেঁচে যাওয়া সবজি মিশিয়ে সে একটা মজার স্যুপ বানাল (concocted)।",
+   "প্রতারক বিনিয়োগকারীদের ঠকাতে একটা বিশ্বাসযোগ্য শোনানো গল্প বানাল (concocted)।"
+  ],
+  "tip": "Latin concoquere = to cook together; you can concoct a dish or cook up a story."
+ },
+ {
+  "id": "concomitant",
+  "word": "Concomitant",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "happening together with something else; accompanying",
+  "bn": "সহগামী; আনুষঙ্গিক; সঙ্গে ঘটে এমন",
+  "s": [
+   "Fever is often concomitant with flu.",
+   "Rapid growth brought concomitant problems such as traffic and pollution.",
+   "The {aftermath} of the war brought famine and its concomitant diseases, which {decimated} the villages."
+  ],
+  "sbn": [
+   "জ্বর প্রায়ই ফ্লুর সাথে সাথে আসে (concomitant)।",
+   "দ্রুত উন্নয়নের সাথে এসেছিল যানজট আর দূষণের মতো আনুষঙ্গিক (concomitant) সমস্যা।",
+   "যুদ্ধের পরবর্তী সময়ে এসেছিল দুর্ভিক্ষ আর তার সহগামী (concomitant) রোগবালাই, যা গ্রামগুলোকে উজাড় করে দিয়েছিল।"
+  ],
+  "tip": "Latin com- + comitari = to accompany (comes = companion)."
+ },
+ {
+  "id": "concord",
+  "word": "Concord",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "agreement; peace and harmony",
+  "bn": "ঐক্য; সম্প্রীতি; মতৈক্য",
+  "s": [
+   "The villagers lived in concord.",
+   "The treaty brought years of concord between the two old enemies.",
+   "After years of {strife}, the neighbors reached a fragile concord, though old {rancor} lingered."
+  ],
+  "sbn": [
+   "গ্রামবাসীরা সম্প্রীতির (concord) মধ্যে বাস করত।",
+   "চুক্তিটা দুই পুরনো শত্রুর মধ্যে বহু বছরের সম্প্রীতি (concord) এনে দিয়েছিল।",
+   "বছরের পর বছর বিবাদের পর প্রতিবেশীরা একটা নাজুক ঐক্যে (concord) পৌঁছাল, যদিও পুরনো বিদ্বেষ রয়ে গেল।"
+  ],
+  "tip": "Latin con- = together + cor = heart: hearts beating together."
+ },
+ {
+  "id": "concurrent",
+  "word": "Concurrent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "happening or existing at the same time",
+  "bn": "একই সময়ে ঘটমান; যুগপৎ; সমান্তরাল",
+  "s": [
+   "The two classes are concurrent.",
+   "He is serving two concurrent prison sentences, so both run at the same time.",
+   "Concurrent crises in health and finance {exacerbated} the nation's {malaise}."
+  ],
+  "sbn": [
+   "ক্লাস দুটো একই সময়ে (concurrent) হয়।",
+   "সে দুটো যুগপৎ (concurrent) কারাদণ্ড ভোগ করছে, অর্থাৎ দুটোই একই সময়ে চলছে।",
+   "স্বাস্থ্য আর অর্থনীতিতে একই সময়ে ঘটা (concurrent) সংকট দেশের অস্থিরতা আরও বাড়িয়ে দিল।"
+  ],
+  "tip": "Latin con- + currere = to run: things running together in time."
+ },
+ {
+  "id": "condescend",
+  "word": "Condescend",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to act as if you are better than others; to do something you feel is beneath you",
+  "bn": "তাচ্ছিল্য দেখানো; নিচু চোখে দেখা; কৃপা করে করা",
+  "s": [
+   "Don't condescend to new students.",
+   "The manager condescended to the interns, explaining simple tasks as if they were children.",
+   "The {supercilious} critic condescended to the young author, his {patronizing} tone obvious to everyone."
+  ],
+  "sbn": [
+   "নতুন ছাত্রছাত্রীদের তাচ্ছিল্য করো না (condescend)।",
+   "ম্যানেজার ইন্টার্নদের নিচু চোখে দেখতেন (condescended), সহজ কাজও এমনভাবে বোঝাতেন যেন তারা শিশু।",
+   "দাম্ভিক সমালোচক তরুণ লেখকের সাথে তাচ্ছিল্যভরে কথা বললেন (condescended), তাঁর কৃপা দেখানোর সুর সবার কাছেই স্পষ্ট ছিল।"
+  ],
+  "tip": "con- + descend: to come down to others' level, but proudly."
+ },
+ {
+  "id": "conducive",
+  "word": "Conducive",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "helping something to happen; favorable",
+  "bn": "সহায়ক; অনুকূল",
+  "s": [
+   "A quiet room is conducive to study.",
+   "Warm, wet weather is conducive to the growth of mosquitoes.",
+   "The {tumult} of the capital was hardly conducive to the {introspective} life the poet wanted."
+  ],
+  "sbn": [
+   "শান্ত ঘর পড়াশোনার জন্য সহায়ক (conducive)।",
+   "গরম, ভেজা আবহাওয়া মশা বাড়ার জন্য অনুকূল (conducive)।",
+   "রাজধানীর হট্টগোল কবির কাঙ্ক্ষিত আত্মমগ্ন জীবনের জন্য মোটেও অনুকূল (conducive) ছিল না।"
+  ],
+  "tip": "Latin conducere = to lead together; conducive conditions lead to a result."
+ },
+ {
+  "id": "confederate",
+  "word": "Confederate",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a partner or helper, especially in a secret or illegal plan; an ally",
+  "bn": "সহযোগী; সঙ্গী; দোসর",
+  "s": [
+   "The thief had a confederate.",
+   "The magician's confederate sat in the audience, pretending to be a stranger.",
+   "Police discovered that the {charlatan} relied on confederates who wrote {spurious} reviews."
+  ],
+  "sbn": [
+   "চোরটার একজন সহযোগী (confederate) ছিল।",
+   "জাদুকরের সহযোগী (confederate) অচেনা লোকের ভান করে দর্শকদের মধ্যে বসে ছিল।",
+   "পুলিশ জানতে পারল, ভণ্ড লোকটা এমন দোসরদের (confederates) ওপর নির্ভর করত যারা ভুয়া রিভিউ লিখত।"
+  ],
+  "tip": "Latin foedus = league, treaty; confederates are joined in a league."
+ },
+ {
+  "id": "confer",
+  "word": "Confer",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to discuss and exchange ideas; to give (an honor, degree or right)",
+  "bn": "পরামর্শ করা; আলোচনা করা; প্রদান করা",
+  "s": [
+   "The doctors conferred about the case.",
+   "The university conferred an honorary degree on the famous scientist.",
+   "Before ruling, the judges conferred privately, aware that their verdict would set a {precedent}."
+  ],
+  "sbn": [
+   "ডাক্তাররা রোগীর বিষয়টা নিয়ে পরামর্শ করলেন (conferred)।",
+   "বিশ্ববিদ্যালয় বিখ্যাত বিজ্ঞানীকে সম্মানসূচক ডিগ্রি প্রদান করল (conferred)।",
+   "রায় দেওয়ার আগে বিচারকেরা একান্তে আলোচনা করলেন (conferred), কারণ তারা জানতেন তাদের রায় একটা নজির হয়ে থাকবে।"
+  ],
+  "tip": "Latin conferre = to bring together: bring ideas together, or bring an honor to someone."
+ },
+ {
+  "id": "confidant",
+  "word": "Confidant",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a close, trusted friend you share secrets with",
+  "bn": "অন্তরঙ্গ বন্ধু; বিশ্বস্ত সঙ্গী",
+  "s": [
+   "My sister is my confidant.",
+   "The king's chief confidant knew all his plans before anyone else.",
+   "The {reticent} actress had only one confidant, to whom she would {divulge} her fears."
+  ],
+  "sbn": [
+   "আমার বোন আমার অন্তরঙ্গ বন্ধু (confidant)।",
+   "রাজার প্রধান বিশ্বস্ত সঙ্গী (confidant) সবার আগে তার সব পরিকল্পনা জানতেন।",
+   "চাপা স্বভাবের অভিনেত্রীর একজনই অন্তরঙ্গ বন্ধু (confidant) ছিল, যার কাছে তিনি নিজের ভয়ের কথা খুলে বলতেন।"
+  ],
+  "tip": "Latin confidere = to trust fully; a confidant is someone you confide in."
+ },
+ {
+  "id": "configuration",
+  "word": "Configuration",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the way parts are arranged; a setup",
+  "bn": "বিন্যাস; গঠন; সজ্জা",
+  "s": [
+   "Check the configuration of your computer.",
+   "The new configuration of desks made the classroom feel more open.",
+   "The {intricate} configuration of the molecule {confounded} early researchers."
+  ],
+  "sbn": [
+   "তোমার কম্পিউটারের কনফিগারেশন বা বিন্যাস (configuration) পরীক্ষা করো।",
+   "বেঞ্চগুলোর নতুন বিন্যাসে (configuration) ক্লাসরুমটা আরও খোলামেলা লাগছিল।",
+   "অণুটার জটিল গঠন (configuration) শুরুর দিকের গবেষকদের বিভ্রান্ত করেছিল।"
+  ],
+  "tip": "Latin configurare = to shape after a pattern (figura = shape, form)."
+ },
+ {
+  "id": "conflagration",
+  "word": "Conflagration",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a huge, destructive fire; a large conflict or war",
+  "bn": "ভয়াবহ অগ্নিকাণ্ড; বিশাল আগুন; বড় সংঘাত",
+  "s": [
+   "The conflagration destroyed the market.",
+   "A small kitchen fire became a conflagration that burned the whole block.",
+   "One {inflammatory} speech sparked a political conflagration that the government could not {quell}."
+  ],
+  "sbn": [
+   "ভয়াবহ অগ্নিকাণ্ডে (conflagration) বাজারটা পুড়ে ছাই হয়ে গেল।",
+   "রান্নাঘরের ছোট্ট আগুন বিশাল অগ্নিকাণ্ডে (conflagration) পরিণত হয়ে পুরো এলাকা পুড়িয়ে দিল।",
+   "একটা উসকানিমূলক ভাষণ এমন রাজনৈতিক সংঘাতের আগুন (conflagration) জ্বালাল যা সরকার দমন করতে পারল না।"
+  ],
+  "tip": "Latin con- + flagrare = to burn (as in flagrant): everything burning at once."
+ },
+ {
+  "id": "confluence",
+  "word": "Confluence",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "the place where two rivers meet; a coming together of things",
+  "bn": "সংগমস্থল; মোহনা; মিলন",
+  "s": [
+   "The town lies at a river confluence.",
+   "Chandpur sits near the confluence of the Padma and the Meghna.",
+   "The movement's success came from a {fortuitous} confluence of economic despair and {charismatic} leadership."
+  ],
+  "sbn": [
+   "শহরটা নদীর সংগমস্থলে (confluence) অবস্থিত।",
+   "চাঁদপুর পদ্মা আর মেঘনার মিলনস্থলের (confluence) কাছে অবস্থিত।",
+   "আন্দোলনের সাফল্য এসেছিল অর্থনৈতিক হতাশা আর ক্যারিশম্যাটিক নেতৃত্বের এক কাকতালীয় মিলন (confluence) থেকে।"
+  ],
+  "tip": "Latin con- + fluere = to flow: flowing together."
+ },
+ {
+  "id": "congeal",
+  "word": "Congeal",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to become thick or solid, especially when cooling",
+  "bn": "জমাট বাঁধা; ঘন হয়ে যাওয়া",
+  "s": [
+   "The fat congealed in the pan.",
+   "Left on the table, the gravy congealed into a cold, sticky layer.",
+   "As the debate dragged on, vague ideas congealed into {dogmatic} positions that no one would {relinquish}."
+  ],
+  "sbn": [
+   "প্যানে চর্বিটা জমাট বেঁধে গেল (congealed)।",
+   "টেবিলে পড়ে থাকা ঝোলটা জমে (congealed) একটা ঠান্ডা, আঠালো স্তর হয়ে গেল।",
+   "বিতর্ক যত গড়াল, অস্পষ্ট ধারণাগুলো ততই জমাট বেঁধে (congealed) এমন গোঁড়া অবস্থানে পরিণত হলো যা কেউ ছাড়তে রাজি নয়।"
+  ],
+  "tip": "Latin congelare = to freeze together (gelu = frost, as in gelato and gel)."
+ },
+ {
+  "id": "congenial",
+  "word": "Congenial",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "pleasant and friendly; suited to one's taste",
+  "bn": "মনোরম; অমায়িক; মনের মতো",
+  "s": [
+   "Our new neighbor is very congenial.",
+   "She found the small office a congenial place to work after years in a noisy factory.",
+   "The {gregarious} host created a congenial atmosphere, and even the {taciturn} guests began to chat."
+  ],
+  "sbn": [
+   "আমাদের নতুন প্রতিবেশী খুবই অমায়িক (congenial)।",
+   "বছরের পর বছর হইচইপূর্ণ কারখানায় কাটানোর পর ছোট অফিসটা তার কাছে কাজের জন্য মনের মতো (congenial) জায়গা মনে হলো।",
+   "মিশুক আতিথেয়তাকারী এক মনোরম (congenial) পরিবেশ তৈরি করলেন, ফলে চুপচাপ অতিথিরাও গল্প জুড়ে দিলেন।"
+  ],
+  "tip": "con- + genial (friendly): people with the same spirit get along well."
+ },
+ {
+  "id": "congenital",
+  "word": "Congenital",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "present from birth; (of a habit or trait) deep-rooted",
+  "bn": "জন্মগত; সহজাত",
+  "s": [
+   "He has a congenital heart defect.",
+   "Some congenital conditions can be treated with surgery in early childhood.",
+   "His optimism seemed {innate}, almost congenital, surviving every {vicissitude} of his life."
+  ],
+  "sbn": [
+   "তার জন্মগত (congenital) হৃদরোগ আছে।",
+   "কিছু জন্মগত (congenital) সমস্যা শৈশবেই অস্ত্রোপচার করে সারানো যায়।",
+   "তার আশাবাদ মনে হতো সহজাত, প্রায় জন্মগত (congenital), যা জীবনের প্রতিটি উত্থান-পতনেও টিকে ছিল।"
+  ],
+  "tip": "Latin con- + genitus = born: something you were born with."
+ },
+ {
+  "id": "conjecture",
+  "word": "Conjecture",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a guess or opinion formed without full evidence",
+  "bn": "অনুমান; আন্দাজ; ধারণা",
+  "s": [
+   "That is only a conjecture.",
+   "Without the lab results, the doctor's diagnosis was just conjecture.",
+   "Lacking {empirical} evidence, the historian's claim was mere conjecture, and critics called it {tenuous}."
+  ],
+  "sbn": [
+   "ওটা কেবল একটা অনুমান (conjecture)।",
+   "ল্যাবের রিপোর্ট ছাড়া ডাক্তারের রোগনির্ণয় ছিল নিছক আন্দাজ (conjecture)।",
+   "পরীক্ষালব্ধ প্রমাণ না থাকায় ইতিহাসবিদের দাবিটা ছিল নিছক অনুমান (conjecture), আর সমালোচকেরা একে দুর্বল বললেন।"
+  ],
+  "tip": "Latin conicere = to throw together: throwing facts together to make a guess."
+ },
+ {
+  "id": "conjugal",
+  "word": "Conjugal",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "relating to marriage or to a married couple",
+  "bn": "দাম্পত্য; বৈবাহিক",
+  "s": [
+   "They enjoyed a happy conjugal life.",
+   "Conjugal disputes are often handled by family courts.",
+   "Their conjugal life was {idyllic} until money troubles brought {strife} into the home."
+  ],
+  "sbn": [
+   "তারা সুখী দাম্পত্য (conjugal) জীবন কাটাচ্ছিল।",
+   "দাম্পত্য (conjugal) বিরোধ প্রায়ই পারিবারিক আদালতে মীমাংসা হয়।",
+   "টাকাপয়সার ঝামেলা ঘরে কলহ ডেকে আনার আগ পর্যন্ত তাদের দাম্পত্য (conjugal) জীবন ছিল ছবির মতো সুন্দর।"
+  ],
+  "tip": "Latin coniugare = to yoke together (iugum = yoke): a married couple is joined."
+ },
+ {
+  "id": "conjure",
+  "word": "Conjure",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to make something appear as if by magic; to bring a picture to mind",
+  "bn": "যাদু করে হাজির করা; মনে জাগিয়ে তোলা",
+  "s": [
+   "The magician conjured a rabbit from his hat.",
+   "The smell of fresh bread conjures memories of my grandmother's kitchen.",
+   "The poet's {lyrical} verses conjure the {verdant} fields of rural Bengal."
+  ],
+  "sbn": [
+   "জাদুকর টুপি থেকে একটা খরগোশ হাজির করলেন (conjured)।",
+   "তাজা রুটির গন্ধ আমার মনে দাদির রান্নাঘরের স্মৃতি জাগিয়ে তোলে (conjures)।",
+   "কবির গীতিময় পঙ্‌ক্তিগুলো গ্রামবাংলার সবুজ মাঠের ছবি মনে জাগিয়ে তোলে (conjure)।"
+  ],
+  "tip": "Latin coniurare = to swear together; magicians were thought to call up spirits by solemn oaths."
+ },
+ {
+  "id": "connive",
+  "word": "Connive",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to secretly plan something wrong; to secretly allow a wrong to happen",
+  "bn": "চক্রান্ত করা; গোপনে সায় দেওয়া; ষড়যন্ত্র করা",
+  "s": [
+   "They connived to cheat the company.",
+   "The officials connived with smugglers by looking the other way.",
+   "The {perfidious} aides connived to {oust} their own leader."
+  ],
+  "sbn": [
+   "তারা কোম্পানিকে ঠকানোর চক্রান্ত করল (connived)।",
+   "কর্মকর্তারা চোখ ফিরিয়ে রেখে চোরাকারবারিদের গোপনে সায় দিয়েছিলেন (connived)।",
+   "বিশ্বাসঘাতক সহকারীরা নিজেদের নেতাকেই সরিয়ে দেওয়ার ষড়যন্ত্র করল (connived)।"
+  ],
+  "tip": "Latin connivere = to shut the eyes; conniving is closing your eyes to wrongdoing."
+ },
+ {
+  "id": "consecrate",
+  "word": "Consecrate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to make holy; to dedicate to a special purpose",
+  "bn": "পবিত্র করা; উৎসর্গ করা",
+  "s": [
+   "The priest consecrated the new church.",
+   "She consecrated her life to teaching poor children in remote villages.",
+   "The {pious} villagers consecrated the ground, believing any building there would be {sacrilege}."
+  ],
+  "sbn": [
+   "যাজক নতুন গির্জাটা পবিত্র করলেন (consecrated)।",
+   "দূরের গ্রামের গরিব শিশুদের পড়ানোর কাজে সে তার জীবন উৎসর্গ করল (consecrated)।",
+   "ধর্মপ্রাণ গ্রামবাসীরা জায়গাটা পবিত্র ঘোষণা করল (consecrated), কারণ তারা বিশ্বাস করত সেখানে কিছু বানানো হবে ধর্মের অবমাননা।"
+  ],
+  "tip": "Latin con- + sacrare = to make sacred."
+ },
+ {
+  "id": "consensus",
+  "word": "Consensus",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "general agreement among a group",
+  "bn": "ঐকমত্য; মতৈক্য; সর্বসম্মতি",
+  "s": [
+   "The group reached a consensus.",
+   "There is a scientific consensus that human activity is warming the planet.",
+   "Despite {contentious} debate, the committee reached a consensus, and even the {dissident} members signed."
+  ],
+  "sbn": [
+   "দলটা একটা ঐকমত্যে (consensus) পৌঁছাল।",
+   "মানুষের কর্মকাণ্ডই পৃথিবীকে উষ্ণ করছে, এ নিয়ে বিজ্ঞানীদের মধ্যে মতৈক্য (consensus) আছে।",
+   "বিতর্কিত আলোচনার পরও কমিটি ঐকমত্যে (consensus) পৌঁছাল, আর ভিন্নমতাবলম্বী সদস্যরাও সই করলেন।"
+  ],
+  "tip": "Latin con- + sentire = to feel: feeling the same way together."
+ },
+ {
+  "id": "conservatory",
+  "word": "Conservatory",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a school for music or the arts; a glass room for growing plants",
+  "bn": "সংগীত বিদ্যালয়; কাচঘর",
+  "s": [
+   "She studies piano at a conservatory.",
+   "The house had a sunny conservatory full of orchids and ferns.",
+   "The {precocious} violinist entered the conservatory at twelve and soon showed remarkable {prowess}."
+  ],
+  "sbn": [
+   "সে একটা সংগীত বিদ্যালয়ে (conservatory) পিয়ানো শেখে।",
+   "বাড়িটায় অর্কিড আর ফার্নে ভরা রোদেলা একটা কাচঘর (conservatory) ছিল।",
+   "অকালপক্ব বেহালাবাদক বারো বছর বয়সে সংগীত বিদ্যালয়ে (conservatory) ভর্তি হয়ে শিগগিরই অসাধারণ দক্ষতা দেখালেন।"
+  ],
+  "tip": "To conserve is to keep safe; a conservatory keeps plants, or musical traditions, safe."
+ },
+ {
+  "id": "consign",
+  "word": "Consign",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to hand over or send; to put away in an unwanted place",
+  "bn": "হস্তান্তর করা; পাঠানো; ফেলে রাখা",
+  "s": [
+   "He consigned the old toys to the attic.",
+   "The company consigned the goods to a shipping agent in Chattogram.",
+   "The bold theory was at first consigned to {oblivion} by {dogmatic} scholars."
+  ],
+  "sbn": [
+   "সে পুরনো খেলনাগুলো চিলেকোঠায় ফেলে রাখল (consigned)।",
+   "কোম্পানিটা মালামাল চট্টগ্রামের এক শিপিং এজেন্টের কাছে পাঠিয়ে দিল (consigned)।",
+   "সাহসী তত্ত্বটাকে প্রথমে গোঁড়া পণ্ডিতেরা বিস্মৃতির অতলে ঠেলে দিয়েছিলেন (consigned)।"
+  ],
+  "tip": "Latin consignare = to mark with a seal; goods sealed and sent off are consigned."
+ },
+ {
+  "id": "consolidate",
+  "word": "Consolidate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make stronger or more secure; to combine into one",
+  "bn": "সুসংহত করা; একত্রিত করা; মজবুত করা",
+  "s": [
+   "He consolidated his debts into one loan.",
+   "After winning the election, the party worked to consolidate its power.",
+   "The {despot} consolidated his rule by {ostracizing} every rival."
+  ],
+  "sbn": [
+   "সে তার সব ঋণ একত্র করে (consolidated) একটা লোনে নিয়ে এল।",
+   "নির্বাচনে জেতার পর দলটা নিজের ক্ষমতা সুসংহত করতে (consolidate) কাজ করল।",
+   "স্বৈরশাসক প্রত্যেক প্রতিদ্বন্দ্বীকে একঘরে করে নিজের শাসন মজবুত করলেন (consolidated)।"
+  ],
+  "tip": "con- + solid: make things solid by joining them together."
+ },
+ {
+  "id": "consonant",
+  "word": "Consonant",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "in agreement or harmony with",
+  "bn": "সামঞ্জস্যপূর্ণ; সংগতিপূর্ণ",
+  "s": [
+   "His actions are consonant with his words.",
+   "The new policy is consonant with the school's goal of helping every student.",
+   "Her {frugal} lifestyle was consonant with her {ascetic} beliefs."
+  ],
+  "sbn": [
+   "তার কাজ তার কথার সাথে সংগতিপূর্ণ (consonant)।",
+   "নতুন নীতিটা প্রত্যেক শিক্ষার্থীকে সাহায্য করার স্কুলের লক্ষ্যের সাথে সামঞ্জস্যপূর্ণ (consonant)।",
+   "তার মিতব্যয়ী জীবনযাপন তার কৃচ্ছ্রসাধনার বিশ্বাসের সাথে সংগতিপূর্ণ (consonant) ছিল।"
+  ],
+  "tip": "Latin con- + sonare = to sound together: things that sound in harmony."
+ },
+ {
+  "id": "conspicuous",
+  "word": "Conspicuous",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "easy to see or notice; attracting attention",
+  "bn": "সহজে চোখে পড়ে এমন; লক্ষণীয়; দৃষ্টিকটু",
+  "s": [
+   "Her red hat was conspicuous.",
+   "The new student felt conspicuous in his bright uniform among the gray ones.",
+   "The {ostentatious} tycoon's conspicuous wealth drew public {censure}."
+  ],
+  "sbn": [
+   "তার লাল টুপিটা সহজেই চোখে পড়ছিল (conspicuous)।",
+   "ধূসর পোশাকের ভিড়ে উজ্জ্বল ইউনিফর্ম পরা নতুন ছাত্রটা নিজেকে বেমানানভাবে চোখে পড়ার মতো (conspicuous) মনে করছিল।",
+   "জাঁক দেখানো ধনকুবেরের দৃষ্টিকটু (conspicuous) সম্পদ জনগণের কড়া সমালোচনা কুড়াল।"
+  ],
+  "tip": "Latin conspicere = to look at closely; something conspicuous is easy to see."
+ },
+ {
+  "id": "consternation",
+  "word": "Consternation",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "shock and worry that cause confusion",
+  "bn": "হতভম্ব অবস্থা; আতঙ্ক; গভীর উদ্বেগ",
+  "s": [
+   "The news caused consternation.",
+   "To the consternation of parents, the school suddenly cancelled the exams.",
+   "The minister's {flippant} remarks caused consternation among the {bereaved} families."
+  ],
+  "sbn": [
+   "খবরটা আতঙ্ক (consternation) ছড়াল।",
+   "অভিভাবকদের হতভম্ব (consternation) করে দিয়ে স্কুল হঠাৎ পরীক্ষা বাতিল করল।",
+   "মন্ত্রীর হালকা চালের মন্তব্য শোকগ্রস্ত পরিবারগুলোর মধ্যে গভীর উদ্বেগ (consternation) তৈরি করল।"
+  ],
+  "tip": "Latin consternare = to throw into confusion; picture people struck flat by shock."
+ },
+ {
+  "id": "constituency",
+  "word": "Constituency",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the voters of an area; a group of supporters",
+  "bn": "নির্বাচনী এলাকা; ভোটারগোষ্ঠী; সমর্থকগোষ্ঠী",
+  "s": [
+   "He represents a rural constituency.",
+   "The MP visited every village in her constituency before the budget vote.",
+   "The senator tried to {placate} his rural constituency while courting {urbane} city voters."
+  ],
+  "sbn": [
+   "তিনি একটা গ্রামীণ নির্বাচনী এলাকার (constituency) প্রতিনিধি।",
+   "বাজেট ভোটের আগে সাংসদ তাঁর নির্বাচনী এলাকার (constituency) প্রতিটি গ্রাম ঘুরে এলেন।",
+   "সিনেটর শহরের মার্জিত ভোটারদের মন জয়ের চেষ্টার পাশাপাশি নিজের গ্রামীণ ভোটারগোষ্ঠীকে (constituency) খুশি রাখতে চাইলেন।"
+  ],
+  "tip": "Constituents are the people who constitute (make up) a voting area."
+ },
+ {
+  "id": "construe",
+  "word": "Construe",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to interpret or understand in a particular way",
+  "bn": "ব্যাখ্যা করা; অর্থ করা; বোঝা",
+  "s": [
+   "Don't construe my silence as agreement.",
+   "The court construed the old law to include online harassment.",
+   "Her {ambiguous} reply could be construed as either praise or {sarcasm}."
+  ],
+  "sbn": [
+   "আমার চুপ থাকাকে সম্মতি হিসেবে ধরে নিও না (construe)।",
+   "আদালত পুরনো আইনটার এমন ব্যাখ্যা করল (construed) যাতে অনলাইন হয়রানিও এর আওতায় পড়ে।",
+   "তার দ্ব্যর্থবোধক উত্তরটাকে প্রশংসা বা ব্যঙ্গ, দুইভাবেই বোঝা (construed) যেত।"
+  ],
+  "tip": "Construe = construct a meaning; both come from Latin construere = to build."
+ },
+ {
+  "id": "consummate",
+  "word": "Consummate",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "highly skilled; complete or perfect",
+  "bn": "নিপুণ; পরিপূর্ণ; সুদক্ষ",
+  "s": [
+   "She is a consummate professional.",
+   "The consummate chef could cook a perfect meal with only three ingredients.",
+   "The {adroit} diplomat was a consummate negotiator who could {mollify} even hostile delegates."
+  ],
+  "sbn": [
+   "তিনি একজন পরিপূর্ণ (consummate) পেশাদার।",
+   "সুদক্ষ (consummate) শেফ মাত্র তিনটা উপকরণ দিয়ে নিখুঁত খাবার রাঁধতে পারতেন।",
+   "চৌকস কূটনীতিক ছিলেন একজন নিপুণ (consummate) আলোচক, যিনি বৈরী প্রতিনিধিদেরও শান্ত করতে পারতেন।"
+  ],
+  "tip": "Latin consummare = to sum up, complete; consummate skill is complete skill."
+ },
+ {
+  "id": "contempt",
+  "word": "Contempt",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a strong feeling that someone or something is worthless; disobeying a court",
+  "bn": "ঘৃণা; অবজ্ঞা; তুচ্ছতাচ্ছিল্য",
+  "s": [
+   "He looked at the cheater with contempt.",
+   "The journalist was held in contempt of court for refusing to name her source.",
+   "His {disdain} for the rules turned into open contempt, and he began to {flout} every order."
+  ],
+  "sbn": [
+   "সে প্রতারকটার দিকে ঘৃণার (contempt) চোখে তাকাল।",
+   "সূত্রের নাম জানাতে অস্বীকার করায় সাংবাদিককে আদালত অবমাননার (contempt) দায়ে অভিযুক্ত করা হলো।",
+   "নিয়মের প্রতি তার তাচ্ছিল্য প্রকাশ্য অবজ্ঞায় (contempt) রূপ নিল, আর সে প্রতিটি আদেশ অমান্য করতে লাগল।"
+  ],
+  "tip": "Latin contemnere = to scorn; contemptible means deserving scorn."
+ },
+ {
+  "id": "contiguous",
+  "word": "Contiguous",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "touching or next to each other; sharing a border",
+  "bn": "সংলগ্ন; লাগোয়া; পাশাপাশি",
+  "s": [
+   "The two farms are contiguous.",
+   "The 48 contiguous states of the US share borders with one another.",
+   "The developer planned to {annex} the contiguous plots, an {incursion} that angered local farmers."
+  ],
+  "sbn": [
+   "খামার দুটো লাগোয়া (contiguous)।",
+   "যুক্তরাষ্ট্রের ৪৮টি সংলগ্ন (contiguous) অঙ্গরাজ্যের একে অপরের সাথে সীমানা আছে।",
+   "আবাসন কোম্পানিটা পাশের লাগোয়া (contiguous) জমিগুলো দখল করে নেওয়ার পরিকল্পনা করল, যে অনুপ্রবেশে স্থানীয় কৃষকেরা ক্ষুব্ধ হলো।"
+  ],
+  "tip": "Latin contingere = to touch; contiguous things touch each other."
+ },
+ {
+  "id": "contingent",
+  "word": "Contingent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "depending on something else; possible but not certain",
+  "bn": "নির্ভরশীল; শর্তসাপেক্ষ; অনিশ্চিত",
+  "s": [
+   "Our trip is contingent on the weather.",
+   "His job offer is contingent upon passing a background check.",
+   "The treaty was contingent on a {moratorium} on testing, a {stipulation} that was hard to enforce."
+  ],
+  "sbn": [
+   "আমাদের ভ্রমণ আবহাওয়ার ওপর নির্ভরশীল (contingent)।",
+   "তার চাকরির প্রস্তাবটা অতীত যাচাইয়ে উত্তীর্ণ হওয়ার শর্তসাপেক্ষ (contingent)।",
+   "চুক্তিটা পরীক্ষা সাময়িক বন্ধ রাখার ওপর নির্ভরশীল (contingent) ছিল, যে শর্ত কার্যকর করা কঠিন ছিল।"
+  ],
+  "tip": "Latin contingere = to touch, to happen; a contingent event touches on something else."
+ },
+ {
+  "id": "continuum",
+  "word": "Continuum",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a continuous range in which neighboring parts differ only slightly",
+  "bn": "ধারাবাহিক পরিসর; নিরবচ্ছিন্ন ধারা",
+  "s": [
+   "Colors form a continuum.",
+   "Political views lie on a continuum from far left to far right.",
+   "Rather than a sharp {dichotomy}, health and illness form a continuum with many {subtle} stages."
+  ],
+  "sbn": [
+   "রংগুলো একটা ধারাবাহিক পরিসর (continuum) তৈরি করে।",
+   "রাজনৈতিক মতামত চরম বাম থেকে চরম ডান পর্যন্ত একটা ধারাবাহিক পরিসরে (continuum) ছড়িয়ে আছে।",
+   "সুস্থতা আর অসুস্থতা তীক্ষ্ণ দুই ভাগ নয়, বরং অনেক সূক্ষ্ম ধাপের একটা নিরবচ্ছিন্ন ধারা (continuum)।"
+  ],
+  "tip": "Same root as continue: a continuum goes on without breaks."
+ },
+ {
+  "id": "contraband",
+  "word": "Contraband",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "goods brought into or out of a country illegally",
+  "bn": "চোরাই মাল; নিষিদ্ধ পণ্য; চোরাচালানের পণ্য",
+  "s": [
+   "Police seized the contraband.",
+   "Customs officers found contraband hidden inside crates of vegetables.",
+   "The {illicit} trade in contraband grew {rampant} along the border."
+  ],
+  "sbn": [
+   "পুলিশ চোরাচালানের পণ্য (contraband) জব্দ করল।",
+   "শুল্ক কর্মকর্তারা সবজির বাক্সের ভেতরে লুকানো নিষিদ্ধ পণ্য (contraband) খুঁজে পেলেন।",
+   "সীমান্ত এলাকায় চোরাই মালের (contraband) বেআইনি ব্যবসা লাগামহীনভাবে ছড়িয়ে পড়ল।"
+  ],
+  "tip": "Italian contrabbando: contra = against + bando = decree, so goods that go against the law."
+ },
+ {
+  "id": "contretemps",
+  "word": "Contretemps",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an awkward or embarrassing minor dispute or mishap",
+  "bn": "বিব্রতকর ঘটনা; ছোটখাটো বিবাদ; অপ্রত্যাশিত বিপত্তি",
+  "s": [
+   "There was a small contretemps at dinner.",
+   "A contretemps over seating delayed the wedding ceremony.",
+   "The diplomat's {gaffe} turned into a public contretemps, and the embassy rushed to issue an apology."
+  ],
+  "sbn": [
+   "রাতের খাবারের সময় ছোট একটা বিব্রতকর ঘটনা (contretemps) ঘটল।",
+   "বসার জায়গা নিয়ে ছোটখাটো বিবাদের (contretemps) কারণে বিয়ের অনুষ্ঠান দেরি হলো।",
+   "কূটনীতিকের বেফাঁস মন্তব্য প্রকাশ্য বিব্রতকর ঘটনায় (contretemps) পরিণত হলো, আর দূতাবাস তাড়াহুড়ো করে ক্ষমা চাইল।"
+  ],
+  "tip": "French contre = against + temps = time: something that happens at the wrong moment."
+ },
+ {
+  "id": "contrived",
+  "word": "Contrived",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "obviously planned and artificial; not natural",
+  "bn": "কৃত্রিম; বানানো; সাজানো",
+  "s": [
+   "The movie's ending felt contrived.",
+   "His contrived smile in the photo showed he was not really happy.",
+   "Critics called the plot contrived, full of {fortuitous} coincidences and {saccharine} dialogue."
+  ],
+  "sbn": [
+   "সিনেমার শেষটা কৃত্রিম (contrived) লাগল।",
+   "ছবিতে তার বানানো (contrived) হাসি দেখেই বোঝা যাচ্ছিল সে আসলে খুশি নয়।",
+   "সমালোচকেরা কাহিনিটাকে সাজানো (contrived) বললেন, যা কাকতালীয় ঘটনা আর অতিমিষ্টি সংলাপে ভরা।"
+  ],
+  "tip": "To contrive is to plan cleverly; something contrived is so planned that it feels fake."
+ },
+ {
+  "id": "contumely",
+  "word": "Contumely",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "rude, insulting language or treatment; scornful insult",
+  "bn": "অপমান; অবমাননাকর ব্যবহার; কটূক্তি",
+  "s": [
+   "She bore their contumely in silence.",
+   "The new teacher faced the contumely of older colleagues who mocked her ideas.",
+   "The reformer endured years of {invective} and contumely, yet he never {recanted}."
+  ],
+  "sbn": [
+   "সে চুপচাপ তাদের অপমান (contumely) সহ্য করল।",
+   "নতুন শিক্ষিকাকে পুরনো সহকর্মীদের কটূক্তি (contumely) সইতে হতো, যারা তার আইডিয়া নিয়ে ঠাট্টা করত।",
+   "সংস্কারক বছরের পর বছর গালমন্দ আর অবমাননা (contumely) সহ্য করেছিলেন, তবু কখনো নিজের মত প্রত্যাহার করেননি।"
+  ],
+  "tip": "Latin contumelia = insult; Hamlet lists 'the proud man's contumely' among life's pains."
+ },
+ {
+  "id": "convene",
+  "word": "Convene",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to come together for a meeting, or to call people together",
+  "bn": "সভা আহ্বান করা; সমবেত হওয়া",
+  "s": [
+   "The council will convene on Monday.",
+   "The prime minister convened an emergency meeting after the floods.",
+   "World leaders convened in Geneva to {mediate} the dispute and {avert} war."
+  ],
+  "sbn": [
+   "পরিষদ সোমবার সমবেত হবে (convene)।",
+   "বন্যার পর প্রধানমন্ত্রী জরুরি সভা আহ্বান করলেন (convened)।",
+   "বিরোধ মীমাংসা করে যুদ্ধ ঠেকাতে বিশ্বনেতারা জেনেভায় সমবেত হলেন (convened)।"
+  ],
+  "tip": "Latin con- + venire = to come: come together, as at a convention."
+ },
+ {
+  "id": "conventional",
+  "word": "Conventional",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "usual and traditional; following accepted ways",
+  "bn": "প্রচলিত; প্রথাগত; গতানুগতিক",
+  "s": [
+   "She wore a conventional suit.",
+   "Instead of a conventional wedding, they had a small ceremony on the beach.",
+   "The {maverick} scientist rejected conventional methods, and her {iconoclastic} ideas later won wide praise."
+  ],
+  "sbn": [
+   "সে একটা প্রথাগত (conventional) স্যুট পরেছিল।",
+   "প্রচলিত (conventional) বিয়ের বদলে তারা সমুদ্রসৈকতে ছোট একটা অনুষ্ঠান করল।",
+   "স্বতন্ত্র পথের বিজ্ঞানী প্রচলিত (conventional) পদ্ধতি বাতিল করেছিলেন, আর তাঁর প্রথাভাঙা ধারণা পরে ব্যাপক প্রশংসা পেল।"
+  ],
+  "tip": "A convention is what people have agreed on; conventional means following that agreement."
+ },
+ {
+  "id": "conversant",
+  "word": "Conversant",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "familiar with or knowledgeable about something",
+  "bn": "সুপরিচিত; অভিজ্ঞ; ওয়াকিবহাল",
+  "s": [
+   "He is conversant with French.",
+   "Our guide was conversant with the history of every old building in Dhaka.",
+   "Though a {neophyte} in politics, she was conversant with the {arcane} rules of parliament."
+  ],
+  "sbn": [
+   "সে ফরাসি ভাষার সাথে পরিচিত (conversant)।",
+   "আমাদের গাইড ঢাকার প্রতিটি পুরনো ভবনের ইতিহাস সম্পর্কে ভালোভাবে ওয়াকিবহাল (conversant) ছিলেন।",
+   "রাজনীতিতে নবাগত হলেও সংসদের দুর্বোধ্য নিয়মকানুন সম্পর্কে তিনি ভালোই জানতেন (conversant)।"
+  ],
+  "tip": "If you are conversant with a topic, you can converse (talk) about it."
+ },
+ {
+  "id": "converse",
+  "word": "Converse",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "(noun) the opposite; (verb) to have a conversation",
+  "bn": "বিপরীত; উল্টো; কথোপকথন করা",
+  "s": [
+   "We conversed over tea.",
+   "Rich people are not always happy, and the converse is also true: poor people are not always sad.",
+   "The {fallacious} argument assumed that the converse of a true statement must also be true, a mistake the professor quickly {refuted}."
+  ],
+  "sbn": [
+   "আমরা চা খেতে খেতে কথা বললাম (conversed)।",
+   "ধনীরা সবসময় সুখী নয়, আর এর উল্টোটাও (converse) সত্য: গরিবেরাও সবসময় দুঃখী নয়।",
+   "ভ্রান্ত যুক্তিটা ধরে নিয়েছিল যে কোনো সত্য বক্তব্যের বিপরীতটাও (converse) সত্য হবে, আর অধ্যাপক দ্রুত এই ভুল খণ্ডন করলেন।"
+  ],
+  "tip": "Latin conversus = turned around: the converse is a statement turned around."
+ },
+ {
+  "id": "convey",
+  "word": "Convey",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to communicate an idea or feeling; to carry from one place to another",
+  "bn": "প্রকাশ করা; বোঝানো; বহন করা",
+  "s": [
+   "Her smile conveyed her joy.",
+   "Trucks convey goods from the port to the city's markets every night.",
+   "The painter's {subtle} colors convey a {wistful} mood."
+  ],
+  "sbn": [
+   "তার হাসিতে আনন্দ প্রকাশ পাচ্ছিল (conveyed)।",
+   "প্রতি রাতে ট্রাকগুলো বন্দর থেকে শহরের বাজারে মালামাল বহন করে (convey)।",
+   "চিত্রশিল্পীর সূক্ষ্ম রংগুলো একটা বিষণ্ন আকুলতার ভাব প্রকাশ করে (convey)।"
+  ],
+  "tip": "A conveyor belt carries things; to convey is to carry goods or ideas."
+ },
+ {
+  "id": "conviction",
+  "word": "Conviction",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a strong belief; a court's decision that someone is guilty",
+  "bn": "দৃঢ় বিশ্বাস; প্রত্যয়; দোষী সাব্যস্ত হওয়া",
+  "s": [
+   "She spoke with conviction.",
+   "His conviction for fraud ended his career in banking.",
+   "The activist's conviction was {steadfast}, and no {cajoling} could change her mind."
+  ],
+  "sbn": [
+   "সে দৃঢ় বিশ্বাস (conviction) নিয়ে কথা বলল।",
+   "প্রতারণার দায়ে দোষী সাব্যস্ত হওয়ায় (conviction) তার ব্যাংকিং ক্যারিয়ার শেষ হয়ে গেল।",
+   "অধিকারকর্মীর প্রত্যয় (conviction) ছিল অটল, কোনো তোষামোদই তার মত বদলাতে পারেনি।"
+  ],
+  "tip": "Convince and conviction share Latin convincere = to prove wrong, to overcome."
+ },
+ {
+  "id": "convivial",
+  "word": "Convivial",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "friendly, lively, and fond of good company",
+  "bn": "আমুদে; মিশুক; আনন্দমুখর",
+  "s": [
+   "It was a convivial party.",
+   "The convivial host made sure everyone had food and someone to talk to.",
+   "The {ebullient} mood of the convivial gathering contrasted with the {dour} faces of the guards outside."
+  ],
+  "sbn": [
+   "পার্টিটা ছিল আনন্দমুখর (convivial)।",
+   "আমুদে (convivial) আতিথেয়তাকারী নিশ্চিত করলেন যে সবার খাবার আছে আর কথা বলার মতো কেউ আছে।",
+   "আনন্দমুখর (convivial) আড্ডার উচ্ছল মেজাজ বাইরের প্রহরীদের গোমড়া মুখের সাথে একদম বিপরীত ছিল।"
+  ],
+  "tip": "Latin convivium = feast (con- = together + vivere = to live)."
+ },
+ {
+  "id": "copious",
+  "word": "Copious",
+  "src": "WS1+WS2",
+  "pos": "adjective",
+  "en": "plentiful; in large amounts",
+  "bn": "প্রচুর; অঢেল; বিপুল",
+  "s": [
+   "She took copious notes.",
+   "Copious rain during the monsoon floods many low-lying villages.",
+   "The {assiduous} student kept copious notes, while his {indolent} roommate kept none."
+  ],
+  "sbn": [
+   "সে প্রচুর (copious) নোট নিল।",
+   "বর্ষার প্রচুর (copious) বৃষ্টিতে অনেক নিচু গ্রাম ডুবে যায়।",
+   "পরিশ্রমী ছাত্রটা প্রচুর (copious) নোট রাখত, অথচ তার অলস রুমমেট একটাও রাখত না।"
+  ],
+  "tip": "Latin copia = plenty (as in cornucopia, the horn of plenty)."
+ },
+ {
+  "id": "cordial",
+  "word": "Cordial",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "warm and friendly; politely friendly",
+  "bn": "আন্তরিক; সৌহার্দ্যপূর্ণ; হৃদ্যতাপূর্ণ",
+  "s": [
+   "They gave us a cordial welcome.",
+   "Although they were rivals, the two leaders kept a cordial relationship.",
+   "Their cordial greeting was only a {veneer} over deep {enmity}."
+  ],
+  "sbn": [
+   "তারা আমাদের আন্তরিক (cordial) অভ্যর্থনা জানাল।",
+   "প্রতিদ্বন্দ্বী হলেও দুই নেতা সৌহার্দ্যপূর্ণ (cordial) সম্পর্ক বজায় রেখেছিলেন।",
+   "তাদের আন্তরিক (cordial) সম্ভাষণ ছিল গভীর শত্রুতার ওপর একটা বাইরের প্রলেপ মাত্র।"
+  ],
+  "tip": "Latin cor, cordis = heart: cordial means from the heart."
+ },
+ {
+  "id": "corollary",
+  "word": "Corollary",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "a natural result or consequence; something that follows logically from something else",
+  "bn": "অনিবার্য ফল; অনুসিদ্ধান্ত; স্বাভাবিক পরিণতি",
+  "s": [
+   "Higher prices are a corollary of shortages.",
+   "A corollary of living in a big city is that you must get used to noise.",
+   "Rising hunger is a corollary of policies that {exacerbate} {penury} among the poor."
+  ],
+  "sbn": [
+   "উচ্চমূল্য ঘাটতিরই স্বাভাবিক পরিণতি (corollary)।",
+   "বড় শহরে থাকার একটা স্বাভাবিক ফল (corollary) হলো তোমাকে শব্দের সাথে মানিয়ে নিতে হবে।",
+   "বাড়তে থাকা ক্ষুধা এমন নীতিরই অনিবার্য ফল (corollary), যা গরিবদের দারিদ্র্য আরও বাড়িয়ে দেয়।"
+  ],
+  "tip": "In math, a corollary is a result that follows directly from a theorem already proved."
+ },
+ {
+  "id": "corporeal",
+  "word": "Corporeal",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "relating to the body; physical rather than spiritual",
+  "bn": "শারীরিক; দৈহিক; বস্তুগত",
+  "s": [
+   "Ghosts have no corporeal form.",
+   "The monk tried to rise above corporeal needs like hunger and comfort.",
+   "The {ascetic} rejected corporeal pleasures, seeking a more {ethereal} kind of joy."
+  ],
+  "sbn": [
+   "ভূতের কোনো দৈহিক (corporeal) রূপ নেই।",
+   "সন্ন্যাসী ক্ষুধা আর আরামের মতো শারীরিক (corporeal) চাহিদার ঊর্ধ্বে ওঠার চেষ্টা করতেন।",
+   "কৃচ্ছ্রসাধক দৈহিক (corporeal) সুখ ত্যাগ করে আরও অপার্থিব কোনো আনন্দ খুঁজতেন।"
+  ],
+  "tip": "Latin corpus = body (as in corpse and corporal)."
+ },
+ {
+  "id": "correlation",
+  "word": "Correlation",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a connection between two things that tend to change together",
+  "bn": "পারস্পরিক সম্পর্ক; সহসম্বন্ধ",
+  "s": [
+   "There is a correlation between sleep and health.",
+   "The study found a strong correlation between reading at home and good grades.",
+   "A correlation is not proof of cause, so the researcher warned against {extrapolation} from such {tenuous} data."
+  ],
+  "sbn": [
+   "ঘুম আর স্বাস্থ্যের মধ্যে পারস্পরিক সম্পর্ক (correlation) আছে।",
+   "গবেষণায় বাড়িতে বই পড়া আর ভালো ফলের মধ্যে জোরালো সম্পর্ক (correlation) পাওয়া গেল।",
+   "সহসম্বন্ধ (correlation) মানেই কারণ প্রমাণ নয়, তাই গবেষক এমন দুর্বল তথ্য থেকে টেনে বড় সিদ্ধান্ত না নিতে সতর্ক করলেন।"
+  ],
+  "tip": "co- + relation: two things related to each other."
+ },
+ {
+  "id": "corroborate",
+  "word": "Corroborate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to support or confirm with evidence",
+  "bn": "সমর্থন করা; প্রমাণ দিয়ে নিশ্চিত করা",
+  "s": [
+   "Can anyone corroborate your story?",
+   "Security camera footage corroborated the witness's account of the robbery.",
+   "New fossils corroborate the theory and {substantiate} the {putative} link between birds and dinosaurs."
+  ],
+  "sbn": [
+   "কেউ কি তোমার গল্পটা সমর্থন করতে (corroborate) পারবে?",
+   "সিসি ক্যামেরার ফুটেজ ডাকাতি নিয়ে সাক্ষীর বিবরণ নিশ্চিত করল (corroborated)।",
+   "নতুন জীবাশ্মগুলো তত্ত্বটাকে সমর্থন করে (corroborate) এবং পাখি ও ডাইনোসরের মধ্যে অনুমিত সম্পর্কের পক্ষে প্রমাণ জোগায়।"
+  ],
+  "tip": "Latin corroborare = to strengthen (robur = strength, as in robust)."
+ },
+ {
+  "id": "corrosive",
+  "word": "Corrosive",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "slowly destroying by chemical action; gradually harmful",
+  "bn": "ক্ষয়কারী; ক্ষতিকর; ধ্বংসাত্মক",
+  "s": [
+   "Acid is corrosive.",
+   "Seawater is corrosive, so ships need regular painting to prevent rust.",
+   "Corruption has a corrosive effect, slowly {undermining} trust in {municipal} offices."
+  ],
+  "sbn": [
+   "অ্যাসিড ক্ষয়কারী (corrosive)।",
+   "সমুদ্রের পানি ক্ষয়কারী (corrosive), তাই মরিচা ঠেকাতে জাহাজে নিয়মিত রং করতে হয়।",
+   "দুর্নীতির একটা ক্ষয়কারী (corrosive) প্রভাব আছে, যা ধীরে ধীরে পৌর দপ্তরগুলোর প্রতি আস্থা নষ্ট করে।"
+  ],
+  "tip": "Latin corrodere = to gnaw away (rodere = to gnaw, as in rodent)."
+ },
+ {
+  "id": "corrugated",
+  "word": "Corrugated",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "shaped into a row of parallel ridges and grooves",
+  "bn": "ঢেউখেলানো; ঢেউতোলা",
+  "s": [
+   "The roof is made of corrugated tin.",
+   "Many village homes in Bangladesh have corrugated iron roofs that ring loudly in the rain.",
+   "The {striated} rock looked almost corrugated, its ridges carved by {relentless} wind."
+  ],
+  "sbn": [
+   "ছাদটা ঢেউতোলা (corrugated) টিনের তৈরি।",
+   "বাংলাদেশের অনেক গ্রামের ঘরে ঢেউটিনের (corrugated) চাল থাকে, যা বৃষ্টিতে জোরে ঝমঝম করে।",
+   "ডোরাকাটা পাথরটা প্রায় ঢেউখেলানো (corrugated) দেখাচ্ছিল, এর খাঁজগুলো অবিরাম বাতাসে খোদাই হয়েছে।"
+  ],
+  "tip": "Latin corrugare = to wrinkle (ruga = wrinkle)."
+ },
+ {
+  "id": "cosmopolitan",
+  "word": "Cosmopolitan",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "including people and ideas from many countries; worldly and open",
+  "bn": "বিশ্বজনীন; আন্তর্জাতিক; বিশ্বনাগরিকসুলভ",
+  "s": [
+   "London is a cosmopolitan city.",
+   "Her cosmopolitan childhood in four countries made her feel at home anywhere.",
+   "The {urbane}, cosmopolitan diplomat found the village's {parochial} attitudes surprising."
+  ],
+  "sbn": [
+   "লন্ডন একটা বিশ্বজনীন (cosmopolitan) শহর।",
+   "চার দেশে কাটানো তার আন্তর্জাতিক (cosmopolitan) শৈশব তাকে যেকোনো জায়গায় স্বচ্ছন্দ করে তুলেছিল।",
+   "মার্জিত, বিশ্বনাগরিকসুলভ (cosmopolitan) কূটনীতিক গ্রামের সংকীর্ণ মনোভাব দেখে অবাক হলেন।"
+  ],
+  "tip": "Greek kosmos = world + politēs = citizen: a citizen of the world."
+ },
+ {
+  "id": "coterie",
+  "word": "Coterie",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a small, exclusive group of people with shared interests",
+  "bn": "ঘনিষ্ঠ গোষ্ঠী; চক্র; ক্ষুদ্র দল",
+  "s": [
+   "She has a coterie of loyal fans.",
+   "The poet shared his drafts only with a small coterie of trusted friends.",
+   "Surrounded by a coterie of {sycophants}, the leader heard only {fawning} praise."
+  ],
+  "sbn": [
+   "তার একটা অনুগত ভক্তগোষ্ঠী (coterie) আছে।",
+   "কবি তাঁর খসড়াগুলো শুধু বিশ্বস্ত বন্ধুদের একটা ছোট্ট দলকে (coterie) দেখাতেন।",
+   "চাটুকারদের একটা চক্রে (coterie) ঘেরা নেতা শুধু তোষামোদের প্রশংসাই শুনতেন।"
+  ],
+  "tip": "Like a clique: a small inner circle that keeps outsiders out."
+ },
+ {
+  "id": "countenance",
+  "word": "Countenance",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a person's face or expression; (verb) to approve of or allow",
+  "bn": "মুখমণ্ডল; চেহারা; সমর্থন করা",
+  "s": [
+   "His countenance was calm.",
+   "The principal would not countenance cheating of any kind.",
+   "The judge's stern countenance showed he would not {condone} such {flagrant} lies."
+  ],
+  "sbn": [
+   "তার মুখমণ্ডল (countenance) শান্ত ছিল।",
+   "অধ্যক্ষ কোনো রকম নকল মেনে নিতেন না (countenance)।",
+   "বিচারকের কঠোর মুখভঙ্গি (countenance) বুঝিয়ে দিচ্ছিল যে তিনি এমন নির্লজ্জ মিথ্যা ক্ষমা করবেন না।"
+  ],
+  "tip": "From Old French contenance = bearing, demeanor: how you hold yourself shows on your face."
+ },
+ {
+  "id": "coup",
+  "word": "Coup",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a sudden, illegal seizure of government power; a brilliant, successful move",
+  "bn": "অভ্যুত্থান; ক্ষমতা দখল; সফল চাল",
+  "s": [
+   "The army staged a coup.",
+   "Signing the famous player was a big coup for the small club.",
+   "The generals' coup {ousted} the elected leader, and a {junta} took control."
+  ],
+  "sbn": [
+   "সেনাবাহিনী একটা অভ্যুত্থান (coup) ঘটাল।",
+   "বিখ্যাত খেলোয়াড়কে দলে টানা ছোট ক্লাবটার জন্য একটা বড় সাফল্য (coup) ছিল।",
+   "জেনারেলদের অভ্যুত্থান (coup) নির্বাচিত নেতাকে ক্ষমতা থেকে সরিয়ে দিল, আর একটা সামরিক জান্তা নিয়ন্ত্রণ নিল।"
+  ],
+  "tip": "French coup = blow, strike; coup d'état = a strike against the state."
+ },
+ {
+  "id": "covenant",
+  "word": "Covenant",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a formal, serious agreement or promise",
+  "bn": "চুক্তি; অঙ্গীকার; প্রতিশ্রুতি",
+  "s": [
+   "They signed a covenant of peace.",
+   "The tenants broke the covenant by keeping pets in the building.",
+   "The tribes made a covenant to {forgo} revenge, ending decades of {enmity}."
+  ],
+  "sbn": [
+   "তারা শান্তির একটা চুক্তি (covenant) সই করল।",
+   "ভবনে পোষা প্রাণী রেখে ভাড়াটেরা চুক্তি (covenant) ভঙ্গ করল।",
+   "গোত্রগুলো প্রতিশোধ ছেড়ে দেওয়ার অঙ্গীকার (covenant) করল, যাতে কয়েক দশকের শত্রুতার অবসান হলো।"
+  ],
+  "tip": "Latin convenire = to come together, agree; same root as convene."
+ },
+ {
+  "id": "covert",
+  "word": "Covert",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "secret; not openly shown",
+  "bn": "গোপন; গুপ্ত; প্রচ্ছন্ন",
+  "s": [
+   "The spy had a covert mission.",
+   "The agency carried out covert operations that the public learned about decades later.",
+   "Her covert glances revealed an {infatuation} she was too {reticent} to admit."
+  ],
+  "sbn": [
+   "গুপ্তচরের একটা গোপন (covert) মিশন ছিল।",
+   "সংস্থাটা এমন গোপন (covert) অভিযান চালিয়েছিল যা জনগণ জানতে পেরেছে কয়েক দশক পরে।",
+   "তার লুকিয়ে (covert) তাকানোতে এমন এক মোহ ধরা পড়ছিল যা সে চাপা স্বভাবের কারণে স্বীকার করতে পারছিল না।"
+  ],
+  "tip": "Covert = covered, hidden from view. Its opposite is overt."
+ },
+ {
+  "id": "covet",
+  "word": "Covet",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to strongly want something, especially something that belongs to someone else",
+  "bn": "লোভ করা; প্রবলভাবে কামনা করা",
+  "s": [
+   "He coveted his friend's new bike.",
+   "Many young actors covet the role that made the old star famous.",
+   "The {avaricious} merchant coveted his neighbor's land and schemed to {usurp} it."
+  ],
+  "sbn": [
+   "সে বন্ধুর নতুন সাইকেলটার প্রতি লোভ করত (coveted)।",
+   "যে চরিত্রটা প্রবীণ তারকাকে বিখ্যাত করেছিল, অনেক তরুণ অভিনেতা সেটা প্রবলভাবে কামনা করে (covet)।",
+   "লোভী ব্যবসায়ী প্রতিবেশীর জমির প্রতি লোভ করত (coveted) এবং তা জোর করে দখলের ফন্দি আঁটত।"
+  ],
+  "tip": "Related to cupidity: both go back to Latin cupere = to desire."
+ },
+ {
+  "id": "cower",
+  "word": "Cower",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to crouch or shrink back in fear",
+  "bn": "ভয়ে কুঁকড়ে যাওয়া; জড়সড় হওয়া",
+  "s": [
+   "The puppy cowered under the bed.",
+   "The children cowered in the corner as thunder shook the windows.",
+   "While his {craven} comrades cowered in the trench, the {stalwart} sergeant held his ground."
+  ],
+  "sbn": [
+   "কুকুরছানাটা খাটের নিচে ভয়ে কুঁকড়ে রইল (cowered)।",
+   "বজ্রপাতে জানালা কেঁপে উঠলে বাচ্চারা কোণে জড়সড় হয়ে রইল (cowered)।",
+   "তার ভীরু সঙ্গীরা যখন পরিখায় ভয়ে কুঁকড়ে ছিল (cowered), তখন অটল সার্জেন্ট নিজের জায়গায় দাঁড়িয়ে রইলেন।"
+  ],
+  "tip": "Memory link: a coward cowers, shrinking back in fear."
+ },
+ {
+  "id": "crass",
+  "word": "Crass",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "very rude, stupid or insensitive; lacking refinement",
+  "bn": "স্থূল; অমার্জিত; চরম অসংবেদনশীল",
+  "s": [
+   "That was a crass joke.",
+   "His crass comments about the poor shocked everyone at the charity dinner.",
+   "The tycoon's crass, {ostentatious} party was a {travesty} of good taste."
+  ],
+  "sbn": [
+   "ওটা একটা স্থূল (crass) রসিকতা ছিল।",
+   "দাতব্য নৈশভোজে গরিবদের নিয়ে তার অমার্জিত (crass) মন্তব্য সবাইকে হতবাক করল।",
+   "ধনকুবেরের স্থূল (crass), জাঁক দেখানো পার্টিটা ছিল সুরুচির এক বিকৃত প্রহসন।"
+  ],
+  "tip": "Latin crassus = thick, solid; a crass person is thick and insensitive."
+ },
+ {
+  "id": "credulous",
+  "word": "Credulous",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "too ready to believe things; easily fooled",
+  "bn": "সহজে বিশ্বাসী; সরলবিশ্বাসী; বিশ্বাসপ্রবণ",
+  "s": [
+   "Credulous people believe every rumor.",
+   "The credulous tourist paid triple the price after hearing the seller's sad story.",
+   "The {charlatan} preyed on credulous villagers, selling them a fake {panacea}."
+  ],
+  "sbn": [
+   "সহজে বিশ্বাস করা (credulous) মানুষ সব গুজবই বিশ্বাস করে।",
+   "বিক্রেতার করুণ গল্প শুনে সরলবিশ্বাসী (credulous) পর্যটক তিন গুণ দাম দিল।",
+   "ভণ্ড লোকটা সরলবিশ্বাসী (credulous) গ্রামবাসীদের ঠকিয়ে তাদের কাছে নকল সর্বরোগহর ওষুধ বিক্রি করত।"
+  ],
+  "tip": "Latin credere = to believe (as in credit, creed); credulous = believes too easily."
+ },
+ {
+  "id": "crescendo",
+  "word": "Crescendo",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a gradual increase in loudness; a peak or climax",
+  "bn": "ক্রমশ উচ্চগ্রাম; চরম পর্যায়",
+  "s": [
+   "The music rose to a crescendo.",
+   "The crowd's cheers reached a crescendo as the runner crossed the line.",
+   "Public anger reached a crescendo, and the {beleaguered} minister had to {relinquish} his post."
+  ],
+  "sbn": [
+   "সংগীত ক্রমশ চড়ে চরম পর্যায়ে (crescendo) পৌঁছাল।",
+   "দৌড়বিদ দাগ পেরোতেই দর্শকদের উল্লাস চরমে (crescendo) উঠল।",
+   "জনগণের ক্ষোভ চরম পর্যায়ে (crescendo) পৌঁছাল, আর চারদিক থেকে চাপে থাকা মন্ত্রীকে পদ ছাড়তে হলো।"
+  ],
+  "tip": "Italian crescendo = growing (Latin crescere = to grow, as in crescent)."
+ },
+ {
+  "id": "crestfallen",
+  "word": "Crestfallen",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "sad and disappointed",
+  "bn": "হতাশ; মনমরা; বিষণ্ন",
+  "s": [
+   "She looked crestfallen after the loss.",
+   "The boy was crestfallen when he learned the school trip had been cancelled.",
+   "The once {ebullient} candidate looked crestfallen and {despondent} when the results came in."
+  ],
+  "sbn": [
+   "হারের পর তাকে মনমরা (crestfallen) দেখাচ্ছিল।",
+   "স্কুলের ভ্রমণ বাতিল হয়েছে শুনে ছেলেটা হতাশ (crestfallen) হয়ে পড়ল।",
+   "একসময়ের উচ্ছল প্রার্থীকে ফলাফল আসার পর বিষণ্ন (crestfallen) আর ভেঙে পড়া দেখাচ্ছিল।"
+  ],
+  "tip": "Picture a rooster whose crest droops after losing a fight: crestfallen = defeated and sad."
+ },
+ {
+  "id": "crevice",
+  "word": "Crevice",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a narrow crack or opening, especially in rock or a wall",
+  "bn": "ফাটল; চিড়",
+  "s": [
+   "A lizard hid in the crevice.",
+   "Climbers pushed their fingers into a small crevice to pull themselves up.",
+   "Seeds lodged in every crevice of the {dilapidated} temple, and plants began to {proliferate}."
+  ],
+  "sbn": [
+   "একটা টিকটিকি ফাটলে (crevice) লুকাল।",
+   "পর্বতারোহীরা নিজেদের টেনে তুলতে ছোট্ট একটা ফাটলে (crevice) আঙুল ঢুকিয়ে দিল।",
+   "জরাজীর্ণ মন্দিরের প্রতিটি ফাটলে (crevice) বীজ আটকে গেল, আর গাছপালা দ্রুত ছড়িয়ে পড়তে লাগল।"
+  ],
+  "tip": "A crevice is a small crack; a crevasse is a huge crack in a glacier."
+ },
+ {
+  "id": "cringe",
+  "word": "Cringe",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to shrink back in fear; to feel deeply embarrassed",
+  "bn": "অস্বস্তিতে কুঁকড়ে যাওয়া; লজ্জায় সংকুচিত হওয়া",
+  "s": [
+   "I cringe when I hear my old songs.",
+   "Everyone cringed when the best man told an awkward joke at the wedding.",
+   "Listeners cringed at the {grandiloquent} speech and its {mawkish} ending."
+  ],
+  "sbn": [
+   "নিজের পুরনো গান শুনলে আমি লজ্জায় কুঁকড়ে যাই (cringe)।",
+   "বিয়েতে বরের বন্ধু একটা বেখাপ্পা রসিকতা করলে সবাই অস্বস্তিতে কুঁকড়ে গেল (cringed)।",
+   "বাগাড়ম্বরপূর্ণ ভাষণ আর তার ন্যাকা আবেগভরা সমাপ্তি শুনে শ্রোতারা অস্বস্তিতে কুঁকড়ে গেল (cringed)।"
+  ],
+  "tip": "Picture your body shrinking back when something is painfully embarrassing: that is a cringe."
+ },
+ {
+  "id": "criterion",
+  "word": "Criterion",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a standard used to judge or decide something (plural: criteria)",
+  "bn": "মানদণ্ড; বিচারের মাপকাঠি",
+  "s": [
+   "Price is my main criterion.",
+   "The scholarship committee uses grades as one criterion, along with community service.",
+   "The panel's {arbitrary} criteria were {problematic}, so applicants demanded clearer rules."
+  ],
+  "sbn": [
+   "দামই আমার প্রধান মানদণ্ড (criterion)।",
+   "বৃত্তি কমিটি সমাজসেবার পাশাপাশি গ্রেডকেও একটা মাপকাঠি (criterion) হিসেবে ধরে।",
+   "প্যানেলের খেয়ালখুশিমতো মানদণ্ডগুলো (criteria) সমস্যাজনক ছিল, তাই আবেদনকারীরা আরও স্পষ্ট নিয়ম দাবি করল।"
+  ],
+  "tip": "Greek kritērion = a means of judging (kritēs = judge, as in critic)."
+ },
+ {
+  "id": "critique",
+  "word": "Critique",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a detailed evaluation of something's strengths and weaknesses",
+  "bn": "সমালোচনা; মূল্যায়ন; পর্যালোচনা",
+  "s": [
+   "The teacher gave a critique of my essay.",
+   "Her critique of the film praised its acting but questioned its slow pace.",
+   "The {incisive} critique exposed the {fallacious} reasoning at the heart of the report."
+  ],
+  "sbn": [
+   "শিক্ষক আমার রচনার একটা মূল্যায়ন (critique) দিলেন।",
+   "ছবিটা নিয়ে তার পর্যালোচনা (critique) অভিনয়ের প্রশংসা করলেও ধীর গতি নিয়ে প্রশ্ন তুলল।",
+   "তীক্ষ্ণ সমালোচনাটা (critique) প্রতিবেদনের মূলে থাকা ভ্রান্ত যুক্তি ফাঁস করে দিল।"
+  ],
+  "tip": "Critique, critic and criticize share Greek kritikos = able to judge."
+ },
+ {
+  "id": "crux",
+  "word": "Crux",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the most important or central point of an issue",
+  "bn": "মূল বিষয়; সারকথা; কেন্দ্রবিন্দু",
+  "s": [
+   "That is the crux of the problem.",
+   "The crux of the debate was whether the new road would harm the wetlands.",
+   "The lawyer ignored {tangential} issues and went straight to the crux of the case, a {discrepancy} in the dates."
+  ],
+  "sbn": [
+   "ওটাই সমস্যার মূল বিষয় (crux)।",
+   "বিতর্কের কেন্দ্রবিন্দু (crux) ছিল নতুন রাস্তা জলাভূমির ক্ষতি করবে কি না।",
+   "আইনজীবী অপ্রাসঙ্গিক বিষয় বাদ দিয়ে সরাসরি মামলার মূল বিষয়ে (crux) গেলেন, আর তা হলো তারিখের অমিল।"
+  ],
+  "tip": "Latin crux = cross; the crux is the point where the key lines cross."
+ },
+ {
+  "id": "cryptic",
+  "word": "Cryptic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "mysterious and hard to understand; having a hidden meaning",
+  "bn": "রহস্যময়; দুর্বোধ্য; গূঢ়",
+  "s": [
+   "He left a cryptic note.",
+   "The cryptic message on the wall puzzled the detectives for weeks.",
+   "The poet's cryptic lines are so {esoteric} and {enigmatic} that even scholars argue about them."
+  ],
+  "sbn": [
+   "সে একটা রহস্যময় (cryptic) চিরকুট রেখে গেল।",
+   "দেয়ালের দুর্বোধ্য (cryptic) বার্তাটা কয়েক সপ্তাহ ধরে গোয়েন্দাদের ধাঁধায় ফেলে রেখেছিল।",
+   "কবির গূঢ় (cryptic) পঙ্‌ক্তিগুলো এতটাই দুর্জ্ঞেয় আর রহস্যময় যে পণ্ডিতেরাও এগুলো নিয়ে তর্ক করেন।"
+  ],
+  "tip": "Greek kryptos = hidden (as in crypt and cryptography)."
+ },
+ {
+  "id": "cuisine",
+  "word": "Cuisine",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a style of cooking, especially of a country or region",
+  "bn": "রন্ধনশৈলী; রান্নার ধরন; খাবারদাবার",
+  "s": [
+   "I love Bengali cuisine.",
+   "Old Dhaka is famous for its rich cuisine, especially biryani and kebabs.",
+   "The {epicure} praised the chef's cuisine for its {exquisite} balance of spices."
+  ],
+  "sbn": [
+   "আমি বাঙালি রান্না (cuisine) খুব পছন্দ করি।",
+   "পুরান ঢাকা তার সমৃদ্ধ রন্ধনশৈলীর (cuisine) জন্য বিখ্যাত, বিশেষ করে বিরিয়ানি আর কাবাবের জন্য।",
+   "ভোজনরসিক মানুষটি মসলার চমৎকার ভারসাম্যের জন্য শেফের রান্নার (cuisine) প্রশংসা করলেন।"
+  ],
+  "tip": "French cuisine = kitchen, cooking; it goes back to Latin coquere = to cook."
+ },
+ {
+  "id": "culinary",
+  "word": "Culinary",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "related to cooking or the kitchen",
+  "bn": "রান্নাসংক্রান্ত; রন্ধনবিষয়ক",
+  "s": [
+   "He has great culinary skills.",
+   "She went to culinary school to become a professional pastry chef.",
+   "His culinary {finesse} turned simple rice and lentils into a {delectable} feast."
+  ],
+  "sbn": [
+   "তার রান্নার (culinary) দক্ষতা দারুণ।",
+   "পেশাদার পেস্ট্রি শেফ হতে সে রন্ধনবিষয়ক (culinary) স্কুলে ভর্তি হলো।",
+   "তার রান্নার (culinary) সূক্ষ্ম দক্ষতা সাধারণ ভাত-ডালকেও সুস্বাদু ভোজে পরিণত করল।"
+  ],
+  "tip": "Latin culina = kitchen."
+ },
+ {
+  "id": "cull",
+  "word": "Cull",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to pick out from a large group; to reduce animal numbers by killing some",
+  "bn": "বাছাই করা; বেছে নেওয়া; সংখ্যা কমানো",
+  "s": [
+   "She culled the best photos.",
+   "The editor culled stories from hundreds of letters sent by readers.",
+   "The scholar culled quotations from a {plethora} of sources to create a {compendium} of proverbs."
+  ],
+  "sbn": [
+   "সে সেরা ছবিগুলো বাছাই করল (culled)।",
+   "সম্পাদক পাঠকদের পাঠানো শত শত চিঠি থেকে গল্প বেছে নিলেন (culled)।",
+   "গবেষক অসংখ্য উৎস থেকে উদ্ধৃতি বাছাই করে (culled) প্রবাদের একটা সংক্ষিপ্ত সংকলন তৈরি করলেন।"
+  ],
+  "tip": "From Latin colligere = to gather, the same root as collect."
+ },
+ {
+  "id": "culminate",
+  "word": "Culminate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to reach the highest point or final result",
+  "bn": "চরমে পৌঁছানো; পরিণতি লাভ করা",
+  "s": [
+   "The festival culminated in fireworks.",
+   "Years of hard training culminated in her winning a national medal.",
+   "The {protracted} negotiations finally culminated in an {armistice}."
+  ],
+  "sbn": [
+   "উৎসবটা আতশবাজির মধ্য দিয়ে চরমে পৌঁছাল (culminated)।",
+   "বছরের পর বছর কঠোর অনুশীলনের পরিণতি হলো (culminated) তার জাতীয় পদক জয়।",
+   "দীর্ঘ টানা আলোচনা শেষমেশ যুদ্ধবিরতিতে পরিণতি লাভ করল (culminated)।"
+  ],
+  "tip": "Latin culmen = peak, summit."
+ },
+ {
+  "id": "culpable",
+  "word": "Culpable",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "deserving blame",
+  "bn": "দোষী; দোষণীয়; অপরাধী",
+  "s": [
+   "The driver was culpable for the crash.",
+   "The report found the factory owners culpable for ignoring fire safety rules.",
+   "Though he tried to {exculpate} himself, the evidence showed the manager was culpable of {malfeasance}."
+  ],
+  "sbn": [
+   "দুর্ঘটনার জন্য চালকই দোষী (culpable) ছিল।",
+   "প্রতিবেদনে অগ্নিনিরাপত্তার নিয়ম উপেক্ষার জন্য কারখানা মালিকদের দোষী (culpable) পাওয়া গেল।",
+   "নিজেকে নির্দোষ প্রমাণের চেষ্টা করলেও প্রমাণে দেখা গেল ম্যানেজার সরকারি দায়িত্বে অনিয়মের দায়ে দোষী (culpable)।"
+  ],
+  "tip": "Latin culpa = fault, blame (as in culprit and mea culpa)."
+ },
+ {
+  "id": "curb",
+  "word": "Curb",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to control or limit something",
+  "bn": "নিয়ন্ত্রণ করা; দমন করা; লাগাম টানা",
+  "s": [
+   "Try to curb your anger.",
+   "The government raised taxes on tobacco to curb smoking among young people.",
+   "New laws aim to curb {rampant} pollution and {mitigate} its damage to rivers."
+  ],
+  "sbn": [
+   "রাগ নিয়ন্ত্রণ করার (curb) চেষ্টা করো।",
+   "তরুণদের মধ্যে ধূমপান কমাতে (curb) সরকার তামাকের ওপর কর বাড়াল।",
+   "নতুন আইনগুলোর লক্ষ্য লাগামহীন দূষণে লাগাম টানা (curb) এবং নদীর ক্ষতি কমানো।"
+  ],
+  "tip": "A curb chain on a horse's bit holds the horse back: to curb is to restrain."
+ },
+ {
+  "id": "curmudgeon",
+  "word": "Curmudgeon",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a bad-tempered, grumpy (often old) person",
+  "bn": "খিটখিটে বুড়ো; বদমেজাজি লোক",
+  "s": [
+   "The old curmudgeon yelled at the kids.",
+   "Our neighbor is a curmudgeon who complains about every party on the street.",
+   "The {irascible} curmudgeon {disparaged} every new idea at the meeting."
+  ],
+  "sbn": [
+   "খিটখিটে বুড়ো (curmudgeon) বাচ্চাদের ওপর চেঁচিয়ে উঠল।",
+   "আমাদের প্রতিবেশী একজন বদমেজাজি লোক (curmudgeon), রাস্তার প্রতিটি অনুষ্ঠান নিয়েই সে অভিযোগ করে।",
+   "রগচটা, খিটখিটে লোকটা (curmudgeon) সভায় প্রতিটি নতুন আইডিয়াকে তুচ্ছ করে দেখাল।"
+  ],
+  "tip": "Its origin is unknown. Memory trick: picture a grumpy old man muttering curses and grudges."
+ },
+ {
+  "id": "cursory",
+  "word": "Cursory",
+  "src": "WS1+WS2",
+  "pos": "adjective",
+  "en": "quick and not thorough; hasty",
+  "bn": "ভাসাভাসা; তড়িঘড়ি; ওপর-ওপর",
+  "s": [
+   "He gave the page a cursory glance.",
+   "A cursory check of the car missed the faulty brakes.",
+   "The {perfunctory} inspection was so cursory that it missed {egregious} safety violations."
+  ],
+  "sbn": [
+   "সে পাতাটার ওপর ভাসাভাসা (cursory) চোখ বুলাল।",
+   "গাড়ির তড়িঘড়ি (cursory) পরীক্ষায় নষ্ট ব্রেক ধরা পড়েনি।",
+   "দায়সারা পরিদর্শনটা এতটাই ওপর-ওপর (cursory) ছিল যে ভয়াবহ নিরাপত্তা লঙ্ঘনও চোখ এড়িয়ে গেল।"
+  ],
+  "tip": "Latin cursor = runner (currere = to run): a cursory look just runs past quickly."
+ },
+ {
+  "id": "curtail",
+  "word": "Curtail",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to cut short or reduce",
+  "bn": "কমানো; ছেঁটে ফেলা; সংক্ষিপ্ত করা",
+  "s": [
+   "Rain curtailed the cricket match.",
+   "The company curtailed spending after profits fell sharply.",
+   "The {draconian} law curtailed press freedom and {stymied} the government's critics."
+  ],
+  "sbn": [
+   "বৃষ্টির কারণে ক্রিকেট ম্যাচটা সংক্ষিপ্ত করা হলো (curtailed)।",
+   "মুনাফা হঠাৎ কমে যাওয়ায় কোম্পানিটা খরচ কমাল (curtailed)।",
+   "কঠোর আইনটা সংবাদপত্রের স্বাধীনতা ছেঁটে ফেলল (curtailed) এবং সরকারের সমালোচকদের পথ আটকে দিল।"
+  ],
+  "tip": "Memory trick: think 'cut the tail', so curtail means to cut something shorter."
+ },
+ {
+  "id": "cynic",
+  "word": "Cynic",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a person who believes people act only for selfish reasons",
+  "bn": "মানুষের সদিচ্ছায় অবিশ্বাসী; নিন্দুক; সংশয়বাদী",
+  "s": [
+   "A cynic doubts everyone's motives.",
+   "The cynic said the charity was just a way for the company to look good.",
+   "Years of broken promises turned the once {ardent} activist into a cynic, {skeptical} of every politician."
+  ],
+  "sbn": [
+   "একজন সংশয়বাদী (cynic) সবার উদ্দেশ্য নিয়েই সন্দেহ করে।",
+   "সংশয়বাদী লোকটা (cynic) বলল, দাতব্য কাজটা আসলে কোম্পানির ভাবমূর্তি ভালো দেখানোর কৌশল মাত্র।",
+   "বছরের পর বছর প্রতিশ্রুতি ভঙ্গ একসময়ের উদ্যমী কর্মীকে এমন এক সংশয়বাদীতে (cynic) পরিণত করল, যে প্রত্যেক রাজনীতিককেই সন্দেহ করে।"
+  ],
+  "tip": "Greek kynikos = dog-like; the ancient Cynic philosophers scorned social customs."
+ },
+ {
+  "id": "dearth",
+  "word": "Dearth",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a lack or shortage of something",
+  "bn": "অভাব; ঘাটতি; স্বল্পতা",
+  "s": [
+   "There is a dearth of teachers here.",
+   "The dearth of rain this year has worried farmers across the north.",
+   "The {paucity} of evidence and the dearth of witnesses made the case {tenuous}."
+  ],
+  "sbn": [
+   "এখানে শিক্ষকের অভাব (dearth) আছে।",
+   "এ বছর বৃষ্টির ঘাটতি (dearth) উত্তরাঞ্চলের কৃষকদের দুশ্চিন্তায় ফেলেছে।",
+   "প্রমাণের স্বল্পতা আর সাক্ষীর অভাব (dearth) মামলাটাকে দুর্বল করে দিল।"
+  ],
+  "tip": "Dearth comes from dear: when something is scarce, it becomes dear (costly)."
+ },
+ {
+  "id": "debacle",
+  "word": "Debacle",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a sudden, complete failure; a disaster",
+  "bn": "চরম ব্যর্থতা; বিপর্যয়; ধস",
+  "s": [
+   "The party was a debacle.",
+   "The product launch turned into a debacle when the website crashed for hours.",
+   "The {impetuous} general's attack ended in a debacle, and he was forced to {capitulate}."
+  ],
+  "sbn": [
+   "পার্টিটা একটা চরম ব্যর্থতা (debacle) ছিল।",
+   "ওয়েবসাইট কয়েক ঘণ্টা বন্ধ থাকায় পণ্য উদ্বোধনটা বিপর্যয়ে (debacle) পরিণত হলো।",
+   "হঠকারী জেনারেলের আক্রমণ চরম বিপর্যয়ে (debacle) শেষ হলো, আর তাঁকে আত্মসমর্পণ করতে বাধ্য হতে হলো।"
+  ],
+  "tip": "French débâcle = the sudden breaking up of ice on a river: a sudden collapse."
+ }
+]

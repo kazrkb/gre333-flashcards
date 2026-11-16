@@ -1,0 +1,2681 @@
+[
+ {
+  "id": "harry",
+  "word": "Harry",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to harass or worry again and again; to raid and plunder",
+  "bn": "বারবার জ্বালাতন করা; লুটপাট চালানো",
+  "s": [
+   "The noisy dogs harry the sheep every night.",
+   "Creditors continued to harry him until he paid the old debt.",
+   "The {relentless} reporters would harry the minister until he {recanted} his careless remark."
+  ],
+  "sbn": [
+   "কুকুরগুলো প্রতি রাতে ভেড়াদের জ্বালাতন করে (harry)।",
+   "পাওনাদাররা পুরোনো ঋণ শোধ না হওয়া পর্যন্ত তাকে বারবার জ্বালাতন করত (harry)।",
+   "সাংবাদিকরা মন্ত্রীকে এতই জ্বালাতন করল (harry) যে শেষে তিনি অসতর্ক মন্তব্য প্রত্যাহার করলেন।"
+  ],
+  "tip": "Think \"harass\" and \"harry\" together: both mean to pester without rest."
+ },
+ {
+  "id": "hedonism",
+  "word": "Hedonism",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the belief that pleasure is the main goal of life",
+  "bn": "সুখবাদ; ভোগবিলাসে মত্ততা",
+  "s": [
+   "His hedonism meant parties every weekend.",
+   "Her life of hedonism ended when she lost all her money.",
+   "The {opulent} resort promoted a culture of hedonism, which the {ascetic} monk found shocking."
+  ],
+  "sbn": [
+   "তার সুখবাদী জীবন (hedonism) মানে প্রতি সপ্তাহান্তে পার্টি।",
+   "ভোগবিলাসের জীবন (hedonism) তার শেষ হলো যখন সব টাকা হারাল।",
+   "জাঁকজমকপূর্ণ রিসোর্টটি ভোগবাদের (hedonism) সংস্কৃতি ছড়াত, যা সন্ন্যাসী ভিক্ষুর কাছে ছিল অবাক করা।"
+  ],
+  "tip": "Greek hedone = pleasure. Hedonism = pleasure-ism."
+ },
+ {
+  "id": "hegemony",
+  "word": "Hegemony",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "dominant control or leadership, especially by one state over others",
+  "bn": "আধিপত্য; কর্তৃত্ব",
+  "s": [
+   "The empire held hegemony over the region.",
+   "Many countries resisted the hegemony of one powerful neighbor.",
+   "The {ideology} of the ruling party helped it keep hegemony over the media for decades."
+  ],
+  "sbn": [
+   "সাম্রাজ্যটি ওই অঞ্চলের ওপর আধিপত্য (hegemony) বজায় রেখেছিল।",
+   "অনেক দেশ এক শক্তিশালী প্রতিবেশীর আধিপত্য (hegemony) মেনে নিতে চায়নি।",
+   "ক্ষমতাসীন দলের মতাদর্শ দশকের পর দশক গণমাধ্যমের ওপর তাদের আধিপত্য (hegemony) ধরে রাখতে সাহায্য করেছে।"
+  ],
+  "tip": "Greek hegemon = leader. Think \"hedge-money\": the leader who controls the money."
+ },
+ {
+  "id": "heinous",
+  "word": "Heinous",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "shockingly evil or wicked",
+  "bn": "জঘন্য; ঘৃণ্য",
+  "s": [
+   "Murder is a heinous crime.",
+   "The judge called the attack a heinous act of cruelty.",
+   "The {draconian} sentence reflected public anger at such a heinous betrayal of trust."
+  ],
+  "sbn": [
+   "খুন একটি জঘন্য (heinous) অপরাধ।",
+   "বিচারক হামলাটিকে নিষ্ঠুরতার জঘন্য (heinous) কাজ বলে অভিহিত করলেন।",
+   "এমন জঘন্য (heinous) বিশ্বাসঘাতকতার প্রতি জনরোষ প্রতিফলিত হলো কঠোর শাস্তিতে।"
+  ],
+  "tip": "Sounds like \"hate-ness\": a crime you hate."
+ },
+ {
+  "id": "herald",
+  "word": "Herald",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to announce or signal the coming of; (noun) a messenger",
+  "bn": "ঘোষণা করা; আগমনী বার্তা দেওয়া",
+  "s": [
+   "The bells herald the new year.",
+   "Dark clouds often herald a coming storm.",
+   "The {maverick} designer's bold collection would herald a new {epoch} in fashion."
+  ],
+  "sbn": [
+   "ঘণ্টাগুলো নতুন বছরের আগমন ঘোষণা করে (herald)।",
+   "কালো মেঘ প্রায়ই ঝড়ের আগমনী বার্তা দেয় (herald)।",
+   "নিয়মভাঙা ডিজাইনারের সাহসী সংগ্রহ ফ্যাশনে এক নতুন যুগের সূচনা ঘোষণা করবে (herald)।"
+  ],
+  "tip": "A herald in old times shouted news ahead of a king."
+ },
+ {
+  "id": "heresy",
+  "word": "Heresy",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "belief or opinion against accepted doctrine",
+  "bn": "ধর্মদ্রোহিতা; প্রচলিত মতের বিরুদ্ধ মত",
+  "s": [
+   "The priest called the idea heresy.",
+   "Questioning the old theory was once considered heresy.",
+   "To the {reactionary} elders, his modern interpretation was pure heresy."
+  ],
+  "sbn": [
+   "পুরোহিত ধারণাটিকে ধর্মদ্রোহিতা (heresy) বললেন।",
+   "পুরোনো তত্ত্বে প্রশ্ন তোলা একসময় ধর্মদ্রোহিতা (heresy) বলে গণ্য হতো।",
+   "রক্ষণশীল প্রবীণদের কাছে তার আধুনিক ব্যাখ্যা ছিল নিছক ধর্মদ্রোহিতা (heresy)।"
+  ],
+  "tip": "Greek hairesis = choice; a heretic \"chooses\" a different belief."
+ },
+ {
+  "id": "hermetic",
+  "word": "Hermetic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "airtight; sealed off from outside influence",
+  "bn": "বায়ুরোধী; বাইরের প্রভাব থেকে বিচ্ছিন্ন",
+  "s": [
+   "The jar has a hermetic seal.",
+   "The monks lived a hermetic life behind high walls.",
+   "The {introspective} author worked in a hermetic world, cut off from news and visitors."
+  ],
+  "sbn": [
+   "বয়ামটির মুখ বায়ুরোধী (hermetic) করে আটকানো।",
+   "সন্ন্যাসীরা উঁচু দেয়ালের আড়ালে বিচ্ছিন্ন (hermetic) জীবন কাটাতেন।",
+   "আত্মমগ্ন লেখক খবর ও দর্শনার্থী থেকে বিচ্ছিন্ন (hermetic) জগতে কাজ করতেন।"
+  ],
+  "tip": "From Hermes, associated with sealed magical vessels. Think: \"sealed tight\"."
+ },
+ {
+  "id": "heyday",
+  "word": "Heyday",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the peak period of success or power",
+  "bn": "সোনালি যুগ; উৎকর্ষের সময়",
+  "s": [
+   "The singer was famous in her heyday.",
+   "Calcutta was a cultural capital in its heyday.",
+   "In its {epoch}-making heyday, the mill employed thousands, but now it stands {derelict}."
+  ],
+  "sbn": [
+   "গায়িকা তার সোনালি যুগে (heyday) বিখ্যাত ছিলেন।",
+   "কলকাতা তার স্বর্ণযুগে (heyday) সাংস্কৃতিক রাজধানী ছিল।",
+   "যুগান্তকারী সোনালি সময়ে (heyday) মিলটিতে হাজারো মানুষ কাজ করত, কিন্তু এখন তা পরিত্যক্ত।"
+  ],
+  "tip": "\"Hey, day!\" the best day of your life: your peak."
+ },
+ {
+  "id": "hiatus",
+  "word": "Hiatus",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a pause or gap in activity",
+  "bn": "বিরতি; ছেদ",
+  "s": [
+   "The band took a hiatus last year.",
+   "After a long hiatus, she returned to teaching.",
+   "The {interminable} talks went on hiatus when both sides reached an {impasse}."
+  ],
+  "sbn": [
+   "ব্যান্ডটি গত বছর বিরতি (hiatus) নিয়েছিল।",
+   "দীর্ঘ বিরতির (hiatus) পর তিনি আবার শিক্ষকতায় ফিরলেন।",
+   "দুই পক্ষ অচলাবস্থায় পৌঁছালে অন্তহীন আলোচনা বিরতিতে (hiatus) গেল।"
+  ],
+  "tip": "Latin hiare = to gape. A hiatus is a gap."
+ },
+ {
+  "id": "hierarchy",
+  "word": "Hierarchy",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a system ranked by levels of power or importance",
+  "bn": "ক্রমস্তর; পদমর্যাদার ধাপ",
+  "s": [
+   "The army has a strict hierarchy.",
+   "Everyone in the office knew their place in the hierarchy.",
+   "The {draconian} firm's rigid hierarchy left little room for {gregarious} teamwork."
+  ],
+  "sbn": [
+   "সেনাবাহিনীতে কঠোর পদক্রম (hierarchy) আছে।",
+   "অফিসের সবাই জানত ক্রমস্তরে (hierarchy) তাদের জায়গা কোথায়।",
+   "কঠোর প্রতিষ্ঠানটির অনমনীয় ক্রমস্তর (hierarchy) মিশুক দলগত কাজের সুযোগ খুব কমই রেখেছিল।"
+  ],
+  "tip": "Greek hieros = sacred + arkhe = rule: rule by priests, then ranks."
+ },
+ {
+  "id": "histrionic",
+  "word": "Histrionic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "overly dramatic or theatrical in behavior",
+  "bn": "নাটকীয়; অতিরঞ্জিত আবেগপূর্ণ",
+  "s": [
+   "Her histrionic crying made everyone stare.",
+   "He gave a histrionic speech about a small mistake.",
+   "The actor's {bombastic}, histrionic outburst was clearly {feigned} to win sympathy."
+  ],
+  "sbn": [
+   "তার নাটকীয় (histrionic) কান্না সবাইকে তাকাতে বাধ্য করল।",
+   "সামান্য ভুল নিয়ে সে নাটকীয় (histrionic) বক্তৃতা দিল।",
+   "অভিনেতার বাগাড়ম্বরপূর্ণ ও নাটকীয় (histrionic) ফেটে পড়া সহানুভূতি পেতে ভান করা ছিল স্পষ্ট।"
+  ],
+  "tip": "Latin histrio = actor. Histrionic = acting too much."
+ },
+ {
+  "id": "hoary",
+  "word": "Hoary",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "very old; white or gray with age",
+  "bn": "অতি পুরোনো; পাকা-সাদা চুলের",
+  "s": [
+   "The hoary professor had taught for fifty years.",
+   "He told the same hoary joke again.",
+   "The {hackneyed} plot relied on a hoary legend that audiences had heard countless times."
+  ],
+  "sbn": [
+   "অতি প্রবীণ (hoary) অধ্যাপক পঞ্চাশ বছর পড়িয়েছেন।",
+   "সে আবার সেই পুরোনো (hoary) রসিকতাটাই বলল।",
+   "ক্লিশে কাহিনিটি এমন এক জীর্ণ (hoary) কিংবদন্তির ওপর দাঁড়ানো যা দর্শকরা বহুবার শুনেছে।"
+  ],
+  "tip": "Hoar-frost is white; hoary = white-haired with age."
+ },
+ {
+  "id": "homage",
+  "word": "Homage",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "respect or honor shown publicly",
+  "bn": "শ্রদ্ধাঞ্জলি; সম্মান প্রদর্শন",
+  "s": [
+   "We paid homage to the fallen soldiers.",
+   "The film is a homage to old silent movies.",
+   "Students came to pay homage, showing {obeisance} to the teacher who had shaped a generation."
+  ],
+  "sbn": [
+   "আমরা শহীদ সৈনিকদের প্রতি শ্রদ্ধা (homage) জানালাম।",
+   "সিনেমাটি পুরোনো নির্বাক ছবিগুলোর প্রতি শ্রদ্ধাঞ্জলি (homage)।",
+   "শিক্ষার্থীরা এক প্রজন্ম গড়ে তোলা শিক্ষকের প্রতি শ্রদ্ধা (homage) ও নতি জানাতে এল।"
+  ],
+  "tip": "Same root as \"man\": a vassal paid homage to his lord."
+ },
+ {
+  "id": "homily",
+  "word": "Homily",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a moral talk or lecture, often tiresome",
+  "bn": "নীতিকথা; উপদেশমূলক ভাষণ",
+  "s": [
+   "The priest gave a short homily.",
+   "Dad's homily about saving money bored us.",
+   "Her {pedantic} homily on punctuality, full of {platitudes}, made the team yawn."
+  ],
+  "sbn": [
+   "পুরোহিত একটি ছোট নীতিকথা (homily) শোনালেন।",
+   "টাকা জমানো নিয়ে বাবার উপদেশমূলক বক্তৃতা (homily) আমাদের বিরক্ত করল।",
+   "সময়ানুবর্তিতা নিয়ে তার পাণ্ডিত্যপূর্ণ ও গতানুগতিক উপদেশ (homily) দলকে হাই তুলিয়ে ছাড়ল।"
+  ],
+  "tip": "Greek homilia = assembly talk. Homily sounds like \"home-lie-ly\": a preachy talk."
+ },
+ {
+  "id": "hubris",
+  "word": "Hubris",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "excessive pride that leads to downfall",
+  "bn": "অতি অহংকার; দম্ভ",
+  "s": [
+   "His hubris led to his ruin.",
+   "The king's hubris made him ignore every warning.",
+   "The CEO's {audacious} hubris, ignoring all {pertinent} advice, finally brought the firm down."
+  ],
+  "sbn": [
+   "তার অতি অহংকার (hubris) তার সর্বনাশ ডেকে আনল।",
+   "রাজার দম্ভ (hubris) তাকে সব সতর্কবার্তা উপেক্ষা করতে বাধ্য করল।",
+   "প্রধান নির্বাহীর দুঃসাহসী দম্ভ (hubris) সব প্রাসঙ্গিক পরামর্শ অগ্রাহ্য করে শেষ পর্যন্ত কোম্পানিকে ডুবিয়ে দিল।"
+  ],
+  "tip": "Greek hybris: pride that angers the gods and ends in a fall."
+ },
+ {
+  "id": "husbandry",
+  "word": "Husbandry",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "careful management of resources; farming",
+  "bn": "কৃষিকাজ; সতর্ক সম্পদ ব্যবস্থাপনা",
+  "s": [
+   "Animal husbandry is common in villages.",
+   "Good husbandry of water saved the farm in dry years.",
+   "Her {provident} husbandry of the family's land kept them from {indigence}."
+  ],
+  "sbn": [
+   "গ্রামে পশুপালন (husbandry) খুবই প্রচলিত।",
+   "পানির সুব্যবস্থাপনা (husbandry) খরার বছরে খামারটি বাঁচিয়ে দিল।",
+   "পরিবারের জমির প্রতি তার দূরদর্শী যত্ন (husbandry) তাদের দারিদ্র্য থেকে রক্ষা করল।"
+  ],
+  "tip": "Husband once meant a house-manager; husbandry = careful managing."
+ },
+ {
+  "id": "hypocrisy",
+  "word": "Hypocrisy",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "pretending to have virtues you do not have",
+  "bn": "ভণ্ডামি; কপটতা",
+  "s": [
+   "His hypocrisy annoyed everyone.",
+   "It is hypocrisy to preach honesty and then cheat.",
+   "The {sanctimonious} speech was exposed as hypocrisy when {sordid} secrets surfaced."
+  ],
+  "sbn": [
+   "তার ভণ্ডামি (hypocrisy) সবাইকে বিরক্ত করত।",
+   "সততার উপদেশ দিয়ে নিজে প্রতারণা করা ভণ্ডামি (hypocrisy)।",
+   "ধার্মিকতার ভান করা বক্তৃতাটি নোংরা গোপন কথা ফাঁস হলে ভণ্ডামি (hypocrisy) বলে প্রমাণিত হলো।"
+  ],
+  "tip": "Greek hypokrites = stage actor. A hypocrite plays a role."
+ },
+ {
+  "id": "hypothetical",
+  "word": "Hypothetical",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "based on an assumption, not on fact",
+  "bn": "অনুমানভিত্তিক; কাল্পনিক",
+  "s": [
+   "The teacher gave a hypothetical example.",
+   "It is only a hypothetical case, not a real one.",
+   "Her {tentative} reply to the hypothetical question showed she hated {conjecture}."
+  ],
+  "sbn": [
+   "শিক্ষক একটি কাল্পনিক (hypothetical) উদাহরণ দিলেন।",
+   "এটা শুধু অনুমানভিত্তিক (hypothetical) ঘটনা, বাস্তব নয়।",
+   "কাল্পনিক (hypothetical) প্রশ্নে তার সাময়িক উত্তর দেখাল যে সে আন্দাজ পছন্দ করে না।"
+  ],
+  "tip": "Greek hypo = under + thesis = placing: an assumption placed under an argument."
+ },
+ {
+  "id": "ideology",
+  "word": "Ideology",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a set of beliefs guiding a group or party",
+  "bn": "মতাদর্শ; আদর্শ",
+  "s": [
+   "Each party has its own ideology.",
+   "His ideology shaped how he voted.",
+   "The {zealous} followers defended the party's ideology even when evidence contradicted it."
+  ],
+  "sbn": [
+   "প্রতিটি দলের নিজস্ব মতাদর্শ (ideology) আছে।",
+   "তার মতাদর্শ (ideology) তার ভোট দেওয়ার ধরন ঠিক করেছিল।",
+   "উৎসাহী অনুসারীরা তথ্য উল্টো বললেও দলের মতাদর্শ (ideology) রক্ষা করত।"
+  ],
+  "tip": "Greek idea + logos: the study or system of ideas."
+ },
+ {
+  "id": "idiosyncrasy",
+  "word": "Idiosyncrasy",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a personal peculiar habit or quirk",
+  "bn": "স্বভাবগত অদ্ভুত বৈশিষ্ট্য; খামখেয়ালি",
+  "s": [
+   "Her idiosyncrasy is eating dessert first.",
+   "Every writer has some idiosyncrasy of style.",
+   "The {maverick} chef's idiosyncrasy of naming dishes after his cats was {whimsical}."
+  ],
+  "sbn": [
+   "তার একটা অদ্ভুত অভ্যাস (idiosyncrasy) হলো আগে মিষ্টি খাওয়া।",
+   "প্রতিটি লেখকের লেখার ধরনে কিছু স্বভাবগত বৈশিষ্ট্য (idiosyncrasy) থাকে।",
+   "নিয়মভাঙা শেফের নিজের বিড়ালের নামে খাবারের নাম রাখার খামখেয়ালি (idiosyncrasy) ছিল মিষ্টি।"
+  ],
+  "tip": "Greek idios = one's own + syn + krasis: one's own mixture."
+ },
+ {
+  "id": "idyllic",
+  "word": "Idyllic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "peaceful and perfectly beautiful",
+  "bn": "শান্ত ও মনোরম; স্বপ্নের মতো সুন্দর",
+  "s": [
+   "They lived in an idyllic village.",
+   "The idyllic lake was quiet at dawn.",
+   "The {bucolic} setting was idyllic, until the {tumult} of the festival crowd arrived."
+  ],
+  "sbn": [
+   "তারা এক মনোরম (idyllic) গ্রামে থাকত।",
+   "ভোরবেলা শান্ত হ্রদটি ছিল স্বপ্নের মতো সুন্দর (idyllic)।",
+   "গ্রামীণ পরিবেশটি ছিল মনোরম (idyllic), যতক্ষণ না উৎসবের ভিড়ের হট্টগোল এসে পড়ল।"
+  ],
+  "tip": "Idyll = a pretty country scene. Idyllic sounds like \"idle\": relaxed life."
+ },
+ {
+  "id": "ignominy",
+  "word": "Ignominy",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "public shame and disgrace",
+  "bn": "অপমান; কলঙ্ক",
+  "s": [
+   "He left the club in ignominy.",
+   "The team suffered the ignominy of a huge defeat.",
+   "The official faced ignominy after his {profligate} spending was made public."
+  ],
+  "sbn": [
+   "সে কলঙ্ক নিয়ে ক্লাব ছাড়ল (ignominy)।",
+   "দলটি বিশাল পরাজয়ের লজ্জা (ignominy) ভোগ করল।",
+   "অপব্যয়ী খরচ প্রকাশ্যে এলে কর্মকর্তাটি অপমান (ignominy) সইলেন।"
+  ],
+  "tip": "Latin in- (not) + nomen (name): losing your good name."
+ },
+ {
+  "id": "illicit",
+  "word": "Illicit",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "forbidden by law or custom",
+  "bn": "অবৈধ; নিষিদ্ধ",
+  "s": [
+   "The police found illicit drugs.",
+   "They ran an illicit trade in stolen goods.",
+   "The {clandestine} meeting concerned an illicit deal that the {probity} of the council would never allow."
+  ],
+  "sbn": [
+   "পুলিশ অবৈধ (illicit) মাদক পেল।",
+   "তারা চুরির মালের অবৈধ (illicit) ব্যবসা চালাত।",
+   "গোপন বৈঠকটি ছিল এক অবৈধ (illicit) চুক্তি নিয়ে, যা পরিষদের সততা কখনো মেনে নিত না।"
+  ],
+  "tip": "Il- (not) + licit (allowed): not allowed."
+ },
+ {
+  "id": "imbue",
+  "word": "Imbue",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to fill deeply with a feeling or quality",
+  "bn": "ভরিয়ে দেওয়া; গভীরভাবে অনুপ্রাণিত করা",
+  "s": [
+   "Teachers imbue students with confidence.",
+   "Her stories imbue ordinary things with wonder.",
+   "The coach tried to imbue the team with {stoic} so they would not {vacillate} under pressure."
+  ],
+  "sbn": [
+   "শিক্ষকরা ছাত্রদের আত্মবিশ্বাসে ভরিয়ে তোলেন (imbue)।",
+   "তার গল্প সাধারণ জিনিসকে বিস্ময়ে ভরিয়ে দেয় (imbue)।",
+   "কোচ দলকে ধৈর্যে অনুপ্রাণিত (imbue) করতে চাইলেন যাতে চাপের মুখে তারা দোদুল্যমান না হয়।"
+  ],
+  "tip": "Like a dye soaking into cloth: imbue = soak with a quality."
+ },
+ {
+  "id": "imminent",
+  "word": "Imminent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "about to happen very soon",
+  "bn": "আসন্ন; আসছে এমন",
+  "s": [
+   "A storm is imminent.",
+   "The workers felt the layoffs were imminent.",
+   "With imminent danger approaching, the {timorous} villagers fled before the {tumult} began."
+  ],
+  "sbn": [
+   "ঝড় আসন্ন (imminent)।",
+   "কর্মীরা মনে করল ছাঁটাই আসন্ন (imminent)।",
+   "বিপদ আসন্ন (imminent) হওয়ায় ভীতু গ্রামবাসীরা হট্টগোল শুরুর আগেই পালাল।"
+  ],
+  "tip": "Latin imminere = to hang over: it hangs over you, about to fall."
+ },
+ {
+  "id": "impartial",
+  "word": "Impartial",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "fair; not favoring either side",
+  "bn": "নিরপেক্ষ",
+  "s": [
+   "A judge must be impartial.",
+   "The panel gave an impartial review of both plans.",
+   "A {sagacious} and impartial mediator is needed to settle such a {dichotomy} of opinions."
+  ],
+  "sbn": [
+   "বিচারককে নিরপেক্ষ (impartial) হতে হবে।",
+   "প্যানেল দুই পরিকল্পনারই নিরপেক্ষ (impartial) মূল্যায়ন দিল।",
+   "মতের এমন বিভাজন মেটাতে একজন প্রাজ্ঞ ও নিরপেক্ষ (impartial) মধ্যস্থতাকারী দরকার।"
+  ],
+  "tip": "Im- (not) + partial (taking a part/side)."
+ },
+ {
+  "id": "impasse",
+  "word": "Impasse",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a situation with no way forward; deadlock",
+  "bn": "অচলাবস্থা",
+  "s": [
+   "The talks reached an impasse.",
+   "Neither side would yield, so the impasse continued for weeks.",
+   "Only a {sagacious} mediator could break the impasse without making the {mandate} of either side look weak."
+  ],
+  "sbn": [
+   "আলোচনা অচলাবস্থায় (impasse) পৌঁছাল।",
+   "কোনো পক্ষই নমনীয় না হওয়ায় অচলাবস্থা (impasse) কয়েক সপ্তাহ চলল।",
+   "শুধু একজন বিচক্ষণ মধ্যস্থতাকারীই কোনো পক্ষের ম্যান্ডেটকে দুর্বল না দেখিয়ে অচলাবস্থা (impasse) ভাঙতে পারত।"
+  ],
+  "tip": "Im- (not) + passe (pass): no passage through."
+ },
+ {
+  "id": "impeach",
+  "word": "Impeach",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to charge a public official with serious wrongdoing; to challenge a person's honesty",
+  "bn": "অভিশংসন করা; সততা নিয়ে প্রশ্ন তোলা",
+  "s": [
+   "Congress voted to impeach the president.",
+   "The lawyer tried to impeach the witness's honesty.",
+   "Lawmakers sought to impeach the governor after reports of {profligate} spending and {illicit} deals."
+  ],
+  "sbn": [
+   "কংগ্রেস রাষ্ট্রপতিকে অভিশংসন (impeach) করার পক্ষে ভোট দিল।",
+   "উকিল সাক্ষীর সততা নিয়ে প্রশ্ন তুলতে (impeach) চেষ্টা করলেন।",
+   "অপব্যয়ী খরচ ও অবৈধ লেনদেনের খবরের পর আইনপ্রণেতারা গভর্নরকে অভিশংসন (impeach) করতে চাইলেন।"
+  ],
+  "tip": "Think \"im-peach\": peach-ing on an official, accusing him."
+ },
+ {
+  "id": "impeccable",
+  "word": "Impeccable",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "perfect; without any fault",
+  "bn": "নিখুঁত; ত্রুটিহীন",
+  "s": [
+   "Her handwriting is impeccable.",
+   "The waiter gave impeccable service all evening.",
+   "His impeccable manners and {propriety} impressed even the most {supercilious} guests."
+  ],
+  "sbn": [
+   "তার হাতের লেখা নিখুঁত (impeccable)।",
+   "ওয়েটার সারা সন্ধ্যা ত্রুটিহীন (impeccable) সেবা দিল।",
+   "তার নিখুঁত (impeccable) আচরণ ও শিষ্টাচার সবচেয়ে অহংকারী অতিথিদেরও মুগ্ধ করল।"
+  ],
+  "tip": "Latin in- (not) + peccare (to sin): cannot sin, so flawless."
+ },
+ {
+  "id": "impecunious",
+  "word": "Impecunious",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "having little or no money",
+  "bn": "নিঃস্ব; অর্থহীন",
+  "s": [
+   "The impecunious student ate cheap meals.",
+   "He was impecunious but never lost his smile.",
+   "The former millionaire, now impecunious, could not even afford to {forgo} work."
+  ],
+  "sbn": [
+   "নিঃস্ব (impecunious) ছাত্রটি সস্তা খাবার খেত।",
+   "সে ছিল কপর্দকহীন (impecunious) কিন্তু হাসি হারায়নি।",
+   "একসময়ের কোটিপতি এখন নিঃস্ব (impecunious), কাজ ছেড়ে দেওয়ার সামর্থ্যও তার নেই।"
+  ],
+  "tip": "Latin pecunia = money. Impecunious = without money."
+ },
+ {
+  "id": "impending",
+  "word": "Impending",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "about to happen; looming",
+  "bn": "আসন্ন; ঘনিয়ে আসা",
+  "s": [
+   "Everyone felt the impending storm.",
+   "The impending exam made him nervous.",
+   "Sensing the impending {tumult}, the {provident} shopkeeper closed early."
+  ],
+  "sbn": [
+   "সবাই আসন্ন (impending) ঝড় টের পেল।",
+   "আসন্ন (impending) পরীক্ষা তাকে ঘাবড়ে দিল।",
+   "আসন্ন (impending) গোলযোগ টের পেয়ে দূরদর্শী দোকানদার তাড়াতাড়ি দোকান বন্ধ করলেন।"
+  ],
+  "tip": "Pending = hanging; impending = hanging over you."
+ },
+ {
+  "id": "impenetrable",
+  "word": "Impenetrable",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "impossible to get through or understand",
+  "bn": "ভেদ করা অসম্ভব; দুর্বোধ্য",
+  "s": [
+   "The forest was impenetrable.",
+   "His impenetrable accent was hard to follow.",
+   "The {arcane} legal text was impenetrable to ordinary readers and a {conundrum} even for lawyers."
+  ],
+  "sbn": [
+   "বনটি ভেদ করা অসম্ভব (impenetrable) ছিল।",
+   "তার দুর্বোধ্য (impenetrable) উচ্চারণ বোঝা কঠিন ছিল।",
+   "দুর্বোধ্য আইনি লেখাটি সাধারণ পাঠকের কাছে ভেদ করা অসম্ভব (impenetrable) আর আইনজীবীদের কাছেও ধাঁধা ছিল।"
+  ],
+  "tip": "Im- (not) + penetrate (go through)."
+ },
+ {
+  "id": "imperative",
+  "word": "Imperative",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "absolutely necessary; (noun) an urgent duty",
+  "bn": "অত্যাবশ্যক; জরুরি আদেশ",
+  "s": [
+   "It is imperative to arrive on time.",
+   "Clean water is an imperative for public health.",
+   "Given the {rampant} spread of disease, it was imperative to {forestall} further outbreaks."
+  ],
+  "sbn": [
+   "সময়মতো পৌঁছানো অত্যাবশ্যক (imperative)।",
+   "জনস্বাস্থ্যের জন্য পরিষ্কার পানি অত্যাবশ্যক (imperative)।",
+   "রোগের ব্যাপক বিস্তারের কারণে আরও প্রাদুর্ভাব ঠেকানো ছিল অত্যন্ত জরুরি (imperative)।"
+  ],
+  "tip": "Latin imperare = to command. Think \"emperor\"."
+ },
+ {
+  "id": "imperial",
+  "word": "Imperial",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "of an empire or emperor; majestic",
+  "bn": "সাম্রাজ্যিক; রাজকীয়",
+  "s": [
+   "The imperial palace was huge.",
+   "The imperial army conquered many lands.",
+   "The {opulent} imperial court demanded {obeisance} from every visitor."
+  ],
+  "sbn": [
+   "সাম্রাজ্যিক (imperial) প্রাসাদটি বিশাল ছিল।",
+   "সাম্রাজ্যের (imperial) সেনাবাহিনী অনেক দেশ জয় করল।",
+   "জমকালো রাজদরবার (imperial) প্রতিটি দর্শনার্থীর কাছে নতি দাবি করত।"
+  ],
+  "tip": "Same root as \"emperor\" and \"empire\"."
+ },
+ {
+  "id": "impetuous",
+  "word": "Impetuous",
+  "src": "WS1+WS2",
+  "pos": "adjective",
+  "en": "acting quickly without thinking",
+  "bn": "হঠকারী; হুটহাট কাজ করা",
+  "s": [
+   "The impetuous boy jumped in the river.",
+   "Her impetuous decision cost her the job.",
+   "The {audacious} but impetuous general charged ahead, ignoring the {tentative} plan."
+  ],
+  "sbn": [
+   "হঠকারী (impetuous) ছেলেটি নদীতে ঝাঁপ দিল।",
+   "তার হঠকারী (impetuous) সিদ্ধান্তে সে চাকরি হারাল।",
+   "দুঃসাহসী কিন্তু হঠকারী (impetuous) সেনাপতি খসড়া পরিকল্পনা অগ্রাহ্য করে সামনে এগিয়ে গেলেন।"
+  ],
+  "tip": "Latin petere = rush at. Impetuous = rushes in headfirst."
+ },
+ {
+  "id": "implement",
+  "word": "Implement",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to put a plan into action; (noun) a tool",
+  "bn": "বাস্তবায়ন করা; যন্ত্রপাতি",
+  "s": [
+   "The school will implement the new rule.",
+   "It took months to implement the new software.",
+   "The {pragmatic} manager chose to implement the change gradually to avoid {dissension}."
+  ],
+  "sbn": [
+   "স্কুল নতুন নিয়মটি বাস্তবায়ন করবে (implement)।",
+   "নতুন সফটওয়্যার চালু করতে (implement) কয়েক মাস লাগল।",
+   "বাস্তববাদী ম্যানেজার ভিন্নমত এড়াতে পরিবর্তনটি ধীরে ধীরে বাস্তবায়ন (implement) করলেন।"
+  ],
+  "tip": "Think \"im-plement\" = put into complete action."
+ },
+ {
+  "id": "implication",
+  "word": "Implication",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "something suggested but not stated; a consequence",
+  "bn": "ইঙ্গিত; পরিণতি",
+  "s": [
+   "What is the implication of his words?",
+   "The implication was that she had lied.",
+   "The {subtle} implication of the report was that the minister should {relinquish} his post."
+  ],
+  "sbn": [
+   "তার কথার ইঙ্গিত (implication) কী?",
+   "ইঙ্গিতটা (implication) ছিল যে সে মিথ্যা বলেছে।",
+   "প্রতিবেদনের সূক্ষ্ম ইঙ্গিত (implication) ছিল যে মন্ত্রীর পদ ছেড়ে দেওয়া উচিত।"
+  ],
+  "tip": "Latin implicare = to fold in. The meaning is folded inside."
+ },
+ {
+  "id": "importune",
+  "word": "Importune",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to ask again and again, annoyingly",
+  "bn": "বারবার বিরক্ত করে অনুরোধ করা",
+  "s": [
+   "Beggars importune tourists at the gate.",
+   "He would importune his father for money.",
+   "The salesman continued to {cajole} and importune the customer despite repeated refusals."
+  ],
+  "sbn": [
+   "ভিক্ষুকরা গেটে পর্যটকদের বারবার বিরক্ত করে (importune)।",
+   "সে বাবাকে টাকার জন্য বারবার চাপ দিত (importune)।",
+   "বিক্রেতা বারবার প্রত্যাখ্যাত হয়েও গ্রাহককে ফুসলানো ও বিরক্ত (importune) করতে থাকল।"
+  ],
+  "tip": "Think \"im-port-une\": keeps bringing the same request to your door."
+ },
+ {
+  "id": "impotent",
+  "word": "Impotent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "powerless; unable to act effectively",
+  "bn": "অক্ষম; ক্ষমতাহীন",
+  "s": [
+   "The police felt impotent against the gang.",
+   "He felt impotent watching his team lose.",
+   "The powerless council was impotent, unable to {sanction} the polluting factory."
+  ],
+  "sbn": [
+   "গ্যাংয়ের বিরুদ্ধে পুলিশ নিজেদের অক্ষম (impotent) মনে করল।",
+   "দলের হার দেখে সে নিজেকে ক্ষমতাহীন (impotent) মনে করল।",
+   "দন্তহীন পরিষদ ছিল ক্ষমতাহীন (impotent), দূষণকারী কারখানাকে শাস্তিই দিতে পারল না।"
+  ],
+  "tip": "Im- (not) + potent (powerful)."
+ },
+ {
+  "id": "impoverish",
+  "word": "Impoverish",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make very poor; to drain of quality",
+  "bn": "দরিদ্র করে তোলা; সম্পদহীন করা",
+  "s": [
+   "War can impoverish a whole nation.",
+   "Years of debt did impoverish the family.",
+   "The {rampant} corruption could impoverish the country, as the {voracious} elite devoured its wealth."
+  ],
+  "sbn": [
+   "যুদ্ধ গোটা দেশকে দরিদ্র (impoverish) করে দিতে পারে।",
+   "বছরের পর বছর ঋণ পরিবারটিকে নিঃস্ব (impoverish) করে ফেলল।",
+   "ব্যাপক দুর্নীতি দেশকে নিঃস্ব (impoverish) করছে, কারণ লোভী অভিজাতরা সম্পদ গ্রাস করছে।"
+  ],
+  "tip": "Im- + pauper (a poor person): turn into a pauper."
+ },
+ {
+  "id": "impregnable",
+  "word": "Impregnable",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "impossible to capture or break into",
+  "bn": "দুর্ভেদ্য; অজেয়",
+  "s": [
+   "The fort seemed impregnable.",
+   "Their defense was impregnable all season.",
+   "The {stalwart} defenders made the castle impregnable, and the siege soon looked {futile}."
+  ],
+  "sbn": [
+   "দুর্গটিকে দুর্ভেদ্য (impregnable) মনে হলো।",
+   "পুরো মৌসুমে তাদের রক্ষণ ছিল অভেদ্য (impregnable)।",
+   "অটল প্রতিরক্ষাকারীরা দুর্গকে দুর্ভেদ্য (impregnable) করে তুলল, অবরোধ শিগগিরই বৃথা মনে হলো।"
+  ],
+  "tip": "Not \"pregnant\" here: Latin prendere = to take; cannot be taken."
+ },
+ {
+  "id": "impresario",
+  "word": "Impresario",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a person who organizes concerts or shows",
+  "bn": "অনুষ্ঠানের আয়োজক; শো-প্রযোজক",
+  "s": [
+   "The impresario booked the singer for two nights.",
+   "A famous impresario brought the opera to the city.",
+   "The {gregarious} impresario charmed donors and {cajoled} stars into joining his festival."
+  ],
+  "sbn": [
+   "আয়োজক (impresario) গায়িকাকে দুই রাতের জন্য বুক করলেন।",
+   "এক বিখ্যাত প্রযোজক (impresario) শহরে অপেরা নিয়ে এলেন।",
+   "মিশুক আয়োজক (impresario) দাতাদের মুগ্ধ করলেন আর তারকাদের ফুসলিয়ে উৎসবে নিলেন।"
+  ],
+  "tip": "Italian: an \"undertaker\" of shows. Think \"impress + ario\": impresses crowds."
+ },
+ {
+  "id": "impromptu",
+  "word": "Impromptu",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "done without preparation",
+  "bn": "আকস্মিক; পূর্বপ্রস্তুতিহীন",
+  "s": [
+   "He gave an impromptu speech.",
+   "They held an impromptu party in the yard.",
+   "Her witty impromptu reply to the heckler drew {effusive} applause."
+  ],
+  "sbn": [
+   "সে একটি পূর্বপ্রস্তুতিহীন (impromptu) বক্তৃতা দিল।",
+   "তারা উঠানে আকস্মিক (impromptu) পার্টি করল।",
+   "বিরক্তিকর শ্রোতার প্রতি তার চটজলদি রসাল (impromptu) জবাব উচ্ছ্বসিত হাততালি কুড়াল।"
+  ],
+  "tip": "Latin in promptu = in readiness: ready on the spot."
+ },
+ {
+  "id": "improvise",
+  "word": "Improvise",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to create or perform on the spot, without plan",
+  "bn": "তাৎক্ষণিকভাবে বানানো; চালিয়ে নেওয়া",
+  "s": [
+   "Musicians often improvise during a concert.",
+   "We had to improvise a bed from old coats.",
+   "When the power failed, the resourceful cook had to improvise a meal, and the {paltry} supplies sufficed."
+  ],
+  "sbn": [
+   "সংগীতশিল্পীরা প্রায়ই কনসার্টে তাৎক্ষণিক সুর বাজান (improvise)।",
+   "আমাদের পুরোনো কোট দিয়ে বিছানা বানিয়ে নিতে (improvise) হলো।",
+   "বিদ্যুৎ গেলে উদ্যমী রাঁধুনিকে চটজলদি খাবার বানাতে (improvise) হলো, সামান্য উপকরণেই কাজ চলল।"
+  ],
+  "tip": "Im- (not) + provise (foreseen): not planned ahead."
+ },
+ {
+  "id": "impugn",
+  "word": "Impugn",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to attack or question someone's honesty or motives",
+  "bn": "অভিযুক্ত করা; সততা নিয়ে সন্দেহ প্রকাশ করা",
+  "s": [
+   "Do not impugn my honesty.",
+   "He tried to impugn the witness's motives.",
+   "The rival sought to impugn his {probity} and {discredit} him before the election."
+  ],
+  "sbn": [
+   "আমার সততা নিয়ে প্রশ্ন তুলো না (impugn)।",
+   "সে সাক্ষীর উদ্দেশ্য নিয়ে সন্দেহ প্রকাশ করতে (impugn) চাইল।",
+   "প্রতিপক্ষ নির্বাচনের আগে তার সততা নিয়ে আক্রমণ (impugn) করে তাকে হেয় করতে চাইল।"
+  ],
+  "tip": "Latin pugnare = to fight. Impugn = fight against someone's word."
+ },
+ {
+  "id": "impunity",
+  "word": "Impunity",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "freedom from punishment",
+  "bn": "শাস্তি এড়ানোর সুযোগ; দায়মুক্তি",
+  "s": [
+   "Criminals acted with impunity.",
+   "The powerful often break rules with impunity.",
+   "The {rampant} bribery continued with impunity because no one dared to {denounce} the officials."
+  ],
+  "sbn": [
+   "অপরাধীরা বিনা শাস্তিতে (impunity) কাজ চালাত।",
+   "ক্ষমতাবানরা প্রায়ই দায়মুক্তি (impunity) নিয়ে নিয়ম ভাঙে।",
+   "কেউ কর্মকর্তাদের নিন্দা করার সাহস না পাওয়ায় ঘুষ চলল বিনা শাস্তিতে (impunity)।"
+  ],
+  "tip": "Latin poena = punishment. Im- + puni(sh) = no punishment."
+ },
+ {
+  "id": "inadvertent",
+  "word": "Inadvertent",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "not done on purpose; accidental",
+  "bn": "অনিচ্ছাকৃত; অসতর্ক",
+  "s": [
+   "It was an inadvertent mistake.",
+   "Her inadvertent remark hurt his feelings.",
+   "The {unwitting} clerk made an inadvertent error that triggered a {conundrum} for auditors."
+  ],
+  "sbn": [
+   "এটা ছিল অনিচ্ছাকৃত (inadvertent) ভুল।",
+   "তার অসতর্ক (inadvertent) মন্তব্য তার মনে আঘাত দিল।",
+   "অজান্তে কেরানির করা অনিচ্ছাকৃত (inadvertent) ভুল নিরীক্ষকদের জন্য ধাঁধা তৈরি করল।"
+  ],
+  "tip": "Latin in + advertere (to turn toward): not turning your attention."
+ },
+ {
+  "id": "inalienable",
+  "word": "Inalienable",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "cannot be taken away or given up",
+  "bn": "অবিচ্ছেদ্য; হস্তান্তরের অযোগ্য",
+  "s": [
+   "Freedom is an inalienable right.",
+   "Every citizen has inalienable rights.",
+   "The charter declared such liberties inalienable and {immutable}, beyond any ruler's {sanction}."
+  ],
+  "sbn": [
+   "স্বাধীনতা একটি অবিচ্ছেদ্য (inalienable) অধিকার।",
+   "প্রতিটি নাগরিকের অবিচ্ছেদ্য (inalienable) অধিকার আছে।",
+   "সনদে বলা হলো এই স্বাধীনতাগুলো অবিচ্ছেদ্য (inalienable) ও অপরিবর্তনীয়, কোনো শাসকের অনুমোদনের ঊর্ধ্বে।"
+  ],
+  "tip": "Alien = other; cannot be made to belong to another."
+ },
+ {
+  "id": "inane",
+  "word": "Inane",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "silly; empty of meaning",
+  "bn": "অর্থহীন; নির্বোধ",
+  "s": [
+   "He asked an inane question.",
+   "The show was full of inane jokes.",
+   "The {fatuous} host kept up an inane chatter that made the guests {dejected}."
+  ],
+  "sbn": [
+   "সে একটি অর্থহীন (inane) প্রশ্ন করল।",
+   "অনুষ্ঠানটি ছিল অর্থহীন (inane) রসিকতায় ভরা।",
+   "বোকা উপস্থাপকের অর্থহীন (inane) বকবকানি অতিথিদের মন খারাপ করে দিল।"
+  ],
+  "tip": "Latin inanis = empty. An inane remark is empty."
+ },
+ {
+  "id": "inaugurate",
+  "word": "Inaugurate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to begin formally; to install in office",
+  "bn": "উদ্বোধন করা; পদে বসানো",
+  "s": [
+   "They will inaugurate the new bridge today.",
+   "The president was inaugurated in January.",
+   "The mayor chose to inaugurate the festival with a {concise} speech, sparing the crowd any {pedantic} detail."
+  ],
+  "sbn": [
+   "তারা আজ নতুন সেতু উদ্বোধন করবে (inaugurate)।",
+   "জানুয়ারিতে রাষ্ট্রপতির অভিষেক হলো (inaugurated)।",
+   "মেয়র সংক্ষিপ্ত বক্তৃতায় উৎসব উদ্বোধন (inaugurate) করলেন, কোনো খুঁটিনাটি ভারে ভিড়কে বিরক্ত করলেন না।"
+  ],
+  "tip": "Romans inaugurated after reading bird omens (augur)."
+ },
+ {
+  "id": "incandescent",
+  "word": "Incandescent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "glowing with heat; brilliantly bright",
+  "bn": "তাপে জ্বলজ্বলে; দীপ্তিময়",
+  "s": [
+   "The metal turned incandescent in the fire.",
+   "An incandescent bulb gives a warm glow.",
+   "The {resplendent} stage, with its incandescent lights, left the audience {transfixed}."
+  ],
+  "sbn": [
+   "ধাতুটি আগুনে জ্বলজ্বলে (incandescent) হয়ে উঠল।",
+   "ভাস্বর (incandescent) বাল্ব উষ্ণ আলো দেয়।",
+   "ঝলমলে মঞ্চ ও তার দীপ্ত (incandescent) আলো দর্শকদের মন্ত্রমুগ্ধ করে রাখল।"
+  ],
+  "tip": "Latin candere = to glow white. Think \"candle\"."
+ },
+ {
+  "id": "incantation",
+  "word": "Incantation",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "magic words spoken as a spell",
+  "bn": "মন্ত্র; জাদুমন্ত্র",
+  "s": [
+   "The witch recited an incantation.",
+   "He whispered an incantation to ward off bad luck.",
+   "The {occult} ritual ended with a solemn incantation, which the {philistine} visitors found {ludicrous}."
+  ],
+  "sbn": [
+   "ডাইনি একটি মন্ত্র (incantation) আওড়াল।",
+   "দুর্ভাগ্য ঠেকাতে সে ফিসফিস করে মন্ত্র (incantation) পড়ল।",
+   "তন্ত্রমন্ত্রের অনুষ্ঠানটি গম্ভীর মন্ত্রোচ্চারণে (incantation) শেষ হলো, যা সংস্কৃতিবিমুখ দর্শকদের হাস্যকর লাগল।"
+  ],
+  "tip": "Latin cantare = to sing. Incantation = chanted spell, like \"chant\"."
+ },
+ {
+  "id": "incarnation",
+  "word": "Incarnation",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a person who embodies a quality; a bodily form",
+  "bn": "মূর্ত রূপ; অবতার",
+  "s": [
+   "She is the incarnation of kindness.",
+   "He believed in the rebirth of the soul in a new incarnation.",
+   "The tyrant was the incarnation of everything {nefarious}, and his rule caused constant {tumult}."
+  ],
+  "sbn": [
+   "সে দয়ার মূর্ত প্রতীক (incarnation)।",
+   "সে বিশ্বাস করত আত্মা নতুন রূপে (incarnation) জন্ম নেয়।",
+   "স্বৈরাচারীটি ছিল সব জঘন্য কাজের মূর্ত প্রতীক (incarnation) আর তার শাসনে লেগে থাকত হট্টগোল।"
+  ],
+  "tip": "Latin carn- = flesh (like \"carnivore\"): made into flesh."
+ },
+ {
+  "id": "incendiary",
+  "word": "Incendiary",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "causing fire or stirring up conflict",
+  "bn": "অগ্নিসংযোগকারী; উসকানিমূলক",
+  "s": [
+   "Police found an incendiary device.",
+   "His incendiary speech inflamed the crowd.",
+   "The {demagogue}'s incendiary remarks could {instigate} violence among the already restless crowd."
+  ],
+  "sbn": [
+   "পুলিশ একটি অগ্নিসংযোগের (incendiary) যন্ত্র পেল।",
+   "তার উসকানিমূলক (incendiary) বক্তৃতা জনতাকে ক্ষেপিয়ে তুলল।",
+   "বক্তার উসকানিমূলক (incendiary) মন্তব্য ইতিমধ্যে অস্থির জনতার মধ্যে সহিংসতা ছড়াতে পারত।"
+  ],
+  "tip": "Latin incendere = to set on fire. Think \"incense\"."
+ },
+ {
+  "id": "incense",
+  "word": "Incense",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to make very angry; (noun) fragrant smoke",
+  "bn": "ক্ষেপিয়ে তোলা; ধূপ",
+  "s": [
+   "The unfair decision will incense the fans.",
+   "His rude remark did incense his teacher.",
+   "The {sardonic} insult could incense even the most {phlegmatic} listener."
+  ],
+  "sbn": [
+   "অন্যায্য সিদ্ধান্ত ভক্তদের ক্ষেপিয়ে তুলবে (incense)।",
+   "তার অভদ্র মন্তব্য শিক্ষককে ক্ষেপিয়ে তুলল (incense)।",
+   "বিদ্রূপাত্মক অপমান সবচেয়ে শান্ত শ্রোতাকেও ক্ষুব্ধ (incense) করতে পারে।"
+  ],
+  "tip": "Same as incendiary: set someone's temper on fire."
+ },
+ {
+  "id": "incessant",
+  "word": "Incessant",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "continuing without stopping",
+  "bn": "অবিরাম; ধারাবাহিক",
+  "s": [
+   "The incessant rain ruined our trip.",
+   "Her incessant chatter tired everyone.",
+   "The {querulous} neighbor's incessant complaints made life {insufferable} for the landlord."
+  ],
+  "sbn": [
+   "অবিরাম (incessant) বৃষ্টি আমাদের ভ্রমণ নষ্ট করল।",
+   "তার অবিরাম (incessant) বকবকানি সবাইকে ক্লান্ত করল।",
+   "খিটখিটে প্রতিবেশীর অবিরাম (incessant) অভিযোগ বাড়িওয়ালার জীবন অসহ্য করে তুলল।"
+  ],
+  "tip": "Latin in- (not) + cessare (to stop): never ceasing."
+ },
+ {
+  "id": "incipient",
+  "word": "Incipient",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "just beginning to appear",
+  "bn": "সূচনার পর্যায়ের; অঙ্কুরিত",
+  "s": [
+   "She noticed incipient signs of illness.",
+   "An incipient fear began to grow in him.",
+   "The doctor noticed incipient symptoms and tried to {forestall} the {insidious} disease."
+  ],
+  "sbn": [
+   "সে অসুখের প্রাথমিক (incipient) লক্ষণ টের পেল।",
+   "তার মনে এক সূচনাকালীন (incipient) ভয় জন্ম নিতে লাগল।",
+   "ডাক্তার প্রাথমিক (incipient) উপসর্গ দেখে ধূর্ত রোগটি রুখে দিতে চাইলেন।"
+  ],
+  "tip": "Latin incipere = to begin. Think \"inception\"."
+ },
+ {
+  "id": "incisive",
+  "word": "Incisive",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "sharp, clear and direct in thought or speech",
+  "bn": "ধারালো; তীক্ষ্ণ ও স্পষ্ট",
+  "s": [
+   "She asked an incisive question.",
+   "His incisive analysis cut to the heart of the matter.",
+   "The critic's {concise} and incisive review exposed the film's {fatuous} plot."
+  ],
+  "sbn": [
+   "সে একটি তীক্ষ্ণ (incisive) প্রশ্ন করল।",
+   "তার ধারালো (incisive) বিশ্লেষণ সমস্যার মূলে পৌঁছাল।",
+   "সমালোচকের সংক্ষিপ্ত ও তীক্ষ্ণ (incisive) রিভিউ ছবিটির অর্থহীন গল্প ফাঁস করে দিল।"
+  ],
+  "tip": "Latin caedere = to cut. Incisive cuts like a knife; \"incision\"."
+ },
+ {
+  "id": "inclination",
+  "word": "Inclination",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a natural tendency or liking; a slope",
+  "bn": "ঝোঁক; প্রবণতা",
+  "s": [
+   "She has an inclination for music.",
+   "He had no inclination to argue.",
+   "His {pragmatic} inclination was to {forgo} luxury and save for the future."
+  ],
+  "sbn": [
+   "গানের প্রতি তার ঝোঁক (inclination) আছে।",
+   "তর্ক করার কোনো ইচ্ছাই (inclination) তার ছিল না।",
+   "তার বাস্তববাদী প্রবণতা (inclination) ছিল বিলাসিতা ছেড়ে ভবিষ্যতের জন্য জমানো।"
+  ],
+  "tip": "Latin clinare = to lean. You lean toward what you like."
+ },
+ {
+  "id": "incorrigible",
+  "word": "Incorrigible",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "too set in bad habits to be changed",
+  "bn": "শোধরানো অসম্ভব; অসংশোধনীয়",
+  "s": [
+   "The incorrigible boy never did homework.",
+   "She is an incorrigible liar.",
+   "The {profligate} heir was incorrigible, ignoring every attempt to {dissuade} him."
+  ],
+  "sbn": [
+   "দুষ্টু ছেলেটি অসংশোধনীয় (incorrigible), কখনো হোমওয়ার্ক করত না।",
+   "সে এক অসংশোধনীয় (incorrigible) মিথ্যুক।",
+   "অপব্যয়ী উত্তরাধিকারী ছিল অসংশোধনীয় (incorrigible), তাকে নিবৃত্ত করার সব চেষ্টাই সে অগ্রাহ্য করত।"
+  ],
+  "tip": "Latin corrigere = to correct. Incorrigible = cannot be corrected."
+ },
+ {
+  "id": "increment",
+  "word": "Increment",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a small increase or addition",
+  "bn": "বৃদ্ধি; ক্রমিক বাড়তি অংশ",
+  "s": [
+   "He got a small increment in salary.",
+   "The price rose by a tiny increment each month.",
+   "Each {paltry} increment in wages was eaten away by the {rampant} cost of living."
+  ],
+  "sbn": [
+   "সে বেতনে সামান্য বৃদ্ধি (increment) পেল।",
+   "প্রতি মাসে দাম সামান্য করে বাড়ল (increment)।",
+   "প্রতিটি সামান্য বেতনবৃদ্ধি (increment) ব্যাপক জীবনযাত্রার খরচে খেয়ে গেল।"
+  ],
+  "tip": "Latin crescere = to grow; increment is a bit of growth."
+ },
+ {
+  "id": "inculcate",
+  "word": "Inculcate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to teach something by repeating it often",
+  "bn": "মনে গেঁথে দেওয়া; বারবার শিখিয়ে বসানো",
+  "s": [
+   "Parents inculcate good habits early.",
+   "Teachers try to inculcate a love of reading.",
+   "The headmaster sought to inculcate {probity} in students through strict but fair discipline."
+  ],
+  "sbn": [
+   "বাবা-মা ছোটবেলা থেকে ভালো অভ্যাস গেঁথে দেন (inculcate)।",
+   "শিক্ষকরা পড়ার প্রতি ভালোবাসা মনে গেঁথে দিতে (inculcate) চান।",
+   "প্রধান শিক্ষক কঠোর কিন্তু ন্যায্য শৃঙ্খলার মাধ্যমে ছাত্রদের মনে সততা গেঁথে দিতে (inculcate) চাইলেন।"
+  ],
+  "tip": "Latin calx = heel: to stamp in with the heel, press into the mind."
+ },
+ {
+  "id": "incumbent",
+  "word": "Incumbent",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "currently holding an office; (adj) resting on someone as a duty",
+  "bn": "বর্তমান পদধারী; দায়িত্ব হিসেবে বর্তায় এমন",
+  "s": [
+   "The incumbent mayor is running again.",
+   "It is incumbent on parents to protect their children.",
+   "The incumbent senator, a {pragmatic} veteran, faced a {maverick} challenger."
+  ],
+  "sbn": [
+   "বর্তমান (incumbent) মেয়র আবার প্রার্থী হয়েছেন।",
+   "সন্তানদের রক্ষা করা বাবা-মায়ের দায়িত্ব (incumbent)।",
+   "বর্তমান (incumbent) সিনেটর, এক বাস্তববাদী প্রবীণ, এক নিয়মভাঙা প্রতিদ্বন্দ্বীর মুখোমুখি হলেন।"
+  ],
+  "tip": "Latin incumbere = to lean on. The duty leans on you."
+ },
+ {
+  "id": "incursion",
+  "word": "Incursion",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a sudden hostile entry into another's territory",
+  "bn": "আকস্মিক আক্রমণ; অনুপ্রবেশ",
+  "s": [
+   "The army made an incursion into the village.",
+   "Enemy incursions forced farmers to leave their land.",
+   "The {stalwart} border guards repelled the incursion, determined to {forestall} any further raids."
+  ],
+  "sbn": [
+   "সেনারা গ্রামে আকস্মিক হানা (incursion) দিল।",
+   "শত্রুর অনুপ্রবেশে (incursion) কৃষকরা জমি ছাড়তে বাধ্য হলো।",
+   "অটল সীমান্তরক্ষীরা অনুপ্রবেশ (incursion) ঠেকাল, আরও হামলা রুখতে বদ্ধপরিকর।"
+  ],
+  "tip": "Latin currere = to run. Incursion = running into someone's land."
+ },
+ {
+  "id": "indict",
+  "word": "Indict",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to formally accuse of a crime",
+  "bn": "অভিযুক্ত করা; অভিযোগপত্র দেওয়া",
+  "s": [
+   "The jury will indict the suspect.",
+   "He was indicted for fraud last week.",
+   "The grand jury chose to indict the official after evidence of {malfeasance} and {illicit} gains emerged."
+  ],
+  "sbn": [
+   "জুরি সন্দেহভাজনকে অভিযুক্ত (indict) করবে।",
+   "গত সপ্তাহে জালিয়াতির জন্য তাকে অভিযুক্ত (indicted) করা হলো।",
+   "দুর্নীতি ও অবৈধ আয়ের প্রমাণ বেরোলে গ্র্যান্ড জুরি কর্মকর্তাকে অভিযুক্ত (indict) করার সিদ্ধান্ত নিল।"
+  ],
+  "tip": "Pronounced \"in-DITE\". Same root as \"dictate\": to declare charges."
+ },
+ {
+  "id": "indifferent",
+  "word": "Indifferent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "not caring; neutral",
+  "bn": "উদাসীন; নিরপেক্ষ",
+  "s": [
+   "He seemed indifferent to the news.",
+   "The crowd was indifferent to the speaker.",
+   "His {callous} and indifferent attitude toward the poor made the {benefactor} withdraw support."
+  ],
+  "sbn": [
+   "সে খবরটি নিয়ে উদাসীন (indifferent) মনে হলো।",
+   "জনতা বক্তার প্রতি উদাসীন (indifferent) ছিল।",
+   "গরিবের প্রতি তার নির্দয় ও উদাসীন (indifferent) মনোভাব দেখে পৃষ্ঠপোষক সাহায্য বন্ধ করলেন।"
+  ],
+  "tip": "In- (not) + different: sees no difference, so does not care."
+ },
+ {
+  "id": "indigenous",
+  "word": "Indigenous",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "native to a particular place",
+  "bn": "স্থানীয়; আদিবাসী",
+  "s": [
+   "The tiger is indigenous to Bangladesh.",
+   "Indigenous people have lived here for centuries.",
+   "The {zealous} group protects indigenous plants against {rampant} invasive species."
+  ],
+  "sbn": [
+   "বাঘ বাংলাদেশের দেশীয় (indigenous) প্রাণী।",
+   "আদিবাসীরা (indigenous) বহু শতাব্দী ধরে এখানে বাস করছে।",
+   "উৎসাহী দলটি ব্যাপক হারে ছড়ানো আগ্রাসী প্রজাতির হাত থেকে দেশীয় (indigenous) উদ্ভিদ রক্ষা করে।"
+  ],
+  "tip": "Latin indu- (within) + gen- (born): born within the place."
+ },
+ {
+  "id": "indignant",
+  "word": "Indignant",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "angry because of unfair treatment",
+  "bn": "ক্ষুব্ধ; অন্যায়ে ক্রুদ্ধ",
+  "s": [
+   "She was indignant at the insult.",
+   "The indignant crowd demanded an apology.",
+   "The {sardonic} remark left the principal indignant and eager to {denounce} the author."
+  ],
+  "sbn": [
+   "সে অপমানে ক্ষুব্ধ (indignant) হলো।",
+   "ক্ষুব্ধ (indignant) জনতা ক্ষমা চাওয়ার দাবি জানাল।",
+   "বিদ্রূপাত্মক মন্তব্যে অধ্যক্ষ ক্ষুব্ধ (indignant) হলেন এবং লেখকের নিন্দা করতে উদগ্রীব হলেন।"
+  ],
+  "tip": "Latin dignus = worthy. Anger at being treated as unworthy."
+ },
+ {
+  "id": "induce",
+  "word": "Induce",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to persuade or cause something to happen",
+  "bn": "প্ররোচিত করা; ঘটানো",
+  "s": [
+   "Nothing could induce him to quit.",
+   "The medicine can induce sleep.",
+   "No {entreaty} could induce the stubborn man to {relinquish} his claim."
+  ],
+  "sbn": [
+   "কোনো কিছুই তাকে ছাড়তে প্ররোচিত (induce) করতে পারল না।",
+   "ওষুধটি ঘুম ঘটাতে (induce) পারে।",
+   "কোনো অনুনয়ই একগুঁয়ে লোকটিকে তার দাবি ছেড়ে দিতে প্ররোচিত (induce) করতে পারল না।"
+  ],
+  "tip": "Latin ducere = to lead. Induce = lead into doing."
+ },
+ {
+  "id": "indulgent",
+  "word": "Indulgent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "too willing to allow or please; lenient",
+  "bn": "প্রশ্রয়দাতা; অতি উদার",
+  "s": [
+   "The indulgent father bought every toy.",
+   "An indulgent teacher lets students slide.",
+   "The doting but indulgent grandmother spoiled the child with {lavish} gifts."
+  ],
+  "sbn": [
+   "প্রশ্রয়দাতা (indulgent) বাবা সব খেলনা কিনে দিলেন।",
+   "অতি প্রশ্রয়ী (indulgent) শিক্ষক ছাত্রদের ফাঁকি দিতে দেন।",
+   "স্নেহময় কিন্তু প্রশ্রয়ী (indulgent) দিদা জমকালো উপহারে শিশুটিকে নষ্ট করলেন।"
+  ],
+  "tip": "Indulge = give in to wishes; indulgent = gives in too easily."
+ },
+ {
+  "id": "ineffable",
+  "word": "Ineffable",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "too great to be put into words",
+  "bn": "অনির্বচনীয়; ভাষায় প্রকাশ অসম্ভব",
+  "s": [
+   "She felt ineffable joy.",
+   "The view was of ineffable beauty.",
+   "The listeners, who {rhapsodized} about the music, described the ineffable power of the music, which {transfixed} them."
+  ],
+  "sbn": [
+   "সে অনির্বচনীয় (ineffable) আনন্দ অনুভব করল।",
+   "দৃশ্যটির সৌন্দর্য ছিল অনির্বচনীয় (ineffable)।",
+   "শ্রোতারা মুগ্ধ হয়ে সংগীতের অনির্বচনীয় (ineffable) শক্তির কথা বললেন, যা তাদের মন্ত্রমুগ্ধ করেছিল।"
+  ],
+  "tip": "Latin effari = to speak out; in- = cannot be spoken."
+ },
+ {
+  "id": "ineluctable",
+  "word": "Ineluctable",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "impossible to avoid or escape",
+  "bn": "অনিবার্য; এড়ানো অসম্ভব",
+  "s": [
+   "Death is ineluctable.",
+   "The ineluctable result was defeat.",
+   "The {stoic} captain accepted the ineluctable fate of his ship, {resolute} to the end."
+  ],
+  "sbn": [
+   "মৃত্যু অনিবার্য (ineluctable)।",
+   "অনিবার্য (ineluctable) পরিণতি ছিল পরাজয়।",
+   "ধৈর্যশীল ক্যাপ্টেন শেষ পর্যন্ত অবিচল থেকে জাহাজের অনিবার্য (ineluctable) নিয়তি মেনে নিলেন।"
+  ],
+  "tip": "Latin luctari = to wrestle. You cannot wrestle free of it."
+ },
+ {
+  "id": "inept",
+  "word": "Inept",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "clumsy; lacking skill",
+  "bn": "অদক্ষ; আনাড়ি",
+  "s": [
+   "The inept waiter dropped the tray.",
+   "His inept handling of money ruined the firm.",
+   "The bumbling and inept clerk made a {ludicrous} error in the report."
+  ],
+  "sbn": [
+   "আনাড়ি (inept) ওয়েটার ট্রে ফেলে দিল।",
+   "টাকাপয়সা সামলাতে তার অদক্ষতা (inept) প্রতিষ্ঠানটি ধ্বংস করল।",
+   "আনাড়ি ও অদক্ষ (inept) কেরানি প্রতিবেদনে একটি হাস্যকর ভুল করল।"
+  ],
+  "tip": "Latin in- (not) + aptus (fit): not fit for the task."
+ },
+ {
+  "id": "ineradicable",
+  "word": "Ineradicable",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "impossible to remove completely",
+  "bn": "নির্মূল করা অসম্ভব; অমোচনীয়",
+  "s": [
+   "Poverty seemed ineradicable.",
+   "The stain was ineradicable.",
+   "The {insidious} prejudice seemed ineradicable, despite {sanctions} and campaigns against it."
+  ],
+  "sbn": [
+   "দারিদ্র্য নির্মূল করা অসম্ভব (ineradicable) মনে হতো।",
+   "দাগটি অমোচনীয় (ineradicable) ছিল।",
+   "শাস্তি ও প্রচারণা সত্ত্বেও ধূর্ত কুসংস্কারটি নির্মূল অসম্ভব (ineradicable) মনে হচ্ছিল।"
+  ],
+  "tip": "Latin radix = root. Cannot be pulled out by the root."
+ },
+ {
+  "id": "inexorable",
+  "word": "Inexorable",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "impossible to stop or change",
+  "bn": "অপ্রতিরোধ্য; অনিবার্য",
+  "s": [
+   "The inexorable tide rose higher.",
+   "Time moves forward in an inexorable way.",
+   "The {relentless} and inexorable advance of the glacier {vanquished} the village."
+  ],
+  "sbn": [
+   "অপ্রতিরোধ্য (inexorable) জোয়ার বাড়তে থাকল।",
+   "সময় অনিবার্যভাবে (inexorable) এগিয়ে চলে।",
+   "হিমবাহের নাছোড় ও অপ্রতিরোধ্য (inexorable) অগ্রযাত্রা গ্রামটিকে গ্রাস করল।"
+  ],
+  "tip": "Latin orare = to plead; cannot be moved by pleading."
+ },
+ {
+  "id": "infamous",
+  "word": "Infamous",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "famous for something bad",
+  "bn": "কুখ্যাত",
+  "s": [
+   "He is an infamous thief.",
+   "The infamous tyrant ruled with fear.",
+   "The {nefarious} and infamous gang was known for {larcenous} schemes."
+  ],
+  "sbn": [
+   "সে একজন কুখ্যাত (infamous) চোর।",
+   "কুখ্যাত (infamous) স্বৈরাচারী ভয় দিয়ে শাসন করত।",
+   "জঘন্য ও কুখ্যাত (infamous) দলটি চুরির ফন্দির জন্য পরিচিত ছিল।"
+  ],
+  "tip": "In- (not) + fame: \"famous\" in a bad way."
+ },
+ {
+  "id": "infatuated",
+  "word": "Infatuated",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "filled with an intense, foolish passion",
+  "bn": "মোহগ্রস্ত; অন্ধ ভালোবাসায় মত্ত",
+  "s": [
+   "He was infatuated with the singer.",
+   "She became infatuated with fast cars.",
+   "The {fatuous} boy, infatuated with fame, chose to {forgo} his studies."
+  ],
+  "sbn": [
+   "সে গায়িকার প্রতি মোহগ্রস্ত (infatuated) ছিল।",
+   "সে দ্রুতগামী গাড়ির প্রতি মোহগ্রস্ত (infatuated) হয়ে পড়ল।",
+   "খ্যাতির মোহে (infatuated) মত্ত বোকা ছেলেটি পড়াশোনা ছেড়ে দিল।"
+  ],
+  "tip": "Latin fatuus = foolish: foolishly in love."
+ },
+ {
+  "id": "infer",
+  "word": "Infer",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to conclude from evidence",
+  "bn": "অনুমান করা; সিদ্ধান্তে আসা",
+  "s": [
+   "I infer that you are tired.",
+   "We can infer his mood from his face.",
+   "From the {tentative} data, one can only infer a trend, not a {verity}."
+  ],
+  "sbn": [
+   "আমি অনুমান করছি (infer) তুমি ক্লান্ত।",
+   "তার মুখ দেখে মেজাজ অনুমান করা (infer) যায়।",
+   "সাময়িক তথ্য থেকে শুধু একটা প্রবণতা অনুমান (infer) করা যায়, চূড়ান্ত সত্য নয়।"
+  ],
+  "tip": "Latin ferre = to carry; you carry a conclusion from the facts."
+ },
+ {
+  "id": "infinitesimal",
+  "word": "Infinitesimal",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "extremely small",
+  "bn": "অতি ক্ষুদ্র; অণুপরিমাণ",
+  "s": [
+   "The risk is infinitesimal.",
+   "There was an infinitesimal difference in the scores.",
+   "The {paltry} sum was infinitesimal compared with the {opulent} fortune he had lost."
+  ],
+  "sbn": [
+   "ঝুঁকিটা অতি ক্ষুদ্র (infinitesimal)।",
+   "স্কোরে ব্যবধান ছিল অণুপরিমাণ (infinitesimal)।",
+   "তুচ্ছ অঙ্কটি তার হারানো জাঁকজমকপূর্ণ সম্পদের তুলনায় অতি ক্ষুদ্র (infinitesimal) ছিল।"
+  ],
+  "tip": "From \"infinite\" + ordinal: the \"infinitieth\" part, tiniest."
+ },
+ {
+  "id": "inflammatory",
+  "word": "Inflammatory",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "likely to arouse anger or violence; causing swelling",
+  "bn": "উসকানিমূলক; প্রদাহজনক",
+  "s": [
+   "The inflammatory speech angered the crowd.",
+   "The paper printed an inflammatory article.",
+   "His {vitriolic} and inflammatory language could {instigate} a riot."
+  ],
+  "sbn": [
+   "উসকানিমূলক (inflammatory) বক্তৃতা জনতাকে ক্ষেপিয়ে দিল।",
+   "পত্রিকাটি একটি উসকানিমূলক (inflammatory) প্রবন্ধ ছাপল।",
+   "তার তিক্ত ও উসকানিমূলক (inflammatory) ভাষা দাঙ্গা ঘটাতে পারত।"
+  ],
+  "tip": "Inflame = set on fire; inflammatory stirs up heat or anger."
+ },
+ {
+  "id": "influx",
+  "word": "Influx",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a large arrival of people or things",
+  "bn": "প্রবাহ; ব্যাপক আগমন",
+  "s": [
+   "There was an influx of tourists.",
+   "The city faced an influx of refugees.",
+   "The sudden influx of workers caused a {tumult} in the town's already {paltry} housing."
+  ],
+  "sbn": [
+   "পর্যটকদের ব্যাপক আগমন (influx) ঘটল।",
+   "শহরটিতে শরণার্থীর স্রোত (influx) এল।",
+   "শ্রমিকদের হঠাৎ আগমনে (influx) শহরের ইতিমধ্যে সামান্য আবাসন নিয়ে হট্টগোল দেখা দিল।"
+  ],
+  "tip": "In + flux (flow): flowing in."
+ },
+ {
+  "id": "infraction",
+  "word": "Infraction",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a small breaking of a rule or law",
+  "bn": "নিয়মভঙ্গ; লঙ্ঘন",
+  "s": [
+   "He got a fine for a traffic infraction.",
+   "Each infraction of the rules brings a penalty.",
+   "The minor infraction was ignored, but repeated violations drew a harsh {sanction}."
+  ],
+  "sbn": [
+   "সে ট্রাফিক নিয়মভঙ্গের (infraction) জন্য জরিমানা পেল।",
+   "নিয়মের প্রতিটি লঙ্ঘনে (infraction) শাস্তি আছে।",
+   "ছোটখাটো নিয়মভঙ্গ (infraction) উপেক্ষা করা হলো, কিন্তু বারবার লঙ্ঘনে কঠোর শাস্তি জুটল।"
+  ],
+  "tip": "Latin frangere = to break. Infraction = a small break; \"fracture\"."
+ },
+ {
+  "id": "infrastructure",
+  "word": "Infrastructure",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "basic systems like roads, power and water",
+  "bn": "অবকাঠামো",
+  "s": [
+   "Good infrastructure helps trade.",
+   "The flood damaged the roads and other infrastructure.",
+   "The {profligate} regime ignored infrastructure, leaving the {rampant} traffic to {stymie} commerce."
+  ],
+  "sbn": [
+   "ভালো অবকাঠামো (infrastructure) বাণিজ্যে সাহায্য করে।",
+   "বন্যা রাস্তা ও অন্যান্য অবকাঠামো (infrastructure) নষ্ট করল।",
+   "অপব্যয়ী শাসক অবকাঠামো (infrastructure) অবহেলা করল, ফলে অনিয়ন্ত্রিত যানজট বাণিজ্য আটকে দিল।"
+  ],
+  "tip": "Infra = below + structure: the structure underneath society."
+ },
+ {
+  "id": "infringe",
+  "word": "Infringe",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to break a law or limit someone's rights",
+  "bn": "লঙ্ঘন করা; অধিকারে হস্তক্ষেপ করা",
+  "s": [
+   "Do not infringe on my privacy.",
+   "The company did infringe the patent.",
+   "The {audacious} firm chose to infringe the {patent} rather than {relinquish} its design."
+  ],
+  "sbn": [
+   "আমার গোপনীয়তায় হস্তক্ষেপ করো না (infringe)।",
+   "কোম্পানিটি পেটেন্ট লঙ্ঘন (infringe) করেছিল।",
+   "দুঃসাহসী প্রতিষ্ঠানটি নিজের ডিজাইন ছাড়ার বদলে পেটেন্ট লঙ্ঘন (infringe) করল।"
+  ],
+  "tip": "Latin frangere = to break; same root as \"infraction\"."
+ },
+ {
+  "id": "infuse",
+  "word": "Infuse",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to fill with a quality; to soak in liquid",
+  "bn": "ভরে দেওয়া; ভিজিয়ে সারাংশ বের করা",
+  "s": [
+   "She will infuse the tea for five minutes.",
+   "The teacher tried to infuse the class with energy.",
+   "The coach tried to infuse the {dejected} team with hope before the final."
+  ],
+  "sbn": [
+   "সে পাঁচ মিনিট চা ভিজিয়ে রাখবে (infuse)।",
+   "শিক্ষক ক্লাসে উদ্যম ভরে দিতে (infuse) চাইলেন।",
+   "কোচ ফাইনালের আগে হতাশ দলের মনে আশা ভরে দিতে (infuse) চাইলেন।"
+  ],
+  "tip": "Latin fundere = to pour. Pour a quality into someone."
+ },
+ {
+  "id": "ingratiate",
+  "word": "Ingratiate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to win favor by flattering or pleasing",
+  "bn": "তোষামোদ করে অনুগ্রহ আদায় করা",
+  "s": [
+   "He tried to ingratiate himself with the boss.",
+   "She will ingratiate herself by bringing gifts.",
+   "The {obsequious} clerk tried to ingratiate himself with the manager through {effusive} praise."
+  ],
+  "sbn": [
+   "সে বসের মন জয় করতে চাটুকারিতা করল (ingratiate)।",
+   "সে উপহার এনে সবার মন জয়ের চেষ্টা করবে (ingratiate)।",
+   "তোষামুদে কেরানি উচ্ছ্বসিত প্রশংসা করে ম্যানেজারের অনুগ্রহ পেতে (ingratiate) চাইল।"
+  ],
+  "tip": "Latin gratia = favor. Ingratiate = work your way into favor."
+ },
+ {
+  "id": "inimical",
+  "word": "Inimical",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "harmful; unfriendly or hostile",
+  "bn": "ক্ষতিকর; শত্রুভাবাপন্ন",
+  "s": [
+   "Smoke is inimical to health.",
+   "The two leaders were inimical to each other.",
+   "Such {draconian} laws are inimical to freedom and invite {dissension}."
+  ],
+  "sbn": [
+   "ধোঁয়া স্বাস্থ্যের জন্য ক্ষতিকর (inimical)।",
+   "দুই নেতা পরস্পরের প্রতি শত্রুভাবাপন্ন (inimical) ছিলেন।",
+   "এমন কঠোর আইন স্বাধীনতার জন্য ক্ষতিকর (inimical) এবং বিভেদ ডেকে আনে।"
+  ],
+  "tip": "Latin inimicus = enemy. Related to \"enemy\"."
+ },
+ {
+  "id": "inimitable",
+  "word": "Inimitable",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "so good it cannot be copied",
+  "bn": "অনন্য; অনুকরণ করা অসম্ভব",
+  "s": [
+   "Her style is inimitable.",
+   "He sang in his own inimitable way.",
+   "The {sagacious} but {whimsical} author's inimitable voice made every book a classic."
+  ],
+  "sbn": [
+   "তার ঢং অনন্য (inimitable)।",
+   "সে নিজের অননুকরণীয় (inimitable) ভঙ্গিতে গাইল।",
+   "প্রাজ্ঞ অথচ খামখেয়ালি লেখকের অনন্য (inimitable) কণ্ঠস্বর প্রতিটি বইকে ক্লাসিক বানাল।"
+  ],
+  "tip": "In- (not) + imitable (can be imitated)."
+ },
+ {
+  "id": "injunction",
+  "word": "Injunction",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "an official order to do or stop something",
+  "bn": "নিষেধাজ্ঞা; আদালতের আদেশ",
+  "s": [
+   "The court issued an injunction.",
+   "The judge granted an injunction against the factory.",
+   "The {draconian} injunction barred the group from protests, and rights activists chose to {denounce} it."
+  ],
+  "sbn": [
+   "আদালত একটি নিষেধাজ্ঞা (injunction) দিল।",
+   "বিচারক কারখানার বিরুদ্ধে নিষেধাজ্ঞা (injunction) মঞ্জুর করলেন।",
+   "কঠোর নিষেধাজ্ঞা (injunction) দলটিকে মিছিল থেকে বিরত রাখল, আর অধিকারকর্মীরা তার নিন্দা করলেন।"
+  ],
+  "tip": "Latin iungere = to join/impose. Think \"enjoin\": order."
+ },
+ {
+  "id": "innate",
+  "word": "Innate",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "born with; natural rather than learned",
+  "bn": "সহজাত; জন্মগত",
+  "s": [
+   "She has an innate talent for music.",
+   "Fear of fire is innate in animals.",
+   "His {amiable} manner seemed innate, not {feigned} like that of other politicians."
+  ],
+  "sbn": [
+   "গানে তার সহজাত (innate) প্রতিভা আছে।",
+   "আগুনের ভয় প্রাণীদের সহজাত (innate)।",
+   "তার অমায়িক আচরণ সহজাত (innate) মনে হতো, অন্য রাজনীতিকদের মতো ভান করা নয়।"
+  ],
+  "tip": "Latin nasci = to be born. Innate = in-born."
+ },
+ {
+  "id": "innuendo",
+  "word": "Innuendo",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an indirect hint, usually insulting",
+  "bn": "কটাক্ষ; ইঙ্গিতপূর্ণ খোঁচা",
+  "s": [
+   "He spoke in innuendo, not directly.",
+   "The article was full of nasty innuendo.",
+   "The {vitriolic} gossip, rich in innuendo, sought to {discredit} the mayor."
+  ],
+  "sbn": [
+   "সে সরাসরি না বলে ইঙ্গিতে (innuendo) কথা বলল।",
+   "প্রবন্ধটি জঘন্য ইঙ্গিতপূর্ণ খোঁচায় (innuendo) ভরা ছিল।",
+   "তিক্ত গুজব, কটাক্ষে (innuendo) ভরা, মেয়রকে হেয় করতে চাইল।"
+  ],
+  "tip": "Latin innuere = to nod toward: a nod, not plain words."
+ },
+ {
+  "id": "inordinate",
+  "word": "Inordinate",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "excessive; beyond normal limits",
+  "bn": "অতিরিক্ত; মাত্রাছাড়া",
+  "s": [
+   "He spent an inordinate amount of time online.",
+   "She took inordinate pride in her car.",
+   "The {voracious} reader's inordinate love of books left {paltry} time for sleep."
+  ],
+  "sbn": [
+   "সে মাত্রাছাড়া (inordinate) সময় অনলাইনে কাটাত।",
+   "সে নিজের গাড়ি নিয়ে অতিরিক্ত (inordinate) গর্ব করত।",
+   "পেটুক পাঠকের বইয়ের প্রতি অতিরিক্ত (inordinate) ভালোবাসা ঘুমের জন্য সামান্য সময়ই রাখত।"
+  ],
+  "tip": "In- (not) + order: out of order, beyond limits."
+ },
+ {
+  "id": "inquisition",
+  "word": "Inquisition",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a harsh, intense questioning; a historic church court",
+  "bn": "জেরা; কঠোর জিজ্ঞাসাবাদ",
+  "s": [
+   "He faced a long inquisition.",
+   "The Inquisition punished people for heresy.",
+   "The {zealous} prosecutor subjected the witness to a ruthless inquisition about {illicit} funds."
+  ],
+  "sbn": [
+   "সে দীর্ঘ জেরার (inquisition) মুখোমুখি হলো।",
+   "ইনকুইজিশন (Inquisition) ধর্মদ্রোহিতার জন্য মানুষকে শাস্তি দিত।",
+   "উৎসাহী কৌঁসুলি অবৈধ অর্থ নিয়ে সাক্ষীকে নির্মম জেরার (inquisition) মুখে ফেললেন।"
+  ],
+  "tip": "Same root as \"inquire\": a forced inquiry."
+ },
+ {
+  "id": "insatiable",
+  "word": "Insatiable",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "never satisfied; unable to be filled",
+  "bn": "অতৃপ্ত; অফুরন্ত ক্ষুধার",
+  "s": [
+   "He has an insatiable appetite.",
+   "Her insatiable curiosity led her to explore.",
+   "The {voracious} and insatiable collector kept buying, despite {onerous} debts."
+  ],
+  "sbn": [
+   "তার ক্ষুধা অতৃপ্ত (insatiable)।",
+   "তার অতৃপ্ত (insatiable) কৌতূহল তাকে অন্বেষণে নিয়ে গেল।",
+   "পেটুক ও অতৃপ্ত (insatiable) সংগ্রাহক ভারী ঋণ সত্ত্বেও কিনেই চলল।"
+  ],
+  "tip": "Latin satis = enough. Insatiable = can never have enough."
+ },
+ {
+  "id": "insidious",
+  "word": "Insidious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "sly and harmful, spreading unnoticed",
+  "bn": "ধূর্ত; গোপনে ক্ষতিকর",
+  "s": [
+   "Cancer can be an insidious disease.",
+   "The insidious rumor spread through the school.",
+   "The {subtle} yet insidious propaganda slowly changed public opinion without anyone's {sanction}."
+  ],
+  "sbn": [
+   "ক্যানসার একটি ধূর্ত (insidious) রোগ হতে পারে।",
+   "কুৎসিত গুজবটি (insidious) স্কুলে ছড়িয়ে পড়ল।",
+   "সূক্ষ্ম অথচ ধূর্ত (insidious) প্রচারণা কারও অনুমোদন ছাড়াই ধীরে ধীরে জনমত বদলে দিল।"
+  ],
+  "tip": "Latin insidiae = ambush: harm that lies in wait."
+ },
+ {
+  "id": "insolent",
+  "word": "Insolent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "rude and disrespectful",
+  "bn": "ঔদ্ধত্যপূর্ণ; বেয়াদব",
+  "s": [
+   "The insolent boy mocked his teacher.",
+   "Her insolent reply shocked the guests.",
+   "The brash and insolent clerk showed {effrontery} to the senior manager."
+  ],
+  "sbn": [
+   "বেয়াদব (insolent) ছেলেটি শিক্ষককে ঠাট্টা করল।",
+   "তার ঔদ্ধত্যপূর্ণ (insolent) জবাব অতিথিদের চমকে দিল।",
+   "বেপরোয়া ও বেয়াদব (insolent) কেরানি সিনিয়র ম্যানেজারের সামনে ধৃষ্টতা দেখাল।"
+  ],
+  "tip": "Latin insolens = unusual, arrogant. Think \"in-sole-ent\": steps on others."
+ },
+ {
+  "id": "insouciant",
+  "word": "Insouciant",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "carefree; casually unconcerned",
+  "bn": "নির্বিকার; বেপরোয়া নিশ্চিন্ত",
+  "s": [
+   "He gave an insouciant shrug.",
+   "She walked in with an insouciant smile.",
+   "The {blithe} and insouciant youth ignored the {impending} storm."
+  ],
+  "sbn": [
+   "সে নির্বিকার (insouciant) কাঁধ ঝাঁকাল।",
+   "সে নিশ্চিন্ত (insouciant) হাসি নিয়ে ঢুকল।",
+   "হাসিখুশি ও নির্বিকার (insouciant) যুবকটি আসন্ন ঝড় আমলেই নিল না।"
+  ],
+  "tip": "French sou = penny, ci = care; no care at all."
+ },
+ {
+  "id": "instigate",
+  "word": "Instigate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to start or provoke (trouble)",
+  "bn": "উসকে দেওয়া; সূচনা ঘটানো",
+  "s": [
+   "He tried to instigate a fight.",
+   "The rumor did instigate panic.",
+   "The {demagogue} sought to instigate a riot, hoping the {tumult} would serve his cause."
+  ],
+  "sbn": [
+   "সে মারামারি উসকে দিতে (instigate) চাইল।",
+   "গুজবটি আতঙ্ক উসকে দিল (instigate)।",
+   "বক্তা দাঙ্গা বাধাতে (instigate) চাইল, ভেবে যে হট্টগোল তার উদ্দেশ্য সাধন করবে।"
+  ],
+  "tip": "Latin instigare = to goad. Think \"sting\": you sting someone into action."
+ },
+ {
+  "id": "insufferable",
+  "word": "Insufferable",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "unbearable; extremely annoying",
+  "bn": "অসহ্য; সহ্যের অতীত",
+  "s": [
+   "The heat was insufferable.",
+   "His insufferable arrogance annoyed everyone.",
+   "The {supercilious} manager's insufferable manner made {dejected} workers resign."
+  ],
+  "sbn": [
+   "গরম ছিল অসহ্য (insufferable)।",
+   "তার অসহ্য (insufferable) অহংকার সবাইকে বিরক্ত করল।",
+   "উন্নাসিক ম্যানেজারের অসহ্য (insufferable) আচরণে হতাশ কর্মীরা পদত্যাগ করল।"
+  ],
+  "tip": "In- (not) + suffer (bear): cannot be borne."
+ },
+ {
+  "id": "insuperable",
+  "word": "Insuperable",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "impossible to overcome",
+  "bn": "অনতিক্রম্য; অপ্রতিরোধ্য",
+  "s": [
+   "The wall was an insuperable barrier.",
+   "He faced insuperable difficulties.",
+   "The {stalwart} climbers met what seemed an insuperable cliff, yet refused to {vacillate}."
+  ],
+  "sbn": [
+   "দেয়ালটি ছিল অনতিক্রম্য (insuperable) বাধা।",
+   "সে অনতিক্রম্য (insuperable) অসুবিধার মুখে পড়ল।",
+   "অটল পর্বতারোহীরা অনতিক্রম্য (insuperable) এক খাড়া পাহাড়ের মুখোমুখি হলেও দোদুল্যমান হলো না।"
+  ],
+  "tip": "Latin superare = to overcome. Insuperable = cannot be surmounted."
+ },
+ {
+  "id": "insurgent",
+  "word": "Insurgent",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a rebel fighting against a government",
+  "bn": "বিদ্রোহী",
+  "s": [
+   "The insurgents captured the town.",
+   "The army fought the insurgent forces.",
+   "The {reactionary} regime failed to {repress} the insurgent movement."
+  ],
+  "sbn": [
+   "বিদ্রোহীরা (insurgents) শহর দখল করল।",
+   "সেনাবাহিনী বিদ্রোহী (insurgent) বাহিনীর সঙ্গে লড়ল।",
+   "প্রতিক্রিয়াশীল শাসক বিদ্রোহী (insurgent) আন্দোলন দমন করতে ব্যর্থ হলো।"
+  ],
+  "tip": "Latin surgere = to rise. Insurgents rise up against power."
+ },
+ {
+  "id": "insurrection",
+  "word": "Insurrection",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a violent uprising against authority",
+  "bn": "বিদ্রোহ; অভ্যুত্থান",
+  "s": [
+   "Police crushed the insurrection.",
+   "The insurrection began in the capital.",
+   "The {reactionary} elite sought to {repress} the insurrection and restore the old {hegemony}."
+  ],
+  "sbn": [
+   "পুলিশ বিদ্রোহ (insurrection) দমন করল।",
+   "বিদ্রোহ (insurrection) রাজধানীতে শুরু হলো।",
+   "প্রতিক্রিয়াশীল অভিজাতরা বিদ্রোহ (insurrection) দমন করে পুরোনো আধিপত্য ফিরিয়ে আনতে চাইল।"
+  ],
+  "tip": "Same root as insurgent: rising up (surgere)."
+ },
+ {
+  "id": "integral",
+  "word": "Integral",
+  "src": "WS1+WS2",
+  "pos": "adjective",
+  "en": "essential as part of a whole",
+  "bn": "অপরিহার্য অংশ; অবিচ্ছেদ্য",
+  "s": [
+   "Exercise is integral to health.",
+   "Honesty is integral to a good friendship.",
+   "Discipline is integral to the {stoic} philosophy of life and an {immutable} part of it."
+  ],
+  "sbn": [
+   "ব্যায়াম স্বাস্থ্যের অপরিহার্য (integral) অংশ।",
+   "সততা ভালো বন্ধুত্বের অবিচ্ছেদ্য (integral) অংশ।",
+   "শৃঙ্খলা স্টোয়িক জীবনদর্শনের অবিচ্ছেদ্য (integral) ও অপরিবর্তনীয় অংশ।"
+  ],
+  "tip": "Latin integer = whole. An integral part is needed for the whole."
+ },
+ {
+  "id": "interim",
+  "word": "Interim",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the period between two events; temporary",
+  "bn": "অন্তর্বর্তী সময়; অস্থায়ী",
+  "s": [
+   "An interim manager runs the shop.",
+   "In the interim, we will use the old system.",
+   "The {tentative} agreement was an interim measure, valid until a {mandate} for permanent change was secured."
+  ],
+  "sbn": [
+   "একজন অন্তর্বর্তী (interim) ম্যানেজার দোকান চালান।",
+   "এই অন্তর্বর্তী (interim) সময়ে আমরা পুরোনো ব্যবস্থাই ব্যবহার করব।",
+   "সাময়িক চুক্তিটি ছিল অন্তর্বর্তী (interim) ব্যবস্থা, স্থায়ী পরিবর্তনের ম্যান্ডেট না পাওয়া পর্যন্ত কার্যকর।"
+  ],
+  "tip": "Latin interim = meanwhile. Think \"in the meantime\"."
+ },
+ {
+  "id": "interloper",
+  "word": "Interloper",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an unwelcome outsider who intrudes",
+  "bn": "অনাহূত অনুপ্রবেশকারী; বহিরাগত নাক-গলানো লোক",
+  "s": [
+   "The dog barked at the interloper.",
+   "The family treated the stranger as an interloper.",
+   "The {gregarious} club felt like a family, so the {taciturn} interloper stood out."
+  ],
+  "sbn": [
+   "কুকুরটি অনাহূত লোকটির দিকে ঘেউ ঘেউ করল (interloper)।",
+   "পরিবারটি অচেনা লোকটিকে অনুপ্রবেশকারী (interloper) ভাবল।",
+   "মিশুক ক্লাবটি পরিবারের মতো ছিল, তাই চুপচাপ বহিরাগত (interloper) আলাদা হয়ে ছিল।"
+  ],
+  "tip": "Inter = between + Dutch loper = runner: someone who runs between and intrudes."
+ },
+ {
+  "id": "interlude",
+  "word": "Interlude",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a short break or pause between events",
+  "bn": "বিরতি; মাঝখানের সংক্ষিপ্ত সময়",
+  "s": [
+   "We enjoyed a quiet interlude by the river.",
+   "A short piano piece served as an interlude.",
+   "After the {tumult} of the week, the weekend was a peaceful interlude."
+  ],
+  "sbn": [
+   "আমরা নদীর ধারে শান্ত বিরতি (interlude) উপভোগ করলাম।",
+   "একটি ছোট পিয়ানোর সুর বিরতি (interlude) হিসেবে বাজল।",
+   "সপ্তাহের হট্টগোলের পর সপ্তাহান্তটি ছিল শান্ত বিরতি (interlude)।"
+  ],
+  "tip": "Inter (between) + Latin ludus (play): a play between acts."
+ },
+ {
+  "id": "interminable",
+  "word": "Interminable",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "seeming never to end; tiresomely long",
+  "bn": "অন্তহীন; একঘেয়েভাবে দীর্ঘ",
+  "s": [
+   "The meeting felt interminable.",
+   "We waited through an interminable delay.",
+   "The {pedantic} lecturer's interminable talk left the {dejected} students half asleep."
+  ],
+  "sbn": [
+   "মিটিংটা অন্তহীন (interminable) মনে হলো।",
+   "আমরা অন্তহীন (interminable) দেরির মধ্যে অপেক্ষা করলাম।",
+   "পণ্ডিতি বক্তার অন্তহীন (interminable) বক্তৃতা হতাশ ছাত্রদের প্রায় ঘুম পাড়িয়ে দিল।"
+  ],
+  "tip": "In- (not) + terminate (end): will not end."
+ },
+ {
+  "id": "intermittent",
+  "word": "Intermittent",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "stopping and starting at intervals",
+  "bn": "থেমে থেমে হওয়া; বিরতিযুক্ত",
+  "s": [
+   "There was intermittent rain all day.",
+   "He felt intermittent pain in his leg.",
+   "The {tentative} signal was intermittent, making the {mundane} task of calling frustrating."
+  ],
+  "sbn": [
+   "সারাদিন থেমে থেমে (intermittent) বৃষ্টি হলো।",
+   "পায়ে সে থেমে থেমে (intermittent) ব্যথা অনুভব করল।",
+   "সংকেত ছিল থেমে থেমে (intermittent), ফলে ফোন করার মতো সাধারণ কাজটাও বিরক্তিকর হয়ে উঠল।"
+  ],
+  "tip": "Inter (between) + mittere (send): sent in gaps."
+ },
+ {
+  "id": "intersperse",
+  "word": "Intersperse",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to scatter among other things",
+  "bn": "ছড়িয়ে দেওয়া; মাঝেমধ্যে বসানো",
+  "s": [
+   "She will intersperse jokes in her talk.",
+   "Flowers were interspersed among the trees.",
+   "The speaker chose to intersperse {levity} and {anecdotes} among the serious facts."
+  ],
+  "sbn": [
+   "সে বক্তৃতায় মাঝে মাঝে রসিকতা ছড়িয়ে দেবে (intersperse)।",
+   "গাছের ফাঁকে ফাঁকে ফুল ছড়ানো (interspersed) ছিল।",
+   "বক্তা গুরুগম্ভীর তথ্যের মাঝে মাঝে হালকা রসিকতা ও গল্প ছড়িয়ে দিলেন (intersperse)।"
+  ],
+  "tip": "Inter (among) + Latin spargere (scatter, like \"sparse\")."
+ },
+ {
+  "id": "intervene",
+  "word": "Intervene",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to step in to change a situation",
+  "bn": "হস্তক্ষেপ করা; মাঝখানে এগিয়ে আসা",
+  "s": [
+   "The teacher had to intervene in the fight.",
+   "The government may intervene to stop the price rise.",
+   "The {sagacious} elder chose to intervene before the {dissension} turned into a riot."
+  ],
+  "sbn": [
+   "শিক্ষককে ঝগড়ায় হস্তক্ষেপ (intervene) করতে হলো।",
+   "দাম বাড়া ঠেকাতে সরকার হস্তক্ষেপ (intervene) করতে পারে।",
+   "প্রাজ্ঞ প্রবীণ বিভেদ দাঙ্গায় রূপ নেওয়ার আগেই হস্তক্ষেপ (intervene) করলেন।"
+  ],
+  "tip": "Inter (between) + venire (come): come between."
+ },
+ {
+  "id": "intimate",
+  "word": "Intimate",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "very close and personal; (verb) to hint",
+  "bn": "ঘনিষ্ঠ; ব্যক্তিগত",
+  "s": [
+   "They had an intimate dinner.",
+   "He is an intimate friend of mine.",
+   "The {amiable} host created an intimate setting where {reticent} guests shared secrets."
+  ],
+  "sbn": [
+   "তারা একটি ঘনিষ্ঠ (intimate) ডিনার করল।",
+   "সে আমার ঘনিষ্ঠ (intimate) বন্ধু।",
+   "অমায়িক আয়োজক এমন ঘনিষ্ঠ (intimate) পরিবেশ বানালেন যেখানে চুপচাপ অতিথিরাও গোপন কথা বললেন।"
+  ],
+  "tip": "Latin intimus = innermost. Your innermost circle."
+ },
+ {
+  "id": "intricate",
+  "word": "Intricate",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "having many small, complicated parts",
+  "bn": "জটিল; সূক্ষ্ম কারুকাজের",
+  "s": [
+   "The carpet had an intricate design.",
+   "It was an intricate plan with many steps.",
+   "The tangled yet intricate plot of the novel presented a {conundrum} to readers."
+  ],
+  "sbn": [
+   "কার্পেটে জটিল (intricate) নকশা ছিল।",
+   "এটি অনেক ধাপের জটিল (intricate) পরিকল্পনা ছিল।",
+   "উপন্যাসের ঘোরানো কিন্তু জটিল (intricate) প্লট পাঠকদের জন্য ধাঁধা তৈরি করল।"
+  ],
+  "tip": "Latin tricae = tangles. Intricate = tangled in detail."
+ },
+ {
+  "id": "intrigue",
+  "word": "Intrigue",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to arouse curiosity; (noun) a secret plot",
+  "bn": "কৌতূহলী করা; ষড়যন্ত্র",
+  "s": [
+   "The mystery will intrigue you.",
+   "Palace intrigue brought down the minister.",
+   "The {occult} symbols began to intrigue the scholar, who loved a {conundrum}."
+  ],
+  "sbn": [
+   "রহস্যটি তোমাকে কৌতূহলী করবে (intrigue)।",
+   "প্রাসাদের ষড়যন্ত্রে (intrigue) মন্ত্রীর পতন হলো।",
+   "রহস্যময় চিহ্নগুলো পণ্ডিতকে কৌতূহলী (intrigue) করল, যিনি ধাঁধা ভালোবাসতেন।"
+  ],
+  "tip": "Latin intricare = to entangle. Same root as \"intricate\"."
+ },
+ {
+  "id": "intrinsic",
+  "word": "Intrinsic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "belonging naturally; essential to a thing",
+  "bn": "অন্তর্নিহিত; স্বভাবগত",
+  "s": [
+   "Honesty has intrinsic value.",
+   "The intrinsic worth of gold is high.",
+   "The {stoic} believed that happiness is intrinsic, an {immutable} quality of the mind."
+  ],
+  "sbn": [
+   "সততার অন্তর্নিহিত (intrinsic) মূল্য আছে।",
+   "সোনার অন্তর্নিহিত (intrinsic) মূল্য অনেক।",
+   "স্টোয়িক দার্শনিক বিশ্বাস করতেন সুখ মনের অন্তর্নিহিত (intrinsic) ও অপরিবর্তনীয় গুণ।"
+  ],
+  "tip": "Latin intrinsecus = inwardly. Inside, built in."
+ },
+ {
+  "id": "introspective",
+  "word": "Introspective",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "looking inward at one's own thoughts",
+  "bn": "আত্মমগ্ন; আত্মবিশ্লেষণমূলক",
+  "s": [
+   "She is an introspective girl.",
+   "He became introspective after the failure.",
+   "The {taciturn} and introspective poet spent hours alone, writing {wistful} verses."
+  ],
+  "sbn": [
+   "সে একটি আত্মমগ্ন (introspective) মেয়ে।",
+   "ব্যর্থতার পর সে আত্মবিশ্লেষণে (introspective) ডুবে গেল।",
+   "চুপচাপ ও আত্মমগ্ন (introspective) কবি ঘণ্টার পর ঘণ্টা একা থেকে বিষণ্ণ কবিতা লিখতেন।"
+  ],
+  "tip": "Latin intra (within) + specere (look): looking within."
+ },
+ {
+  "id": "inveterate",
+  "word": "Inveterate",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "long established; hard to change",
+  "bn": "পুরোনো ও বদ্ধমূল; চিরাচরিত",
+  "s": [
+   "He is an inveterate gambler.",
+   "She had an inveterate habit of lateness.",
+   "The {incorrigible} and inveterate liar had {feigned} innocence for years."
+  ],
+  "sbn": [
+   "সে এক পুরোনো (inveterate) জুয়াড়ি।",
+   "দেরি করা তার বদ্ধমূল (inveterate) অভ্যাস ছিল।",
+   "অসংশোধনীয় ও বদ্ধমূল (inveterate) মিথ্যুক বছরের পর বছর নির্দোষ হওয়ার ভান করেছে।"
+  ],
+  "tip": "Latin vetus = old (like \"veteran\"): old and rooted."
+ },
+ {
+  "id": "invidious",
+  "word": "Invidious",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "unfair and likely to cause resentment",
+  "bn": "বৈষম্যমূলক; ঈর্ষা জাগানো",
+  "s": [
+   "It was an invidious comparison.",
+   "The teacher avoided invidious distinctions between students.",
+   "The {impartial} judge refused to make an invidious choice that could {engender} resentment."
+  ],
+  "sbn": [
+   "এটি ছিল বৈষম্যমূলক (invidious) তুলনা।",
+   "শিক্ষক ছাত্রদের মধ্যে অন্যায্য (invidious) ভেদাভেদ এড়িয়ে চললেন।",
+   "নিরপেক্ষ বিচারক এমন অন্যায্য (invidious) সিদ্ধান্ত নিতে রাজি হলেন না যা বিদ্বেষ জন্মাতে পারে।"
+  ],
+  "tip": "Latin invidia = envy. Invidious choices make others envious."
+ },
+ {
+  "id": "inviolate",
+  "word": "Inviolate",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "not violated; kept sacred and safe",
+  "bn": "অলঙ্ঘিত; পবিত্র ও অক্ষুণ্ণ",
+  "s": [
+   "The temple remained inviolate.",
+   "Their privacy stayed inviolate.",
+   "The treaty's {sanction} kept the borders inviolate, an {immutable} promise between nations."
+  ],
+  "sbn": [
+   "মন্দিরটি অক্ষুণ্ণ (inviolate) রইল।",
+   "তাদের গোপনীয়তা অলঙ্ঘিত (inviolate) থাকল।",
+   "চুক্তির অনুমোদন সীমান্তকে অলঙ্ঘিত (inviolate) রাখল, রাষ্ট্রগুলোর মধ্যে এক অপরিবর্তনীয় প্রতিশ্রুতি।"
+  ],
+  "tip": "In- (not) + violate (break/harm)."
+ },
+ {
+  "id": "invoke",
+  "word": "Invoke",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to call on for help or cite as authority",
+  "bn": "আহ্বান করা; উদ্ধৃত করা",
+  "s": [
+   "He will invoke the law to defend himself.",
+   "Poets often invoke the muse.",
+   "The lawyer chose to invoke an old {precept} to justify the {contentious} claim."
+  ],
+  "sbn": [
+   "সে আত্মরক্ষায় আইনের আশ্রয় নেবে (invoke)।",
+   "কবিরা প্রায়ই কাব্যদেবীকে আহ্বান করেন (invoke)।",
+   "আইনজীবী বিতর্কিত দাবি ন্যায্য করতে একটি পুরোনো নীতিবাক্য উদ্ধৃত (invoke) করলেন।"
+  ],
+  "tip": "Latin vocare = to call. Invoke = call upon."
+ },
+ {
+  "id": "iridescent",
+  "word": "Iridescent",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "showing shining rainbow-like colors",
+  "bn": "রংধনুর মতো ঝলমলে; বর্ণালি",
+  "s": [
+   "The soap bubble was iridescent.",
+   "An iridescent beetle crawled on the leaf.",
+   "The {resplendent} peacock displayed its iridescent feathers, and the crowd was {transfixed}."
+  ],
+  "sbn": [
+   "সাবানের বুদবুদটি রংধনুর মতো ঝলমলে (iridescent) ছিল।",
+   "একটি ঝলমলে (iridescent) পোকা পাতায় হাঁটছিল।",
+   "জমকালো ময়ূর তার ঝলমলে (iridescent) পালক মেলে ধরল, আর দর্শকরা মন্ত্রমুগ্ধ হলো।"
+  ],
+  "tip": "Greek Iris = rainbow goddess. Iridescent = rainbow-like."
+ },
+ {
+  "id": "ironic",
+  "word": "Ironic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "meaning the opposite of what is expected or said",
+  "bn": "বিদ্রূপাত্মক; পরিহাসময়",
+  "s": [
+   "It is ironic that the fire station burned down.",
+   "She gave an ironic smile.",
+   "The {sardonic} writer found it ironic that the {philistine} critic praised the book."
+  ],
+  "sbn": [
+   "দমকল কেন্দ্র পুড়ে যাওয়াটা পরিহাসজনক (ironic)।",
+   "সে বিদ্রূপের (ironic) হাসি দিল।",
+   "ব্যঙ্গপ্রিয় লেখকের কাছে বিষয়টি পরিহাসময় (ironic) ঠেকল যে সংস্কৃতিবিমুখ সমালোচকই বইটির প্রশংসা করলেন।"
+  ],
+  "tip": "Greek eironeia = pretended ignorance; saying one thing, meaning another."
+ },
+ {
+  "id": "irrevocable",
+  "word": "Irrevocable",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "impossible to cancel or undo",
+  "bn": "অপরিবর্তনীয়; অফেরতযোগ্য",
+  "s": [
+   "He made an irrevocable decision.",
+   "Once signed, the contract is irrevocable.",
+   "The {impetuous} vow was irrevocable, and he could not {recant} it."
+  ],
+  "sbn": [
+   "সে একটি অপরিবর্তনীয় (irrevocable) সিদ্ধান্ত নিল।",
+   "একবার সই হলে চুক্তিটি অপরিবর্তনীয় (irrevocable)।",
+   "হঠকারী শপথটি ছিল অপরিবর্তনীয় (irrevocable), সে আর তা প্রত্যাহার করতে পারল না।"
+  ],
+  "tip": "Latin revocare = to call back; cannot be called back."
+ },
+ {
+  "id": "itinerant",
+  "word": "Itinerant",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "traveling from place to place",
+  "bn": "ভ্রাম্যমাণ; যাযাবর",
+  "s": [
+   "An itinerant trader sold cloth.",
+   "The itinerant preacher never stayed long.",
+   "The {peripatetic} and itinerant musician lived on {paltry} pay from street shows."
+  ],
+  "sbn": [
+   "এক ভ্রাম্যমাণ (itinerant) ব্যবসায়ী কাপড় বিক্রি করত।",
+   "ভ্রাম্যমাণ (itinerant) ধর্মপ্রচারক কখনো বেশিদিন থাকত না।",
+   "ভ্রাম্যমাণ ও যাযাবর (itinerant) সংগীতশিল্পী পথের শো থেকে সামান্য আয়ে চলতেন।"
+  ],
+  "tip": "Latin iter = journey. Think \"itinerary\"."
+ },
+ {
+  "id": "jaunt",
+  "word": "Jaunt",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a short, pleasant trip",
+  "bn": "ছোট আনন্দভ্রমণ",
+  "s": [
+   "We went on a jaunt to the lake.",
+   "A weekend jaunt to the hills refreshed her.",
+   "After the {onerous} week, a {blithe} jaunt into the countryside was welcome."
+  ],
+  "sbn": [
+   "আমরা হ্রদে ছোট্ট ঘুরতে (jaunt) গেলাম।",
+   "সপ্তাহান্তে পাহাড়ে ছোট ভ্রমণ (jaunt) তাকে তরতাজা করল।",
+   "ভারী সপ্তাহের পর গ্রামে হালকা মনে ছোট্ট বেড়ানো (jaunt) ছিল আনন্দের।"
+  ],
+  "tip": "Sounds like \"jaunty\": a light, cheerful outing."
+ },
+ {
+  "id": "jingoism",
+  "word": "Jingoism",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "aggressive, extreme patriotism favoring war",
+  "bn": "উগ্র দেশপ্রেম; যুদ্ধবাদী জাতীয়তাবাদ",
+  "s": [
+   "Jingoism can lead to war.",
+   "The newspaper encouraged jingoism.",
+   "The {bombastic} politician's jingoism fed {rampant} hatred of neighboring nations."
+  ],
+  "sbn": [
+   "উগ্র জাতীয়তাবাদ (jingoism) যুদ্ধের দিকে নিয়ে যেতে পারে।",
+   "পত্রিকাটি উগ্র দেশপ্রেম (jingoism) উসকে দিল।",
+   "বাগাড়ম্বরী রাজনীতিকের উগ্র জাতীয়তাবাদ (jingoism) প্রতিবেশী দেশগুলোর প্রতি ব্যাপক ঘৃণা ছড়াল।"
+  ],
+  "tip": "From an old British song \"by jingo!\" supporting war."
+ },
+ {
+  "id": "jocular",
+  "word": "Jocular",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "joking; fond of humor",
+  "bn": "রসিক; কৌতুকপ্রিয়",
+  "s": [
+   "He is a jocular old man.",
+   "She gave a jocular reply.",
+   "The {amiable} and jocular host kept the party lively with {banter}."
+  ],
+  "sbn": [
+   "সে এক রসিক (jocular) বৃদ্ধ।",
+   "সে কৌতুকভরা (jocular) জবাব দিল।",
+   "অমায়িক ও রসিক (jocular) আয়োজক খুনসুটি দিয়ে পার্টি জমিয়ে রাখলেন।"
+  ],
+  "tip": "Latin jocus = joke. Sounds like \"joke\"."
+ },
+ {
+  "id": "jubilation",
+  "word": "Jubilation",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "great joy and celebration",
+  "bn": "উল্লাস; আনন্দোৎসব",
+  "s": [
+   "There was jubilation after the win.",
+   "The streets filled with jubilation.",
+   "The crowd's {effusive} jubilation turned into a {tumult} of singing and dancing."
+  ],
+  "sbn": [
+   "জয়ের পর সবখানে উল্লাস (jubilation) ছিল।",
+   "রাস্তাগুলো আনন্দোল্লাসে (jubilation) ভরে গেল।",
+   "জনতার উচ্ছ্বসিত উল্লাস (jubilation) গান-নাচের হট্টগোলে পরিণত হলো।"
+  ],
+  "tip": "Latin jubilare = to shout for joy. Think \"jubilee\"."
+ },
+ {
+  "id": "judicious",
+  "word": "Judicious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "showing good judgment; wise",
+  "bn": "বিজ্ঞ; বিবেচনাপূর্ণ",
+  "s": [
+   "She made a judicious choice.",
+   "A judicious use of money kept us safe.",
+   "The {provident} and judicious investor avoided {paltry} returns and {rampant} risk."
+  ],
+  "sbn": [
+   "সে একটি বিবেচনাপূর্ণ (judicious) সিদ্ধান্ত নিল।",
+   "টাকার বিজ্ঞ (judicious) ব্যবহার আমাদের নিরাপদ রাখল।",
+   "দূরদর্শী ও বিজ্ঞ (judicious) বিনিয়োগকারী সামান্য লাভ আর বেপরোয়া ঝুঁকি দুটোই এড়ালেন।"
+  ],
+  "tip": "Latin judicium = judgment. Same root as \"judge\"."
+ },
+ {
+  "id": "junction",
+  "word": "Junction",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a point where things meet or join",
+  "bn": "সংযোগস্থল; মোড়",
+  "s": [
+   "The bus stops at the junction.",
+   "The two rivers meet at a junction.",
+   "The {pivotal} town, at the junction of two railways, grew {opulent} through trade."
+  ],
+  "sbn": [
+   "বাসটি মোড়ে (junction) থামে।",
+   "দুই নদী সংযোগস্থলে (junction) মিলেছে।",
+   "দুই রেললাইনের সংযোগস্থলে (junction) থাকা গুরুত্বপূর্ণ শহরটি বাণিজ্যে সমৃদ্ধ হয়ে উঠল।"
+  ],
+  "tip": "Latin jungere = to join (like \"join\")."
+ },
+ {
+  "id": "junta",
+  "word": "Junta",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a small group ruling a country after seizing power",
+  "bn": "সামরিক জান্তা; ক্ষমতা দখলকারী ছোট দল",
+  "s": [
+   "The junta took over the government.",
+   "The junta banned all public meetings.",
+   "The {draconian} junta tried to {repress} all dissent, yet its {hegemony} slowly cracked."
+  ],
+  "sbn": [
+   "সামরিক জান্তা (junta) সরকার দখল করল।",
+   "জান্তা (junta) সব জনসভা নিষিদ্ধ করল।",
+   "কঠোর জান্তা (junta) সব ভিন্নমত দমন করতে চাইল, তবু তাদের আধিপত্য ধীরে ধীরে ভাঙল।"
+  ],
+  "tip": "Spanish junta = council. Think \"junta\" = ruling gang."
+ },
+ {
+  "id": "juxtapose",
+  "word": "Juxtapose",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to place side by side for comparison",
+  "bn": "পাশাপাশি রাখা; তুলনা করার জন্য সামনাসামনি আনা",
+  "s": [
+   "The artist will juxtapose old and new photos.",
+   "The film seeks to juxtapose wealth and poverty.",
+   "The {sardonic} editor liked to juxtapose {opulent} mansions with {derelict} slums."
+  ],
+  "sbn": [
+   "শিল্পী পুরোনো ও নতুন ছবি পাশাপাশি রাখবেন (juxtapose)।",
+   "ছবিটি ধন ও দারিদ্র্যকে পাশাপাশি দেখাতে (juxtapose) চায়।",
+   "বিদ্রূপপ্রিয় সম্পাদক জমকালো প্রাসাদের পাশে পরিত্যক্ত বস্তি তুলে ধরতে (juxtapose) ভালোবাসতেন।"
+  ],
+  "tip": "Latin juxta = next to + pose: place next to."
+ },
+ {
+  "id": "kinetic",
+  "word": "Kinetic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "related to motion",
+  "bn": "গতিশীল; গতি-সম্পর্কিত",
+  "s": [
+   "A moving ball has kinetic energy.",
+   "The dancer's kinetic style is exciting.",
+   "The {ebullient} crowd's kinetic energy {transfixed} the performers on stage."
+  ],
+  "sbn": [
+   "চলমান বলের গতিশক্তি (kinetic energy) থাকে।",
+   "নর্তকের গতিময় (kinetic) ধরন উত্তেজনাপূর্ণ।",
+   "উচ্ছল জনতার গতিময় (kinetic) শক্তি মঞ্চের শিল্পীদের মুগ্ধ করে রাখল।"
+  ],
+  "tip": "Greek kinein = to move. Think \"cinema\" = moving pictures."
+ },
+ {
+  "id": "labyrinth",
+  "word": "Labyrinth",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a complicated maze; a confusing network",
+  "bn": "গোলকধাঁধা; জটিল জাল",
+  "s": [
+   "He got lost in the labyrinth.",
+   "The old city was a labyrinth of alleys.",
+   "The tangled labyrinth of rules was a {conundrum} even to officials."
+  ],
+  "sbn": [
+   "সে গোলকধাঁধায় (labyrinth) হারিয়ে গেল।",
+   "পুরোনো শহরটি গলিঘুঁজির গোলকধাঁধা (labyrinth) ছিল।",
+   "নিয়মকানুনের জটিল গোলকধাঁধা (labyrinth) কর্মকর্তাদের কাছেও ধাঁধা ছিল।"
+  ],
+  "tip": "Greek labyrinthos: the Cretan maze of the Minotaur."
+ },
+ {
+  "id": "lament",
+  "word": "Lament",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to express deep sorrow; (noun) a mournful song",
+  "bn": "বিলাপ করা; শোক প্রকাশ করা",
+  "s": [
+   "They lament the loss of their village.",
+   "She will lament her lost chances.",
+   "The {melancholy} widow would lament her husband's death in {wistful} verses."
+  ],
+  "sbn": [
+   "তারা গ্রাম হারানোর জন্য বিলাপ করে (lament)।",
+   "সে হারানো সুযোগের জন্য আফসোস করবে (lament)।",
+   "বিষণ্ণ বিধবা স্বামীর মৃত্যুতে করুণ কবিতায় বিলাপ (lament) করতেন।"
+  ],
+  "tip": "Latin lamentum = a wailing. Think \"lamenting\" = crying."
+ },
+ {
+  "id": "lampoon",
+  "word": "Lampoon",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to mock someone in a humorous attack",
+  "bn": "ব্যঙ্গ করা; বিদ্রূপাত্মক লেখা",
+  "s": [
+   "Cartoonists lampoon politicians.",
+   "The magazine did lampoon the mayor.",
+   "The satirical show would lampoon the leader's {bombastic} speeches."
+  ],
+  "sbn": [
+   "কার্টুনিস্টরা রাজনীতিকদের ব্যঙ্গ করেন (lampoon)।",
+   "ম্যাগাজিনটি মেয়রকে ব্যঙ্গ করল (lampoon)।",
+   "ব্যঙ্গাত্মক অনুষ্ঠানটি নেতার বাগাড়ম্বরপূর্ণ বক্তৃতাকে ব্যঙ্গ (lampoon) করত।"
+  ],
+  "tip": "French lampons = \"let us drink\", a rowdy mocking song."
+ },
+ {
+  "id": "languish",
+  "word": "Languish",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to grow weak; to suffer neglect",
+  "bn": "ক্লান্ত হয়ে নেতিয়ে পড়া; অবহেলায় পড়ে থাকা",
+  "s": [
+   "Plants languish without water.",
+   "He had to languish in prison for years.",
+   "The {dejected} prisoner continued to languish in a cell, his faint hopes fading."
+  ],
+  "sbn": [
+   "পানি ছাড়া গাছ নেতিয়ে পড়ে (languish)।",
+   "তাকে বছরের পর বছর জেলে পড়ে থাকতে (languish) হলো।",
+   "হতাশ বন্দি সেলে ক্ষয়ে যেতে (languish) থাকল, তার ম্লান আশাগুলো মিলিয়ে যাচ্ছিল।"
+  ],
+  "tip": "Latin languere = to be faint. Think \"languid\"."
+ },
+ {
+  "id": "larceny",
+  "word": "Larceny",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the crime of stealing; theft",
+  "bn": "চুরি; ছিনতাই",
+  "s": [
+   "He was jailed for larceny.",
+   "The shopkeeper reported larceny to police.",
+   "The {nefarious} clerk committed larceny by siphoning funds, hoping no audit would reveal it."
+  ],
+  "sbn": [
+   "সে চুরির (larceny) দায়ে জেলে গেল।",
+   "দোকানদার পুলিশকে চুরির (larceny) কথা জানাল।",
+   "নিকৃষ্ট কেরানি তহবিল সরিয়ে চুরি (larceny) করল, আশা করল কোনো নিরীক্ষা তা ধরবে না।"
+  ],
+  "tip": "Latin latro = robber. Larceny = robber's act."
+ },
+ {
+  "id": "largess",
+  "word": "Largess",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "generous giving of money or gifts",
+  "bn": "দানশীলতা; উদার দান",
+  "s": [
+   "The rich man's largess helped the school.",
+   "The king distributed largess to the poor.",
+   "The {benefactor}'s largess funded the {opulent} hall but left little for the {indigent}."
+  ],
+  "sbn": [
+   "ধনী লোকটির উদার দান (largess) স্কুলকে সাহায্য করল।",
+   "রাজা গরিবদের মধ্যে দান (largess) বিতরণ করলেন।",
+   "পৃষ্ঠপোষকের দানশীলতা (largess) জমকালো হল তৈরি করল, কিন্তু দরিদ্রদের জন্য প্রায় কিছুই রাখল না।"
+  ],
+  "tip": "Latin largus = generous. Think \"large\": a large gift."
+ },
+ {
+  "id": "lascivious",
+  "word": "Lascivious",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "showing improper sexual desire",
+  "bn": "কামুক; অশ্লীল",
+  "s": [
+   "He gave a lascivious look.",
+   "The film was criticized for lascivious scenes.",
+   "The {licentious} and lascivious count scandalized the prudish court with his {profligate} ways."
+  ],
+  "sbn": [
+   "সে কামুক (lascivious) দৃষ্টিতে তাকাল।",
+   "সিনেমাটি অশ্লীল (lascivious) দৃশ্যের জন্য সমালোচিত হলো।",
+   "উচ্ছৃঙ্খল ও কামুক (lascivious) কাউন্ট তার অপব্যয়ী জীবনযাত্রায় নীতিবাগীশ রাজসভাকে বিস্মিত করলেন।"
+  ],
+  "tip": "Latin lascivus = playful, lustful."
+ },
+ {
+  "id": "lavish",
+  "word": "Lavish",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "extravagant; given in large amounts",
+  "bn": "জমকালো; অঢেল",
+  "s": [
+   "They threw a lavish wedding.",
+   "She gave lavish gifts to everyone.",
+   "The {profligate} heir spent a lavish sum on a feast, careless of the {paltry} savings left."
+  ],
+  "sbn": [
+   "তারা জমকালো (lavish) বিয়ের আয়োজন করল।",
+   "সে সবাইকে অঢেল (lavish) উপহার দিল।",
+   "অপব্যয়ী উত্তরাধিকারী ভোজে অঢেল (lavish) টাকা খরচ করল, অবশিষ্ট সামান্য জমা নিয়ে ভাবল না।"
+  ],
+  "tip": "From French lavasse = downpour: flowing in abundance."
+ },
+ {
+  "id": "lax",
+  "word": "Lax",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "not strict; careless",
+  "bn": "শিথিল; অসতর্ক",
+  "s": [
+   "The guards were lax at night.",
+   "Lax rules led to many mistakes.",
+   "The {draconian} reforms replaced the lax enforcement, which had let {rampant} cheating thrive."
+  ],
+  "sbn": [
+   "রাতে প্রহরীরা শিথিল (lax) ছিল।",
+   "শিথিল (lax) নিয়মের কারণে অনেক ভুল হলো।",
+   "কঠোর সংস্কার শিথিল (lax) প্রয়োগের জায়গা নিল, যা ব্যাপক প্রতারণাকে বাড়তে দিয়েছিল।"
+  ],
+  "tip": "Latin laxus = loose. Think \"relax\": loosen up."
+ }
+]

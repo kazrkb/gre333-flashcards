@@ -1,0 +1,4026 @@
+{
+  "textCompletion": [
+    {
+      "id": "tc2-01",
+      "text": "Although the senator's speeches were famously (i) _____, often running well past their allotted time, her written memos were strikingly (ii) _____, rarely exceeding a single page.",
+      "blanks": [
+        {
+          "choices": [
+            "verbose",
+            "laconic",
+            "lucid"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "bombastic",
+            "laconic",
+            "garrulous"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "'Although' sets long-winded speeches against short memos, so the speeches are verbose and the memos laconic."
+    },
+    {
+      "id": "tc2-02",
+      "text": "The new drug's (i) _____ in laboratory trials was undeniable, yet regulators remained (ii) _____, noting that results in mice often fail to carry over to humans.",
+      "blanks": [
+        {
+          "choices": [
+            "torpor",
+            "efficacy",
+            "paucity"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "wary",
+            "complaisant",
+            "ebullient"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "'Yet' contrasts proven effectiveness with regulators' caution, which the note about mice explains."
+    },
+    {
+      "id": "tc2-03",
+      "text": "Historians once regarded the treaty as (i) _____, a document of little lasting importance, but newly discovered letters suggest its influence was in fact (ii) _____, shaping diplomacy for decades.",
+      "blanks": [
+        {
+          "choices": [
+            "inconsequential",
+            "volatile",
+            "profound"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "tangential",
+            "ephemeral",
+            "pervasive"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "'Of little lasting importance' restates the first blank, and 'but' plus 'shaping diplomacy for decades' calls for widespread influence."
+    },
+    {
+      "id": "tc2-04",
+      "text": "The artist's early canvases were (i) _____ works that closely imitated the masters she admired, but in her later work she abandoned imitation and developed a style so (ii) _____ that critics struggled to classify it.",
+      "blanks": [
+        {
+          "choices": [
+            "pristine",
+            "derivative",
+            "ephemeral"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "homogeneous",
+            "iconoclastic",
+            "banal"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "Imitative early work is derivative; a style that breaks with tradition so sharply that it defies classification is iconoclastic."
+    },
+    {
+      "id": "tc2-05",
+      "text": "Investors who had expected the startup's revenues to (i) _____ after its product launch were dismayed when sales instead began to (ii) _____, falling by half in a single quarter.",
+      "blanks": [
+        {
+          "choices": [
+            "oscillate",
+            "burgeon",
+            "subside"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "plummet",
+            "converge",
+            "proliferate"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "'Dismayed' and 'instead' contrast expected growth with a steep fall."
+    },
+    {
+      "id": "tc2-06",
+      "text": "Because each retelling of the witness's account introduced a new (i) _____, the jury found her claims hard to accept, and the defense was easily able to (ii) _____ her testimony.",
+      "blanks": [
+        {
+          "choices": [
+            "discrepancy",
+            "euphemism",
+            "platitude"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "discredit",
+            "substantiate",
+            "document"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "Inconsistent retellings undermine credibility, which lets the defense discredit the testimony."
+    },
+    {
+      "id": "tc2-07",
+      "text": "The monk's (i) _____ lifestyle, in which he ate one plain meal a day and slept on a wooden board, stood in sharp contrast to the (ii) _____ excesses of the court he had left behind.",
+      "blanks": [
+        {
+          "choices": [
+            "gregarious",
+            "prodigal",
+            "ascetic"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "ostentatious",
+            "austere",
+            "reticent"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "The details describe self-denial, and 'sharp contrast' and 'excesses' point to showy luxury at court."
+    },
+    {
+      "id": "tc2-08",
+      "text": "Rather than helping to (i) _____ the dispute, the mediator's clumsy remarks served only to (ii) _____ it, leaving both sides angrier than before.",
+      "blanks": [
+        {
+          "choices": [
+            "foment",
+            "exacerbate",
+            "mitigate"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "alleviate",
+            "assuage",
+            "exacerbate"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "'Rather than' contrasts the mediator's goal of easing the conflict with the actual result of worsening it."
+    },
+    {
+      "id": "tc2-09",
+      "text": "The geologist explained that the rock's (i) _____ appearance, with its distinct parallel bands of color, revealed that it had formed in (ii) _____ stages rather than in one continuous event.",
+      "blanks": [
+        {
+          "choices": [
+            "porous",
+            "luminous",
+            "striated"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "homogeneous",
+            "immutable",
+            "discrete"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "Parallel bands mean the rock is striated, and 'rather than in one continuous event' calls for separate stages."
+    },
+    {
+      "id": "tc2-10",
+      "text": "Though usually (i) _____ in meetings, saying little and revealing less, the manager became unexpectedly (ii) _____ when the conversation turned to her passion for sailing.",
+      "blanks": [
+        {
+          "choices": [
+            "contentious",
+            "garrulous",
+            "reticent"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "impassive",
+            "laconic",
+            "loquacious"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "'Saying little' defines the first blank, and 'unexpectedly' signals a shift to talkativeness."
+    },
+    {
+      "id": "tc2-11",
+      "text": "The committee's report was so (i) _____, hedging every claim and refusing to commit to any position, that readers could not tell whether the committee meant to (ii) _____ the proposed policy or to reject it.",
+      "blanks": [
+        {
+          "choices": [
+            "dogmatic",
+            "cogent",
+            "ambiguous"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "proscribe",
+            "rescind",
+            "sanction"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "Hedging makes the report unclear, and the choice is between approving the policy and rejecting it."
+    },
+    {
+      "id": "tc2-12",
+      "text": "Because early lenses tended to (i) _____ rather than sharpen the images they produced, scientists could not clearly (ii) _____ the fine structure of cells until optics improved.",
+      "blanks": [
+        {
+          "choices": [
+            "burnish",
+            "enhance",
+            "impair"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "delineate",
+            "occlude",
+            "obviate"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "'Rather than sharpen' requires a verb meaning to worsen, which explains why scientists could not outline cell structure."
+    },
+    {
+      "id": "tc2-13",
+      "text": "The novelist's prose is (i) _____, full of elaborate metaphors and Latinate phrases, yet beneath all this ornamentation lies a plot so thin and (ii) _____ that readers soon forget it.",
+      "blanks": [
+        {
+          "choices": [
+            "grandiloquent",
+            "lucid",
+            "laconic"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "profound",
+            "felicitous",
+            "insipid"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "Elaborate, showy language is grandiloquent, and 'yet' contrasts it with a dull, forgettable plot."
+    },
+    {
+      "id": "tc2-14",
+      "text": "Critics who had been quick to (i) _____ the young composer's debut as mere noise were forced to reconsider when the piece, once considered hopelessly (ii) _____, became a staple of the concert repertoire.",
+      "blanks": [
+        {
+          "choices": [
+            "deride",
+            "venerate",
+            "laud"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "felicitous",
+            "mundane",
+            "discordant"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "Calling the work 'mere noise' means mocking it, and 'noise' also points to a harsh, unharmonious piece."
+    },
+    {
+      "id": "tc2-15",
+      "text": "The economist argued that the region's poverty was not temporary but (i) _____, so deeply rooted that short-term aid could only (ii) _____ its symptoms rather than cure it.",
+      "blanks": [
+        {
+          "choices": [
+            "sporadic",
+            "ephemeral",
+            "endemic"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "engender",
+            "exacerbate",
+            "alleviate"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "'Not temporary' and 'deeply rooted' signal an entrenched condition, and 'rather than cure it' calls for merely easing symptoms."
+    },
+    {
+      "id": "tc2-16",
+      "text": "Although the CEO continued to (i) _____ that he had known nothing of the accounting fraud, internal emails would later (ii) _____ his professed ignorance.",
+      "blanks": [
+        {
+          "choices": [
+            "aver",
+            "rescind",
+            "recant"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "substantiate",
+            "belie",
+            "enhance"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "'Although' sets the CEO's firm assertion against emails that show it to be false."
+    },
+    {
+      "id": "tc2-17",
+      "text": "Famously (i) _____, the veteran pilot remained calm even when both engines failed, an emergency that would (ii) _____ most less experienced aviators.",
+      "blanks": [
+        {
+          "choices": [
+            "irascible",
+            "volatile",
+            "imperturbable"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "daunt",
+            "placate",
+            "appease"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "Remaining calm in a crisis defines the first blank, and the contrast with less experienced pilots calls for a verb meaning to intimidate."
+    },
+    {
+      "id": "tc2-18",
+      "text": "The anthropologist's fieldwork was (i) _____: rather than making one long visit, she returned to the village in brief, irregular trips over twenty years, a method that some colleagues dismissed as (ii) _____ but that yielded remarkable long-term data.",
+      "blanks": [
+        {
+          "choices": [
+            "perennial",
+            "sporadic",
+            "meticulous"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "pragmatic",
+            "desultory",
+            "assiduous"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "The colon explains that the visits were irregular, and 'dismissed' plus 'but' calls for a criticism meaning haphazard."
+    },
+    {
+      "id": "tc2-19",
+      "text": "Although the coating was marketed as (i) _____ to moisture, laboratory tests showed it to be quite (ii) _____, allowing water to seep through within hours.",
+      "blanks": [
+        {
+          "choices": [
+            "impervious",
+            "porous",
+            "viscous"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "permeable",
+            "impermeable",
+            "inert"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "'Although' contrasts the claim that water cannot get through with tests showing that it does."
+    },
+    {
+      "id": "tc2-20",
+      "text": "The biographer avoids both (i) _____ and disparagement, portraying her subject neither as a saint nor as a villain, and her (ii) _____ approach has won praise from readers on all sides of the debate.",
+      "blanks": [
+        {
+          "choices": [
+            "idolatry",
+            "chicanery",
+            "invective"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "partisan",
+            "capricious",
+            "disinterested"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "'Saint' pairs with excessive worship as 'villain' pairs with disparagement, and praise from all sides shows the approach is impartial."
+    },
+    {
+      "id": "tc2-21",
+      "text": "The (i) _____ of reliable records from the period has forced historians to rely heavily on (ii) _____, reconstructing events from scattered hints rather than firm evidence.",
+      "blanks": [
+        {
+          "choices": [
+            "plethora",
+            "welter",
+            "paucity"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "supposition",
+            "probity",
+            "decorum"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "Having to work from scattered hints implies a scarcity of records, which forces historians to rely on conjecture."
+    },
+    {
+      "id": "tc2-22",
+      "text": "Analysts had predicted that the merger would successfully (i) _____ the two firms' strengths, but cultural differences proved so (ii) _____ that the combined company never functioned as a unified whole.",
+      "blanks": [
+        {
+          "choices": [
+            "amalgamate",
+            "diverge",
+            "relegate"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "intractable",
+            "inconsequential",
+            "tractable"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "'But' contrasts the hoped-for blending with differences too stubborn to resolve."
+    },
+    {
+      "id": "tc2-23",
+      "text": "The professor's (i) _____ manner, which led him to correct students' grammar mid-sentence and cite obscure footnotes at every turn, alienated many, though no one doubted that he was genuinely (ii) _____.",
+      "blanks": [
+        {
+          "choices": [
+            "facetious",
+            "pedantic",
+            "laconic"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "fatuous",
+            "erudite",
+            "ingenuous"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "Fussy correction and obscure footnotes are pedantic, and 'though no one doubted' concedes his real learning."
+    },
+    {
+      "id": "tc2-24",
+      "text": "Opponents of the bill argued that its supporters' cheerful predictions were (i) _____, resting on (ii) _____ reasoning that confused correlation with causation.",
+      "blanks": [
+        {
+          "choices": [
+            "cogent",
+            "specious",
+            "warranted"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "lucid",
+            "empirical",
+            "fallacious"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "Confusing correlation with causation is faulty logic, so the predictions only seem plausible."
+    },
+    {
+      "id": "tc2-25",
+      "text": "Unlike her (i) _____ predecessor, who agreed to every demand the union made, the new director proved remarkably (ii) _____, refusing to budge on even minor points.",
+      "blanks": [
+        {
+          "choices": [
+            "implacable",
+            "obdurate",
+            "compliant"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "complaisant",
+            "tractable",
+            "obdurate"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "'Unlike' contrasts a yielding predecessor with a director who refuses to budge."
+    },
+    {
+      "id": "tc2-26",
+      "text": "The poem opens with a mournful (i) _____ for the poet's lost brother, but its final stanza shifts to a tone of (ii) _____ celebration of the life he lived.",
+      "blanks": [
+        {
+          "choices": [
+            "elegy",
+            "diatribe",
+            "platitude"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "ebullient",
+            "morose",
+            "soporific"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "A mournful poem for the dead is an elegy, and 'shifts to' and 'celebration' call for an exuberant tone."
+    },
+    {
+      "id": "tc2-27",
+      "text": "The chemist warned that the compound was highly (i) _____ and could explode if handled carelessly; by contrast, the substance it replaced was (ii) _____, reacting with almost nothing.",
+      "blanks": [
+        {
+          "choices": [
+            "volatile",
+            "viscous",
+            "inert"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "pungent",
+            "inert",
+            "volatile"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "Explosive instability defines the first blank, and 'by contrast' and 'reacting with almost nothing' define the second."
+    },
+    {
+      "id": "tc2-28",
+      "text": "Though the mayor's critics were quick to (i) _____ her as a political opportunist, even they had to concede that her response to the flood showed she was genuinely (ii) _____ of the displaced residents' welfare.",
+      "blanks": [
+        {
+          "choices": [
+            "venerate",
+            "emulate",
+            "disparage"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "solicitous",
+            "presumptuous",
+            "indolent"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "Calling her an opportunist is belittling, and 'even they had to concede' introduces praise for her real concern."
+    },
+    {
+      "id": "tc2-29",
+      "text": "The sociologist contends that the town's (i) _____, evident in its residents' suspicion of outsiders and reluctance to engage with neighboring communities, has left it (ii) _____ to new ideas.",
+      "blanks": [
+        {
+          "choices": [
+            "insularity",
+            "levity",
+            "magnanimity"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "impervious",
+            "permeable",
+            "analogous"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "Suspicion of outsiders describes insularity, and its effect is to shut out new ideas."
+    },
+    {
+      "id": "tc2-30",
+      "text": "The spokesperson's tendency to (i) _____ whenever reporters asked direct questions did nothing to quiet the rumors; instead, it seemed to (ii) _____ fresh suspicion that the company was hiding something.",
+      "blanks": [
+        {
+          "choices": [
+            "aver",
+            "stipulate",
+            "equivocate"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "assuage",
+            "mitigate",
+            "engender"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "Evasive answers to direct questions breed suspicion, and 'instead' rules out the calming verbs."
+    },
+    {
+      "id": "tc2-31",
+      "text": "The restorers worked with (i) _____ care, cleaning each square inch of the fresco by hand, and the result was a surface that looked as (ii) _____ as it must have when first painted.",
+      "blanks": [
+        {
+          "choices": [
+            "desultory",
+            "perfunctory",
+            "meticulous"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "derivative",
+            "pristine",
+            "dormant"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "Cleaning every inch by hand shows painstaking care, which leaves the fresco looking fresh and unspoiled."
+    },
+    {
+      "id": "tc2-32",
+      "text": "Long thought to be (i) _____, the volcano has recently shown signs of renewed activity, and officials hope that early evacuation plans will (ii) _____ the loss of life a sudden eruption might cause.",
+      "blanks": [
+        {
+          "choices": [
+            "pungent",
+            "dormant",
+            "volatile"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "exacerbate",
+            "engender",
+            "forestall"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "'Renewed activity' implies the volcano was inactive, and evacuation plans are meant to prevent deaths."
+    },
+    {
+      "id": "tc2-33",
+      "text": "Although the theory was initially greeted with (i) _____, as many scientists dismissed it out of hand, mounting evidence has gradually won it widespread (ii) _____.",
+      "blanks": [
+        {
+          "choices": [
+            "antipathy",
+            "approbation",
+            "alacrity"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "castigation",
+            "opprobrium",
+            "approbation"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "Dismissal out of hand reflects hostility, and 'although' and 'gradually won' signal a turn to approval."
+    },
+    {
+      "id": "tc2-34",
+      "text": "Each line of the candidate's speech was a tired (i) _____ about 'moving forward together,' and the address as a whole offered nothing (ii) _____ about how she would actually reduce the deficit.",
+      "blanks": [
+        {
+          "choices": [
+            "platitude",
+            "digression",
+            "conundrum"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "cogent",
+            "tangential",
+            "banal"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "A tired, vague phrase is a platitude, and the speech lacked any convincing, substantive argument."
+    },
+    {
+      "id": "tc2-35",
+      "text": "The new manager's effort to (i) _____ the cumbersome twenty-step approval process into three simple steps was welcomed by staff who had long found the old system needlessly (ii) _____.",
+      "blanks": [
+        {
+          "choices": [
+            "embellish",
+            "adulterate",
+            "distill"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "lucid",
+            "convoluted",
+            "malleable"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "Reducing twenty steps to three means boiling the process down, which staff welcomed because the old system was overly complicated."
+    },
+    {
+      "id": "tc2-36",
+      "text": "The emperor's decree was meant not merely to discourage the practice but to (i) _____ it outright, and anyone who dared to (ii) _____ the ban faced severe punishment.",
+      "blanks": [
+        {
+          "choices": [
+            "proscribe",
+            "sanction",
+            "condone"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "stipulate",
+            "flout",
+            "document"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "'Not merely to discourage' escalates to forbidding, and punishment follows openly defying the ban."
+    },
+    {
+      "id": "tc2-37",
+      "text": "The child's (i) _____ questions, asked without a hint of guile, revealed an innocence that her (ii) _____ older brother had long since lost, having learned to treat every adult statement with suspicion.",
+      "blanks": [
+        {
+          "choices": [
+            "specious",
+            "disingenuous",
+            "ingenuous"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "guileless",
+            "gullible",
+            "wary"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "'Without a hint of guile' defines the first blank, and treating statements with suspicion defines the second."
+    },
+    {
+      "id": "tc2-38",
+      "text": "Although the drug's side effects were (i) _____, causing only mild drowsiness, many patients refused it, convinced by online rumors that it would (ii) _____ their memory.",
+      "blanks": [
+        {
+          "choices": [
+            "innocuous",
+            "pathological",
+            "onerous"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "enhance",
+            "impair",
+            "elicit"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "'Only mild drowsiness' shows the side effects were harmless, and patients refused the drug because they feared it would damage memory."
+    },
+    {
+      "id": "tc2-39",
+      "text": "The festival's organizers hoped that its (i) _____ lineup, featuring jazz, folk, opera, and electronic music, would attract audiences far more (ii) _____ than the single-genre crowds of previous years.",
+      "blanks": [
+        {
+          "choices": [
+            "pristine",
+            "homogeneous",
+            "eclectic"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "homogeneous",
+            "discrete",
+            "disparate"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "A lineup drawn from many genres is eclectic, and the contrast with 'single-genre crowds' calls for varied audiences."
+    },
+    {
+      "id": "tc2-40",
+      "text": "The company's (i) _____ spending on lavish parties, private jets, and gold-plated fixtures left it vulnerable when the recession hit, whereas its competitor's (ii) _____ allowed it to weather the downturn comfortably.",
+      "blanks": [
+        {
+          "choices": [
+            "prodigal",
+            "abstemious",
+            "ascetic"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "penury",
+            "frugality",
+            "indigence"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "Lavish spending is wasteful, and 'whereas' contrasts it with the careful thrift that protected the competitor."
+    },
+    {
+      "id": "tc3-01",
+      "text": "The scientist's early hypothesis, dismissed by her peers as (i) _____ speculation, was later shown by careful experiments to be sound; the new data did more than (ii) _____ her claims, overturning decades of orthodoxy, and her once (iii) _____ critics were forced to concede publicly that they had been wrong.",
+      "blanks": [
+        {
+          "choices": [
+            "empirical",
+            "cogent",
+            "fatuous"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "obviate",
+            "refute",
+            "substantiate"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "reticent",
+            "dogmatic",
+            "diffident"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "Peers dismissed the idea as foolish, the data confirmed it, and critics who had to back down publicly had been rigidly certain."
+    },
+    {
+      "id": "tc3-02",
+      "text": "The revolution's leaders promised order, but their reign quickly descended into (i) _____; factions that had once (ii) _____ around a common enemy now turned on one another, and the resulting (iii) _____ of central authority left the provinces to govern themselves.",
+      "blanks": [
+        {
+          "choices": [
+            "equanimity",
+            "anarchy",
+            "decorum"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "diverge",
+            "oscillate",
+            "converge"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "efficacy",
+            "dissolution",
+            "resolution"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "'But' contrasts promised order with chaos, factions that once united later split, and provinces left to govern themselves show that central authority broke apart."
+    },
+    {
+      "id": "tc3-03",
+      "text": "Critics have long found the novelist's plots (i) _____, interrupted at every turn by some (ii) _____ that seems to have nothing to do with the main story; yet her admirers argue that these apparent detours are far from (iii) _____, since each one quietly illuminates the central theme.",
+      "blanks": [
+        {
+          "choices": [
+            "laconic",
+            "lucid",
+            "tortuous"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "preamble",
+            "coda",
+            "digression"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "tangential",
+            "felicitous",
+            "discerning"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "Constant interruptions make plots winding, an unrelated interruption is a digression, and 'yet' signals that the detours are actually relevant."
+    },
+    {
+      "id": "tc3-04",
+      "text": "Hoping to (i) _____ investors rattled by the previous quarter's losses, the chief financial officer presented a forecast that seemed to (ii) _____ every positive trend while ignoring the negative ones; the analysts, (iii) _____ from the start, were vindicated when the company missed every target.",
+      "blanks": [
+        {
+          "choices": [
+            "placate",
+            "daunt",
+            "goad"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "delineate",
+            "attenuate",
+            "embellish"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "wary",
+            "complaisant",
+            "gullible"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "Rattled investors need soothing, a one-sided forecast exaggerates the good news, and analysts who were 'vindicated' were suspicious from the start."
+    },
+    {
+      "id": "tc3-05",
+      "text": "Although the virus was initially (i) _____ to a single remote region, air travel allowed it to (ii) _____ rapidly across continents, and public health officials who had underestimated its spread were criticized for their (iii) _____ response.",
+      "blanks": [
+        {
+          "choices": [
+            "inherent",
+            "analogous",
+            "endemic"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "proliferate",
+            "subside",
+            "coagulate"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "meticulous",
+            "assiduous",
+            "perfunctory"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "'Although' contrasts a localized outbreak with rapid global spread, and officials who underestimated it responded only superficially."
+    },
+    {
+      "id": "tc3-06",
+      "text": "The museum's new director, a self-described (i) _____, delighted in overturning cherished traditions; her (ii) _____ exhibitions shocked the institution's conservative patrons, who complained that she showed little (iii) _____ toward the masters whose works had built the collection.",
+      "blanks": [
+        {
+          "choices": [
+            "maverick",
+            "neophyte",
+            "sage"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "iconoclastic",
+            "derivative",
+            "mundane"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "effrontery",
+            "antipathy",
+            "deference"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "Someone who overturns traditions is a maverick whose exhibitions attack convention, and the complaint is that she lacks respect for the masters."
+    },
+    {
+      "id": "tc3-07",
+      "text": "Survey researchers caution that respondents are rarely fully (i) _____ about sensitive topics; many will (ii) _____ rather than admit to unpopular views, so the resulting data may (iii) _____ the true extent of public prejudice.",
+      "blanks": [
+        {
+          "choices": [
+            "laconic",
+            "veracious",
+            "mendacious"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "elicit",
+            "aver",
+            "dissemble"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "belie",
+            "substantiate",
+            "document"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "Respondents are not always truthful, they hide their real views, and so the data give a false picture of how much prejudice exists."
+    },
+    {
+      "id": "tc3-08",
+      "text": "The diplomat's (i) _____ tone during the negotiations surprised observers who knew him to be (ii) _____, quick to anger and slow to forgive; some speculated that his newfound (iii) _____ was a calculated tactic rather than a genuine change of heart.",
+      "blanks": [
+        {
+          "choices": [
+            "vituperative",
+            "caustic",
+            "conciliatory"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "irascible",
+            "phlegmatic",
+            "complaisant"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "intransigence",
+            "equanimity",
+            "truculence"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "'Quick to anger' defines the second blank, and the surprise means his tone was peacemaking and his new manner calm."
+    },
+    {
+      "id": "tc3-09",
+      "text": "The physician noted that the patient's fatigue was not simple (i) _____ brought on by overwork but a (ii) _____ symptom of an underlying disorder, one that had remained (iii) _____ for years before producing any outward signs.",
+      "blanks": [
+        {
+          "choices": [
+            "alacrity",
+            "lassitude",
+            "fervor"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "pathological",
+            "salubrious",
+            "inconsequential"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "volatile",
+            "luminous",
+            "latent"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "'Not simple ... but' contrasts ordinary tiredness with a symptom of disease, and a disorder with no outward signs for years was hidden."
+    },
+    {
+      "id": "tc3-10",
+      "text": "Popular accounts celebrate the general as fearless, even (i) _____, but his letters reveal a more (ii) _____ figure who hesitated before every major battle, and his tendency to (iii) _____ between competing plans until the last minute maddened his subordinates.",
+      "blanks": [
+        {
+          "choices": [
+            "morose",
+            "craven",
+            "audacious"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "dogmatic",
+            "irresolute",
+            "implacable"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "stipulate",
+            "prevaricate",
+            "vacillate"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "'But' contrasts a bold public image with a hesitant private man who wavered between plans."
+    },
+    {
+      "id": "tc3-11",
+      "text": "The playwright's dialogue is (i) _____, conveying volumes in a few clipped words; her characters are (ii) _____ about their own feelings, leaving the audience to infer emotions that remain (iii) _____ throughout the play.",
+      "blanks": [
+        {
+          "choices": [
+            "laconic",
+            "verbose",
+            "grandiloquent"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "reticent",
+            "garrulous",
+            "ebullient"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "banal",
+            "ostentatious",
+            "implicit"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "'A few clipped words' defines the first blank, and characters who keep feelings to themselves leave emotions unstated, so the audience must infer them."
+    },
+    {
+      "id": "tc3-12",
+      "text": "Facing a genuine (i) _____ in the form of a sudden shortage of a key component, the manufacturer had to act with (ii) _____; executives who ordinarily deliberated for months approved a new supplier within days, a decision that proved (iii) _____ when the shortage worsened.",
+      "blanks": [
+        {
+          "choices": [
+            "quibble",
+            "abeyance",
+            "exigency"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "lassitude",
+            "alacrity",
+            "torpor"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "felicitous",
+            "fatuous",
+            "futile"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "A sudden shortage is an urgent situation, approving a supplier within days shows speed, and the decision turned out well once the shortage got worse."
+    },
+    {
+      "id": "tc3-13",
+      "text": "Reformers who hoped the new law would (i) _____ the abuses of child labor were disappointed: enforcement was (ii) _____, with inspectors visiting factories only rarely, and owners found it easy to (iii) _____ the regulations.",
+      "blanks": [
+        {
+          "choices": [
+            "mitigate",
+            "foment",
+            "condone"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "pervasive",
+            "meticulous",
+            "sporadic"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "sanction",
+            "flout",
+            "stipulate"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "Reformers wanted to reduce abuses, 'only rarely' describes irregular enforcement, and lax enforcement lets owners ignore the rules."
+    },
+    {
+      "id": "tc3-14",
+      "text": "Because the supplier had chosen to (i) _____ the honey with cheap syrup, the product was noticeably less (ii) _____ than pure honey and poured almost like water; inspectors used this difference in thickness to (iii) _____ the fraud.",
+      "blanks": [
+        {
+          "choices": [
+            "burnish",
+            "adulterate",
+            "distill"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "volatile",
+            "viscous",
+            "porous"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "document",
+            "forestall",
+            "condone"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "Mixing in cheap syrup contaminates the honey, pouring like water shows it is less thick, and inspectors used that evidence to record the fraud."
+    },
+    {
+      "id": "tc3-15",
+      "text": "The symphony's final movement ends with a quiet (i) _____ that recalls the opening theme, providing a sense of (ii) _____ after the (iii) _____ chords of the turbulent central section.",
+      "blanks": [
+        {
+          "choices": [
+            "preamble",
+            "precursor",
+            "coda"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "resolution",
+            "contention",
+            "dissonance"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "homogeneous",
+            "felicitous",
+            "discordant"
+          ],
+          "answer": 2
+        }
+      ],
+      "explanation": "A closing passage is a coda, it brings a sense of settled completion, and that calm follows the harsh chords of a turbulent section."
+    },
+    {
+      "id": "tc3-16",
+      "text": "The new prime minister's (i) _____ toward his former rivals, several of whom he appointed to his cabinet, stood in marked contrast to his predecessor's (ii) _____, which even members of her own party had come to (iii) _____.",
+      "blanks": [
+        {
+          "choices": [
+            "opprobrium",
+            "penury",
+            "magnanimity"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "truculence",
+            "piety",
+            "deference"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "disparage",
+            "venerate",
+            "emulate"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "Appointing rivals shows generosity, 'marked contrast' calls for aggressiveness in the predecessor, and even her allies came to criticize it."
+    },
+    {
+      "id": "tc3-17",
+      "text": "The philosopher's argument, though (i) _____ in its broad outlines, rests on a premise so (ii) _____ that a single counterexample could topple it, and her critics have been quick to (iii) _____ the entire theory on the strength of this one flaw.",
+      "blanks": [
+        {
+          "choices": [
+            "fallacious",
+            "fatuous",
+            "cogent"
+          ],
+          "answer": 2
+        },
+        {
+          "choices": [
+            "tenuous",
+            "inherent",
+            "immutable"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "laud",
+            "dismiss",
+            "emulate"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "'Though' concedes that the argument is broadly convincing, a premise one counterexample can topple is weak, and critics reject the theory because of it."
+    },
+    {
+      "id": "tc3-18",
+      "text": "Wetlands act as natural sponges: their (i) _____ soils absorb floodwaters that would otherwise (ii) _____ nearby towns, so draining them for development can only (iii) _____ the flood risk faced by downstream communities.",
+      "blanks": [
+        {
+          "choices": [
+            "striated",
+            "porous",
+            "impermeable"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "occlude",
+            "inundate",
+            "desiccate"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "negate",
+            "exacerbate",
+            "mitigate"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "Sponge-like soils are porous, unabsorbed floodwater would swamp towns, and removing that protection worsens the risk."
+    },
+    {
+      "id": "tc3-19",
+      "text": "Reviewers who expected the celebrated author's memoir to be (i) _____, full of self-congratulation and inflated claims, were surprised by its (ii) _____; she seems determined to (iii) _____ her own achievements, devoting more pages to her failures than to her triumphs.",
+      "blanks": [
+        {
+          "choices": [
+            "laconic",
+            "bombastic",
+            "reticent"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "diffidence",
+            "hyperbole",
+            "effrontery"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "laud",
+            "disparage",
+            "embellish"
+          ],
+          "answer": 1
+        }
+      ],
+      "explanation": "Inflated claims would make the book pompous, but 'surprised' signals modesty, and dwelling on failures shows she plays down her achievements."
+    },
+    {
+      "id": "tc3-20",
+      "text": "Economists disagree about whether the recent price spikes are (i) _____ fluctuations that will soon (ii) _____ or signs of a deeper, more (iii) _____ inflationary trend that will resist the central bank's efforts.",
+      "blanks": [
+        {
+          "choices": [
+            "perennial",
+            "ephemeral",
+            "immutable"
+          ],
+          "answer": 1
+        },
+        {
+          "choices": [
+            "subside",
+            "burgeon",
+            "proliferate"
+          ],
+          "answer": 0
+        },
+        {
+          "choices": [
+            "intractable",
+            "inchoate",
+            "quiescent"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "The contrast is between short-lived spikes that will die down and an entrenched trend that resists correction."
+    }
+  ],
+  "analogies": [
+    {
+      "id": "an-01",
+      "stem": [
+        "Garrulous",
+        "talk"
+      ],
+      "choices": [
+        [
+          "brave",
+          "fear"
+        ],
+        [
+          "gluttonous",
+          "eat"
+        ],
+        [
+          "shy",
+          "speak"
+        ],
+        [
+          "honest",
+          "lie"
+        ],
+        [
+          "tired",
+          "rest"
+        ]
+      ],
+      "answer": 1,
+      "relation": "A garrulous person talks excessively, as a gluttonous person eats excessively."
+    },
+    {
+      "id": "an-02",
+      "stem": [
+        "Innocuous",
+        "harm"
+      ],
+      "choices": [
+        [
+          "insipid",
+          "flavor"
+        ],
+        [
+          "fragrant",
+          "scent"
+        ],
+        [
+          "robust",
+          "strength"
+        ],
+        [
+          "noisy",
+          "sound"
+        ],
+        [
+          "candid",
+          "truth"
+        ]
+      ],
+      "answer": 0,
+      "relation": "Something innocuous lacks harm, as something insipid lacks flavor."
+    },
+    {
+      "id": "an-03",
+      "stem": [
+        "Frugality",
+        "miserliness"
+      ],
+      "choices": [
+        [
+          "confidence",
+          "arrogance"
+        ],
+        [
+          "courage",
+          "cowardice"
+        ],
+        [
+          "wealth",
+          "poverty"
+        ],
+        [
+          "anger",
+          "calm"
+        ],
+        [
+          "thrift",
+          "savings"
+        ]
+      ],
+      "answer": 0,
+      "relation": "Miserliness is an excessive form of frugality, as arrogance is an excessive form of confidence."
+    },
+    {
+      "id": "an-04",
+      "stem": [
+        "Misanthrope",
+        "people"
+      ],
+      "choices": [
+        [
+          "tourist",
+          "sights"
+        ],
+        [
+          "xenophobe",
+          "foreigners"
+        ],
+        [
+          "glutton",
+          "food"
+        ],
+        [
+          "optimist",
+          "future"
+        ],
+        [
+          "patron",
+          "arts"
+        ]
+      ],
+      "answer": 1,
+      "relation": "A misanthrope dislikes and distrusts people, as a xenophobe dislikes and distrusts foreigners."
+    },
+    {
+      "id": "an-05",
+      "stem": [
+        "Skeptic",
+        "doubt"
+      ],
+      "choices": [
+        [
+          "teacher",
+          "school"
+        ],
+        [
+          "miser",
+          "generosity"
+        ],
+        [
+          "coward",
+          "courage"
+        ],
+        [
+          "optimist",
+          "hope"
+        ],
+        [
+          "critic",
+          "praise"
+        ]
+      ],
+      "answer": 3,
+      "relation": "A skeptic is characterized by doubt, as an optimist is characterized by hope."
+    },
+    {
+      "id": "an-06",
+      "stem": [
+        "Laconic",
+        "words"
+      ],
+      "choices": [
+        [
+          "eloquent",
+          "language"
+        ],
+        [
+          "abstemious",
+          "food"
+        ],
+        [
+          "hungry",
+          "meals"
+        ],
+        [
+          "verbose",
+          "speech"
+        ],
+        [
+          "generous",
+          "gifts"
+        ]
+      ],
+      "answer": 1,
+      "relation": "A laconic person is sparing with words, as an abstemious person is sparing with food."
+    },
+    {
+      "id": "an-07",
+      "stem": [
+        "Placate",
+        "anger"
+      ],
+      "choices": [
+        [
+          "provoke",
+          "rage"
+        ],
+        [
+          "amplify",
+          "sound"
+        ],
+        [
+          "study",
+          "knowledge"
+        ],
+        [
+          "ignite",
+          "fire"
+        ],
+        [
+          "console",
+          "grief"
+        ]
+      ],
+      "answer": 4,
+      "relation": "To placate is to ease someone's anger, as to console is to ease someone's grief."
+    },
+    {
+      "id": "an-08",
+      "stem": [
+        "Laud",
+        "disparage"
+      ],
+      "choices": [
+        [
+          "doubt",
+          "suspect"
+        ],
+        [
+          "accept",
+          "reject"
+        ],
+        [
+          "scold",
+          "reprimand"
+        ],
+        [
+          "hope",
+          "wish"
+        ],
+        [
+          "walk",
+          "run"
+        ]
+      ],
+      "answer": 1,
+      "relation": "Laud and disparage are opposites, as are accept and reject."
+    },
+    {
+      "id": "an-09",
+      "stem": [
+        "Mollify",
+        "placate"
+      ],
+      "choices": [
+        [
+          "build",
+          "destroy"
+        ],
+        [
+          "anger",
+          "calm"
+        ],
+        [
+          "forgive",
+          "punish"
+        ],
+        [
+          "soothe",
+          "pacify"
+        ],
+        [
+          "whisper",
+          "shout"
+        ]
+      ],
+      "answer": 3,
+      "relation": "Mollify and placate are synonyms, as are soothe and pacify."
+    },
+    {
+      "id": "an-10",
+      "stem": [
+        "Antipathy",
+        "dislike"
+      ],
+      "choices": [
+        [
+          "terror",
+          "fear"
+        ],
+        [
+          "joy",
+          "sorrow"
+        ],
+        [
+          "doubt",
+          "certainty"
+        ],
+        [
+          "boredom",
+          "excitement"
+        ],
+        [
+          "hunger",
+          "thirst"
+        ]
+      ],
+      "answer": 0,
+      "relation": "Antipathy is an intense form of dislike, as terror is an intense form of fear."
+    },
+    {
+      "id": "an-11",
+      "stem": [
+        "Plummet",
+        "descend"
+      ],
+      "choices": [
+        [
+          "soar",
+          "ascend"
+        ],
+        [
+          "climb",
+          "rest"
+        ],
+        [
+          "sink",
+          "swim"
+        ],
+        [
+          "land",
+          "fly"
+        ],
+        [
+          "trip",
+          "fall"
+        ]
+      ],
+      "answer": 0,
+      "relation": "To plummet is to descend steeply and rapidly, as to soar is to ascend steeply and rapidly."
+    },
+    {
+      "id": "an-12",
+      "stem": [
+        "Meticulous",
+        "careful"
+      ],
+      "choices": [
+        [
+          "cold",
+          "warm"
+        ],
+        [
+          "calm",
+          "angry"
+        ],
+        [
+          "ravenous",
+          "hungry"
+        ],
+        [
+          "lazy",
+          "diligent"
+        ],
+        [
+          "wise",
+          "foolish"
+        ]
+      ],
+      "answer": 2,
+      "relation": "Meticulous means extremely careful, as ravenous means extremely hungry."
+    },
+    {
+      "id": "an-13",
+      "stem": [
+        "Venerate",
+        "respect"
+      ],
+      "choices": [
+        [
+          "hesitate",
+          "stop"
+        ],
+        [
+          "hate",
+          "love"
+        ],
+        [
+          "ignore",
+          "notice"
+        ],
+        [
+          "mention",
+          "shout"
+        ],
+        [
+          "adore",
+          "like"
+        ]
+      ],
+      "answer": 4,
+      "relation": "To venerate is to respect deeply, as to adore is to like deeply."
+    },
+    {
+      "id": "an-14",
+      "stem": [
+        "Guileless",
+        "deceit"
+      ],
+      "choices": [
+        [
+          "wealthy",
+          "money"
+        ],
+        [
+          "humble",
+          "pride"
+        ],
+        [
+          "loyal",
+          "devotion"
+        ],
+        [
+          "cunning",
+          "trickery"
+        ],
+        [
+          "curious",
+          "interest"
+        ]
+      ],
+      "answer": 1,
+      "relation": "A guileless person is free of deceit, as a humble person is free of pride."
+    },
+    {
+      "id": "an-15",
+      "stem": [
+        "Impassive",
+        "emotion"
+      ],
+      "choices": [
+        [
+          "thoughtful",
+          "idea"
+        ],
+        [
+          "anonymous",
+          "name"
+        ],
+        [
+          "famous",
+          "reputation"
+        ],
+        [
+          "emotional",
+          "feeling"
+        ],
+        [
+          "fearful",
+          "danger"
+        ]
+      ],
+      "answer": 1,
+      "relation": "An impassive face shows no emotion, as an anonymous author bears no name."
+    },
+    {
+      "id": "an-16",
+      "stem": [
+        "Apathy",
+        "interest"
+      ],
+      "choices": [
+        [
+          "sleep",
+          "dream"
+        ],
+        [
+          "silence",
+          "sound"
+        ],
+        [
+          "fear",
+          "danger"
+        ],
+        [
+          "heat",
+          "fire"
+        ],
+        [
+          "joy",
+          "happiness"
+        ]
+      ],
+      "answer": 1,
+      "relation": "Apathy is the absence of interest, as silence is the absence of sound."
+    },
+    {
+      "id": "an-17",
+      "stem": [
+        "Irresolute",
+        "resolve"
+      ],
+      "choices": [
+        [
+          "thoughtful",
+          "care"
+        ],
+        [
+          "stubborn",
+          "opinion"
+        ],
+        [
+          "patient",
+          "time"
+        ],
+        [
+          "decisive",
+          "choice"
+        ],
+        [
+          "aimless",
+          "purpose"
+        ]
+      ],
+      "answer": 4,
+      "relation": "An irresolute person lacks resolve, as an aimless person lacks purpose."
+    },
+    {
+      "id": "an-18",
+      "stem": [
+        "Reprobate",
+        "scruples"
+      ],
+      "choices": [
+        [
+          "artist",
+          "talent"
+        ],
+        [
+          "saint",
+          "virtue"
+        ],
+        [
+          "scholar",
+          "books"
+        ],
+        [
+          "philistine",
+          "taste"
+        ],
+        [
+          "athlete",
+          "stamina"
+        ]
+      ],
+      "answer": 3,
+      "relation": "A reprobate is someone without moral scruples, as a philistine is someone without artistic taste."
+    },
+    {
+      "id": "an-19",
+      "stem": [
+        "Maverick",
+        "independence"
+      ],
+      "choices": [
+        [
+          "daredevil",
+          "recklessness"
+        ],
+        [
+          "critic",
+          "approval"
+        ],
+        [
+          "hermit",
+          "company"
+        ],
+        [
+          "coward",
+          "bravery"
+        ],
+        [
+          "novice",
+          "expertise"
+        ]
+      ],
+      "answer": 0,
+      "relation": "A maverick is defined by independence, as a daredevil is defined by recklessness."
+    },
+    {
+      "id": "an-20",
+      "stem": [
+        "Neophyte",
+        "inexperience"
+      ],
+      "choices": [
+        [
+          "hermit",
+          "crowds"
+        ],
+        [
+          "miser",
+          "generosity"
+        ],
+        [
+          "expert",
+          "ignorance"
+        ],
+        [
+          "pilot",
+          "aircraft"
+        ],
+        [
+          "prodigy",
+          "talent"
+        ]
+      ],
+      "answer": 4,
+      "relation": "A neophyte is marked by inexperience, as a prodigy is marked by talent."
+    },
+    {
+      "id": "an-21",
+      "stem": [
+        "Recluse",
+        "solitude"
+      ],
+      "choices": [
+        [
+          "sailor",
+          "land"
+        ],
+        [
+          "traveler",
+          "home"
+        ],
+        [
+          "socialite",
+          "company"
+        ],
+        [
+          "thief",
+          "honesty"
+        ],
+        [
+          "critic",
+          "art"
+        ]
+      ],
+      "answer": 2,
+      "relation": "A recluse seeks out solitude, as a socialite seeks out company."
+    },
+    {
+      "id": "an-22",
+      "stem": [
+        "Malingerer",
+        "illness"
+      ],
+      "choices": [
+        [
+          "patient",
+          "sickness"
+        ],
+        [
+          "doctor",
+          "health"
+        ],
+        [
+          "thief",
+          "property"
+        ],
+        [
+          "charlatan",
+          "expertise"
+        ],
+        [
+          "actor",
+          "stage"
+        ]
+      ],
+      "answer": 3,
+      "relation": "A malingerer pretends to have an illness, as a charlatan pretends to have expertise."
+    },
+    {
+      "id": "an-23",
+      "stem": [
+        "Dupe",
+        "swindler"
+      ],
+      "choices": [
+        [
+          "judge",
+          "lawyer"
+        ],
+        [
+          "doctor",
+          "nurse"
+        ],
+        [
+          "king",
+          "crown"
+        ],
+        [
+          "hunter",
+          "rifle"
+        ],
+        [
+          "prey",
+          "predator"
+        ]
+      ],
+      "answer": 4,
+      "relation": "A dupe is the victim of a swindler, as prey is the victim of a predator."
+    },
+    {
+      "id": "an-24",
+      "stem": [
+        "Hypocrite",
+        "dissemble"
+      ],
+      "choices": [
+        [
+          "braggart",
+          "boast"
+        ],
+        [
+          "miser",
+          "donate"
+        ],
+        [
+          "coward",
+          "fight"
+        ],
+        [
+          "mourner",
+          "celebrate"
+        ],
+        [
+          "hero",
+          "flee"
+        ]
+      ],
+      "answer": 0,
+      "relation": "A hypocrite characteristically dissembles, as a braggart characteristically boasts."
+    },
+    {
+      "id": "an-25",
+      "stem": [
+        "Fugitive",
+        "abscond"
+      ],
+      "choices": [
+        [
+          "host",
+          "leave"
+        ],
+        [
+          "witness",
+          "forget"
+        ],
+        [
+          "guard",
+          "escape"
+        ],
+        [
+          "judge",
+          "sentence"
+        ],
+        [
+          "stowaway",
+          "hide"
+        ]
+      ],
+      "answer": 4,
+      "relation": "A fugitive is defined by absconding, as a stowaway is defined by hiding."
+    },
+    {
+      "id": "an-26",
+      "stem": [
+        "Heckler",
+        "deride"
+      ],
+      "choices": [
+        [
+          "referee",
+          "play"
+        ],
+        [
+          "fan",
+          "boo"
+        ],
+        [
+          "critic",
+          "ignore"
+        ],
+        [
+          "audience",
+          "perform"
+        ],
+        [
+          "cheerleader",
+          "encourage"
+        ]
+      ],
+      "answer": 4,
+      "relation": "A heckler's role is to deride, as a cheerleader's role is to encourage."
+    },
+    {
+      "id": "an-27",
+      "stem": [
+        "Chronicler",
+        "document"
+      ],
+      "choices": [
+        [
+          "reader",
+          "write"
+        ],
+        [
+          "sculptor",
+          "sing"
+        ],
+        [
+          "cartographer",
+          "map"
+        ],
+        [
+          "editor",
+          "print"
+        ],
+        [
+          "poet",
+          "paint"
+        ]
+      ],
+      "answer": 2,
+      "relation": "A chronicler documents events, as a cartographer maps territory."
+    },
+    {
+      "id": "an-28",
+      "stem": [
+        "Sage",
+        "counsel"
+      ],
+      "choices": [
+        [
+          "jester",
+          "amuse"
+        ],
+        [
+          "miser",
+          "spend"
+        ],
+        [
+          "judge",
+          "plead"
+        ],
+        [
+          "soldier",
+          "surrender"
+        ],
+        [
+          "student",
+          "teach"
+        ]
+      ],
+      "answer": 0,
+      "relation": "A sage's function is to counsel, as a jester's function is to amuse."
+    },
+    {
+      "id": "an-29",
+      "stem": [
+        "Soporific",
+        "drowsiness"
+      ],
+      "choices": [
+        [
+          "hilarious",
+          "laughter"
+        ],
+        [
+          "bright",
+          "darkness"
+        ],
+        [
+          "salty",
+          "sugar"
+        ],
+        [
+          "tragic",
+          "comedy"
+        ],
+        [
+          "tired",
+          "nap"
+        ]
+      ],
+      "answer": 0,
+      "relation": "Something soporific induces drowsiness, as something hilarious induces laughter."
+    },
+    {
+      "id": "an-30",
+      "stem": [
+        "Catalyst",
+        "reaction"
+      ],
+      "choices": [
+        [
+          "spark",
+          "fire"
+        ],
+        [
+          "shadow",
+          "sun"
+        ],
+        [
+          "seed",
+          "soil"
+        ],
+        [
+          "drought",
+          "rain"
+        ],
+        [
+          "thermometer",
+          "temperature"
+        ]
+      ],
+      "answer": 0,
+      "relation": "A catalyst sets off a reaction, as a spark sets off a fire."
+    },
+    {
+      "id": "an-31",
+      "stem": [
+        "Enervate",
+        "vigor"
+      ],
+      "choices": [
+        [
+          "sharpen",
+          "edge"
+        ],
+        [
+          "paint",
+          "color"
+        ],
+        [
+          "deflate",
+          "air"
+        ],
+        [
+          "inflate",
+          "tire"
+        ],
+        [
+          "polish",
+          "shine"
+        ]
+      ],
+      "answer": 2,
+      "relation": "To enervate is to drain something of vigor, as to deflate is to drain something of air."
+    },
+    {
+      "id": "an-32",
+      "stem": [
+        "Coagulate",
+        "blood"
+      ],
+      "choices": [
+        [
+          "pour",
+          "glass"
+        ],
+        [
+          "churn",
+          "butter"
+        ],
+        [
+          "freeze",
+          "ice"
+        ],
+        [
+          "curdle",
+          "milk"
+        ],
+        [
+          "bake",
+          "oven"
+        ]
+      ],
+      "answer": 3,
+      "relation": "Blood thickens into clumps when it coagulates, as milk thickens into clumps when it curdles."
+    },
+    {
+      "id": "an-33",
+      "stem": [
+        "Foment",
+        "rebellion"
+      ],
+      "choices": [
+        [
+          "write",
+          "letter"
+        ],
+        [
+          "fan",
+          "flames"
+        ],
+        [
+          "quell",
+          "uprising"
+        ],
+        [
+          "sweep",
+          "floor"
+        ],
+        [
+          "douse",
+          "fire"
+        ]
+      ],
+      "answer": 1,
+      "relation": "To foment a rebellion is to stir it up, as to fan flames is to make them grow."
+    },
+    {
+      "id": "an-34",
+      "stem": [
+        "Levee",
+        "flood"
+      ],
+      "choices": [
+        [
+          "umbrella",
+          "rain"
+        ],
+        [
+          "scale",
+          "weight"
+        ],
+        [
+          "lamp",
+          "light"
+        ],
+        [
+          "canteen",
+          "water"
+        ],
+        [
+          "sail",
+          "wind"
+        ]
+      ],
+      "answer": 0,
+      "relation": "A levee protects against a flood, as an umbrella protects against rain."
+    },
+    {
+      "id": "an-35",
+      "stem": [
+        "Buttress",
+        "wall"
+      ],
+      "choices": [
+        [
+          "paint",
+          "canvas"
+        ],
+        [
+          "roof",
+          "chimney"
+        ],
+        [
+          "trellis",
+          "vine"
+        ],
+        [
+          "ceiling",
+          "floor"
+        ],
+        [
+          "fence",
+          "yard"
+        ]
+      ],
+      "answer": 2,
+      "relation": "A buttress supports a wall, as a trellis supports a vine."
+    },
+    {
+      "id": "an-36",
+      "stem": [
+        "Strut",
+        "framework"
+      ],
+      "choices": [
+        [
+          "sail",
+          "wind"
+        ],
+        [
+          "engine",
+          "fuel"
+        ],
+        [
+          "spoke",
+          "wheel"
+        ],
+        [
+          "nail",
+          "hammer"
+        ],
+        [
+          "tire",
+          "road"
+        ]
+      ],
+      "answer": 2,
+      "relation": "A strut is a structural member of a framework, as a spoke is a structural member of a wheel."
+    },
+    {
+      "id": "an-37",
+      "stem": [
+        "Shard",
+        "glass"
+      ],
+      "choices": [
+        [
+          "brick",
+          "wall"
+        ],
+        [
+          "splinter",
+          "wood"
+        ],
+        [
+          "bottle",
+          "cork"
+        ],
+        [
+          "mirror",
+          "image"
+        ],
+        [
+          "thread",
+          "needle"
+        ]
+      ],
+      "answer": 1,
+      "relation": "A shard is a sharp broken fragment of glass, as a splinter is a sharp broken fragment of wood."
+    },
+    {
+      "id": "an-38",
+      "stem": [
+        "Coda",
+        "symphony"
+      ],
+      "choices": [
+        [
+          "author",
+          "book"
+        ],
+        [
+          "verse",
+          "rhyme"
+        ],
+        [
+          "epilogue",
+          "novel"
+        ],
+        [
+          "prologue",
+          "play"
+        ],
+        [
+          "stage",
+          "theater"
+        ]
+      ],
+      "answer": 2,
+      "relation": "A coda is the concluding section of a symphony, as an epilogue is the concluding section of a novel."
+    },
+    {
+      "id": "an-39",
+      "stem": [
+        "Log",
+        "voyage"
+      ],
+      "choices": [
+        [
+          "ticket",
+          "train"
+        ],
+        [
+          "minutes",
+          "meeting"
+        ],
+        [
+          "menu",
+          "chef"
+        ],
+        [
+          "anchor",
+          "ship"
+        ],
+        [
+          "clock",
+          "hour"
+        ]
+      ],
+      "answer": 1,
+      "relation": "A log is the official record of a voyage, as minutes are the official record of a meeting."
+    },
+    {
+      "id": "an-40",
+      "stem": [
+        "Itinerary",
+        "journey"
+      ],
+      "choices": [
+        [
+          "passport",
+          "border"
+        ],
+        [
+          "diary",
+          "vacation"
+        ],
+        [
+          "blueprint",
+          "building"
+        ],
+        [
+          "wheel",
+          "car"
+        ],
+        [
+          "souvenir",
+          "trip"
+        ]
+      ],
+      "answer": 2,
+      "relation": "An itinerary is a plan made before a journey, as a blueprint is a plan made before a building."
+    },
+    {
+      "id": "an-41",
+      "stem": [
+        "Dirge",
+        "grief"
+      ],
+      "choices": [
+        [
+          "lullaby",
+          "wakefulness"
+        ],
+        [
+          "march",
+          "retreat"
+        ],
+        [
+          "aria",
+          "silence"
+        ],
+        [
+          "anthem",
+          "patriotism"
+        ],
+        [
+          "ballad",
+          "guitar"
+        ]
+      ],
+      "answer": 3,
+      "relation": "A dirge is a song that expresses grief, as an anthem is a song that expresses patriotism."
+    },
+    {
+      "id": "an-42",
+      "stem": [
+        "Eulogy",
+        "praise"
+      ],
+      "choices": [
+        [
+          "sermon",
+          "church"
+        ],
+        [
+          "lecture",
+          "student"
+        ],
+        [
+          "toast",
+          "drink"
+        ],
+        [
+          "joke",
+          "sorrow"
+        ],
+        [
+          "apology",
+          "regret"
+        ]
+      ],
+      "answer": 4,
+      "relation": "A eulogy is a speech that expresses praise, as an apology is a statement that expresses regret."
+    },
+    {
+      "id": "an-43",
+      "stem": [
+        "Burnish",
+        "shine"
+      ],
+      "choices": [
+        [
+          "water",
+          "plant"
+        ],
+        [
+          "chip",
+          "paint"
+        ],
+        [
+          "whet",
+          "edge"
+        ],
+        [
+          "scrub",
+          "dirt"
+        ],
+        [
+          "dull",
+          "blade"
+        ]
+      ],
+      "answer": 2,
+      "relation": "To burnish something is to give it a shine, as to whet something is to give it an edge."
+    },
+    {
+      "id": "an-44",
+      "stem": [
+        "Distill",
+        "essence"
+      ],
+      "choices": [
+        [
+          "press",
+          "juice"
+        ],
+        [
+          "pour",
+          "cup"
+        ],
+        [
+          "freeze",
+          "heat"
+        ],
+        [
+          "paint",
+          "brush"
+        ],
+        [
+          "drink",
+          "thirst"
+        ]
+      ],
+      "answer": 0,
+      "relation": "Distilling extracts an essence from a substance, as pressing extracts juice from fruit."
+    },
+    {
+      "id": "an-45",
+      "stem": [
+        "Ephemeral",
+        "perennial"
+      ],
+      "choices": [
+        [
+          "temporary",
+          "permanent"
+        ],
+        [
+          "old",
+          "ancient"
+        ],
+        [
+          "rare",
+          "precious"
+        ],
+        [
+          "brief",
+          "short"
+        ],
+        [
+          "seasonal",
+          "summer"
+        ]
+      ],
+      "answer": 0,
+      "relation": "Ephemeral and perennial are opposites, as are temporary and permanent."
+    },
+    {
+      "id": "an-46",
+      "stem": [
+        "Exculpate",
+        "blame"
+      ],
+      "choices": [
+        [
+          "judge",
+          "court"
+        ],
+        [
+          "accuse",
+          "crime"
+        ],
+        [
+          "absolve",
+          "sin"
+        ],
+        [
+          "punish",
+          "penalty"
+        ],
+        [
+          "confess",
+          "guilt"
+        ]
+      ],
+      "answer": 2,
+      "relation": "To exculpate is to free someone from blame, as to absolve is to free someone from sin."
+    },
+    {
+      "id": "an-47",
+      "stem": [
+        "Tractable",
+        "recalcitrant"
+      ],
+      "choices": [
+        [
+          "quick",
+          "rapid"
+        ],
+        [
+          "gentle",
+          "mild"
+        ],
+        [
+          "docile",
+          "unruly"
+        ],
+        [
+          "stubborn",
+          "obstinate"
+        ],
+        [
+          "clever",
+          "smart"
+        ]
+      ],
+      "answer": 2,
+      "relation": "Tractable and recalcitrant are opposites, as are docile and unruly."
+    },
+    {
+      "id": "an-48",
+      "stem": [
+        "Diffidence",
+        "effrontery"
+      ],
+      "choices": [
+        [
+          "fear",
+          "dread"
+        ],
+        [
+          "shyness",
+          "reserve"
+        ],
+        [
+          "anger",
+          "rage"
+        ],
+        [
+          "pride",
+          "vanity"
+        ],
+        [
+          "timidity",
+          "boldness"
+        ]
+      ],
+      "answer": 4,
+      "relation": "Diffidence and effrontery are opposites, as are timidity and boldness."
+    },
+    {
+      "id": "an-49",
+      "stem": [
+        "Prevaricate",
+        "truth"
+      ],
+      "choices": [
+        [
+          "face",
+          "fear"
+        ],
+        [
+          "strike",
+          "target"
+        ],
+        [
+          "catch",
+          "ball"
+        ],
+        [
+          "dodge",
+          "blow"
+        ],
+        [
+          "tell",
+          "story"
+        ]
+      ],
+      "answer": 3,
+      "relation": "To prevaricate is to evade the truth, as to dodge is to evade a blow."
+    },
+    {
+      "id": "an-50",
+      "stem": [
+        "Quibble",
+        "objection"
+      ],
+      "choices": [
+        [
+          "question",
+          "answer"
+        ],
+        [
+          "skirmish",
+          "battle"
+        ],
+        [
+          "riddle",
+          "puzzle"
+        ],
+        [
+          "squabble",
+          "argument"
+        ],
+        [
+          "vote",
+          "election"
+        ]
+      ],
+      "answer": 3,
+      "relation": "A quibble is a petty objection, as a squabble is a petty argument."
+    },
+    {
+      "id": "an-51",
+      "stem": [
+        "Stigma",
+        "disgrace"
+      ],
+      "choices": [
+        [
+          "crown",
+          "peasant"
+        ],
+        [
+          "trophy",
+          "defeat"
+        ],
+        [
+          "scar",
+          "healing"
+        ],
+        [
+          "medal",
+          "valor"
+        ],
+        [
+          "flag",
+          "wind"
+        ]
+      ],
+      "answer": 3,
+      "relation": "A stigma is a mark of disgrace, as a medal is a mark of valor."
+    },
+    {
+      "id": "an-52",
+      "stem": [
+        "Precursor",
+        "precede"
+      ],
+      "choices": [
+        [
+          "heir",
+          "inherit"
+        ],
+        [
+          "judge",
+          "accuse"
+        ],
+        [
+          "rival",
+          "cooperate"
+        ],
+        [
+          "guest",
+          "host"
+        ],
+        [
+          "founder",
+          "follow"
+        ]
+      ],
+      "answer": 0,
+      "relation": "A precursor is by definition one who precedes, as an heir is by definition one who inherits."
+    },
+    {
+      "id": "an-53",
+      "stem": [
+        "Ascetic",
+        "luxury"
+      ],
+      "choices": [
+        [
+          "athlete",
+          "sport"
+        ],
+        [
+          "glutton",
+          "food"
+        ],
+        [
+          "critic",
+          "flaw"
+        ],
+        [
+          "miser",
+          "gold"
+        ],
+        [
+          "vegetarian",
+          "meat"
+        ]
+      ],
+      "answer": 4,
+      "relation": "An ascetic renounces luxury, as a vegetarian renounces meat."
+    },
+    {
+      "id": "an-54",
+      "stem": [
+        "Impervious",
+        "penetrate"
+      ],
+      "choices": [
+        [
+          "edible",
+          "eat"
+        ],
+        [
+          "invincible",
+          "defeat"
+        ],
+        [
+          "fragile",
+          "break"
+        ],
+        [
+          "permanent",
+          "stay"
+        ],
+        [
+          "visible",
+          "see"
+        ]
+      ],
+      "answer": 1,
+      "relation": "Something impervious cannot be penetrated, as someone invincible cannot be defeated."
+    },
+    {
+      "id": "an-55",
+      "stem": [
+        "Implacable",
+        "appease"
+      ],
+      "choices": [
+        [
+          "indelible",
+          "erase"
+        ],
+        [
+          "readable",
+          "print"
+        ],
+        [
+          "flexible",
+          "bend"
+        ],
+        [
+          "forgivable",
+          "pardon"
+        ],
+        [
+          "portable",
+          "carry"
+        ]
+      ],
+      "answer": 0,
+      "relation": "Someone implacable cannot be appeased, as a mark that is indelible cannot be erased."
+    },
+    {
+      "id": "an-56",
+      "stem": [
+        "Malleable",
+        "shape"
+      ],
+      "choices": [
+        [
+          "brittle",
+          "mend"
+        ],
+        [
+          "flexible",
+          "bend"
+        ],
+        [
+          "rigid",
+          "flex"
+        ],
+        [
+          "heavy",
+          "lift"
+        ],
+        [
+          "opaque",
+          "see"
+        ]
+      ],
+      "answer": 1,
+      "relation": "Something malleable is easy to shape, as something flexible is easy to bend."
+    },
+    {
+      "id": "an-57",
+      "stem": [
+        "Officious",
+        "meddle"
+      ],
+      "choices": [
+        [
+          "shy",
+          "boast"
+        ],
+        [
+          "quiet",
+          "shout"
+        ],
+        [
+          "curious",
+          "ignore"
+        ],
+        [
+          "nosy",
+          "pry"
+        ],
+        [
+          "helpful",
+          "hinder"
+        ]
+      ],
+      "answer": 3,
+      "relation": "An officious person tends to meddle, as a nosy person tends to pry."
+    },
+    {
+      "id": "an-58",
+      "stem": [
+        "Contrite",
+        "remorse"
+      ],
+      "choices": [
+        [
+          "sad",
+          "laughter"
+        ],
+        [
+          "proud",
+          "shame"
+        ],
+        [
+          "lazy",
+          "effort"
+        ],
+        [
+          "nostalgic",
+          "longing"
+        ],
+        [
+          "calm",
+          "worry"
+        ]
+      ],
+      "answer": 3,
+      "relation": "A contrite person feels remorse, as a nostalgic person feels longing."
+    },
+    {
+      "id": "an-59",
+      "stem": [
+        "Irascible",
+        "anger"
+      ],
+      "choices": [
+        [
+          "generous",
+          "greed"
+        ],
+        [
+          "brave",
+          "fear"
+        ],
+        [
+          "squeamish",
+          "disgust"
+        ],
+        [
+          "patient",
+          "irritation"
+        ],
+        [
+          "sleepy",
+          "alertness"
+        ]
+      ],
+      "answer": 2,
+      "relation": "An irascible person is easily moved to anger, as a squeamish person is easily moved to disgust."
+    },
+    {
+      "id": "an-60",
+      "stem": [
+        "Gullible",
+        "deceive"
+      ],
+      "choices": [
+        [
+          "clever",
+          "outwit"
+        ],
+        [
+          "stubborn",
+          "persuade"
+        ],
+        [
+          "sturdy",
+          "damage"
+        ],
+        [
+          "honest",
+          "lie"
+        ],
+        [
+          "fragile",
+          "break"
+        ]
+      ],
+      "answer": 4,
+      "relation": "A gullible person is easily deceived, as a fragile object is easily broken."
+    },
+    {
+      "id": "an-61",
+      "stem": [
+        "Inured",
+        "hardship"
+      ],
+      "choices": [
+        [
+          "afraid",
+          "dark"
+        ],
+        [
+          "acclimated",
+          "climate"
+        ],
+        [
+          "eager",
+          "work"
+        ],
+        [
+          "homesick",
+          "travel"
+        ],
+        [
+          "new",
+          "job"
+        ]
+      ],
+      "answer": 1,
+      "relation": "Someone inured to hardship has grown used to it, as someone acclimated to a climate has grown used to it."
+    },
+    {
+      "id": "an-62",
+      "stem": [
+        "Satiate",
+        "appetite"
+      ],
+      "choices": [
+        [
+          "season",
+          "food"
+        ],
+        [
+          "whet",
+          "desire"
+        ],
+        [
+          "quench",
+          "thirst"
+        ],
+        [
+          "cook",
+          "meal"
+        ],
+        [
+          "starve",
+          "hunger"
+        ]
+      ],
+      "answer": 2,
+      "relation": "To satiate an appetite is to satisfy it fully, as to quench a thirst is to satisfy it fully."
+    },
+    {
+      "id": "an-63",
+      "stem": [
+        "Adulterate",
+        "purity"
+      ],
+      "choices": [
+        [
+          "refine",
+          "ore"
+        ],
+        [
+          "clean",
+          "dirt"
+        ],
+        [
+          "season",
+          "flavor"
+        ],
+        [
+          "polish",
+          "silver"
+        ],
+        [
+          "dilute",
+          "strength"
+        ]
+      ],
+      "answer": 4,
+      "relation": "Adulterating something lowers its purity, as diluting something lowers its strength."
+    },
+    {
+      "id": "an-64",
+      "stem": [
+        "Impede",
+        "progress"
+      ],
+      "choices": [
+        [
+          "obstruct",
+          "view"
+        ],
+        [
+          "speed",
+          "travel"
+        ],
+        [
+          "aid",
+          "recovery"
+        ],
+        [
+          "admire",
+          "painting"
+        ],
+        [
+          "enter",
+          "room"
+        ]
+      ],
+      "answer": 0,
+      "relation": "To impede is to block progress, as to obstruct is to block a view."
+    },
+    {
+      "id": "an-65",
+      "stem": [
+        "Rescind",
+        "law"
+      ],
+      "choices": [
+        [
+          "sign",
+          "contract"
+        ],
+        [
+          "write",
+          "novel"
+        ],
+        [
+          "retract",
+          "statement"
+        ],
+        [
+          "read",
+          "verdict"
+        ],
+        [
+          "enact",
+          "rule"
+        ]
+      ],
+      "answer": 2,
+      "relation": "To rescind a law is to take it back, as to retract a statement is to take it back."
+    },
+    {
+      "id": "an-66",
+      "stem": [
+        "Disseminate",
+        "information"
+      ],
+      "choices": [
+        [
+          "eat",
+          "fruit"
+        ],
+        [
+          "hide",
+          "treasure"
+        ],
+        [
+          "bury",
+          "bone"
+        ],
+        [
+          "collect",
+          "stamps"
+        ],
+        [
+          "scatter",
+          "seeds"
+        ]
+      ],
+      "answer": 4,
+      "relation": "To disseminate information is to spread it widely, as to scatter seeds is to spread them widely."
+    },
+    {
+      "id": "an-67",
+      "stem": [
+        "Gland",
+        "secrete"
+      ],
+      "choices": [
+        [
+          "flower",
+          "wilt"
+        ],
+        [
+          "heart",
+          "pump"
+        ],
+        [
+          "drum",
+          "beat"
+        ],
+        [
+          "eye",
+          "hear"
+        ],
+        [
+          "foot",
+          "think"
+        ]
+      ],
+      "answer": 1,
+      "relation": "A gland's function is to secrete, as a heart's function is to pump."
+    },
+    {
+      "id": "an-68",
+      "stem": [
+        "Viscous",
+        "syrup"
+      ],
+      "choices": [
+        [
+          "hot",
+          "ice"
+        ],
+        [
+          "wet",
+          "desert"
+        ],
+        [
+          "transparent",
+          "wood"
+        ],
+        [
+          "soft",
+          "granite"
+        ],
+        [
+          "brittle",
+          "glass"
+        ]
+      ],
+      "answer": 4,
+      "relation": "Syrup is typically viscous, as glass is typically brittle."
+    },
+    {
+      "id": "an-69",
+      "stem": [
+        "Pungent",
+        "smell"
+      ],
+      "choices": [
+        [
+          "sweet",
+          "sugar"
+        ],
+        [
+          "soft",
+          "rock"
+        ],
+        [
+          "loud",
+          "silence"
+        ],
+        [
+          "dim",
+          "light"
+        ],
+        [
+          "shrill",
+          "sound"
+        ]
+      ],
+      "answer": 4,
+      "relation": "A pungent smell is sharp and intense, as a shrill sound is sharp and intense."
+    },
+    {
+      "id": "an-70",
+      "stem": [
+        "Luminous",
+        "light"
+      ],
+      "choices": [
+        [
+          "heavy",
+          "feather"
+        ],
+        [
+          "dark",
+          "shadow"
+        ],
+        [
+          "fragrant",
+          "scent"
+        ],
+        [
+          "silent",
+          "noise"
+        ],
+        [
+          "blind",
+          "sight"
+        ]
+      ],
+      "answer": 2,
+      "relation": "Something luminous gives off light, as something fragrant gives off scent."
+    },
+    {
+      "id": "an-71",
+      "stem": [
+        "Iconoclastic",
+        "convention"
+      ],
+      "choices": [
+        [
+          "curious",
+          "question"
+        ],
+        [
+          "rebellious",
+          "authority"
+        ],
+        [
+          "loyal",
+          "king"
+        ],
+        [
+          "pious",
+          "faith"
+        ],
+        [
+          "orthodox",
+          "tradition"
+        ]
+      ],
+      "answer": 1,
+      "relation": "An iconoclastic person attacks convention, as a rebellious person defies authority."
+    },
+    {
+      "id": "an-72",
+      "stem": [
+        "Empirical",
+        "observation"
+      ],
+      "choices": [
+        [
+          "factual",
+          "fiction"
+        ],
+        [
+          "logical",
+          "error"
+        ],
+        [
+          "scientific",
+          "magic"
+        ],
+        [
+          "speculative",
+          "conjecture"
+        ],
+        [
+          "practical",
+          "theory"
+        ]
+      ],
+      "answer": 3,
+      "relation": "An empirical claim rests on observation, as a speculative claim rests on conjecture."
+    },
+    {
+      "id": "an-73",
+      "stem": [
+        "Hyperbole",
+        "exaggerate"
+      ],
+      "choices": [
+        [
+          "satire",
+          "ridicule"
+        ],
+        [
+          "pun",
+          "explain"
+        ],
+        [
+          "preface",
+          "conclude"
+        ],
+        [
+          "summary",
+          "expand"
+        ],
+        [
+          "elegy",
+          "celebrate"
+        ]
+      ],
+      "answer": 0,
+      "relation": "Hyperbole is used to exaggerate, as satire is used to ridicule."
+    },
+    {
+      "id": "an-74",
+      "stem": [
+        "Digression",
+        "topic"
+      ],
+      "choices": [
+        [
+          "bridge",
+          "river"
+        ],
+        [
+          "map",
+          "road"
+        ],
+        [
+          "goal",
+          "path"
+        ],
+        [
+          "shortcut",
+          "distance"
+        ],
+        [
+          "detour",
+          "route"
+        ]
+      ],
+      "answer": 4,
+      "relation": "A digression is a departure from the main topic, as a detour is a departure from the main route."
+    },
+    {
+      "id": "an-75",
+      "stem": [
+        "Anachronism",
+        "time"
+      ],
+      "choices": [
+        [
+          "clock",
+          "hour"
+        ],
+        [
+          "prophecy",
+          "future"
+        ],
+        [
+          "archive",
+          "records"
+        ],
+        [
+          "misnomer",
+          "name"
+        ],
+        [
+          "chronology",
+          "events"
+        ]
+      ],
+      "answer": 3,
+      "relation": "An anachronism is an error in time, as a misnomer is an error in name."
+    },
+    {
+      "id": "an-76",
+      "stem": [
+        "Metamorphosis",
+        "form"
+      ],
+      "choices": [
+        [
+          "memory",
+          "past"
+        ],
+        [
+          "celebration",
+          "holiday"
+        ],
+        [
+          "stagnation",
+          "growth"
+        ],
+        [
+          "relocation",
+          "place"
+        ],
+        [
+          "reflection",
+          "mirror"
+        ]
+      ],
+      "answer": 3,
+      "relation": "A metamorphosis is a change of form, as a relocation is a change of place."
+    },
+    {
+      "id": "an-77",
+      "stem": [
+        "Chicanery",
+        "trickster"
+      ],
+      "choices": [
+        [
+          "silence",
+          "orator"
+        ],
+        [
+          "charity",
+          "miser"
+        ],
+        [
+          "larceny",
+          "thief"
+        ],
+        [
+          "cowardice",
+          "hero"
+        ],
+        [
+          "justice",
+          "criminal"
+        ]
+      ],
+      "answer": 2,
+      "relation": "Chicanery is the characteristic practice of a trickster, as larceny is the characteristic practice of a thief."
+    },
+    {
+      "id": "an-78",
+      "stem": [
+        "Fledgling",
+        "bird"
+      ],
+      "choices": [
+        [
+          "wing",
+          "feather"
+        ],
+        [
+          "acorn",
+          "squirrel"
+        ],
+        [
+          "hive",
+          "bee"
+        ],
+        [
+          "sapling",
+          "tree"
+        ],
+        [
+          "nest",
+          "egg"
+        ]
+      ],
+      "answer": 3,
+      "relation": "A fledgling is a young bird, as a sapling is a young tree."
+    },
+    {
+      "id": "an-79",
+      "stem": [
+        "Pedantic",
+        "detail"
+      ],
+      "choices": [
+        [
+          "frank",
+          "secrecy"
+        ],
+        [
+          "vain",
+          "appearance"
+        ],
+        [
+          "humble",
+          "praise"
+        ],
+        [
+          "generous",
+          "money"
+        ],
+        [
+          "careless",
+          "precision"
+        ]
+      ],
+      "answer": 1,
+      "relation": "A pedantic person is overly concerned with detail, as a vain person is overly concerned with appearance."
+    },
+    {
+      "id": "an-80",
+      "stem": [
+        "Admonish",
+        "castigate"
+      ],
+      "choices": [
+        [
+          "hear",
+          "listen"
+        ],
+        [
+          "run",
+          "jog"
+        ],
+        [
+          "praise",
+          "scold"
+        ],
+        [
+          "nudge",
+          "shove"
+        ],
+        [
+          "shout",
+          "whisper"
+        ]
+      ],
+      "answer": 3,
+      "relation": "To castigate is to admonish with much greater force, as to shove is to nudge with much greater force."
+    }
+  ]
+}

@@ -16,7 +16,9 @@ a Bangla meaning (বাংলা অর্থ) and an example sentence.
 - **Flashcards** with simple English meaning, Bangla meaning, an example sentence and a memory tip (word root or trick)
 - **Daily review (spaced repetition):** right answers come back after 3, 7, 16, 35, 90 days; wrong ones tomorrow
 - **Quiz:** word → meaning, meaning → word, বাংলা → English, fill in the blank, type the word, GRE "pick 2"
-- **Word groups:** 40 families of synonyms (with opposites) and GRE Sentence Equivalence practice
+- **Similar / opposite words** on each card, from 40 synonym families
+- **GRE tab:** original Text Completion (1, 2 and 3 blanks), Sentence Equivalence and Analogy practice, plus a mixed set
+- **Word Smart 1 & 2** (1,402 more words, skipping those already in the 333): locked until all 333 are studied or the unlock test (40 questions, 80% to pass) is passed; then mixed into everything. Downloaded only after unlocking
 - **"I know it" needs a spelling check:** type the word from memory (2 tries) before it counts as known
 - **Quiz history:** every finished quiz (title, type, score, missed words) is saved on the server and synced; retry missed words from any past quiz
 - **Daily goal** ring for new words, day streak, weak-words list
@@ -87,6 +89,8 @@ and optionally `PORT`.
 | PUT | `/api/progress/{word_id}` | Set `status` (`new`/`learning`/`known`) and/or `starred` |
 | POST | `/api/progress/sync` | Merge changes saved while offline (newer change wins) |
 | DELETE | `/api/progress` | Reset this learner's progress and quiz history |
+| GET | `/api/me` | Learner state (Word Smart unlock) |
+| POST | `/api/me/unlock` | Unlock Word Smart (`via`: `completed` or `test`) |
 | GET | `/api/quizzes` | Quiz history, newest first |
 | POST | `/api/quizzes` | Save a finished quiz (same `client_id` twice is ignored) |
 

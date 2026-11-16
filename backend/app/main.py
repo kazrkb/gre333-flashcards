@@ -83,6 +83,9 @@ class Learner(Base):
     code: Mapped[str] = mapped_column(String(9), primary_key=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
     last_seen: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    # When the Word Smart section was unlocked (all 333 studied, or the unlock test passed).
+    ws_unlocked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    ws_unlocked_via: Mapped[str | None] = mapped_column(String(16), nullable=True)
 
 
 class Progress(Base):
@@ -132,18 +135,25 @@ Base.metadata.create_all(engine)
 
 def migrate():
     """Add columns introduced after the first release to existing tables (Postgres or SQLite)."""
-    cols = {c["name"] for c in inspect(engine).get_columns("word_progress")}
     added = {
-        "level": "INTEGER NOT NULL DEFAULT 0",
-        "due": "DATE",
-        "misses": "INTEGER NOT NULL DEFAULT 0",
-        "first_seen": "DATE",
-        "note": "TEXT",
+        "word_progress": {
+            "level": "INTEGER NOT NULL DEFAULT 0",
+            "due": "DATE",
+            "misses": "INTEGER NOT NULL DEFAULT 0",
+            "first_seen": "DATE",
+            "note": "TEXT",
+        },
+        "learners": {
+            "ws_unlocked_at": "TIMESTAMP WITH TIME ZONE" if engine.dialect.name == "postgresql" else "DATETIME",
+            "ws_unlocked_via": "VARCHAR(16)",
+        },
     }
     with engine.begin() as conn:
-        for name, ddl in added.items():
-            if name not in cols:
-                conn.execute(text(f"ALTER TABLE word_progress ADD COLUMN {name} {ddl}"))
+        for table, columns in added.items():
+            have = {c["name"] for c in inspect(conn).get_columns(table)}
+            for name, ddl in columns.items():
+                if name not in have:
+                    conn.execute(text(f"ALTER TABLE {table} ADD COLUMN {name} {ddl}"))
 
 
 migrate()
@@ -351,8 +361,49 @@ def reset_progress(code: str = Depends(learner_code)):
         db.execute(delete(Progress).where(Progress.learner == code))
         db.execute(delete(ReviewDay).where(ReviewDay.learner == code))
         db.execute(delete(QuizResult).where(QuizResult.learner == code))
+        learner = db.get(Learner, code)
+        if learner is not None:  # a full reset also locks Word Smart again
+            learner.ws_unlocked_at = None
+            learner.ws_unlocked_via = None
         db.commit()
     return {"ok": True}
+
+
+class LearnerState(BaseModel):
+    code: str
+    ws_unlocked_at: datetime | None
+    ws_unlocked_via: str | None
+
+
+class UnlockIn(BaseModel):
+    via: Literal["completed", "test"]
+
+
+def learner_state(learner: Learner) -> LearnerState:
+    return LearnerState(
+        code=learner.code,
+        ws_unlocked_at=as_aware(learner.ws_unlocked_at) if learner.ws_unlocked_at else None,
+        ws_unlocked_via=learner.ws_unlocked_via,
+    )
+
+
+@app.get("/api/me", response_model=LearnerState)
+def get_me(code: str = Depends(learner_code)):
+    with Session(engine) as db:
+        return learner_state(db.get(Learner, code))
+
+
+@app.post("/api/me/unlock", response_model=LearnerState)
+def unlock_word_smart(body: UnlockIn, code: str = Depends(learner_code)):
+    """Unlock the Word Smart section (after studying all 333 words, or passing the unlock test)."""
+    with Session(engine) as db:
+        learner = db.get(Learner, code)
+        if learner.ws_unlocked_at is None:
+            learner.ws_unlocked_at = utcnow()
+            learner.ws_unlocked_via = body.via
+            db.commit()
+            db.refresh(learner)
+        return learner_state(learner)
 
 
 class QuizIn(BaseModel):

@@ -1,0 +1,2681 @@
+[
+ {
+  "id": "peccadillo",
+  "word": "Peccadillo",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a small, unimportant fault or sin",
+  "bn": "ছোটখাটো দোষ; তুচ্ছ অপরাধ",
+  "s": [
+   "Being late once is only a peccadillo.",
+   "The voters forgave the mayor's youthful peccadilloes because his public record was strong.",
+   "The tabloids inflated a mere peccadillo into a scandal, yet sensible readers {dismissed} the story as {inconsequential}."
+  ],
+  "sbn": [
+   "একবার দেরি করা কেবল একটা ছোটখাটো দোষ (peccadillo)।",
+   "মেয়রের জনসেবার রেকর্ড ভালো ছিল বলে ভোটাররা তাঁর তরুণ বয়সের ছোটখাটো দোষগুলো (peccadilloes) ক্ষমা করে দিয়েছিল।",
+   "ট্যাবলয়েডগুলো একটা সামান্য দোষকে (peccadillo) ফুলিয়ে-ফাঁপিয়ে কেলেঙ্কারি বানাল, কিন্তু বিবেচক পাঠকেরা খবরটাকে গুরুত্বহীন বলে উড়িয়ে দিল।"
+  ],
+  "tip": "Spanish pecadillo = little sin, from Latin peccare 'to sin' (as in impeccable = without sin/fault)."
+ },
+ {
+  "id": "peculiar",
+  "word": "Peculiar",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "strange or unusual; belonging only to a particular person, place or thing",
+  "bn": "অদ্ভুত; বিচিত্র; নিজস্ব",
+  "s": [
+   "There was a peculiar smell in the kitchen.",
+   "The old man had a peculiar habit of whistling whenever he felt nervous.",
+   "The dialect has several features peculiar to the island, an {insularity} that linguists find {intriguing}."
+  ],
+  "sbn": [
+   "রান্নাঘরে একটা অদ্ভুত (peculiar) গন্ধ ছিল।",
+   "বুড়ো লোকটার একটা অদ্ভুত (peculiar) অভ্যাস ছিল—নার্ভাস লাগলেই তিনি শিস দিতেন।",
+   "এই উপভাষার বেশ কিছু বৈশিষ্ট্য কেবল ওই দ্বীপেরই নিজস্ব (peculiar), আর এই বিচ্ছিন্নতা ভাষাবিদদের কাছে খুব কৌতূহলজাগানো।"
+  ],
+  "tip": "Latin peculium = private property. 'Peculiar' first meant 'one's own', then 'special', then 'strange'."
+ },
+ {
+  "id": "pedestrian",
+  "word": "Pedestrian",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "dull and ordinary, lacking imagination; (as a noun) a person walking",
+  "bn": "গতানুগতিক; সাদামাটা; পথচারী",
+  "s": [
+   "The movie's plot was pedestrian and boring.",
+   "Although the singer has a lovely voice, her song lyrics are rather pedestrian.",
+   "The critic found the novel's prose pedestrian, its {hackneyed} images unable to {elicit} any real emotion."
+  ],
+  "sbn": [
+   "সিনেমাটার কাহিনি ছিল একেবারে সাদামাটা (pedestrian) আর বিরক্তিকর।",
+   "গায়িকার কণ্ঠ সুন্দর হলেও তাঁর গানের কথা বেশ গতানুগতিক (pedestrian)।",
+   "সমালোচকের মনে হলো উপন্যাসটার গদ্য গতানুগতিক (pedestrian); এর জীর্ণ, বহুল-ব্যবহৃত উপমাগুলো কোনো সত্যিকারের আবেগ জাগাতে পারে না।"
+  ],
+  "tip": "Latin pes, pedis = foot. A pedestrian goes on foot, and pedestrian writing just plods along without flying."
+ },
+ {
+  "id": "pejorative",
+  "word": "Pejorative",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "expressing contempt or disapproval; insulting",
+  "bn": "অবজ্ঞাসূচক; নিন্দাসূচক; অপমানজনক",
+  "s": [
+   "He used a pejorative word for his rival.",
+   "Many people use the word bureaucrat in a pejorative sense.",
+   "The columnist's pejorative remarks did not {discredit} the activist; instead, they exposed the columnist's own {animosity}."
+  ],
+  "sbn": [
+   "সে তার প্রতিদ্বন্দ্বীর জন্য একটা অপমানজনক (pejorative) শব্দ ব্যবহার করল।",
+   "অনেকে ‘আমলা’ শব্দটা অবজ্ঞাসূচক (pejorative) অর্থে ব্যবহার করে।",
+   "কলামিস্টের অবজ্ঞাসূচক (pejorative) মন্তব্যগুলো কর্মীটিকে হেয় করতে পারেনি; বরং সেগুলো কলামিস্টের নিজের বিদ্বেষই ফাঁস করে দিল।"
+  ],
+  "tip": "Latin pejor = worse. A pejorative word makes something sound worse than it is."
+ },
+ {
+  "id": "penitent",
+  "word": "Penitent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "feeling sorry for having done wrong",
+  "bn": "অনুতপ্ত; অনুশোচনাপূর্ণ",
+  "s": [
+   "The penitent boy apologized to his mother.",
+   "After breaking the window, the penitent teenager offered to pay for the repair from his savings.",
+   "The judge was {mollified} by the defendant's penitent words, which seemed sincere rather than {feigned}."
+  ],
+  "sbn": [
+   "অনুতপ্ত (penitent) ছেলেটা মায়ের কাছে ক্ষমা চাইল।",
+   "জানালা ভাঙার পর অনুতপ্ত (penitent) কিশোরটি নিজের জমানো টাকা দিয়ে মেরামতের খরচ দিতে চাইল।",
+   "আসামির অনুতপ্ত (penitent) কথায় বিচারক কিছুটা নরম হলেন, কারণ কথাগুলো ভান নয়, আন্তরিক মনে হচ্ছিল।"
+  ],
+  "tip": "Latin paenitere = to regret; the same root gives penance and repent."
+ },
+ {
+  "id": "pensive",
+  "word": "Pensive",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "deeply thoughtful, often in a sad or serious way",
+  "bn": "চিন্তামগ্ন; ভাবুক; বিষণ্ণ",
+  "s": [
+   "She sat by the window, looking pensive.",
+   "After reading the letter, my father grew pensive and stayed quiet all evening.",
+   "The poet's pensive mood, tinged with {melancholy}, led him to {ruminate} on lost friendships."
+  ],
+  "sbn": [
+   "সে জানালার পাশে চিন্তামগ্ন (pensive) হয়ে বসে ছিল।",
+   "চিঠিটা পড়ার পর বাবা ভাবনায় ডুবে গেলেন (pensive) আর সারা সন্ধ্যা চুপ করে রইলেন।",
+   "বিষাদমাখা চিন্তামগ্ন (pensive) মেজাজে কবি হারানো বন্ধুত্বগুলোর কথা বারবার ভাবতে লাগলেন।"
+  ],
+  "tip": "French penser = to think (from Latin pensare, to weigh). Pensive = weighed down by thought."
+ },
+ {
+  "id": "peregrination",
+  "word": "Peregrination",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a long journey, especially wandering from place to place",
+  "bn": "দীর্ঘ ভ্রমণ; পরিভ্রমণ",
+  "s": [
+   "His peregrination took him across ten countries.",
+   "During her peregrinations through rural Asia, she filled six notebooks with sketches.",
+   "The scholar's {itinerant} life of peregrination ended when he finally settled in a {cloistered} monastery."
+  ],
+  "sbn": [
+   "তার দীর্ঘ ভ্রমণ (peregrination) তাকে দশটা দেশ ঘুরিয়েছে।",
+   "গ্রামীণ এশিয়ায় দীর্ঘ ঘোরাঘুরির (peregrinations) সময় সে ছয়টা খাতা স্কেচে ভরে ফেলেছিল।",
+   "পণ্ডিতের ঘুরে বেড়ানো জীবনের দীর্ঘ পরিভ্রমণ (peregrination) শেষ হলো যখন তিনি অবশেষে এক নিভৃত মঠে থিতু হলেন।"
+  ],
+  "tip": "Latin peregrinus = foreigner, traveler (per + ager, 'through the fields'). It also gave us the word pilgrim."
+ },
+ {
+  "id": "peremptory",
+  "word": "Peremptory",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "demanding immediate obedience in a rude, commanding way; not open to debate",
+  "bn": "হুকুমের সুরে; কর্তৃত্বপূর্ণ; চূড়ান্ত",
+  "s": [
+   "The boss gave a peremptory order to leave.",
+   "Her peremptory tone made it clear that she would not accept any questions.",
+   "The manager's peremptory dismissal of every suggestion {alienated} staff who had once been {amenable} to change."
+  ],
+  "sbn": [
+   "বস চলে যাওয়ার একটা কড়া, চূড়ান্ত হুকুম (peremptory) দিলেন।",
+   "তার কর্তৃত্বপূর্ণ (peremptory) সুরে স্পষ্ট বোঝা গেল সে কোনো প্রশ্ন মেনে নেবে না।",
+   "ম্যানেজার হুকুমি ভঙ্গিতে (peremptory) প্রতিটি পরামর্শ নাকচ করায়, যে কর্মীরা একসময় পরিবর্তনে রাজি ছিল তারাও দূরে সরে গেল।"
+  ],
+  "tip": "Latin peremptorius = decisive, destructive (from perimere, to destroy). A peremptory order kills all debate."
+ },
+ {
+  "id": "peripatetic",
+  "word": "Peripatetic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "traveling from place to place; wandering",
+  "bn": "ভ্রাম্যমাণ; ঘুরে বেড়ানো",
+  "s": [
+   "He led a peripatetic life as a salesman.",
+   "As a peripatetic teacher, she visited four different schools every week.",
+   "The journalist's peripatetic career gave her a {cosmopolitan} outlook and a {myriad} of contacts."
+  ],
+  "sbn": [
+   "বিক্রয়কর্মী হিসেবে সে ঘুরে বেড়ানো (peripatetic) জীবন কাটাত।",
+   "একজন ভ্রাম্যমাণ (peripatetic) শিক্ষক হিসেবে সে প্রতি সপ্তাহে চারটি আলাদা স্কুলে যেত।",
+   "সাংবাদিকের ঘুরে বেড়ানো (peripatetic) পেশাজীবন তাকে বিশ্বজনীন দৃষ্টিভঙ্গি আর অগণিত পরিচিতজন দিয়েছে।"
+  ],
+  "tip": "Greek peripatein = to walk about. Aristotle taught while walking, so his followers were called Peripatetics."
+ },
+ {
+  "id": "periphery",
+  "word": "Periphery",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the outer edge of an area or group",
+  "bn": "প্রান্ত; পরিধি; প্রান্তসীমা",
+  "s": [
+   "The factory is on the periphery of the city.",
+   "New students often stay on the periphery of the group until they make friends.",
+   "Once a {marginal} figure on the periphery of the party, she rose to become its most {eminent} voice."
+  ],
+  "sbn": [
+   "কারখানাটা শহরের প্রান্তে (periphery) অবস্থিত।",
+   "নতুন ছাত্রছাত্রীরা বন্ধু না হওয়া পর্যন্ত প্রায়ই দলের প্রান্তে (periphery) থেকে যায়।",
+   "একসময় দলের প্রান্তে (periphery) থাকা এক গুরুত্বহীন ব্যক্তি থেকে তিনি দলের সবচেয়ে বিশিষ্ট কণ্ঠস্বর হয়ে উঠলেন।"
+  ],
+  "tip": "Greek peri (around) + pherein (to carry): the line carried around the edge of something."
+ },
+ {
+  "id": "perjury",
+  "word": "Perjury",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the crime of lying after swearing to tell the truth, especially in court",
+  "bn": "মিথ্যা সাক্ষ্য; শপথ ভঙ্গ করে মিথ্যা বলা",
+  "s": [
+   "Lying in court is called perjury.",
+   "The witness was charged with perjury after his story was proved false.",
+   "Faced with evidence that would {corroborate} the charge of perjury, the senator could no longer {equivocate}."
+  ],
+  "sbn": [
+   "আদালতে শপথ নিয়ে মিথ্যা বলাকে মিথ্যা সাক্ষ্য (perjury) বলে।",
+   "সাক্ষীর গল্প মিথ্যা প্রমাণিত হওয়ার পর তার বিরুদ্ধে মিথ্যা সাক্ষ্য (perjury) দেওয়ার অভিযোগ আনা হলো।",
+   "মিথ্যা সাক্ষ্যের (perjury) অভিযোগ সমর্থন করে এমন প্রমাণের মুখে সিনেটর আর কথা ঘোরাতে পারলেন না।"
+  ],
+  "tip": "Latin per (violating) + jurare (to swear): breaking your oath. Same jur- as in jury."
+ },
+ {
+  "id": "permeate",
+  "word": "Permeate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to spread through every part of something",
+  "bn": "ছড়িয়ে পড়া; ভেদ করে ঢোকা; পরিব্যাপ্ত করা",
+  "s": [
+   "The smell of coffee permeated the house.",
+   "Water slowly permeated the old wall and left damp patches on the paint.",
+   "A sense of {trepidation} permeated the office as rumors of layoffs began to {proliferate}."
+  ],
+  "sbn": [
+   "কফির গন্ধ পুরো বাড়িতে ছড়িয়ে পড়ল (permeated)।",
+   "পানি ধীরে ধীরে পুরোনো দেয়াল ভেদ করে ঢুকে গেল (permeated) আর রঙের ওপর ভেজা দাগ ফেলে দিল।",
+   "ছাঁটাইয়ের গুজব দ্রুত ছড়াতে শুরু করলে পুরো অফিসে একটা আতঙ্ক ছড়িয়ে পড়ল (permeated)।"
+  ],
+  "tip": "Latin per (through) + meare (to pass): to pass all the way through. Related: permeable."
+ },
+ {
+  "id": "pernicious",
+  "word": "Pernicious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "very harmful, especially in a slow or hidden way",
+  "bn": "ক্ষতিকর; সর্বনাশা; ধীরে ধীরে ক্ষতি করে এমন",
+  "s": [
+   "Smoking has a pernicious effect on health.",
+   "The pernicious rumor slowly destroyed the trust between the two families.",
+   "The {insidious} spread of misinformation has had a pernicious effect, {undermining} public faith in science."
+  ],
+  "sbn": [
+   "ধূমপান স্বাস্থ্যের ওপর সর্বনাশা (pernicious) প্রভাব ফেলে।",
+   "ক্ষতিকর (pernicious) গুজবটা ধীরে ধীরে দুই পরিবারের বিশ্বাস নষ্ট করে দিল।",
+   "ভুল তথ্যের চুপিসারে ছড়িয়ে পড়া এক সর্বনাশা (pernicious) প্রভাব ফেলেছে, যা বিজ্ঞানের ওপর মানুষের আস্থা দুর্বল করে দিচ্ছে।"
+  ],
+  "tip": "Latin pernicies = destruction (per + nex, death). Pernicious things lead to ruin."
+ },
+ {
+  "id": "perpetrator",
+  "word": "Perpetrator",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a person who commits a crime or harmful act",
+  "bn": "অপরাধী; দোষী; অপকর্মকারী",
+  "s": [
+   "Police caught the perpetrator near the bank.",
+   "The perpetrator of the attack was identified from security camera footage.",
+   "The {brazen} perpetrator showed no remorse, and the court refused to grant him {clemency}."
+  ],
+  "sbn": [
+   "পুলিশ ব্যাংকের কাছে অপরাধীকে (perpetrator) ধরে ফেলল।",
+   "নিরাপত্তা ক্যামেরার ফুটেজ দেখে হামলাকারী অপরাধীকে (perpetrator) শনাক্ত করা হলো।",
+   "নির্লজ্জ অপরাধীটি (perpetrator) কোনো অনুশোচনা দেখায়নি, আর আদালত তাকে ক্ষমা দেখাতে অস্বীকার করল।"
+  ],
+  "tip": "Latin perpetrare = to carry through, accomplish. The perpetrator is the one who carries out the deed."
+ },
+ {
+  "id": "perpetuate",
+  "word": "Perpetuate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make something (often something bad) continue for a long time",
+  "bn": "টিকিয়ে রাখা; স্থায়ী করা; চিরস্থায়ী করা",
+  "s": [
+   "Old jokes can perpetuate unfair ideas.",
+   "Movies that always show villains with foreign accents perpetuate stereotypes about outsiders.",
+   "By refusing to {repudiate} the myth, the textbook only perpetuated a {fallacious} view of history."
+  ],
+  "sbn": [
+   "পুরোনো কৌতুক অন্যায্য ধারণাকে টিকিয়ে রাখতে (perpetuate) পারে।",
+   "যে সিনেমায় খলনায়কদের সবসময় বিদেশি টানে কথা বলতে দেখানো হয়, সেগুলো বহিরাগতদের নিয়ে গৎবাঁধা ধারণা টিকিয়ে রাখে (perpetuate)।",
+   "মিথটাকে প্রত্যাখ্যান না করে পাঠ্যবইটি কেবল ইতিহাসের একটা ভ্রান্ত দৃষ্টিভঙ্গিকেই টিকিয়ে রেখেছে (perpetuated)।"
+  ],
+  "tip": "Latin perpetuus = continuous, lasting. To perpetuate is to make something perpetual."
+ },
+ {
+  "id": "perquisite",
+  "word": "Perquisite",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "an extra benefit or privilege that comes with a job; a perk",
+  "bn": "বাড়তি সুবিধা; চাকরির বিশেষ সুযোগ",
+  "s": [
+   "A free car is one perquisite of the job.",
+   "Among the perquisites of being a manager are a private office and longer holidays.",
+   "Critics claimed the minister treated his {lavish} perquisites as an {inalienable} right rather than a privilege."
+  ],
+  "sbn": [
+   "বিনা পয়সায় গাড়ি পাওয়া এই চাকরির একটা বাড়তি সুবিধা (perquisite)।",
+   "ম্যানেজার হওয়ার বাড়তি সুবিধাগুলোর (perquisites) মধ্যে আছে আলাদা অফিস আর লম্বা ছুটি।",
+   "সমালোচকদের দাবি, মন্ত্রী তাঁর বিলাসী বাড়তি সুবিধাগুলোকে (perquisites) সুযোগ নয়, বরং কেড়ে নেওয়া যায় না এমন অধিকার বলে মনে করতেন।"
+  ],
+  "tip": "The everyday word 'perk' is short for perquisite. Don't confuse it with prerequisite (a requirement)."
+ },
+ {
+  "id": "pertinent",
+  "word": "Pertinent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "directly related to the matter being discussed; relevant",
+  "bn": "প্রাসঙ্গিক; সংগত",
+  "s": [
+   "Please ask only pertinent questions.",
+   "The lawyer removed every detail that was not pertinent to the case.",
+   "Her comments were both pertinent and {incisive}, cutting through the {digressions} that had stalled the meeting."
+  ],
+  "sbn": [
+   "দয়া করে শুধু প্রাসঙ্গিক (pertinent) প্রশ্ন করো।",
+   "উকিল মামলার সঙ্গে প্রাসঙ্গিক (pertinent) নয় এমন সব খুঁটিনাটি বাদ দিলেন।",
+   "তার মন্তব্যগুলো ছিল প্রাসঙ্গিক (pertinent) আর তীক্ষ্ণ, যা সভা আটকে রাখা অপ্রাসঙ্গিক আলাপগুলো কেটে বেরিয়ে গেল।"
+  ],
+  "tip": "Latin pertinere = to relate to, belong to. Something pertinent pertains to the topic."
+ },
+ {
+  "id": "perturb",
+  "word": "Perturb",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to make someone worried or upset",
+  "bn": "উদ্বিগ্ন করা; বিচলিত করা",
+  "s": [
+   "The strange noise perturbed the children.",
+   "She was perturbed to learn that her flight had been cancelled without notice.",
+   "Even the hostile questions failed to perturb the {phlegmatic} diplomat, who answered with perfect {equanimity}."
+  ],
+  "sbn": [
+   "অদ্ভুত শব্দটা বাচ্চাদের বিচলিত করল (perturbed)।",
+   "কোনো নোটিশ ছাড়াই তার ফ্লাইট বাতিল হয়েছে জেনে সে উদ্বিগ্ন হয়ে পড়ল (perturbed)।",
+   "বিরূপ প্রশ্নগুলোও ঠান্ডা মেজাজের কূটনীতিককে বিচলিত করতে (perturb) পারল না; তিনি পুরোপুরি স্থির মনে উত্তর দিলেন।"
+  ],
+  "tip": "Latin per (thoroughly) + turbare (to disturb), as in turbulent. To perturb is to stir someone up."
+ },
+ {
+  "id": "peruse",
+  "word": "Peruse",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to read or examine something carefully (also used loosely for skimming)",
+  "bn": "মনোযোগ দিয়ে পড়া; খুঁটিয়ে দেখা",
+  "s": [
+   "He perused the menu before ordering.",
+   "The editor perused every page of the contract before she agreed to sign it.",
+   "The {meticulous} scholar perused the {archives} for weeks, searching for one missing letter."
+  ],
+  "sbn": [
+   "অর্ডার দেওয়ার আগে সে মেনুটা খুঁটিয়ে দেখল (perused)।",
+   "চুক্তিতে সই করার আগে সম্পাদক এর প্রতিটি পাতা মনোযোগ দিয়ে পড়লেন (perused)।",
+   "খুঁতহীন কাজে অভ্যস্ত পণ্ডিত একটা হারানো চিঠির খোঁজে সপ্তাহের পর সপ্তাহ মহাফেজখানা খুঁটিয়ে দেখলেন (perused)।"
+  ],
+  "tip": "Memory trick: 'per-use' = use every part of the page, i.e. read it thoroughly."
+ },
+ {
+  "id": "pervade",
+  "word": "Pervade",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to spread through and be present in every part of something",
+  "bn": "ছেয়ে যাওয়া; পরিব্যাপ্ত হওয়া",
+  "s": [
+   "A happy mood pervaded the party.",
+   "The smell of fresh bread pervaded the small bakery from morning till night.",
+   "A deep {cynicism} pervaded the newsroom after years of {capricious} decisions by its owners."
+  ],
+  "sbn": [
+   "পার্টিতে একটা আনন্দের আবহ ছেয়ে ছিল (pervaded)।",
+   "সকাল থেকে রাত পর্যন্ত ছোট বেকারিটা জুড়ে টাটকা রুটির গন্ধ ছড়িয়ে থাকত (pervaded)।",
+   "মালিকদের বছরের পর বছর খামখেয়ালি সিদ্ধান্তের পর বার্তাকক্ষ জুড়ে গভীর অবিশ্বাস আর হতাশা ছেয়ে গেল (pervaded)।"
+  ],
+  "tip": "Latin per (through) + vadere (to go): to go through everything. Adjective form: pervasive."
+ },
+ {
+  "id": "perverse",
+  "word": "Perverse",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "deliberately unreasonable or contrary to what is expected; morally wrong",
+  "bn": "উল্টো স্বভাবের; বিকৃত; ঘাড়ত্যাড়া",
+  "s": [
+   "He took perverse pleasure in breaking rules.",
+   "It seems perverse to cut spending on schools when the country needs more skilled workers.",
+   "Out of a perverse desire to {flout} convention, the artist wore black to every wedding and white to every funeral."
+  ],
+  "sbn": [
+   "নিয়ম ভাঙায় সে এক বিকৃত (perverse) আনন্দ পেত।",
+   "দেশের যখন আরও দক্ষ কর্মী দরকার, তখন স্কুলের বাজেট কমানোটা উল্টো ও অযৌক্তিক (perverse) মনে হয়।",
+   "প্রচলিত রীতিকে বুড়ো আঙুল দেখানোর এক উল্টো (perverse) ইচ্ছা থেকে শিল্পী প্রতিটা বিয়েতে কালো আর প্রতিটা শেষকৃত্যে সাদা পোশাক পরতেন।"
+  ],
+  "tip": "Latin pervertere = to turn the wrong way (per + vertere, to turn). Perverse = turned away from what is right."
+ },
+ {
+  "id": "petulant",
+  "word": "Petulant",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "easily annoyed and sulky, like a spoiled child",
+  "bn": "খিটখিটে; অভিমানী; বদমেজাজি",
+  "s": [
+   "The petulant child threw his toy.",
+   "When the waiter brought the wrong drink, the petulant guest complained loudly for ten minutes.",
+   "The star's petulant outbursts on set {exasperated} the crew, who were tired of {coddling} him."
+  ],
+  "sbn": [
+   "খিটখিটে (petulant) বাচ্চাটা তার খেলনা ছুড়ে ফেলল।",
+   "ওয়েটার ভুল পানীয় আনায় খিটখিটে (petulant) অতিথি দশ মিনিট ধরে জোরে জোরে অভিযোগ করল।",
+   "শুটিংয়ে তারকার বদমেজাজি (petulant) রাগারাগিতে ক্রুরা অতিষ্ঠ হয়ে উঠল; তাকে আর তোয়াজ করে চলতে তারা ক্লান্ত।"
+  ],
+  "tip": "Memory trick: picture a spoiled pet that sulks whenever it gets no treats, a petulant pet."
+ },
+ {
+  "id": "phantasm",
+  "word": "Phantasm",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a ghostly figure or illusion created by the imagination",
+  "bn": "অলীক মূর্তি; ভূতুড়ে ছায়া; মায়া",
+  "s": [
+   "The tired traveler saw a phantasm in the fog.",
+   "In his fever he was haunted by phantasms of people long dead.",
+   "The castle's legends of wandering phantasms are mere {figments} of local imagination, though tourists find them {captivating}."
+  ],
+  "sbn": [
+   "ক্লান্ত পথিক কুয়াশার মধ্যে একটা ভূতুড়ে ছায়া (phantasm) দেখল।",
+   "জ্বরের ঘোরে বহু আগে মারা যাওয়া মানুষদের অলীক মূর্তি (phantasms) তাকে তাড়া করে বেড়াত।",
+   "দুর্গে ঘুরে বেড়ানো অলীক মূর্তির (phantasms) কিংবদন্তিগুলো আসলে স্থানীয় মানুষের কল্পনার সৃষ্টি, তবু পর্যটকেরা এগুলোতে মুগ্ধ হয়।"
+  ],
+  "tip": "Greek phantasma = image, apparition (from phainein, to show). Related: fantasy, phantom."
+ },
+ {
+  "id": "philanthropy",
+  "word": "Philanthropy",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "giving money, time or help to improve the lives of others",
+  "bn": "জনহিতৈষণা; মানবকল্যাণে দান; লোকহিত",
+  "s": [
+   "Her philanthropy helped build a new hospital.",
+   "The businessman turned to philanthropy after retiring, funding scholarships for poor students.",
+   "His {munificent} philanthropy earned public {acclaim}, though some suspected it was meant to polish his image."
+  ],
+  "sbn": [
+   "তার মানবকল্যাণে দানের (philanthropy) টাকায় একটা নতুন হাসপাতাল তৈরি হয়েছে।",
+   "অবসরের পর ব্যবসায়ী জনহিতকর কাজে (philanthropy) মন দিলেন, গরিব ছাত্রছাত্রীদের বৃত্তি দিতে লাগলেন।",
+   "তাঁর উদার জনহিতৈষণা (philanthropy) জনসাধারণের প্রশংসা কুড়িয়েছে, যদিও কেউ কেউ সন্দেহ করেছিল এটা শুধু ভাবমূর্তি উজ্জ্বল করার জন্য।"
+  ],
+  "tip": "Greek philos (loving) + anthropos (human): love of humankind. The opposite attitude: misanthrope."
+ },
+ {
+  "id": "philistine",
+  "word": "Philistine",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a person who does not value art, culture or learning",
+  "bn": "সংস্কৃতিবিমুখ লোক; রুচিহীন ব্যক্তি",
+  "s": [
+   "Only a philistine would call poetry useless.",
+   "The mayor was called a philistine for closing the city's only art museum.",
+   "The {erudite} critic {derided} the new owners as philistines who cared more about profit than about literature."
+  ],
+  "sbn": [
+   "শুধু একজন সংস্কৃতিবিমুখ লোকই (philistine) কবিতাকে অকেজো বলবে।",
+   "শহরের একমাত্র শিল্প জাদুঘর বন্ধ করে দেওয়ায় মেয়রকে রুচিহীন, সংস্কৃতিবিমুখ লোক (philistine) বলা হলো।",
+   "পণ্ডিত সমালোচক নতুন মালিকদের সংস্কৃতিবিমুখ লোক (philistines) বলে ঠাট্টা করলেন, যারা সাহিত্যের চেয়ে মুনাফা নিয়েই বেশি ভাবে।"
+  ],
+  "tip": "The Philistines were enemies of the Israelites in the Bible; 19th-century writers used the name for people hostile to culture."
+ },
+ {
+  "id": "pilgrimage",
+  "word": "Pilgrimage",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a journey to a holy or deeply important place",
+  "bn": "তীর্থযাত্রা; হজযাত্রা; গুরুত্বপূর্ণ স্থানে যাত্রা",
+  "s": [
+   "Many people go on pilgrimage to Mecca.",
+   "For fans of the poet, visiting his childhood home is a kind of pilgrimage.",
+   "The {devout} villagers saved for years to make the pilgrimage, regarding the shrine as {sacrosanct}."
+  ],
+  "sbn": [
+   "অনেক মানুষ মক্কায় হজযাত্রায় (pilgrimage) যান।",
+   "কবির ভক্তদের কাছে তাঁর ছেলেবেলার বাড়ি দেখতে যাওয়া এক রকম তীর্থযাত্রা (pilgrimage)।",
+   "ধর্মপ্রাণ গ্রামবাসীরা তীর্থযাত্রার (pilgrimage) জন্য বছরের পর বছর টাকা জমাল, কারণ তাদের কাছে মাজারটি ছিল পরম পবিত্র।"
+  ],
+  "tip": "From pilgrim, which comes from Latin peregrinus (traveler), the same root as peregrination."
+ },
+ {
+  "id": "pious",
+  "word": "Pious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "deeply religious; sometimes, making a show of being morally good",
+  "bn": "ধার্মিক; ধর্মপরায়ণ; ধর্মভীরু",
+  "s": [
+   "My pious grandmother prays five times a day.",
+   "The pious villagers gathered at the mosque before sunrise for the special prayer.",
+   "His pious speeches about honesty rang hollow once reporters exposed his {duplicity}, making him seem merely {sanctimonious}."
+  ],
+  "sbn": [
+   "আমার ধার্মিক (pious) দাদি দিনে পাঁচবার নামাজ পড়েন।",
+   "ধর্মপরায়ণ (pious) গ্রামবাসীরা বিশেষ নামাজের জন্য সূর্য ওঠার আগেই মসজিদে জড়ো হলো।",
+   "সাংবাদিকেরা তার দ্বিমুখী আচরণ ফাঁস করার পর সততা নিয়ে তার ধার্মিক (pious) বক্তৃতাগুলো ফাঁপা শোনাল, তাকে কেবল ধার্মিকতার ভানকারী মনে হলো।"
+  ],
+  "tip": "Latin pius = dutiful, devout. The noun form is piety."
+ },
+ {
+  "id": "pivotal",
+  "word": "Pivotal",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "of central importance; crucial",
+  "bn": "অত্যন্ত গুরুত্বপূর্ণ; কেন্দ্রীয়; নির্ণায়ক",
+  "s": [
+   "The final goal was the pivotal moment.",
+   "Her research played a pivotal role in developing the new vaccine.",
+   "The {astute} general recognized that the bridge was pivotal and refused to {relinquish} it."
+  ],
+  "sbn": [
+   "শেষ গোলটাই ছিল নির্ণায়ক (pivotal) মুহূর্ত।",
+   "নতুন টিকা তৈরিতে তার গবেষণা অত্যন্ত গুরুত্বপূর্ণ (pivotal) ভূমিকা রেখেছে।",
+   "বিচক্ষণ সেনাপতি বুঝেছিলেন সেতুটা নির্ণায়ক (pivotal), তাই তিনি সেটা ছেড়ে দিতে রাজি হননি।"
+  ],
+  "tip": "A pivot is the point a thing turns on. A pivotal event is the one everything turns on."
+ },
+ {
+  "id": "placebo",
+  "word": "Placebo",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a harmless pill or treatment with no real medicine, used in tests or to comfort a patient",
+  "bn": "প্লাসিবো; ওষুধহীন বড়ি; মন-ভোলানো চিকিৎসা",
+  "s": [
+   "The doctor gave him a sugar placebo.",
+   "In the study, half the patients received the new drug and half received a placebo.",
+   "The supplement proved no more {efficacious} than a placebo, which {discredited} the company's bold claims."
+  ],
+  "sbn": [
+   "ডাক্তার তাকে চিনির তৈরি একটা প্লাসিবো (placebo) দিলেন।",
+   "গবেষণায় অর্ধেক রোগী নতুন ওষুধ পেল, আর বাকি অর্ধেক পেল ওষুধহীন বড়ি (placebo)।",
+   "সাপ্লিমেন্টটা ওষুধহীন বড়ির (placebo) চেয়ে বেশি কার্যকর প্রমাণিত হয়নি, ফলে কোম্পানির জোরালো দাবিগুলোর বিশ্বাসযোগ্যতা নষ্ট হলো।"
+  ],
+  "tip": "Latin placebo = I shall please. It pleases the patient without real medicine (compare placate)."
+ },
+ {
+  "id": "plaintive",
+  "word": "Plaintive",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "sounding sad and mournful",
+  "bn": "করুণ; বিষাদময়; কাতর",
+  "s": [
+   "We heard the plaintive cry of a lost kitten.",
+   "The plaintive melody of the flute made several people in the audience cry.",
+   "The {doleful} song's plaintive refrain seemed to {lament} the village's lost youth."
+  ],
+  "sbn": [
+   "আমরা হারিয়ে যাওয়া এক বিড়ালছানার করুণ (plaintive) ডাক শুনলাম।",
+   "বাঁশির করুণ (plaintive) সুর শুনে দর্শকদের কয়েকজন কেঁদে ফেলল।",
+   "বিষণ্ণ গানটার করুণ (plaintive) ধুয়া যেন গ্রামের হারানো তারুণ্যের জন্য বিলাপ করছিল।"
+  ],
+  "tip": "Related to complain and plaint (a lament). A plaintive voice sounds like a sad complaint."
+ },
+ {
+  "id": "platonic",
+  "word": "Platonic",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "(of love or friendship) close and affectionate but not romantic or sexual",
+  "bn": "নিষ্কাম; প্রেমহীন বন্ধুত্বপূর্ণ",
+  "s": [
+   "Their friendship is purely platonic.",
+   "Although people gossiped, the two colleagues insisted their relationship was platonic.",
+   "Their platonic friendship proved {impervious} to the gossip that their {coterie} kept spreading."
+  ],
+  "sbn": [
+   "তাদের বন্ধুত্ব একেবারে নিষ্কাম (platonic)।",
+   "লোকে গুজব ছড়ালেও দুই সহকর্মী জোর দিয়ে বলল তাদের সম্পর্ক শুধুই নিষ্কাম বন্ধুত্বের (platonic)।",
+   "তাদের নিষ্কাম (platonic) বন্ধুত্ব নিজেদের বন্ধুমহলের ছড়ানো গুজবে একটুও টলেনি।"
+  ],
+  "tip": "Named after the Greek philosopher Plato, who wrote of a love that rises above the physical."
+ },
+ {
+  "id": "plausible",
+  "word": "Plausible",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "seeming reasonable or likely to be true",
+  "bn": "বিশ্বাসযোগ্য; সম্ভাব্য; যুক্তিসংগত",
+  "s": [
+   "His excuse sounded plausible.",
+   "Scientists offered a plausible explanation for the sudden drop in fish numbers.",
+   "The theory seemed plausible at first, but when experts {scrutinized} it, its logic proved {specious}."
+  ],
+  "sbn": [
+   "তার অজুহাতটা বিশ্বাসযোগ্য (plausible) শোনাল।",
+   "মাছের সংখ্যা হঠাৎ কমে যাওয়ার একটা যুক্তিসংগত (plausible) ব্যাখ্যা দিলেন বিজ্ঞানীরা।",
+   "তত্ত্বটা প্রথমে বিশ্বাসযোগ্য (plausible) মনে হয়েছিল, কিন্তু বিশেষজ্ঞরা খুঁটিয়ে দেখতেই বোঝা গেল এর যুক্তি বাইরে থেকে ঠিক দেখালেও আসলে ভুয়া।"
+  ],
+  "tip": "Latin plausibilis = deserving applause (as in applaud). A plausible story earns a nod of approval."
+ },
+ {
+  "id": "plebeian",
+  "word": "Plebeian",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "of the common people; ordinary or unrefined",
+  "bn": "সাধারণ মানুষের; নিম্নবর্গের; অমার্জিত",
+  "s": [
+   "He prefers plebeian food like rice and lentils.",
+   "The prince surprised everyone with his plebeian tastes in music and clothing.",
+   "The {aristocratic} hostess sneered at her guests' plebeian manners, yet her own {condescending} remarks were far ruder."
+  ],
+  "sbn": [
+   "সে ভাত-ডালের মতো সাধারণ মানুষের (plebeian) খাবার পছন্দ করে।",
+   "গান আর পোশাকে রাজপুত্রের সাধারণ মানুষের মতো (plebeian) রুচি দেখে সবাই অবাক হলো।",
+   "অভিজাত গৃহকর্ত্রী অতিথিদের অমার্জিত (plebeian) আচরণ নিয়ে নাক সিঁটকালেন, অথচ তাঁর নিজের তাচ্ছিল্যভরা মন্তব্যগুলো ছিল অনেক বেশি রূঢ়।"
+  ],
+  "tip": "Latin plebs = the common people of ancient Rome, as opposed to the patricians (nobles)."
+ },
+ {
+  "id": "pliable",
+  "word": "Pliable",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "easily bent; easily influenced or persuaded",
+  "bn": "নমনীয়; সহজে বাঁকানো যায় এমন; সহজে প্রভাবিত",
+  "s": [
+   "Wet clay is soft and pliable.",
+   "The young recruits were pliable, accepting every order without question.",
+   "The dictator preferred pliable advisers who would {acquiesce} to any plan, not ones with the courage to {demur}."
+  ],
+  "sbn": [
+   "ভেজা কাদামাটি নরম আর নমনীয় (pliable)।",
+   "নতুন রিক্রুটরা ছিল সহজে প্রভাবিত (pliable); কোনো প্রশ্ন ছাড়াই সব আদেশ মেনে নিত।",
+   "স্বৈরশাসক এমন সহজে বশ মানা (pliable) উপদেষ্টা চাইতেন যারা যেকোনো পরিকল্পনায় চুপচাপ রাজি হবে, আপত্তি তোলার সাহস যাদের নেই।"
+  ],
+  "tip": "From French plier, to bend or fold (as in pliers and ply). Pliable = bends easily."
+ },
+ {
+  "id": "plight",
+  "word": "Plight",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a bad, difficult or dangerous situation",
+  "bn": "দুর্দশা; দুরবস্থা; বিপদ",
+  "s": [
+   "The flood victims' plight was terrible.",
+   "The documentary drew attention to the plight of children working in factories.",
+   "The charity sought to {alleviate} the plight of {destitute} families who had lost everything in the cyclone."
+  ],
+  "sbn": [
+   "বন্যাদুর্গতদের দুর্দশা (plight) ছিল ভয়াবহ।",
+   "প্রামাণ্যচিত্রটা কারখানায় কাজ করা শিশুদের দুরবস্থার (plight) দিকে সবার নজর টেনেছে।",
+   "ঘূর্ণিঝড়ে সর্বস্ব হারানো নিঃস্ব পরিবারগুলোর দুর্দশা (plight) লাঘব করতে দাতব্য সংস্থাটি চেষ্টা চালাল।"
+  ],
+  "tip": "Memory trick: plight rhymes with fight; someone in a plight is fighting a hard situation."
+ },
+ {
+  "id": "plunder",
+  "word": "Plunder",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to steal goods by force, especially during war or disorder",
+  "bn": "লুট করা; লুণ্ঠন করা",
+  "s": [
+   "Pirates plundered the ship.",
+   "During the war, soldiers plundered the museum and carried away its treasures.",
+   "The {rapacious} invaders plundered the city and left its {edifices} in ruins."
+  ],
+  "sbn": [
+   "জলদস্যুরা জাহাজটা লুট করল (plundered)।",
+   "যুদ্ধের সময় সৈন্যরা জাদুঘর লুট করে (plundered) এর সব সম্পদ নিয়ে গেল।",
+   "লোভী আক্রমণকারীরা শহরটা লুণ্ঠন করল (plundered) আর এর বড় বড় দালানগুলো ধ্বংসস্তূপে পরিণত করল।"
+  ],
+  "tip": "From German/Dutch plündern, to rob, from plunder 'household goods'. To plunder is to grab loot by force."
+ },
+ {
+  "id": "pluralism",
+  "word": "Pluralism",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a system in which many different groups, beliefs or cultures exist together",
+  "bn": "বহুত্ববাদ; বহুমতের সহাবস্থান",
+  "s": [
+   "Our city is proud of its pluralism.",
+   "Pluralism means people of different religions can live and vote as equals.",
+   "Defenders of pluralism argue that a society grows stronger when it lets {disparate} groups coexist rather than demanding {uniform} beliefs."
+  ],
+  "sbn": [
+   "আমাদের শহর তার বহুত্ববাদ (pluralism) নিয়ে গর্বিত।",
+   "বহুত্ববাদ (pluralism) মানে ভিন্ন ভিন্ন ধর্মের মানুষ সমান মর্যাদায় বাস করতে ও ভোট দিতে পারে।",
+   "বহুত্ববাদের (pluralism) সমর্থকেরা বলেন, সবার কাছ থেকে একই রকম বিশ্বাস দাবি না করে ভিন্ন ভিন্ন গোষ্ঠীকে পাশাপাশি থাকতে দিলে সমাজ আরও শক্তিশালী হয়।"
+  ],
+  "tip": "Latin pluralis = of more than one (plus, more). Pluralism = many groups living side by side."
+ },
+ {
+  "id": "poignant",
+  "word": "Poignant",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "causing a strong feeling of sadness or emotion",
+  "bn": "মর্মস্পর্শী; হৃদয়বিদারক",
+  "s": [
+   "The film had a poignant ending.",
+   "Finding her late father's letters was a poignant moment for her.",
+   "The memoir's most poignant passage is an {elegy} for the author's brother, written with quiet {candor}."
+  ],
+  "sbn": [
+   "সিনেমাটার শেষটা ছিল মর্মস্পর্শী (poignant)।",
+   "প্রয়াত বাবার চিঠিগুলো খুঁজে পাওয়া তার জন্য এক মর্মস্পর্শী (poignant) মুহূর্ত ছিল।",
+   "স্মৃতিকথাটির সবচেয়ে মর্মস্পর্শী (poignant) অংশটি লেখকের ভাইয়ের জন্য লেখা একটি শোকগাথা, যা শান্ত অকপটতায় লেখা।"
+  ],
+  "tip": "Latin pungere = to prick (it also gives pungent). A poignant scene pricks the heart."
+ },
+ {
+  "id": "polarize",
+  "word": "Polarize",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to divide people into two sharply opposing groups",
+  "bn": "মেরুকরণ করা; দুই ভাগে বিভক্ত করা",
+  "s": [
+   "The new law polarized the country.",
+   "The debate over the dam polarized the village into angry supporters and opponents.",
+   "The {demagogue} deliberately polarized voters with {inflammatory} speeches."
+  ],
+  "sbn": [
+   "নতুন আইনটা দেশকে দুই ভাগে ভাগ করে ফেলল (polarized)।",
+   "বাঁধ নিয়ে বিতর্ক গ্রামটাকে ক্ষুব্ধ সমর্থক আর বিরোধী—এই দুই শিবিরে ভাগ করে দিল (polarized)।",
+   "জনতাকে উসকে দেওয়া নেতাটি উত্তেজক বক্তৃতা দিয়ে ইচ্ছাকৃতভাবে ভোটারদের মেরুকরণ করলেন (polarized)।"
+  ],
+  "tip": "Like a magnet's two poles: to polarize is to push people toward opposite ends."
+ },
+ {
+  "id": "polemic",
+  "word": "Polemic",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a strong written or spoken attack on someone's opinions or beliefs",
+  "bn": "তীব্র বিতর্কমূলক লেখা বা বক্তব্য; বাগ্‌যুদ্ধ",
+  "s": [
+   "She wrote a polemic against fast food.",
+   "His book is less a balanced study than a fierce polemic against modern art.",
+   "The essay was a {vitriolic} polemic that tried to {vilify} the author's former mentor."
+  ],
+  "sbn": [
+   "সে ফাস্টফুডের বিরুদ্ধে একটা তীব্র বিতর্কমূলক লেখা (polemic) লিখল।",
+   "তার বইটা ভারসাম্যপূর্ণ গবেষণা নয়, বরং আধুনিক শিল্পের বিরুদ্ধে এক তীব্র আক্রমণাত্মক লেখা (polemic)।",
+   "প্রবন্ধটা ছিল বিষাক্ত ভাষার এক আক্রমণাত্মক লেখা (polemic), যা লেখকের সাবেক গুরুর কুৎসা রটাতে চেয়েছিল।"
+  ],
+  "tip": "Greek polemos = war. A polemic is a war of words."
+ },
+ {
+  "id": "ponderous",
+  "word": "Ponderous",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "slow and clumsy because of great weight; (of writing or speech) dull and too serious",
+  "bn": "ভারী ও ধীর; একঘেয়ে-গুরুগম্ভীর",
+  "s": [
+   "The elephant moved with ponderous steps.",
+   "The professor's ponderous lecture put half the class to sleep.",
+   "The report's ponderous, {verbose} style {obscured} its few useful findings."
+  ],
+  "sbn": [
+   "হাতিটা ভারী, ধীর (ponderous) পায়ে হাঁটছিল।",
+   "অধ্যাপকের একঘেয়ে, গুরুগম্ভীর (ponderous) লেকচারে ক্লাসের অর্ধেক ছাত্র ঘুমিয়ে পড়ল।",
+   "রিপোর্টের ভারী, একঘেয়ে (ponderous) আর অতিরিক্ত শব্দবহুল ভাষা এর অল্প কয়েকটা দরকারি তথ্যকেও আড়াল করে দিল।"
+  ],
+  "tip": "Latin pondus = weight (also in ponder, to weigh in the mind). Ponderous = heavy."
+ },
+ {
+  "id": "portent",
+  "word": "Portent",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a sign or warning that something, especially something bad, is going to happen",
+  "bn": "অশুভ লক্ষণ; পূর্বাভাস; ইঙ্গিত",
+  "s": [
+   "Dark clouds were a portent of the storm.",
+   "Many villagers saw the comet as a portent of war.",
+   "Economists read the falling factory orders as a portent of recession, an {ominous} sign that politicians chose to {downplay}."
+  ],
+  "sbn": [
+   "কালো মেঘ ছিল ঝড়ের পূর্বাভাস (portent)।",
+   "অনেক গ্রামবাসী ধূমকেতুটাকে যুদ্ধের অশুভ লক্ষণ (portent) বলে মনে করল।",
+   "অর্থনীতিবিদেরা কারখানার অর্ডার কমে যাওয়াকে মন্দার অশুভ লক্ষণ (portent) হিসেবে দেখলেন—এক ভয়ানক সংকেত, যা রাজনীতিবিদেরা হালকা করে দেখাতে চাইলেন।"
+  ],
+  "tip": "Latin portendere = to foretell, point ahead. Related: portentous (ominous; also pompous)."
+ },
+ {
+  "id": "posterity",
+  "word": "Posterity",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "all future generations of people",
+  "bn": "ভবিষ্যৎ প্রজন্ম; উত্তরপুরুষ",
+  "s": [
+   "We must protect forests for posterity.",
+   "The old photographs were saved in the library for posterity.",
+   "The poet believed posterity would {vindicate} her, even though her contemporaries {disparaged} her work."
+  ],
+  "sbn": [
+   "ভবিষ্যৎ প্রজন্মের (posterity) জন্য আমাদের বন রক্ষা করতে হবে।",
+   "পুরোনো ছবিগুলো ভবিষ্যৎ প্রজন্মের (posterity) জন্য গ্রন্থাগারে সংরক্ষণ করা হলো।",
+   "কবি বিশ্বাস করতেন, সমসাময়িকেরা তাঁর লেখাকে তুচ্ছ করলেও ভবিষ্যৎ প্রজন্ম (posterity) তাঁকে ঠিকই সঠিক প্রমাণ করবে।"
+  ],
+  "tip": "Latin posterus = coming after (post = after). Posterity = those who come after us."
+ },
+ {
+  "id": "posthumous",
+  "word": "Posthumous",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "happening, given or published after a person's death",
+  "bn": "মরণোত্তর; মৃত্যুর পরে প্রাপ্ত",
+  "s": [
+   "The soldier received a posthumous medal.",
+   "Her diary became famous after its posthumous publication.",
+   "The painter lived in {penury}, yet posthumous fame made his works worth millions."
+  ],
+  "sbn": [
+   "সৈনিকটি মরণোত্তর (posthumous) পদক পেলেন।",
+   "মরণোত্তর (posthumous) প্রকাশের পর তার ডায়েরিটি বিখ্যাত হয়ে গেল।",
+   "চিত্রশিল্পী জীবনভর চরম দারিদ্র্যে কাটিয়েছেন, অথচ মরণোত্তর (posthumous) খ্যাতি তাঁর ছবিগুলোকে কোটি টাকার সম্পদ বানিয়েছে।"
+  ],
+  "tip": "Latin postumus = last-born; later linked with post (after) + humus (earth). Think: after being put in the ground."
+ },
+ {
+  "id": "postulate",
+  "word": "Postulate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to suggest or assume something as true, as a basis for reasoning",
+  "bn": "স্বতঃসিদ্ধ ধরে নেওয়া; অনুমান করা; প্রস্তাব করা",
+  "s": [
+   "Scientists postulated a new planet.",
+   "Einstein postulated that the speed of light is the same for every observer.",
+   "The researcher postulated a link between diet and memory, but her {conjecture} still lacks {empirical} support."
+  ],
+  "sbn": [
+   "বিজ্ঞানীরা একটা নতুন গ্রহের অস্তিত্ব অনুমান করলেন (postulated)।",
+   "আইনস্টাইন ধরে নিয়েছিলেন (postulated) যে আলোর গতি প্রত্যেক পর্যবেক্ষকের কাছে একই।",
+   "গবেষক খাদ্যাভ্যাস আর স্মৃতির মধ্যে একটা সম্পর্ক অনুমান করলেন (postulated), কিন্তু তার এই ধারণার পক্ষে এখনো পরীক্ষালব্ধ প্রমাণ নেই।"
+  ],
+  "tip": "Latin postulare = to demand, request. A postulate is a claim we 'request' others to accept as a starting point."
+ },
+ {
+  "id": "posture",
+  "word": "Posture",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the way you hold your body; an attitude or official position; (verb) to behave in a showy, insincere way",
+  "bn": "দেহভঙ্গি; ভাবভঙ্গি; অবস্থান",
+  "s": [
+   "Good posture is important for your back.",
+   "The country took a defensive posture after the border clash.",
+   "His tough talk was mere posturing, a show of {bravado} meant to hide how {timorous} he really felt."
+  ],
+  "sbn": [
+   "পিঠের সুস্থতার জন্য সঠিক দেহভঙ্গি (posture) জরুরি।",
+   "সীমান্ত সংঘর্ষের পর দেশটি আত্মরক্ষামূলক অবস্থান (posture) নিল।",
+   "তার কড়া কথাবার্তা ছিল নিছক লোক-দেখানো ভঙ্গি (posturing), ভেতরের ভীরুতা ঢাকতে সাহসের ভান।"
+  ],
+  "tip": "Latin positura = position (from ponere, to place). Posture = how you place your body or your views."
+ },
+ {
+  "id": "prattle",
+  "word": "Prattle",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to talk on and on about unimportant things; childish chatter",
+  "bn": "বকবক করা; অর্থহীন কথা বলা",
+  "s": [
+   "The kids prattle happily during the whole bus ride.",
+   "My uncle will prattle about cricket scores for hours if nobody stops him.",
+   "Instead of offering {cogent} arguments, the speaker could only prattle on about {superficial} gossip."
+  ],
+  "sbn": [
+   "বাচ্চারা পুরো বাস যাত্রায় খুশিমনে বকবক করে (prattle)।",
+   "চাচাকে কেউ না থামালে তিনি ঘণ্টার পর ঘণ্টা ক্রিকেটের স্কোর নিয়ে বকবক করবেন (prattle)।",
+   "জোরালো যুক্তি দেওয়ার বদলে বক্তা শুধু ভাসা-ভাসা গুজব নিয়ে বকবক করেই (prattle) চলল।"
+  ],
+  "tip": "Sounds like 'prat' + 'tle': a fool who chatters nonsense."
+ },
+ {
+  "id": "precedent",
+  "word": "Precedent",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "an earlier event or decision used as a guide or example",
+  "bn": "নজির; পূর্ব-দৃষ্টান্ত",
+  "s": [
+   "The judge followed an old precedent.",
+   "This ruling sets a precedent for how schools handle cheating.",
+   "The court refused to depart from precedent, even though the {volatile} political climate had changed everything."
+  ],
+  "sbn": [
+   "বিচারক একটা পুরোনো নজির (precedent) অনুসরণ করলেন।",
+   "এই রায় স্কুলগুলো নকলের বিষয় কীভাবে সামলাবে তার একটা নজির (precedent) তৈরি করল।",
+   "অস্থির রাজনৈতিক পরিবেশে সবকিছু বদলে গেলেও আদালত নজির (precedent) থেকে সরে আসতে রাজি হয়নি।"
+  ],
+  "tip": "Latin prae = before + cedere = go: something that went before."
+ },
+ {
+  "id": "precept",
+  "word": "Precept",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a rule or principle guiding behavior",
+  "bn": "নীতিবাক্য; উপদেশ",
+  "s": [
+   "Honesty is a basic precept in our family.",
+   "The teacher lived by the precept that every student can learn.",
+   "Though he preached the {frugal} precept of saving, his own spending was {lavish}."
+  ],
+  "sbn": [
+   "সততা আমাদের পরিবারের একটা মৌলিক নীতিবাক্য (precept)।",
+   "শিক্ষক এই নীতিবাক্য (precept) মেনে চলতেন যে প্রত্যেক ছাত্রই শিখতে পারে।",
+   "সে মিতব্যয়িতার নীতিবাক্য (precept) প্রচার করত, অথচ নিজে খরচ করত দেদার।"
+  ],
+  "tip": "Latin prae- before + capere take: a rule you 'take beforehand'."
+ },
+ {
+  "id": "precipitous",
+  "word": "Precipitous",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "very steep; sudden and rushed",
+  "bn": "খাড়া; আকস্মিক",
+  "s": [
+   "The path along the cliff was precipitous.",
+   "Share prices made a precipitous drop after the bad news.",
+   "It would be unwise to make a precipitous decision when the facts remain {ambiguous}."
+  ],
+  "sbn": [
+   "পাহাড়ের কিনারার পথটা ছিল খুবই খাড়া (precipitous)।",
+   "খারাপ খবরের পর শেয়ারের দাম আকস্মিকভাবে (precipitous) পড়ে গেল।",
+   "তথ্য যখন অস্পষ্ট, তখন হুটহাট (precipitous) সিদ্ধান্ত নেওয়া বুদ্ধিমানের কাজ নয়।"
+  ],
+  "tip": "Think 'precipice' (cliff edge): steep and sudden."
+ },
+ {
+  "id": "preclude",
+  "word": "Preclude",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to prevent; to make impossible",
+  "bn": "আগেই রোধ করা; অসম্ভব করে দেওয়া",
+  "s": [
+   "A broken leg will preclude him from playing.",
+   "Her busy schedule precludes any chance of a long holiday.",
+   "A strict deadline can preclude {meticulous} work, so quality may suffer."
+  ],
+  "sbn": [
+   "ভাঙা পা তাকে খেলতে দেবে না, অর্থাৎ খেলার সুযোগ রোধ করবে (preclude)।",
+   "তার ব্যস্ত সূচি লম্বা ছুটির যেকোনো সম্ভাবনা বাদ করে দেয় (precludes)।",
+   "কড়া সময়সীমা নিখুঁত কাজের সুযোগ আটকে দিতে (preclude) পারে, ফলে মান কমতে পারে।"
+  ],
+  "tip": "Latin prae before + claudere to shut: shut out beforehand."
+ },
+ {
+  "id": "precocious",
+  "word": "Precocious",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "showing abilities earlier than usual for one's age",
+  "bn": "অকালপক্ব; বয়সের তুলনায় এগিয়ে",
+  "s": [
+   "The precocious girl read novels at six.",
+   "He was a precocious child who solved algebra puzzles for fun.",
+   "Her {lucid} essays were remarkable for a precocious teenager."
+  ],
+  "sbn": [
+   "অকালপক্ব (precocious) মেয়েটি ছয় বছরেই উপন্যাস পড়ত।",
+   "সে বয়সের তুলনায় এগিয়ে থাকা (precocious) শিশু ছিল, মজা করে বীজগণিতের ধাঁধা মেলাত।",
+   "একজন অল্পবয়সী কিশোরীর (precocious) জন্য তার স্বচ্ছ প্রবন্ধগুলো ছিল চমকপ্রদ।"
+  ],
+  "tip": "Latin prae before + coquere ripen: ripe too early."
+ },
+ {
+  "id": "predecessor",
+  "word": "Predecessor",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a person who held a job before another; an earlier thing",
+  "bn": "পূর্বসূরি",
+  "s": [
+   "The new principal praised her predecessor.",
+   "My predecessor left detailed notes for me to follow.",
+   "The new minister reversed the policies of his predecessor, who had been {derided} by the press."
+  ],
+  "sbn": [
+   "নতুন অধ্যক্ষ তাঁর পূর্বসূরির (predecessor) প্রশংসা করলেন।",
+   "আমার পূর্বসূরি (predecessor) অনুসরণ করার জন্য বিস্তারিত নোট রেখে গেছেন।",
+   "নতুন মন্ত্রী তাঁর পূর্বসূরির (predecessor) নীতিগুলো উল্টে দিলেন, যাঁকে সংবাদমাধ্যম উপহাস করত।"
+  ],
+  "tip": "Pre- before + decessor (one who departs): the person who left before you."
+ },
+ {
+  "id": "predicament",
+  "word": "Predicament",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a difficult or unpleasant situation",
+  "bn": "বিপাকজনক অবস্থা; উভয়সংকট",
+  "s": [
+   "I was in a predicament without my wallet.",
+   "The company faced a financial predicament after losing its biggest client.",
+   "His {impartial} advice helped her out of a predicament that had left her paralyzed."
+  ],
+  "sbn": [
+   "মানিব্যাগ ছাড়া আমি এক বিপাকে (predicament) পড়েছিলাম।",
+   "সবচেয়ে বড় ক্লায়েন্ট হারানোর পর কোম্পানি আর্থিক সংকটে (predicament) পড়ল।",
+   "তাঁর নিরপেক্ষ পরামর্শ তাকে সেই বিপাক (predicament) থেকে বের করল যা তাকে অসাড় করে রেখেছিল।"
+  ],
+  "tip": "Trick: 'pre-DICK-ament' no; think 'stuck in a pickle': predicament = pickle."
+ },
+ {
+  "id": "predilection",
+  "word": "Predilection",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a strong liking or preference",
+  "bn": "পক্ষপাত; বিশেষ ঝোঁক",
+  "s": [
+   "She has a predilection for spicy food.",
+   "His predilection for mystery novels filled the shelves of his room.",
+   "The critic's predilection for {austere} films made him {disdain} popular comedies."
+  ],
+  "sbn": [
+   "ঝাল খাবারের প্রতি তার বিশেষ ঝোঁক (predilection) আছে।",
+   "রহস্য উপন্যাসের প্রতি তার ঝোঁকে (predilection) ঘরের তাক ভরে গেছে।",
+   "সমালোচকের কঠোর-সাদামাটা ছবির প্রতি ঝোঁকের (predilection) কারণে তিনি জনপ্রিয় কমেডিকে তুচ্ছ করতেন।"
+  ],
+  "tip": "Latin prae before + diligere to love: love chosen beforehand."
+ },
+ {
+  "id": "predispose",
+  "word": "Predispose",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make likely to react or behave in a certain way",
+  "bn": "আগে থেকে ঝোঁক তৈরি করা; প্রবণ করে তোলা",
+  "s": [
+   "Stress can predispose you to illness.",
+   "Early praise may predispose children to enjoy learning.",
+   "A {dogmatic} upbringing can predispose a person to reject new ideas."
+  ],
+  "sbn": [
+   "মানসিক চাপ তোমাকে অসুস্থতার প্রতি প্রবণ করে তুলতে (predispose) পারে।",
+   "শুরুতে প্রশংসা পেলে শিশুরা পড়াশোনা উপভোগ করতে প্রবণ (predispose) হতে পারে।",
+   "গোঁড়া লালন-পালন একজনকে নতুন ধারণা প্রত্যাখ্যানের দিকে ঝুঁকিয়ে দিতে (predispose) পারে।"
+  ],
+  "tip": "Pre- before + dispose (arrange): arranged in advance toward something."
+ },
+ {
+  "id": "predominant",
+  "word": "Predominant",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "most common or strongest; main",
+  "bn": "প্রধান; সবচেয়ে প্রভাবশালী",
+  "s": [
+   "Rice is the predominant food in Bangladesh.",
+   "Blue was the predominant color in her painting.",
+   "The {pervasive} fear of failure was the predominant feeling among the students."
+  ],
+  "sbn": [
+   "বাংলাদেশে ভাত প্রধান (predominant) খাদ্য।",
+   "তার ছবিতে নীল ছিল প্রধান (predominant) রঙ।",
+   "সর্বব্যাপী ব্যর্থতার ভয়ই ছিল ছাত্রদের মধ্যে প্রধান (predominant) অনুভূতি।"
+  ],
+  "tip": "Pre- + dominate: the one that dominates."
+ },
+ {
+  "id": "preeminent",
+  "word": "Preeminent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "better than all others; outstanding",
+  "bn": "সর্বশ্রেষ্ঠ; অগ্রগণ্য",
+  "s": [
+   "She is the preeminent scientist in her field.",
+   "He became the preeminent poet of his generation.",
+   "The university, once {obscure}, became preeminent through years of {tenacious} effort."
+  ],
+  "sbn": [
+   "তিনি নিজের ক্ষেত্রে সর্বশ্রেষ্ঠ (preeminent) বিজ্ঞানী।",
+   "তিনি তাঁর প্রজন্মের শ্রেষ্ঠ (preeminent) কবি হয়ে উঠলেন।",
+   "একসময় অখ্যাত বিশ্ববিদ্যালয়টি বছরের পর বছর নাছোড় চেষ্টায় অগ্রগণ্য (preeminent) হয়ে উঠল।"
+  ],
+  "tip": "Latin prae before + eminere stand out: stands out ahead of all."
+ },
+ {
+  "id": "preempt",
+  "word": "Preempt",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to act first to prevent something; to take for oneself before others",
+  "bn": "আগেভাগে ঠেকিয়ে দেওয়া; আগে দখল করা",
+  "s": [
+   "The coach changed tactics to preempt the attack.",
+   "The city acted to preempt a flood by cleaning the drains early.",
+   "The senator tried to preempt criticism and {mitigate} the damage before the report appeared."
+  ],
+  "sbn": [
+   "কোচ আক্রমণ আগেভাগে ঠেকাতে (preempt) কৌশল বদলালেন।",
+   "শহর কর্তৃপক্ষ আগেভাগে নালা পরিষ্কার করে বন্যা ঠেকাতে (preempt) উদ্যোগ নিল।",
+   "সিনেটর প্রতিবেদন প্রকাশের আগেই সমালোচনা আগেভাগে ঠেকিয়ে (preempt) ক্ষতি কমাতে চেয়েছিলেন।"
+  ],
+  "tip": "Pre- before + empt (take, as in exempt): take before others."
+ },
+ {
+  "id": "pregnant",
+  "word": "Pregnant",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "expecting a baby; full of meaning or significance",
+  "bn": "গর্ভবতী; তাৎপর্যপূর্ণ",
+  "s": [
+   "My sister is pregnant with her first child.",
+   "The teacher paused for a pregnant moment before announcing the results.",
+   "A pregnant silence followed his {ambiguous} remark."
+  ],
+  "sbn": [
+   "আমার বোন প্রথম সন্তানসম্ভবা (pregnant)।",
+   "শিক্ষক ফল ঘোষণার আগে একটা তাৎপর্যপূর্ণ (pregnant) বিরতি নিলেন।",
+   "তাঁর অস্পষ্ট মন্তব্যের পর এক অর্থবহ (pregnant) নীরবতা নেমে এল।"
+  ],
+  "tip": "In GRE, 'pregnant' also means loaded with meaning: a pregnant pause."
+ },
+ {
+  "id": "prelude",
+  "word": "Prelude",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an introduction or event that comes before something bigger",
+  "bn": "ভূমিকা; সূচনা",
+  "s": [
+   "The song was a short prelude to the concert.",
+   "The small quarrel was a prelude to a bigger fight.",
+   "The {sporadic} protests were merely a prelude to the {pervasive} unrest that followed."
+  ],
+  "sbn": [
+   "গানটা ছিল কনসার্টের একটা ছোট ভূমিকা (prelude)।",
+   "ছোট ঝগড়াটা ছিল বড় লড়াইয়ের সূচনা (prelude)।",
+   "ছাড়া-ছাড়া বিক্ষোভ ছিল কেবল পরে ছড়িয়ে পড়া অস্থিরতার ভূমিকা (prelude)।"
+  ],
+  "tip": "Latin prae before + ludere play: what is played before."
+ },
+ {
+  "id": "premeditated",
+  "word": "Premeditated",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "planned in advance; deliberate",
+  "bn": "পূর্বপরিকল্পিত; ইচ্ছাকৃত",
+  "s": [
+   "The police said the crime was premeditated.",
+   "It was a premeditated insult, not a slip of the tongue.",
+   "The prosecutor argued that the {meticulous} planning proved the attack was premeditated."
+  ],
+  "sbn": [
+   "পুলিশ বলল অপরাধটা পূর্বপরিকল্পিত (premeditated) ছিল।",
+   "ওটা ছিল পূর্বপরিকল্পিত (premeditated) অপমান, মুখ ফসকে বলা কথা নয়।",
+   "সরকারি কৌঁসুলি যুক্তি দিলেন যে নিখুঁত পরিকল্পনা প্রমাণ করে হামলাটা পূর্বপরিকল্পিত (premeditated)।"
+  ],
+  "tip": "Pre- before + meditate (think): thought out beforehand."
+ },
+ {
+  "id": "premise",
+  "word": "Premise",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a statement or idea accepted as the base of an argument",
+  "bn": "ভিত্তি-ধারণা; পূর্বশর্ত",
+  "s": [
+   "His argument rests on a false premise.",
+   "The premise of the film is that robots rule the earth.",
+   "If the premise is {dubious}, even a {cogent} conclusion cannot be trusted."
+  ],
+  "sbn": [
+   "তার যুক্তি একটা ভুল ভিত্তি-ধারণার (premise) ওপর দাঁড়িয়ে আছে।",
+   "ছবির মূল ধারণা (premise) হলো রোবটরা পৃথিবী শাসন করছে।",
+   "ভিত্তি-ধারণা (premise) সন্দেহজনক হলে জোরালো উপসংহারকেও বিশ্বাস করা যায় না।"
+  ],
+  "tip": "In logic: premises lead to a conclusion. Think 'pre' = comes first."
+ },
+ {
+  "id": "preponderance",
+  "word": "Preponderance",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "greater number, weight or importance",
+  "bn": "আধিক্য; প্রাধান্য",
+  "s": [
+   "There is a preponderance of girls in the class.",
+   "A preponderance of evidence pointed to the cook.",
+   "The {pervasive} preponderance of bad news left the public feeling {wary}."
+  ],
+  "sbn": [
+   "ক্লাসে মেয়েদের সংখ্যাধিক্য (preponderance) আছে।",
+   "প্রমাণের আধিক্য (preponderance) রাঁধুনির দিকেই ইঙ্গিত করছিল।",
+   "খারাপ খবরের সর্বব্যাপী আধিক্য (preponderance) জনগণকে সতর্ক করে তুলেছিল।"
+  ],
+  "tip": "Latin pondus = weight: weighing more than the rest."
+ },
+ {
+  "id": "prepossess",
+  "word": "Prepossess",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to influence or impress beforehand; to occupy the mind",
+  "bn": "আগেই মনে প্রভাব ফেলা; মন দখল করা",
+  "s": [
+   "Her smile will prepossess any interviewer.",
+   "A neat appearance can prepossess people in your favor.",
+   "His {lucid} manner and calm voice prepossess listeners before he even makes his case."
+  ],
+  "sbn": [
+   "তার হাসি যেকোনো সাক্ষাৎকারীর মন আগেই জয় করে (prepossess) নেবে।",
+   "পরিপাটি চেহারা মানুষকে আগেই আপনার পক্ষে প্রভাবিত (prepossess) করতে পারে।",
+   "তাঁর স্পষ্ট বলার ধরন ও শান্ত কণ্ঠ কথা শুরুর আগেই শ্রোতাদের মন জয় করে (prepossess) নেয়।"
+  ],
+  "tip": "Pre- before + possess: take over the mind beforehand (often a good first impression)."
+ },
+ {
+  "id": "prerogative",
+  "word": "Prerogative",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a special right or privilege of a person or group",
+  "bn": "বিশেষ অধিকার",
+  "s": [
+   "Choosing the team captain is the coach's prerogative.",
+   "Voting is a prerogative of every adult citizen.",
+   "The king guarded his royal prerogative and {disdained} any attempt to limit it."
+  ],
+  "sbn": [
+   "দলের অধিনায়ক বাছাই করা কোচের বিশেষ অধিকার (prerogative)।",
+   "ভোট দেওয়া প্রত্যেক প্রাপ্তবয়স্ক নাগরিকের বিশেষ অধিকার (prerogative)।",
+   "রাজা তাঁর রাজকীয় বিশেষাধিকার (prerogative) আঁকড়ে ধরে তা সীমিত করার যেকোনো চেষ্টাকে তুচ্ছ করতেন।"
+  ],
+  "tip": "Latin prae-rogare: 'asked first' - the group asked to vote first got special rights."
+ },
+ {
+  "id": "presage",
+  "word": "Presage",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to be a sign of something to come; to foretell",
+  "bn": "আগাম ইঙ্গিত দেওয়া; পূর্বাভাস দেওয়া",
+  "s": [
+   "Dark clouds presage a storm.",
+   "Many saw the early defeat as presaging a poor season.",
+   "The {sporadic} tremors seemed to presage a larger earthquake."
+  ],
+  "sbn": [
+   "কালো মেঘ ঝড়ের আগাম ইঙ্গিত দেয় (presage)।",
+   "অনেকে প্রথম দিকের হারকে একটা খারাপ মৌসুমের পূর্বাভাস (presaging) মনে করল।",
+   "ছাড়া-ছাড়া কম্পন বড় ভূমিকম্পের আগাম সংকেত (presage) বলে মনে হচ্ছিল।"
+  ],
+  "tip": "Pre- before + sage (wise): the wise see it coming."
+ },
+ {
+  "id": "presentiment",
+  "word": "Presentiment",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a feeling that something bad is about to happen",
+  "bn": "অশুভ পূর্বাভাস; মনের আশঙ্কা",
+  "s": [
+   "She had a presentiment that the trip would go wrong.",
+   "A strange presentiment kept him from boarding the old boat.",
+   "Filled with {trepidation}, he ignored the presentiment at his peril."
+  ],
+  "sbn": [
+   "তার মনে একটা আশঙ্কা (presentiment) ছিল যে ভ্রমণটা ভালো যাবে না।",
+   "এক অদ্ভুত অশুভ অনুভূতি (presentiment) তাকে পুরোনো নৌকায় উঠতে দিল না।",
+   "আতঙ্কে ভরা মনে সে সেই আশঙ্কাকে (presentiment) অবহেলা করে নিজেরই বিপদ ডেকে আনল।"
+  ],
+  "tip": "Pre- before + sentiment (feeling): a feeling beforehand."
+ },
+ {
+  "id": "presumably",
+  "word": "Presumably",
+  "src": "WS2",
+  "pos": "adverb",
+  "en": "used to say something is likely to be true",
+  "bn": "সম্ভবত; ধরে নেওয়া যায়",
+  "s": [
+   "He is late, so presumably the bus broke down.",
+   "The lights are off, so presumably nobody is home.",
+   "Presumably the committee will {scrutinize} the proposal before voting."
+  ],
+  "sbn": [
+   "সে দেরি করছে, তাই সম্ভবত (presumably) বাসটা বিকল হয়েছে।",
+   "বাতি নিভে আছে, তাই ধরে নেওয়া যায় (presumably) বাসায় কেউ নেই।",
+   "ভোটের আগে কমিটি সম্ভবত (presumably) প্রস্তাবটা খুঁটিয়ে দেখবে।"
+  ],
+  "tip": "Presume = take for granted; -ly makes it an adverb."
+ },
+ {
+  "id": "presuppose",
+  "word": "Presuppose",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to assume something is true before proving; to require as a condition",
+  "bn": "আগে থেকেই ধরে নেওয়া; পূর্বশর্ত হিসেবে দাবি করা",
+  "s": [
+   "Your question presupposes that I know the answer.",
+   "Learning calculus presupposes a firm grasp of algebra.",
+   "His plan presupposes that the {fickle} public will stay loyal, which is {dubious}."
+  ],
+  "sbn": [
+   "তোমার প্রশ্ন ধরে নেয় (presupposes) যে আমি উত্তর জানি।",
+   "ক্যালকুলাস শেখা বীজগণিতে ভালো দখলকে পূর্বশর্ত হিসেবে ধরে (presupposes)।",
+   "তাঁর পরিকল্পনা ধরে নেয় (presupposes) যে চঞ্চলমতি জনগণ অনুগত থাকবে, যা সন্দেহজনক।"
+  ],
+  "tip": "Pre- before + suppose: suppose beforehand."
+ },
+ {
+  "id": "prevail",
+  "word": "Prevail",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to win or be most common; to persuade",
+  "bn": "জয়ী হওয়া; প্রচলিত থাকা",
+  "s": [
+   "We hope good sense will prevail.",
+   "In the end, the team prevailed over its rivals.",
+   "Despite {arduous} obstacles, justice prevailed."
+  ],
+  "sbn": [
+   "আমরা আশা করি সুবুদ্ধিই জয়ী হবে (prevail)।",
+   "শেষে দলটা প্রতিদ্বন্দ্বীদের হারিয়ে জয়ী হলো (prevailed)।",
+   "কঠিন বাধা সত্ত্বেও ন্যায়বিচারই জয়ী হলো (prevailed)।"
+  ],
+  "tip": "Latin valere = be strong: the strong one prevails."
+ },
+ {
+  "id": "primal",
+  "word": "Primal",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "very basic; from the earliest time",
+  "bn": "আদিম; মৌলিক",
+  "s": [
+   "Fear is a primal emotion.",
+   "The film shows the primal struggle of humans against nature.",
+   "The crowd's {pervasive} rage seemed primal, almost beyond reason."
+  ],
+  "sbn": [
+   "ভয় একটা আদিম (primal) অনুভূতি।",
+   "ছবিটা প্রকৃতির বিরুদ্ধে মানুষের আদিম (primal) সংগ্রাম দেখায়।",
+   "জনতার সর্বব্যাপী ক্রোধ আদিম (primal) মনে হচ্ছিল, প্রায় যুক্তির বাইরে।"
+  ],
+  "tip": "Latin primus = first: the first, most basic."
+ },
+ {
+  "id": "privation",
+  "word": "Privation",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "lack of basic needs; hardship",
+  "bn": "অভাব; কষ্ট",
+  "s": [
+   "The refugees endured cold and privation.",
+   "Years of war brought privation to the village.",
+   "He lived in {austere} privation, yet never complained."
+  ],
+  "sbn": [
+   "শরণার্থীরা শীত ও অভাব (privation) সহ্য করেছে।",
+   "বছরের পর বছর যুদ্ধ গ্রামে অভাব (privation) এনে দিল।",
+   "সে কঠোর অভাবে (privation) দিন কাটাত, তবু কখনো অভিযোগ করেনি।"
+  ],
+  "tip": "Latin privare = deprive: you are deprived of necessities."
+ },
+ {
+  "id": "proclaim",
+  "word": "Proclaim",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to announce publicly and officially",
+  "bn": "ঘোষণা করা",
+  "s": [
+   "The king will proclaim a holiday.",
+   "The sign proclaimed the shop open again.",
+   "The leader loudly proclaimed his innocence, but his {conspicuous} nervousness suggested otherwise."
+  ],
+  "sbn": [
+   "রাজা ছুটি ঘোষণা করবেন (proclaim)।",
+   "সাইনবোর্ড দোকান আবার খোলার ঘোষণা (proclaimed) দিল।",
+   "নেতা জোর গলায় নিজের নির্দোষ ঘোষণা (proclaimed) করলেন, কিন্তু তাঁর চোখে পড়ার মতো অস্থিরতা অন্য কথা বলছিল।"
+  ],
+  "tip": "Latin pro- forth + clamare shout: shout forth (cf. exclaim)."
+ },
+ {
+  "id": "procure",
+  "word": "Procure",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to obtain, especially with effort",
+  "bn": "জোগাড় করা; সংগ্রহ করা",
+  "s": [
+   "He managed to procure two tickets.",
+   "The library procures new books every month.",
+   "It was {arduous} to procure clean water in the flooded town."
+  ],
+  "sbn": [
+   "সে দুটো টিকিট জোগাড় (procure) করতে পারল।",
+   "লাইব্রেরি প্রতি মাসে নতুন বই সংগ্রহ (procures) করে।",
+   "বন্যাকবলিত শহরে বিশুদ্ধ পানি জোগাড় (procure) করা ছিল কষ্টসাধ্য।"
+  ],
+  "tip": "Latin pro- + curare (care for): take care to get it."
+ },
+ {
+  "id": "prodigious",
+  "word": "Prodigious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "remarkably great in size or amount",
+  "bn": "বিশাল; অসাধারণ",
+  "s": [
+   "He has a prodigious appetite.",
+   "The team put in a prodigious amount of work.",
+   "Her {ephemeral} fame did not diminish her prodigious talent."
+  ],
+  "sbn": [
+   "তার খাওয়ার ক্ষুধা বিশাল (prodigious)।",
+   "দলটা বিপুল (prodigious) পরিমাণ পরিশ্রম করল।",
+   "তাঁর ক্ষণস্থায়ী খ্যাতি তাঁর অসাধারণ (prodigious) প্রতিভাকে কমাতে পারেনি।"
+  ],
+  "tip": "Related to 'prodigy': something amazing."
+ },
+ {
+  "id": "prodigy",
+  "word": "Prodigy",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a young person with exceptional talent",
+  "bn": "প্রতিভাবান শিশু; বিস্ময়কর প্রতিভা",
+  "s": [
+   "The piano prodigy played at age five.",
+   "Mozart was a musical prodigy who composed as a child.",
+   "The chess prodigy, though {reticent} in interviews, was {audacious} at the board."
+  ],
+  "sbn": [
+   "পিয়ানো-প্রতিভা (prodigy) শিশুটি পাঁচ বছর বয়সে বাজিয়েছে।",
+   "মোজার্ট ছিলেন সংগীত-প্রতিভা (prodigy) যিনি শৈশবেই সুর রচনা করতেন।",
+   "দাবাড়ু প্রতিভা (prodigy) সাক্ষাৎকারে স্বল্পভাষী হলেও বোর্ডে ছিল দুঃসাহসী।"
+  ],
+  "tip": "Latin prodigium = omen/wonder: a wonder of a child."
+ },
+ {
+  "id": "profane",
+  "word": "Profane",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "not respectful of sacred things; vulgar",
+  "bn": "অপবিত্র; ধর্মনিন্দাকর",
+  "s": [
+   "He was scolded for using profane language.",
+   "It is profane to shout inside a place of worship.",
+   "The comedian's {audacious} and profane jokes shocked the {pious} audience."
+  ],
+  "sbn": [
+   "অশ্লীল (profane) ভাষা ব্যবহারের জন্য তাকে বকা হলো।",
+   "উপাসনালয়ের ভেতরে চিৎকার করা অপবিত্র (profane) কাজ।",
+   "কৌতুকশিল্পীর দুঃসাহসী ও অশ্লীল (profane) রসিকতা ধার্মিক দর্শকদের চমকে দিল।"
+  ],
+  "tip": "Latin pro- before + fanum temple: outside the temple, not sacred."
+ },
+ {
+  "id": "profess",
+  "word": "Profess",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to declare openly; to claim",
+  "bn": "প্রকাশ্যে ঘোষণা করা; দাবি করা",
+  "s": [
+   "She professes to love her job.",
+   "He professed his loyalty to the king.",
+   "Though he professed {diffidence}, his {ostentatious} lifestyle said otherwise."
+  ],
+  "sbn": [
+   "সে বলে (professes) তার চাকরিটা সে ভালোবাসে।",
+   "সে রাজার প্রতি তার আনুগত্য ঘোষণা (professed) করল।",
+   "বিনয়ের কথা মুখে বললেও (professed) তার জাঁকজমকপূর্ণ জীবনযাপন অন্য কথা বলত।"
+  ],
+  "tip": "Latin profiteri = declare openly (as in 'profession' of faith)."
+ },
+ {
+  "id": "proficient",
+  "word": "Proficient",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "skilled; good at something",
+  "bn": "দক্ষ; পারদর্শী",
+  "s": [
+   "She is proficient in English.",
+   "After months of practice, he became proficient at swimming.",
+   "A {meticulous} and proficient surgeon, she rarely made mistakes."
+  ],
+  "sbn": [
+   "সে ইংরেজিতে দক্ষ (proficient)।",
+   "কয়েক মাস অনুশীলনের পর সে সাঁতারে পারদর্শী (proficient) হয়ে উঠল।",
+   "নিখুঁত ও দক্ষ (proficient) সার্জন হিসেবে তিনি খুব কমই ভুল করতেন।"
+  ],
+  "tip": "Latin proficere = make progress: someone who has progressed."
+ },
+ {
+  "id": "profligate",
+  "word": "Profligate",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "wasteful with money; immoral",
+  "bn": "অমিতব্যয়ী; উচ্ছৃঙ্খল",
+  "s": [
+   "The profligate heir spent his fortune in a year.",
+   "His profligate habits left the family poor.",
+   "Unlike his {frugal} father, he was profligate and {lavish} with every coin."
+  ],
+  "sbn": [
+   "অমিতব্যয়ী (profligate) উত্তরাধিকারী এক বছরেই সম্পদ উড়িয়ে দিল।",
+   "তার অমিতব্যয়ী (profligate) অভ্যাস পরিবারটাকে গরিব করে দিল।",
+   "মিতব্যয়ী বাবার উল্টো, সে ছিল অমিতব্যয়ী (profligate), প্রতিটা পয়সা দেদার খরচ করত।"
+  ],
+  "tip": "Sounds like 'flog' + 'gate': money flows out the gate."
+ },
+ {
+  "id": "profuse",
+  "word": "Profuse",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "given or flowing in large amounts",
+  "bn": "প্রচুর; অজস্র",
+  "s": [
+   "She offered profuse thanks for the gift.",
+   "The wound caused profuse bleeding.",
+   "He gave {contrite} and profuse apologies, hoping to {placate} his angry friend."
+  ],
+  "sbn": [
+   "সে উপহারের জন্য অজস্র (profuse) ধন্যবাদ জানাল।",
+   "ক্ষত থেকে প্রচুর (profuse) রক্ত পড়ছিল।",
+   "সে অনুতপ্ত হয়ে অজস্র (profuse) ক্ষমা চাইল, যাতে রাগী বন্ধুকে শান্ত করা যায়।"
+  ],
+  "tip": "Latin fundere = pour: pouring out freely."
+ },
+ {
+  "id": "progeny",
+  "word": "Progeny",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "children or offspring",
+  "bn": "সন্তানসন্ততি; বংশধর",
+  "s": [
+   "The old man was proud of his progeny.",
+   "The lion protects its progeny fiercely.",
+   "The ancient oak produced {prolific} progeny, and young trees now cover the hill."
+  ],
+  "sbn": [
+   "বৃদ্ধ লোকটি তার সন্তানসন্ততি (progeny) নিয়ে গর্বিত ছিলেন।",
+   "সিংহ তার শাবকদের (progeny) প্রচণ্ডভাবে রক্ষা করে।",
+   "প্রাচীন ওকগাছটি প্রচুর বংশধর (progeny) জন্ম দিয়েছে, আর এখন পাহাড় জুড়ে তরুণ গাছ।"
+  ],
+  "tip": "Latin gignere = beget: those begotten."
+ },
+ {
+  "id": "proletariat",
+  "word": "Proletariat",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the working class",
+  "bn": "শ্রমজীবী শ্রেণি; সর্বহারা",
+  "s": [
+   "The proletariat worked long hours in the factories.",
+   "Marx wrote about the struggle of the proletariat against owners.",
+   "The party claimed to speak for the proletariat, yet its leaders lived in {lavish} homes."
+  ],
+  "sbn": [
+   "শ্রমজীবী শ্রেণি (proletariat) কারখানায় দীর্ঘ সময় কাজ করত।",
+   "মার্ক্স মালিকদের বিরুদ্ধে শ্রমিক শ্রেণির (proletariat) সংগ্রাম নিয়ে লিখেছিলেন।",
+   "দলটি দাবি করত তারা শ্রমজীবীদের (proletariat) হয়ে কথা বলে, অথচ নেতারা থাকতেন বিলাসবহুল বাড়িতে।"
+  ],
+  "tip": "Latin proles = offspring: in Rome, the poor whose 'wealth' was only children."
+ },
+ {
+  "id": "prolific",
+  "word": "Prolific",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "producing a lot; very productive",
+  "bn": "প্রচুর ফলনশীল; অনেক সৃষ্টিকারী",
+  "s": [
+   "She is a prolific writer of children's books.",
+   "The prolific artist painted nearly a thousand works.",
+   "Though {reticent} in public, the prolific novelist published a book every year."
+  ],
+  "sbn": [
+   "তিনি শিশুতোষ বইয়ের একজন অসম্ভব লিখিয়ে (prolific) লেখিকা।",
+   "প্রচুর সৃষ্টিশীল (prolific) শিল্পী প্রায় হাজারখানেক ছবি এঁকেছেন।",
+   "জনসমক্ষে স্বল্পভাষী হলেও এই অক্লান্ত লিখিয়ে (prolific) ঔপন্যাসিক প্রতি বছর একটা বই বের করতেন।"
+  ],
+  "tip": "Latin proles offspring + facere make: makes many offspring."
+ },
+ {
+  "id": "promulgate",
+  "word": "Promulgate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to announce a law or idea publicly; to spread widely",
+  "bn": "জারি করা; প্রচার করা",
+  "s": [
+   "The government will promulgate the new law today.",
+   "Teachers worked to promulgate the idea of healthy eating.",
+   "The regime used radio to promulgate its {dogmatic} ideology across the country."
+  ],
+  "sbn": [
+   "সরকার আজ নতুন আইনটি জারি (promulgate) করবে।",
+   "শিক্ষকরা স্বাস্থ্যকর খাবারের ধারণা প্রচার (promulgate) করতে কাজ করলেন।",
+   "শাসকগোষ্ঠী রেডিও ব্যবহার করে সারা দেশে তাদের গোঁড়া আদর্শ প্রচার (promulgate) করত।"
+  ],
+  "tip": "Think 'pro-MULL-gate': mull it over, then open the gate to the public."
+ },
+ {
+  "id": "propagate",
+  "word": "Propagate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to spread; to breed or multiply",
+  "bn": "ছড়িয়ে দেওয়া; বংশবৃদ্ধি করা",
+  "s": [
+   "Farmers propagate plants from small cuttings.",
+   "Rumors propagate quickly on social media.",
+   "The cult sought to propagate its beliefs among the {gullible}."
+  ],
+  "sbn": [
+   "কৃষকরা ছোট কলম থেকে গাছের বংশবিস্তার (propagate) করে।",
+   "সোশ্যাল মিডিয়ায় গুজব দ্রুত ছড়ায় (propagate)।",
+   "গোষ্ঠীটি সহজবিশ্বাসী মানুষদের মধ্যে নিজেদের মতবাদ ছড়িয়ে (propagate) দিতে চাইত।"
+  ],
+  "tip": "Latin propago = a shoot of a plant: to spread shoots."
+ },
+ {
+  "id": "propitious",
+  "word": "Propitious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "favorable; giving good chances",
+  "bn": "অনুকূল; শুভ",
+  "s": [
+   "It was a propitious day to start the business.",
+   "The weather was propitious for the picnic.",
+   "Investors saw the {volatile} market as a less than propitious moment to buy."
+  ],
+  "sbn": [
+   "ব্যবসা শুরুর জন্য সেটা ছিল শুভ (propitious) দিন।",
+   "পিকনিকের জন্য আবহাওয়া ছিল অনুকূল (propitious)।",
+   "বিনিয়োগকারীরা অস্থির বাজারকে কেনার জন্য অনুকূল (propitious) সময় বলে মনে করল না।"
+  ],
+  "tip": "Latin propitius = favorable; think 'pro' (for) = in your favor."
+ },
+ {
+  "id": "proponent",
+  "word": "Proponent",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a person who supports an idea or cause",
+  "bn": "সমর্থক; প্রবক্তা",
+  "s": [
+   "She is a strong proponent of free education.",
+   "Proponents of the plan say it will save money.",
+   "The senator, a {tenacious} proponent of reform, refused to {placate} his critics."
+  ],
+  "sbn": [
+   "সে বিনা বেতনের শিক্ষার একজন জোরালো সমর্থক (proponent)।",
+   "পরিকল্পনার সমর্থকরা (proponents) বলছেন এতে অর্থ সাশ্রয় হবে।",
+   "সংস্কারের নাছোড় প্রবক্তা (proponent) সিনেটর সমালোচকদের শান্ত করতে রাজি হলেন না।"
+  ],
+  "tip": "Pro- (for) + ponent (put forward): one who puts an idea forward; opposite: opponent."
+ },
+ {
+  "id": "propound",
+  "word": "Propound",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to put forward an idea for consideration",
+  "bn": "প্রস্তাব বা তত্ত্ব পেশ করা",
+  "s": [
+   "The scientist will propound a new theory.",
+   "He propounded a plan to clean the river.",
+   "Einstein propounded a {subtle} yet revolutionary view of time and space."
+  ],
+  "sbn": [
+   "বিজ্ঞানী একটা নতুন তত্ত্ব পেশ (propound) করবেন।",
+   "সে নদী পরিষ্কারের একটা পরিকল্পনা পেশ (propounded) করল।",
+   "আইনস্টাইন সময় ও স্থান নিয়ে এক সূক্ষ্ম অথচ বিপ্লবী ধারণা পেশ (propounded) করেছিলেন।"
+  ],
+  "tip": "Related to 'propose' and 'expound': put forward."
+ },
+ {
+  "id": "proprietary",
+  "word": "Proprietary",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "owned by a company or person; held as property",
+  "bn": "মালিকানাধীন; স্বত্বাধিকারী",
+  "s": [
+   "The recipe is a proprietary secret.",
+   "The firm keeps its software code proprietary.",
+   "The company guarded its proprietary technology, wary of every {ostentatious} visitor from rivals."
+  ],
+  "sbn": [
+   "রেসিপিটা একটা মালিকানাধীন (proprietary) গোপন বিষয়।",
+   "প্রতিষ্ঠানটি তাদের সফটওয়্যারের কোড নিজস্ব মালিকানায় (proprietary) রাখে।",
+   "কোম্পানি তাদের মালিকানাধীন (proprietary) প্রযুক্তি আগলে রাখত, প্রতিদ্বন্দ্বীদের প্রতিটি আগন্তুককে সন্দেহ করে।"
+  ],
+  "tip": "Proprietor = owner; proprietary = belonging to an owner."
+ },
+ {
+  "id": "prosaic",
+  "word": "Prosaic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "dull and ordinary; lacking imagination",
+  "bn": "নিরস; সাদামাটা",
+  "s": [
+   "He has a prosaic office job.",
+   "Her prosaic speech put the audience to sleep.",
+   "The poet turned {mundane} chores into art, while critics found other writers' work prosaic."
+  ],
+  "sbn": [
+   "তার চাকরিটা নিরস (prosaic) অফিসের কাজ।",
+   "তার একঘেয়ে (prosaic) বক্তৃতা শ্রোতাদের ঘুম পাড়িয়ে দিল।",
+   "কবি সাধারণ কাজকর্মকে শিল্পে পরিণত করতেন, আর সমালোচকরা অন্য লেখকদের লেখাকে নিরস (prosaic) মনে করতেন।"
+  ],
+  "tip": "Prose (plain writing) vs poetry: prosaic = plain like prose."
+ },
+ {
+  "id": "proselytize",
+  "word": "Proselytize",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to try to convert people to a belief or cause",
+  "bn": "ধর্মান্তরিত করার চেষ্টা করা; মতে টানার চেষ্টা করা",
+  "s": [
+   "They proselytize door to door.",
+   "He proselytized for his diet among all his friends.",
+   "The {zealous} missionary proselytized in remote villages for years."
+  ],
+  "sbn": [
+   "তারা বাড়ি বাড়ি গিয়ে নিজেদের মতে টানার চেষ্টা (proselytize) করে।",
+   "সে তার সব বন্ধুর মধ্যে নিজের ডায়েটের পক্ষে প্রচার (proselytized) চালাল।",
+   "উদ্যমী ধর্মপ্রচারক বছরের পর বছর প্রত্যন্ত গ্রামে মানুষকে নিজের ধর্মে টানার চেষ্টা (proselytized) করেছেন।"
+  ],
+  "tip": "Greek proselytos = newcomer, convert."
+ },
+ {
+  "id": "protagonist",
+  "word": "Protagonist",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the main character in a story",
+  "bn": "প্রধান চরিত্র; নায়ক",
+  "s": [
+   "The protagonist of the novel is a young girl.",
+   "We follow the protagonist through every twist of the plot.",
+   "The flawed protagonist was a {conspicuous} outsider, whose {pragmatic} choices drove the story."
+  ],
+  "sbn": [
+   "উপন্যাসের প্রধান চরিত্র (protagonist) একটি অল্পবয়সী মেয়ে।",
+   "আমরা গল্পের প্রতিটি মোড়ে নায়ককে (protagonist) অনুসরণ করি।",
+   "ত্রুটিপূর্ণ প্রধান চরিত্রটি (protagonist) ছিল চোখে পড়ার মতো বহিরাগত, যার বাস্তববাদী সিদ্ধান্তগুলো গল্প এগিয়ে নিত।"
+  ],
+  "tip": "Greek protos first + agonistes actor: the first actor."
+ },
+ {
+  "id": "protocol",
+  "word": "Protocol",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an official set of rules or procedures",
+  "bn": "রীতিনীতি; নিয়ম-কানুন",
+  "s": [
+   "Follow the safety protocol in the lab.",
+   "Diplomats must observe strict protocol at state dinners.",
+   "Breaking {austere} protocol, the visitor greeted the queen first."
+  ],
+  "sbn": [
+   "ল্যাবে নিরাপত্তার নিয়ম (protocol) মেনে চলো।",
+   "রাষ্ট্রীয় ভোজে কূটনীতিকদের কঠোর রীতিনীতি (protocol) মানতে হয়।",
+   "কঠোর রীতি (protocol) ভেঙে অতিথি আগে রানিকে অভিবাদন জানালেন।"
+  ],
+  "tip": "Also in computing: a protocol is rules for talking between machines."
+ },
+ {
+  "id": "protract",
+  "word": "Protract",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to make something last longer",
+  "bn": "দীর্ঘায়িত করা; টেনে লম্বা করা",
+  "s": [
+   "Do not protract the meeting needlessly.",
+   "Delays protracted the trial for years.",
+   "His {verbose} replies only protracted the debate."
+  ],
+  "sbn": [
+   "সভাটাকে অকারণে দীর্ঘায়িত (protract) কোরো না।",
+   "দেরির কারণে মামলা বছরের পর বছর দীর্ঘায়িত (protracted) হলো।",
+   "তাঁর বাগাড়ম্বরপূর্ণ উত্তর বিতর্ককে শুধু টেনে লম্বা (protracted) করল।"
+  ],
+  "tip": "Latin pro forward + trahere drag: drag forward/out."
+ },
+ {
+  "id": "provident",
+  "word": "Provident",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "careful in planning for the future",
+  "bn": "দূরদর্শী; ভবিষ্যৎ-সচেতন",
+  "s": [
+   "A provident farmer stores grain for lean years.",
+   "She was provident and saved money every month.",
+   "Unlike his {fickle} brother, he was {frugal} and provident."
+  ],
+  "sbn": [
+   "দূরদর্শী (provident) কৃষক অভাবের বছরের জন্য শস্য জমিয়ে রাখে।",
+   "সে ছিল দূরদর্শী (provident) এবং প্রতি মাসে টাকা জমাত।",
+   "চঞ্চলমতি ভাইয়ের উল্টো, সে ছিল মিতব্যয়ী ও দূরদর্শী (provident)।"
+  ],
+  "tip": "Latin providere = foresee: same root as 'provide' and 'providence'."
+ },
+ {
+  "id": "provincial",
+  "word": "Provincial",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "narrow-minded or unsophisticated; of a province",
+  "bn": "সংকীর্ণমনা; প্রাদেশিক",
+  "s": [
+   "He had a provincial view of the world.",
+   "The provincial government will build a new road.",
+   "Her {superficial} knowledge of other cultures made her views seem provincial."
+  ],
+  "sbn": [
+   "দুনিয়া সম্পর্কে তার দৃষ্টিভঙ্গি সংকীর্ণ (provincial)।",
+   "প্রাদেশিক (provincial) সরকার একটা নতুন রাস্তা বানাবে।",
+   "অন্য সংস্কৃতি সম্পর্কে তার ভাসা-ভাসা জ্ঞান তার মতামতকে সংকীর্ণ (provincial) করে তুলেছিল।"
+  ],
+  "tip": "Province = far from the capital, so 'provincial' can mean unsophisticated."
+ },
+ {
+  "id": "provisional",
+  "word": "Provisional",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "temporary; arranged for now until changed",
+  "bn": "অস্থায়ী; সাময়িক",
+  "s": [
+   "He got a provisional license first.",
+   "The provisional government ruled until elections.",
+   "The agreement is merely provisional, given the {volatile} state of the talks."
+  ],
+  "sbn": [
+   "সে প্রথমে একটা অস্থায়ী (provisional) লাইসেন্স পেল।",
+   "নির্বাচন পর্যন্ত অন্তর্বর্তী (provisional) সরকার শাসন করল।",
+   "আলোচনার অস্থির অবস্থার কারণে চুক্তিটা কেবল সাময়িক (provisional)।"
+  ],
+  "tip": "Provision = arrangement made for now."
+ },
+ {
+  "id": "provocation",
+  "word": "Provocation",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "something that deliberately makes someone angry or reacts",
+  "bn": "উসকানি",
+  "s": [
+   "He hit back without any provocation.",
+   "The protesters did not respond to the provocation.",
+   "Despite repeated provocation, the officer stayed calm and tried to {pacify} the crowd."
+  ],
+  "sbn": [
+   "কোনো উসকানি (provocation) ছাড়াই সে পাল্টা মারল।",
+   "বিক্ষোভকারীরা উসকানির (provocation) জবাব দেয়নি।",
+   "বারবার উসকানি (provocation) সত্ত্বেও কর্মকর্তা শান্ত থেকে জনতাকে শান্ত করার চেষ্টা করলেন।"
+  ],
+  "tip": "Latin provocare = call forth: calling forth anger."
+ },
+ {
+  "id": "prowess",
+  "word": "Prowess",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "great skill or ability",
+  "bn": "দক্ষতা; বীরত্ব",
+  "s": [
+   "The player showed great prowess on the field.",
+   "Her prowess in math won her a scholarship.",
+   "His {audacious} military prowess earned him fame, though his {diffidence} was less known."
+  ],
+  "sbn": [
+   "খেলোয়াড়টি মাঠে দারুণ দক্ষতা (prowess) দেখাল।",
+   "গণিতে তার দক্ষতা (prowess) তাকে বৃত্তি এনে দিল।",
+   "তাঁর দুঃসাহসী সামরিক বীরত্ব (prowess) তাঁকে খ্যাতি দিয়েছিল।"
+  ],
+  "tip": "Old French prou = brave/valiant."
+ },
+ {
+  "id": "proximity",
+  "word": "Proximity",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "nearness in space or time",
+  "bn": "নৈকট্য; সান্নিধ্য",
+  "s": [
+   "The house is in close proximity to the school.",
+   "Proximity to the river makes the land fertile.",
+   "The {pervasive} noise was due to the factory's proximity to our homes."
+  ],
+  "sbn": [
+   "বাড়িটা স্কুলের খুব কাছেই (proximity)।",
+   "নদীর নৈকট্য (proximity) জমিকে উর্বর করে।",
+   "কারখানাটা আমাদের বাড়ির কাছে (proximity) হওয়ায় সর্বব্যাপী শব্দ হতো।"
+  ],
+  "tip": "Latin proximus = nearest; think 'approximate'."
+ },
+ {
+  "id": "prudent",
+  "word": "Prudent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "careful and sensible in planning",
+  "bn": "বিচক্ষণ; সতর্ক",
+  "s": [
+   "It is prudent to save some money.",
+   "A prudent driver slows down in the rain.",
+   "The {frugal} and prudent investor avoided {volatile} stocks."
+  ],
+  "sbn": [
+   "কিছু টাকা জমানো বিচক্ষণের (prudent) কাজ।",
+   "বিচক্ষণ (prudent) চালক বৃষ্টিতে গাড়ি ধীর করে।",
+   "মিতব্যয়ী ও বিচক্ষণ (prudent) বিনিয়োগকারী অস্থির শেয়ার এড়িয়ে চলতেন।"
+  ],
+  "tip": "Latin providens = seeing ahead: wise because you see ahead."
+ },
+ {
+  "id": "prurient",
+  "word": "Prurient",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "having an unhealthy interest in sexual matters",
+  "bn": "কুরুচিপূর্ণ কৌতূহলী",
+  "s": [
+   "The tabloid fed readers' prurient curiosity.",
+   "The film was criticized for its prurient content.",
+   "The {banal} but prurient gossip column attracted a {gullible} readership."
+  ],
+  "sbn": [
+   "ট্যাবলয়েডটি পাঠকদের কুরুচিপূর্ণ (prurient) কৌতূহল মেটাত।",
+   "ছবিটি তার কুরুচিপূর্ণ (prurient) বিষয়বস্তুর জন্য সমালোচিত হলো।",
+   "সাদামাটা অথচ কুরুচিপূর্ণ (prurient) গসিপ কলামটা সহজবিশ্বাসী পাঠকদের টানত।"
+  ],
+  "tip": "Latin prurire = to itch: an itching interest."
+ },
+ {
+  "id": "pseudonym",
+  "word": "Pseudonym",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a false name, especially used by a writer",
+  "bn": "ছদ্মনাম",
+  "s": [
+   "The author wrote under a pseudonym.",
+   "She used a pseudonym online to protect her privacy.",
+   "The {obscure} writer chose a pseudonym so no one could {scrutinize} his private life."
+  ],
+  "sbn": [
+   "লেখক ছদ্মনামে (pseudonym) লিখতেন।",
+   "গোপনীয়তা রক্ষায় সে অনলাইনে ছদ্মনাম (pseudonym) ব্যবহার করত।",
+   "অখ্যাত লেখক ছদ্মনাম (pseudonym) বেছে নিলেন যাতে কেউ তাঁর ব্যক্তিগত জীবন খুঁটিয়ে না দেখে।"
+  ],
+  "tip": "Greek pseudes = false + onyma = name: false name."
+ },
+ {
+  "id": "psyche",
+  "word": "Psyche",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the human mind or soul",
+  "bn": "মন; মানসিকতা",
+  "s": [
+   "Fear can damage the human psyche.",
+   "The war left a deep scar on the nation's psyche.",
+   "The novel explores the {subtle} workings of a troubled psyche."
+  ],
+  "sbn": [
+   "ভয় মানুষের মনের (psyche) ক্ষতি করতে পারে।",
+   "যুদ্ধ জাতির মানসিকতায় (psyche) গভীর দাগ রেখে গেছে।",
+   "উপন্যাসটা এক বিপর্যস্ত মনের (psyche) সূক্ষ্ম কার্যকলাপ তুলে ধরে।"
+  ],
+  "tip": "Greek psyche = soul; same root as 'psychology'."
+ },
+ {
+  "id": "pummel",
+  "word": "Pummel",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to hit repeatedly with fists; to defeat badly",
+  "bn": "ঘুষি মারতে থাকা; ধুনে দেওয়া",
+  "s": [
+   "The boxer began to pummel his opponent.",
+   "Waves pummeled the small boat all night.",
+   "Critics continued to pummel the film, and the studio could not {mitigate} the damage."
+  ],
+  "sbn": [
+   "বক্সার প্রতিপক্ষকে ঘুষি মারতে (pummel) শুরু করল।",
+   "ঢেউ সারা রাত ছোট নৌকাটাকে আছড়ে মারল (pummeled)।",
+   "সমালোচকরা ছবিটাকে ধুনে (pummel) চললেন, আর স্টুডিও ক্ষতি কমাতে পারল না।"
+  ],
+  "tip": "Linked to 'pommel' (knob of a sword): hit with it."
+ },
+ {
+  "id": "punctilious",
+  "word": "Punctilious",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "very careful about details and rules",
+  "bn": "খুঁতখুঁতে; নিয়মের প্রতি অতি যত্নবান",
+  "s": [
+   "The punctilious clerk checked every form twice.",
+   "She is punctilious about arriving on time.",
+   "A {meticulous} and punctilious scholar, he checked each footnote for errors."
+  ],
+  "sbn": [
+   "খুঁতখুঁতে (punctilious) কেরানি প্রতিটা ফর্ম দুবার দেখল।",
+   "সময়মতো পৌঁছানোর ব্যাপারে সে অত্যন্ত যত্নবান (punctilious)।",
+   "নিখুঁত ও খুঁতখুঁতে (punctilious) পণ্ডিত প্রতিটা পাদটীকায় ভুল খুঁজে দেখতেন।"
+  ],
+  "tip": "Italian puntiglio = small point: attention to tiny points."
+ },
+ {
+  "id": "pundit",
+  "word": "Pundit",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an expert who gives opinions in public",
+  "bn": "বিশেষজ্ঞ; পণ্ডিত-ভাষ্যকার",
+  "s": [
+   "A TV pundit analyzed the election.",
+   "The pundits predicted our team would lose.",
+   "The pundit, {dogmatic} in tone, was wrong about nearly every {sporadic} poll result."
+  ],
+  "sbn": [
+   "এক টিভি বিশেষজ্ঞ (pundit) নির্বাচন বিশ্লেষণ করলেন।",
+   "বিশ্লেষকরা (pundits) ভবিষ্যদ্বাণী করেছিলেন আমাদের দল হারবে।",
+   "গোঁড়া সুরে কথা বলা বিশ্লেষক (pundit) প্রায় প্রতিটা ছাড়া-ছাড়া জরিপের ফলাফল নিয়েই ভুল ছিলেন।"
+  ],
+  "tip": "From Hindi/Sanskrit pandit = learned person."
+ },
+ {
+  "id": "punitive",
+  "word": "Punitive",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "intended as punishment",
+  "bn": "শাস্তিমূলক",
+  "s": [
+   "The court imposed punitive damages.",
+   "The country faced punitive taxes on its exports.",
+   "Parents who rely on {austere} punitive measures may only {foster} fear, not respect."
+  ],
+  "sbn": [
+   "আদালত শাস্তিমূলক (punitive) ক্ষতিপূরণ আরোপ করল।",
+   "দেশটা রপ্তানির ওপর শাস্তিমূলক (punitive) শুল্কের মুখে পড়ল।",
+   "যেসব অভিভাবক কঠোর শাস্তিমূলক (punitive) ব্যবস্থার ওপর নির্ভর করেন, তাঁরা শ্রদ্ধা নয়, শুধু ভয়ই গড়ে তোলেন।"
+  ],
+  "tip": "Same root as 'punish'."
+ },
+ {
+  "id": "purblind",
+  "word": "Purblind",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "partly blind; slow to understand",
+  "bn": "প্রায় অন্ধ; স্থূলবুদ্ধি",
+  "s": [
+   "The purblind old man squinted at the sign.",
+   "Their purblind leaders ignored all the warnings.",
+   "The {dogmatic} and purblind committee failed to see the {conspicuous} danger."
+  ],
+  "sbn": [
+   "প্রায়-অন্ধ (purblind) বৃদ্ধ লোকটি চোখ কুঁচকে সাইনবোর্ড দেখল।",
+   "তাদের স্থূলবুদ্ধি (purblind) নেতারা সব সতর্কবার্তা উপেক্ষা করলেন।",
+   "গোঁড়া ও স্থূলদৃষ্টি (purblind) কমিটি চোখে পড়ার মতো বিপদটাও দেখতে ব্যর্থ হলো।"
+  ],
+  "tip": "Pure + blind (once 'wholly blind'): now means dim-sighted or dim-witted."
+ },
+ {
+  "id": "puritanical",
+  "word": "Puritanical",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "very strict about morals; disapproving of pleasure",
+  "bn": "কঠোর নীতিবাগীশ",
+  "s": [
+   "His puritanical parents banned all music.",
+   "The town had a puritanical attitude to dancing.",
+   "The {austere} and puritanical headmaster would {deride} any hint of fun."
+  ],
+  "sbn": [
+   "তার নীতিবাগীশ (puritanical) বাবা-মা সব গান নিষিদ্ধ করেছিলেন।",
+   "শহরটার নাচের প্রতি মনোভাব ছিল অত্যন্ত কঠোর (puritanical)।",
+   "কঠোর ও নীতিবাগীশ (puritanical) প্রধান শিক্ষক আনন্দের সামান্য আভাসকেও বিদ্রূপ করতেন।"
+  ],
+  "tip": "From the Puritans, strict English Protestants."
+ },
+ {
+  "id": "purported",
+  "word": "Purported",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "claimed or supposed, often doubtfully",
+  "bn": "কথিত; তথাকথিত",
+  "s": [
+   "The purported thief denied everything.",
+   "The purported expert gave poor advice.",
+   "The {dubious} claims of the purported cure were quickly {scrutinized} by doctors."
+  ],
+  "sbn": [
+   "কথিত (purported) চোর সবকিছু অস্বীকার করল।",
+   "তথাকথিত (purported) বিশেষজ্ঞ খারাপ পরামর্শ দিলেন।",
+   "কথিত (purported) প্রতিষেধকের সন্দেহজনক দাবিগুলো ডাক্তাররা দ্রুত খুঁটিয়ে দেখলেন।"
+  ],
+  "tip": "Latin pro- forth + portare carry: 'carries' a claim without proof."
+ },
+ {
+  "id": "putative",
+  "word": "Putative",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "generally supposed or believed to be so",
+  "bn": "অনুমিত; বলে ধরা হয় এমন",
+  "s": [
+   "The putative leader of the gang was arrested.",
+   "The putative benefits of the drug were never proven.",
+   "The study {vindicated} the putative link, though its authors stayed {wary}."
+  ],
+  "sbn": [
+   "গ্যাংয়ের অনুমিত (putative) নেতা গ্রেপ্তার হলো।",
+   "ওষুধটার কথিত (putative) উপকারিতা কখনো প্রমাণিত হয়নি।",
+   "গবেষণাটা অনুমিত (putative) সংযোগটিকে সঠিক প্রমাণ করল, তবু লেখকরা সতর্ক রইলেন।"
+  ],
+  "tip": "Latin putare = think: what is thought to be so."
+ },
+ {
+  "id": "quaint",
+  "word": "Quaint",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "attractively old-fashioned or unusual",
+  "bn": "সেকেলে অথচ আকর্ষণীয়; অদ্ভুত সুন্দর",
+  "s": [
+   "We stayed in a quaint village cottage.",
+   "The quaint little shop sells old toys.",
+   "The {rudimentary} tools and {whimsical} decorations gave the town a quaint charm."
+  ],
+  "sbn": [
+   "আমরা এক সেকেলে-সুন্দর (quaint) গ্রামের কুটিরে থাকলাম।",
+   "পুরোনো ধাঁচের (quaint) ছোট্ট দোকানটা পুরোনো খেলনা বিক্রি করে।",
+   "আদিম যন্ত্রপাতি আর খেয়ালি সাজসজ্জা শহরটাকে এক সেকেলে মোহ (quaint) দিয়েছিল।"
+  ],
+  "tip": "Think 'quaint = cute and old'."
+ },
+ {
+  "id": "qualitative",
+  "word": "Qualitative",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "about quality rather than quantity",
+  "bn": "গুণগত",
+  "s": [
+   "The study made a qualitative analysis of interviews.",
+   "There is a qualitative difference between the two teachers.",
+   "Besides numbers, a {meticulous} researcher gives a qualitative description of people's feelings."
+  ],
+  "sbn": [
+   "গবেষণায় সাক্ষাৎকারগুলোর গুণগত (qualitative) বিশ্লেষণ করা হলো।",
+   "দুজন শিক্ষকের মধ্যে একটা গুণগত (qualitative) পার্থক্য আছে।",
+   "সংখ্যার পাশাপাশি নিখুঁত গবেষক মানুষের অনুভূতির গুণগত (qualitative) বর্ণনাও দেন।"
+  ],
+  "tip": "Quality vs quantity: qualitative = about quality."
+ },
+ {
+  "id": "quandary",
+  "word": "Quandary",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a state of not knowing what to do",
+  "bn": "দ্বিধা; উভয়সংকট",
+  "s": [
+   "I was in a quandary about which job to take.",
+   "The student was in a quandary over two good offers.",
+   "Caught in a quandary, the {reticent} manager could neither refuse nor accept."
+  ],
+  "sbn": [
+   "কোন চাকরিটা নেব তা নিয়ে আমি দ্বিধায় (quandary) পড়েছিলাম।",
+   "দুটো ভালো প্রস্তাব নিয়ে ছাত্রটি উভয়সংকটে (quandary) ছিল।",
+   "উভয়সংকটে (quandary) পড়ে স্বল্পভাষী ম্যানেজার না পারলেন প্রত্যাখ্যান করতে, না মেনে নিতে।"
+  ],
+  "tip": "Origin uncertain; just remember: quandary = dilemma."
+ },
+ {
+  "id": "quasi",
+  "word": "Quasi",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "seeming or partly; almost",
+  "bn": "আধা-; প্রায়",
+  "s": [
+   "It is a quasi government body.",
+   "The club has a quasi religious feel.",
+   "The {anarchy} that followed created a quasi legal system run by local gangs."
+  ],
+  "sbn": [
+   "এটা একটা আধা-সরকারি (quasi) সংস্থা।",
+   "ক্লাবটার একটা আধা-ধর্মীয় (quasi) আবহ আছে।",
+   "পরবর্তী নৈরাজ্যে স্থানীয় গ্যাংদের চালানো এক প্রায়-আইনি (quasi) ব্যবস্থা গড়ে উঠল।"
+  ],
+  "tip": "Latin quasi = as if: 'as if' something."
+ },
+ {
+  "id": "quay",
+  "word": "Quay",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a landing place for ships; a wharf",
+  "bn": "জাহাজঘাট; জেটি",
+  "s": [
+   "The ship tied up at the quay.",
+   "Fishermen unloaded their catch on the quay.",
+   "The crowded quay was full of sailors, whose {sporadic} songs echoed over the water."
+  ],
+  "sbn": [
+   "জাহাজটা ঘাটে (quay) বাঁধা হলো।",
+   "জেলেরা জেটিতে (quay) তাদের মাছ নামাল।",
+   "ভিড়ে ঠাসা জাহাজঘাটে (quay) নাবিকদের ছাড়া-ছাড়া গান পানির ওপর প্রতিধ্বনিত হচ্ছিল।"
+  ],
+  "tip": "Pronounced 'key': you use a key to lock the quay up."
+ },
+ {
+  "id": "quell",
+  "word": "Quell",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to stop or put down by force; to calm",
+  "bn": "দমন করা; শান্ত করা",
+  "s": [
+   "Police tried to quell the riot.",
+   "A kind word quelled her fear.",
+   "The general moved swiftly to quell the revolt and {pacify} the region."
+  ],
+  "sbn": [
+   "পুলিশ দাঙ্গা দমন (quell) করার চেষ্টা করল।",
+   "একটা সদয় কথা তার ভয় শান্ত (quelled) করল।",
+   "জেনারেল দ্রুত বিদ্রোহ দমন (quell) করে এলাকা শান্ত করতে এগোলেন।"
+  ],
+  "tip": "Old English cwellan = to kill: kill an uprising."
+ },
+ {
+  "id": "querulous",
+  "word": "Querulous",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "complaining; whiny",
+  "bn": "খিটখিটে; অভিযোগে ভরা",
+  "s": [
+   "The querulous child whined all day.",
+   "He spoke in a querulous voice about the food.",
+   "The {lethargic} and querulous patient complained about every nurse."
+  ],
+  "sbn": [
+   "খিটখিটে (querulous) শিশুটি সারা দিন ঘ্যানঘ্যান করল।",
+   "সে খাবার নিয়ে অভিযোগের (querulous) সুরে কথা বলল।",
+   "নিস্তেজ ও খিটখিটে (querulous) রোগী প্রতিটা নার্স নিয়েই অভিযোগ করল।"
+  ],
+  "tip": "Latin queri = complain; 'quarrel' is a cousin."
+ },
+ {
+  "id": "query",
+  "word": "Query",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a question, especially one asking for information",
+  "bn": "প্রশ্ন; জিজ্ঞাসা",
+  "s": [
+   "I have a query about my bill.",
+   "She sent a query to the help desk.",
+   "The professor answered each query in {lucid} language."
+  ],
+  "sbn": [
+   "আমার বিলের ব্যাপারে একটা জিজ্ঞাসা (query) আছে।",
+   "সে হেল্প ডেস্কে একটা প্রশ্ন (query) পাঠাল।",
+   "অধ্যাপক প্রতিটা প্রশ্নের (query) উত্তর দিলেন স্বচ্ছ ভাষায়।"
+  ],
+  "tip": "Latin quaerere = ask; same root as 'question'."
+ },
+ {
+  "id": "queue",
+  "word": "Queue",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a line of people waiting for their turn",
+  "bn": "সারি; লাইন",
+  "s": [
+   "We stood in a long queue for tickets.",
+   "Please join the queue behind the last person.",
+   "The {conspicuous} lack of order in the queue led to {contentious} arguments."
+  ],
+  "sbn": [
+   "আমরা টিকিটের জন্য লম্বা সারিতে (queue) দাঁড়ালাম।",
+   "দয়া করে শেষ ব্যক্তির পেছনে সারিতে (queue) দাঁড়ান।",
+   "সারিতে (queue) চোখে পড়ার মতো বিশৃঙ্খলা তর্কবিতর্কের জন্ম দিল।"
+  ],
+  "tip": "French 'queue' = tail: a line like a tail."
+ },
+ {
+  "id": "quintessential",
+  "word": "Quintessential",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "the most perfect example of something",
+  "bn": "সর্বোত্তম নমুনা; মূর্ত প্রতীক",
+  "s": [
+   "Rickshaws are the quintessential sight of Dhaka.",
+   "He is the quintessential gentleman.",
+   "She was the quintessential {pragmatic} leader, calm and {shrewd}."
+  ],
+  "sbn": [
+   "রিকশা ঢাকার সবচেয়ে বৈশিষ্ট্যপূর্ণ (quintessential) দৃশ্য।",
+   "সে এক মূর্তিমান (quintessential) ভদ্রলোক।",
+   "তিনি ছিলেন বাস্তববাদী নেতার আদর্শ (quintessential) উদাহরণ, শান্ত ও চতুর।"
+  ],
+  "tip": "Latin quinta essentia = fifth essence, the purest part."
+ },
+ {
+  "id": "quixotic",
+  "word": "Quixotic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "idealistic in an unrealistic way",
+  "bn": "অবাস্তব আদর্শবাদী",
+  "s": [
+   "He started a quixotic fight against pollution.",
+   "Their quixotic plan to end poverty overnight failed.",
+   "The {pragmatic} adviser called the {audacious} but quixotic scheme hopeless."
+  ],
+  "sbn": [
+   "সে দূষণের বিরুদ্ধে এক অবাস্তব (quixotic) লড়াই শুরু করল।",
+   "এক রাতে দারিদ্র্য দূর করার তাদের অবাস্তব (quixotic) পরিকল্পনা ব্যর্থ হলো।",
+   "বাস্তববাদী উপদেষ্টা দুঃসাহসী অথচ অবাস্তব আদর্শবাদী (quixotic) প্রকল্পটাকে আশাহীন বললেন।"
+  ],
+  "tip": "From Don Quixote, the knight who fought windmills."
+ },
+ {
+  "id": "quizzical",
+  "word": "Quizzical",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "showing puzzled or teasing curiosity",
+  "bn": "কৌতূহলী; জিজ্ঞাসু",
+  "s": [
+   "She gave him a quizzical look.",
+   "His quizzical smile showed he did not believe us.",
+   "A {skeptical} and quizzical expression crossed his face at the {ambiguous} answer."
+  ],
+  "sbn": [
+   "সে তার দিকে জিজ্ঞাসু (quizzical) দৃষ্টিতে তাকাল।",
+   "তার কৌতূহলী (quizzical) হাসি বোঝাল সে আমাদের বিশ্বাস করেনি।",
+   "অস্পষ্ট উত্তর শুনে তার মুখে সন্দেহমাখা প্রশ্নসূচক (quizzical) ভাব ফুটল।"
+  ],
+  "tip": "Think of 'quiz': a questioning look."
+ },
+ {
+  "id": "quotidian",
+  "word": "Quotidian",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "daily; ordinary",
+  "bn": "দৈনন্দিন; সাধারণ",
+  "s": [
+   "The poem celebrates quotidian life.",
+   "He escaped the quotidian routine of office work.",
+   "She found beauty in {mundane}, quotidian tasks like washing dishes."
+  ],
+  "sbn": [
+   "কবিতাটা দৈনন্দিন (quotidian) জীবনকে উদযাপন করে।",
+   "সে অফিসের কাজের দৈনন্দিন (quotidian) একঘেয়েমি থেকে পালাল।",
+   "থালাবাসন ধোয়ার মতো সাধারণ দৈনন্দিন (quotidian) কাজেও সে সৌন্দর্য খুঁজে পেত।"
+  ],
+  "tip": "Latin quotidie = every day."
+ },
+ {
+  "id": "ramification",
+  "word": "Ramification",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a complicated consequence or result",
+  "bn": "জটিল পরিণতি; শাখা-প্রশাখা",
+  "s": [
+   "The new law has serious ramifications.",
+   "We must consider the ramifications of our choice.",
+   "The {ambiguous} ruling had ramifications that were hard to {mitigate}."
+  ],
+  "sbn": [
+   "নতুন আইনটার গুরুতর পরিণতি (ramifications) আছে।",
+   "আমাদের সিদ্ধান্তের জটিল পরিণতিগুলো (ramifications) ভেবে দেখতে হবে।",
+   "অস্পষ্ট রায়ের এমন সব পরিণতি (ramifications) ছিল যা কমানো কঠিন।"
+  ],
+  "tip": "Latin ramus = branch: consequences branch out like a tree."
+ },
+ {
+  "id": "rampant",
+  "word": "Rampant",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "spreading uncontrolled",
+  "bn": "লাগামহীন; বেপরোয়া",
+  "s": [
+   "Crime was rampant in the city.",
+   "Rumors were rampant at school.",
+   "Rampant corruption in the {obscure} agency was left unchecked for years."
+  ],
+  "sbn": [
+   "শহরে অপরাধ ছিল লাগামহীন (rampant)।",
+   "স্কুলে গুজব ছড়িয়ে পড়েছিল (rampant)।",
+   "অখ্যাত সংস্থাটিতে বছরের পর বছর লাগামহীন (rampant) দুর্নীতি চলেছে, কেউ রোধ করেনি।"
+  ],
+  "tip": "Rampant lion on coats of arms stands up wildly."
+ },
+ {
+  "id": "rancor",
+  "word": "Rancor",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "deep and long-lasting bitterness",
+  "bn": "তিক্ততা; বিদ্বেষ",
+  "s": [
+   "There was rancor between the two brothers.",
+   "She spoke without rancor about her old rival.",
+   "Years of {contentious} dispute left only rancor between the families."
+  ],
+  "sbn": [
+   "দুই ভাইয়ের মধ্যে তিক্ততা (rancor) ছিল।",
+   "সে তার পুরোনো প্রতিদ্বন্দ্বীর সম্পর্কে বিদ্বেষ (rancor) ছাড়াই কথা বলল।",
+   "বছরের পর বছর ধরা বিতর্কিত বিবাদ পরিবার দুটোর মধ্যে শুধু তিক্ততাই (rancor) রেখে গেল।"
+  ],
+  "tip": "Latin rancor = rottenness: bitterness that has gone rotten."
+ },
+ {
+  "id": "rapacious",
+  "word": "Rapacious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "greedy and grabbing",
+  "bn": "লোভী; লুটেরা",
+  "s": [
+   "The rapacious landlord raised the rent again.",
+   "Rapacious traders took everything from the village.",
+   "A rapacious ruler, he taxed the poor and lived in {lavish} comfort."
+  ],
+  "sbn": [
+   "লোভী (rapacious) বাড়িওয়ালা আবার ভাড়া বাড়াল।",
+   "লুটেরা (rapacious) ব্যবসায়ীরা গ্রাম থেকে সব নিয়ে গেল।",
+   "লোভী (rapacious) শাসক গরিবদের কর বসিয়ে নিজে বিলাসে থাকতেন।"
+  ],
+  "tip": "Latin rapere = seize (as in 'rape of Troy'; 'raptor' = bird of prey)."
+ },
+ {
+  "id": "rapture",
+  "word": "Rapture",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "great joy; ecstasy",
+  "bn": "পরমানন্দ; আনন্দে আত্মহারা ভাব",
+  "s": [
+   "The children cheered in rapture.",
+   "She listened to the music in rapture.",
+   "The {zealous} fans greeted the singer with rapture."
+  ],
+  "sbn": [
+   "বাচ্চারা পরমানন্দে (rapture) চিৎকার করে উঠল।",
+   "সে আত্মহারা হয়ে (rapture) গান শুনল।",
+   "উচ্ছ্বসিত ভক্তরা পরমানন্দে (rapture) গায়ককে স্বাগত জানাল।"
+  ],
+  "tip": "Latin rapere = seize: joy that seizes you."
+ },
+ {
+  "id": "ratify",
+  "word": "Ratify",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to approve officially, usually by signing or voting",
+  "bn": "অনুমোদন করা; অনুসমর্থন করা",
+  "s": [
+   "Parliament will ratify the treaty.",
+   "Members voted to ratify the new rules.",
+   "The council must ratify the pact before it can {foster} peace."
+  ],
+  "sbn": [
+   "সংসদ চুক্তিটি অনুসমর্থন (ratify) করবে।",
+   "সদস্যরা নতুন নিয়মগুলো অনুমোদন (ratify) করতে ভোট দিলেন।",
+   "শান্তি গড়ে তোলার আগে পরিষদকে চুক্তিটি অনুসমর্থন (ratify) করতে হবে।"
+  ],
+  "tip": "Latin ratus = fixed + facere make: make it fixed."
+ },
+ {
+  "id": "ratiocination",
+  "word": "Ratiocination",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "logical thinking; reasoning",
+  "bn": "যুক্তিপূর্ণ চিন্তা; যুক্তিবিচার",
+  "s": [
+   "Detectives rely on careful ratiocination.",
+   "His ratiocination led him to the real thief.",
+   "Through {lucid} ratiocination, the detective exposed the {dubious} alibi."
+  ],
+  "sbn": [
+   "গোয়েন্দারা সতর্ক যুক্তিবিচারের (ratiocination) ওপর নির্ভর করে।",
+   "তার যুক্তিবিচার (ratiocination) তাকে আসল চোরের কাছে নিয়ে গেল।",
+   "স্বচ্ছ যুক্তিবিচারের (ratiocination) মাধ্যমে গোয়েন্দা সন্দেহজনক অ্যালিবাইটা ফাঁস করলেন।"
+  ],
+  "tip": "Latin ratio = reason; 'ration-' like rational."
+ },
+ {
+  "id": "rationale",
+  "word": "Rationale",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the reason or logical basis for something",
+  "bn": "যুক্তি; কারণ",
+  "s": [
+   "What is the rationale behind this rule?",
+   "She explained the rationale for the new plan.",
+   "The board gave a {cogent} rationale for the decision, which the staff could not {deride}."
+  ],
+  "sbn": [
+   "এই নিয়মের পেছনে যুক্তি (rationale) কী?",
+   "সে নতুন পরিকল্পনার যুক্তি (rationale) ব্যাখ্যা করল।",
+   "বোর্ড সিদ্ধান্তের পক্ষে জোরালো যুক্তি (rationale) দিল, যা কর্মীরা উপহাস করতে পারল না।"
+  ],
+  "tip": "Latin ratio = reason; rationale = the reasoning."
+ },
+ {
+  "id": "raucous",
+  "word": "Raucous",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "loud and harsh",
+  "bn": "কর্কশ; হট্টগোলপূর্ণ",
+  "s": [
+   "The raucous crowd cheered the goal.",
+   "Raucous laughter came from the next room.",
+   "The {boorish} and raucous guests ruined the quiet dinner."
+  ],
+  "sbn": [
+   "কোলাহলপূর্ণ (raucous) জনতা গোলে উল্লাস করল।",
+   "পাশের ঘর থেকে কর্কশ (raucous) হাসির শব্দ এল।",
+   "অভদ্র ও হট্টগোলপ্রিয় (raucous) অতিথিরা শান্ত নৈশভোজ নষ্ট করে দিল।"
+  ],
+  "tip": "Latin raucus = hoarse; sounds rough like 'rock'."
+ },
+ {
+  "id": "reactionary",
+  "word": "Reactionary",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "opposing progress; wanting to return to the past",
+  "bn": "প্রগতিবিরোধী; রক্ষণশীল",
+  "s": [
+   "He holds reactionary views about women.",
+   "The reactionary party fought every reform.",
+   "The {dogmatic} and reactionary regime sought to restore the old order."
+  ],
+  "sbn": [
+   "সে নারীদের নিয়ে প্রগতিবিরোধী (reactionary) মত পোষণ করে।",
+   "প্রগতিবিরোধী (reactionary) দলটা প্রতিটা সংস্কারের বিরুদ্ধে লড়ল।",
+   "গোঁড়া ও প্রতিক্রিয়াশীল (reactionary) শাসকগোষ্ঠী পুরোনো ব্যবস্থা ফিরিয়ে আনতে চাইল।"
+  ],
+  "tip": "React against change: reactionary."
+ },
+ {
+  "id": "rebuff",
+  "word": "Rebuff",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to reject sharply; to snub",
+  "bn": "প্রত্যাখ্যান করা; অবজ্ঞা করা",
+  "s": [
+   "She rebuffed his offer of help.",
+   "The company rebuffed all attempts to buy it.",
+   "He tried to flatter her, but she coldly rebuffed his {obsequious} words."
+  ],
+  "sbn": [
+   "সে তার সাহায্যের প্রস্তাব প্রত্যাখ্যান (rebuffed) করল।",
+   "কোম্পানিটা কিনে নেওয়ার সব চেষ্টা প্রত্যাখ্যান (rebuffed) করল।",
+   "সে তাকে তোষামোদ করতে চাইল, কিন্তু সে ঠান্ডা গলায় তার চাটুকারী কথা প্রত্যাখ্যান (rebuffed) করল।"
+  ],
+  "tip": "Italian ribuffo = a sharp scolding: a blunt 'buff' back."
+ },
+ {
+  "id": "rebuke",
+  "word": "Rebuke",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to scold sharply",
+  "bn": "তিরস্কার করা; ধমক দেওয়া",
+  "s": [
+   "The teacher rebuked him for being late.",
+   "She rebuked her son for his rude words.",
+   "The editor publicly rebuked the reporter for his {meticulous} yet {verbose} reports."
+  ],
+  "sbn": [
+   "শিক্ষক দেরি করার জন্য তাকে তিরস্কার (rebuked) করলেন।",
+   "সে ছেলের রূঢ় কথার জন্য তাকে বকল (rebuked)।",
+   "সম্পাদক নিখুঁত অথচ বাগাড়ম্বরপূর্ণ প্রতিবেদনের জন্য প্রকাশ্যে প্রতিবেদককে তিরস্কার (rebuked) করলেন।"
+  ],
+  "tip": "Old French rebuchier = beat back: hit back with words."
+ },
+ {
+  "id": "rebut",
+  "word": "Rebut",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to argue against and prove false",
+  "bn": "খণ্ডন করা",
+  "s": [
+   "The lawyer rebutted the claim with new evidence.",
+   "She could not rebut his argument.",
+   "With {cogent} evidence, the scientist rebutted the {dubious} charge."
+  ],
+  "sbn": [
+   "উকিল নতুন প্রমাণ দিয়ে দাবিটা খণ্ডন (rebutted) করলেন।",
+   "সে তার যুক্তি খণ্ডন (rebut) করতে পারল না।",
+   "জোরালো প্রমাণ দিয়ে বিজ্ঞানী সন্দেহজনক অভিযোগটি খণ্ডন (rebutted) করলেন।"
+  ],
+  "tip": "Re- back + but (push): push back an argument."
+ },
+ {
+  "id": "recidivism",
+  "word": "Recidivism",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a tendency of a criminal to commit crimes again",
+  "bn": "পুনরায় অপরাধে ফেরার প্রবণতা",
+  "s": [
+   "Programs aim to reduce recidivism among ex-prisoners.",
+   "High recidivism shows that jail alone does not reform people.",
+   "Studies suggest education can {mitigate} recidivism better than {punitive} measures."
+  ],
+  "sbn": [
+   "কর্মসূচিগুলোর লক্ষ্য সাবেক বন্দিদের মধ্যে পুনরায় অপরাধে ফেরা (recidivism) কমানো।",
+   "উচ্চ পুনরপরাধ-প্রবণতা (recidivism) দেখায় যে শুধু জেল মানুষকে সংশোধন করে না।",
+   "গবেষণা বলছে শিক্ষা শাস্তিমূলক ব্যবস্থার চেয়ে ভালোভাবে পুনরপরাধ-প্রবণতা (recidivism) কমাতে পারে।"
+  ],
+  "tip": "Latin recidere = fall back: fall back into crime."
+ }
+]

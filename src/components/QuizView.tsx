@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ArrowRight, Check, ChevronDown, ClipboardCheck, History, Minus, Plus, RotateCcw, Trophy, Volume2, X } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, ClipboardCheck, History, Lock, Minus, Plus, RotateCcw, Trophy, Unlock, Volume2, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { readJSON, writeJSON } from "@/lib/storage";
-import { plainSentence, speak, stemRegex, WORD_BY_ID, WORDS, type Word } from "@/lib/words";
+import { CORE_WORDS, plainSentence, speak, stemRegex, WORD_BY_ID, WORDS, type Word } from "@/lib/words";
+import { UNLOCK_PASS, UNLOCK_QUESTIONS, WORD_SMART_COUNT, type WordSmart } from "@/lib/wordSmart";
 import { GROUPS } from "@/data/groups";
 import { addDays, isDue, localDay, type useProgress } from "@/lib/progress";
 import type { QuizHistory, QuizRecord } from "@/lib/quizHistory";
@@ -13,7 +14,10 @@ type Progress = ReturnType<typeof useProgress>;
 
 type Pool = "due" | "weak" | "starred" | "all";
 type Kind = "meaning" | "word" | "bangla" | "blank" | "type" | "se";
-type Mode = Kind | "mixed";
+/** A question type the learner can choose. */
+type Pick = Kind | "mixed";
+/** Recorded on a quiz: a chosen type, or "unlock" for the Word Smart unlock test. */
+type Mode = Pick | "unlock";
 
 type Question = {
   id: string; // main word
@@ -45,15 +49,26 @@ const PERIODS = [
   { days: 28, label: "Last 4 weeks", phrase: "in the last 4 weeks" },
 ];
 
-const MODES: { key: Mode; label: string; hint: string }[] = [
+const MODES: { key: Pick; label: string; hint: string }[] = [
   { key: "mixed", label: "Mixed", hint: "A bit of everything" },
   { key: "meaning", label: "Word → meaning", hint: "Pick the right meaning" },
   { key: "word", label: "Meaning → word", hint: "Pick the right word" },
   { key: "bangla", label: "বাংলা → English", hint: "See the Bangla, pick the word" },
   { key: "blank", label: "Fill in the blank", hint: "Complete the sentence" },
   { key: "type", label: "Type the word", hint: "Hardest: spell it yourself" },
-  { key: "se", label: "GRE: pick 2", hint: "Two words that both fit" },
 ];
+
+/** Labels for quiz history (includes GRE tab sets and the unlock test). */
+const MODE_LABELS: Record<string, string> = {
+  ...Object.fromEntries(MODES.map((m) => [m.key, m.label])),
+  se: "GRE: pick 2",
+  unlock: "Unlock test",
+  "gre-tc1": "Text Completion",
+  "gre-tcm": "Text Completion (2–3 blanks)",
+  "gre-se": "Sentence Equivalence",
+  "gre-an": "Analogies",
+  "gre-mix": "GRE mixed set",
+};
 
 const MIXED: Kind[] = ["meaning", "word", "bangla", "blank", "type"];
 
@@ -90,7 +105,7 @@ function editDistance(a: string, b: string) {
   return dp[a.length][b.length];
 }
 
-function makeQuestions(ids: string[], mode: Mode): Question[] {
+function makeQuestions(ids: string[], mode: Pick): Question[] {
   return ids.map((id, i) => {
     const w = WORD_BY_ID.get(id)!;
     let kind: Kind = mode === "mixed" ? MIXED[i % MIXED.length] : mode;
@@ -133,12 +148,14 @@ export function QuizView({
   active,
   request,
   history,
+  wordSmart,
 }: {
   progress: Progress;
   active: boolean;
   /** Start a quiz on these words right away (e.g. from the Groups or Today tab). */
-  request?: { ids: string[]; key: number; mode?: Mode; source?: "today"; title?: string } | null;
+  request?: { ids: string[]; key: number; mode?: Pick; source?: "today"; title?: string } | null;
   history: QuizHistory;
+  wordSmart: WordSmart;
 }) {
   const saved = readJSON<{ pool: Pool; count: number; lastN: number; period: number; mode: Mode }>(K_SETTINGS, {
     pool: "due",
@@ -153,7 +170,7 @@ export function QuizView({
   );
   const [count, setCount] = useState<number>(saved.count);
   const [lastN, setLastN] = useState<number>(saved.lastN);
-  const [mode, setMode] = useState<Mode>(saved.mode);
+  const [mode, setMode] = useState<Pick>(MODES.find((m) => m.key === saved.mode)?.key ?? "mixed");
   const [quiz, setQuiz] = useState<QuizState | null>(null);
 
   useEffect(() => writeJSON(K_SETTINGS, { pool, count, lastN, period, mode }), [pool, count, lastN, period, mode]);
@@ -210,6 +227,14 @@ export function QuizView({
     begin(makeQuestions(shuffle(ids), mode), title);
   };
 
+  /** Word Smart unlock test: 40 questions from the 333, half word → meaning, half fill in the blank. */
+  const startUnlockTest = () => {
+    const ids = shuffle(CORE_WORDS).slice(0, UNLOCK_QUESTIONS).map((w) => w.id);
+    const half = Math.floor(ids.length / 2);
+    const questions = shuffle([...makeQuestions(ids.slice(0, half), "meaning"), ...makeQuestions(ids.slice(half), "blank")]);
+    begin(questions, "Word Smart unlock test", "unlock");
+  };
+
   const startPool = () => {
     const title = POOLS.find((x) => x.key === pool)?.label ?? "Quiz";
     if (mode === "se") return begin(makeGreQuestions(poolCount, new Set(available)), title);
@@ -257,6 +282,8 @@ export function QuizView({
     const periodCount = periodIds.length;
     return (
       <div className="flex flex-col gap-4">
+        <UnlockCard wordSmart={wordSmart} onStart={startUnlockTest} />
+
         {/* Quick tests */}
         <section className="rounded-xl border border-border bg-card p-5">
           <div className="flex items-start gap-3">
@@ -427,8 +454,13 @@ export function QuizView({
       setQuiz={setQuiz}
       progress={progress}
       active={active}
+      note={quiz.mode === "unlock" ? <UnlockResult quiz={quiz} /> : undefined}
       onFinish={() => {
         saveResult(quiz);
+        if (quiz.mode === "unlock") {
+          const correct = quiz.answers.filter((a) => a.correct).length;
+          if (correct / quiz.questions.length >= UNLOCK_PASS) wordSmart.unlock("test");
+        }
         if (source.current === "today") {
           writeJSON(K_TODAY_TEST, localDay());
           window.dispatchEvent(new Event(TODAY_TEST_EVENT));
@@ -448,7 +480,9 @@ function QuizRunner({
   onFinish,
   onRetry,
   onExit,
+  note,
 }: {
+  note?: React.ReactNode;
   quiz: QuizState;
   setQuiz: (q: QuizState) => void;
   progress: Progress;
@@ -568,6 +602,7 @@ function QuizRunner({
               ? "Missed words are back in Learning and will come up again tomorrow."
               : "These words are scheduled for a later review."}
           </p>
+          {note}
           <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:justify-center">
             {missedCount > 0 && (
               <Button onClick={onRetry}>
@@ -916,7 +951,7 @@ function OptionStepper({
 }
 
 /** − value + control. Steps by 5 (snapping to multiples of 5), always able to reach min and max. */
-function Stepper({
+export function Stepper({
   value,
   min,
   max,
@@ -990,7 +1025,7 @@ function HistoryList({ items, onRetry }: { items: QuizRecord[]; onRetry: (r: Qui
           {shown.map((r) => {
             const pct = Math.round((r.score / r.total) * 100);
             const isOpen = open === r.clientId;
-            const modeLabel = MODES.find((m) => m.key === r.mode)?.label ?? r.mode;
+            const modeLabel = MODE_LABELS[r.mode] ?? r.mode;
             return (
               <li key={r.clientId} className="border-b border-border last:border-b-0">
                 <button
@@ -1059,5 +1094,77 @@ function HistoryList({ items, onRetry }: { items: QuizRecord[]; onRetry: (r: Qui
         </div>
       )}
     </section>
+  );
+}
+
+/** Shows whether Word Smart is locked, how to unlock it, and starts the unlock test. */
+function UnlockCard({ wordSmart, onStart }: { wordSmart: WordSmart; onStart: () => void }) {
+  if (wordSmart.unlocked) {
+    return (
+      <p className="flex items-start gap-2 rounded-xl border border-primary/30 bg-accent-soft/50 px-4 py-3 text-sm">
+        <Unlock className="mt-0.5 size-4 shrink-0 text-primary" />
+        <span>
+          <span className="font-medium">Word Smart unlocked.</span>{" "}
+          {wordSmart.ready
+            ? `Your cards, quizzes and reviews now mix in ${WORD_SMART_COUNT.toLocaleString()} more words.`
+            : "Downloading the Word Smart words…"}
+        </span>
+      </p>
+    );
+  }
+  const pct = Math.round((wordSmart.studied333 / wordSmart.total333) * 100);
+  return (
+    <section className="rounded-xl border border-border bg-card p-5">
+      <div className="flex items-start gap-3">
+        <div className="grid size-10 shrink-0 place-items-center rounded-full bg-muted text-muted-foreground">
+          <Lock className="size-[18px]" />
+        </div>
+        <div className="min-w-0 flex-1">
+          <h2 className="text-[15px] font-semibold tracking-tight">Word Smart · {WORD_SMART_COUNT.toLocaleString()} more words</h2>
+          <p className="mt-0.5 text-sm text-muted-foreground">
+            Unlocks when you've studied all 333 words, or right away if you pass the unlock test with{" "}
+            {Math.round(UNLOCK_PASS * 100)}% or more.
+          </p>
+        </div>
+      </div>
+      <div className="mt-4 flex items-center gap-3">
+        <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-mist/70 dark:bg-muted">
+          <div className="h-full rounded-full bg-primary transition-[width] duration-700" style={{ width: `${pct}%` }} />
+        </div>
+        <span className="font-mono text-xs tabular-nums text-muted-foreground">
+          {wordSmart.studied333}/{wordSmart.total333} studied
+        </span>
+      </div>
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
+        <p className="text-[13px] text-muted-foreground">
+          Already know the 333? {UNLOCK_QUESTIONS} questions: word → meaning and fill in the blank.
+        </p>
+        <Button variant="dark" onClick={onStart}>
+          Take the unlock test
+        </Button>
+      </div>
+    </section>
+  );
+}
+
+function UnlockResult({ quiz }: { quiz: QuizState }) {
+  const correct = quiz.answers.filter((a) => a.correct).length;
+  const pct = Math.round((correct / quiz.questions.length) * 100);
+  const need = Math.round(UNLOCK_PASS * 100);
+  const passed = correct / quiz.questions.length >= UNLOCK_PASS;
+  return (
+    <p
+      className={cn(
+        "mx-auto mt-4 flex max-w-md items-start gap-2 rounded-lg px-4 py-3 text-left text-sm",
+        passed ? "bg-primary text-primary-foreground" : "bg-card",
+      )}
+    >
+      {passed ? <Unlock className="mt-0.5 size-4 shrink-0" /> : <Lock className="mt-0.5 size-4 shrink-0 text-muted-foreground" />}
+      <span>
+        {passed
+          ? `You passed with ${pct}%! Word Smart is unlocked: ${WORD_SMART_COUNT.toLocaleString()} more words are now mixed into your cards, quizzes and reviews.`
+          : `You scored ${pct}%; you need ${need}% to unlock Word Smart. Your missed words are in Learning; review them and try again.`}
+      </span>
+    </p>
   );
 }

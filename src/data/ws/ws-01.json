@@ -1,0 +1,2681 @@
+[
+ {
+  "id": "abase",
+  "word": "Abase",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to lower someone in rank or dignity; to humble oneself",
+  "bn": "হেয় করা; নিজেকে ছোট করা; অপমান করা",
+  "s": [
+   "He refused to abase himself before the rich man.",
+   "The clerk would not abase himself just to win a promotion.",
+   "The tyrant tried to abase his rivals, but his {hubris} was soon {undermined} by their courage."
+  ],
+  "sbn": [
+   "সে ধনী লোকটির সামনে নিজেকে ছোট (abase) করতে রাজি হলো না।",
+   "প্রমোশন পাওয়ার জন্য কেরানিটি নিজেকে হেয় (abase) করতে চায়নি।",
+   "স্বৈরশাসক প্রতিদ্বন্দ্বীদের হেয় (abase) করতে চেয়েছিল, কিন্তু তাদের সাহসে তার অহংকার দুর্বল হয়ে গেল।"
+  ],
+  "tip": "Think \"a-BASE\": push someone down to the base (bottom)."
+ },
+ {
+  "id": "abash",
+  "word": "Abash",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to make someone feel embarrassed or ashamed",
+  "bn": "লজ্জায় ফেলা; অপ্রস্তুত করা",
+  "s": [
+   "The loud laughter did not abash her.",
+   "The teacher's sharp question seemed to abash the boy.",
+   "Nothing could abash the {audacious} young speaker, even when the crowd began to {deride} him."
+  ],
+  "sbn": [
+   "জোরে হাসিতেও সে লজ্জা (abash) পেল না।",
+   "শিক্ষকের কড়া প্রশ্নে ছেলেটি যেন অপ্রস্তুত (abash) হয়ে গেল।",
+   "নির্ভীক তরুণ বক্তাকে কিছুতেই লজ্জায় ফেলা (abash) গেল না, এমনকি যখন জনতা তাকে বিদ্রূপ করতে শুরু করল।"
+  ],
+  "tip": "Often used as \"abashed\" = embarrassed; picture a red face."
+ },
+ {
+  "id": "abdicate",
+  "word": "Abdicate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to give up a throne or a responsibility",
+  "bn": "সিংহাসন ত্যাগ করা; দায়িত্ব ছেড়ে দেওয়া",
+  "s": [
+   "The king chose to abdicate the throne.",
+   "Parents should not abdicate their duty to guide their children.",
+   "The aging monarch decided to abdicate, hoping a younger ruler would {ameliorate} the troubled nation."
+  ],
+  "sbn": [
+   "রাজা সিংহাসন ত্যাগ (abdicate) করার সিদ্ধান্ত নিলেন।",
+   "বাবা-মায়ের উচিত নয় সন্তানকে পথ দেখানোর দায়িত্ব ছেড়ে দেওয়া (abdicate)।",
+   "বৃদ্ধ রাজা সিংহাসন ছেড়ে দিতে (abdicate) চাইলেন, এই আশায় যে তরুণ শাসক দেশের কঠিন অবস্থার উন্নতি ঘটাবে।"
+  ],
+  "tip": "Latin ab- (away) + dicare (declare): declare yourself away from the job."
+ },
+ {
+  "id": "abet",
+  "word": "Abet",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to help or encourage someone, usually in wrongdoing",
+  "bn": "প্ররোচিত করা; সহায়তা করা (অন্যায়ে)",
+  "s": [
+   "He was punished for trying to abet the thief.",
+   "It is a crime to abet someone who breaks the law.",
+   "The clerk was charged with helping to abet the fraud, a clear act of {chicanery}."
+  ],
+  "sbn": [
+   "চোরকে সাহায্য (abet) করার চেষ্টার জন্য তাকে শাস্তি দেওয়া হলো।",
+   "আইন ভাঙা কাউকে সহায়তা (abet) করা অপরাধ।",
+   "কেরানির বিরুদ্ধে প্রতারণায় সহায়তা (abet) করার অভিযোগ আনা হলো, যা স্পষ্টতই ছলচাতুরি।"
+  ],
+  "tip": "Remember \"aid and abet\" - the two words usually travel together."
+ },
+ {
+  "id": "abhor",
+  "word": "Abhor",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to hate very strongly",
+  "bn": "ঘৃণা করা; অত্যন্ত অপছন্দ করা",
+  "s": [
+   "I abhor cruelty to animals.",
+   "She abhors lies and always tells the truth.",
+   "The honest judge came to abhor every form of {duplicity}, especially in public officials."
+  ],
+  "sbn": [
+   "আমি পশুর প্রতি নিষ্ঠুরতাকে ঘৃণা (abhor) করি।",
+   "সে মিথ্যাকে ঘৃণা (abhors) করে এবং সবসময় সত্য বলে।",
+   "সৎ বিচারক সব ধরনের দ্বিমুখিতাকে, বিশেষ করে সরকারি কর্মকর্তাদের মধ্যে, ঘৃণা (abhor) করতে শিখলেন।"
+  ],
+  "tip": "Latin abhorrere: to shrink back in horror; note the word \"horror\" inside."
+ },
+ {
+  "id": "abject",
+  "word": "Abject",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "extremely bad or hopeless; humble and without pride",
+  "bn": "চরম; শোচনীয়; অধম",
+  "s": [
+   "They lived in abject poverty.",
+   "He wrote an abject apology after the mistake.",
+   "The family's abject misery was deepened by the {deluge} that destroyed their last possessions."
+  ],
+  "sbn": [
+   "তারা চরম দারিদ্র্যে (abject) বাস করত।",
+   "ভুলের পর সে একটি বিনীত ক্ষমাপ্রার্থনা (abject) লিখল।",
+   "বন্যায় তাদের শেষ সম্বলটুকুও ভেসে গেলে পরিবারটির শোচনীয় (abject) দুর্দশা আরও বেড়ে গেল।"
+  ],
+  "tip": "Latin ab- + jacere (throw): thrown down low."
+ },
+ {
+  "id": "abjure",
+  "word": "Abjure",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to formally give up a belief or habit",
+  "bn": "শপথ করে ত্যাগ করা; পরিত্যাগ করা",
+  "s": [
+   "He decided to abjure alcohol for good.",
+   "The prisoner chose to abjure his old beliefs.",
+   "To gain freedom, the rebel had to abjure his cause and {renounce} his former allies."
+  ],
+  "sbn": [
+   "সে চিরতরে মদ ত্যাগ (abjure) করার সিদ্ধান্ত নিল।",
+   "বন্দিটি তার পুরনো বিশ্বাস পরিত্যাগ (abjure) করার সিদ্ধান্ত নিল।",
+   "মুক্তি পেতে বিদ্রোহীকে তার আদর্শ ত্যাগ (abjure) করতে এবং আগের সঙ্গীদের অস্বীকার করতে হলো।"
+  ],
+  "tip": "Latin ab- (away) + jurare (swear): swear away."
+ },
+ {
+  "id": "abnegate",
+  "word": "Abnegate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to deny oneself something; to give up a right",
+  "bn": "আত্মত্যাগ করা; অস্বীকার করা",
+  "s": [
+   "Monks abnegate worldly pleasures.",
+   "She chose to abnegate her share of the money.",
+   "The {ascetic} would abnegate comfort entirely, choosing a life of simple prayer."
+  ],
+  "sbn": [
+   "সন্ন্যাসীরা পার্থিব সুখ বিসর্জন (abnegate) দেয়।",
+   "সে তার অংশের টাকা ছেড়ে দিতে (abnegate) চাইল।",
+   "সন্ন্যাসী আরাম পুরোপুরি বিসর্জন (abnegate) দিয়ে সাধারণ প্রার্থনার জীবন বেছে নিতেন।"
+  ],
+  "tip": "ab- (away) + negare (deny): deny away; see \"negate\"."
+ },
+ {
+  "id": "abomination",
+  "word": "Abomination",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "something hateful and disgusting",
+  "bn": "ঘৃণ্য বস্তু; জঘন্য কাজ",
+  "s": [
+   "The cruel law was an abomination.",
+   "He called the dirty kitchen an abomination.",
+   "The tribunal described the massacre as an abomination, a {heinous} crime against humanity."
+  ],
+  "sbn": [
+   "নিষ্ঠুর আইনটি ছিল এক ঘৃণ্য (abomination) বিষয়।",
+   "নোংরা রান্নাঘরকে সে জঘন্য (abomination) বলল।",
+   "ট্রাইব্যুনাল গণহত্যাকে জঘন্য অপরাধ (abomination) বলল, যা মানবতার বিরুদ্ধে এক ভয়ংকর কাজ।"
+  ],
+  "tip": "Linked to \"abhor\": what you abhor is an abomination."
+ },
+ {
+  "id": "aboriginal",
+  "word": "Aboriginal",
+  "src": "WS1+WS2",
+  "pos": "adjective",
+  "en": "first or earliest in a place; native",
+  "bn": "আদিম; আদিবাসী",
+  "s": [
+   "Aboriginal tribes lived there for centuries.",
+   "The museum shows aboriginal art from the region.",
+   "The aboriginal people of the island were {indigenous} to the land long before any settlers came."
+  ],
+  "sbn": [
+   "আদিবাসী (aboriginal) গোষ্ঠীগুলো সেখানে শতাব্দী ধরে বাস করত।",
+   "জাদুঘরে অঞ্চলটির আদিবাসী (aboriginal) শিল্প দেখানো হয়েছে।",
+   "দ্বীপের আদিবাসীরা (aboriginal) বসতি স্থাপনকারীদের অনেক আগে থেকেই সেখানকার স্থানীয় ছিল।"
+  ],
+  "tip": "Latin ab origine: \"from the origin\"; hear \"origin\" inside."
+ },
+ {
+  "id": "abortive",
+  "word": "Abortive",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "failing to achieve the intended result",
+  "bn": "ব্যর্থ; অসম্পূর্ণ",
+  "s": [
+   "It was an abortive attempt to climb the peak.",
+   "Their abortive plan to start a business failed.",
+   "After the abortive coup, the leaders were punished for their {sedition}."
+  ],
+  "sbn": [
+   "চূড়ায় ওঠার সেই চেষ্টাটি ব্যর্থ (abortive) হলো।",
+   "ব্যবসা শুরুর তাদের ব্যর্থ (abortive) পরিকল্পনা টিকল না।",
+   "ব্যর্থ (abortive) অভ্যুত্থানের পর নেতাদের রাষ্ট্রদ্রোহের জন্য শাস্তি দেওয়া হলো।"
+  ],
+  "tip": "From \"abort\": a plan stopped before it is born."
+ },
+ {
+  "id": "abound",
+  "word": "Abound",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to exist in large numbers; to be full of",
+  "bn": "প্রচুর থাকা; পরিপূর্ণ হওয়া",
+  "s": [
+   "Fish abound in this river.",
+   "Opportunities abound for students who work hard.",
+   "In spring, wildflowers abound in the {verdant} valley."
+  ],
+  "sbn": [
+   "এই নদীতে মাছ প্রচুর (abound) আছে।",
+   "যারা কঠোর পরিশ্রম করে, তাদের জন্য সুযোগ অনেক (abound)।",
+   "বসন্তে সবুজ উপত্যকায় বুনো ফুল প্রচুর (abound) ফোটে।"
+  ],
+  "tip": "Latin abundare, \"overflow\"; cousin of \"abundant\"."
+ },
+ {
+  "id": "abridge",
+  "word": "Abridge",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to shorten a text without losing its main sense",
+  "bn": "সংক্ষিপ্ত করা",
+  "s": [
+   "The editor will abridge the long novel.",
+   "This is an abridged version of the book.",
+   "The publisher chose to abridge the {voluminous} text so students could read it in a week."
+  ],
+  "sbn": [
+   "সম্পাদক দীর্ঘ উপন্যাসটি সংক্ষিপ্ত (abridge) করবেন।",
+   "এটি বইটির সংক্ষিপ্ত (abridged) সংস্করণ।",
+   "প্রকাশক বিশাল আকারের লেখাটি সংক্ষিপ্ত (abridge) করল, যাতে ছাত্ররা এক সপ্তাহে পড়তে পারে।"
+  ],
+  "tip": "Related to \"brief\" (Latin brevis): make it brief."
+ },
+ {
+  "id": "abrogate",
+  "word": "Abrogate",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to cancel a law or agreement officially",
+  "bn": "বাতিল করা; রদ করা",
+  "s": [
+   "The new government will abrogate the old treaty.",
+   "The council voted to abrogate the unfair rule.",
+   "The king chose to abrogate the {edict}, since it had caused only {turmoil}."
+  ],
+  "sbn": [
+   "নতুন সরকার পুরনো চুক্তি বাতিল (abrogate) করবে।",
+   "পরিষদ অন্যায় নিয়মটি রদ (abrogate) করার পক্ষে ভোট দিল।",
+   "রাজা ফরমানটি বাতিল (abrogate) করলেন, কারণ তাতে শুধু অশান্তিই হয়েছিল।"
+  ],
+  "tip": "Latin ab- (away) + rogare (ask/propose a law): take a law away."
+ },
+ {
+  "id": "absolute",
+  "word": "Absolute",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "complete and total; without limits",
+  "bn": "পরম; সম্পূর্ণ; নিঃশর্ত",
+  "s": [
+   "I have absolute trust in my teacher.",
+   "The king held absolute power over the land.",
+   "The dictator demanded absolute loyalty, brooking no {dissent} from his officers."
+  ],
+  "sbn": [
+   "আমার শিক্ষকের ওপর আমার পূর্ণ (absolute) আস্থা আছে।",
+   "রাজার হাতে ছিল দেশের ওপর নিরঙ্কুশ (absolute) ক্ষমতা।",
+   "স্বৈরশাসক সম্পূর্ণ (absolute) আনুগত্য দাবি করল এবং কর্মকর্তাদের কোনো ভিন্নমত সহ্য করল না।"
+  ],
+  "tip": "Latin absolutus, \"freed from limits\"."
+ },
+ {
+  "id": "absolve",
+  "word": "Absolve",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to declare someone free from blame or guilt",
+  "bn": "দোষমুক্ত করা; মাফ করা",
+  "s": [
+   "The judge decided to absolve the young man.",
+   "The report did absolve the driver of any blame.",
+   "The new evidence helped to absolve him, {exculpating} him from the charge."
+  ],
+  "sbn": [
+   "বিচারক যুবকটিকে দোষমুক্ত (absolve) করার সিদ্ধান্ত নিলেন।",
+   "প্রতিবেদনটি চালককে সব দোষ থেকে মুক্ত (absolve) করল।",
+   "নতুন প্রমাণ তাকে দোষমুক্ত (absolve) করতে সাহায্য করল এবং অভিযোগ থেকে নিষ্কৃতি দিল।"
+  ],
+  "tip": "Latin ab- + solvere (loosen): loosen the guilt away."
+ },
+ {
+  "id": "abstinent",
+  "word": "Abstinent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "choosing not to indulge, especially in alcohol or food",
+  "bn": "সংযমী; বিরত",
+  "s": [
+   "He has been abstinent for ten years.",
+   "An abstinent person stays away from alcohol.",
+   "The {abstemious} monk was abstinent from meat, wine, and all luxuries."
+  ],
+  "sbn": [
+   "সে দশ বছর ধরে মদ থেকে বিরত (abstinent) আছে।",
+   "সংযমী (abstinent) মানুষ মদ থেকে দূরে থাকে।",
+   "মিতাচারী সন্ন্যাসী মাংস, মদ ও সব বিলাসিতা থেকে বিরত (abstinent) থাকতেন।"
+  ],
+  "tip": "Latin abstinere, \"hold back\"; abs- + tenere (hold)."
+ },
+ {
+  "id": "abstract",
+  "word": "Abstract",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "existing as an idea, not as a physical thing; theoretical",
+  "bn": "বিমূর্ত; তাত্ত্বিক",
+  "s": [
+   "Love is an abstract idea.",
+   "The artist painted an abstract picture of colors.",
+   "The professor's lecture was too abstract and {esoteric} for most of the beginners."
+  ],
+  "sbn": [
+   "ভালোবাসা একটি বিমূর্ত (abstract) ধারণা।",
+   "শিল্পী রং দিয়ে একটি বিমূর্ত (abstract) ছবি আঁকলেন।",
+   "অধ্যাপকের বক্তৃতা ছিল খুব তাত্ত্বিক (abstract) ও দুর্বোধ্য, নতুনদের জন্য কঠিন।"
+  ],
+  "tip": "Latin abs- (away) + trahere (draw): drawn away from real things."
+ },
+ {
+  "id": "abstruse",
+  "word": "Abstruse",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "hard to understand; deep and obscure",
+  "bn": "দুর্বোধ্য; গূঢ়",
+  "s": [
+   "The book is too abstruse for beginners.",
+   "He gave an abstruse explanation that confused us.",
+   "The physicist's {convoluted} and abstruse theory left even experts scratching their heads."
+  ],
+  "sbn": [
+   "বইটি নতুনদের জন্য খুবই দুর্বোধ্য (abstruse)।",
+   "সে এমন দুর্বোধ্য (abstruse) ব্যাখ্যা দিল যে আমরা আরও গুলিয়ে ফেললাম।",
+   "পদার্থবিজ্ঞানীর জটিল ও দুর্বোধ্য (abstruse) তত্ত্বে বিশেষজ্ঞরাও মাথা চুলকালেন।"
+  ],
+  "tip": "Latin abstrusus, \"hidden away\"; think \"abs-truse\", a truth that is hidden."
+ },
+ {
+  "id": "abysmal",
+  "word": "Abysmal",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "extremely bad; very poor",
+  "bn": "অত্যন্ত খারাপ; শোচনীয়",
+  "s": [
+   "The hotel service was abysmal.",
+   "His exam result was abysmal this year.",
+   "The team's abysmal performance was a {debacle} that shocked every supporter."
+  ],
+  "sbn": [
+   "হোটেলের সেবা ছিল অত্যন্ত খারাপ (abysmal)।",
+   "এ বছর তার পরীক্ষার ফল ছিল শোচনীয় (abysmal)।",
+   "দলের শোচনীয় (abysmal) খেলা ছিল এক বিপর্যয়, যা সব সমর্থককে স্তম্ভিত করল।"
+  ],
+  "tip": "From \"abyss\", a bottomless pit: as bad as it gets."
+ },
+ {
+  "id": "accede",
+  "word": "Accede",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to agree to a request or demand; to take office",
+  "bn": "সম্মত হওয়া; মেনে নেওয়া; পদে বসা",
+  "s": [
+   "The manager finally had to accede to our demand.",
+   "The prince will accede to the throne next year.",
+   "Under pressure from the crowd, the mayor chose to accede and {rescind} the unpopular tax."
+  ],
+  "sbn": [
+   "ম্যানেজার শেষ পর্যন্ত আমাদের দাবি মেনে নিতে (accede) বাধ্য হলেন।",
+   "যুবরাজ আগামী বছর সিংহাসনে আরোহণ (accede) করবেন।",
+   "জনতার চাপে মেয়র দাবি মেনে নিলেন (accede) এবং অজনপ্রিয় করটি বাতিল করলেন।"
+  ],
+  "tip": "Latin ad- (to) + cedere (go): go along to."
+ },
+ {
+  "id": "accentuate",
+  "word": "Accentuate",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to make more noticeable; to stress",
+  "bn": "জোর দেওয়া; ফুটিয়ে তোলা",
+  "s": [
+   "Bright lights accentuate the room's size.",
+   "The dress will accentuate her tall figure.",
+   "The artist used shadow to accentuate the {pathos} in the old man's face."
+  ],
+  "sbn": [
+   "উজ্জ্বল আলো ঘরের আকারকে ফুটিয়ে (accentuate) তোলে।",
+   "পোশাকটি তার লম্বা গড়নকে আরও ফুটিয়ে (accentuate) তুলবে।",
+   "শিল্পী ছায়া ব্যবহার করে বৃদ্ধের মুখের করুণ ভাবটি ফুটিয়ে (accentuate) তুললেন।"
+  ],
+  "tip": "From \"accent\": put an accent (stress) on it."
+ },
+ {
+  "id": "access",
+  "word": "Access",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "the ability or right to enter or use something",
+  "bn": "প্রবেশাধিকার; ব্যবহারের সুযোগ",
+  "s": [
+   "Students have access to the library.",
+   "Poor roads limit access to the village.",
+   "Free internet access can {facilitate} learning for children in remote areas."
+  ],
+  "sbn": [
+   "ছাত্ররা লাইব্রেরিতে প্রবেশাধিকার (access) পায়।",
+   "খারাপ রাস্তার কারণে গ্রামে যাতায়াতের সুযোগ (access) কম।",
+   "বিনামূল্যে ইন্টারনেট সুবিধা (access) প্রত্যন্ত এলাকার শিশুদের শেখা সহজ করতে পারে।"
+  ],
+  "tip": "Latin accedere, \"to approach\"; access = a way to approach."
+ },
+ {
+  "id": "acclaim",
+  "word": "Acclaim",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to praise publicly and enthusiastically",
+  "bn": "প্রশংসা করা; অভিনন্দন জানানো",
+  "s": [
+   "Critics acclaim the film as a masterpiece.",
+   "The crowd acclaimed the winner with loud cheers.",
+   "The novel was widely acclaimed, and critics {extol} its fresh style."
+  ],
+  "sbn": [
+   "সমালোচকরা ছবিটিকে অসাধারণ বলে প্রশংসা (acclaim) করছেন।",
+   "জনতা বিজয়ীকে জোরে হর্ষধ্বনি দিয়ে অভিনন্দন (acclaimed) জানাল।",
+   "উপন্যাসটি ব্যাপকভাবে প্রশংসিত (acclaimed) হলো এবং সমালোচকরা এর নতুন ধারার গুণগান করলেন।"
+  ],
+  "tip": "Latin ad- + clamare (shout): shout approval."
+ },
+ {
+  "id": "accolade",
+  "word": "Accolade",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "an award or praise for achievement",
+  "bn": "সম্মাননা; প্রশংসা",
+  "s": [
+   "She received many accolades for her work.",
+   "The scientist earned an accolade from the prime minister.",
+   "The film won every major accolade, making the {neophyte} director a star overnight."
+  ],
+  "sbn": [
+   "কাজের জন্য সে অনেক সম্মাননা (accolade) পেয়েছে।",
+   "বিজ্ঞানী প্রধানমন্ত্রীর কাছ থেকে প্রশংসা (accolade) অর্জন করলেন।",
+   "ছবিটি সব বড় পুরস্কার (accolade) জিতল এবং নবীন পরিচালককে রাতারাতি তারকা বানাল।"
+  ],
+  "tip": "Italian accollare, \"embrace around the neck\": a knight's honor."
+ },
+ {
+  "id": "accord",
+  "word": "Accord",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "agreement or harmony; a formal agreement",
+  "bn": "ঐকমত্য; চুক্তি; মিল",
+  "s": [
+   "The two nations signed a peace accord.",
+   "His actions were in accord with his promises.",
+   "The leaders reached an accord, and {discordant} voices finally fell silent."
+  ],
+  "sbn": [
+   "দুই দেশ একটি শান্তিচুক্তি (accord) সই করল।",
+   "তার কাজ তার প্রতিশ্রুতির সাথে সামঞ্জস্যপূর্ণ (accord) ছিল।",
+   "নেতারা একটি সমঝোতায় (accord) পৌঁছালেন এবং বিরোধী সুরগুলো অবশেষে থেমে গেল।"
+  ],
+  "tip": "Latin ad- + cor (heart): hearts together in agreement."
+ },
+ {
+  "id": "accost",
+  "word": "Accost",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to approach and speak to someone boldly or aggressively",
+  "bn": "গায়ে পড়ে কথা বলা; পথ আটকানো",
+  "s": [
+   "A stranger tried to accost her on the street.",
+   "Reporters accosted the player outside the stadium.",
+   "The beggar would accost passersby, boldly {importuning} them for coins."
+  ],
+  "sbn": [
+   "রাস্তায় এক অপরিচিত লোক তাকে ধরে (accost) কথা বলার চেষ্টা করল।",
+   "সাংবাদিকরা স্টেডিয়ামের বাইরে খেলোয়াড়কে ঘিরে (accosted) ধরল।",
+   "ভিক্ষুক পথচারীদের থামিয়ে (accost) জোর করে পয়সা চাইত।"
+  ],
+  "tip": "Latin ad- + costa (rib/side): come up alongside someone."
+ },
+ {
+  "id": "accouterments",
+  "word": "Accouterments",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "extra items of equipment or dress",
+  "bn": "সাজসরঞ্জাম; আনুষঙ্গিক জিনিস",
+  "s": [
+   "The soldier packed all his accouterments.",
+   "The camping accouterments filled the back of the car.",
+   "The knight's gleaming accouterments, though {ostentatious}, did little to protect him in battle."
+  ],
+  "sbn": [
+   "সৈনিক তার সব সাজসরঞ্জাম (accouterments) গুছিয়ে নিল।",
+   "ক্যাম্পিংয়ের আনুষঙ্গিক জিনিসপত্র (accouterments) গাড়ির পেছনটা ভরে ফেলল।",
+   "নাইটের চকচকে সাজসরঞ্জাম (accouterments) জাঁকজমকপূর্ণ হলেও যুদ্ধে তেমন কাজে আসেনি।"
+  ],
+  "tip": "Plural noun; think of the \"extras\" that come with a uniform."
+ },
+ {
+  "id": "accrue",
+  "word": "Accrue",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to gather or build up over time",
+  "bn": "জমা হওয়া; ক্রমে বাড়তে থাকা",
+  "s": [
+   "Interest will accrue on your savings.",
+   "Benefits accrue to those who study every day.",
+   "Over the years, small debts began to accrue until they {inundated} the family."
+  ],
+  "sbn": [
+   "আপনার সঞ্চয়ের ওপর সুদ জমতে (accrue) থাকবে।",
+   "যারা প্রতিদিন পড়ে, তাদের সুবিধা ক্রমে বাড়তে (accrue) থাকে।",
+   "বছরের পর বছর ছোট ছোট ঋণ জমতে (accrue) জমতে শেষে পরিবারটিকে ডুবিয়ে দিল।"
+  ],
+  "tip": "Latin ad- + crescere (grow): grow toward you; cf. \"increase\"."
+ },
+ {
+  "id": "acerbic",
+  "word": "Acerbic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "sharp and bitter in taste or speech",
+  "bn": "তিক্ত; কটু; কড়া",
+  "s": [
+   "The critic wrote an acerbic review.",
+   "His acerbic remarks hurt his friends.",
+   "The columnist's acerbic wit made her popular, though her {caustic} jokes also made enemies."
+  ],
+  "sbn": [
+   "সমালোচক একটি কড়া (acerbic) সমালোচনা লিখলেন।",
+   "তার কটু (acerbic) মন্তব্য বন্ধুদের কষ্ট দিল।",
+   "কলামিস্টের তীক্ষ্ণ (acerbic) রসবোধ তাকে জনপ্রিয় করল, তবে ঝাঁঝালো ঠাট্টায় শত্রুও বাড়ল।"
+  ],
+  "tip": "Latin acer (sharp); like sour \"acid\"."
+ },
+ {
+  "id": "acquiesce",
+  "word": "Acquiesce",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to accept something reluctantly without protest",
+  "bn": "অনিচ্ছায় মেনে নেওয়া; রাজি হওয়া",
+  "s": [
+   "He did not want to go but had to acquiesce.",
+   "The workers will acquiesce to the new rules.",
+   "Though unhappy, the board chose to acquiesce rather than {flout} the powerful chairman."
+  ],
+  "sbn": [
+   "সে যেতে চায়নি, কিন্তু মেনে নিতে (acquiesce) হলো।",
+   "শ্রমিকরা নতুন নিয়ম মেনে নেবে (acquiesce)।",
+   "অসন্তুষ্ট হলেও বোর্ড ক্ষমতাধর চেয়ারম্যানকে অমান্য না করে মেনে নিল (acquiesce)।"
+  ],
+  "tip": "Latin acquiescere, \"to rest\": you rest and stop resisting."
+ },
+ {
+  "id": "acquisitive",
+  "word": "Acquisitive",
+  "src": "WS1+WS2",
+  "pos": "adjective",
+  "en": "eager to gain more wealth or possessions",
+  "bn": "লোভী; সম্পদলিপ্সু",
+  "s": [
+   "The acquisitive man kept buying more land.",
+   "An acquisitive child wants every new toy.",
+   "The {avarice} of the acquisitive merchant led him to hoard gold while his workers starved."
+  ],
+  "sbn": [
+   "সম্পদলিপ্সু (acquisitive) লোকটি শুধু আরও জমি কিনতেই থাকল।",
+   "লোভী (acquisitive) শিশু প্রতিটি নতুন খেলনাই চায়।",
+   "লোভী (acquisitive) ব্যবসায়ীর অর্থলিপ্সা তাকে সোনা জমাতে বাধ্য করল, আর শ্রমিকরা অনাহারে থাকল।"
+  ],
+  "tip": "From \"acquire\": one who always wants to acquire more."
+ },
+ {
+  "id": "acquit",
+  "word": "Acquit",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to declare someone not guilty",
+  "bn": "খালাস দেওয়া; দোষমুক্ত ঘোষণা করা",
+  "s": [
+   "The jury voted to acquit the man.",
+   "The court will acquit her if there is no proof.",
+   "The judge chose to acquit him because the evidence was too {tenuous} to prove guilt."
+  ],
+  "sbn": [
+   "জুরি লোকটিকে খালাস (acquit) দেওয়ার পক্ষে ভোট দিল।",
+   "প্রমাণ না থাকলে আদালত তাকে খালাস (acquit) দেবে।",
+   "প্রমাণ খুব দুর্বল হওয়ায় বিচারক তাকে খালাস (acquit) দিলেন।"
+  ],
+  "tip": "Opposite of \"convict\"; think \"quit the case\" - he is free to go."
+ },
+ {
+  "id": "acrid",
+  "word": "Acrid",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "sharp, bitter, and unpleasant in smell or taste",
+  "bn": "ঝাঁঝালো; তীব্র",
+  "s": [
+   "Acrid smoke filled the kitchen.",
+   "The acrid smell of burning rubber made us cough.",
+   "The {pungent}, acrid fumes from the factory made the air almost unbearable."
+  ],
+  "sbn": [
+   "রান্নাঘর ঝাঁঝালো (acrid) ধোঁয়ায় ভরে গেল।",
+   "রবার পোড়ার তীব্র (acrid) গন্ধে আমরা কাশতে লাগলাম।",
+   "কারখানার ঝাঁঝালো ও তীব্র (acrid) ধোঁয়ায় বাতাস প্রায় অসহ্য হয়ে উঠল।"
+  ],
+  "tip": "Latin acer (sharp); shares root with \"acid\"."
+ },
+ {
+  "id": "acrimonious",
+  "word": "Acrimonious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "angry and bitter, especially in an argument",
+  "bn": "তিক্ত; কটুভাষী; রাগপূর্ণ",
+  "s": [
+   "They had an acrimonious argument.",
+   "The acrimonious meeting ended with shouting.",
+   "The divorce was acrimonious, full of {recrimination} and angry letters."
+  ],
+  "sbn": [
+   "তাদের মধ্যে তিক্ত (acrimonious) তর্ক হলো।",
+   "তিক্ত (acrimonious) সভাটি চেঁচামেচিতে শেষ হলো।",
+   "বিবাহবিচ্ছেদটি ছিল তিক্ত (acrimonious), পাল্টা দোষারোপ আর রাগী চিঠিতে ভরা।"
+  ],
+  "tip": "Same root as \"acrid\" - bitter, sharp words."
+ },
+ {
+  "id": "acronym",
+  "word": "Acronym",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "a word formed from the first letters of other words",
+  "bn": "আদ্যক্ষর শব্দ; সংক্ষিপ্ত রূপ",
+  "s": [
+   "NASA is an acronym.",
+   "\"GRE\" is not an acronym because we say each letter.",
+   "The report was full of {esoteric} terms and every acronym that outsiders could not follow."
+  ],
+  "sbn": [
+   "NASA একটি আদ্যক্ষর শব্দ (acronym)।",
+   "\"GRE\" আসলে আদ্যক্ষর শব্দ (acronym) নয়, কারণ আমরা প্রতিটি অক্ষর আলাদা করে বলি।",
+   "প্রতিবেদনটি দুর্বোধ্য শব্দ ও এমন সব সংক্ষিপ্ত রূপে (acronym) ভরা ছিল যা বাইরের লোকজন বুঝত না।"
+  ],
+  "tip": "Greek akron (tip) + onyma (name): a name made from the tips."
+ },
+ {
+  "id": "acumen",
+  "word": "Acumen",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "sharp judgment and quick understanding",
+  "bn": "তীক্ষ্ণ বুদ্ধি; দূরদর্শিতা",
+  "s": [
+   "She has great business acumen.",
+   "His political acumen helped him win the election.",
+   "The merchant's financial acumen, combined with his {prudent} habits, made him rich."
+  ],
+  "sbn": [
+   "তার ব্যবসায়িক বুদ্ধি (acumen) অসাধারণ।",
+   "তার রাজনৈতিক দূরদর্শিতা (acumen) তাকে নির্বাচনে জিততে সাহায্য করল।",
+   "ব্যবসায়ীর আর্থিক বিচক্ষণতা (acumen) এবং সতর্ক অভ্যাস তাকে ধনী করে তুলল।"
+  ],
+  "tip": "Latin acuere, \"sharpen\"; acumen = a sharp mind."
+ },
+ {
+  "id": "acute",
+  "word": "Acute",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "sharp, severe, or very sensitive",
+  "bn": "তীব্র; তীক্ষ্ণ; প্রখর",
+  "s": [
+   "She felt an acute pain in her leg.",
+   "Dogs have an acute sense of smell.",
+   "The country faces an acute shortage of food, an {exigency} that needs quick help."
+  ],
+  "sbn": [
+   "তার পায়ে তীব্র (acute) ব্যথা হলো।",
+   "কুকুরের ঘ্রাণশক্তি খুব প্রখর (acute)।",
+   "দেশটি খাদ্যের তীব্র (acute) সংকটে আছে, যা দ্রুত সাহায্যের দাবি রাখে।"
+  ],
+  "tip": "Latin acutus, \"sharpened\"; an acute angle is a sharp angle."
+ },
+ {
+  "id": "ad-lib",
+  "word": "Ad-lib",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to speak or perform without preparation",
+  "bn": "আগে থেকে প্রস্তুত না হয়ে বলা; তাৎক্ষণিক বলা",
+  "s": [
+   "The actor had to ad-lib his lines.",
+   "She forgot her notes and began to ad-lib.",
+   "When the script failed, the {fledgling} actor had to ad-lib for several minutes."
+  ],
+  "sbn": [
+   "অভিনেতাকে নিজের সংলাপ তাৎক্ষণিক বানিয়ে (ad-lib) বলতে হলো।",
+   "সে নোট ভুলে গিয়ে তাৎক্ষণিকভাবে (ad-lib) বলতে শুরু করল।",
+   "চিত্রনাট্য কাজ না করায় নবীন অভিনেতাকে কয়েক মিনিট তাৎক্ষণিকভাবে (ad-lib) বলতে হলো।"
+  ],
+  "tip": "Short for Latin ad libitum, \"at pleasure\": speak as you please."
+ },
+ {
+  "id": "adage",
+  "word": "Adage",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a short, well-known saying that holds a truth",
+  "bn": "প্রবাদ; প্রবচন",
+  "s": [
+   "\"Haste makes waste\" is an old adage.",
+   "My grandfather loved to repeat that adage.",
+   "The old adage about patience seemed {banal}, but it proved wise in the end."
+  ],
+  "sbn": [
+   "\"তাড়াহুড়ো করলে কাজ নষ্ট\" একটি পুরনো প্রবাদ (adage)।",
+   "আমার দাদা ওই প্রবাদটি (adage) বারবার বলতে ভালোবাসতেন।",
+   "ধৈর্য নিয়ে পুরনো প্রবাদটি (adage) গতানুগতিক মনে হলেও শেষে তা বুদ্ধিমানের কথাই প্রমাণিত হলো।"
+  ],
+  "tip": "Same family as \"adagio\"; just remember: an adage is an old saying."
+ },
+ {
+  "id": "adamant",
+  "word": "Adamant",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "refusing to change one's mind; firm",
+  "bn": "অটল; অনড়; দৃঢ়",
+  "s": [
+   "She was adamant about going to college.",
+   "He remained adamant and refused to sign.",
+   "Despite pleas from his family, the {obdurate} chief stayed adamant and would not give in."
+  ],
+  "sbn": [
+   "সে কলেজে যাওয়ার ব্যাপারে অনড় (adamant) ছিল।",
+   "সে অনড় (adamant) থাকল এবং সই করতে রাজি হলো না।",
+   "পরিবারের অনুরোধ সত্ত্বেও একগুঁয়ে সর্দার অটল (adamant) থাকলেন এবং নত হলেন না।"
+  ],
+  "tip": "Greek adamas, \"unconquerable\"; hard like a diamond."
+ },
+ {
+  "id": "address",
+  "word": "Address",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to deal with a problem; to speak to an audience",
+  "bn": "সমস্যার সমাধানে এগোনো; ভাষণ দেওয়া",
+  "s": [
+   "The leader will address the nation tonight.",
+   "We must address the problem of waste.",
+   "The minister promised to address the {dearth} of clean water in rural areas."
+  ],
+  "sbn": [
+   "নেতা আজ রাতে জাতির উদ্দেশে ভাষণ (address) দেবেন।",
+   "আমাদের বর্জ্যের সমস্যাটি সমাধান (address) করতে হবে।",
+   "মন্ত্রী গ্রামাঞ্চলে বিশুদ্ধ পানির অভাব দূর করার (address) প্রতিশ্রুতি দিলেন।"
+  ],
+  "tip": "Also a noun for a speech or location; in GRE it often means \"tackle\"."
+ },
+ {
+  "id": "adduce",
+  "word": "Adduce",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to give as proof or example",
+  "bn": "প্রমাণ বা উদাহরণ হিসেবে উপস্থাপন করা",
+  "s": [
+   "The lawyer will adduce new evidence.",
+   "She adduced several facts to support her claim.",
+   "To {substantiate} his theory, the scientist chose to adduce data from three separate studies."
+  ],
+  "sbn": [
+   "উকিল নতুন প্রমাণ উপস্থাপন (adduce) করবেন।",
+   "নিজের দাবি সমর্থনে সে কয়েকটি তথ্য তুলে ধরল (adduced)।",
+   "নিজের তত্ত্ব প্রমাণ করতে বিজ্ঞানী তিনটি আলাদা গবেষণার তথ্য উপস্থাপন (adduce) করলেন।"
+  ],
+  "tip": "Latin ad- + ducere (lead): lead forward as proof; cf. \"produce\"."
+ },
+ {
+  "id": "adherent",
+  "word": "Adherent",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a supporter of a person, idea, or group",
+  "bn": "অনুসারী; সমর্থক",
+  "s": [
+   "He is an adherent of that old tradition.",
+   "Many adherents gathered to hear the leader.",
+   "The {charisma} of the leader won him thousands of adherents across the country."
+  ],
+  "sbn": [
+   "সে ওই পুরনো প্রথার অনুসারী (adherent)।",
+   "নেতার কথা শুনতে অনেক সমর্থক (adherents) জড়ো হলো।",
+   "নেতার ব্যক্তিত্বের আকর্ষণ সারা দেশে হাজার হাজার অনুসারী (adherents) এনে দিল।"
+  ],
+  "tip": "Latin adhaerere: \"stick to\"; an adherent sticks like glue."
+ },
+ {
+  "id": "adjourn",
+  "word": "Adjourn",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to end a meeting for a time",
+  "bn": "সভা স্থগিত করা; মুলতবি করা",
+  "s": [
+   "The judge will adjourn the court until Monday.",
+   "The committee voted to adjourn for lunch.",
+   "After hours of {contentious} debate, the chairman chose to adjourn the meeting."
+  ],
+  "sbn": [
+   "বিচারক আদালত সোমবার পর্যন্ত মুলতবি (adjourn) করবেন।",
+   "কমিটি দুপুরের খাবারের জন্য সভা স্থগিত (adjourn) করার পক্ষে ভোট দিল।",
+   "ঘণ্টার পর ঘণ্টা বিতর্কিত আলোচনার পর সভাপতি সভা মুলতবি (adjourn) করলেন।"
+  ],
+  "tip": "French à jour: \"to a day\"; set it for another day."
+ },
+ {
+  "id": "adjunct",
+  "word": "Adjunct",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "something added as a helpful extra, not essential",
+  "bn": "সংযোজন; সহায়ক বস্তু",
+  "s": [
+   "The garden is an adjunct to the house.",
+   "She works as an adjunct teacher at the college.",
+   "The new clinic is merely an adjunct to the main hospital and is {subordinate} to it."
+  ],
+  "sbn": [
+   "বাগানটি বাড়ির একটি সংযোজন (adjunct)।",
+   "সে কলেজে খণ্ডকালীন (adjunct) শিক্ষক হিসেবে কাজ করে।",
+   "নতুন ক্লিনিকটি মূল হাসপাতালের শুধু একটি সহায়ক অংশ (adjunct) এবং তার অধীন।"
+  ],
+  "tip": "Latin adjungere, \"join to\"; cf. \"join\"."
+ },
+ {
+  "id": "adroit",
+  "word": "Adroit",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "clever and skilful, especially with the hands or mind",
+  "bn": "দক্ষ; নিপুণ",
+  "s": [
+   "The adroit tailor mended the coat in minutes.",
+   "She is adroit at solving difficult problems.",
+   "The {deft} and adroit negotiator turned a failing deal into a triumph."
+  ],
+  "sbn": [
+   "নিপুণ (adroit) দর্জি কয়েক মিনিটে কোটটি মেরামত করে দিল।",
+   "কঠিন সমস্যা সমাধানে সে দক্ষ (adroit)।",
+   "দক্ষ ও চতুর আলোচক ভেঙে পড়া চুক্তিটিকে সাফল্যে রূপ দিলেন (adroit)।"
+  ],
+  "tip": "French à droit, \"to the right\": right-handed = skilled."
+ },
+ {
+  "id": "advent",
+  "word": "Advent",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "the arrival of an important person or thing",
+  "bn": "আগমন; সূচনা",
+  "s": [
+   "The advent of the internet changed our lives.",
+   "Farmers welcomed the advent of the rains.",
+   "The advent of cheap phones was a {catalyst} for change in remote villages."
+  ],
+  "sbn": [
+   "ইন্টারনেটের আবির্ভাব (advent) আমাদের জীবন বদলে দিয়েছে।",
+   "কৃষকরা বর্ষার আগমনকে (advent) স্বাগত জানাল।",
+   "সস্তা ফোনের আবির্ভাব (advent) প্রত্যন্ত গ্রামে পরিবর্তনের অনুঘটক হয়ে উঠল।"
+  ],
+  "tip": "Latin advenire, \"to come to\"; think \"Advent calendar\" - waiting for arrival."
+ },
+ {
+  "id": "adventitious",
+  "word": "Adventitious",
+  "src": "WS1+WS2",
+  "pos": "adjective",
+  "en": "happening by chance; not essential or inherent",
+  "bn": "আকস্মিক; আপতিক",
+  "s": [
+   "Their meeting was purely adventitious.",
+   "He gained an adventitious benefit from the storm.",
+   "The discovery was adventitious, a {fortuitous} accident rather than the result of planning."
+  ],
+  "sbn": [
+   "তাদের দেখা হওয়াটা ছিল নেহাত আকস্মিক (adventitious)।",
+   "ঝড় থেকে সে এক আপতিক (adventitious) সুবিধা পেল।",
+   "আবিষ্কারটি ছিল আকস্মিক (adventitious), পরিকল্পনার ফল নয়, বরং এক ভাগ্যক্রমে ঘটা দুর্ঘটনা।"
+  ],
+  "tip": "Latin adventicius, \"coming from outside\"; don't confuse with \"adventure\"."
+ },
+ {
+  "id": "advocate",
+  "word": "Advocate",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to publicly support an idea or plan",
+  "bn": "সমর্থন করা; পক্ষে কথা বলা",
+  "s": [
+   "She advocates for equal education.",
+   "Doctors advocate a healthy diet.",
+   "The activist continued to advocate peace, urging the {belligerent} leaders to lay down arms."
+  ],
+  "sbn": [
+   "সে সমান শিক্ষার পক্ষে সওয়াল (advocate) করে।",
+   "ডাক্তাররা সুষম খাবারের পক্ষে মত (advocate) দেন।",
+   "কর্মী শান্তির পক্ষে কথা (advocate) বলে যেতে লাগলেন এবং যুদ্ধংদেহী নেতাদের অস্ত্র নামাতে অনুরোধ করলেন।"
+  ],
+  "tip": "Latin advocare, \"call to\"; one who is called to speak for you."
+ },
+ {
+  "id": "affidavit",
+  "word": "Affidavit",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "a written statement made under oath",
+  "bn": "হলফনামা",
+  "s": [
+   "He signed an affidavit in court.",
+   "The witness gave an affidavit about the accident.",
+   "The lawyer used the affidavit to {corroborate} the claim that the contract was forged."
+  ],
+  "sbn": [
+   "সে আদালতে একটি হলফনামা (affidavit) সই করল।",
+   "সাক্ষী দুর্ঘটনা সম্পর্কে হলফনামা (affidavit) দিল।",
+   "চুক্তিটি জাল ছিল, এই দাবিকে সমর্থন করতে উকিল হলফনামাটি (affidavit) ব্যবহার করলেন।"
+  ],
+  "tip": "Latin \"he has sworn\"; the legal word ends in a sworn statement."
+ },
+ {
+  "id": "affiliate",
+  "word": "Affiliate",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to join or connect with a larger group",
+  "bn": "যুক্ত হওয়া; সংযুক্ত করা",
+  "s": [
+   "The small club will affiliate with the national league.",
+   "Our school is affiliated with the university.",
+   "The charity chose to affiliate with a global group to {bolster} its resources."
+  ],
+  "sbn": [
+   "ছোট ক্লাবটি জাতীয় লিগের সাথে যুক্ত (affiliate) হবে।",
+   "আমাদের স্কুলটি বিশ্ববিদ্যালয়ের সাথে সংযুক্ত (affiliated)।",
+   "দাতব্য সংস্থাটি নিজের সম্পদ বাড়াতে একটি আন্তর্জাতিক সংস্থার সাথে যুক্ত (affiliate) হলো।"
+  ],
+  "tip": "Latin ad- + filius (son): adopt as a son into the family."
+ },
+ {
+  "id": "affliction",
+  "word": "Affliction",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "something that causes pain or suffering",
+  "bn": "কষ্ট; দুর্ভোগ; ব্যাধি",
+  "s": [
+   "Poverty is a terrible affliction.",
+   "He bore his illness with calm in spite of this affliction.",
+   "Despite every affliction, the old woman faced her fate with {equanimity}."
+  ],
+  "sbn": [
+   "দারিদ্র্য এক ভয়ংকর কষ্ট (affliction)।",
+   "এই দুর্ভোগ (affliction) সত্ত্বেও সে শান্তভাবে অসুস্থতা সহ্য করল।",
+   "সব কষ্ট (affliction) সত্ত্বেও বৃদ্ধা শান্ত মনে নিজের ভাগ্য মেনে নিলেন।"
+  ],
+  "tip": "Latin affligere, \"strike down\"; cf. \"inflict\"."
+ },
+ {
+  "id": "afford",
+  "word": "Afford",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to have enough money or means for something; to provide",
+  "bn": "সামর্থ্য থাকা; দেওয়া",
+  "s": [
+   "We cannot afford a new car.",
+   "The window affords a beautiful view of the hills.",
+   "Though he was {indigent}, he could not afford to refuse the job."
+  ],
+  "sbn": [
+   "আমরা নতুন গাড়ি কেনার সামর্থ্য (afford) রাখি না।",
+   "জানালাটি পাহাড়ের সুন্দর দৃশ্য উপহার (affords) দেয়।",
+   "দরিদ্র হওয়ায় সে কাজটি ফিরিয়ে দেওয়ার সামর্থ্য (afford) রাখত না।"
+  ],
+  "tip": "Old English \"forthian\", to carry out; think \"afford = can carry the cost\"."
+ },
+ {
+  "id": "affront",
+  "word": "Affront",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "an act that insults or offends openly",
+  "bn": "অপমান; অবজ্ঞা",
+  "s": [
+   "The remark was an affront to her pride.",
+   "He took her refusal as an affront.",
+   "Such an affront to the king's honor was an act of {effrontery} that he could not forgive."
+  ],
+  "sbn": [
+   "মন্তব্যটি ছিল তার আত্মসম্মানে আঘাত (affront)।",
+   "সে তার প্রত্যাখ্যানকে অপমান (affront) হিসেবে নিল।",
+   "রাজার সম্মানে এমন অপমান (affront) ছিল এক ঔদ্ধত্য, যা তিনি ক্ষমা করতে পারলেন না।"
+  ],
+  "tip": "Latin ad- + frons (forehead): hit face to face, insulting."
+ },
+ {
+  "id": "aftermath",
+  "word": "Aftermath",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "the results or effects of a bad event",
+  "bn": "পরবর্তী ফল; ধ্বংসাবশেষ",
+  "s": [
+   "The town was silent in the aftermath of the storm.",
+   "The aftermath of the war was famine.",
+   "In the aftermath of the flood, volunteers worked to {alleviate} the suffering of homeless families."
+  ],
+  "sbn": [
+   "ঝড়ের পরের (aftermath) শহরটি নীরব ছিল।",
+   "যুদ্ধের পরের ফল ছিল দুর্ভিক্ষ (aftermath)।",
+   "বন্যার পরিণতিতে (aftermath) স্বেচ্ছাসেবকরা গৃহহীন পরিবারগুলোর কষ্ট লাঘব করতে কাজ করল।"
+  ],
+  "tip": "After + math (old word for a mowing): the new grass after a cut."
+ },
+ {
+  "id": "aggrandize",
+  "word": "Aggrandize",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to make someone or something seem greater, richer, or more powerful",
+  "bn": "বড় করে তোলা; ক্ষমতা বাড়ানো",
+  "s": [
+   "The ruler wished to aggrandize his family.",
+   "He lied to aggrandize his own role.",
+   "The {despot} used every trick to aggrandize himself and {burnish} his public image."
+  ],
+  "sbn": [
+   "শাসক নিজের পরিবারকে বড় (aggrandize) করতে চাইলেন।",
+   "সে নিজের ভূমিকা বড় (aggrandize) করে দেখাতে মিথ্যা বলল।",
+   "স্বৈরাচারী নিজের ভাবমূর্তি উজ্জ্বল করতে এবং নিজেকে বড় (aggrandize) করতে সব ফন্দি ব্যবহার করল।"
+  ],
+  "tip": "From \"grand\": to make grand."
+ },
+ {
+  "id": "aggrieve",
+  "word": "Aggrieve",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to cause pain or injustice to someone",
+  "bn": "কষ্ট দেওয়া; ক্ষুব্ধ করা",
+  "s": [
+   "The decision aggrieved the workers.",
+   "She felt aggrieved by the unfair rule.",
+   "The aggrieved citizens demanded {redress} for the wrong done to them."
+  ],
+  "sbn": [
+   "সিদ্ধান্তটি শ্রমিকদের ক্ষুব্ধ (aggrieved) করল।",
+   "অন্যায় নিয়মের কারণে সে নিজেকে ক্ষতিগ্রস্ত (aggrieved) মনে করল।",
+   "ক্ষুব্ধ (aggrieved) নাগরিকরা তাদের প্রতি করা অন্যায়ের প্রতিকার দাবি করল।"
+  ],
+  "tip": "Contains \"grief\": to cause grief."
+ },
+ {
+  "id": "aghast",
+  "word": "Aghast",
+  "src": "WS1+WS2",
+  "pos": "adjective",
+  "en": "filled with shock and horror",
+  "bn": "স্তম্ভিত; হতভম্ব",
+  "s": [
+   "We stood aghast at the sight.",
+   "She was aghast when she saw the damage.",
+   "The crowd was aghast at the {heinous} act, and dismay turned into {indignation}."
+  ],
+  "sbn": [
+   "দৃশ্যটি দেখে আমরা স্তম্ভিত (aghast) হয়ে গেলাম।",
+   "ক্ষতির পরিমাণ দেখে সে হতভম্ব (aghast) হয়ে গেল।",
+   "জঘন্য কাজ দেখে জনতা স্তম্ভিত (aghast) হয়ে গেল এবং হতাশা ক্ষোভে বদলে গেল।"
+  ],
+  "tip": "Related to \"ghost\": you look as if you saw a ghost."
+ },
+ {
+  "id": "alchemy",
+  "word": "Alchemy",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "an old science that tried to turn metal into gold; a magical change",
+  "bn": "রসায়নবিদ্যা (প্রাচীন); জাদুকরী রূপান্তর",
+  "s": [
+   "Medieval alchemy tried to make gold from lead.",
+   "His kind words worked a kind of alchemy on her mood.",
+   "The chef's alchemy turned simple rice into a dish of {sublime} flavor."
+  ],
+  "sbn": [
+   "মধ্যযুগের রসায়নবিদ্যা (alchemy) সীসা থেকে সোনা বানানোর চেষ্টা করত।",
+   "তার মিষ্টি কথা তার মেজাজে যেন জাদুকরী (alchemy) পরিবর্তন আনল।",
+   "রাঁধুনির জাদুকরী কৌশল (alchemy) সাধারণ চালকে অসাধারণ স্বাদের খাবারে বদলে দিল।"
+  ],
+  "tip": "Arabic al-kimiya; ancestor of \"chemistry\"."
+ },
+ {
+  "id": "alienate",
+  "word": "Alienate",
+  "src": "WS1+WS2",
+  "pos": "verb",
+  "en": "to make someone feel unfriendly or distant",
+  "bn": "বিচ্ছিন্ন করা; দূরে সরিয়ে দেওয়া",
+  "s": [
+   "Rude words may alienate your friends.",
+   "The new policy will alienate many voters.",
+   "His {condescending} manner began to alienate his colleagues, leaving him isolated."
+  ],
+  "sbn": [
+   "রূঢ় কথা তোমার বন্ধুদের দূরে (alienate) সরিয়ে দিতে পারে।",
+   "নতুন নীতি অনেক ভোটারকে বিমুখ (alienate) করবে।",
+   "তার অহংকারী আচরণ সহকর্মীদের বিচ্ছিন্ন (alienate) করে তুলল, ফলে সে একা হয়ে গেল।"
+  ],
+  "tip": "Latin alienus, \"belonging to another\"; cf. \"alien\"."
+ },
+ {
+  "id": "allege",
+  "word": "Allege",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to claim something is true without proof",
+  "bn": "দাবি করা; অভিযোগ করা",
+  "s": [
+   "The police allege that he stole the car.",
+   "She alleged that the test was unfair.",
+   "The lawyer will {assert} his client's innocence, though prosecutors allege that the money was taken by fraud."
+  ],
+  "sbn": [
+   "পুলিশের অভিযোগ (allege), সে গাড়িটি চুরি করেছে।",
+   "সে অভিযোগ (alleged) করল যে পরীক্ষাটি অন্যায্য ছিল।",
+   "উকিল মক্কেলের নির্দোষিতা দৃঢ়ভাবে বলবেন, যদিও প্রসিকিউটররা অভিযোগ (allege) করছেন যে প্রতারণার মাধ্যমে টাকা নেওয়া হয়েছে।"
+  ],
+  "tip": "Related word: \"alleged\" = said to be, but not proven."
+ },
+ {
+  "id": "allegiance",
+  "word": "Allegiance",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "loyalty to a person, group, or country",
+  "bn": "আনুগত্য; বিশ্বস্ততা",
+  "s": [
+   "Soldiers swear allegiance to their country.",
+   "His allegiance to the team never wavered.",
+   "Their {fidelity} and allegiance to the king remained {steadfast} even in defeat."
+  ],
+  "sbn": [
+   "সৈনিকরা দেশের প্রতি আনুগত্যের (allegiance) শপথ নেয়।",
+   "দলের প্রতি তার আনুগত্য (allegiance) কখনও টলেনি।",
+   "পরাজয়েও রাজার প্রতি তাদের বিশ্বস্ততা ও আনুগত্য (allegiance) অটল থাকল।"
+  ],
+  "tip": "Think \"a LEGal (liege) bond\": loyalty owed to a liege lord."
+ },
+ {
+  "id": "allegory",
+  "word": "Allegory",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "a story with a hidden moral or political meaning",
+  "bn": "রূপক কাহিনী",
+  "s": [
+   "Animal Farm is an allegory about power.",
+   "The poem is an allegory of life and death.",
+   "The fable is an allegory whose {figurative} meaning is hidden beneath a simple tale."
+  ],
+  "sbn": [
+   "\"অ্যানিমাল ফার্ম\" ক্ষমতা নিয়ে একটি রূপক কাহিনী (allegory)।",
+   "কবিতাটি জীবন ও মৃত্যুর রূপক (allegory)।",
+   "গল্পটি একটি রূপক (allegory), যার প্রতীকী অর্থ সহজ কাহিনীর আড়ালে লুকানো।"
+  ],
+  "tip": "Greek allos (other) + agoreuein (speak): saying one thing, meaning another."
+ },
+ {
+  "id": "allocate",
+  "word": "Allocate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to give out a share for a purpose",
+  "bn": "বরাদ্দ করা; বণ্টন করা",
+  "s": [
+   "The school will allocate funds for books.",
+   "We must allocate time for study each day.",
+   "The council chose to allocate more money to schools to {bolster} education in poor districts."
+  ],
+  "sbn": [
+   "স্কুল বইয়ের জন্য টাকা বরাদ্দ (allocate) করবে।",
+   "আমাদের প্রতিদিন পড়ার জন্য সময় বরাদ্দ (allocate) করতে হবে।",
+   "দরিদ্র এলাকায় শিক্ষাকে শক্তিশালী করতে পরিষদ স্কুলগুলোর জন্য বেশি টাকা বরাদ্দ (allocate) করল।"
+  ],
+  "tip": "Latin ad- + locare (place): put in a place."
+ },
+ {
+  "id": "allot",
+  "word": "Allot",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to give a share or portion to each person",
+  "bn": "ভাগ করে দেওয়া; বরাদ্দ করা",
+  "s": [
+   "The teacher will allot ten minutes to each student.",
+   "Each worker was allotted a small room.",
+   "The inheritance was divided so that each heir would receive the {commensurate} share the will had allotted."
+  ],
+  "sbn": [
+   "শিক্ষক প্রতিটি ছাত্রকে দশ মিনিট বরাদ্দ (allot) করবেন।",
+   "প্রত্যেক শ্রমিককে একটি ছোট ঘর বরাদ্দ (allotted) করা হলো।",
+   "সম্পত্তি এমনভাবে ভাগ হলো যে প্রত্যেক উত্তরাধিকারী উইলে নির্ধারিত (allotted) সমানুপাতিক অংশ পেল।"
+  ],
+  "tip": "Related to \"lot\" (a share, as in drawing lots)."
+ },
+ {
+  "id": "alloy",
+  "word": "Alloy",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a metal made by mixing two or more metals",
+  "bn": "সংকর ধাতু; মিশ্রণ",
+  "s": [
+   "Brass is an alloy of copper and zinc.",
+   "The ring is made of a strong alloy.",
+   "The sword was forged from a new alloy that was {malleable} when hot yet very hard when cool."
+  ],
+  "sbn": [
+   "পিতল তামা ও দস্তার সংকর ধাতু (alloy)।",
+   "আংটিটি একটি শক্ত সংকর ধাতু (alloy) দিয়ে তৈরি।",
+   "তলোয়ারটি এমন এক নতুন সংকর ধাতু (alloy) দিয়ে গড়া, যা গরম অবস্থায় নমনীয় অথচ ঠান্ডা হলে খুব শক্ত।"
+  ],
+  "tip": "Latin alligare, \"bind to\": metals bound together."
+ },
+ {
+  "id": "allusion",
+  "word": "Allusion",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "an indirect reference to something",
+  "bn": "ইঙ্গিত; পরোক্ষ উল্লেখ",
+  "s": [
+   "The poem has an allusion to Shakespeare.",
+   "He made an allusion to her past mistake.",
+   "The speech was full of subtle allusion, and only a {discerning} listener caught every hint."
+  ],
+  "sbn": [
+   "কবিতায় শেক্সপিয়ারের প্রতি একটি ইঙ্গিত (allusion) আছে।",
+   "সে তার আগের ভুলের দিকে পরোক্ষ ইঙ্গিত (allusion) করল।",
+   "বক্তৃতাটি সূক্ষ্ম ইঙ্গিতে (allusion) ভরা ছিল, আর কেবল বিচক্ষণ শ্রোতাই প্রতিটি আভাস ধরতে পারল।"
+  ],
+  "tip": "Latin alludere, \"to play with\"; don't mix up with \"illusion\"."
+ },
+ {
+  "id": "aloof",
+  "word": "Aloof",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "distant and not friendly; keeping apart",
+  "bn": "নির্লিপ্ত; দূরে থাকা; উদাসীন",
+  "s": [
+   "She stayed aloof from the group.",
+   "His aloof manner made him seem proud.",
+   "The {reticent} and aloof scholar rarely joined his colleagues for lunch."
+  ],
+  "sbn": [
+   "সে দলটির থেকে দূরে (aloof) থাকল।",
+   "তার নির্লিপ্ত (aloof) আচরণ তাকে অহংকারী দেখাত।",
+   "চুপচাপ ও নির্লিপ্ত (aloof) পণ্ডিত সহকর্মীদের সাথে খুব কমই দুপুরের খাবারে যেতেন।"
+  ],
+  "tip": "Old sailing term \"a-luff\": keep away from the wind - keep apart."
+ },
+ {
+  "id": "altercation",
+  "word": "Altercation",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a noisy argument or quarrel",
+  "bn": "ঝগড়া; বচসা",
+  "s": [
+   "The two drivers had an altercation.",
+   "An altercation broke out in the crowded shop.",
+   "The altercation between the neighbors grew {vitriolic}, and soon police arrived."
+  ],
+  "sbn": [
+   "দুই চালকের মধ্যে ঝগড়া (altercation) হলো।",
+   "ভিড়ের দোকানে একটি বচসা (altercation) শুরু হলো।",
+   "প্রতিবেশীদের মধ্যে ঝগড়া (altercation) এতই কটু হয়ে উঠল যে শীঘ্রই পুলিশ এসে গেল।"
+  ],
+  "tip": "Latin alter (other): you go back and forth with \"the other\"."
+ },
+ {
+  "id": "altruism",
+  "word": "Altruism",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "unselfish concern for the welfare of others",
+  "bn": "পরার্থপরতা; নিঃস্বার্থ সেবা",
+  "s": [
+   "His altruism made him help every stranger.",
+   "Volunteers show true altruism by giving their time.",
+   "The doctor's {beneficent} work abroad was driven by pure altruism, not by any reward."
+  ],
+  "sbn": [
+   "তার পরার্থপরতা (altruism) তাকে প্রত্যেক অপরিচিতকে সাহায্য করাল।",
+   "স্বেচ্ছাসেবকরা সময় দিয়ে প্রকৃত নিঃস্বার্থতা (altruism) দেখায়।",
+   "বিদেশে ডাক্তারের উপকারী কাজ কোনো পুরস্কারের জন্য নয়, নিছক পরার্থপরতার (altruism) কারণে ছিল।"
+  ],
+  "tip": "Latin alter (other): think of others, not yourself."
+ },
+ {
+  "id": "amass",
+  "word": "Amass",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to gather a large amount, especially wealth",
+  "bn": "জমানো; পুঞ্জীভূত করা",
+  "s": [
+   "He worked hard to amass a fortune.",
+   "The library amassed thousands of rare books.",
+   "The merchant managed to amass great wealth through {frugal} habits and shrewd trade."
+  ],
+  "sbn": [
+   "সে বিপুল সম্পদ জমাতে (amass) কঠোর পরিশ্রম করল।",
+   "লাইব্রেরি হাজার হাজার দুর্লভ বই সংগ্রহ (amassed) করল।",
+   "ব্যবসায়ী মিতব্যয়ী অভ্যাস ও চতুর ব্যবসার মাধ্যমে প্রচুর সম্পদ জমাতে (amass) পারলেন।"
+  ],
+  "tip": "Contains \"mass\": gather into a mass."
+ },
+ {
+  "id": "ambience",
+  "word": "Ambience",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the mood or atmosphere of a place",
+  "bn": "পরিবেশ; আবহ",
+  "s": [
+   "The cafe has a warm ambience.",
+   "Soft music added to the restaurant's ambience.",
+   "The {opulent} hotel was known for its quiet ambience and luxury."
+  ],
+  "sbn": [
+   "ক্যাফেটির পরিবেশ (ambience) উষ্ণ।",
+   "নরম সুর রেস্তোরাঁর আবহ (ambience) আরও বাড়াল।",
+   "জাঁকজমকপূর্ণ হোটেলটি শান্ত পরিবেশ (ambience) ও বিলাসিতার জন্য পরিচিত ছিল।"
+  ],
+  "tip": "Latin ambire, \"go around\": the feeling that surrounds you."
+ },
+ {
+  "id": "amenable",
+  "word": "Amenable",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "willing to listen or agree; easy to control",
+  "bn": "সহজে রাজি; নমনীয়; বাধ্য",
+  "s": [
+   "She is amenable to new ideas.",
+   "The child was amenable to advice.",
+   "The usually {obdurate} manager proved amenable to a compromise."
+  ],
+  "sbn": [
+   "সে নতুন ধারণা মেনে নিতে রাজি (amenable)।",
+   "শিশুটি উপদেশ শুনতে নমনীয় (amenable) ছিল।",
+   "সাধারণত একগুঁয়ে ম্যানেজার আপসে রাজি (amenable) হলেন।"
+  ],
+  "tip": "Latin minare, \"to lead\"; one who is easily led."
+ },
+ {
+  "id": "amenity",
+  "word": "Amenity",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a pleasant or useful feature of a place",
+  "bn": "সুযোগসুবিধা; আরামদায়ক বৈশিষ্ট্য",
+  "s": [
+   "The hotel has many amenities.",
+   "A park is a pleasant amenity for the town.",
+   "The {commodious} apartment offers every amenity, including a pool and gym."
+  ],
+  "sbn": [
+   "হোটেলটিতে অনেক সুযোগসুবিধা (amenities) আছে।",
+   "পার্ক শহরের জন্য একটি আনন্দদায়ক সুবিধা (amenity)।",
+   "প্রশস্ত অ্যাপার্টমেন্টে পুল ও জিমসহ সব সুযোগসুবিধা (amenity) আছে।"
+  ],
+  "tip": "Latin amoenus, \"pleasant\"; related to \"amiable\"."
+ },
+ {
+  "id": "amiable",
+  "word": "Amiable",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "friendly and pleasant",
+  "bn": "মিশুক; অমায়িক",
+  "s": [
+   "He is an amiable and kind man.",
+   "The amiable clerk smiled at everyone.",
+   "His {convivial}, amiable nature made him welcome at every gathering."
+  ],
+  "sbn": [
+   "সে এক অমায়িক (amiable) ও দয়ালু মানুষ।",
+   "অমায়িক (amiable) কেরানি সবার দিকে হেসে তাকাল।",
+   "তার সদালাপী ও মিশুক (amiable) স্বভাব তাকে সব আসরে প্রিয় করে তুলল।"
+  ],
+  "tip": "Latin amicus, \"friend\": an amiable person is friendly."
+ },
+ {
+  "id": "amid",
+  "word": "Amid",
+  "src": "WS2",
+  "pos": "preposition",
+  "en": "in the middle of; surrounded by",
+  "bn": "মধ্যে; মাঝখানে",
+  "s": [
+   "She stayed calm amid the noise.",
+   "The house stood amid tall trees.",
+   "Amid the {turmoil} of the election, one candidate remained calm and {composed}."
+  ],
+  "sbn": [
+   "সে গোলমালের মধ্যে (amid) শান্ত থাকল।",
+   "বাড়িটি উঁচু গাছের মাঝখানে (amid) দাঁড়িয়ে ছিল।",
+   "নির্বাচনের অস্থিরতার মধ্যে (amid) একজন প্রার্থী শান্ত ও সংযত থাকলেন।"
+  ],
+  "tip": "Same family as \"middle\"; amid = in the mid."
+ },
+ {
+  "id": "amnesty",
+  "word": "Amnesty",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "an official pardon for a group of offenders",
+  "bn": "সাধারণ ক্ষমা",
+  "s": [
+   "The government offered amnesty to the rebels.",
+   "Prisoners were released under a general amnesty.",
+   "The new ruler granted amnesty to all who had joined the {insurrection}, hoping to heal the nation."
+  ],
+  "sbn": [
+   "সরকার বিদ্রোহীদের সাধারণ ক্ষমা (amnesty) ঘোষণা করল।",
+   "সাধারণ ক্ষমার (amnesty) আওতায় বন্দিদের মুক্তি দেওয়া হলো।",
+   "নতুন শাসক দেশকে সুস্থ করার আশায় বিদ্রোহে যোগ দেওয়া সবাইকে ক্ষমা (amnesty) করলেন।"
+  ],
+  "tip": "Greek amnestia, \"forgetting\"; same root as \"amnesia\": authorities forget the crime."
+ },
+ {
+  "id": "amoral",
+  "word": "Amoral",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "having no sense of right and wrong",
+  "bn": "নৈতিকতাহীন; ভালো-মন্দ বোধহীন",
+  "s": [
+   "A baby is amoral and knows no rules.",
+   "The machine is amoral and has no feelings.",
+   "The {perfidious} dealer acted in an amoral way, caring only about profit."
+  ],
+  "sbn": [
+   "শিশু নৈতিকতা-নিরপেক্ষ (amoral) এবং নিয়ম জানে না।",
+   "যন্ত্রটি নৈতিকতাহীন (amoral) এবং এর কোনো অনুভূতি নেই।",
+   "নীতিহীন ব্যবসায়ী ভালো-মন্দের বোধহীন (amoral) ভাবে কাজ করত, শুধু লাভের কথা ভাবত।"
+  ],
+  "tip": "a- (without) + moral; note: different from \"immoral\" (knows but ignores)."
+ },
+ {
+  "id": "amorous",
+  "word": "Amorous",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "showing or feeling romantic love",
+  "bn": "প্রেমময়; প্রণয়সংক্রান্ত",
+  "s": [
+   "He wrote amorous letters to his wife.",
+   "The amorous couple walked by the river.",
+   "The poet's amorous verses, full of {ardent} longing, won her heart."
+  ],
+  "sbn": [
+   "সে স্ত্রীকে প্রেমময় (amorous) চিঠি লিখত।",
+   "প্রেমিক জুটি নদীর ধার দিয়ে হাঁটল (amorous)।",
+   "কবির প্রণয়ঘন (amorous) কবিতাগুলো তীব্র আকুলতায় ভরা, যা তার মন জয় করল।"
+  ],
+  "tip": "Latin amor, \"love\": think of \"amour\"."
+ },
+ {
+  "id": "amorphous",
+  "word": "Amorphous",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "without a clear shape or form",
+  "bn": "আকারহীন; অনির্দিষ্ট",
+  "s": [
+   "The cloud was an amorphous gray mass.",
+   "His plans were still amorphous and unclear.",
+   "The {nebulous} and amorphous proposal had no clear goals or structure."
+  ],
+  "sbn": [
+   "মেঘটি ছিল আকারহীন (amorphous) ধূসর পিণ্ড।",
+   "তার পরিকল্পনা তখনও অনির্দিষ্ট (amorphous) ও অস্পষ্ট ছিল।",
+   "অস্পষ্ট ও আকারহীন (amorphous) প্রস্তাবটির কোনো পরিষ্কার লক্ষ্য বা কাঠামো ছিল না।"
+  ],
+  "tip": "Greek a- (without) + morphe (form): without form."
+ },
+ {
+  "id": "anathema",
+  "word": "Anathema",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "something or someone strongly disliked or cursed",
+  "bn": "চরম ঘৃণার বিষয়; অভিশাপ",
+  "s": [
+   "Cheating is anathema to honest students.",
+   "Violence was anathema to the peaceful leader.",
+   "Any form of {sedition} was anathema to the king, who feared losing his throne."
+  ],
+  "sbn": [
+   "প্রতারণা সৎ ছাত্রদের কাছে চরম ঘৃণার বিষয় (anathema)।",
+   "শান্তিপ্রিয় নেতার কাছে সহিংসতা ছিল ঘৃণ্য (anathema)।",
+   "রাজদ্রোহের যেকোনো রূপ রাজার কাছে ঘৃণ্য (anathema) ছিল, কারণ তিনি সিংহাসন হারানোর ভয় পেতেন।"
+  ],
+  "tip": "Greek anathema: something set apart, later \"cursed\"."
+ },
+ {
+  "id": "ancillary",
+  "word": "Ancillary",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "supporting; secondary to something main",
+  "bn": "সহায়ক; গৌণ",
+  "s": [
+   "Nurses provide ancillary help to doctors.",
+   "The ancillary buildings include a garage and shed.",
+   "The ancillary costs of the trip, though {inconsequential} at first, soon added up."
+  ],
+  "sbn": [
+   "নার্সরা ডাক্তারদের সহায়ক (ancillary) সাহায্য দেন।",
+   "সহায়ক (ancillary) ভবনগুলোর মধ্যে গ্যারেজ ও চালা আছে।",
+   "ভ্রমণের আনুষঙ্গিক (ancillary) খরচ শুরুতে সামান্য মনে হলেও শীঘ্রই জমে গেল।"
+  ],
+  "tip": "Latin ancilla, \"maidservant\": a helper."
+ },
+ {
+  "id": "anecdote",
+  "word": "Anecdote",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a short, funny, or interesting personal story",
+  "bn": "ছোট মজার গল্প; কাহিনী",
+  "s": [
+   "He told an anecdote about his school days.",
+   "The teacher began with a funny anecdote.",
+   "Her speech was full of witty anecdote, though one {facetious} story offended a few guests."
+  ],
+  "sbn": [
+   "সে স্কুলজীবনের একটি মজার গল্প (anecdote) বলল।",
+   "শিক্ষক একটি মজার ঘটনা (anecdote) দিয়ে শুরু করলেন।",
+   "তার বক্তৃতা রসালো কাহিনীতে (anecdote) ভরা ছিল, যদিও একটি ঠাট্টার গল্প কয়েকজন অতিথিকে বিরক্ত করল।"
+  ],
+  "tip": "Greek anekdota, \"unpublished things\": private little stories."
+ },
+ {
+  "id": "angst",
+  "word": "Angst",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a deep feeling of worry and anxiety",
+  "bn": "গভীর উদ্বেগ; মানসিক যন্ত্রণা",
+  "s": [
+   "Teenage angst is common.",
+   "He felt angst before the big exam.",
+   "The poet's {pensive} verses expressed the angst of a generation lost between wars."
+  ],
+  "sbn": [
+   "কিশোর বয়সের উদ্বেগ (angst) সাধারণ বিষয়।",
+   "বড় পরীক্ষার আগে সে গভীর দুশ্চিন্তা (angst) অনুভব করল।",
+   "কবির চিন্তাশীল কবিতাগুলো যুদ্ধের মাঝে হারিয়ে যাওয়া এক প্রজন্মের মানসিক যন্ত্রণা (angst) প্রকাশ করল।"
+  ],
+  "tip": "German word for \"fear\"; sounds like \"anxiety\"."
+ },
+ {
+  "id": "anguish",
+  "word": "Anguish",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "severe pain or suffering of mind or body",
+  "bn": "তীব্র মানসিক কষ্ট; যন্ত্রণা",
+  "s": [
+   "She cried in anguish when she heard the news.",
+   "His anguish was clear to everyone.",
+   "The mother's anguish was {palpable} as she waited for news of her missing son."
+  ],
+  "sbn": [
+   "খবর শুনে সে যন্ত্রণায় (anguish) কাঁদল।",
+   "তার কষ্ট (anguish) সবার কাছে স্পষ্ট ছিল।",
+   "নিখোঁজ ছেলের খবরের অপেক্ষায় মায়ের যন্ত্রণা (anguish) স্পষ্ট বোঝা যাচ্ছিল।"
+  ],
+  "tip": "Latin angustus, \"narrow, tight\": a tight, choking pain."
+ },
+ {
+  "id": "animosity",
+  "word": "Animosity",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "strong hatred or hostility",
+  "bn": "শত্রুতা; বিদ্বেষ",
+  "s": [
+   "There was animosity between the two families.",
+   "He felt no animosity toward his rival.",
+   "Years of {enmity} left the neighbors with deep animosity, and even small matters sparked quarrels."
+  ],
+  "sbn": [
+   "দুই পরিবারের মধ্যে শত্রুতা (animosity) ছিল।",
+   "প্রতিদ্বন্দ্বীর প্রতি তার কোনো বিদ্বেষ (animosity) ছিল না।",
+   "বছরের পর বছর দুশমনি প্রতিবেশীদের মধ্যে গভীর বিদ্বেষ (animosity) রেখে গেল, আর ছোট ব্যাপারেও ঝগড়া বাধত।"
+  ],
+  "tip": "Latin animus, \"spirit, anger\": an angry spirit against someone."
+ },
+ {
+  "id": "annex",
+  "word": "Annex",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to take over land and add it to one's own territory",
+  "bn": "দখল করে যুক্ত করা; সংযুক্ত করা",
+  "s": [
+   "The country tried to annex its neighbor's land.",
+   "They plan to annex the small island.",
+   "The empire sought to annex the border province and {subjugate} its people."
+  ],
+  "sbn": [
+   "দেশটি প্রতিবেশীর জমি দখল (annex) করতে চাইল।",
+   "তারা ছোট দ্বীপটি নিজেদের সঙ্গে যুক্ত (annex) করার পরিকল্পনা করছে।",
+   "সাম্রাজ্যটি সীমান্ত প্রদেশ দখল (annex) করে তার মানুষদের পদানত করতে চাইল।"
+  ],
+  "tip": "Latin ad- + nectere (tie): tie on to your own land."
+ },
+ {
+  "id": "annuity",
+  "word": "Annuity",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a fixed sum of money paid each year",
+  "bn": "বার্ষিক ভাতা",
+  "s": [
+   "He receives a yearly annuity from the company.",
+   "The widow lives on an annuity.",
+   "Living in {penury}, the retiree depended on his small annuity, which barely covered his rent."
+  ],
+  "sbn": [
+   "সে কোম্পানি থেকে প্রতি বছর একটি বার্ষিক ভাতা (annuity) পায়।",
+   "বিধবা মহিলা বার্ষিক ভাতার (annuity) ওপর নির্ভর করে চলেন।",
+   "দারিদ্র্যের মধ্যে থাকা অবসরপ্রাপ্ত লোকটি নিজের সামান্য বার্ষিক ভাতার (annuity) ওপর নির্ভর করত, যা দিয়ে ভাড়াও মিটত না।"
+  ],
+  "tip": "Latin annus, \"year\": a payment every year."
+ },
+ {
+  "id": "antecedent",
+  "word": "Antecedent",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "something that came before; an earlier event or thing",
+  "bn": "পূর্ববর্তী ঘটনা; পূর্বসূরি",
+  "s": [
+   "Poverty was an antecedent of the revolt.",
+   "The old law is an antecedent of today's rule.",
+   "The war's antecedents lay in years of {strife}, and no single {precursor} can be named."
+  ],
+  "sbn": [
+   "দারিদ্র্য ছিল বিদ্রোহের পূর্ববর্তী কারণ (antecedent)।",
+   "পুরনো আইনটি আজকের নিয়মের পূর্বসূরি (antecedent)।",
+   "যুদ্ধের পূর্ববর্তী কারণগুলো (antecedent) ছিল বছরের পর বছর দ্বন্দ্ব, কোনো একক অগ্রদূতকে চিহ্নিত করা যায় না।"
+  ],
+  "tip": "Latin ante (before) + cedere (go): that which goes before."
+ },
+ {
+  "id": "antedate",
+  "word": "Antedate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to come before in time; to put an earlier date on",
+  "bn": "আগে ঘটা; আগের তারিখ দেওয়া",
+  "s": [
+   "This custom may antedate the Roman era.",
+   "He did antedate the letter by a week.",
+   "Some fossils antedate the dinosaurs, and the {antiquity} of the site astonished scientists."
+  ],
+  "sbn": [
+   "এই প্রথা রোমান যুগেরও আগের (antedate) হতে পারে।",
+   "সে চিঠিটিতে এক সপ্তাহ আগের তারিখ (antedate) বসাল।",
+   "কিছু জীবাশ্ম ডাইনোসরেরও আগের (antedate) এবং স্থানটির প্রাচীনত্ব বিজ্ঞানীদের অবাক করল।"
+  ],
+  "tip": "ante (before) + date: come before in date."
+ },
+ {
+  "id": "anterior",
+  "word": "Anterior",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "located at or toward the front; coming before",
+  "bn": "সামনের; পূর্ববর্তী",
+  "s": [
+   "The anterior part of the brain is the front.",
+   "The injury was to the anterior leg muscle.",
+   "The {posthumous} award honored work that was anterior to the war, done many years before."
+  ],
+  "sbn": [
+   "মস্তিষ্কের সামনের (anterior) অংশটি হলো সামনের দিক।",
+   "আঘাতটি পায়ের সামনের (anterior) পেশিতে লেগেছিল।",
+   "মরণোত্তর পুরস্কারটি যুদ্ধের আগের (anterior), বহু বছর আগে করা কাজকে সম্মান জানাল।"
+  ],
+  "tip": "Latin ante, \"before\": opposite is \"posterior\"."
+ },
+ {
+  "id": "anthology",
+  "word": "Anthology",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a collection of poems or stories by various authors",
+  "bn": "সংকলন; চয়নিকা",
+  "s": [
+   "The class read an anthology of short stories.",
+   "She published an anthology of poems.",
+   "The anthology gathers an {eclectic} mix of poetry from many countries and centuries."
+  ],
+  "sbn": [
+   "ক্লাস ছোটগল্পের একটি সংকলন (anthology) পড়ল।",
+   "সে কবিতার একটি সংকলন (anthology) প্রকাশ করল।",
+   "সংকলনটিতে নানা দেশ ও শতাব্দীর বিচিত্র ধরনের কবিতা এক জায়গায় আনা হয়েছে (anthology)।"
+  ],
+  "tip": "Greek anthos (flower) + legein (gather): a bouquet of writings."
+ },
+ {
+  "id": "antipodal",
+  "word": "Antipodal",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "exactly opposite; on opposite sides of the earth",
+  "bn": "সম্পূর্ণ বিপরীত; পৃথিবীর বিপরীত প্রান্তের",
+  "s": [
+   "Their views were antipodal on every issue.",
+   "Australia is nearly antipodal to Europe.",
+   "The two leaders held antipodal opinions, a clear {dichotomy} that made agreement impossible."
+  ],
+  "sbn": [
+   "প্রতিটি বিষয়ে তাদের মত ছিল সম্পূর্ণ বিপরীত (antipodal)।",
+   "অস্ট্রেলিয়া প্রায় ইউরোপের বিপরীত প্রান্তে (antipodal)।",
+   "দুই নেতার মত ছিল সম্পূর্ণ বিপরীত (antipodal), এই দ্বিভাজন চুক্তিকে অসম্ভব করে তুলল।"
+  ],
+  "tip": "Greek anti (opposite) + pous (foot): feet-opposite across the globe."
+ },
+ {
+  "id": "antiquity",
+  "word": "Antiquity",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "ancient times; great age",
+  "bn": "প্রাচীনকাল; প্রাচীনত্ব",
+  "s": [
+   "The vase dates from antiquity.",
+   "The temple is famous for its great antiquity.",
+   "Scholars studied the artifact to verify its antiquity, hoping to {ascertain} its true age."
+  ],
+  "sbn": [
+   "ফুলদানিটি প্রাচীনকালের (antiquity)।",
+   "মন্দিরটি তার প্রাচীনত্বের (antiquity) জন্য বিখ্যাত।",
+   "পণ্ডিতরা নিদর্শনটির প্রাচীনত্ব (antiquity) যাচাই করলেন এবং এর প্রকৃত বয়স নির্ণয় করতে চাইলেন।"
+  ],
+  "tip": "Latin antiquus, \"old\": cf. \"antique\"."
+ },
+ {
+  "id": "antithesis",
+  "word": "Antithesis",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the exact opposite",
+  "bn": "সম্পূর্ণ বিপরীত",
+  "s": [
+   "Hate is the antithesis of love.",
+   "His calm is the antithesis of her anger.",
+   "The humble priest was the antithesis of the {bombastic} and {ostentatious} bishop."
+  ],
+  "sbn": [
+   "ঘৃণা ভালোবাসার ঠিক উল্টো (antithesis)।",
+   "তার শান্ত ভাব তার রাগের সম্পূর্ণ বিপরীত (antithesis)।",
+   "বিনয়ী পুরোহিত ছিলেন দাম্ভিক ও আড়ম্বরপ্রিয় বিশপের ঠিক উল্টো (antithesis)।"
+  ],
+  "tip": "Greek anti (against) + thesis (a placing): placed against."
+ },
+ {
+  "id": "apartheid",
+  "word": "Apartheid",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a policy of racial separation and discrimination",
+  "bn": "বর্ণবৈষম্য নীতি; বর্ণবিচ্ছিন্নতা",
+  "s": [
+   "Apartheid was an unjust system in South Africa.",
+   "Many nations fought against apartheid.",
+   "Apartheid {subjugated} the Black majority for decades, enforcing harsh separation."
+  ],
+  "sbn": [
+   "দক্ষিণ আফ্রিকায় বর্ণবৈষম্য নীতি (apartheid) ছিল অন্যায্য ব্যবস্থা।",
+   "অনেক দেশ বর্ণবৈষম্যের (apartheid) বিরুদ্ধে লড়েছিল।",
+   "বর্ণবৈষম্য নীতি (apartheid) কয়েক দশক ধরে কঠোর বিচ্ছিন্নতার মাধ্যমে কৃষ্ণাঙ্গ সংখ্যাগরিষ্ঠকে পদানত করে রেখেছিল।"
+  ],
+  "tip": "Afrikaans \"apart-ness\": being kept apart."
+ },
+ {
+  "id": "aperture",
+  "word": "Aperture",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an opening or hole, especially in a camera",
+  "bn": "ছিদ্র; ফাঁক; আলো প্রবেশের পথ",
+  "s": [
+   "Light entered through a small aperture.",
+   "The camera has a wide aperture.",
+   "Through the narrow aperture in the wall, a faint and {luminous} glow could be seen."
+  ],
+  "sbn": [
+   "ছোট একটি ছিদ্র (aperture) দিয়ে আলো ঢুকল।",
+   "ক্যামেরার অ্যাপারচার (aperture) বেশ বড়।",
+   "দেওয়ালের সরু ফাঁক (aperture) দিয়ে একটি ক্ষীণ উজ্জ্বল আভা দেখা যাচ্ছিল।"
+  ],
+  "tip": "Latin aperire, \"to open\": aperture = opening."
+ },
+ {
+  "id": "apex",
+  "word": "Apex",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the highest point; the peak",
+  "bn": "চূড়া; সর্বোচ্চ বিন্দু",
+  "s": [
+   "The climbers reached the apex of the mountain.",
+   "The pyramid has a pointed apex.",
+   "At the apex of his career, the athlete retired, leaving a {legacy} of glory."
+  ],
+  "sbn": [
+   "পর্বতারোহীরা পাহাড়ের চূড়ায় (apex) পৌঁছাল।",
+   "পিরামিডের ডগাটি সূচালো (apex)।",
+   "ক্যারিয়ারের শিখরে (apex) থেকেই খেলোয়াড় অবসর নিলেন এবং গৌরবের উত্তরাধিকার রেখে গেলেন।"
+  ],
+  "tip": "Latin apex, \"peak\"; also the top of a triangle."
+ },
+ {
+  "id": "aphorism",
+  "word": "Aphorism",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a short, wise saying",
+  "bn": "সূক্তি; প্রবচন",
+  "s": [
+   "\"Knowledge is power\" is a famous aphorism.",
+   "The writer is known for his witty aphorisms.",
+   "The sage's {succinct} aphorism summed up a lifetime of wisdom in a single line."
+  ],
+  "sbn": [
+   "\"জ্ঞানই শক্তি\" একটি বিখ্যাত সূক্তি (aphorism)।",
+   "লেখক তার রসাত্মক সূক্তির (aphorisms) জন্য পরিচিত।",
+   "জ্ঞানী ব্যক্তির সংক্ষিপ্ত সূক্তি (aphorism) এক লাইনে সারা জীবনের প্রজ্ঞা তুলে ধরল।"
+  ],
+  "tip": "Greek aphorizein, \"to define\"; a tiny definition of truth."
+ },
+ {
+  "id": "apocalypse",
+  "word": "Apocalypse",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the end of the world; a disaster of huge scale",
+  "bn": "মহাপ্রলয়; ভয়াবহ বিপর্যয়",
+  "s": [
+   "Many films show an apocalypse.",
+   "The flood felt like an apocalypse to the village.",
+   "The prophet warned of an apocalypse, a {cataclysm} that would shatter the earth."
+  ],
+  "sbn": [
+   "অনেক সিনেমায় মহাপ্রলয় (apocalypse) দেখানো হয়।",
+   "বন্যাটি গ্রামের কাছে মহাপ্রলয়ের (apocalypse) মতো মনে হলো।",
+   "ভবিষ্যদ্বক্তা মহাপ্রলয়ের (apocalypse) সতর্কবাণী দিলেন, এক মহাবিপর্যয় যা পৃথিবীকে ভেঙে দেবে।"
+  ],
+  "tip": "Greek apokalypsis, \"uncovering/revelation\"."
+ },
+ {
+  "id": "apocryphal",
+  "word": "Apocryphal",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "of doubtful truth; widely told but probably false",
+  "bn": "অপ্রামাণ্য; সন্দেহজনক সত্যতার",
+  "s": [
+   "That story about the king is apocryphal.",
+   "Many apocryphal tales surround the famous artist.",
+   "The tale of the king's hidden gold is likely {spurious}, an apocryphal story told for centuries."
+  ],
+  "sbn": [
+   "রাজার সম্পর্কে ওই গল্পটি অপ্রামাণ্য (apocryphal)।",
+   "বিখ্যাত শিল্পীকে ঘিরে অনেক সন্দেহজনক (apocryphal) কাহিনী চালু আছে।",
+   "রাজার গুপ্ত সোনার গল্পটি সম্ভবত ভুয়া এক অপ্রামাণ্য (apocryphal) কাহিনী, যা শতাব্দী ধরে বলা হচ্ছে।"
+  ],
+  "tip": "Greek apokryphos, \"hidden\"; a story of unknown origin."
+ },
+ {
+  "id": "apogee",
+  "word": "Apogee",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the highest point; the peak of success",
+  "bn": "সর্বোচ্চ বিন্দু; চরম উৎকর্ষ",
+  "s": [
+   "The empire reached its apogee in 1500.",
+   "The singer's fame was at its apogee.",
+   "At the apogee of her career, the artist was the {preeminent} painter of her time."
+  ],
+  "sbn": [
+   "সাম্রাজ্যটি ১৫০০ সালে তার চরম শিখরে (apogee) পৌঁছায়।",
+   "গায়িকার খ্যাতি তখন চূড়ায় (apogee)।",
+   "ক্যারিয়ারের চরম শিখরে (apogee) শিল্পী তাঁর সময়ের শ্রেষ্ঠ চিত্রশিল্পী ছিলেন।"
+  ],
+  "tip": "Greek apo (away) + ge (earth): farthest point from earth; opposite \"perigee\"."
+ },
+ {
+  "id": "apoplexy",
+  "word": "Apoplexy",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a sudden fit of rage; (old) a stroke",
+  "bn": "প্রচণ্ড রাগের ঝটকা; স্ট্রোক",
+  "s": [
+   "He nearly had apoplexy when he saw the bill.",
+   "The old general died of apoplexy.",
+   "The tyrant fell into apoplexy, his {choleric} temper finally defeating his health."
+  ],
+  "sbn": [
+   "বিল দেখে সে রাগে প্রায় ফেটে (apoplexy) পড়ল।",
+   "বৃদ্ধ জেনারেল স্ট্রোকে (apoplexy) মারা গেলেন।",
+   "স্বৈরশাসক রাগে ফেটে (apoplexy) পড়লেন, তার খিটখিটে মেজাজ শেষে স্বাস্থ্যকে পরাস্ত করল।"
+  ],
+  "tip": "Greek apoplexia, \"struck down\"; think of being \"struck\" by anger."
+ },
+ {
+  "id": "apostasy",
+  "word": "Apostasy",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "abandoning one's faith, cause, or party",
+  "bn": "ধর্মত্যাগ; আদর্শ ত্যাগ",
+  "s": [
+   "The church punished apostasy severely.",
+   "His change of party was called apostasy.",
+   "To his old friends, his move to the rival party was apostasy and a {perfidious} act against everything."
+  ],
+  "sbn": [
+   "গির্জা ধর্মত্যাগকে (apostasy) কঠোরভাবে শাস্তি দিত।",
+   "তার দল বদলকে আদর্শ ত্যাগ (apostasy) বলা হলো।",
+   "পুরনো বন্ধুদের কাছে প্রতিপক্ষ দলে তার যাওয়া ছিল আদর্শ ত্যাগ (apostasy) ও সবকিছুর প্রতি বিশ্বাসঘাতকমূলক কাজ।"
+  ],
+  "tip": "Greek apo (away) + stasis (standing): standing away from the faith."
+ },
+ {
+  "id": "apotheosis",
+  "word": "Apotheosis",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the highest or ideal example; raising someone to a god",
+  "bn": "চূড়ান্ত আদর্শ রূপ; দেবত্বে উন্নয়ন",
+  "s": [
+   "The film is the apotheosis of the action genre.",
+   "Heroes were given apotheosis in ancient Rome.",
+   "The final concert was the apotheosis of her career, a {sublime} end to years of toil."
+  ],
+  "sbn": [
+   "ছবিটি অ্যাকশন ধারার চূড়ান্ত আদর্শ (apotheosis)।",
+   "প্রাচীন রোমে বীরদের দেবতার আসনে (apotheosis) তোলা হতো।",
+   "শেষ কনসার্টটি ছিল তার ক্যারিয়ারের পরম উৎকর্ষ (apotheosis), বছরের পরিশ্রমের এক মহিমান্বিত পরিণতি।"
+  ],
+  "tip": "Greek apo + theos (god): become a god."
+ },
+ {
+  "id": "appalling",
+  "word": "Appalling",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "causing shock or horror; very bad",
+  "bn": "ভয়ংকর; জঘন্য; শোচনীয়",
+  "s": [
+   "The prison conditions were appalling.",
+   "He showed appalling manners at dinner.",
+   "The {squalor} of the slum was appalling, and visitors left in {dismay}."
+  ],
+  "sbn": [
+   "কারাগারের অবস্থা ছিল ভয়ংকর (appalling)।",
+   "রাতের খাবারে সে জঘন্য (appalling) আচরণ করল।",
+   "বস্তির নোংরা অবস্থা ছিল ভয়াবহ (appalling) এবং দর্শনার্থীরা হতাশ হয়ে ফিরল।"
+  ],
+  "tip": "From \"pall\" (to grow pale): news so bad you turn pale."
+ },
+ {
+  "id": "apparition",
+  "word": "Apparition",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a ghost or a sudden strange appearance",
+  "bn": "ভূত; অদ্ভুত আবির্ভাব",
+  "s": [
+   "The children saw a ghostly apparition.",
+   "An apparition appeared in the foggy lane.",
+   "The pale apparition seemed {ethereal}, floating silently across the dark hall."
+  ],
+  "sbn": [
+   "বাচ্চারা একটি ভুতুড়ে আবির্ভাব (apparition) দেখল।",
+   "কুয়াশাঢাকা গলিতে হঠাৎ এক ছায়ামূর্তি (apparition) দেখা গেল।",
+   "ফ্যাকাশে ছায়ামূর্তিটি (apparition) অপার্থিব মনে হলো, অন্ধকার হলঘর দিয়ে নিঃশব্দে ভেসে যাচ্ছিল।"
+  ],
+  "tip": "From \"appear\": something that suddenly appears."
+ },
+ {
+  "id": "appellation",
+  "word": "Appellation",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a name or title",
+  "bn": "নাম; উপাধি",
+  "s": [
+   "The king earned the appellation \"the Wise\".",
+   "He disliked his childhood appellation.",
+   "The knight's heroic deeds earned him the {titular} appellation \"Lion of the North\"."
+  ],
+  "sbn": [
+   "রাজা \"জ্ঞানী\" উপাধি (appellation) পেলেন।",
+   "সে তার ছোটবেলার ডাকনাম (appellation) পছন্দ করত না।",
+   "নাইটের বীরত্বপূর্ণ কাজ তাকে \"উত্তরের সিংহ\" নামে নামমাত্র উপাধি (appellation) এনে দিল।"
+  ],
+  "tip": "Latin appellare, \"to call\": the name you are called."
+ },
+ {
+  "id": "appendage",
+  "word": "Appendage",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "something attached to a larger thing; a limb",
+  "bn": "সংযুক্ত অংশ; অঙ্গ",
+  "s": [
+   "The tail is an appendage of the animal.",
+   "The small shed was an appendage to the barn.",
+   "The committee was merely an appendage, a {subsidiary} body with no real power."
+  ],
+  "sbn": [
+   "লেজ প্রাণীর একটি সংযুক্ত অঙ্গ (appendage)।",
+   "ছোট চালাঘরটি গোলাঘরের সংযুক্ত অংশ (appendage) ছিল।",
+   "কমিটি ছিল নিছক এক সংযুক্ত অংশ (appendage), কোনো প্রকৃত ক্ষমতাবিহীন সহায়ক সংস্থা।"
+  ],
+  "tip": "From \"append\": something appended (attached)."
+ },
+ {
+  "id": "apportion",
+  "word": "Apportion",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to divide and give out in shares",
+  "bn": "ভাগ করে দেওয়া; বণ্টন করা",
+  "s": [
+   "The judge will apportion the blame fairly.",
+   "They apportioned the food among the families.",
+   "The will tries to apportion the estate in an {equitable} way, giving each heir a fair share."
+  ],
+  "sbn": [
+   "বিচারক ন্যায্যভাবে দোষ ভাগ (apportion) করবেন।",
+   "তারা পরিবারগুলোর মধ্যে খাবার ভাগ (apportioned) করে দিল।",
+   "উইলটি সম্পত্তিকে ন্যায্যভাবে ভাগ (apportion) করতে চায়, প্রত্যেক উত্তরাধিকারীকে সমান অংশ দিয়ে।"
+  ],
+  "tip": "ap- + portion: give each a portion."
+ },
+ {
+  "id": "apposite",
+  "word": "Apposite",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "very suitable and well chosen for the situation",
+  "bn": "যথাযথ; প্রাসঙ্গিক",
+  "s": [
+   "She made an apposite remark at the meeting.",
+   "His apposite example made the idea clear.",
+   "The speaker's {felicitous} and apposite quotation silenced even the critics."
+  ],
+  "sbn": [
+   "সভায় সে একটি যথাযথ (apposite) মন্তব্য করল।",
+   "তার প্রাসঙ্গিক (apposite) উদাহরণ ধারণাটি পরিষ্কার করল।",
+   "বক্তার যথাযথ ও মানানসই (apposite) উদ্ধৃতি সমালোচকদেরও চুপ করিয়ে দিল।"
+  ],
+  "tip": "Latin ad + ponere (put): put in just the right place."
+ },
+ {
+  "id": "appraise",
+  "word": "Appraise",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to judge the value or quality of something",
+  "bn": "মূল্যায়ন করা; দাম যাচাই করা",
+  "s": [
+   "An expert will appraise the old painting.",
+   "The manager appraised each worker's skills.",
+   "The jeweler took time to appraise the ring, using a {meticulous} eye for every flaw."
+  ],
+  "sbn": [
+   "বিশেষজ্ঞ পুরনো ছবিটির মূল্যায়ন (appraise) করবেন।",
+   "ম্যানেজার প্রতিটি কর্মীর দক্ষতা যাচাই (appraised) করলেন।",
+   "জহুরি প্রতিটি খুঁত খুঁটিয়ে দেখে আংটিটির মূল্য নির্ধারণ (appraise) করতে সময় নিলেন।"
+  ],
+  "tip": "Related to \"price\": appraise = set the price."
+ },
+ {
+  "id": "appreciate",
+  "word": "Appreciate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to value something; to increase in value; to understand",
+  "bn": "কদর করা; মূল্য বাড়া; বুঝতে পারা",
+  "s": [
+   "I appreciate your kind help.",
+   "The value of land will appreciate over time.",
+   "A {discerning} critic can appreciate the subtle skill in the painting."
+  ],
+  "sbn": [
+   "আপনার সহায়তার জন্য আমি কৃতজ্ঞ (appreciate)।",
+   "জমির দাম সময়ের সাথে বাড়বে (appreciate)।",
+   "বিচক্ষণ সমালোচক ছবির সূক্ষ্ম দক্ষতার কদর (appreciate) করতে পারেন।"
+  ],
+  "tip": "Latin pretium, \"price\": to put a good price on something."
+ },
+ {
+  "id": "apprehensive",
+  "word": "Apprehensive",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "worried that something bad will happen",
+  "bn": "শঙ্কিত; উদ্বিগ্ন",
+  "s": [
+   "She felt apprehensive before the interview.",
+   "The apprehensive child held his mother's hand.",
+   "The {timorous} student was apprehensive about speaking before the large crowd."
+  ],
+  "sbn": [
+   "ইন্টারভিউয়ের আগে সে শঙ্কিত (apprehensive) বোধ করল।",
+   "ভীত (apprehensive) শিশুটি মায়ের হাত ধরে রাখল।",
+   "ভীতু ছাত্রটি বিশাল জনতার সামনে বলার ব্যাপারে শঙ্কিত (apprehensive) ছিল।"
+  ],
+  "tip": "Latin apprehendere, \"to seize\": the fear that seizes you."
+ },
+ {
+  "id": "appurtenance",
+  "word": "Appurtenance",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an extra item that belongs to a larger thing",
+  "bn": "আনুষঙ্গিক জিনিস; সংযুক্ত বস্তু",
+  "s": [
+   "The garage is an appurtenance of the house.",
+   "Books were the only appurtenance in his room.",
+   "The palace, with every appurtenance of wealth, felt {sumptuous} to the visitors."
+  ],
+  "sbn": [
+   "গ্যারেজটি বাড়ির আনুষঙ্গিক অংশ (appurtenance)।",
+   "তার ঘরে বই-ই ছিল একমাত্র আনুষঙ্গিক সামগ্রী (appurtenance)।",
+   "প্রাসাদটি সম্পদের সব আনুষঙ্গিক সরঞ্জামসহ (appurtenance) দর্শকদের কাছে জাঁকজমকপূর্ণ মনে হলো।"
+  ],
+  "tip": "Latin pertinere, \"belong to\"; cf. \"pertain\"."
+ },
+ {
+  "id": "apropos",
+  "word": "Apropos",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "suitable to the time or situation",
+  "bn": "প্রাসঙ্গিক; যথাযথ",
+  "s": [
+   "Her remark was apropos of the discussion.",
+   "That joke was not apropos at a funeral.",
+   "Her quote was entirely apropos, and its {salient} point matched the topic perfectly."
+  ],
+  "sbn": [
+   "তার মন্তব্য আলোচনার সাথে প্রাসঙ্গিক (apropos) ছিল।",
+   "শোকসভায় ওই ঠাট্টা মানানসই (apropos) ছিল না।",
+   "তার উদ্ধৃতিটি পুরোপুরি প্রাসঙ্গিক (apropos) ছিল এবং এর মূল বিষয় বিষয়ের সাথে নিখুঁতভাবে মিলে গেল।"
+  ],
+  "tip": "French à propos, \"to the purpose\"."
+ },
+ {
+  "id": "apt",
+  "word": "Apt",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "suitable; likely or inclined to do something",
+  "bn": "উপযুক্ত; প্রবণ",
+  "s": [
+   "That was an apt reply to the question.",
+   "He is apt to forget his keys.",
+   "The {succinct} comment was apt, and it summed up the problem in a few words."
+  ],
+  "sbn": [
+   "এটি ছিল প্রশ্নের উপযুক্ত (apt) জবাব।",
+   "সে প্রায়ই চাবি ভুলে যায় (apt)।",
+   "সংক্ষিপ্ত মন্তব্যটি ছিল যথাযথ (apt), যা কয়েকটি শব্দে সমস্যাটি তুলে ধরল।"
+  ],
+  "tip": "Latin aptus, \"fitted\"; a fitting word is apt."
+ },
+ {
+  "id": "aptitude",
+  "word": "Aptitude",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "natural ability or talent",
+  "bn": "স্বাভাবিক প্রতিভা; যোগ্যতা",
+  "s": [
+   "She has an aptitude for music.",
+   "He took a test to measure his aptitude.",
+   "The boy's aptitude for math was {innate}, as he solved hard problems without training."
+  ],
+  "sbn": [
+   "গানের প্রতি তার স্বাভাবিক প্রতিভা (aptitude) আছে।",
+   "সে নিজের যোগ্যতা (aptitude) মাপতে একটি পরীক্ষা দিল।",
+   "ছেলেটির গণিতে প্রতিভা (aptitude) ছিল জন্মগত, কারণ প্রশিক্ষণ ছাড়াই সে কঠিন সমস্যা সমাধান করত।"
+  ],
+  "tip": "From \"apt\": being apt (fit) for something."
+ },
+ {
+  "id": "arbiter",
+  "word": "Arbiter",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a person who settles disputes or decides what is right",
+  "bn": "বিচারক; মীমাংসাকারী",
+  "s": [
+   "The judge was the arbiter of the dispute.",
+   "She is the arbiter of fashion in the city.",
+   "As arbiter in the long quarrel, the elder remained {disinterested} and fair to both sides."
+  ],
+  "sbn": [
+   "বিচারক ছিলেন বিবাদের মীমাংসাকারী (arbiter)।",
+   "শহরের ফ্যাশনের নির্ধারক (arbiter) সে।",
+   "দীর্ঘ কলহে মীমাংসাকারী (arbiter) হিসেবে প্রবীণ ব্যক্তি নিরপেক্ষ ও দু'পক্ষের প্রতি ন্যায্য থাকলেন।"
+  ],
+  "tip": "Latin arbiter, \"judge, witness\"; cf. \"arbitrate\"."
+ },
+ {
+  "id": "arbitrary",
+  "word": "Arbitrary",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "based on random choice rather than reason; ruling by whim",
+  "bn": "খামখেয়ালি; এলোমেলো",
+  "s": [
+   "The rules seemed arbitrary and unfair.",
+   "He picked an arbitrary number from the list.",
+   "The king's arbitrary decisions, made on a {capricious} whim, often ruined innocent people."
+  ],
+  "sbn": [
+   "নিয়মগুলো খামখেয়ালি (arbitrary) ও অন্যায্য মনে হলো।",
+   "সে তালিকা থেকে একটি এলোমেলো (arbitrary) সংখ্যা বেছে নিল।",
+   "রাজার খামখেয়ালি (arbitrary) সিদ্ধান্ত, যা মর্জিমাফিক নেওয়া হতো, প্রায়ই নিরপরাধদের সর্বনাশ করত।"
+  ],
+  "tip": "Related to \"arbiter\": decided by one person's will, not by rule."
+ },
+ {
+  "id": "arcane",
+  "word": "Arcane",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "secret and understood by few",
+  "bn": "দুর্বোধ্য; রহস্যময়; গোপন",
+  "s": [
+   "The wizard knew many arcane spells.",
+   "Tax law is full of arcane rules.",
+   "The scholar's {recondite} knowledge of arcane rituals impressed no one but experts."
+  ],
+  "sbn": [
+   "জাদুকর অনেক রহস্যময় (arcane) মন্ত্র জানত।",
+   "কর আইন দুর্বোধ্য (arcane) নিয়মে ভরা।",
+   "পণ্ডিতের দুর্লভ ও গূঢ় (arcane) রীতিনীতির জ্ঞান বিশেষজ্ঞ ছাড়া কাউকে মুগ্ধ করল না।"
+  ],
+  "tip": "Latin arcanus, \"hidden\" (from arca, chest): locked in a chest."
+ },
+ {
+  "id": "archaic",
+  "word": "Archaic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "very old-fashioned; belonging to an earlier time",
+  "bn": "সেকেলে; প্রাচীন",
+  "s": [
+   "\"Thou\" is an archaic word.",
+   "The company still uses archaic methods.",
+   "The law, though {anachronistic} and archaic, was still enforced in the remote town."
+  ],
+  "sbn": [
+   "\"Thou\" একটি সেকেলে (archaic) শব্দ।",
+   "কোম্পানিটি এখনও সেকেলে (archaic) পদ্ধতি ব্যবহার করে।",
+   "আইনটি যুগোপযোগী না ও সেকেলে (archaic) হলেও দূরের শহরে তা এখনও প্রয়োগ হতো।"
+  ],
+  "tip": "Greek arche, \"beginning\": from the beginning, so very old."
+ },
+ {
+  "id": "archetype",
+  "word": "Archetype",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a perfect or typical example; the original model",
+  "bn": "আদর্শ নমুনা; আদি আদর্শ",
+  "s": [
+   "He is the archetype of a hero.",
+   "The old fable is an archetype of the story.",
+   "The miser in the novel is the {quintessential} archetype of greed."
+  ],
+  "sbn": [
+   "সে বীরের আদর্শ নমুনা (archetype)।",
+   "পুরনো রূপকথাটি এই গল্পের আদি আদর্শ (archetype)।",
+   "উপন্যাসের কৃপণ চরিত্রটি লোভের এক খাঁটি আদর্শ রূপ (archetype)।"
+  ],
+  "tip": "Greek arche (first) + typos (model): the first model."
+ },
+ {
+  "id": "archipelago",
+  "word": "Archipelago",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a group or chain of islands",
+  "bn": "দ্বীপপুঞ্জ",
+  "s": [
+   "Indonesia is a huge archipelago.",
+   "The archipelago has thousands of small islands.",
+   "The tourist boat crossed the {serene} blue water of the archipelago."
+  ],
+  "sbn": [
+   "ইন্দোনেশিয়া এক বিশাল দ্বীপপুঞ্জ (archipelago)।",
+   "দ্বীপপুঞ্জটিতে (archipelago) হাজার হাজার ছোট দ্বীপ আছে।",
+   "পর্যটক নৌকা দ্বীপপুঞ্জের (archipelago) শান্ত নীল জল পেরিয়ে গেল।"
+  ],
+  "tip": "Greek arkhi (chief) + pelagos (sea): the main sea, full of islands."
+ },
+ {
+  "id": "archives",
+  "word": "Archives",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a place or collection of historical records",
+  "bn": "মহাফেজখানা; ঐতিহাসিক নথিপত্র",
+  "s": [
+   "The records are kept in the city archives.",
+   "He searched the archives for old letters.",
+   "The historian spent years in the {voluminous} archives, studying every faded document."
+  ],
+  "sbn": [
+   "নথিপত্র শহরের মহাফেজখানায় (archives) রাখা আছে।",
+   "সে পুরনো চিঠির খোঁজে মহাফেজখানা (archives) ঘাঁটল।",
+   "ইতিহাসবিদ বিশাল মহাফেজখানায় (archives) বছরের পর বছর কাটিয়ে প্রতিটি জীর্ণ নথি অধ্যয়ন করলেন।"
+  ],
+  "tip": "Greek arkheia, \"public records\"; cf. \"archive\"."
+ },
+ {
+  "id": "ardent",
+  "word": "Ardent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "very enthusiastic and passionate",
+  "bn": "উত্সাহী; আবেগপ্রবণ",
+  "s": [
+   "He is an ardent fan of football.",
+   "She made an ardent plea for peace.",
+   "The {zealous} and ardent volunteer worked day and night for the cause."
+  ],
+  "sbn": [
+   "সে ফুটবলের এক উৎসাহী (ardent) ভক্ত।",
+   "সে শান্তির জন্য আবেগময় (ardent) আবেদন জানাল।",
+   "উদ্যমী ও আবেগপ্রবণ (ardent) স্বেচ্ছাসেবক লক্ষ্যের জন্য দিনরাত কাজ করল।"
+  ],
+  "tip": "Latin ardere, \"to burn\": a burning passion."
+ },
+ {
+  "id": "arid",
+  "word": "Arid",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "very dry; lacking moisture or interest",
+  "bn": "শুষ্ক; অনুর্বর; নীরস",
+  "s": [
+   "The desert is an arid land.",
+   "An arid wind blew across the plains.",
+   "The farmers struggled to grow crops in the {desiccated}, arid soil."
+  ],
+  "sbn": [
+   "মরুভূমি এক শুষ্ক (arid) ভূমি।",
+   "সমভূমির ওপর দিয়ে শুকনো (arid) হাওয়া বইল।",
+   "কৃষকরা শুকিয়ে যাওয়া অনুর্বর (arid) মাটিতে ফসল ফলাতে সংগ্রাম করল।"
+  ],
+  "tip": "Latin aridus, \"dry\"; think \"a-RID of water\"."
+ },
+ {
+  "id": "aristocratic",
+  "word": "Aristocratic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "belonging to the high social class; noble",
+  "bn": "অভিজাত; উচ্চবংশীয়",
+  "s": [
+   "She came from an aristocratic family.",
+   "He had an aristocratic way of speaking.",
+   "The {patrician} family kept its aristocratic pride even after losing its fortune."
+  ],
+  "sbn": [
+   "সে একটি অভিজাত (aristocratic) পরিবার থেকে এসেছে।",
+   "তার কথা বলার ধরনে অভিজাত (aristocratic) ভাব ছিল।",
+   "অভিজাত পরিবারটি সম্পদ হারানোর পরও নিজের আভিজাত্যের (aristocratic) গর্ব বজায় রাখল।"
+  ],
+  "tip": "Greek aristos (best) + kratos (rule): rule by the best."
+ },
+ {
+  "id": "armament",
+  "word": "Armament",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "weapons and military equipment",
+  "bn": "অস্ত্রসম্ভার; সমরাস্ত্র",
+  "s": [
+   "The country spent much on armament.",
+   "Heavy armament filled the warship.",
+   "The nation's growing armament was a {deterrent} to any would-be attacker."
+  ],
+  "sbn": [
+   "দেশটি অস্ত্রসম্ভারে (armament) অনেক খরচ করল।",
+   "যুদ্ধজাহাজ ভারী অস্ত্রে (armament) ভরা ছিল।",
+   "দেশটির ক্রমবর্ধমান অস্ত্রসম্ভার (armament) যেকোনো সম্ভাব্য আক্রমণকারীর জন্য প্রতিরোধক ছিল।"
+  ],
+  "tip": "From \"arm\" (weapon): the arms of a nation."
+ },
+ {
+  "id": "armistice",
+  "word": "Armistice",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an agreement to stop fighting in a war",
+  "bn": "যুদ্ধবিরতি চুক্তি",
+  "s": [
+   "The two sides signed an armistice.",
+   "The armistice ended the long war.",
+   "After months of {skirmish} and loss, an armistice brought a fragile peace."
+  ],
+  "sbn": [
+   "দুই পক্ষ যুদ্ধবিরতি চুক্তি (armistice) সই করল।",
+   "যুদ্ধবিরতি (armistice) দীর্ঘ যুদ্ধের অবসান ঘটাল।",
+   "মাসের পর মাস খণ্ডযুদ্ধ ও ক্ষতির পর যুদ্ধবিরতি (armistice) এক ভঙ্গুর শান্তি আনল।"
+  ],
+  "tip": "Latin arma (arms) + sistere (stand still): arms stand still."
+ },
+ {
+  "id": "arraign",
+  "word": "Arraign",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to bring someone to court to answer a charge",
+  "bn": "আদালতে অভিযোগ আনা; কাঠগড়ায় তোলা",
+  "s": [
+   "The man was arraigned on theft charges.",
+   "They will arraign the suspect tomorrow.",
+   "The mayor was arraigned on charges of {malfeasance} after the audit."
+  ],
+  "sbn": [
+   "লোকটিকে চুরির অভিযোগে আদালতে হাজির (arraigned) করা হলো।",
+   "কাল তারা সন্দেহভাজনকে আদালতে তুলবে (arraign)।",
+   "অডিটের পর মেয়রকে অসদাচরণের অভিযোগে আদালতে হাজির (arraigned) করা হলো।"
+  ],
+  "tip": "Old French araisnier, \"to call to account\"."
+ },
+ {
+  "id": "arrant",
+  "word": "Arrant",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "complete and total (in a bad sense)",
+  "bn": "ঘোর; পুরোদস্তুর (খারাপ অর্থে)",
+  "s": [
+   "He is an arrant fool.",
+   "That was arrant nonsense.",
+   "The {charlatan} was an arrant liar who tricked many villagers."
+  ],
+  "sbn": [
+   "সে একটা ঘোর বোকা (arrant)।",
+   "ওটা ছিল সম্পূর্ণ আজেবাজে (arrant) কথা।",
+   "ভণ্ডটি ছিল ঘোর (arrant) মিথ্যুক, যে অনেক গ্রামবাসীকে ঠকিয়েছিল।"
+  ],
+  "tip": "Variant of \"errant\"; used for bad things: arrant knave."
+ },
+ {
+  "id": "arrears",
+  "word": "Arrears",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "money that is owed and overdue",
+  "bn": "বকেয়া অর্থ",
+  "s": [
+   "He is in arrears with his rent.",
+   "The company paid its arrears of wages.",
+   "Falling into arrears, the {impecunious} tenant feared he would soon lose his home."
+  ],
+  "sbn": [
+   "সে ভাড়ার বকেয়ায় (arrears) আছে।",
+   "কোম্পানি মজুরির বকেয়া (arrears) পরিশোধ করল।",
+   "বকেয়ায় (arrears) পড়ে নিঃস্ব ভাড়াটে ভয় পেল যে শীঘ্রই সে বাড়ি হারাবে।"
+  ],
+  "tip": "Old French arere, \"behind\": payments that are behind."
+ },
+ {
+  "id": "arsenal",
+  "word": "Arsenal",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a store of weapons; a collection of resources",
+  "bn": "অস্ত্রভাণ্ডার; সম্ভার",
+  "s": [
+   "The army kept a huge arsenal.",
+   "The lawyer had a strong arsenal of facts.",
+   "The rebels raided the arsenal, hoping to seize every weapon and {bolster} their cause."
+  ],
+  "sbn": [
+   "সেনাবাহিনীর একটি বিশাল অস্ত্রভাণ্ডার (arsenal) ছিল।",
+   "উকিলের কাছে তথ্যের শক্তিশালী ভাণ্ডার (arsenal) ছিল।",
+   "বিদ্রোহীরা অস্ত্রভাণ্ডার (arsenal) লুট করল, প্রতিটি অস্ত্র দখল করে নিজেদের লক্ষ্যকে শক্তিশালী করার আশায়।"
+  ],
+  "tip": "Arabic dar as-sina'a, \"house of making\"."
+ },
+ {
+  "id": "artful",
+  "word": "Artful",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "clever, often in a sly way",
+  "bn": "চতুর; ধূর্ত",
+  "s": [
+   "He gave an artful answer to dodge the question.",
+   "The artful child fooled his teacher.",
+   "The {guileless} boy was no match for the artful salesman's smooth words."
+  ],
+  "sbn": [
+   "সে প্রশ্ন এড়াতে চতুর (artful) উত্তর দিল।",
+   "চালাক (artful) শিশুটি শিক্ষককে বোকা বানাল।",
+   "সরল ছেলেটি ধূর্ত (artful) বিক্রেতার মিষ্টি কথার সাথে পেরে উঠল না।"
+  ],
+  "tip": "From \"art\" (skill/cunning): skilled at tricking."
+ },
+ {
+  "id": "articulate",
+  "word": "Articulate",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "able to speak clearly and well",
+  "bn": "সুস্পষ্ট বক্তা; স্পষ্টভাষী",
+  "s": [
+   "She is an articulate speaker.",
+   "He was too upset to be articulate.",
+   "The {lucid} and articulate lawyer explained the complex case in simple words."
+  ],
+  "sbn": [
+   "সে একজন স্পষ্টভাষী (articulate) বক্তা।",
+   "সে এতই বিচলিত ছিল যে গুছিয়ে (articulate) বলতে পারল না।",
+   "স্বচ্ছ ও সুস্পষ্ট (articulate) উকিল জটিল মামলাটি সহজ ভাষায় বুঝিয়ে দিলেন।"
+  ],
+  "tip": "Latin articulare, \"divide into joints\": speech in clear parts."
+ },
+ {
+  "id": "artifice",
+  "word": "Artifice",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a clever trick or cunning skill",
+  "bn": "কৌশল; ছলনা",
+  "s": [
+   "The thief used artifice to enter the house.",
+   "Her charm was pure artifice.",
+   "The spy's {subterfuge} and artifice fooled even the most careful guards."
+  ],
+  "sbn": [
+   "চোর কৌশল (artifice) ব্যবহার করে বাড়িতে ঢুকল।",
+   "তার মোহনীয়তা ছিল নিছক ছলনা (artifice)।",
+   "গুপ্তচরের ছল ও কূটকৌশল (artifice) সবচেয়ে সতর্ক প্রহরীদেরও ঠকিয়ে দিল।"
+  ],
+  "tip": "Latin ars (art) + facere (make): something made with art or craft."
+ },
+ {
+  "id": "artisan",
+  "word": "Artisan",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a skilled worker who makes things by hand",
+  "bn": "কারিগর",
+  "s": [
+   "The village artisan made fine pottery.",
+   "Artisans sold their goods at the market.",
+   "The {meticulous} artisan spent weeks carving a single wooden door."
+  ],
+  "sbn": [
+   "গ্রামের কারিগর (artisan) সুন্দর মাটির পাত্র বানাত।",
+   "কারিগররা (artisans) বাজারে তাদের জিনিস বেচত।",
+   "নিখুঁত কারিগর (artisan) একটিমাত্র কাঠের দরজা খোদাই করতে কয়েক সপ্তাহ কাটালেন।"
+  ],
+  "tip": "Italian artigiano, from \"art\": one skilled in a craft."
+ },
+ {
+  "id": "ascendancy",
+  "word": "Ascendancy",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a position of power or influence over others",
+  "bn": "প্রাধান্য; কর্তৃত্ব",
+  "s": [
+   "The new party gained ascendancy in the election.",
+   "The empire's ascendancy lasted for centuries.",
+   "In the {hegemony} of the era, one nation held ascendancy over all its rivals."
+  ],
+  "sbn": [
+   "নির্বাচনে নতুন দলটি প্রাধান্য (ascendancy) পেল।",
+   "সাম্রাজ্যের কর্তৃত্ব (ascendancy) কয়েক শতাব্দী স্থায়ী হয়েছিল।",
+   "সেই যুগের আধিপত্যে একটি জাতি সব প্রতিদ্বন্দ্বীর ওপর প্রাধান্য (ascendancy) বজায় রাখল।"
+  ],
+  "tip": "From \"ascend\": rising above others."
+ },
+ {
+  "id": "ascertain",
+  "word": "Ascertain",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to find out for certain",
+  "bn": "নিশ্চিত হওয়া; খুঁজে বের করা",
+  "s": [
+   "We must ascertain the facts first.",
+   "The police tried to ascertain the cause of the fire.",
+   "Before judging, the wise elder tried to ascertain the truth and {corroborate} each claim."
+  ],
+  "sbn": [
+   "আগে আমাদের তথ্যগুলো নিশ্চিত (ascertain) হতে হবে।",
+   "পুলিশ আগুনের কারণ খুঁজে বের (ascertain) করার চেষ্টা করল।",
+   "বিচার করার আগে প্রবীণ ব্যক্তি সত্য জানতে (ascertain) চেষ্টা করলেন এবং প্রতিটি দাবির সমর্থন যাচাই করলেন।"
+  ],
+  "tip": "Latin ad + certus (certain): make certain."
+ }
+]

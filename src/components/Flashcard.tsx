@@ -1,11 +1,46 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { ChevronDown, Lightbulb, Star, Volume2, X } from "lucide-react";
 import type { Entry } from "@/lib/progress";
-import { speak, stemRegex, wordForForm, type Word } from "@/lib/words";
+import { speak, stemRegex, WORD_BY_ID, wordForForm, type Word } from "@/lib/words";
+import { GROUPS } from "@/data/groups";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 
 const LEVELS = ["Easy", "Medium", "GRE level"];
+
+/** Near-synonyms and opposites from the synonym families (the GRE often tests these together). */
+function relatedWords(id: string) {
+  const groups = GROUPS.filter((g) => g.words.includes(id));
+  const similar = [...new Set(groups.flatMap((g) => g.words))].filter((x) => x !== id);
+  const opposite = [...new Set(groups.flatMap((g) => g.opposite ?? []))].filter((x) => x !== id && !similar.includes(x));
+  const toWords = (ids: string[]) => ids.map((x) => WORD_BY_ID.get(x)).filter((w): w is Word => !!w);
+  return { similar: toWords(similar), opposite: toWords(opposite) };
+}
+
+function WordChips({ label, words, onPeek }: { label: string; words: Word[]; onPeek: (w: Word) => void }) {
+  if (!words.length) return null;
+  return (
+    <p className="flex flex-wrap items-baseline gap-x-1.5 gap-y-1 text-[14px]">
+      <span className="mr-0.5 font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">{label}</span>
+      {words.map((w, i) => (
+        <span key={w.id}>
+          <button
+            type="button"
+            title={`${w.word}: ${w.en}`}
+            onClick={(e) => {
+              e.stopPropagation();
+              onPeek(w);
+            }}
+            className="cursor-help font-medium underline decoration-primary/60 decoration-dotted decoration-2 underline-offset-[3px] hover:decoration-primary focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            {w.word.toLowerCase()}
+          </button>
+          {i < words.length - 1 && <span className="text-muted-foreground">,</span>}
+        </span>
+      ))}
+    </p>
+  );
+}
 
 /** Highlight the card's own word inside a piece of text. */
 function HighlightTarget({ text, word }: { text: string; word: string }) {
@@ -116,6 +151,7 @@ export function Flashcard({
   onStar: () => void;
 }) {
   const [peek, setPeek] = useState<Word | null>(null);
+  const related = useMemo(() => relatedWords(word.id), [word.id]);
   const [openBn, setOpenBn] = useState<Set<number>>(new Set());
   const toggleBn = (i: number) =>
     setOpenBn((prev) => {
@@ -207,6 +243,13 @@ export function Flashcard({
                 {word.bn}
               </p>
             </section>
+
+            {(related.similar.length > 0 || related.opposite.length > 0) && (
+              <section className="flex flex-col gap-1">
+                <WordChips label="Similar" words={related.similar} onPeek={setPeek} />
+                <WordChips label="Opposite" words={related.opposite} onPeek={setPeek} />
+              </section>
+            )}
 
             <section className="rounded-lg border border-border-strong/40 bg-card/60 p-4">
               <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">In sentences</p>

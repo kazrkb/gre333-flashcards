@@ -28,22 +28,66 @@ export type Word = {
   sentences: [string, string, string];
   /** Bangla translation of each sentence (shown on request). */
   bnSentences?: [string, string, string];
+  /** "gre333" = Barron's 333 (always available); "ws" = Word Smart (unlocked after the 333). */
+  deck: "gre333" | "ws";
+  /** Word Smart book(s) the word comes from, e.g. "WS1". */
+  src?: string;
 };
 
 const seen = new Map<string, number>();
 
-export const WORDS: Word[] = [...words1, ...words2, ...words3, ...words4].map(
+/** Barron's 333 high-frequency words. */
+export const CORE_WORDS: Word[] = [...words1, ...words2, ...words3, ...words4].map(
   ([word, pos, en, bn, example]) => {
     const base = word.toLowerCase();
     const n = (seen.get(base) ?? 0) + 1;
     seen.set(base, n);
     const id = n === 1 ? base : `${base}-${n}`;
     const [medium, hard] = MORE[id] ?? [example, example];
-    return { id, word, pos, en, bn, example, tip: TIPS[id] ?? "", sentences: [example, medium, hard], bnSentences: BN_SENTENCES[id] };
+    return {
+      id,
+      word,
+      pos,
+      en,
+      bn,
+      example,
+      tip: TIPS[id] ?? "",
+      sentences: [example, medium, hard],
+      bnSentences: BN_SENTENCES[id],
+      deck: "gre333" as const,
+    };
   },
 );
 
-export const WORD_BY_ID = new Map(WORDS.map((w) => [w.id, w]));
+/**
+ * The words the app is working with right now. Before Word Smart is unlocked this is only the 333;
+ * after unlocking it also contains the Word Smart words (everything is mixed). The array is updated
+ * in place, so every part of the app sees the change.
+ */
+export const WORDS: Word[] = [...CORE_WORDS];
+
+/** Every word that has been loaded (the 333, plus Word Smart once it's downloaded). */
+export const WORD_BY_ID = new Map(CORE_WORDS.map((w) => [w.id, w]));
+
+let wordSmart: Word[] | null = null;
+
+/** Download the Word Smart words (a separate file, fetched only after unlocking). */
+export async function loadWordSmart(): Promise<Word[]> {
+  if (!wordSmart) {
+    const mod = await import("@/data/ws");
+    wordSmart = mod.WS_WORDS;
+    for (const w of wordSmart) WORD_BY_ID.set(w.id, w);
+    formCache.clear();
+  }
+  return wordSmart;
+}
+
+/** Use only the 333, or the 333 + Word Smart mixed together. */
+export function setActiveWords(includeWordSmart: boolean) {
+  WORDS.length = 0;
+  WORDS.push(...CORE_WORDS, ...(includeWordSmart && wordSmart ? wordSmart : []));
+  formCache.clear();
+}
 
 /** Regex that matches a word and its simple forms (abate → abated, abates). */
 export function stemRegex(word: string, flags = "i") {
@@ -58,7 +102,7 @@ export function wordForForm(form: string): Word | undefined {
   if (!formCache.has(key)) {
     formCache.set(
       key,
-      WORDS.find((w) => {
+      [...WORD_BY_ID.values()].find((w) => {
         const m = stemRegex(w.word).exec(form);
         return m !== null && m.index === 0 && m[0].length === form.length;
       }),

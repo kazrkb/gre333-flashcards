@@ -1,0 +1,2681 @@
+[
+ {
+  "id": "debase",
+  "word": "Debase",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to lower the quality, value or dignity of something",
+  "bn": "মান কমানো; হীন করা; অবমূল্যায়ন করা",
+  "s": [
+   "Cheap jokes debase a serious debate.",
+   "The king debased the coins by mixing copper into the silver.",
+   "Critics argued that the {ostentatious} advertising campaign debased nothing less than the museum's reputation for {probity}."
+  ],
+  "sbn": [
+   "সস্তা রসিকতা একটা গুরুতর বিতর্কের মান নামিয়ে দেয় (debase)।",
+   "রাজা রুপার সাথে তামা মিশিয়ে মুদ্রার মান কমিয়ে দিয়েছিলেন (debased)।",
+   "সমালোচকদের মতে, ওই জাঁকজমকপূর্ণ বিজ্ঞাপন প্রচারণা জাদুঘরের সততার সুনামকেই হীন করেছে (debased)।"
+  ],
+  "tip": "de- (down) + base (low): to bring something down to a lower level."
+ },
+ {
+  "id": "debauchery",
+  "word": "Debauchery",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "wild, excessive indulgence in pleasures like drinking and partying",
+  "bn": "লাম্পট্য; উচ্ছৃঙ্খল ভোগবিলাস; অসংযম",
+  "s": [
+   "The prince was known for his debauchery.",
+   "After a week of debauchery in the city, he returned home broke and ashamed.",
+   "The {ascetic} monk viewed the court's endless debauchery with quiet {contempt}."
+  ],
+  "sbn": [
+   "রাজপুত্র তার লাম্পট্যের (debauchery) জন্য পরিচিত ছিল।",
+   "শহরে এক সপ্তাহের উচ্ছৃঙ্খল ভোগবিলাসের (debauchery) পর সে কপর্দকশূন্য আর লজ্জিত হয়ে বাড়ি ফিরল।",
+   "সংযমী সন্ন্যাসী রাজদরবারের অন্তহীন লাম্পট্যকে (debauchery) নীরব ঘৃণার চোখে দেখতেন।"
+  ],
+  "tip": "Think 'de-BAUCH': a debauched person has abandoned self-control for wild pleasure."
+ },
+ {
+  "id": "debilitate",
+  "word": "Debilitate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to make someone or something very weak",
+  "bn": "দুর্বল করে ফেলা; শক্তিহীন করা",
+  "s": [
+   "The fever debilitated him for weeks.",
+   "A long drought can debilitate the economy of a farming village.",
+   "The illness so {enervated} and debilitated her that even short walks became {arduous}."
+  ],
+  "sbn": [
+   "জ্বর তাকে কয়েক সপ্তাহ ধরে দুর্বল করে রেখেছিল (debilitated)।",
+   "দীর্ঘ খরা একটা কৃষিনির্ভর গ্রামের অর্থনীতিকে দুর্বল করে দিতে পারে (debilitate)।",
+   "অসুখটা তাকে এতটাই নিস্তেজ ও শক্তিহীন করে ফেলেছিল (debilitated) যে ছোট হাঁটাও কষ্টকর হয়ে উঠল।"
+  ],
+  "tip": "Latin debilis = weak. Debilitate = make weak."
+ },
+ {
+  "id": "debunk",
+  "word": "Debunk",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to show that a belief or claim is false",
+  "bn": "ভুল প্রমাণ করা; মিথ্যা ফাঁস করা",
+  "s": [
+   "Scientists debunked the old myth.",
+   "The journalist debunked the viral story by checking the original photos.",
+   "Her careful research {refuted} the {specious} theory and debunked it once and for all."
+  ],
+  "sbn": [
+   "বিজ্ঞানীরা পুরোনো কুসংস্কারটা ভুল প্রমাণ করলেন (debunked)।",
+   "সাংবাদিক আসল ছবিগুলো যাচাই করে ভাইরাল গল্পটার মিথ্যা ফাঁস করে দিলেন (debunked)।",
+   "তার যত্নশীল গবেষণা ওই চটকদার কিন্তু ভ্রান্ত তত্ত্বকে খণ্ডন করে চিরতরে ভুল প্রমাণ করল (debunked)।"
+  ],
+  "tip": "de- (remove) + bunk (nonsense): take the nonsense out of a claim."
+ },
+ {
+  "id": "decadent",
+  "word": "Decadent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "in moral or cultural decline; overly self-indulgent and luxurious",
+  "bn": "অবক্ষয়গ্রস্ত; ভোগবিলাসী; নৈতিকভাবে অধঃপতিত",
+  "s": [
+   "The cake was rich and decadent.",
+   "Historians describe the late empire as decadent and careless about its duties.",
+   "The {opulent} parties of the decadent elite showed how far the society had sunk."
+  ],
+  "sbn": [
+   "কেকটা ছিল ভারী আর বিলাসী রকমের (decadent) মজাদার।",
+   "ইতিহাসবিদরা সাম্রাজ্যের শেষ দিককে অবক্ষয়গ্রস্ত (decadent) আর দায়িত্বে উদাসীন বলে বর্ণনা করেন।",
+   "অবক্ষয়গ্রস্ত (decadent) অভিজাতদের জাঁকালো পার্টিগুলো দেখিয়ে দিত সমাজ কতটা নিচে নেমে গেছে।"
+  ],
+  "tip": "Latin de + cadere (to fall): decadent = falling into decay."
+ },
+ {
+  "id": "decimate",
+  "word": "Decimate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to destroy or kill a large part of something",
+  "bn": "ব্যাপকভাবে ধ্বংস করা; বিপুল সংখ্যায় নিধন করা",
+  "s": [
+   "The storm decimated the rice crop.",
+   "A new disease decimated the bird population of the island within two years.",
+   "The {virulent} plague decimated villages that were already {impoverished} by war."
+  ],
+  "sbn": [
+   "ঝড়ে ধানের ফসল ব্যাপকভাবে ধ্বংস হয়ে গেল (decimated)।",
+   "নতুন এক রোগ দুই বছরের মধ্যে দ্বীপের পাখির সংখ্যা ব্যাপক হারে কমিয়ে দিল (decimated)।",
+   "মারাত্মক প্লেগ যুদ্ধে আগেই নিঃস্ব হয়ে যাওয়া গ্রামগুলোকে ব্যাপকভাবে উজাড় করে দিল (decimated)।"
+  ],
+  "tip": "Latin decem = ten: Romans once killed one in ten soldiers as punishment."
+ },
+ {
+  "id": "decree",
+  "word": "Decree",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an official order from a ruler or authority; (verb) to order officially",
+  "bn": "রাজাজ্ঞা; সরকারি আদেশ; ফরমান",
+  "s": [
+   "The king issued a new decree.",
+   "By government decree, all schools stayed closed during the flood.",
+   "The general decreed a {moratorium} on public meetings, an order no one dared {flout}."
+  ],
+  "sbn": [
+   "রাজা একটা নতুন ফরমান (decree) জারি করলেন।",
+   "সরকারি আদেশে (decree) বন্যার সময় সব স্কুল বন্ধ ছিল।",
+   "জেনারেল জনসভার ওপর সাময়িক নিষেধাজ্ঞার আদেশ দিলেন (decreed), যেটা অমান্য করার সাহস কারও হয়নি।"
+  ],
+  "tip": "Latin decretum = something decided. A decree is a decision made into law."
+ },
+ {
+  "id": "decry",
+  "word": "Decry",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to criticize something strongly in public",
+  "bn": "প্রকাশ্যে নিন্দা করা; তীব্র সমালোচনা করা",
+  "s": [
+   "Many people decry the new tax.",
+   "Teachers decried the cuts in the education budget at a press conference.",
+   "Activists decried the factory's {noxious} smoke and demanded that officials stop it."
+  ],
+  "sbn": [
+   "অনেকেই নতুন করের তীব্র সমালোচনা করে (decry)।",
+   "শিক্ষকেরা সংবাদ সম্মেলনে শিক্ষা বাজেট কমানোর প্রকাশ্য নিন্দা করলেন (decried)।",
+   "আন্দোলনকারীরা কারখানার বিষাক্ত ধোঁয়ার প্রকাশ্যে নিন্দা করলেন (decried) এবং কর্মকর্তাদের তা বন্ধ করতে বললেন।"
+  ],
+  "tip": "de- (down) + cry: to cry something down in public."
+ },
+ {
+  "id": "deduce",
+  "word": "Deduce",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to reach a conclusion by reasoning from facts",
+  "bn": "অনুমান করে সিদ্ধান্তে পৌঁছানো; যুক্তি দিয়ে বের করা",
+  "s": [
+   "From the clues, she deduced the answer.",
+   "The detective deduced that the thief had a key because the lock was not broken.",
+   "By {scrutinizing} tiny details, the {astute} doctor deduced the true cause of the illness."
+  ],
+  "sbn": [
+   "সূত্রগুলো থেকে সে উত্তরটা যুক্তি দিয়ে বের করল (deduced)।",
+   "তালা ভাঙা না থাকায় গোয়েন্দা সিদ্ধান্তে পৌঁছালেন (deduced) যে চোরের কাছে চাবি ছিল।",
+   "ছোট ছোট খুঁটিনাটি খুঁটিয়ে দেখে বিচক্ষণ ডাক্তার অসুখের আসল কারণ বের করলেন (deduced)।"
+  ],
+  "tip": "Latin de (from) + ducere (to lead): facts lead you to a conclusion."
+ },
+ {
+  "id": "deem",
+  "word": "Deem",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to consider or judge something in a particular way",
+  "bn": "গণ্য করা; মনে করা; বিবেচনা করা",
+  "s": [
+   "The teacher deemed the essay excellent.",
+   "The bridge was deemed unsafe after engineers found cracks in it.",
+   "The committee deemed his excuse {plausible}, though some members remained {skeptical}."
+  ],
+  "sbn": [
+   "শিক্ষক রচনাটাকে চমৎকার বলে গণ্য করলেন (deemed)।",
+   "প্রকৌশলীরা ফাটল পাওয়ার পর সেতুটাকে অনিরাপদ বলে বিবেচনা করা হলো (deemed)।",
+   "কমিটি তার অজুহাতকে বিশ্বাসযোগ্য মনে করল (deemed), যদিও কিছু সদস্য সন্দিহান রয়ে গেলেন।"
+  ],
+  "tip": "Deem rhymes with 'seem': what something seems to you is what you deem it."
+ },
+ {
+  "id": "defame",
+  "word": "Defame",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to damage someone's good name with false statements",
+  "bn": "মানহানি করা; বদনাম রটানো",
+  "s": [
+   "He was sued for defaming his neighbor.",
+   "The website defamed the actor by publishing lies about his past.",
+   "Instead of debating, the candidate tried to {vilify} and defame his rival through {innuendo}."
+  ],
+  "sbn": [
+   "প্রতিবেশীর মানহানি করার (defaming) জন্য তার বিরুদ্ধে মামলা হলো।",
+   "ওয়েবসাইটটা অভিনেতার অতীত নিয়ে মিথ্যা ছাপিয়ে তার বদনাম রটাল (defamed)।",
+   "বিতর্ক না করে প্রার্থী ইঙ্গিতপূর্ণ কথাবার্তা দিয়ে প্রতিদ্বন্দ্বীকে হেয় ও তার মানহানি করার (defame) চেষ্টা করলেন।"
+  ],
+  "tip": "de- (away) + Latin fama (reputation, fame): take away someone's fame."
+ },
+ {
+  "id": "deficit",
+  "word": "Deficit",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the amount by which something is less than needed; a shortfall",
+  "bn": "ঘাটতি; ঘাটতির পরিমাণ",
+  "s": [
+   "The country has a large budget deficit.",
+   "The team overcame a ten-point deficit in the last quarter of the game.",
+   "A {chronic} trade deficit can {undermine} confidence in a nation's currency."
+  ],
+  "sbn": [
+   "দেশটার বড় বাজেট ঘাটতি (deficit) আছে।",
+   "খেলার শেষ কোয়ার্টারে দলটা দশ পয়েন্টের ঘাটতি (deficit) পুষিয়ে নিল।",
+   "দীর্ঘস্থায়ী বাণিজ্য ঘাটতি (deficit) একটা দেশের মুদ্রার ওপর আস্থা ধীরে ধীরে নষ্ট করতে পারে।"
+  ],
+  "tip": "Latin deficit = 'it is lacking'. A deficit is what is missing."
+ },
+ {
+  "id": "defile",
+  "word": "Defile",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make something dirty or impure; to dishonor something sacred",
+  "bn": "অপবিত্র করা; কলুষিত করা; নোংরা করা",
+  "s": [
+   "Do not defile the river with trash.",
+   "Vandals defiled the old temple by painting on its walls.",
+   "Locals saw the graffiti as {sacrilege} that defiled a {sacrosanct} shrine."
+  ],
+  "sbn": [
+   "ময়লা ফেলে নদীটা নোংরা করো না (defile)।",
+   "দুর্বৃত্তরা দেয়ালে রং করে পুরোনো মন্দিরটা অপবিত্র করল (defiled)।",
+   "স্থানীয়রা দেয়ালের লেখাগুলোকে এক পবিত্র মাজার কলুষিত করার (defiled) মতো ধর্মীয় অবমাননা হিসেবে দেখল।"
+  ],
+  "tip": "Think 'de-FILTH': to defile is to make something filthy or impure."
+ },
+ {
+  "id": "definitive",
+  "word": "Definitive",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "final and settled; the most complete and reliable",
+  "bn": "চূড়ান্ত; নির্ভরযোগ্য ও সম্পূর্ণ; প্রামাণিক",
+  "s": [
+   "We need a definitive answer today.",
+   "This book is the definitive guide to the birds of Bangladesh.",
+   "Her {exhaustive} study became the definitive account, {superseding} all earlier histories."
+  ],
+  "sbn": [
+   "আজকেই আমাদের একটা চূড়ান্ত (definitive) উত্তর দরকার।",
+   "এই বইটা বাংলাদেশের পাখি নিয়ে সবচেয়ে প্রামাণিক (definitive) গাইড।",
+   "তার সম্পূর্ণাঙ্গ গবেষণা আগের সব ইতিহাসকে ছাপিয়ে প্রামাণিক (definitive) বিবরণ হয়ে উঠল।"
+  ],
+  "tip": "Latin finis = end, limit. Definitive sets the final limit — no more debate."
+ },
+ {
+  "id": "deft",
+  "word": "Deft",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "quick and skillful, especially with the hands",
+  "bn": "দক্ষ; নিপুণ; ক্ষিপ্র ও কুশলী",
+  "s": [
+   "The tailor has deft fingers.",
+   "With a deft move, the goalkeeper pushed the ball over the bar.",
+   "The {adroit} diplomat handled the crisis deftly, {mollifying} both sides with a single joke."
+  ],
+  "sbn": [
+   "দর্জির আঙুলগুলো খুব নিপুণ (deft)।",
+   "এক দক্ষ (deft) নড়াচড়ায় গোলকিপার বলটা বারের ওপর দিয়ে পাঠিয়ে দিলেন।",
+   "চতুর কূটনীতিক নিপুণভাবে (deftly) সংকট সামলালেন, এক রসিকতাতেই দুই পক্ষকে শান্ত করলেন।"
+  ],
+  "tip": "Deft and 'left-right fast': deft hands move fast and right."
+ },
+ {
+  "id": "defunct",
+  "word": "Defunct",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "no longer existing or working",
+  "bn": "বিলুপ্ত; অচল; বন্ধ হয়ে যাওয়া",
+  "s": [
+   "That old bus company is now defunct.",
+   "The defunct factory has stood empty for more than twenty years.",
+   "The {archaic} law was technically still on the books, but it had long been defunct."
+  ],
+  "sbn": [
+   "সেই পুরোনো বাস কোম্পানিটা এখন বন্ধ হয়ে গেছে (defunct)।",
+   "বন্ধ হয়ে যাওয়া (defunct) কারখানাটা বিশ বছরেরও বেশি সময় ধরে খালি পড়ে আছে।",
+   "সেকেলে আইনটা কাগজে-কলমে তখনও ছিল, কিন্তু অনেক আগেই অচল (defunct) হয়ে গিয়েছিল।"
+  ],
+  "tip": "Latin defunctus = finished, dead. Defunct = finished and gone."
+ },
+ {
+  "id": "degenerate",
+  "word": "Degenerate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to become worse in quality or condition; (adj.) morally corrupt",
+  "bn": "অবনতি হওয়া; অধঃপতিত হওয়া; (বিশেষণ) নীতিভ্রষ্ট",
+  "s": [
+   "The talk degenerated into shouting.",
+   "Without care, his health began to degenerate after he retired.",
+   "The {cordial} meeting soon degenerated into an {acrimonious} quarrel over money."
+  ],
+  "sbn": [
+   "আলোচনাটা অবনতি হয়ে চিৎকারে গিয়ে ঠেকল (degenerated)।",
+   "অবসরের পর যত্ন না নেওয়ায় তার স্বাস্থ্যের অবনতি হতে শুরু করল (degenerate)।",
+   "সৌহার্দ্যপূর্ণ বৈঠকটা অল্পক্ষণেই টাকা নিয়ে তিক্ত ঝগড়ায় অধঃপতিত হলো (degenerated)।"
+  ],
+  "tip": "de- (down) + Latin genus (kind, race): to fall below your own kind."
+ },
+ {
+  "id": "degrade",
+  "word": "Degrade",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to treat with disrespect or lower in dignity; to break down in quality",
+  "bn": "অপমান করা; মর্যাদাহানি করা; মান কমানো",
+  "s": [
+   "Do not degrade people who work for you.",
+   "Plastic takes hundreds of years to degrade in the soil.",
+   "The boss's habit of {belittling} staff in public degraded morale and {alienated} the team."
+  ],
+  "sbn": [
+   "যারা তোমার জন্য কাজ করে, তাদের অপমান করো না (degrade)।",
+   "প্লাস্টিক মাটিতে ক্ষয় হতে (degrade) শত শত বছর লাগে।",
+   "প্রকাশ্যে কর্মীদের ছোট করার বসের অভ্যাস মনোবলকে নষ্ট করল (degraded) এবং দলটাকে তার থেকে দূরে সরিয়ে দিল।"
+  ],
+  "tip": "de- (down) + Latin gradus (step, grade): move someone down a grade."
+ },
+ {
+  "id": "deign",
+  "word": "Deign",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to do something one thinks is beneath one's dignity",
+  "bn": "দয়া করে রাজি হওয়া; মর্যাদার নিচে মনে করেও করা",
+  "s": [
+   "The star did not deign to reply.",
+   "The manager finally deigned to meet the workers after weeks of protest.",
+   "The {supercilious} professor rarely deigned to answer questions from first-year students."
+  ],
+  "sbn": [
+   "তারকা উত্তর দেওয়ার দয়াটুকুও করলেন না (deign)।",
+   "কয়েক সপ্তাহের প্রতিবাদের পর ম্যানেজার অবশেষে শ্রমিকদের সাথে দেখা করতে রাজি হলেন (deigned)।",
+   "দাম্ভিক অধ্যাপক প্রথম বর্ষের ছাত্রদের প্রশ্নের উত্তর দিতে কদাচিৎ দয়া করে রাজি হতেন (deigned)।"
+  ],
+  "tip": "Latin dignari = to think worthy (dignus = worthy, as in 'dignity')."
+ },
+ {
+  "id": "deity",
+  "word": "Deity",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a god or goddess",
+  "bn": "দেবতা; দেবী; উপাস্য",
+  "s": [
+   "The temple honors an ancient deity.",
+   "Each village in the region worshipped its own local deity of rain.",
+   "Pilgrims showed {reverent} {homage} to the deity by leaving flowers at the shrine."
+  ],
+  "sbn": [
+   "মন্দিরটা এক প্রাচীন দেবতাকে (deity) সম্মান জানায়।",
+   "অঞ্চলের প্রতিটা গ্রাম নিজস্ব বৃষ্টির দেবতার (deity) পূজা করত।",
+   "তীর্থযাত্রীরা মাজারে ফুল রেখে দেবতার (deity) প্রতি শ্রদ্ধাভরে প্রণতি জানাল।"
+  ],
+  "tip": "Latin deus = god. Deity = a god."
+ },
+ {
+  "id": "dejected",
+  "word": "Dejected",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "sad and discouraged",
+  "bn": "বিষণ্ণ; হতাশ; মনমরা",
+  "s": [
+   "He looked dejected after the loss.",
+   "The dejected students left the hall when they heard the exam was cancelled.",
+   "Though dejected by the rejection, she stayed {tenacious} and applied again."
+  ],
+  "sbn": [
+   "হারের পর তাকে খুব হতাশ (dejected) দেখাচ্ছিল।",
+   "পরীক্ষা বাতিলের খবর শুনে মনমরা (dejected) ছাত্ররা হল থেকে বেরিয়ে গেল।",
+   "প্রত্যাখ্যানে বিষণ্ণ (dejected) হলেও সে হাল ছাড়েনি এবং আবার আবেদন করল।"
+  ],
+  "tip": "Latin de (down) + jacere (to throw): dejected = thrown down in spirit."
+ },
+ {
+  "id": "delectable",
+  "word": "Delectable",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "delicious; very pleasing",
+  "bn": "সুস্বাদু; মনোরম; উপভোগ্য",
+  "s": [
+   "Mother made a delectable fish curry.",
+   "The bakery's delectable sweets draw long lines every evening.",
+   "The chef, a true {connoisseur} of spices, served a delectable feast that {satiated} every guest."
+  ],
+  "sbn": [
+   "মা দারুণ সুস্বাদু (delectable) মাছের তরকারি রেঁধেছেন।",
+   "বেকারির মজাদার (delectable) মিষ্টির জন্য প্রতি সন্ধ্যায় লম্বা লাইন পড়ে।",
+   "মশলার প্রকৃত সমঝদার শেফ এমন সুস্বাদু (delectable) ভোজ পরিবেশন করলেন যে প্রত্যেক অতিথি পরিতৃপ্ত হলেন।"
+  ],
+  "tip": "Latin delectare = to delight. Delectable food delights you."
+ },
+ {
+  "id": "deleterious",
+  "word": "Deleterious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "harmful or damaging",
+  "bn": "ক্ষতিকর; অনিষ্টকর",
+  "s": [
+   "Smoking has deleterious effects on health.",
+   "Too much screen time can be deleterious to a child's sleep.",
+   "The {insidious} chemical had deleterious effects that became visible only years later."
+  ],
+  "sbn": [
+   "ধূমপান স্বাস্থ্যের ওপর ক্ষতিকর (deleterious) প্রভাব ফেলে।",
+   "অতিরিক্ত স্ক্রিন টাইম শিশুর ঘুমের জন্য ক্ষতিকর (deleterious) হতে পারে।",
+   "চুপিসারে কাজ করা রাসায়নিকটার ক্ষতিকর (deleterious) প্রভাব বহু বছর পরে চোখে পড়ল।"
+  ],
+  "tip": "From Greek dēlētērios = harmful. Link to 'delete': it deletes your health."
+ },
+ {
+  "id": "delinquent",
+  "word": "Delinquent",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "failing to do a duty, such as paying a debt; (noun) a young offender",
+  "bn": "কর্তব্যে অবহেলাকারী; বকেয়া; (বিশেষ্য) অপরাধপ্রবণ কিশোর",
+  "s": [
+   "His account is delinquent by two months.",
+   "The bank sent letters to customers who were delinquent in paying their loans.",
+   "Rather than {chastising} the young delinquent, the judge sent him to a {mentor}."
+  ],
+  "sbn": [
+   "তার অ্যাকাউন্টে দুই মাসের বকেয়া (delinquent) পড়ে আছে।",
+   "যেসব গ্রাহক ঋণ পরিশোধে অবহেলা করেছিল (delinquent), ব্যাংক তাদের চিঠি পাঠাল।",
+   "তরুণ অপরাধীকে (delinquent) শাস্তি না দিয়ে বিচারক তাকে একজন পথপ্রদর্শকের কাছে পাঠালেন।"
+  ],
+  "tip": "Latin delinquere = to fail, to do wrong. A delinquent fails a duty."
+ },
+ {
+  "id": "delude",
+  "word": "Delude",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to make someone believe something false; to fool",
+  "bn": "ভুল বোঝানো; প্রতারিত করা; বিভ্রান্ত করা",
+  "s": [
+   "Don't delude yourself about the danger.",
+   "The salesman deluded old people into buying useless insurance.",
+   "He deluded himself that his {fatuous} plan would make him rich overnight."
+  ],
+  "sbn": [
+   "বিপদ নিয়ে নিজেকে ভুল বুঝিও না (delude)।",
+   "বিক্রেতা বয়স্ক মানুষদের ভুল বুঝিয়ে (deluded) অকেজো বিমা কিনিয়েছিল।",
+   "সে নিজেকে বিভ্রান্ত করে রেখেছিল (deluded) যে তার বোকা পরিকল্পনা তাকে রাতারাতি ধনী বানাবে।"
+  ],
+  "tip": "Latin de + ludere (to play): to play tricks on someone's mind."
+ },
+ {
+  "id": "deluge",
+  "word": "Deluge",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a great flood or heavy rain; an overwhelming amount of something",
+  "bn": "প্লাবন; প্রবল বর্ষণ; ঢল",
+  "s": [
+   "The deluge flooded the streets.",
+   "After the announcement, the office received a deluge of phone calls.",
+   "The writer was {inundated} by a deluge of letters after her {poignant} essay appeared."
+  ],
+  "sbn": [
+   "প্রবল বর্ষণে (deluge) রাস্তা ডুবে গেল।",
+   "ঘোষণার পর অফিসে ফোনের ঢল (deluge) নামল।",
+   "তার মর্মস্পর্শী প্রবন্ধ প্রকাশের পর লেখিকা চিঠির প্লাবনে (deluge) ভেসে গেলেন।"
+  ],
+  "tip": "Latin diluvium = flood (from diluere, to wash away)."
+ },
+ {
+  "id": "delve",
+  "word": "Delve",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to search deeply or investigate thoroughly",
+  "bn": "গভীরে অনুসন্ধান করা; খুঁটিয়ে দেখা",
+  "s": [
+   "Let's delve into the problem.",
+   "The historian delved into old letters to learn about her grandfather.",
+   "The biography delves into the poet's {introspective} diaries to explain his sudden silence."
+  ],
+  "sbn": [
+   "চলো সমস্যাটার গভীরে ঢুকি (delve)।",
+   "দাদার সম্পর্কে জানতে ইতিহাসবিদ পুরোনো চিঠিগুলো খুঁটিয়ে দেখলেন (delved)।",
+   "জীবনীটা কবির আত্মবিশ্লেষণী ডায়েরির গভীরে অনুসন্ধান করে (delves) তার হঠাৎ নীরবতার কারণ ব্যাখ্যা করে।"
+  ],
+  "tip": "Delve once meant 'to dig'. Picture digging deep into a topic."
+ },
+ {
+  "id": "demagogue",
+  "word": "Demagogue",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a leader who wins support by playing on people's fears and prejudices",
+  "bn": "জনতাকে উসকে দেওয়া নেতা; গণপ্ররোচক",
+  "s": [
+   "The demagogue shouted easy promises.",
+   "The demagogue blamed foreigners for every problem to win votes.",
+   "The demagogue's {inflammatory} {rhetoric} stirred the crowd into anger."
+  ],
+  "sbn": [
+   "জনতাকে উসকে দেওয়া নেতা (demagogue) সহজ সহজ প্রতিশ্রুতি চিৎকার করে দিল।",
+   "ভোট পেতে ওই গণপ্ররোচক (demagogue) সব সমস্যার জন্য বিদেশিদের দোষ দিল।",
+   "গণপ্ররোচকের (demagogue) উসকানিমূলক বাগাড়ম্বর ভিড়কে ক্ষিপ্ত করে তুলল।"
+  ],
+  "tip": "Greek dēmos (people) + agōgos (leader): one who leads the people by emotion."
+ },
+ {
+  "id": "demeanor",
+  "word": "Demeanor",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the way a person looks and behaves",
+  "bn": "আচরণ; হাবভাব; চালচলন",
+  "s": [
+   "She has a calm demeanor.",
+   "His friendly demeanor made the nervous patients feel at ease.",
+   "Despite the chaos, the pilot's {composed} demeanor and {imperturbable} voice kept everyone calm."
+  ],
+  "sbn": [
+   "তার হাবভাব (demeanor) শান্ত।",
+   "তার বন্ধুসুলভ আচরণ (demeanor) নার্ভাস রোগীদের স্বস্তি দিত।",
+   "চারদিকে বিশৃঙ্খলা সত্ত্বেও পাইলটের শান্ত হাবভাব (demeanor) আর অবিচল কণ্ঠ সবাইকে স্থির রেখেছিল।"
+  ],
+  "tip": "Demeanor contains 'mean' as in 'manner': it is the manner you show."
+ },
+ {
+  "id": "demise",
+  "word": "Demise",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "death; the end or failure of something",
+  "bn": "মৃত্যু; অবসান; পতন",
+  "s": [
+   "The shop's demise surprised everyone.",
+   "The arrival of mobile phones led to the demise of public phone booths.",
+   "Years of {profligate} spending finally {precipitated} the company's demise."
+  ],
+  "sbn": [
+   "দোকানটার বন্ধ হয়ে যাওয়া (demise) সবাইকে অবাক করল।",
+   "মোবাইল ফোন আসায় পাবলিক ফোন বুথগুলোর অবসান (demise) ঘটল।",
+   "বছরের পর বছর বেহিসাবি খরচ শেষ পর্যন্ত কোম্পানির পতন (demise) ত্বরান্বিত করল।"
+  ],
+  "tip": "Think 'demolished': a demise is the end of a life or a business."
+ },
+ {
+  "id": "demography",
+  "word": "Demography",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the study of human populations, such as births, deaths and age groups",
+  "bn": "জনমিতি; জনসংখ্যাতত্ত্ব",
+  "s": [
+   "She studies demography at university.",
+   "Changes in demography mean the country will soon have more old people.",
+   "The {empirical} data on demography {belied} the minister's claim of rapid population growth."
+  ],
+  "sbn": [
+   "সে বিশ্ববিদ্যালয়ে জনমিতি (demography) পড়ে।",
+   "জনমিতির (demography) পরিবর্তন মানে দেশটায় শিগগিরই বয়স্ক মানুষ বাড়বে।",
+   "জনমিতির (demography) পর্যবেক্ষণভিত্তিক তথ্য মন্ত্রীর দ্রুত জনসংখ্যা বৃদ্ধির দাবিকে মিথ্যা প্রতিপন্ন করল।"
+  ],
+  "tip": "Greek dēmos (people) + graphein (to write): writing about people."
+ },
+ {
+  "id": "demur",
+  "word": "Demur",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to raise an objection; to hesitate because of doubts",
+  "bn": "আপত্তি তোলা; দ্বিধা করা",
+  "s": [
+   "She demurred at the high price.",
+   "When asked to work on Friday, he demurred, saying he had family plans.",
+   "The usually {compliant} clerk demurred, refusing to {condone} the false report."
+  ],
+  "sbn": [
+   "বেশি দামের কথায় সে আপত্তি তুলল (demurred)।",
+   "শুক্রবার কাজ করতে বলায় সে পারিবারিক পরিকল্পনার কথা বলে আপত্তি জানাল (demurred)।",
+   "সাধারণত বাধ্য কেরানিটিও আপত্তি তুলল (demurred), মিথ্যা রিপোর্ট মেনে নিতে অস্বীকার করল।"
+  ],
+  "tip": "Latin demorari = to delay. Demur = delay by objecting. (Not demure!)"
+ },
+ {
+  "id": "demure",
+  "word": "Demure",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "quiet, shy and modest in behavior",
+  "bn": "লাজুক; বিনয়ী; সংযত",
+  "s": [
+   "The demure girl smiled softly.",
+   "She gave a demure answer and looked down at her shoes.",
+   "Her demure manner {belied} a sharp and {incisive} mind."
+  ],
+  "sbn": [
+   "লাজুক (demure) মেয়েটা মৃদু হাসল।",
+   "সে বিনয়ী (demure) ভঙ্গিতে উত্তর দিয়ে জুতার দিকে তাকাল।",
+   "তার সংযত (demure) আচরণ তার তীক্ষ্ণ ও ধারালো বুদ্ধিকে আড়াল করে রাখত।"
+  ],
+  "tip": "Demure has an extra 'e' compared with demur — like a quiet, elegant extra."
+ },
+ {
+  "id": "denizen",
+  "word": "Denizen",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a person, animal or plant that lives in a particular place",
+  "bn": "বাসিন্দা; অধিবাসী",
+  "s": [
+   "Fish are denizens of the sea.",
+   "The old tea stall is popular with the denizens of the neighborhood.",
+   "Tigers, the most famous denizens of the Sundarbans, are {endemic} to such {verdant} forests."
+  ],
+  "sbn": [
+   "মাছ সমুদ্রের বাসিন্দা (denizens)।",
+   "পুরোনো চায়ের দোকানটা পাড়ার বাসিন্দাদের (denizens) কাছে জনপ্রিয়।",
+   "সুন্দরবনের সবচেয়ে বিখ্যাত বাসিন্দা (denizens) বাঘেরা এমন সবুজ বনেরই স্থানীয় প্রাণী।"
+  ],
+  "tip": "Think 'citizen of the den': a denizen is someone who lives there."
+ },
+ {
+  "id": "denomination",
+  "word": "Denomination",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a religious group within a larger faith; the face value of money",
+  "bn": "ধর্মীয় সম্প্রদায়; (মুদ্রার) মূল্যমান",
+  "s": [
+   "The note is of a small denomination.",
+   "People from every Christian denomination attended the funeral.",
+   "The bank issued notes in a new denomination to {curb} the {rampant} use of fake money."
+  ],
+  "sbn": [
+   "নোটটা ছোট মূল্যমানের (denomination)।",
+   "প্রতিটা খ্রিস্টান সম্প্রদায়ের (denomination) মানুষ শেষকৃত্যে এসেছিল।",
+   "জাল টাকার ব্যাপক ব্যবহার ঠেকাতে ব্যাংক নতুন মূল্যমানের (denomination) নোট ছাড়ল।"
+  ],
+  "tip": "Latin nomen = name. A denomination is a named group or a named value."
+ },
+ {
+  "id": "denote",
+  "word": "Denote",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to be a sign of; to mean or indicate",
+  "bn": "নির্দেশ করা; বোঝানো; চিহ্নিত করা",
+  "s": [
+   "A red light denotes danger.",
+   "On this map, blue lines denote rivers and black lines denote roads.",
+   "In the poem, the {ambiguous} image of a closed door may denote loss or {oblivion}."
+  ],
+  "sbn": [
+   "লাল বাতি বিপদ নির্দেশ করে (denotes)।",
+   "এই মানচিত্রে নীল দাগ নদী আর কালো দাগ রাস্তা বোঝায় (denote)।",
+   "কবিতায় বন্ধ দরজার দ্ব্যর্থক চিত্রটি হারানো বা বিস্মৃতি বোঝাতে পারে (denote)।"
+  ],
+  "tip": "Latin notare = to mark (as in 'note'). Denote = mark a meaning."
+ },
+ {
+  "id": "denounce",
+  "word": "Denounce",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to publicly declare something wrong; to accuse someone",
+  "bn": "প্রকাশ্যে নিন্দা করা; দোষারোপ করা",
+  "s": [
+   "Leaders denounced the attack.",
+   "The players denounced the coach for treating them unfairly.",
+   "Human rights groups denounced the regime's {heinous} treatment of prisoners."
+  ],
+  "sbn": [
+   "নেতারা হামলার প্রকাশ্য নিন্দা করলেন (denounced)।",
+   "খেলোয়াড়েরা অন্যায় আচরণের জন্য কোচকে প্রকাশ্যে দোষারোপ করল (denounced)।",
+   "মানবাধিকার সংগঠনগুলো বন্দিদের প্রতি সরকারের জঘন্য আচরণের তীব্র নিন্দা করল (denounced)।"
+  ],
+  "tip": "de- + announce: to announce loudly that something is wrong."
+ },
+ {
+  "id": "depict",
+  "word": "Depict",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to show or describe in pictures or words",
+  "bn": "চিত্রিত করা; বর্ণনা করা",
+  "s": [
+   "The painting depicts a village.",
+   "The novel depicts life in Dhaka during the 1971 war.",
+   "The film depicts the {squalor} of the slums without sentimentality."
+  ],
+  "sbn": [
+   "ছবিটা একটা গ্রামকে চিত্রিত করে (depicts)।",
+   "উপন্যাসটা ১৯৭১-এর যুদ্ধের সময় ঢাকার জীবন বর্ণনা করে (depicts)।",
+   "চলচ্চিত্রটা আবেগের বাড়াবাড়ি ছাড়াই বস্তির দীনদশা তুলে ধরে (depicts)।"
+  ],
+  "tip": "Latin pingere, pictus = to paint (as in 'picture'). Depict = paint a scene."
+ },
+ {
+  "id": "deplete",
+  "word": "Deplete",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to use up or greatly reduce a supply",
+  "bn": "নিঃশেষ করা; কমিয়ে ফেলা",
+  "s": [
+   "We depleted our savings quickly.",
+   "Overfishing has depleted the stock of hilsa in the river.",
+   "The long siege depleted the city's food, and leaders had to {replenish} it by sea."
+  ],
+  "sbn": [
+   "আমরা দ্রুত সঞ্চয় নিঃশেষ করে ফেললাম (depleted)।",
+   "অতিরিক্ত মাছ ধরায় নদীতে ইলিশের মজুত কমে গেছে (depleted)।",
+   "দীর্ঘ অবরোধ শহরের খাবার নিঃশেষ করে দিল (depleted), তাই নেতাদের সমুদ্রপথে তা আবার পূরণ করতে হলো।"
+  ],
+  "tip": "Latin de + plere (to fill): the opposite of filling — emptying out."
+ },
+ {
+  "id": "deplore",
+  "word": "Deplore",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to strongly disapprove of; to feel deep regret about",
+  "bn": "তীব্র নিন্দা করা; গভীর দুঃখ প্রকাশ করা",
+  "s": [
+   "We deplore violence of any kind.",
+   "The editor deplored the rising cost of books for students.",
+   "Many deplored the {callous} way officials ignored the flood victims."
+  ],
+  "sbn": [
+   "আমরা যেকোনো ধরনের সহিংসতার তীব্র নিন্দা করি (deplore)।",
+   "সম্পাদক ছাত্রদের জন্য বইয়ের দাম বাড়ায় গভীর দুঃখ প্রকাশ করলেন (deplored)।",
+   "কর্মকর্তারা যে নির্দয়ভাবে বন্যার্তদের উপেক্ষা করেছেন, অনেকেই তার তীব্র নিন্দা করলেন (deplored)।"
+  ],
+  "tip": "Latin plorare = to weep. Deplore = weep over something bad."
+ },
+ {
+  "id": "deploy",
+  "word": "Deploy",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to put troops or resources into position for use",
+  "bn": "মোতায়েন করা; কাজে লাগানো",
+  "s": [
+   "The army deployed soldiers to the border.",
+   "The company deployed new software across all its offices.",
+   "The lawyer deployed every {stratagem} she knew to win the case."
+  ],
+  "sbn": [
+   "সেনাবাহিনী সীমান্তে সৈন্য মোতায়েন করল (deployed)।",
+   "কোম্পানিটা তার সব অফিসে নতুন সফটওয়্যার চালু করল (deployed)।",
+   "মামলা জিততে আইনজীবী তার জানা সব কৌশল কাজে লাগালেন (deployed)।"
+  ],
+  "tip": "From French déployer = to unfold: spread troops out into position."
+ },
+ {
+  "id": "depose",
+  "word": "Depose",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to remove a ruler from power",
+  "bn": "ক্ষমতাচ্যুত করা; পদচ্যুত করা",
+  "s": [
+   "The army deposed the king.",
+   "The president was deposed after months of street protests.",
+   "The {junta} that deposed the elected leader soon proved even more {autocratic}."
+  ],
+  "sbn": [
+   "সেনাবাহিনী রাজাকে ক্ষমতাচ্যুত করল (deposed)।",
+   "কয়েক মাসের রাজপথের আন্দোলনের পর রাষ্ট্রপতি ক্ষমতাচ্যুত হলেন (deposed)।",
+   "যে সামরিক জান্তা নির্বাচিত নেতাকে ক্ষমতাচ্যুত করেছিল (deposed), তারা শিগগিরই আরও স্বৈরাচারী প্রমাণিত হলো।"
+  ],
+  "tip": "Latin de (down) + ponere, positus (to put): put a ruler down from the throne."
+ },
+ {
+  "id": "depravity",
+  "word": "Depravity",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "extreme moral wickedness",
+  "bn": "চরম নৈতিক অধঃপতন; দুর্নীতি; পাপাচার",
+  "s": [
+   "The crime shocked people with its depravity.",
+   "The novel shows the depravity of a gang that preys on children.",
+   "The court called the killer's acts a sign of {unconscionable} depravity and {turpitude}."
+  ],
+  "sbn": [
+   "অপরাধটার নৃশংসতা ও নৈতিক অধঃপতন (depravity) মানুষকে হতবাক করল।",
+   "উপন্যাসটা শিশুদের শিকার বানানো এক দলের পাপাচার (depravity) তুলে ধরে।",
+   "আদালত খুনির কাজকে অবিবেচনীয় নৈতিক অধঃপতন (depravity) ও নীচতার চিহ্ন বলে অভিহিত করল।"
+  ],
+  "tip": "Latin pravus = crooked, bad. Depravity = a crooked, wicked mind."
+ },
+ {
+  "id": "deprecate",
+  "word": "Deprecate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to express disapproval of; to play down or belittle",
+  "bn": "অনুমোদন না করা; ছোট করে দেখা; নিন্দা করা",
+  "s": [
+   "He often deprecates his own work.",
+   "The principal deprecated the habit of copying homework from friends.",
+   "Her self-deprecating humor {endeared} her to audiences who disliked {bombastic} speakers."
+  ],
+  "sbn": [
+   "সে প্রায়ই নিজের কাজকে ছোট করে দেখে (deprecates)।",
+   "অধ্যক্ষ বন্ধুদের বাড়ির কাজ নকল করার অভ্যাসের নিন্দা করলেন (deprecated)।",
+   "তার নিজেকে ছোট করে দেখানো (self-deprecating) রসিকতা তাকে সেইসব শ্রোতার প্রিয় করে তুলল, যারা আড়ম্বরপূর্ণ বক্তা পছন্দ করত না।"
+  ],
+  "tip": "Latin de + precari (to pray): to pray against something — disapprove."
+ },
+ {
+  "id": "depredate",
+  "word": "Depredate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to plunder, rob or lay waste",
+  "bn": "লুণ্ঠন করা; লুটপাট করা; ধ্বংস করা",
+  "s": [
+   "Pirates depredated the coastal towns.",
+   "Raiders depredated the farms, stealing cattle and burning fields.",
+   "Invading armies {plundered} and depredated the region, leaving its farmers {destitute}."
+  ],
+  "sbn": [
+   "জলদস্যুরা উপকূলের শহরগুলো লুটপাট করল (depredated)।",
+   "আক্রমণকারীরা খামারগুলো লুণ্ঠন করল (depredated), গরু চুরি করে মাঠ পুড়িয়ে দিল।",
+   "হানাদার সৈন্যরা অঞ্চলটা লুট করে ধ্বংস করে দিল (depredated), কৃষকদের নিঃস্ব করে রেখে গেল।"
+  ],
+  "tip": "Latin praeda = plunder, prey. Depredate = prey on and plunder."
+ },
+ {
+  "id": "derelict",
+  "word": "Derelict",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "abandoned and in bad condition; neglectful of duty",
+  "bn": "পরিত্যক্ত; জরাজীর্ণ; কর্তব্যে অবহেলাকারী",
+  "s": [
+   "A derelict boat lay on the shore.",
+   "The guard was found derelict in his duty after the theft.",
+   "The derelict mill, {dilapidated} and silent, was a {vestige} of the town's industrial past."
+  ],
+  "sbn": [
+   "তীরে একটা পরিত্যক্ত (derelict) নৌকা পড়ে ছিল।",
+   "চুরির পর দেখা গেল প্রহরী তার দায়িত্বে অবহেলা করেছে (derelict)।",
+   "জরাজীর্ণ ও নিস্তব্ধ পরিত্যক্ত (derelict) কলটা শহরের শিল্প-অতীতের এক অবশেষ।"
+  ],
+  "tip": "Latin derelinquere = to abandon completely (relinquish = give up)."
+ },
+ {
+  "id": "derogatory",
+  "word": "Derogatory",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "showing a low opinion; insulting",
+  "bn": "অবমাননাকর; অপমানজনক; হেয়প্রতিপন্নকারী",
+  "s": [
+   "He made a derogatory remark about her.",
+   "The teacher banned derogatory nicknames in her classroom.",
+   "Linguists note that the word, once neutral, gradually took on a {pejorative} and derogatory sense."
+  ],
+  "sbn": [
+   "সে তার সম্পর্কে একটা অপমানজনক (derogatory) মন্তব্য করল।",
+   "শিক্ষিকা তার ক্লাসে অবমাননাকর (derogatory) ডাকনাম নিষিদ্ধ করলেন।",
+   "ভাষাবিদরা বলেন, একসময়ের নিরপেক্ষ শব্দটা ধীরে ধীরে নেতিবাচক ও অবমাননাকর (derogatory) অর্থ পেয়েছে।"
+  ],
+  "tip": "Latin derogare = to take away from. Derogatory words take away respect."
+ },
+ {
+  "id": "desist",
+  "word": "Desist",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to stop doing something",
+  "bn": "বিরত থাকা; ক্ষান্ত হওয়া",
+  "s": [
+   "Please desist from shouting.",
+   "The court ordered the company to desist from dumping waste in the river.",
+   "Despite repeated warnings, the {recalcitrant} protesters refused to desist from blocking the road."
+  ],
+  "sbn": [
+   "দয়া করে চিৎকার থেকে বিরত থাকো (desist)।",
+   "আদালত কোম্পানিটিকে নদীতে বর্জ্য ফেলা থেকে বিরত থাকার (desist) নির্দেশ দিল।",
+   "বারবার সতর্ক করার পরও একগুঁয়ে আন্দোলনকারীরা রাস্তা অবরোধ থেকে বিরত হতে (desist) রাজি হলো না।"
+  ],
+  "tip": "Latin de + sistere (to stand): to stand off, to stop. 'Cease and desist.'"
+ },
+ {
+  "id": "despondent",
+  "word": "Despondent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "very sad and without hope",
+  "bn": "নিরাশ; হতাশাগ্রস্ত; ভগ্নোৎসাহ",
+  "s": [
+   "She felt despondent after failing.",
+   "The farmers grew despondent as the rain failed for a third year.",
+   "Even the {sanguine} coach became despondent after the team's {abysmal} season."
+  ],
+  "sbn": [
+   "ফেল করার পর সে নিরাশ (despondent) হয়ে পড়ল।",
+   "টানা তৃতীয় বছর বৃষ্টি না হওয়ায় কৃষকেরা হতাশাগ্রস্ত (despondent) হয়ে পড়ল।",
+   "দলের ভয়াবহ মৌসুমের পর আশাবাদী কোচও নিরাশ (despondent) হয়ে গেলেন।"
+  ],
+  "tip": "Latin despondere = to give up, lose heart. Despondent = lost all hope."
+ },
+ {
+  "id": "despot",
+  "word": "Despot",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a ruler with total power who uses it cruelly",
+  "bn": "স্বৈরশাসক; অত্যাচারী শাসক",
+  "s": [
+   "The despot jailed his critics.",
+   "The despot ruled the country for thirty years without a single election.",
+   "The despot {quelled} every protest and tried to {subjugate} the free press."
+  ],
+  "sbn": [
+   "স্বৈরশাসক (despot) তার সমালোচকদের জেলে পুরল।",
+   "স্বৈরশাসক (despot) একটাও নির্বাচন ছাড়া ত্রিশ বছর দেশ শাসন করল।",
+   "স্বৈরশাসক (despot) প্রতিটা প্রতিবাদ দমন করল এবং স্বাধীন সংবাদমাধ্যমকে বশে আনার চেষ্টা করল।"
+  ],
+  "tip": "Greek despotēs = master, lord. A despot acts as master over everyone."
+ },
+ {
+  "id": "destitute",
+  "word": "Destitute",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "extremely poor; lacking basic needs",
+  "bn": "নিঃস্ব; সহায়সম্বলহীন; দারিদ্র্যপীড়িত",
+  "s": [
+   "The flood left many families destitute.",
+   "The charity gives food and shelter to destitute children.",
+   "Once wealthy, he was left destitute by his {prodigal} spending and lived in {penury}."
+  ],
+  "sbn": [
+   "বন্যা অনেক পরিবারকে নিঃস্ব (destitute) করে দিল।",
+   "দাতব্য সংস্থাটা সহায়সম্বলহীন (destitute) শিশুদের খাবার ও আশ্রয় দেয়।",
+   "একসময়ের ধনী লোকটা অমিতব্যয়িতার কারণে নিঃস্ব (destitute) হয়ে চরম দারিদ্র্যে দিন কাটাত।"
+  ],
+  "tip": "Latin destitutus = abandoned, left alone — with nothing."
+ },
+ {
+  "id": "devout",
+  "word": "Devout",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "deeply religious; sincere and committed",
+  "bn": "ধর্মপ্রাণ; ভক্তিপরায়ণ; একনিষ্ঠ",
+  "s": [
+   "My grandmother is a devout woman.",
+   "Devout pilgrims walked for days to reach the holy site.",
+   "A devout {adherent} of the faith, he showed great {piety} in daily life."
+  ],
+  "sbn": [
+   "আমার দাদি একজন ধর্মপ্রাণ (devout) মানুষ।",
+   "ধর্মপ্রাণ (devout) তীর্থযাত্রীরা পবিত্র স্থানে পৌঁছাতে কয়েক দিন হাঁটল।",
+   "ধর্মের একনিষ্ঠ (devout) অনুসারী হিসেবে তিনি দৈনন্দিন জীবনে গভীর ধর্মভক্তি দেখাতেন।"
+  ],
+  "tip": "Latin devovere = to vow (votum = vow). Devout people have vowed themselves to faith."
+ },
+ {
+  "id": "dialectical",
+  "word": "Dialectical",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "relating to reaching truth through logical discussion of opposing ideas",
+  "bn": "দ্বান্দ্বিক; যুক্তিতর্কভিত্তিক",
+  "s": [
+   "The class used a dialectical method.",
+   "Plato's dialogues show a dialectical search for truth through questions.",
+   "Her dialectical approach set two {disparate} theories side by side to reach a {synthesis}."
+  ],
+  "sbn": [
+   "ক্লাসে একটা দ্বান্দ্বিক (dialectical) পদ্ধতি ব্যবহার করা হলো।",
+   "প্লেটোর সংলাপগুলো প্রশ্নের মাধ্যমে সত্য খোঁজার এক দ্বান্দ্বিক (dialectical) প্রক্রিয়া দেখায়।",
+   "তার দ্বান্দ্বিক (dialectical) পদ্ধতি দুটো সম্পূর্ণ ভিন্ন তত্ত্ব পাশাপাশি রেখে একটা সমন্বয়ে পৌঁছাল।"
+  ],
+  "tip": "Greek dialektikē = the art of debate. Dialectical = truth through dialogue."
+ },
+ {
+  "id": "dictum",
+  "word": "Dictum",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a formal statement of opinion; a well-known saying",
+  "bn": "নীতিবাক্য; আনুষ্ঠানিক উক্তি; প্রবচন",
+  "s": [
+   "Follow the dictum: less is more.",
+   "The coach repeated his famous dictum that practice beats talent.",
+   "The old dictum that honesty pays has become a {platitude}, yet it remains a useful {maxim}."
+  ],
+  "sbn": [
+   "এই নীতিবাক্য (dictum) মেনে চলো: কম মানেই বেশি।",
+   "কোচ তার বিখ্যাত উক্তি (dictum) আবার বললেন যে অনুশীলন প্রতিভাকে হারায়।",
+   "সততাই সেরা পথ, এই পুরোনো প্রবচনটা (dictum) এখন গতানুগতিক বুলি হলেও এখনো কাজের নীতিবাক্য।"
+  ],
+  "tip": "Latin dicere = to say; dictum = something said (as in 'dictionary')."
+ },
+ {
+  "id": "didactic",
+  "word": "Didactic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "meant to teach, often a moral lesson; preachy",
+  "bn": "শিক্ষামূলক; উপদেশমূলক",
+  "s": [
+   "The story has a didactic purpose.",
+   "Some readers find his novels too didactic and full of lectures.",
+   "The fable's didactic tone is softened by {whimsical} talking animals."
+  ],
+  "sbn": [
+   "গল্পটার একটা শিক্ষামূলক (didactic) উদ্দেশ্য আছে।",
+   "কিছু পাঠকের কাছে তার উপন্যাসগুলো বেশি উপদেশমূলক (didactic) আর বক্তৃতায় ভরা মনে হয়।",
+   "উপকথাটার উপদেশমূলক (didactic) সুর কথা বলা খেয়ালি প্রাণীদের কারণে নরম হয়েছে।"
+  ],
+  "tip": "Greek didaskein = to teach. Didactic writing tries to teach you."
+ },
+ {
+  "id": "dilapidated",
+  "word": "Dilapidated",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "old and falling apart from neglect",
+  "bn": "জরাজীর্ণ; ভগ্নদশাগ্রস্ত",
+  "s": [
+   "They lived in a dilapidated house.",
+   "The dilapidated school building had leaking roofs and broken windows.",
+   "Volunteers worked to {revamp} the dilapidated library, which had {languished} for decades."
+  ],
+  "sbn": [
+   "তারা একটা জরাজীর্ণ (dilapidated) বাড়িতে থাকত।",
+   "জরাজীর্ণ (dilapidated) স্কুল ভবনটার ছাদ চুইয়ে পানি পড়ত আর জানালা ভাঙা ছিল।",
+   "স্বেচ্ছাসেবকেরা কয়েক দশক ধরে অবহেলায় পড়ে থাকা জরাজীর্ণ (dilapidated) গ্রন্থাগারটা নতুন করে সাজাতে কাজ করল।"
+  ],
+  "tip": "Latin lapis = stone: dilapidated buildings are losing their stones."
+ },
+ {
+  "id": "dilate",
+  "word": "Dilate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to become wider or larger; to speak at length",
+  "bn": "প্রসারিত হওয়া; বিস্ফারিত হওয়া; বিস্তারিত বলা",
+  "s": [
+   "Her pupils dilated in the dark.",
+   "The doctor used drops to dilate the patient's eyes before the test.",
+   "The {garrulous} host dilated on his travels until the guests looked for a {respite}."
+  ],
+  "sbn": [
+   "অন্ধকারে তার চোখের মণি প্রসারিত হলো (dilated)।",
+   "পরীক্ষার আগে ডাক্তার ড্রপ দিয়ে রোগীর চোখ প্রসারিত করলেন (dilate)।",
+   "বাচাল গৃহকর্তা তার ভ্রমণ নিয়ে এত বিস্তারিত বললেন (dilated) যে অতিথিরা একটু বিরতি খুঁজছিল।"
+  ],
+  "tip": "Latin dilatare = to spread out (latus = wide). Dilate = make wide."
+ },
+ {
+  "id": "dilemma",
+  "word": "Dilemma",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a hard choice between two options, often both bad",
+  "bn": "উভয়সংকট; দোটানা",
+  "s": [
+   "I faced a difficult dilemma.",
+   "She was in a dilemma: take the job abroad or stay with her parents.",
+   "The doctor's dilemma was a true {quandary}, since every option carried {grievous} risks."
+  ],
+  "sbn": [
+   "আমি একটা কঠিন দোটানায় (dilemma) পড়লাম।",
+   "সে উভয়সংকটে (dilemma) ছিল: বিদেশে চাকরি নেবে নাকি মা-বাবার কাছে থাকবে।",
+   "ডাক্তারের উভয়সংকট (dilemma) ছিল সত্যিকারের বিপাক, কারণ প্রতিটা পথেই গুরুতর ঝুঁকি ছিল।"
+  ],
+  "tip": "Greek di- (two) + lēmma (premise): stuck between two choices."
+ },
+ {
+  "id": "dilettante",
+  "word": "Dilettante",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a person who dabbles in an art or subject without serious study",
+  "bn": "শৌখিন চর্চাকারী; আনাড়ি সমঝদার",
+  "s": [
+   "He is a dilettante in music.",
+   "She dismissed him as a dilettante who painted only when bored.",
+   "Unlike the {erudite} scholar, the dilettante offered only {superficial} remarks."
+  ],
+  "sbn": [
+   "সে সংগীতে একজন শৌখিন চর্চাকারী (dilettante)।",
+   "সে তাকে এমন এক শৌখিন শিল্পী (dilettante) বলে উড়িয়ে দিল, যে কেবল বিরক্ত লাগলে ছবি আঁকে।",
+   "পণ্ডিত গবেষকের বিপরীতে শৌখিন চর্চাকারী (dilettante) লোকটা কেবল ভাসাভাসা মন্তব্য করল।"
+  ],
+  "tip": "Italian dilettare = to delight: a dilettante does things just for delight."
+ },
+ {
+  "id": "diminution",
+  "word": "Diminution",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a reduction in size, amount or importance",
+  "bn": "হ্রাস; কমে যাওয়া",
+  "s": [
+   "There was a diminution in sales.",
+   "Old age brought a slow diminution of his hearing.",
+   "The treaty led to a steady diminution of tension and an {ebb} in border clashes."
+  ],
+  "sbn": [
+   "বিক্রিতে একটা হ্রাস (diminution) দেখা গেল।",
+   "বার্ধক্যে তার শ্রবণশক্তির ধীরে ধীরে কমে যাওয়া (diminution) শুরু হলো।",
+   "চুক্তিটা উত্তেজনার হ্রাস (diminution) ঘটাল এবং সীমান্ত সংঘর্ষও কমে এল।"
+  ],
+  "tip": "Latin diminuere = to make smaller (minus = less). Like 'diminish'."
+ },
+ {
+  "id": "dire",
+  "word": "Dire",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "extremely serious or urgent; terrible",
+  "bn": "ভয়াবহ; গুরুতর; জরুরি",
+  "s": [
+   "The village is in dire need of water.",
+   "Doctors gave a dire warning about the spread of dengue.",
+   "Economists issued {ominous} forecasts of dire consequences if the {deficit} kept growing."
+  ],
+  "sbn": [
+   "গ্রামটায় পানির ভয়াবহ (dire) প্রয়োজন।",
+   "ডাক্তাররা ডেঙ্গু ছড়ানো নিয়ে গুরুতর (dire) সতর্কবার্তা দিলেন।",
+   "ঘাটতি বাড়তে থাকলে ভয়াবহ (dire) পরিণতির অশুভ পূর্বাভাস দিলেন অর্থনীতিবিদেরা।"
+  ],
+  "tip": "Latin dirus = fearful, terrible. Dire straits = terrible trouble."
+ },
+ {
+  "id": "disaffect",
+  "word": "Disaffect",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make someone unhappy with or no longer loyal to a group or leader",
+  "bn": "বিরূপ করে তোলা; আনুগত্য নষ্ট করা",
+  "s": [
+   "Low pay disaffected the workers.",
+   "The party's broken promises disaffected many young voters.",
+   "Years of {nepotism} {alienated} and disaffected the officers who had once supported the king."
+  ],
+  "sbn": [
+   "কম বেতন শ্রমিকদের বিরূপ করে তুলল (disaffected)।",
+   "দলের ভাঙা প্রতিশ্রুতি অনেক তরুণ ভোটারকে বিমুখ করল (disaffected)।",
+   "বছরের পর বছর স্বজনপ্রীতি একসময় রাজার সমর্থক কর্মকর্তাদের দূরে সরিয়ে বিরূপ করে তুলল (disaffected)।"
+  ],
+  "tip": "dis- (not) + affection: when affection and loyalty are gone."
+ },
+ {
+  "id": "disarray",
+  "word": "Disarray",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a state of confusion and disorder",
+  "bn": "বিশৃঙ্খলা; এলোমেলো অবস্থা",
+  "s": [
+   "His room was in disarray.",
+   "After the leader resigned, the party fell into disarray.",
+   "The {tumult} of the evacuation left the hospital in complete disarray."
+  ],
+  "sbn": [
+   "তার ঘরটা এলোমেলো অবস্থায় (disarray) ছিল।",
+   "নেতা পদত্যাগ করার পর দলটা বিশৃঙ্খলায় (disarray) পড়ে গেল।",
+   "সরিয়ে নেওয়ার হট্টগোলে হাসপাতালটা পুরোপুরি বিশৃঙ্খল (disarray) হয়ে পড়ল।"
+  ],
+  "tip": "dis- (not) + array (neat order): no longer in order."
+ },
+ {
+  "id": "disclaim",
+  "word": "Disclaim",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to deny responsibility for or connection with something",
+  "bn": "দায় অস্বীকার করা; সম্পর্ক অস্বীকার করা",
+  "s": [
+   "The company disclaimed any blame.",
+   "The author disclaimed any link to the fake account using his name.",
+   "The minister disclaimed knowledge of the scandal, but his {disingenuous} answers fooled no one."
+  ],
+  "sbn": [
+   "কোম্পানিটা সব দোষের দায় অস্বীকার করল (disclaimed)।",
+   "লেখক তার নামে চলা ভুয়া অ্যাকাউন্টের সঙ্গে যেকোনো সম্পর্ক অস্বীকার করলেন (disclaimed)।",
+   "মন্ত্রী কেলেঙ্কারির কথা জানার দায় অস্বীকার করলেন (disclaimed), কিন্তু তার কপট উত্তরে কেউ বোকা বনেনি।"
+  ],
+  "tip": "dis- (opposite) + claim: the opposite of claiming — deny it."
+ },
+ {
+  "id": "discomfit",
+  "word": "Discomfit",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make someone uneasy or embarrassed",
+  "bn": "অস্বস্তিতে ফেলা; বিব্রত করা",
+  "s": [
+   "The question discomfited the speaker.",
+   "His long silence discomfited the interviewer.",
+   "The reporter's {incisive} questions visibly discomfited the usually {composed} minister."
+  ],
+  "sbn": [
+   "প্রশ্নটা বক্তাকে অস্বস্তিতে ফেলল (discomfited)।",
+   "তার দীর্ঘ নীরবতা সাক্ষাৎকারগ্রহীতাকে বিব্রত করল (discomfited)।",
+   "সাংবাদিকের ধারালো প্রশ্ন সাধারণত শান্ত থাকা মন্ত্রীকে স্পষ্টতই অস্বস্তিতে ফেলল (discomfited)।"
+  ],
+  "tip": "Sounds like 'discomfort': discomfit makes you feel discomfort."
+ },
+ {
+  "id": "disconcert",
+  "word": "Disconcert",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to upset someone's calm; to unsettle",
+  "bn": "বিচলিত করা; হকচকিয়ে দেওয়া",
+  "s": [
+   "The loud noise disconcerted her.",
+   "It was disconcerting to see my teacher at the cinema.",
+   "The {uncanny} silence in the empty village disconcerted even the {stoic} soldiers."
+  ],
+  "sbn": [
+   "জোরে শব্দটা তাকে বিচলিত করল (disconcerted)।",
+   "সিনেমা হলে শিক্ষককে দেখে বেশ হকচকিয়ে গেলাম (disconcerting)।",
+   "জনশূন্য গ্রামের অদ্ভুত নীরবতা অটল সৈনিকদেরও বিচলিত করল (disconcerted)।"
+  ],
+  "tip": "dis- + concert (harmony): to throw your mind out of harmony."
+ },
+ {
+  "id": "discourse",
+  "word": "Discourse",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "serious discussion or communication; a formal talk or writing",
+  "bn": "আলোচনা; বক্তৃতা; ভাষ্য",
+  "s": [
+   "The lecture was a long discourse.",
+   "Social media has changed the nature of political discourse.",
+   "The professor's discourse on ethics was {lucid}, avoiding {esoteric} jargon."
+  ],
+  "sbn": [
+   "লেকচারটা ছিল এক দীর্ঘ বক্তৃতা (discourse)।",
+   "সোশ্যাল মিডিয়া রাজনৈতিক আলোচনার (discourse) ধরন বদলে দিয়েছে।",
+   "নীতিশাস্ত্র নিয়ে অধ্যাপকের বক্তৃতা (discourse) ছিল স্পষ্ট, দুর্বোধ্য পরিভাষা এড়িয়ে।"
+  ],
+  "tip": "Latin discursus = running to and fro: talk that runs through ideas."
+ },
+ {
+  "id": "discreet",
+  "word": "Discreet",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "careful about what one says or does; tactful and quiet",
+  "bn": "বিবেচক; সংযত; গোপনীয়তা রক্ষাকারী",
+  "s": [
+   "Please be discreet about this news.",
+   "The discreet assistant never shared her boss's private matters.",
+   "A {prudent} and discreet diplomat, she settled the dispute without any {ballyhoo}."
+  ],
+  "sbn": [
+   "দয়া করে এই খবর নিয়ে সংযত থেকো (discreet)।",
+   "বিবেচক (discreet) সহকারী কখনো বসের ব্যক্তিগত বিষয় কাউকে বলতেন না।",
+   "বিচক্ষণ ও সংযত (discreet) কূটনীতিক হিসেবে তিনি কোনো হইচই ছাড়াই বিরোধ মিটিয়ে দিলেন।"
+  ],
+  "tip": "Discreet (careful) is not discrete (separate). Two e's together keep a secret together."
+ },
+ {
+  "id": "discriminate",
+  "word": "Discriminate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to notice a difference between things; to treat people unfairly",
+  "bn": "পার্থক্য করা; বৈষম্য করা",
+  "s": [
+   "Can you discriminate between these colors?",
+   "It is illegal to discriminate against workers because of their religion.",
+   "A {discerning} reader can discriminate between {cogent} arguments and empty slogans."
+  ],
+  "sbn": [
+   "তুমি কি এই রংগুলোর মধ্যে পার্থক্য করতে পারো (discriminate)?",
+   "ধর্মের কারণে শ্রমিকদের প্রতি বৈষম্য করা (discriminate) বেআইনি।",
+   "বিচক্ষণ পাঠক জোরালো যুক্তি আর ফাঁপা স্লোগানের মধ্যে পার্থক্য করতে পারেন (discriminate)।"
+  ],
+  "tip": "Latin discriminare = to divide, separate. Separate things — or people unfairly."
+ },
+ {
+  "id": "discursive",
+  "word": "Discursive",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "moving from topic to topic; rambling",
+  "bn": "অসংলগ্ন; এক প্রসঙ্গ থেকে আরেক প্রসঙ্গে যাওয়া",
+  "s": [
+   "His letters are long and discursive.",
+   "The discursive lecture wandered from history to cooking to cricket.",
+   "The essay's discursive style, full of {digressions}, frustrated readers who wanted a {concise} argument."
+  ],
+  "sbn": [
+   "তার চিঠিগুলো লম্বা আর অসংলগ্ন (discursive)।",
+   "অসংলগ্ন (discursive) লেকচারটা ইতিহাস থেকে রান্না, তারপর ক্রিকেটে ঘুরে বেড়াল।",
+   "প্রবন্ধের প্রসঙ্গান্তরে ভরা অসংলগ্ন (discursive) ভঙ্গি সংক্ষিপ্ত যুক্তি চাওয়া পাঠকদের বিরক্ত করল।"
+  ],
+  "tip": "Latin discurrere = to run about. A discursive talk runs all over the place."
+ },
+ {
+  "id": "disdain",
+  "word": "Disdain",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a feeling that someone or something is unworthy; scorn",
+  "bn": "তাচ্ছিল্য; অবজ্ঞা; ঘৃণা",
+  "s": [
+   "She looked at the food with disdain.",
+   "The rich man showed open disdain for people who worked with their hands.",
+   "The critic's {supercilious} disdain for popular films seemed {condescending} to many."
+  ],
+  "sbn": [
+   "সে খাবারের দিকে তাচ্ছিল্যের (disdain) চোখে তাকাল।",
+   "ধনী লোকটা হাতে কাজ করা মানুষদের প্রতি খোলাখুলি অবজ্ঞা (disdain) দেখাত।",
+   "জনপ্রিয় সিনেমার প্রতি সমালোচকের দাম্ভিক তাচ্ছিল্য (disdain) অনেকের কাছে কৃপাপূর্ণ ও অহংকারী মনে হলো।"
+  ],
+  "tip": "dis- + Latin dignari (to deem worthy): to deem something unworthy."
+ },
+ {
+  "id": "disgruntle",
+  "word": "Disgruntle",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make someone annoyed and dissatisfied",
+  "bn": "অসন্তুষ্ট করা; বিরক্ত করা",
+  "s": [
+   "The delay disgruntled the passengers.",
+   "Disgruntled customers waited hours for a refund.",
+   "A disgruntled former employee, {vindictive} after his firing, leaked the files."
+  ],
+  "sbn": [
+   "দেরিটা যাত্রীদের বিরক্ত করল (disgruntled)।",
+   "অসন্তুষ্ট (disgruntled) ক্রেতারা টাকা ফেরতের জন্য ঘণ্টার পর ঘণ্টা অপেক্ষা করল।",
+   "চাকরিচ্যুত হয়ে প্রতিশোধপরায়ণ এক অসন্তুষ্ট (disgruntled) সাবেক কর্মী ফাইলগুলো ফাঁস করে দিল।"
+  ],
+  "tip": "dis- + gruntle (to grumble, grunt): disgruntled people grunt with annoyance."
+ },
+ {
+  "id": "dismal",
+  "word": "Dismal",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "gloomy and depressing; very poor in quality",
+  "bn": "নিরানন্দ; বিষণ্ণ; অত্যন্ত খারাপ",
+  "s": [
+   "It was a dismal, rainy day.",
+   "The team's dismal performance led to the coach being fired.",
+   "Despite the {exuberant} campaign, the film's box office results were dismal."
+  ],
+  "sbn": [
+   "দিনটা ছিল নিরানন্দ (dismal), বৃষ্টিভেজা।",
+   "দলের অত্যন্ত খারাপ (dismal) পারফরম্যান্সের কারণে কোচকে বরখাস্ত করা হলো।",
+   "উচ্ছ্বসিত প্রচারণা সত্ত্বেও ছবিটার বক্স অফিস ফল ছিল হতাশাজনক (dismal)।"
+  ],
+  "tip": "Latin dies mali = evil days: dismal days are gloomy days."
+ },
+ {
+  "id": "dismay",
+  "word": "Dismay",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a feeling of shock and worry; (verb) to make someone upset",
+  "bn": "হতাশা ও উদ্বেগ; আতঙ্ক; মনঃক্ষুণ্ণ করা",
+  "s": [
+   "To my dismay, the shop was closed.",
+   "Parents watched in dismay as the bridge to the school collapsed.",
+   "The {arbitrary} cancellation of the scholarship dismayed students and left them {aghast}."
+  ],
+  "sbn": [
+   "আমাকে হতাশ (dismay) করে দোকানটা বন্ধ ছিল।",
+   "স্কুলের পথের সেতু ভেঙে পড়তে দেখে মা-বাবারা আতঙ্কে (dismay) তাকিয়ে রইলেন।",
+   "বৃত্তির খামখেয়ালি বাতিল ছাত্রদের মনঃক্ষুণ্ণ (dismayed) ও হতবাক করল।"
+  ],
+  "tip": "dis- + may (power): dismay takes away your power to act — shock."
+ },
+ {
+  "id": "dispassionate",
+  "word": "Dispassionate",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "not influenced by strong emotion; calm and fair",
+  "bn": "নিরাসক্ত; নিরপেক্ষ; আবেগহীন",
+  "s": [
+   "A judge must be dispassionate.",
+   "The scientist gave a dispassionate account of the failed experiment.",
+   "We need a dispassionate, {impartial} {arbiter} to settle this family dispute."
+  ],
+  "sbn": [
+   "একজন বিচারককে আবেগহীন ও নিরপেক্ষ (dispassionate) হতে হয়।",
+   "বিজ্ঞানী ব্যর্থ পরীক্ষার একটা নিরাসক্ত (dispassionate) বিবরণ দিলেন।",
+   "এই পারিবারিক বিরোধ মেটাতে আমাদের একজন নিরাসক্ত (dispassionate), পক্ষপাতহীন সালিশ দরকার।"
+  ],
+  "tip": "dis- (without) + passion: judging without passion."
+ },
+ {
+  "id": "disperse",
+  "word": "Disperse",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to scatter or spread in different directions",
+  "bn": "ছত্রভঙ্গ করা; ছড়িয়ে পড়া",
+  "s": [
+   "The crowd dispersed after the game.",
+   "The wind dispersed the smoke across the valley.",
+   "Police dispersed the protesters, who had {converged} on the square at dawn."
+  ],
+  "sbn": [
+   "খেলার পর ভিড় ছড়িয়ে পড়ল (dispersed)।",
+   "বাতাস ধোঁয়াকে উপত্যকাজুড়ে ছড়িয়ে দিল (dispersed)।",
+   "ভোরে চত্বরে জড়ো হওয়া আন্দোলনকারীদের পুলিশ ছত্রভঙ্গ করল (dispersed)।"
+  ],
+  "tip": "Latin dispergere = to scatter (spargere = to sprinkle)."
+ },
+ {
+  "id": "dispirit",
+  "word": "Dispirit",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make someone lose hope or enthusiasm",
+  "bn": "নিরুৎসাহিত করা; মনোবল ভেঙে দেওয়া",
+  "s": [
+   "The bad news dispirited the team.",
+   "Repeated failures dispirited the young writer, but she kept going.",
+   "The {relentless} rain dispirited the hikers, and their {ardent} hopes of reaching the peak faded."
+  ],
+  "sbn": [
+   "খারাপ খবরটা দলের মনোবল ভেঙে দিল (dispirited)।",
+   "বারবার ব্যর্থতা তরুণ লেখিকাকে নিরুৎসাহিত করল (dispirited), তবু সে চালিয়ে গেল।",
+   "অবিরাম বৃষ্টি পর্বতারোহীদের নিরুৎসাহিত করল (dispirited), চূড়ায় ওঠার তাদের প্রবল আশা মিলিয়ে গেল।"
+  ],
+  "tip": "dis- (remove) + spirit: to take the spirit out of someone."
+ },
+ {
+  "id": "disposition",
+  "word": "Disposition",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a person's natural character or mood; a tendency",
+  "bn": "স্বভাব; মেজাজ; প্রবণতা",
+  "s": [
+   "He has a cheerful disposition.",
+   "Her calm disposition made her a good nurse in emergencies.",
+   "His {irascible} disposition gave him a {propensity} for quarrels."
+  ],
+  "sbn": [
+   "তার স্বভাব (disposition) হাসিখুশি।",
+   "শান্ত স্বভাবের (disposition) কারণে জরুরি অবস্থায় সে ভালো নার্স ছিল।",
+   "তার খিটখিটে স্বভাব (disposition) তাকে ঝগড়াপ্রবণ করে তুলেছিল।"
+  ],
+  "tip": "Latin disponere = to arrange. Your disposition is how you are 'arranged' inside."
+ },
+ {
+  "id": "disproportionate",
+  "word": "Disproportionate",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "too large or too small compared with something else",
+  "bn": "অসামঞ্জস্যপূর্ণ; অনুপাতহীন",
+  "s": [
+   "The punishment was disproportionate to the crime.",
+   "Poor families spend a disproportionate share of income on food.",
+   "Critics called the response disproportionate, saying a small {infraction} did not {warrant} such force."
+  ],
+  "sbn": [
+   "শাস্তিটা অপরাধের তুলনায় অসামঞ্জস্যপূর্ণ (disproportionate) ছিল।",
+   "গরিব পরিবারগুলো আয়ের অনুপাতের চেয়ে বেশি (disproportionate) অংশ খাবারে খরচ করে।",
+   "সমালোচকেরা প্রতিক্রিয়াকে অসামঞ্জস্যপূর্ণ (disproportionate) বললেন, কারণ ছোট একটা নিয়মভঙ্গে এত বলপ্রয়োগের যৌক্তিকতা নেই।"
+  ],
+  "tip": "dis- (not) + proportion: not in the right proportion."
+ },
+ {
+  "id": "disquiet",
+  "word": "Disquiet",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a feeling of worry or unease",
+  "bn": "অস্থিরতা; উদ্বেগ; অশান্তি",
+  "s": [
+   "There is disquiet among the staff.",
+   "News of the layoffs caused deep disquiet in the town.",
+   "A growing disquiet spread among investors, filled with {trepidation} about the market."
+  ],
+  "sbn": [
+   "কর্মীদের মধ্যে উদ্বেগ (disquiet) আছে।",
+   "ছাঁটাইয়ের খবর শহরে গভীর অস্থিরতা (disquiet) তৈরি করল।",
+   "বিনিয়োগকারীদের মধ্যে বাজার নিয়ে শঙ্কা ও ক্রমবর্ধমান উদ্বেগ (disquiet) ছড়িয়ে পড়ল।"
+  ],
+  "tip": "dis- (not) + quiet: when the mind is not quiet."
+ },
+ {
+  "id": "dissent",
+  "word": "Dissent",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "disagreement with an official or common opinion; (verb) to disagree",
+  "bn": "ভিন্নমত; অসম্মতি",
+  "s": [
+   "Two judges voiced dissent.",
+   "The government tried to silence all dissent before the election.",
+   "In a healthy democracy, dissent is not {sedition} but a sign of open debate."
+  ],
+  "sbn": [
+   "দুজন বিচারক ভিন্নমত (dissent) জানালেন।",
+   "নির্বাচনের আগে সরকার সব ভিন্নমত (dissent) দমিয়ে রাখার চেষ্টা করল।",
+   "সুস্থ গণতন্ত্রে ভিন্নমত (dissent) রাষ্ট্রদ্রোহ নয়, বরং খোলামেলা বিতর্কের লক্ষণ।"
+  ],
+  "tip": "Latin dis- (apart) + sentire (to feel): to feel differently."
+ },
+ {
+  "id": "disservice",
+  "word": "Disservice",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a harmful action, often done while trying to help",
+  "bn": "অপকার; ক্ষতি",
+  "s": [
+   "Lying to him does him a disservice.",
+   "Giving students the answers does them a disservice in the long run.",
+   "By {embellishing} the hero's life, the biographer did history a serious disservice."
+  ],
+  "sbn": [
+   "তাকে মিথ্যা বলা তার অপকারই (disservice) করে।",
+   "ছাত্রদের উত্তর বলে দেওয়া শেষমেশ তাদের ক্ষতিই (disservice) করে।",
+   "নায়কের জীবন রং চড়িয়ে লিখে জীবনীকার ইতিহাসের গুরুতর অপকার (disservice) করলেন।"
+  ],
+  "tip": "dis- (opposite) + service: the opposite of helping."
+ },
+ {
+  "id": "dissident",
+  "word": "Dissident",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a person who openly opposes an official policy or government",
+  "bn": "ভিন্নমতাবলম্বী; সরকারবিরোধী",
+  "s": [
+   "The dissident was sent to prison.",
+   "Many dissidents fled abroad to continue writing freely.",
+   "The regime tried to {ostracize} every dissident and {stigmatize} their families."
+  ],
+  "sbn": [
+   "ভিন্নমতাবলম্বীকে (dissident) জেলে পাঠানো হলো।",
+   "অনেক ভিন্নমতাবলম্বী (dissidents) স্বাধীনভাবে লেখার জন্য বিদেশে পালিয়ে গেলেন।",
+   "সরকার প্রত্যেক ভিন্নমতাবলম্বীকে (dissident) সমাজচ্যুত করতে এবং তাদের পরিবারকে কলঙ্কিত করতে চাইল।"
+  ],
+  "tip": "Latin dis- (apart) + sedere (to sit): one who sits apart from the rest."
+ },
+ {
+  "id": "dissipate",
+  "word": "Dissipate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to disappear or scatter; to waste money or energy",
+  "bn": "মিলিয়ে যাওয়া; ছড়িয়ে পড়া; অপচয় করা",
+  "s": [
+   "The fog dissipated by noon.",
+   "He dissipated his inheritance on gambling.",
+   "Her anger slowly dissipated as his {contrite} apology continued."
+  ],
+  "sbn": [
+   "দুপুরের মধ্যে কুয়াশা মিলিয়ে গেল (dissipated)।",
+   "সে জুয়া খেলে উত্তরাধিকারের টাকা অপচয় করল (dissipated)।",
+   "তার অনুতপ্ত ক্ষমা চাওয়া চলতে থাকায় মেয়েটার রাগ ধীরে ধীরে মিলিয়ে গেল (dissipated)।"
+  ],
+  "tip": "Latin dissipare = to scatter. Dissipate = scatter away and vanish."
+ },
+ {
+  "id": "dissuade",
+  "word": "Dissuade",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to persuade someone not to do something",
+  "bn": "নিরুৎসাহিত করা; বিরত রাখা",
+  "s": [
+   "I tried to dissuade him from going.",
+   "Her parents dissuaded her from quitting university.",
+   "Nothing could dissuade the {intransigent} leader once he had decided, not even {cogent} advice."
+  ],
+  "sbn": [
+   "আমি তাকে যাওয়া থেকে বিরত রাখার (dissuade) চেষ্টা করলাম।",
+   "মা-বাবা তাকে বিশ্ববিদ্যালয় ছাড়া থেকে বিরত রাখলেন (dissuaded)।",
+   "একগুঁয়ে নেতা একবার সিদ্ধান্ত নিলে কিছুই তাকে নিরুৎসাহিত করতে (dissuade) পারত না, জোরালো পরামর্শও না।"
+  ],
+  "tip": "Latin dis- (away) + suadere (to urge): urge away — opposite of persuade."
+ },
+ {
+  "id": "distinct",
+  "word": "Distinct",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "clearly different; easy to notice",
+  "bn": "স্বতন্ত্র; স্পষ্ট; ভিন্ন",
+  "s": [
+   "The twins have distinct voices.",
+   "There is a distinct smell of rain in the air.",
+   "The two dialects are {discrete} and distinct, despite their {superficial} similarity."
+  ],
+  "sbn": [
+   "যমজ দুজনের কণ্ঠ স্বতন্ত্র (distinct)।",
+   "বাতাসে বৃষ্টির স্পষ্ট (distinct) গন্ধ।",
+   "ওপরসারির মিল থাকলেও উপভাষা দুটো আলাদা ও স্বতন্ত্র (distinct)।"
+  ],
+  "tip": "Latin distinguere = to separate. Distinct things are clearly separated."
+ },
+ {
+  "id": "distinguish",
+  "word": "Distinguish",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to see or show the difference; to make oneself known for excellence",
+  "bn": "পার্থক্য করা; বিশিষ্ট হওয়া",
+  "s": [
+   "Can you distinguish the two sounds?",
+   "She distinguished herself as the best debater in the school.",
+   "Good historians distinguish {veracious} accounts from mere {conjecture}."
+  ],
+  "sbn": [
+   "তুমি কি শব্দ দুটোর পার্থক্য করতে পারো (distinguish)?",
+   "সে স্কুলের সেরা বিতার্কিক হিসেবে নিজেকে বিশিষ্ট করল (distinguished)।",
+   "ভালো ইতিহাসবিদেরা সত্যনিষ্ঠ বিবরণ আর নিছক অনুমানের মধ্যে পার্থক্য করেন (distinguish)।"
+  ],
+  "tip": "Latin distinguere = to separate, mark off. Distinguish = tell apart."
+ },
+ {
+  "id": "diurnal",
+  "word": "Diurnal",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "active in the daytime; happening every day",
+  "bn": "দিবাচর; দৈনিক",
+  "s": [
+   "Most birds are diurnal.",
+   "Unlike owls, crows are diurnal and sleep at night.",
+   "The diurnal rhythm of the market, busy by day and quiet by night, seemed almost {immutable}."
+  ],
+  "sbn": [
+   "বেশিরভাগ পাখি দিবাচর (diurnal)।",
+   "পেঁচার মতো নয়, কাকেরা দিবাচর (diurnal) এবং রাতে ঘুমায়।",
+   "দিনে ব্যস্ত আর রাতে নীরব, বাজারের এই দৈনিক (diurnal) ছন্দ যেন প্রায় অপরিবর্তনীয়।"
+  ],
+  "tip": "Latin dies = day; diurnus = of the day. Opposite: nocturnal."
+ },
+ {
+  "id": "divine",
+  "word": "Divine",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "of or like God; (verb) to guess or discover by intuition",
+  "bn": "ঐশ্বরিক; দৈব; (ক্রিয়া) আন্দাজ করা",
+  "s": [
+   "They prayed for divine help.",
+   "From her silence, I divined that she was upset.",
+   "Ancient priests claimed to divine the future from omens, a power that {daunted} the {credulous} crowds."
+  ],
+  "sbn": [
+   "তারা ঐশ্বরিক (divine) সাহায্যের জন্য প্রার্থনা করল।",
+   "তার নীরবতা দেখে আমি আন্দাজ করলাম (divined) যে সে মন খারাপ করেছে।",
+   "প্রাচীন পুরোহিতেরা লক্ষণ দেখে ভবিষ্যৎ বলে দেওয়ার (divine) দাবি করতেন, আর সেই ক্ষমতা সরলবিশ্বাসী জনতাকে ভীত করে রাখত।"
+  ],
+  "tip": "Latin divus = god. Divine = godlike; to divine = to know as a god might."
+ },
+ {
+  "id": "divulge",
+  "word": "Divulge",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to reveal secret information",
+  "bn": "ফাঁস করা; প্রকাশ করা",
+  "s": [
+   "He refused to divulge the secret.",
+   "The doctor will not divulge a patient's records without permission.",
+   "The usually {reticent} spy finally divulged the names under {duress}."
+  ],
+  "sbn": [
+   "সে গোপন কথাটা ফাঁস করতে (divulge) রাজি হলো না।",
+   "অনুমতি ছাড়া ডাক্তার রোগীর তথ্য প্রকাশ করবেন না (divulge)।",
+   "সাধারণত চুপচাপ গুপ্তচর শেষে চাপের মুখে নামগুলো ফাঁস করে দিল (divulged)।"
+  ],
+  "tip": "Latin vulgus = common people: divulge = make known to everyone."
+ },
+ {
+  "id": "docile",
+  "word": "Docile",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "quiet and easy to control or teach",
+  "bn": "বাধ্য; শান্ত; সহজে বশ মানে এমন",
+  "s": [
+   "The cow is a docile animal.",
+   "The once wild horse became docile after months of gentle training.",
+   "Unlike his {refractory} brother, the boy was docile and {tractable}."
+  ],
+  "sbn": [
+   "গরু একটা শান্ত (docile) প্রাণী।",
+   "মাসের পর মাস নরম প্রশিক্ষণের পর একসময়ের বুনো ঘোড়াটা বাধ্য (docile) হয়ে গেল।",
+   "তার অবাধ্য ভাইয়ের বিপরীতে ছেলেটা ছিল শান্ত (docile) ও সহজে বশ মানা।"
+  ],
+  "tip": "Latin docere = to teach; docilis = easily taught (as in 'doctor')."
+ },
+ {
+  "id": "doctrinaire",
+  "word": "Doctrinaire",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "rigidly sticking to a theory without regard for practical results",
+  "bn": "মতবাদে অন্ধ; গোঁড়া তাত্ত্বিক",
+  "s": [
+   "He holds doctrinaire views on economics.",
+   "A doctrinaire teacher refused to try any method except his own.",
+   "Her {pragmatic} approach contrasted sharply with the {dogmatic}, doctrinaire stance of her rivals."
+  ],
+  "sbn": [
+   "অর্থনীতি নিয়ে তার মতামত গোঁড়া তাত্ত্বিক (doctrinaire)।",
+   "এক মতবাদে অন্ধ (doctrinaire) শিক্ষক নিজের পদ্ধতি ছাড়া অন্য কিছু চেষ্টা করতে রাজি হননি।",
+   "তার বাস্তববাদী পদ্ধতি প্রতিদ্বন্দ্বীদের একগুঁয়ে, মতবাদে অন্ধ (doctrinaire) অবস্থানের সঙ্গে স্পষ্ট বৈপরীত্য তৈরি করল।"
+  ],
+  "tip": "doctrine + -aire: someone who follows doctrine blindly, ignoring reality."
+ },
+ {
+  "id": "doldrums",
+  "word": "Doldrums",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a state of low spirits or inactivity; a period of no progress",
+  "bn": "মনমরা অবস্থা; স্থবিরতা; ঝিমুনি",
+  "s": [
+   "Sales are in the doldrums.",
+   "After the exams, he was in the doldrums for a week.",
+   "The economy stayed in the doldrums, a period of {stagnation} that left workers {listless} and anxious."
+  ],
+  "sbn": [
+   "বিক্রিবাট্টা এখন স্থবির (doldrums)।",
+   "পরীক্ষার পর সে এক সপ্তাহ মনমরা (doldrums) হয়ে ছিল।",
+   "অর্থনীতি স্থবির অবস্থায় (doldrums) রইল, যে স্থবিরতা শ্রমিকদের নিস্তেজ ও উদ্বিগ্ন করে রাখল।"
+  ],
+  "tip": "The doldrums is a calm ocean zone where old sailing ships got stuck with no wind."
+ },
+ {
+  "id": "doleful",
+  "word": "Doleful",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "very sad and gloomy",
+  "bn": "শোকাতুর; বিষাদময়; করুণ",
+  "s": [
+   "The puppy had doleful eyes.",
+   "A doleful song played as the funeral procession passed.",
+   "The {lugubrious} music and doleful faces made the gathering feel like a {dirge}."
+  ],
+  "sbn": [
+   "কুকুরছানাটার চোখ ছিল করুণ (doleful)।",
+   "শবযাত্রা যাওয়ার সময় একটা বিষাদময় (doleful) গান বাজছিল।",
+   "শোকার্ত সুর আর বিষাদময় (doleful) মুখগুলো সমাবেশটাকে শোকগীতির মতো করে তুলল।"
+  ],
+  "tip": "Latin dolor = grief, pain. Doleful = full of grief."
+ },
+ {
+  "id": "dolt",
+  "word": "Dolt",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a stupid person",
+  "bn": "বোকা; গাধা; নির্বোধ",
+  "s": [
+   "Don't be a dolt.",
+   "Only a dolt would leave the door unlocked during a holiday.",
+   "The play's hero seems a dolt, but his {guileless} questions expose the {duplicity} of the court."
+  ],
+  "sbn": [
+   "বোকার (dolt) মতো কাজ কোরো না।",
+   "শুধু একটা গাধাই (dolt) ছুটিতে দরজা খোলা রেখে যাবে।",
+   "নাটকের নায়ককে নির্বোধ (dolt) মনে হয়, কিন্তু তার সরল প্রশ্নগুলো রাজদরবারের কপটতা ফাঁস করে দেয়।"
+  ],
+  "tip": "Dolt sounds like 'dull': a dull-witted person."
+ },
+ {
+  "id": "domestic",
+  "word": "Domestic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "relating to the home or family; inside one's own country; tame (of animals)",
+  "bn": "গার্হস্থ্য; দেশীয়; গৃহপালিত",
+  "s": [
+   "Dogs are domestic animals.",
+   "The airline flies to many domestic cities like Sylhet and Chattogram.",
+   "The government focused on domestic issues, hoping to {bolster} local industry and {curtail} imports."
+  ],
+  "sbn": [
+   "কুকুর গৃহপালিত (domestic) প্রাণী।",
+   "এয়ারলাইনটা সিলেট ও চট্টগ্রামের মতো অনেক দেশীয় (domestic) শহরে যায়।",
+   "সরকার দেশীয় (domestic) বিষয়ে মনোযোগ দিল, যাতে স্থানীয় শিল্প শক্তিশালী হয় আর আমদানি কমে।"
+  ],
+  "tip": "Latin domus = house. Domestic = of the house (or homeland)."
+ },
+ {
+  "id": "dotage",
+  "word": "Dotage",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "old age, especially with weakening of the mind",
+  "bn": "বার্ধক্য; বার্ধক্যজনিত ভীমরতি",
+  "s": [
+   "In his dotage, he forgot names.",
+   "The old professor, now in his dotage, still told stories about his students.",
+   "In her dotage the {eminent} writer became {garrulous}, repeating the same tales."
+  ],
+  "sbn": [
+   "বার্ধক্যে (dotage) তিনি নাম ভুলে যেতেন।",
+   "বার্ধক্যে (dotage) পৌঁছানো বৃদ্ধ অধ্যাপক এখনো ছাত্রদের গল্প বলতেন।",
+   "বার্ধক্যে (dotage) বিখ্যাত লেখিকা বাচাল হয়ে উঠলেন, একই গল্প বারবার বলতেন।"
+  ],
+  "tip": "From 'dote': in your dotage you may become weak-minded and doting."
+ },
+ {
+  "id": "dour",
+  "word": "Dour",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "stern, gloomy and unfriendly",
+  "bn": "গোমড়ামুখো; কঠোর; রাশভারী",
+  "s": [
+   "The guard had a dour face.",
+   "The dour shopkeeper never smiled at his customers.",
+   "Behind his dour, {taciturn} exterior was a kind and {benevolent} man."
+  ],
+  "sbn": [
+   "প্রহরীর মুখ ছিল গোমড়া (dour)।",
+   "গোমড়ামুখো (dour) দোকানদার কখনো ক্রেতাদের দিকে হাসতেন না।",
+   "তার গোমড়ামুখো (dour), স্বল্পভাষী বাইরের রূপের আড়ালে ছিলেন এক দয়ালু ও উদার মানুষ।"
+  ],
+  "tip": "Probably from Latin durus = hard: a dour face looks hard and stern."
+ },
+ {
+  "id": "downcast",
+  "word": "Downcast",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "sad and discouraged; (of eyes) looking down",
+  "bn": "বিমর্ষ; মনমরা; নিচের দিকে তাকানো",
+  "s": [
+   "She walked away, downcast.",
+   "The downcast players sat silently in the dressing room.",
+   "With downcast eyes, the {contrite} boy admitted breaking the window."
+  ],
+  "sbn": [
+   "সে বিমর্ষ (downcast) হয়ে চলে গেল।",
+   "মনমরা (downcast) খেলোয়াড়েরা ড্রেসিংরুমে চুপচাপ বসে রইল।",
+   "নিচের দিকে তাকিয়ে (downcast) অনুতপ্ত ছেলেটা জানালা ভাঙার কথা স্বীকার করল।"
+  ],
+  "tip": "Eyes cast down: a downcast person looks at the ground in sadness."
+ },
+ {
+  "id": "downplay",
+  "word": "Downplay",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make something seem less important than it is",
+  "bn": "কম গুরুত্ব দেওয়া; হালকা করে দেখানো",
+  "s": [
+   "He downplayed his injury.",
+   "The company downplayed the risks of its new medicine.",
+   "Officials tried to downplay the crisis, using {euphemisms} to {obfuscate} the facts."
+  ],
+  "sbn": [
+   "সে তার আঘাতকে হালকা করে দেখাল (downplayed)।",
+   "কোম্পানিটা নতুন ওষুধের ঝুঁকিকে কম গুরুত্ব দিল (downplayed)।",
+   "কর্মকর্তারা নরম শব্দ ব্যবহার করে তথ্য ঘোলাটে করে সংকটটাকে হালকা করে দেখানোর (downplay) চেষ্টা করলেন।"
+  ],
+  "tip": "Play it down: downplay = play down its importance."
+ },
+ {
+  "id": "draconian",
+  "word": "Draconian",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "extremely harsh or severe (of laws or punishments)",
+  "bn": "অতি কঠোর; নির্মম",
+  "s": [
+   "The new rules are draconian.",
+   "The school's draconian dress code banned even colored socks.",
+   "Critics said the draconian law was {punitive} rather than fair and would {stymie} free speech."
+  ],
+  "sbn": [
+   "নতুন নিয়মগুলো অতি কঠোর (draconian)।",
+   "স্কুলের অতি কঠোর (draconian) পোশাকবিধি রঙিন মোজাও নিষিদ্ধ করেছিল।",
+   "সমালোচকেরা বললেন, অতি কঠোর (draconian) আইনটা ন্যায্য নয়, বরং শাস্তিমূলক, আর এটা মত প্রকাশের স্বাধীনতাকে রুদ্ধ করবে।"
+  ],
+  "tip": "From Draco, an ancient Athenian lawgiver famous for very harsh laws."
+ },
+ {
+  "id": "droll",
+  "word": "Droll",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "funny in an odd or dry way",
+  "bn": "কৌতুকপূর্ণ; মজার; অদ্ভুত রসিক",
+  "s": [
+   "He has a droll sense of humor.",
+   "Her droll comments made the boring meeting much more fun.",
+   "The {laconic} uncle's droll remarks always lightened the mood with gentle {levity}."
+  ],
+  "sbn": [
+   "তার রসবোধ অদ্ভুত রকমের মজার (droll)।",
+   "তার কৌতুকপূর্ণ (droll) মন্তব্যে বিরক্তিকর মিটিংটাও মজার হয়ে উঠল।",
+   "স্বল্পভাষী মামার কৌতুকপূর্ণ (droll) মন্তব্য সবসময় হালকা রসিকতায় পরিবেশ সহজ করে দিত।"
+  ],
+  "tip": "French drôle = funny fellow. A droll joke makes you smile quietly."
+ },
+ {
+  "id": "dross",
+  "word": "Dross",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "worthless rubbish; waste matter from melted metal",
+  "bn": "আবর্জনা; মূল্যহীন জিনিস; ধাতুমল",
+  "s": [
+   "Most of that show is dross.",
+   "The editor removed the dross and kept only the best poems.",
+   "Time {culls} the {classic} works from the dross, leaving only the gold."
+  ],
+  "sbn": [
+   "ওই অনুষ্ঠানের বেশিরভাগই আবর্জনা (dross)।",
+   "সম্পাদক আবর্জনা (dross) বাদ দিয়ে কেবল সেরা কবিতাগুলো রাখলেন।",
+   "সময় আবর্জনার (dross) ভেতর থেকে চিরায়ত রচনাগুলো বেছে নেয়, শুধু সোনাটুকু রেখে দেয়।"
+  ],
+  "tip": "Dross rhymes with 'loss': the worthless scum skimmed off melted metal."
+ },
+ {
+  "id": "dubious",
+  "word": "Dubious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "doubtful or uncertain; probably not honest or true",
+  "bn": "সন্দেহজনক; অনিশ্চিত; সন্দিহান",
+  "s": [
+   "I am dubious about his story.",
+   "The website made dubious claims about curing every disease.",
+   "The dubious evidence, based on mere {conjecture}, could not {substantiate} the charges."
+  ],
+  "sbn": [
+   "তার গল্প নিয়ে আমি সন্দিহান (dubious)।",
+   "ওয়েবসাইটটা সব রোগ সারানোর সন্দেহজনক (dubious) দাবি করেছিল।",
+   "নিছক অনুমানের ওপর দাঁড়ানো সন্দেহজনক (dubious) প্রমাণ অভিযোগগুলো প্রমাণ করতে পারল না।"
+  ],
+  "tip": "Latin dubium = doubt. Dubious = full of doubt."
+ },
+ {
+  "id": "duplicity",
+  "word": "Duplicity",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "deceitfulness; being two-faced",
+  "bn": "কপটতা; দ্বিচারিতা; প্রতারণা",
+  "s": [
+   "His duplicity shocked his friends.",
+   "The spy's duplicity was exposed when his letters were found.",
+   "The politician's duplicity, praising farmers while helping landlords, was utterly {perfidious}."
+  ],
+  "sbn": [
+   "তার কপটতা (duplicity) বন্ধুদের হতবাক করল।",
+   "চিঠিগুলো পাওয়া যাওয়ার পর গুপ্তচরের দ্বিচারিতা (duplicity) ফাঁস হলো।",
+   "কৃষকদের প্রশংসা করে জমিদারদের সাহায্য করা, রাজনীতিকের এই দ্বিচারিতা (duplicity) ছিল চরম বিশ্বাসঘাতকতা।"
+  ],
+  "tip": "Latin duplex = double: duplicity = being double-faced."
+ },
+ {
+  "id": "duress",
+  "word": "Duress",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "threats or force used to make someone do something",
+  "bn": "জবরদস্তি; চাপ; বলপ্রয়োগ",
+  "s": [
+   "He signed under duress.",
+   "The court ruled that a confession made under duress was not valid.",
+   "The prisoner {recanted} his statement, saying it was made under duress and {coercion}."
+  ],
+  "sbn": [
+   "সে চাপের মুখে (duress) সই করেছিল।",
+   "আদালত রায় দিল, জবরদস্তি (duress) করে আদায় করা স্বীকারোক্তি বৈধ নয়।",
+   "বন্দি তার জবানবন্দি প্রত্যাহার করল, বলল সেটা জবরদস্তি (duress) ও বলপ্রয়োগে দেওয়া।"
+  ],
+  "tip": "Latin durus = hard: duress means hard pressure on someone."
+ },
+ {
+  "id": "ebb",
+  "word": "Ebb",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "(of the tide) to flow back; to slowly become less",
+  "bn": "ভাটা পড়া; কমে আসা",
+  "s": [
+   "The tide ebbed at dusk.",
+   "His anger ebbed as he listened to her explanation.",
+   "Public interest ebbed once the scandal {subsided} and the news moved on."
+  ],
+  "sbn": [
+   "সন্ধ্যায় ভাটা পড়ল (ebbed)।",
+   "মেয়েটার ব্যাখ্যা শুনতে শুনতে তার রাগ কমে এল (ebbed)।",
+   "কেলেঙ্কারির তেজ থিতিয়ে যাওয়ার পর জনআগ্রহেও ভাটা পড়ল (ebbed)।"
+  ],
+  "tip": "Ebb and flow: ebb is the tide going out, flow is it coming in."
+ },
+ {
+  "id": "eccentric",
+  "word": "Eccentric",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "unusual or strange in behavior",
+  "bn": "খামখেয়ালি; অদ্ভুত স্বভাবের; ছিটগ্রস্ত",
+  "s": [
+   "My uncle is a bit eccentric.",
+   "The eccentric artist wore a different hat every day.",
+   "The eccentric inventor was a {maverick} whose {idiosyncrasies} hid real genius."
+  ],
+  "sbn": [
+   "আমার মামা একটু খামখেয়ালি (eccentric)।",
+   "খামখেয়ালি (eccentric) শিল্পী প্রতিদিন আলাদা টুপি পরতেন।",
+   "অদ্ভুত স্বভাবের (eccentric) উদ্ভাবক ছিলেন একজন স্বাধীনচেতা মানুষ, যার বিচিত্র অভ্যাসের আড়ালে লুকিয়ে ছিল প্রতিভা।"
+  ],
+  "tip": "Greek ek (out of) + kentron (center): off-center, not normal."
+ },
+ {
+  "id": "ecclesiastical",
+  "word": "Ecclesiastical",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "relating to the Christian church or its clergy",
+  "bn": "গির্জাসংক্রান্ত; যাজকীয়",
+  "s": [
+   "He studies ecclesiastical history.",
+   "The bishop wore ecclesiastical robes for the ceremony.",
+   "The ecclesiastical court {censured} the priest for breaking church law."
+  ],
+  "sbn": [
+   "সে গির্জার (ecclesiastical) ইতিহাস পড়ে।",
+   "অনুষ্ঠানে বিশপ যাজকীয় (ecclesiastical) পোশাক পরেছিলেন।",
+   "গির্জার আইন ভাঙার জন্য যাজকীয় (ecclesiastical) আদালত পুরোহিতকে তিরস্কার করল।"
+  ],
+  "tip": "Greek ekklēsia = assembly, church. Ecclesiastical = of the church."
+ },
+ {
+  "id": "eclipse",
+  "word": "Eclipse",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to overshadow or surpass; (noun) the blocking of light from the sun or moon",
+  "bn": "ম্লান করে দেওয়া; ছাপিয়ে যাওয়া; (বিশেষ্য) গ্রহণ",
+  "s": [
+   "We watched the solar eclipse.",
+   "Her success soon eclipsed that of her older brother.",
+   "The young {prodigy} eclipsed her teachers, whose fame began to {wane}."
+  ],
+  "sbn": [
+   "আমরা সূর্যগ্রহণ (eclipse) দেখলাম।",
+   "তার সাফল্য শিগগিরই বড় ভাইয়ের সাফল্যকে ম্লান করে দিল (eclipsed)।",
+   "তরুণ বিস্ময়প্রতিভা তার শিক্ষকদের ছাপিয়ে গেল (eclipsed), আর তাদের খ্যাতি কমতে শুরু করল।"
+  ],
+  "tip": "Greek ekleipsis = a failing, leaving out: the light fails during an eclipse."
+ },
+ {
+  "id": "edict",
+  "word": "Edict",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an official order issued by an authority",
+  "bn": "রাজাদেশ; সরকারি হুকুম; ফরমান",
+  "s": [
+   "The emperor issued an edict.",
+   "A royal edict banned the cutting of trees in the forest.",
+   "The edict, issued by {fiat} without debate, was soon {rescinded}."
+  ],
+  "sbn": [
+   "সম্রাট একটা ফরমান (edict) জারি করলেন।",
+   "একটা রাজাদেশে (edict) বনের গাছ কাটা নিষিদ্ধ হলো।",
+   "বিতর্ক ছাড়াই একতরফা হুকুমে জারি হওয়া ফরমানটা (edict) শিগগিরই বাতিল হলো।"
+  ],
+  "tip": "Latin e (out) + dicere (to say): something spoken out officially."
+ },
+ {
+  "id": "edifice",
+  "word": "Edifice",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a large, impressive building; a complex system of ideas",
+  "bn": "বিশাল অট্টালিকা; ইমারত; কাঠামো",
+  "s": [
+   "The old palace is a grand edifice.",
+   "The new parliament edifice took ten years to build.",
+   "One {cogent} discovery threatened to {undermine} the whole edifice of his theory."
+  ],
+  "sbn": [
+   "পুরোনো প্রাসাদটা একটা বিশাল অট্টালিকা (edifice)।",
+   "নতুন সংসদ ভবন (edifice) তৈরি করতে দশ বছর লেগেছিল।",
+   "একটা জোরালো আবিষ্কার তার তত্ত্বের পুরো কাঠামোটাকেই (edifice) দুর্বল করে দেওয়ার হুমকি দিল।"
+  ],
+  "tip": "Latin aedificium = building (aedes = building). Compare 'edify'."
+ },
+ {
+  "id": "edify",
+  "word": "Edify",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to teach or improve someone morally or intellectually",
+  "bn": "জ্ঞান বা নৈতিকতায় উন্নত করা; শিক্ষা দেওয়া",
+  "s": [
+   "Good books edify the mind.",
+   "The museum aims to edify as well as entertain its visitors.",
+   "The sermon was meant to edify, but its {pedantic} tone made the listeners {lethargic}."
+  ],
+  "sbn": [
+   "ভালো বই মনকে উন্নত করে (edify)।",
+   "জাদুঘরটা দর্শনার্থীদের বিনোদনের পাশাপাশি জ্ঞান দিতেও (edify) চায়।",
+   "ধর্মোপদেশটা মানুষকে নৈতিকভাবে উন্নত করার (edify) জন্য ছিল, কিন্তু পাণ্ডিত্য জাহির করা সুরে শ্রোতারা ঝিমিয়ে পড়ল।"
+  ],
+  "tip": "Latin aedificare = to build. Edify = build up someone's mind."
+ },
+ {
+  "id": "efface",
+  "word": "Efface",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to rub out or erase; to make oneself unnoticed",
+  "bn": "মুছে ফেলা; নিজেকে আড়ালে রাখা",
+  "s": [
+   "Rain effaced the chalk drawings.",
+   "Time has effaced the names carved on the old stone.",
+   "The self-effacing scientist gave all credit to her team, though her own work had been {pivotal}."
+  ],
+  "sbn": [
+   "বৃষ্টি চকের আঁকাগুলো মুছে দিল (effaced)।",
+   "সময় পুরোনো পাথরে খোদাই করা নামগুলো মুছে দিয়েছে (effaced)।",
+   "নিজেকে আড়ালে রাখা (self-effacing) বিজ্ঞানী সব কৃতিত্ব তার দলকে দিলেন, যদিও তার নিজের কাজই ছিল মূল চাবিকাঠি।"
+  ],
+  "tip": "French effacer: e- (out) + face — to rub out the face of something."
+ },
+ {
+  "id": "effectual",
+  "word": "Effectual",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "producing the intended result; effective",
+  "bn": "কার্যকর; ফলপ্রসূ",
+  "s": [
+   "This is an effectual cure.",
+   "Regular exercise is an effectual way to reduce stress.",
+   "The new policy proved effectual, helping to {mitigate} flood damage and {forestall} disease."
+  ],
+  "sbn": [
+   "এটা একটা কার্যকর (effectual) চিকিৎসা।",
+   "নিয়মিত ব্যায়াম মানসিক চাপ কমানোর একটা ফলপ্রসূ (effectual) উপায়।",
+   "নতুন নীতিটা কার্যকর (effectual) প্রমাণিত হলো, বন্যার ক্ষতি কমাতে আর রোগ আগেই ঠেকাতে সাহায্য করল।"
+  ],
+  "tip": "Effect + -ual: effectual means it actually has an effect. Opposite: ineffectual."
+ },
+ {
+  "id": "effigy",
+  "word": "Effigy",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a model or image of a person, often made to be mocked or burned",
+  "bn": "কুশপুত্তলিকা; প্রতিমূর্তি",
+  "s": [
+   "Protesters burned an effigy.",
+   "A stone effigy of the king lies on top of his tomb.",
+   "The crowd burned the minister in effigy, a {lampoon} of his broken promises."
+  ],
+  "sbn": [
+   "বিক্ষোভকারীরা একটা কুশপুত্তলিকা (effigy) পোড়াল।",
+   "রাজার সমাধির ওপর তার পাথরের প্রতিমূর্তি (effigy) শোয়ানো আছে।",
+   "জনতা মন্ত্রীর কুশপুত্তলিকা (effigy) পোড়াল, তার ভাঙা প্রতিশ্রুতির ব্যঙ্গ হিসেবে।"
+  ],
+  "tip": "Latin effigies = image, likeness (from fingere = to shape)."
+ },
+ {
+  "id": "effusion",
+  "word": "Effusion",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a pouring out of liquid; an unrestrained outpouring of feeling or words",
+  "bn": "উচ্ছ্বাস; প্রবাহ; ক্ষরণ",
+  "s": [
+   "Her letter was an effusion of joy.",
+   "His effusion of thanks embarrassed the quiet doctor.",
+   "The poet's {ebullient} effusion of praise struck some critics as {mawkish}."
+  ],
+  "sbn": [
+   "তার চিঠিটা ছিল আনন্দের উচ্ছ্বাস (effusion)।",
+   "তার ধন্যবাদের উচ্ছ্বাস (effusion) চুপচাপ ডাক্তারকে বিব্রত করল।",
+   "কবির টগবগে প্রশংসার উচ্ছ্বাস (effusion) কিছু সমালোচকের কাছে ন্যাকা আবেগ মনে হলো।"
+  ],
+  "tip": "Latin effundere = to pour out (fundere = to pour). Effusive people pour out feelings."
+ },
+ {
+  "id": "egalitarian",
+  "word": "Egalitarian",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "believing all people are equal and deserve equal rights",
+  "bn": "সাম্যবাদী; সমতাভিত্তিক",
+  "s": [
+   "They want an egalitarian society.",
+   "The company has an egalitarian culture where bosses eat with workers.",
+   "The reformer's egalitarian ideals clashed with the {hierarchy} of the {aristocratic} court."
+  ],
+  "sbn": [
+   "তারা একটা সমতাভিত্তিক (egalitarian) সমাজ চায়।",
+   "কোম্পানিটার সংস্কৃতি সাম্যবাদী (egalitarian), সেখানে বসেরা শ্রমিকদের সাথে খান।",
+   "সংস্কারকের সাম্যবাদী (egalitarian) আদর্শ অভিজাত রাজদরবারের ক্রমোচ্চ কাঠামোর সঙ্গে সংঘাতে জড়াল।"
+  ],
+  "tip": "French égal = equal. Egalitarian = everyone equal."
+ },
+ {
+  "id": "egocentric",
+  "word": "Egocentric",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "thinking only about oneself; selfish",
+  "bn": "আত্মকেন্দ্রিক; স্বার্থপর",
+  "s": [
+   "He is too egocentric to listen.",
+   "Small children are naturally egocentric and see the world only from their view.",
+   "His egocentric speeches, full of {hubris}, {alienated} even his loyal supporters."
+  ],
+  "sbn": [
+   "সে এতই আত্মকেন্দ্রিক (egocentric) যে কারও কথা শোনে না।",
+   "ছোট শিশুরা স্বভাবতই আত্মকেন্দ্রিক (egocentric), তারা পৃথিবীকে কেবল নিজেদের চোখে দেখে।",
+   "অহংকারে ভরা তার আত্মকেন্দ্রিক (egocentric) বক্তৃতা অনুগত সমর্থকদেরও দূরে সরিয়ে দিল।"
+  ],
+  "tip": "Ego (I, self) + center: the self is at the center of everything."
+ },
+ {
+  "id": "egregious",
+  "word": "Egregious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "shockingly bad; outstandingly wrong",
+  "bn": "চরম জঘন্য; মারাত্মক; অতি খারাপ",
+  "s": [
+   "That was an egregious mistake.",
+   "The report found egregious errors in the hospital's records.",
+   "The judge called the bribe an egregious breach of trust and imposed a {stringent} penalty."
+  ],
+  "sbn": [
+   "ওটা ছিল একটা মারাত্মক (egregious) ভুল।",
+   "রিপোর্টে হাসপাতালের নথিতে চরম (egregious) ভুল পাওয়া গেল।",
+   "বিচারক ঘুষকে আস্থার চরম জঘন্য (egregious) লঙ্ঘন বলে কঠোর শাস্তি দিলেন।"
+  ],
+  "tip": "Latin e grege = out of the flock: so bad it stands out from the herd."
+ },
+ {
+  "id": "elation",
+  "word": "Elation",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "great happiness and excitement",
+  "bn": "উল্লাস; আনন্দোচ্ছ্বাস",
+  "s": [
+   "She jumped with elation.",
+   "There was elation in the village when the team won the final.",
+   "Their elation turned to {chagrin} when the result was overturned."
+  ],
+  "sbn": [
+   "সে উল্লাসে (elation) লাফিয়ে উঠল।",
+   "দলটা ফাইনাল জেতায় গ্রামে আনন্দোচ্ছ্বাস (elation) বয়ে গেল।",
+   "ফল বাতিল হলে তাদের উল্লাস (elation) অপমানজনক হতাশায় পরিণত হলো।"
+  ],
+  "tip": "Latin elatus = lifted up. Elation lifts you up with joy."
+ },
+ {
+  "id": "electorate",
+  "word": "Electorate",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "all the people who have the right to vote",
+  "bn": "ভোটারমণ্ডলী; নির্বাচকমণ্ডলী",
+  "s": [
+   "The electorate voted for change.",
+   "Young people now make up a large part of the electorate.",
+   "A {disaffected} electorate stayed home, showing deep {apathy} toward both parties."
+  ],
+  "sbn": [
+   "ভোটারমণ্ডলী (electorate) পরিবর্তনের পক্ষে ভোট দিল।",
+   "এখন তরুণরাই ভোটারমণ্ডলীর (electorate) একটা বড় অংশ।",
+   "বিমুখ ভোটারমণ্ডলী (electorate) ঘরে বসে রইল, দুই দলের প্রতিই গভীর উদাসীনতা দেখাল।"
+  ],
+  "tip": "Those who elect = the electorate."
+ },
+ {
+  "id": "elite",
+  "word": "Elite",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a small group with the most power, wealth or skill; (adj.) best of a group",
+  "bn": "অভিজাত শ্রেণি; বাছাই করা সেরা",
+  "s": [
+   "He joined an elite army unit.",
+   "The city's elite gathered at the expensive new club.",
+   "The novel mocks the {complacent} elite and their {condescension} toward ordinary workers."
+  ],
+  "sbn": [
+   "সে সেনাবাহিনীর এক বাছাই করা সেরা (elite) ইউনিটে যোগ দিল।",
+   "শহরের অভিজাত শ্রেণি (elite) দামি নতুন ক্লাবে জড়ো হলো।",
+   "উপন্যাসটা আত্মতুষ্ট অভিজাত শ্রেণির (elite) সাধারণ শ্রমিকদের প্রতি অবজ্ঞাকে ব্যঙ্গ করে।"
+  ],
+  "tip": "French élite = chosen (élire = to choose). The elite are the chosen few."
+ },
+ {
+  "id": "elliptical",
+  "word": "Elliptical",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "shaped like an oval; (of speech) very brief and hard to understand",
+  "bn": "উপবৃত্তাকার; অস্পষ্ট ও সংক্ষিপ্ত",
+  "s": [
+   "The planet has an elliptical orbit.",
+   "His elliptical reply left us unsure of what he meant.",
+   "The poet's elliptical lines are so {cryptic} that readers find them almost {impenetrable}."
+  ],
+  "sbn": [
+   "গ্রহটার কক্ষপথ উপবৃত্তাকার (elliptical)।",
+   "তার অস্পষ্ট সংক্ষিপ্ত (elliptical) উত্তরে আমরা বুঝতে পারলাম না সে কী বোঝাল।",
+   "কবির অস্পষ্ট ও সংক্ষিপ্ত (elliptical) পঙ্‌ক্তিগুলো এত রহস্যময় যে পাঠকদের কাছে প্রায় দুর্বোধ্য।"
+  ],
+  "tip": "Greek elleipsis = falling short, leaving out — as in the '...' ellipsis."
+ },
+ {
+  "id": "elocution",
+  "word": "Elocution",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the skill of clear and expressive speaking",
+  "bn": "বাচনভঙ্গি; বক্তৃতাকৌশল; আবৃত্তিকলা",
+  "s": [
+   "She took elocution lessons.",
+   "The actor's perfect elocution made every word easy to hear.",
+   "His polished elocution and {articulate} answers made him a {compelling} debater."
+  ],
+  "sbn": [
+   "সে বাচনভঙ্গির (elocution) ক্লাস নিয়েছিল।",
+   "অভিনেতার নিখুঁত বাচনভঙ্গির (elocution) কারণে প্রতিটা শব্দ স্পষ্ট শোনা যেত।",
+   "তার মার্জিত বাচনভঙ্গি (elocution) আর স্পষ্ট উত্তর তাকে প্রভাবশালী বিতার্কিক বানাল।"
+  ],
+  "tip": "Latin e (out) + loqui (to speak): to speak out clearly. Compare 'eloquent'."
+ },
+ {
+  "id": "elusive",
+  "word": "Elusive",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "hard to find, catch or understand",
+  "bn": "অধরা; ধরা দেয় না এমন; দুর্বোধ্য",
+  "s": [
+   "Success remained elusive for years.",
+   "The elusive leopard is rarely seen by visitors to the park.",
+   "The meaning of the {enigmatic} poem stayed elusive, as {nebulous} as smoke."
+  ],
+  "sbn": [
+   "বছরের পর বছর সাফল্য অধরা (elusive) রয়ে গেল।",
+   "অধরা (elusive) চিতাবাঘকে পার্কের দর্শনার্থীরা কদাচিৎ দেখতে পায়।",
+   "রহস্যময় কবিতাটার অর্থ ধোঁয়ার মতো অস্পষ্ট ও অধরা (elusive) রয়ে গেল।"
+  ],
+  "tip": "Latin eludere = to escape by trickery. Elusive things elude you."
+ },
+ {
+  "id": "emaciate",
+  "word": "Emaciate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make extremely thin and weak, usually from illness or hunger",
+  "bn": "শীর্ণ করা; কঙ্কালসার করা",
+  "s": [
+   "Hunger had emaciated the stray dog.",
+   "The long illness emaciated him until his bones showed.",
+   "The emaciated refugees, weakened by {privation}, needed immediate care."
+  ],
+  "sbn": [
+   "খিদে রাস্তার কুকুরটাকে কঙ্কালসার করে ফেলেছিল (emaciated)।",
+   "দীর্ঘ অসুখ তাকে এতটা শীর্ণ করে দিল (emaciated) যে হাড় দেখা যেত।",
+   "অভাবে দুর্বল, কঙ্কালসার (emaciated) শরণার্থীদের দ্রুত চিকিৎসা দরকার ছিল।"
+  ],
+  "tip": "Latin macies = leanness. Think 'meager': emaciated = very lean."
+ },
+ {
+  "id": "emanate",
+  "word": "Emanate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to come out from a source",
+  "bn": "নির্গত হওয়া; উৎপন্ন হওয়া; ছড়িয়ে পড়া",
+  "s": [
+   "Heat emanated from the stove.",
+   "A sweet smell emanated from the kitchen.",
+   "A {palpable} calm seemed to emanate from the {serene} old teacher."
+  ],
+  "sbn": [
+   "চুলা থেকে তাপ বের হচ্ছিল (emanated)।",
+   "রান্নাঘর থেকে মিষ্টি গন্ধ ছড়িয়ে পড়ছিল (emanated)।",
+   "শান্ত বৃদ্ধ শিক্ষকের কাছ থেকে যেন স্পষ্ট অনুভব করার মতো এক প্রশান্তি ছড়িয়ে পড়ত (emanate)।"
+  ],
+  "tip": "Latin e (out) + manare (to flow): to flow out from somewhere."
+ },
+ {
+  "id": "emancipate",
+  "word": "Emancipate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to set free from slavery or control",
+  "bn": "মুক্ত করা; দাসত্ব থেকে মুক্তি দেওয়া",
+  "s": [
+   "The law emancipated the slaves.",
+   "Education helped emancipate women from poverty.",
+   "Reformers sought to emancipate peasants from the {shackles} of feudal debt."
+  ],
+  "sbn": [
+   "আইনটা দাসদের মুক্ত করল (emancipated)।",
+   "শিক্ষা নারীদের দারিদ্র্য থেকে মুক্ত করতে (emancipate) সাহায্য করেছে।",
+   "সংস্কারকেরা কৃষকদের সামন্ততান্ত্রিক ঋণের শিকল থেকে মুক্ত করতে (emancipate) চেয়েছিলেন।"
+  ],
+  "tip": "Latin e (out) + mancipium (ownership, from manus 'hand'): out of someone's hand."
+ },
+ {
+  "id": "embargo",
+  "word": "Embargo",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an official ban on trade with a country",
+  "bn": "বাণিজ্য নিষেধাজ্ঞা; অবরোধ",
+  "s": [
+   "They placed an embargo on oil.",
+   "The embargo made medicine scarce in the island nation.",
+   "The UN {sanctioned} the regime and imposed an arms embargo to {curb} the violence."
+  ],
+  "sbn": [
+   "তারা তেলের ওপর নিষেধাজ্ঞা (embargo) দিল।",
+   "বাণিজ্য নিষেধাজ্ঞার (embargo) কারণে দ্বীপদেশটায় ওষুধের ঘাটতি দেখা দিল।",
+   "সহিংসতা ঠেকাতে জাতিসংঘ সরকারটির ওপর শাস্তিমূলক ব্যবস্থা নিল এবং অস্ত্র নিষেধাজ্ঞা (embargo) আরোপ করল।"
+  ],
+  "tip": "Spanish embargar = to seize, restrain (barra = bar): a bar on trade."
+ },
+ {
+  "id": "embroil",
+  "word": "Embroil",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to involve someone deeply in a conflict or difficult situation",
+  "bn": "জড়িয়ে ফেলা; বিবাদে টেনে আনা",
+  "s": [
+   "Don't embroil me in your fight.",
+   "The company became embroiled in a long legal battle.",
+   "The minister was embroiled in a {contentious} scandal that dominated the news."
+  ],
+  "sbn": [
+   "তোমাদের ঝগড়ায় আমাকে জড়িয়ো না (embroil)।",
+   "কোম্পানিটা একটা দীর্ঘ আইনি লড়াইয়ে জড়িয়ে পড়ল (embroiled)।",
+   "মন্ত্রী এক বিতর্কিত কেলেঙ্কারিতে জড়িয়ে পড়লেন (embroiled), যেটা খবরের শিরোনাম দখল করল।"
+  ],
+  "tip": "em- (in) + French brouiller (to mix up, muddle): get mixed up in trouble."
+ },
+ {
+  "id": "embryonic",
+  "word": "Embryonic",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "in a very early stage of development",
+  "bn": "ভ্রূণাবস্থার; প্রাথমিক পর্যায়ের",
+  "s": [
+   "The plan is still embryonic.",
+   "The country's film industry was in an embryonic stage in the 1950s.",
+   "The {fledgling} startup's embryonic ideas were still {inchoate} and untested."
+  ],
+  "sbn": [
+   "পরিকল্পনাটা এখনো প্রাথমিক পর্যায়ে (embryonic)।",
+   "পঞ্চাশের দশকে দেশটার চলচ্চিত্রশিল্প ছিল প্রাথমিক (embryonic) অবস্থায়।",
+   "নবীন স্টার্টআপটার প্রাথমিক (embryonic) ধারণাগুলো তখনো অপরিপক্ব ও অপরীক্ষিত।"
+  ],
+  "tip": "From embryo, the earliest stage of life: embryonic = just beginning."
+ },
+ {
+  "id": "emigrate",
+  "word": "Emigrate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to leave one's own country to live in another",
+  "bn": "দেশত্যাগ করা; অভিবাসী হয়ে চলে যাওয়া",
+  "s": [
+   "His family emigrated to Canada.",
+   "Many doctors emigrate in search of better pay abroad.",
+   "Persecuted for their views, the writers chose to emigrate, becoming {expatriates} who wrote with {nostalgia} about home."
+  ],
+  "sbn": [
+   "তার পরিবার কানাডায় দেশ ছেড়ে চলে গেল (emigrated)।",
+   "অনেক ডাক্তার বেশি বেতনের খোঁজে বিদেশে চলে যান (emigrate)।",
+   "মতামতের জন্য নির্যাতিত লেখকেরা দেশত্যাগ করলেন (emigrate) এবং প্রবাসী হয়ে স্মৃতিকাতরতা নিয়ে দেশের কথা লিখলেন।"
+  ],
+  "tip": "Latin e (out) + migrare (to move): Emigrate = Exit. Immigrate = come In."
+ },
+ {
+  "id": "eminent",
+  "word": "Eminent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "famous and respected in a particular field",
+  "bn": "বিশিষ্ট; প্রখ্যাত; খ্যাতিমান",
+  "s": [
+   "She is an eminent scientist.",
+   "An eminent lawyer agreed to defend the poor farmer for free.",
+   "The eminent historian was {lauded} for her {erudite} and balanced work."
+  ],
+  "sbn": [
+   "তিনি একজন বিশিষ্ট (eminent) বিজ্ঞানী।",
+   "একজন খ্যাতিমান (eminent) আইনজীবী গরিব কৃষকের পক্ষে বিনা পয়সায় লড়তে রাজি হলেন।",
+   "প্রখ্যাত (eminent) ইতিহাসবিদ তার পাণ্ডিত্যপূর্ণ ও ভারসাম্যপূর্ণ কাজের জন্য প্রশংসিত হলেন।"
+  ],
+  "tip": "Latin eminere = to stand out. Eminent people stand out. (Not imminent = about to happen.)"
+ },
+ {
+  "id": "emissary",
+  "word": "Emissary",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a person sent on a special mission, usually as a representative",
+  "bn": "দূত; প্রতিনিধি",
+  "s": [
+   "The king sent an emissary.",
+   "An emissary from the UN arrived to discuss peace.",
+   "The emissary acted as a {liaison} between the rivals and helped {mediate} a truce."
+  ],
+  "sbn": [
+   "রাজা একজন দূত (emissary) পাঠালেন।",
+   "শান্তি আলোচনার জন্য জাতিসংঘের একজন প্রতিনিধি (emissary) এলেন।",
+   "দূত (emissary) প্রতিদ্বন্দ্বীদের মধ্যে যোগাযোগের সেতু হয়ে যুদ্ধবিরতিতে মধ্যস্থতা করলেন।"
+  ],
+  "tip": "Latin emittere = to send out (as in 'emit'). An emissary is sent out."
+ },
+ {
+  "id": "empathy",
+  "word": "Empathy",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the ability to understand and share another person's feelings",
+  "bn": "সহমর্মিতা; সমানুভূতি",
+  "s": [
+   "Good doctors show empathy.",
+   "Reading novels can help children develop empathy for others.",
+   "Her deep empathy made her {commiserate} with every patient rather than stay {aloof}."
+  ],
+  "sbn": [
+   "ভালো ডাক্তারেরা সহমর্মিতা (empathy) দেখান।",
+   "উপন্যাস পড়া শিশুদের অন্যের প্রতি সমানুভূতি (empathy) গড়ে তুলতে সাহায্য করে।",
+   "গভীর সহমর্মিতার (empathy) কারণে তিনি দূরে না থেকে প্রত্যেক রোগীর দুঃখে সমব্যথী হতেন।"
+  ],
+  "tip": "Greek em (in) + pathos (feeling): feeling from inside another's shoes."
+ },
+ {
+  "id": "empower",
+  "word": "Empower",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to give power, authority or confidence to someone",
+  "bn": "ক্ষমতায়ন করা; ক্ষমতা দেওয়া",
+  "s": [
+   "Education empowers girls.",
+   "The new law empowers local councils to collect taxes.",
+   "Small loans empowered village women and helped {alleviate} poverty."
+  ],
+  "sbn": [
+   "শিক্ষা মেয়েদের ক্ষমতায়ন করে (empowers)।",
+   "নতুন আইন স্থানীয় পরিষদকে কর আদায়ের ক্ষমতা দেয় (empowers)।",
+   "ক্ষুদ্রঋণ গ্রামের নারীদের ক্ষমতায়ন করল (empowered) এবং দারিদ্র্য কমাতে সাহায্য করল।"
+  ],
+  "tip": "em- (in, give) + power: to put power into someone's hands."
+ },
+ {
+  "id": "encroach",
+  "word": "Encroach",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to gradually go beyond proper limits; to intrude on",
+  "bn": "অনধিকার প্রবেশ করা; দখল করা; সীমা লঙ্ঘন করা",
+  "s": [
+   "The city is encroaching on farmland.",
+   "His work began to encroach on his family time.",
+   "Factories encroached on the riverbank, and their waste began to {pervade} the water."
+  ],
+  "sbn": [
+   "শহরটা কৃষিজমি দখল করে নিচ্ছে (encroaching)।",
+   "তার কাজ পারিবারিক সময়ে ভাগ বসাতে (encroach) শুরু করল।",
+   "কারখানাগুলো নদীর পাড় দখল করল (encroached), আর তাদের বর্জ্য পানিতে ছড়িয়ে পড়তে লাগল।"
+  ],
+  "tip": "Old French encrochier = to seize with a hook (croc = hook): hooking land bit by bit."
+ },
+ {
+  "id": "endear",
+  "word": "Endear",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make someone loved or liked",
+  "bn": "প্রিয় করে তোলা; ভালোবাসার পাত্র করা",
+  "s": [
+   "Her kindness endeared her to all.",
+   "The puppy's clumsy tricks endeared it to the whole family.",
+   "His {jocular}, humble manner endeared him to voters tired of {bombastic} politicians."
+  ],
+  "sbn": [
+   "তার দয়া তাকে সবার প্রিয় করে তুলল (endeared)।",
+   "কুকুরছানার এলোমেলো কসরত তাকে পুরো পরিবারের প্রিয় করে তুলল (endeared)।",
+   "তার রসিক, বিনয়ী আচরণ তাকে আড়ম্বরপূর্ণ রাজনীতিকদের নিয়ে ক্লান্ত ভোটারদের প্রিয় করে তুলল (endeared)।"
+  ],
+  "tip": "en- (make) + dear: to make someone dear to others."
+ },
+ {
+  "id": "enfranchise",
+  "word": "Enfranchise",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to give someone the right to vote; to set free",
+  "bn": "ভোটাধিকার দেওয়া; মুক্ত করা",
+  "s": [
+   "The law enfranchised women.",
+   "The new rule will enfranchise thousands of citizens living abroad.",
+   "Reformers fought to enfranchise the poor, arguing that {suffrage} must be {inalienable}."
+  ],
+  "sbn": [
+   "আইনটা নারীদের ভোটাধিকার দিল (enfranchised)।",
+   "নতুন নিয়ম বিদেশে থাকা হাজারো নাগরিককে ভোটাধিকার দেবে (enfranchise)।",
+   "সংস্কারকেরা গরিবদের ভোটাধিকার দিতে (enfranchise) লড়েছিলেন, তাদের যুক্তি ছিল ভোটের অধিকার অবিচ্ছেদ্য হতে হবে।"
+  ],
+  "tip": "en- + Old French franc (free): to make free — free to vote."
+ },
+ {
+  "id": "engaging",
+  "word": "Engaging",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "charming and attractive; holding one's attention",
+  "bn": "আকর্ষণীয়; মনোমুগ্ধকর",
+  "s": [
+   "She has an engaging smile.",
+   "The teacher's engaging style kept even the back row interested.",
+   "The biography is engaging, filled with {poignant} anecdotes that {captivate} readers."
+  ],
+  "sbn": [
+   "তার হাসিটা মনোমুগ্ধকর (engaging)।",
+   "শিক্ষকের আকর্ষণীয় (engaging) পড়ানোর ধরন পেছনের সারিকেও মনোযোগী রাখত।",
+   "জীবনীটা আকর্ষণীয় (engaging), মর্মস্পর্শী ঘটনায় ভরা, যা পাঠকদের মুগ্ধ করে।"
+  ],
+  "tip": "Like gears that engage, an engaging person catches and holds your attention."
+ }
+]

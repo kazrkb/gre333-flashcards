@@ -4,3 +4,5 @@ backend/.venv
 backend/.env
 backend/gre.db
 __pycache__
+.work
+.DS_Store

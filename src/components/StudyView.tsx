@@ -27,7 +27,7 @@ const FILTERS: { key: Filter; label: string }[] = [
 
 type Progress = ReturnType<typeof useProgress>;
 
-function buildDeck(filter: Filter, shuffle: boolean, p: Progress): string[] {
+export function buildDeck(filter: Filter, shuffle: boolean, p: Progress): string[] {
   const today = localDay();
   const ids = WORDS.filter((w) => {
     const e = p.get(w.id);

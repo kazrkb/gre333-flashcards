@@ -1,0 +1,2681 @@
+[
+ {
+  "id": "reciprocal",
+  "word": "Reciprocal",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "given or felt by both sides equally; mutual",
+  "bn": "পারস্পরিক; দুই পক্ষেরই সমান",
+  "s": [
+   "Their love was reciprocal.",
+   "The two countries signed a reciprocal trade agreement.",
+   "Mutual respect must be reciprocal, or the friendship will {wane} over time."
+  ],
+  "sbn": [
+   "তাদের ভালোবাসা ছিল পারস্পরিক (reciprocal)।",
+   "দুই দেশ একটি পারস্পরিক (reciprocal) বাণিজ্য চুক্তি সই করল।",
+   "শ্রদ্ধা পারস্পরিক (reciprocal) না হলে বন্ধুত্ব সময়ের সঙ্গে কমে যায়।"
+  ],
+  "tip": "Think \"re-\" back + \"proc\" forth: things go back and forth between two sides."
+ },
+ {
+  "id": "recrimination",
+  "word": "Recrimination",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "an angry accusation made in return against an accuser",
+  "bn": "পাল্টা দোষারোপ; পাল্টা অভিযোগ",
+  "s": [
+   "The meeting ended in bitter recrimination.",
+   "After the loss, the partners spent hours in mutual recrimination.",
+   "Constant {contention} and recrimination between the siblings made family dinners {dismal}."
+  ],
+  "sbn": [
+   "সভাটা তিক্ত পাল্টা দোষারোপে (recrimination) শেষ হল।",
+   "হারের পর অংশীদাররা কয়েক ঘণ্টা একে অপরকে পাল্টা দোষারোপ (recrimination) করল।",
+   "ভাইবোনদের মধ্যে অবিরাম ঝগড়া আর পাল্টা দোষারোপ (recrimination) পারিবারিক খাওয়াকে বিষণ্ণ করে তুলত।"
+  ],
+  "tip": "Re- (back) + crime: you throw the crime back at the accuser."
+ },
+ {
+  "id": "redeem",
+  "word": "Redeem",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make up for faults; to buy back or free from debt or sin",
+  "bn": "মুক্ত করা; ক্ষতিপূরণ করা; ফিরিয়ে নেওয়া",
+  "s": [
+   "He wanted to redeem his mistake.",
+   "She used the coupon to redeem a free coffee.",
+   "The striker tried to redeem himself with a late goal after {squandering} two easy chances."
+  ],
+  "sbn": [
+   "সে তার ভুল শুধরে (redeem) নিতে চাইল।",
+   "সে কুপন দিয়ে একটা ফ্রি কফি ভাঙিয়ে (redeem) নিল।",
+   "দুটো সহজ সুযোগ নষ্ট করার পর স্ট্রাইকার শেষ মুহূর্তের গোলে নিজেকে মুক্ত (redeem) করতে চাইল।"
+  ],
+  "tip": "Re- (back) + emere (buy): to buy something back."
+ },
+ {
+  "id": "redolent",
+  "word": "Redolent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "strongly smelling of or suggesting something",
+  "bn": "সুগন্ধে ভরা; স্মৃতি জাগানো",
+  "s": [
+   "The kitchen was redolent of spices.",
+   "The old street was redolent of the past.",
+   "The antique shop, redolent of dust and {nostalgia}, drew visitors who loved old things."
+  ],
+  "sbn": [
+   "রান্নাঘর মশলার গন্ধে ভরা (redolent) ছিল।",
+   "পুরনো রাস্তাটা অতীতের স্মৃতি জাগানো (redolent) ছিল।",
+   "ধুলো আর স্মৃতিকাতরতার গন্ধে ভরা (redolent) পুরনো দোকানটি পুরনো জিনিসপ্রেমীদের টানত।"
+  ],
+  "tip": "Re- + olere (to smell): it keeps giving off a smell."
+ },
+ {
+  "id": "redress",
+  "word": "Redress",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "correction of a wrong; compensation; to set right",
+  "bn": "প্রতিকার; ক্ষতিপূরণ",
+  "s": [
+   "They sought redress for the injury.",
+   "The workers demanded redress for years of unfair pay.",
+   "The court sought to {ameliorate} the harm, offering redress to every family the factory had wronged."
+  ],
+  "sbn": [
+   "তারা আঘাতের প্রতিকার (redress) চাইল।",
+   "শ্রমিকরা বছরের পর বছর অন্যায্য বেতনের ক্ষতিপূরণ (redress) দাবি করল।",
+   "আদালত ক্ষতি কমাতে চেয়ে কারখানার অন্যায়ের শিকার প্রতিটি পরিবারকে প্রতিকার (redress) দিল।"
+  ],
+  "tip": "Re- + dress (straighten): to straighten out a wrong."
+ },
+ {
+  "id": "redundant",
+  "word": "Redundant",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "not needed because it repeats something; unnecessary",
+  "bn": "অপ্রয়োজনীয়; পুনরাবৃত্ত",
+  "s": [
+   "The last paragraph is redundant.",
+   "The company made 200 redundant workers leave after the merger.",
+   "The editor cut every {superfluous} and redundant phrase, making the essay sharper."
+  ],
+  "sbn": [
+   "শেষ অনুচ্ছেদটা অপ্রয়োজনীয় (redundant)।",
+   "একীভূত হওয়ার পর কোম্পানি ২০০ জন বাড়তি (redundant) কর্মীকে ছেড়ে দিল।",
+   "সম্পাদক প্রতিটি বাড়তি ও অপ্রয়োজনীয় (redundant) বাক্যাংশ কেটে লেখাটাকে ধারালো করলেন।"
+  ],
+  "tip": "Re- + undare (to flow): overflowing, more than enough."
+ },
+ {
+  "id": "referendum",
+  "word": "Referendum",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a public vote on one specific question",
+  "bn": "গণভোট",
+  "s": [
+   "The country held a referendum on the new law.",
+   "Voters will decide the issue in a referendum next month.",
+   "The government called a referendum to settle the {contentious} question of independence."
+  ],
+  "sbn": [
+   "দেশে নতুন আইন নিয়ে গণভোট (referendum) হল।",
+   "আগামী মাসে ভোটাররা গণভোটে (referendum) বিষয়টির সিদ্ধান্ত নেবে।",
+   "স্বাধীনতার বিতর্কিত প্রশ্ন মেটাতে সরকার গণভোট (referendum) ডাকল।"
+  ],
+  "tip": "From \"refer\" the question back to the people."
+ },
+ {
+  "id": "regime",
+  "word": "Regime",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a government or system of rule",
+  "bn": "শাসনব্যবস্থা; সরকার",
+  "s": [
+   "The old regime fell in a week.",
+   "The strict regime banned all public protests.",
+   "Under the {autocratic} regime, newspapers were censored and critics disappeared."
+  ],
+  "sbn": [
+   "পুরনো শাসনব্যবস্থা (regime) এক সপ্তাহে পড়ে গেল।",
+   "কঠোর সরকার (regime) সব জনসমাবেশ নিষিদ্ধ করল।",
+   "স্বৈরাচারী শাসনব্যবস্থায় (regime) সংবাদপত্র সেন্সর হত আর সমালোচকরা নিখোঁজ হতেন।"
+  ],
+  "tip": "Same root as \"regal/rule\" (regere, to rule)."
+ },
+ {
+  "id": "regimen",
+  "word": "Regimen",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a strict plan of diet, exercise or treatment",
+  "bn": "নিয়মবিধি; খাদ্য ও ব্যায়ামের কঠোর রুটিন",
+  "s": [
+   "He follows a daily exercise regimen.",
+   "The doctor gave her a strict regimen of rest and medicine.",
+   "The athlete's {rigorous} training regimen left little time for anything else."
+  ],
+  "sbn": [
+   "সে প্রতিদিন ব্যায়ামের নিয়মবিধি (regimen) মেনে চলে।",
+   "ডাক্তার তাকে বিশ্রাম আর ওষুধের কঠোর নিয়ম (regimen) দিলেন।",
+   "ক্রীড়াবিদের কঠোর প্রশিক্ষণ রুটিনে (regimen) অন্য কিছুর সময় প্রায় থাকত না।"
+  ],
+  "tip": "Related to regime: a personal \"rule\" you live by."
+ },
+ {
+  "id": "reiterate",
+  "word": "Reiterate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to say again, often for emphasis",
+  "bn": "পুনরায় বলা; বারবার বলা",
+  "s": [
+   "Let me reiterate my main point.",
+   "The teacher reiterated the rules before the exam began.",
+   "The spokesperson had to reiterate that the company would not {capitulate} to the demands."
+  ],
+  "sbn": [
+   "আমি আমার মূল কথাটা আবার (reiterate) বলি।",
+   "পরীক্ষা শুরুর আগে শিক্ষক নিয়মগুলো আবার (reiterated) বললেন।",
+   "মুখপাত্রকে আবার (reiterate) বলতে হল যে কোম্পানি দাবির কাছে নতি স্বীকার করবে না।"
+  ],
+  "tip": "Re- (again) + iterum (again): say it again."
+ },
+ {
+  "id": "relentless",
+  "word": "Relentless",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "not stopping or easing; harsh and persistent",
+  "bn": "নাছোড়; অবিরাম",
+  "s": [
+   "The relentless rain lasted all week.",
+   "Her relentless effort finally won her the prize.",
+   "The {tenacious} detective was relentless, following every clue for years."
+  ],
+  "sbn": [
+   "অবিরাম (relentless) বৃষ্টি পুরো সপ্তাহ চলল।",
+   "তার নাছোড় (relentless) চেষ্টায় অবশেষে সে পুরস্কার জিতল।",
+   "একরোখা গোয়েন্দা ছিলেন নাছোড় (relentless), বছরের পর বছর প্রতিটি সূত্র অনুসরণ করলেন।"
+  ],
+  "tip": "Not (re-) + lenient: never softens."
+ },
+ {
+  "id": "relinquish",
+  "word": "Relinquish",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to give up or let go of",
+  "bn": "ছেড়ে দেওয়া; ত্যাগ করা",
+  "s": [
+   "He had to relinquish his seat.",
+   "The king refused to relinquish control of the army.",
+   "She agreed to relinquish her claim, hoping to {appease} her angry relatives."
+  ],
+  "sbn": [
+   "তাকে নিজের আসনটা ছেড়ে দিতে (relinquish) হল।",
+   "রাজা সেনাবাহিনীর নিয়ন্ত্রণ ছাড়তে (relinquish) রাজি হলেন না।",
+   "রাগান্বিত আত্মীয়দের শান্ত করার আশায় সে তার দাবি ছেড়ে দিতে (relinquish) রাজি হল।"
+  ],
+  "tip": "Re- + linquere (to leave): leave behind."
+ },
+ {
+  "id": "remission",
+  "word": "Remission",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a lessening of a disease; cancellation of a debt or penalty",
+  "bn": "রোগের উপশম; মওকুফ",
+  "s": [
+   "The disease is now in remission.",
+   "The judge granted a remission of part of his sentence.",
+   "After years of {affliction}, her cancer went into remission, giving the family fresh hope."
+  ],
+  "sbn": [
+   "রোগটা এখন উপশমে (remission) আছে।",
+   "বিচারক তার সাজার একটা অংশ মওকুফ (remission) করলেন।",
+   "বছরের পর বছর কষ্ট ভোগের পর তার ক্যানসার উপশমে (remission) গেল, পরিবার নতুন আশা পেল।"
+  ],
+  "tip": "Re- + mittere (send back): the illness is sent back, away."
+ },
+ {
+  "id": "remonstrate",
+  "word": "Remonstrate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to protest or argue in objection",
+  "bn": "প্রতিবাদ করা; আপত্তি জানানো",
+  "s": [
+   "He tried to remonstrate with the umpire.",
+   "The parents remonstrated with the school about the new rule.",
+   "Residents remonstrated loudly against the plan, but the council would not {recant}."
+  ],
+  "sbn": [
+   "সে আম্পায়ারের কাছে প্রতিবাদ (remonstrate) করতে চাইল।",
+   "অভিভাবকরা নতুন নিয়মের বিরুদ্ধে স্কুলে প্রতিবাদ (remonstrated) জানালেন।",
+   "বাসিন্দারা জোরালোভাবে পরিকল্পনার প্রতিবাদ (remonstrated) করলেন, কিন্তু কাউন্সিল মত প্রত্যাহার করল না।"
+  ],
+  "tip": "Re- + monstrare (to show): show your objection."
+ },
+ {
+  "id": "remuneration",
+  "word": "Remuneration",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "payment for work or a service",
+  "bn": "পারিশ্রমিক; বেতন",
+  "s": [
+   "She received fair remuneration for her work.",
+   "The job offers low remuneration but good experience.",
+   "The consultant's remuneration was {commensurate} with her skill and long experience."
+  ],
+  "sbn": [
+   "সে কাজের জন্য ন্যায্য পারিশ্রমিক (remuneration) পেল।",
+   "চাকরিটায় পারিশ্রমিক (remuneration) কম কিন্তু অভিজ্ঞতা ভালো।",
+   "পরামর্শকের পারিশ্রমিক (remuneration) তার দক্ষতা ও দীর্ঘ অভিজ্ঞতার সঙ্গে সামঞ্জস্যপূর্ণ ছিল।"
+  ],
+  "tip": "Contains \"munus\" (gift/duty): a reward for duty done."
+ },
+ {
+  "id": "renaissance",
+  "word": "Renaissance",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a revival of art and learning; any rebirth",
+  "bn": "নবজাগরণ; পুনর্জন্ম",
+  "s": [
+   "The Renaissance began in Italy.",
+   "The town enjoyed a cultural renaissance after the war.",
+   "The poet's work sparked a literary renaissance, and writers began to {emulate} her bold style."
+  ],
+  "sbn": [
+   "রেনেসাঁ (Renaissance) ইতালিতে শুরু হয়েছিল।",
+   "যুদ্ধের পর শহরটি সাংস্কৃতিক নবজাগরণ (renaissance) উপভোগ করল।",
+   "কবির লেখা সাহিত্যে নবজাগরণ (renaissance) আনল, আর লেখকরা তাঁর সাহসী ধরন অনুকরণ করতে লাগলেন।"
+  ],
+  "tip": "French for \"rebirth\": re- (again) + naissance (birth)."
+ },
+ {
+  "id": "rend",
+  "word": "Rend",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to tear apart violently",
+  "bn": "ছিঁড়ে ফেলা; বিদীর্ণ করা",
+  "s": [
+   "The cry seemed to rend the silence.",
+   "The storm began to rend the old sails.",
+   "The scandal threatened to rend the party, leaving a {schism} that never healed."
+  ],
+  "sbn": [
+   "চিৎকারটা যেন নীরবতা ছিঁড়ে (rend) ফেলল।",
+   "ঝড় পুরনো পালগুলো ছিঁড়তে (rend) শুরু করল।",
+   "কেলেঙ্কারি দলটাকে ছিন্নভিন্ন (rend) করার হুমকি দিল, এমন বিভেদ রেখে যা কখনো সারেনি।"
+  ],
+  "tip": "Past tense is \"rent\" (as in a rent in cloth): a tear."
+ },
+ {
+  "id": "render",
+  "word": "Render",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to cause to become; to give or provide",
+  "bn": "করে তোলা; প্রদান করা",
+  "s": [
+   "The news rendered her speechless.",
+   "The nurse rendered help to the injured man.",
+   "The heavy snow rendered the roads impassable and made the rescue effort {futile}."
+  ],
+  "sbn": [
+   "খবরটা তাকে নির্বাক করে (rendered) দিল।",
+   "নার্স আহত লোকটিকে সাহায্য (rendered) করলেন।",
+   "ভারী তুষার রাস্তা চলাচলের অযোগ্য করে (rendered) তুলল আর উদ্ধার চেষ্টা নিষ্ফল করে দিল।"
+  ],
+  "tip": "Think \"make\": render = make it so (render safe = make safe)."
+ },
+ {
+  "id": "renounce",
+  "word": "Renounce",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to formally give up or reject",
+  "bn": "ত্যাগ করা; পরিত্যাগ করা",
+  "s": [
+   "He chose to renounce his citizenship.",
+   "The monk renounced all wealth and lived simply.",
+   "She publicly renounced her old beliefs and became a {zealous} supporter of the new cause."
+  ],
+  "sbn": [
+   "সে তার নাগরিকত্ব ত্যাগ (renounce) করার সিদ্ধান্ত নিল।",
+   "সন্ন্যাসী সব সম্পদ ত্যাগ (renounced) করে সাদাসিধে জীবন কাটালেন।",
+   "সে প্রকাশ্যে তার পুরনো বিশ্বাস ত্যাগ (renounced) করে নতুন আদর্শের উগ্র সমর্থক হয়ে উঠল।"
+  ],
+  "tip": "Re- + nuntiare (announce): announce you are giving up."
+ },
+ {
+  "id": "reparation",
+  "word": "Reparation",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "compensation for wrong or damage; making amends",
+  "bn": "ক্ষতিপূরণ; অন্যায়ের প্রতিকার",
+  "s": [
+   "The country demanded reparation for the damage.",
+   "The defeated nation had to pay war reparations.",
+   "He offered reparation for the {transgression}, hoping to restore his family's good name."
+  ],
+  "sbn": [
+   "দেশটি ক্ষতির জন্য ক্ষতিপূরণ (reparation) দাবি করল।",
+   "পরাজিত জাতিকে যুদ্ধের ক্ষতিপূরণ (reparations) দিতে হল।",
+   "সে অপরাধের জন্য ক্ষতিপূরণ (reparation) দিতে চাইল, পরিবারের সুনাম ফিরিয়ে আনার আশায়।"
+  ],
+  "tip": "From \"repair\": to repair a wrong."
+ },
+ {
+  "id": "repartee",
+  "word": "Repartee",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "quick, witty conversation or replies",
+  "bn": "চটপটে রসালো কথোপকথন; বুদ্ধিদীপ্ত জবাব",
+  "s": [
+   "Their repartee made everyone laugh.",
+   "She is known for her quick repartee at dinner parties.",
+   "The two comedians traded witty repartee, and the audience enjoyed the {banter}."
+  ],
+  "sbn": [
+   "তাদের রসালো কথার পাল্লা (repartee) সবাইকে হাসাল।",
+   "ডিনার পার্টিতে সে চটপটে জবাবের (repartee) জন্য পরিচিত।",
+   "দুই কৌতুকশিল্পী বুদ্ধিদীপ্ত কথার পাল্টাপাল্টি (repartee) চালালেন, আর দর্শক সেই রসিকতা উপভোগ করল।"
+  ],
+  "tip": "French \"repartir\" (to reply quickly): a fast comeback."
+ },
+ {
+  "id": "repercussion",
+  "word": "Repercussion",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "an indirect, often unwelcome result of an action",
+  "bn": "পরোক্ষ পরিণতি; প্রতিক্রিয়া",
+  "s": [
+   "The decision had serious repercussions.",
+   "Lying to the boss may have unpleasant repercussions.",
+   "The sudden tax rise had far-reaching repercussions, and many small shops began to {founder}."
+  ],
+  "sbn": [
+   "সিদ্ধান্তটার গুরুতর পরিণতি (repercussions) হল।",
+   "বসকে মিথ্যা বললে অপ্রীতিকর পরিণতি (repercussions) হতে পারে।",
+   "হঠাৎ কর বৃদ্ধির সুদূরপ্রসারী প্রতিক্রিয়া (repercussions) হল, আর অনেক ছোট দোকান ডুবতে শুরু করল।"
+  ],
+  "tip": "Re- (back) + percutere (strike): the blow bounces back."
+ },
+ {
+  "id": "replenish",
+  "word": "Replenish",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to fill up again; to restock",
+  "bn": "আবার ভরা; পুনরায় পূর্ণ করা",
+  "s": [
+   "We need to replenish our water supply.",
+   "The store replenishes its shelves every morning.",
+   "After the long march, the soldiers stopped to replenish supplies that were nearly {depleted}."
+  ],
+  "sbn": [
+   "আমাদের পানির মজুত আবার ভরতে (replenish) হবে।",
+   "দোকানটি প্রতি সকালে তাক আবার ভরে (replenishes) রাখে।",
+   "দীর্ঘ পদযাত্রার পর সৈন্যরা প্রায় শেষ হয়ে যাওয়া রসদ আবার ভরতে (replenish) থামল।"
+  ],
+  "tip": "Re- (again) + plenus (full): make full again."
+ },
+ {
+  "id": "replete",
+  "word": "Replete",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "filled or well supplied with something",
+  "bn": "পরিপূর্ণ; ভরপুর",
+  "s": [
+   "The garden is replete with flowers.",
+   "The story is replete with funny details.",
+   "The old library, replete with rare books and {arcane} manuscripts, delighted the scholar."
+  ],
+  "sbn": [
+   "বাগানটা ফুলে পরিপূর্ণ (replete)।",
+   "গল্পটা মজার খুঁটিনাটিতে ভরপুর (replete)।",
+   "দুর্লভ বই আর দুর্বোধ্য পাণ্ডুলিপিতে ভরা (replete) পুরনো গ্রন্থাগারটা পণ্ডিতকে আনন্দ দিল।"
+  ],
+  "tip": "Same root as \"complete\": plenus, full."
+ },
+ {
+  "id": "replicate",
+  "word": "Replicate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to copy or reproduce exactly",
+  "bn": "হুবহু নকল করা; পুনরায় তৈরি করা",
+  "s": [
+   "Scientists tried to replicate the result.",
+   "Cells replicate by dividing in two.",
+   "No lab could replicate the experiment, which cast {dubious} doubt on the original findings."
+  ],
+  "sbn": [
+   "বিজ্ঞানীরা ফলাফলটা পুনরায় তৈরি (replicate) করার চেষ্টা করলেন।",
+   "কোষ দুই ভাগ হয়ে নিজেদের প্রতিলিপি (replicate) তৈরি করে।",
+   "কোনো ল্যাবই পরীক্ষাটা পুনরায় করতে (replicate) পারল না, যা মূল ফলাফলে সন্দেহ ঢেলে দিল।"
+  ],
+  "tip": "Re- (again) + plicare (fold): fold out another copy."
+ },
+ {
+  "id": "repose",
+  "word": "Repose",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "rest; calm and peace",
+  "bn": "বিশ্রাম; প্রশান্তি",
+  "s": [
+   "She sat in quiet repose by the window.",
+   "His face was calm in repose, with no trace of worry.",
+   "The {serene} lake invited repose, and the tired travelers lay down gladly."
+  ],
+  "sbn": [
+   "সে জানালার ধারে শান্ত বিশ্রামে (repose) বসল।",
+   "বিশ্রামে (repose) তার মুখ শান্ত ছিল, দুশ্চিন্তার কোনো ছাপ ছিল না।",
+   "প্রশান্ত হ্রদটা বিশ্রামের (repose) আমন্ত্রণ জানাল, আর ক্লান্ত পর্যটকরা খুশি মনে শুয়ে পড়ল।"
+  ],
+  "tip": "Re- + pausare (to pause): a pause, a rest."
+ },
+ {
+  "id": "reprehensible",
+  "word": "Reprehensible",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "deserving blame or criticism",
+  "bn": "নিন্দনীয়; দোষযোগ্য",
+  "s": [
+   "Cheating on a test is reprehensible.",
+   "His reprehensible behavior shocked the whole class.",
+   "The mayor's {egregious} and reprehensible conduct forced the town to demand his resignation."
+  ],
+  "sbn": [
+   "পরীক্ষায় নকল করা নিন্দনীয় (reprehensible)।",
+   "তার নিন্দনীয় (reprehensible) আচরণ পুরো ক্লাসকে হতবাক করল।",
+   "মেয়রের জঘন্য ও নিন্দনীয় (reprehensible) আচরণ শহরবাসীকে তার পদত্যাগ দাবি করতে বাধ্য করল।"
+  ],
+  "tip": "Re- + prehendere (to seize): grab someone to blame them."
+ },
+ {
+  "id": "repress",
+  "word": "Repress",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to hold back or put down by force",
+  "bn": "দমন করা; চেপে রাখা",
+  "s": [
+   "She tried to repress her laughter.",
+   "The government used force to repress the protest.",
+   "The regime worked to {suppress} dissent and repress every free voice."
+  ],
+  "sbn": [
+   "সে হাসি চেপে (repress) রাখার চেষ্টা করল।",
+   "সরকার বিক্ষোভ দমন (repress) করতে বলপ্রয়োগ করল।",
+   "শাসকগোষ্ঠী ভিন্নমত দাবিয়ে রাখতে ও প্রতিটি স্বাধীন কণ্ঠকে দমন (repress) করতে কাজ করল।"
+  ],
+  "tip": "Re- (back) + press: press it back down."
+ },
+ {
+  "id": "reprimand",
+  "word": "Reprimand",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a formal expression of disapproval; to scold officially",
+  "bn": "তিরস্কার; ভর্ৎসনা",
+  "s": [
+   "The pilot received a reprimand for being late.",
+   "The manager gave the clerk a stern reprimand.",
+   "The captain issued a sharp reprimand to the crew, not wishing to subject them to public {castigation}."
+  ],
+  "sbn": [
+   "পাইলট দেরি করার জন্য তিরস্কার (reprimand) পেল।",
+   "ম্যানেজার কেরানিকে কড়া ভর্ৎসনা (reprimand) করলেন।",
+   "ক্যাপ্টেন প্রকাশ্যে শাস্তি দিতে না চেয়ে ক্রুদের কড়া তিরস্কার (reprimand) করলেন।"
+  ],
+  "tip": "Re- + premere (press down): press someone down with words."
+ },
+ {
+  "id": "reprisal",
+  "word": "Reprisal",
+  "src": "WS1+WS2",
+  "pos": "noun",
+  "en": "an act of revenge in return for harm",
+  "bn": "প্রতিশোধ; প্রতিহিংসামূলক পাল্টা আঘাত",
+  "s": [
+   "They feared reprisal for speaking out.",
+   "The village suffered reprisals after the attack.",
+   "Workers who complained lived in fear of reprisal, since the manager was {vindictive}."
+  ],
+  "sbn": [
+   "তারা মুখ খুললে প্রতিশোধের (reprisal) ভয় পেত।",
+   "হামলার পর গ্রামটি প্রতিশোধের (reprisals) শিকার হল।",
+   "অভিযোগকারী কর্মীরা প্রতিশোধের (reprisal) ভয়ে থাকত, কারণ ম্যানেজার ছিলেন প্রতিহিংসাপরায়ণ।"
+  ],
+  "tip": "Re- + prise (taking): taking something back in revenge."
+ },
+ {
+  "id": "reprove",
+  "word": "Reprove",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to scold gently or express disapproval",
+  "bn": "ভর্ৎসনা করা; মৃদু তিরস্কার করা",
+  "s": [
+   "The teacher reproved the noisy boy.",
+   "She reproved him for his rude remark.",
+   "The elder gently reproved the youth for his {insolent} tone, hoping to teach rather than punish."
+  ],
+  "sbn": [
+   "শিক্ষক গোলমাল করা ছেলেটাকে ভর্ৎসনা (reproved) করলেন।",
+   "সে তার রূঢ় মন্তব্যের জন্য তাকে বকল (reproved)।",
+   "বয়োজ্যেষ্ঠ শাস্তি না দিয়ে শেখাতে চেয়ে যুবকের ঔদ্ধত্যপূর্ণ সুরের জন্য মৃদু ভর্ৎসনা (reproved) করলেন।"
+  ],
+  "tip": "Related to \"reproof\" and \"prove\": to show someone's fault."
+ },
+ {
+  "id": "repugnant",
+  "word": "Repugnant",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "extremely distasteful; causing disgust",
+  "bn": "ঘৃণ্য; বিরক্তিকর",
+  "s": [
+   "The smell was repugnant.",
+   "Cruelty to animals is repugnant to most people.",
+   "The tyrant's {callous} treatment of prisoners was repugnant to the whole nation."
+  ],
+  "sbn": [
+   "গন্ধটা ঘৃণ্য (repugnant) ছিল।",
+   "প্রাণীর প্রতি নিষ্ঠুরতা বেশিরভাগ মানুষের কাছে ঘৃণ্য (repugnant)।",
+   "স্বৈরশাসকের বন্দিদের প্রতি নির্মম আচরণ পুরো জাতির কাছে ঘৃণ্য (repugnant) ছিল।"
+  ],
+  "tip": "Re- (back) + pugnare (fight): you fight back against it in disgust."
+ },
+ {
+  "id": "requisite",
+  "word": "Requisite",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "required; necessary",
+  "bn": "প্রয়োজনীয়; অপরিহার্য",
+  "s": [
+   "You need the requisite skills for this job.",
+   "She had the requisite marks to enter the university.",
+   "Patience is a requisite quality for a teacher, as one must face the {tedium} of repeated questions."
+  ],
+  "sbn": [
+   "এই কাজের জন্য তোমার প্রয়োজনীয় (requisite) দক্ষতা থাকতে হবে।",
+   "বিশ্ববিদ্যালয়ে ঢোকার প্রয়োজনীয় (requisite) নম্বর তার ছিল।",
+   "ধৈর্য শিক্ষকের অপরিহার্য (requisite) গুণ, কারণ তাঁকে বারবার একই প্রশ্নের একঘেয়েমি সইতে হয়।"
+  ],
+  "tip": "Re- + quaerere (to seek): something you must seek out."
+ },
+ {
+  "id": "resignation",
+  "word": "Resignation",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "giving up a job; calm acceptance of something bad",
+  "bn": "পদত্যাগ; মেনে নেওয়ার মনোভাব",
+  "s": [
+   "He handed in his resignation on Monday.",
+   "She accepted the news with quiet resignation.",
+   "The director's resignation followed the {debacle}, and he left with weary resignation."
+  ],
+  "sbn": [
+   "সে সোমবার পদত্যাগপত্র (resignation) জমা দিল।",
+   "সে নীরবে মেনে নিয়ে (resignation) খবরটা গ্রহণ করল।",
+   "বিপর্যয়ের পর পরিচালকের পদত্যাগ (resignation) এল, আর তিনি ক্লান্ত মেনে নেওয়ার ভাব (resignation) নিয়ে বিদায় নিলেন।"
+  ],
+  "tip": "Re- + signare (to seal): to un-seal or give back your post."
+ },
+ {
+  "id": "respite",
+  "word": "Respite",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a short rest or break from something hard",
+  "bn": "বিরতি; স্বস্তি",
+  "s": [
+   "The rain gave us a short respite.",
+   "Nurses need a respite after a long shift.",
+   "The ceasefire offered a brief respite from the {turmoil} that had gripped the city."
+  ],
+  "sbn": [
+   "বৃষ্টি আমাদের ক্ষণিক স্বস্তি (respite) দিল।",
+   "দীর্ঘ শিফটের পর নার্সদের বিরতি (respite) দরকার।",
+   "যুদ্ধবিরতি শহরকে গ্রাস করা অশান্তি থেকে ক্ষণিক স্বস্তি (respite) দিল।"
+  ],
+  "tip": "Related to \"respect\": looking back, a pause to breathe."
+ },
+ {
+  "id": "resplendent",
+  "word": "Resplendent",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "shining brilliantly; splendid",
+  "bn": "ঝলমলে; জমকালো",
+  "s": [
+   "The bride looked resplendent in gold.",
+   "The palace was resplendent with lights and flowers.",
+   "The queen appeared resplendent in a gown embroidered with {iridescent} thread."
+  ],
+  "sbn": [
+   "কনেকে সোনালি পোশাকে ঝলমলে (resplendent) দেখাচ্ছিল।",
+   "প্রাসাদটা আলো আর ফুলে জমকালো (resplendent) ছিল।",
+   "রানি রংধনু-রঙা সুতোয় সূচিকর্ম করা গাউনে ঝলমলে (resplendent) রূপে হাজির হলেন।"
+  ],
+  "tip": "Re- (intensely) + splendor: very splendid."
+ },
+ {
+  "id": "resurrection",
+  "word": "Resurrection",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "rising from the dead; a revival of something",
+  "bn": "পুনরুত্থান; পুনরুজ্জীবন",
+  "s": [
+   "Many believers celebrate the resurrection at Easter.",
+   "The old brand enjoyed a surprising resurrection last year.",
+   "The town's resurrection after the flood was a symbol of {resolve} and hope."
+  ],
+  "sbn": [
+   "অনেক বিশ্বাসী ঈস্টারে পুনরুত্থান (resurrection) উদযাপন করে।",
+   "গত বছর পুরনো ব্র্যান্ডটা অপ্রত্যাশিতভাবে পুনরুজ্জীবিত (resurrection) হল।",
+   "বন্যার পর শহরের পুনরুজ্জীবন (resurrection) ছিল দৃঢ় সংকল্প ও আশার প্রতীক।"
+  ],
+  "tip": "Re- (again) + surgere (to rise): rise again."
+ },
+ {
+  "id": "retort",
+  "word": "Retort",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a sharp, quick reply",
+  "bn": "ঝাঁঝালো পাল্টা জবাব",
+  "s": [
+   "Her retort silenced the room.",
+   "He made a sharp retort to the insult.",
+   "\"You first,\" she said in a {caustic} retort, and the argument ended there."
+  ],
+  "sbn": [
+   "তার পাল্টা জবাবে (retort) ঘরটা চুপ হয়ে গেল।",
+   "অপমানের জবাবে সে ঝাঁঝালো উত্তর (retort) দিল।",
+   "\"আগে তুমি,\" সে তীক্ষ্ণ ঝাঁঝালো জবাবে (retort) বলল, আর তর্কটা ওখানেই শেষ হল।"
+  ],
+  "tip": "Re- (back) + torquere (twist): you twist the words back at them."
+ },
+ {
+  "id": "retrospect",
+  "word": "Retrospect",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "looking back on past events",
+  "bn": "পেছন ফিরে দেখা; অতীত বিশ্লেষণ",
+  "s": [
+   "In retrospect, I should have left earlier.",
+   "In retrospect, the plan was doomed from the start.",
+   "Only in retrospect did the {portent} of the coming crisis become clear to the officials."
+  ],
+  "sbn": [
+   "পেছন ফিরে দেখলে (retrospect), আমার আরও আগে বের হওয়া উচিত ছিল।",
+   "অতীত ভেবে দেখলে (retrospect), পরিকল্পনাটা শুরু থেকেই ব্যর্থ ছিল।",
+   "কর্মকর্তারা শুধু পেছন ফিরে দেখে (retrospect) আসন্ন সংকটের আগাম লক্ষণটা বুঝতে পারলেন।"
+  ],
+  "tip": "Retro- (back) + specere (look): look back."
+ },
+ {
+  "id": "revamp",
+  "word": "Revamp",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to improve by changing the form or structure",
+  "bn": "নতুন করে সাজানো; ঢেলে সাজানো",
+  "s": [
+   "They plan to revamp the old website.",
+   "The café was revamped with new chairs and lights.",
+   "The coach decided to revamp the team's strategy and {bolster} the weak defense."
+  ],
+  "sbn": [
+   "তারা পুরনো ওয়েবসাইটটা নতুন করে সাজাতে (revamp) চায়।",
+   "ক্যাফেটা নতুন চেয়ার আর আলো দিয়ে নতুনভাবে সাজানো (revamped) হল।",
+   "কোচ দলের কৌশল ঢেলে সাজাতে (revamp) আর দুর্বল রক্ষণ জোরদার করতে চাইলেন।"
+  ],
+  "tip": "Re- (again) + vamp (a patch on a shoe): patch up and renew."
+ },
+ {
+  "id": "revel",
+  "word": "Revel",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to enjoy something greatly; to celebrate noisily",
+  "bn": "আনন্দে মেতে ওঠা; উপভোগ করা",
+  "s": [
+   "The children revel in the snow.",
+   "Fans revelled in the team's historic win.",
+   "She loved to revel in the {accolade} her research had finally earned."
+  ],
+  "sbn": [
+   "শিশুরা তুষারে আনন্দে মেতে ওঠে (revel)।",
+   "দলের ঐতিহাসিক জয়ে সমর্থকরা আনন্দে মেতে (revelled) উঠল।",
+   "তার গবেষণা শেষমেশ যে প্রশংসা এনে দিয়েছিল, সে তা উপভোগ (revel) করতে ভালোবাসত।"
+  ],
+  "tip": "Same root as \"rebel\" (rebellare): wild, unruly fun."
+ },
+ {
+  "id": "revile",
+  "word": "Revile",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to criticize in an abusive, angry way",
+  "bn": "গালিগালাজ করা; কটূক্তি করা",
+  "s": [
+   "The crowd began to revile the referee.",
+   "He was reviled by the press for his lies.",
+   "The dictator was reviled by the people and {denounced} in every foreign newspaper."
+  ],
+  "sbn": [
+   "ভিড়টা রেফারিকে গালিগালাজ (revile) করতে শুরু করল।",
+   "মিথ্যার জন্য সংবাদমাধ্যম তাকে কটূক্তি (reviled) করল।",
+   "জনগণ স্বৈরশাসককে ঘৃণাভরে গালমন্দ (reviled) করল এবং প্রতিটি বিদেশি পত্রিকা তাঁর নিন্দা করল।"
+  ],
+  "tip": "Re- + vile: to call someone vile again and again."
+ },
+ {
+  "id": "revulsion",
+  "word": "Revulsion",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a sudden strong feeling of disgust",
+  "bn": "তীব্র ঘৃণা; বিতৃষ্ণা",
+  "s": [
+   "She felt revulsion at the sight of blood.",
+   "The cruelty of the film filled viewers with revulsion.",
+   "The public felt deep revulsion toward the {heinous} crime and demanded justice."
+  ],
+  "sbn": [
+   "রক্ত দেখে সে তীব্র ঘৃণা (revulsion) অনুভব করল।",
+   "সিনেমার নিষ্ঠুরতা দর্শকদের বিতৃষ্ণায় (revulsion) ভরে দিল।",
+   "জনগণ ওই নৃশংস অপরাধের প্রতি গভীর ঘৃণা (revulsion) অনুভব করে বিচার দাবি করল।"
+  ],
+  "tip": "Re- + vellere (to pull): you pull away in disgust."
+ },
+ {
+  "id": "rhapsodize",
+  "word": "Rhapsodize",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to speak or write with extreme enthusiasm",
+  "bn": "উচ্ছ্বসিত প্রশংসা করা",
+  "s": [
+   "She rhapsodized about her trip to Cox's Bazar.",
+   "Critics rhapsodized over the young pianist's debut.",
+   "He would rhapsodize for hours about the {sublime} beauty of the mountains."
+  ],
+  "sbn": [
+   "সে কক্সবাজার ভ্রমণ নিয়ে উচ্ছ্বসিত (rhapsodized) হয়ে বলল।",
+   "সমালোচকরা তরুণ পিয়ানোবাদকের অভিষেক নিয়ে উচ্ছ্বসিত প্রশংসা (rhapsodized) করলেন।",
+   "পাহাড়ের মহিমান্বিত সৌন্দর্য নিয়ে সে ঘণ্টার পর ঘণ্টা উচ্ছ্বসিত (rhapsodize) হয়ে বলত।"
+  ],
+  "tip": "From Greek rhapsodia, a stitched-together epic recital sung with passion."
+ },
+ {
+  "id": "rhetoric",
+  "word": "Rhetoric",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the art of persuasive speaking; fancy but empty speech",
+  "bn": "বাগ্মিতা; বাগাড়ম্বর",
+  "s": [
+   "The speaker was famous for his rhetoric.",
+   "Voters grew tired of empty political rhetoric.",
+   "His {bombastic} rhetoric impressed the crowd but offered no real solutions."
+  ],
+  "sbn": [
+   "বক্তা তাঁর বাগ্মিতার (rhetoric) জন্য বিখ্যাত ছিলেন।",
+   "ভোটাররা ফাঁপা রাজনৈতিক বাগাড়ম্বরে (rhetoric) বিরক্ত হয়ে গেল।",
+   "তাঁর আড়ম্বরপূর্ণ বাগাড়ম্বর (rhetoric) জনতাকে মুগ্ধ করল কিন্তু আসল সমাধান কিছু দিল না।"
+  ],
+  "tip": "From Greek rhetor, a public speaker."
+ },
+ {
+  "id": "ribald",
+  "word": "Ribald",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "crudely funny, especially about sex",
+  "bn": "অশ্লীল রসিকতাপূর্ণ; খিস্তিমাখা",
+  "s": [
+   "He told a ribald joke at the party.",
+   "The sailors sang ribald songs in the tavern.",
+   "The comedian's {licentious} and ribald humor made some guests laugh and others leave."
+  ],
+  "sbn": [
+   "সে পার্টিতে একটা অশ্লীল (ribald) রসিকতা করল।",
+   "নাবিকরা সরাইখানায় খিস্তিমাখা (ribald) গান গাইল।",
+   "কৌতুকশিল্পীর উচ্ছৃঙ্খল ও অশ্লীল (ribald) রসিকতায় কেউ হাসল, কেউ উঠে চলে গেল।"
+  ],
+  "tip": "Sounds like \"rude\": ribald humor is rude humor."
+ },
+ {
+  "id": "rife",
+  "word": "Rife",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "widespread, especially something bad",
+  "bn": "ছড়িয়ে থাকা; পরিপূর্ণ",
+  "s": [
+   "The city was rife with rumors.",
+   "The old report was rife with errors.",
+   "The prison was rife with corruption, and guards routinely {extort} money from inmates."
+  ],
+  "sbn": [
+   "শহরটা গুজবে ভরা (rife) ছিল।",
+   "পুরনো রিপোর্টটা ভুলে ভরা (rife) ছিল।",
+   "কারাগারটা দুর্নীতিতে ছেয়ে (rife) ছিল, আর প্রহরীরা নিয়মিত বন্দিদের কাছ থেকে জোর করে টাকা আদায় করত।"
+  ],
+  "tip": "Rhymes with \"life\": life-threatening things are rife everywhere."
+ },
+ {
+  "id": "rigorous",
+  "word": "Rigorous",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "strict and thorough; demanding",
+  "bn": "কঠোর; নিখুঁত",
+  "s": [
+   "The army has rigorous training.",
+   "The scientist ran a rigorous test of the idea.",
+   "The program requires {meticulous} planning and rigorous discipline from every student."
+  ],
+  "sbn": [
+   "সেনাবাহিনীর প্রশিক্ষণ কঠোর (rigorous)।",
+   "বিজ্ঞানী ধারণাটা নিখুঁত ও কঠোরভাবে (rigorous) যাচাই করলেন।",
+   "কর্মসূচিতে প্রতিটি শিক্ষার্থীর কাছ থেকে নিখুঁত পরিকল্পনা ও কঠোর (rigorous) শৃঙ্খলা চাওয়া হয়।"
+  ],
+  "tip": "Related to \"rigid\": stiff, no bending."
+ },
+ {
+  "id": "rivet",
+  "word": "Rivet",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to hold the attention completely; to fasten firmly",
+  "bn": "মুগ্ধ করে ধরে রাখা; দৃঢ়ভাবে আটকানো",
+  "s": [
+   "The story riveted the audience.",
+   "His eyes were riveted on the screen.",
+   "The magician's final trick riveted the crowd, leaving them {transfixed} for a full minute."
+  ],
+  "sbn": [
+   "গল্পটা দর্শকদের মুগ্ধ করে (riveted) রাখল।",
+   "তার চোখ পর্দায় আটকে (riveted) ছিল।",
+   "জাদুকরের শেষ খেলা দর্শকদের পুরো এক মিনিট মন্ত্রমুগ্ধ করে (riveted) রাখল।"
+  ],
+  "tip": "A rivet is a metal pin that fixes things in place; attention gets fixed."
+ },
+ {
+  "id": "robust",
+  "word": "Robust",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "strong, healthy and sturdy",
+  "bn": "শক্তসমর্থ; মজবুত",
+  "s": [
+   "He is a robust, healthy man.",
+   "The country has a robust economy.",
+   "The robust bridge withstood the flood, proving the engineers' {meticulous} calculations right."
+  ],
+  "sbn": [
+   "সে একজন শক্তসমর্থ (robust) সুস্থ মানুষ।",
+   "দেশটার অর্থনীতি মজবুত (robust)।",
+   "মজবুত (robust) সেতুটা বন্যা সামলে নিল, প্রমাণ করল প্রকৌশলীদের নিখুঁত হিসাব সঠিক ছিল।"
+  ],
+  "tip": "Sounds like \"oak\": Latin robur meant oak, a strong tree."
+ },
+ {
+  "id": "rogue",
+  "word": "Rogue",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a dishonest or unprincipled person; one who acts outside control",
+  "bn": "বদমাশ; ধূর্ত লোক",
+  "s": [
+   "The rogue stole the old man's watch.",
+   "A rogue employee leaked the secret files.",
+   "The charming rogue used {guile} to cheat the villagers out of their savings."
+  ],
+  "sbn": [
+   "বদমাশটা (rogue) বুড়ো লোকের ঘড়ি চুরি করল।",
+   "এক বেপরোয়া (rogue) কর্মচারী গোপন ফাইল ফাঁস করে দিল।",
+   "মোহনীয় ধূর্ত লোকটা (rogue) চালাকি করে গ্রামবাসীদের সঞ্চয় ঠকিয়ে নিল।"
+  ],
+  "tip": "Think of a \"rogue\" elephant: it breaks away and causes trouble."
+ },
+ {
+  "id": "rout",
+  "word": "Rout",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a crushing defeat; to defeat completely",
+  "bn": "শোচনীয় পরাজয়; ছত্রভঙ্গ করা",
+  "s": [
+   "The match ended in a rout.",
+   "The army routed the enemy in a single afternoon.",
+   "The election was a rout, and the ruling party's {hubris} finally cost it dearly."
+  ],
+  "sbn": [
+   "খেলাটা শোচনীয় পরাজয়ে (rout) শেষ হল।",
+   "সেনাবাহিনী এক বিকেলেই শত্রুকে ছত্রভঙ্গ করে (routed) দিল।",
+   "নির্বাচনটা ছিল শোচনীয় পরাজয় (rout), আর ক্ষমতাসীন দলের অহংকার শেষমেশ তাদের চড়া মূল্য দিতে বাধ্য করল।"
+  ],
+  "tip": "Rhymes with \"out\": the enemy is thrown out."
+ },
+ {
+  "id": "rudimentary",
+  "word": "Rudimentary",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "basic; undeveloped",
+  "bn": "প্রাথমিক; অপরিণত",
+  "s": [
+   "He has only a rudimentary knowledge of French.",
+   "The village had a rudimentary water system.",
+   "The tools were rudimentary, yet the {artisan} made beautiful pots with them."
+  ],
+  "sbn": [
+   "ফরাসি ভাষায় তার শুধু প্রাথমিক (rudimentary) জ্ঞান আছে।",
+   "গ্রামে একটা প্রাথমিক (rudimentary) পানি-ব্যবস্থা ছিল।",
+   "যন্ত্রপাতি ছিল অতি সাধারণ (rudimentary), তবু কারিগর তা দিয়ে সুন্দর হাঁড়ি বানাতেন।"
+  ],
+  "tip": "Rudiment = the first basics, like a \"rough\" beginning."
+ },
+ {
+  "id": "rue",
+  "word": "Rue",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to feel sorrow or regret about something",
+  "bn": "অনুতাপ করা; আফসোস করা",
+  "s": [
+   "He will rue the day he lied.",
+   "She rued her hasty decision for years.",
+   "You will rue the {impetuous} choice you made once the consequences become clear."
+  ],
+  "sbn": [
+   "যেদিন সে মিথ্যা বলেছিল সেদিনের জন্য সে আফসোস (rue) করবে।",
+   "সে বছরের পর বছর তার তাড়াহুড়োর সিদ্ধান্তের জন্য অনুতাপ (rued) করল।",
+   "পরিণতি স্পষ্ট হলে তুমি নিজের হঠকারী সিদ্ধান্তের জন্য আফসোস (rue) করবে।"
+  ],
+  "tip": "Rhymes with \"true\": \"too true, I rue it\"."
+ },
+ {
+  "id": "ruminate",
+  "word": "Ruminate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to think deeply about; to chew the cud",
+  "bn": "গভীরভাবে ভাবা; জাবর কাটা",
+  "s": [
+   "He sat alone to ruminate on his future.",
+   "Cows ruminate after they eat grass.",
+   "She would ruminate for days over every {fallacious} accusation, unable to sleep."
+  ],
+  "sbn": [
+   "সে নিজের ভবিষ্যৎ নিয়ে গভীরভাবে ভাবতে (ruminate) একা বসল।",
+   "গরু ঘাস খাওয়ার পর জাবর কাটে (ruminate)।",
+   "প্রতিটি ভিত্তিহীন অভিযোগ নিয়ে সে দিনের পর দিন ভেবে (ruminate) যেত, ঘুমাতে পারত না।"
+  ],
+  "tip": "Latin rumen = stomach of a cow; thought is chewed over like cud."
+ },
+ {
+  "id": "rustic",
+  "word": "Rustic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "simple and rural; of the countryside",
+  "bn": "গ্রাম্য; সাদাসিধে",
+  "s": [
+   "They stayed in a rustic cottage.",
+   "The restaurant serves rustic food made from local crops.",
+   "The painter loved the {bucolic} charm of rustic village life."
+  ],
+  "sbn": [
+   "তারা একটা গ্রাম্য (rustic) কুটিরে থাকল।",
+   "রেস্তোরাঁটা স্থানীয় ফসলে তৈরি সাদাসিধে গ্রাম্য (rustic) খাবার দেয়।",
+   "চিত্রশিল্পী গ্রাম্য (rustic) জীবনের পল্লিসুলভ মাধুর্য ভালোবাসতেন।"
+  ],
+  "tip": "Latin rus = countryside, as in \"rural\"."
+ },
+ {
+  "id": "saccharine",
+  "word": "Saccharine",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "too sweet or sentimental",
+  "bn": "অতি মিষ্টি; আবেগে চিনির মতো মোলায়েম",
+  "s": [
+   "The movie had a saccharine ending.",
+   "Her saccharine smile did not fool anyone.",
+   "The card's saccharine verse struck him as {maudlin} rather than sincere."
+  ],
+  "sbn": [
+   "সিনেমার শেষটা ছিল অতি মিষ্টি (saccharine)।",
+   "তার চিনি-মাখা (saccharine) হাসিতে কেউ ভুলল না।",
+   "কার্ডের অতি মিষ্টি (saccharine) কবিতাটা তার কাছে আন্তরিক নয়, অশ্রুসজল বাড়াবাড়ি মনে হল।"
+  ],
+  "tip": "Saccharin is an artificial sweetener: too sweet."
+ },
+ {
+  "id": "sacrilege",
+  "word": "Sacrilege",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "disrespect toward something holy",
+  "bn": "পবিত্র বস্তুর অবমাননা; ধর্মদ্রোহিতা",
+  "s": [
+   "Burning the holy book was a sacrilege.",
+   "Many felt it was sacrilege to build on the sacred ground.",
+   "The villagers called the {profane} act of vandalizing the shrine an unforgivable sacrilege."
+  ],
+  "sbn": [
+   "পবিত্র গ্রন্থ পোড়ানো ছিল ধর্মীয় অবমাননা (sacrilege)।",
+   "অনেকে ভাবল পবিত্র জমিতে নির্মাণ করা অবমাননা (sacrilege)।",
+   "মাজারে ভাঙচুরের অপবিত্র কাজটিকে গ্রামবাসীরা অমার্জনীয় অবমাননা (sacrilege) বলল।"
+  ],
+  "tip": "Sacri- (holy) + legere (to steal): stealing holy things."
+ },
+ {
+  "id": "sacrosanct",
+  "word": "Sacrosanct",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "too important or holy to be harmed or questioned",
+  "bn": "অলঙ্ঘ্য; পবিত্র",
+  "s": [
+   "Freedom of speech is sacrosanct here.",
+   "The family considered Friday dinner sacrosanct.",
+   "For the monk, the temple grounds were sacrosanct and {inviolate}."
+  ],
+  "sbn": [
+   "এখানে বাকস্বাধীনতা অলঙ্ঘ্য (sacrosanct)।",
+   "পরিবারটি শুক্রবারের নৈশভোজকে পবিত্র (sacrosanct) মনে করত।",
+   "সন্ন্যাসীর কাছে মন্দিরের চত্বর ছিল পবিত্র (sacrosanct) ও অলঙ্ঘনীয়।"
+  ],
+  "tip": "Sacro- (sacred) + sanctus (holy): doubly holy."
+ },
+ {
+  "id": "sagacious",
+  "word": "Sagacious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "wise and sharp in judgment",
+  "bn": "প্রাজ্ঞ; বিচক্ষণ",
+  "s": [
+   "The sagacious old judge solved the case.",
+   "Her sagacious advice saved the company.",
+   "A {shrewd} and sagacious investor, he sold his shares just before the crash."
+  ],
+  "sbn": [
+   "প্রাজ্ঞ (sagacious) বৃদ্ধ বিচারক মামলাটা সমাধান করলেন।",
+   "তার বিচক্ষণ (sagacious) পরামর্শ কোম্পানিটাকে বাঁচাল।",
+   "চতুর ও বিচক্ষণ (sagacious) বিনিয়োগকারী ধসের ঠিক আগে তাঁর শেয়ার বিক্রি করে দিলেন।"
+  ],
+  "tip": "Latin sagax, keen; think \"sage\"."
+ },
+ {
+  "id": "salient",
+  "word": "Salient",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "most noticeable or important",
+  "bn": "সবচেয়ে গুরুত্বপূর্ণ; লক্ষণীয়",
+  "s": [
+   "Mention only the salient points.",
+   "The salient feature of the car is its speed.",
+   "The report summarizes the {pivotal} and most salient facts in two pages."
+  ],
+  "sbn": [
+   "শুধু সবচেয়ে গুরুত্বপূর্ণ (salient) বিষয়গুলো বলো।",
+   "গাড়িটার লক্ষণীয় (salient) বৈশিষ্ট্য হল এর গতি।",
+   "প্রতিবেদনটি দুই পাতায় নির্ণায়ক ও সবচেয়ে গুরুত্বপূর্ণ (salient) তথ্যগুলো সংক্ষেপে তুলে ধরেছে।"
+  ],
+  "tip": "Latin salire = to leap: it leaps out at you."
+ },
+ {
+  "id": "sally",
+  "word": "Sally",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a sudden attack from a defended place; a witty remark",
+  "bn": "আকস্মিক আক্রমণ; চটুল মন্তব্য",
+  "s": [
+   "The soldiers made a sally from the fort.",
+   "He answered her sally with a quick joke.",
+   "A sudden sally by the {beleaguered} garrison caught the besiegers off guard."
+  ],
+  "sbn": [
+   "সৈন্যরা দুর্গ থেকে আকস্মিক আক্রমণ (sally) চালাল।",
+   "সে তার চটুল মন্তব্যের (sally) জবাবে ঝটপট একটা রসিকতা করল।",
+   "অবরুদ্ধ রক্ষীদলের আচমকা আক্রমণ (sally) অবরোধকারীদের অপ্রস্তুত করল।"
+  ],
+  "tip": "Latin salire = to leap: leaping out of the fort."
+ },
+ {
+  "id": "salutary",
+  "word": "Salutary",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "beneficial, especially though unpleasant",
+  "bn": "উপকারী; হিতকর",
+  "s": [
+   "The failure was a salutary lesson.",
+   "A brisk walk every morning has a salutary effect on health.",
+   "The harsh criticism proved salutary, and it helped him {ameliorate} his weak writing."
+  ],
+  "sbn": [
+   "ব্যর্থতাটা ছিল হিতকর (salutary) শিক্ষা।",
+   "প্রতিদিন সকালে দ্রুত হাঁটা স্বাস্থ্যের জন্য উপকারী (salutary)।",
+   "কঠোর সমালোচনা হিতকর (salutary) প্রমাণিত হল এবং তাকে দুর্বল লেখা উন্নত করতে সাহায্য করল।"
+  ],
+  "tip": "Latin salus = health: it does you good."
+ },
+ {
+  "id": "salutation",
+  "word": "Salutation",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a greeting; the opening words of a letter",
+  "bn": "সম্ভাষণ; অভিবাদন",
+  "s": [
+   "He raised his hand in salutation.",
+   "The letter began with a polite salutation.",
+   "Her warm salutation and {cordial} smile made the visitors feel at home."
+  ],
+  "sbn": [
+   "সে অভিবাদনে (salutation) হাত তুলল।",
+   "চিঠিটা এক ভদ্র সম্ভাষণ (salutation) দিয়ে শুরু হল।",
+   "তার উষ্ণ অভিবাদন (salutation) আর আন্তরিক হাসি অতিথিদের আপন করে নিল।"
+  ],
+  "tip": "Latin salus = health: wishing someone well."
+ },
+ {
+  "id": "sanctimonious",
+  "word": "Sanctimonious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "making a show of being morally superior",
+  "bn": "ভণ্ড ধার্মিক; আত্মধার্মিকতার ভান করা",
+  "s": [
+   "His sanctimonious speech annoyed everyone.",
+   "She gave a sanctimonious lecture about honesty.",
+   "The sanctimonious official preached morality in public while he secretly practiced {hypocrisy}."
+  ],
+  "sbn": [
+   "তার ভণ্ড ধার্মিকের মতো (sanctimonious) বক্তৃতা সবাইকে বিরক্ত করল।",
+   "সে সততা নিয়ে আত্মধার্মিক (sanctimonious) ভঙ্গিতে লেকচার দিল।",
+   "ভণ্ড ধার্মিক (sanctimonious) কর্মকর্তা প্রকাশ্যে নীতিকথা আওড়াতেন আর গোপনে কপটতা করতেন।"
+  ],
+  "tip": "From sanctus (holy): pretends to be holy."
+ },
+ {
+  "id": "sanguine",
+  "word": "Sanguine",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "cheerfully hopeful, optimistic",
+  "bn": "আশাবাদী; হাসিখুশি",
+  "s": [
+   "She is sanguine about her chances.",
+   "He remained sanguine despite the bad news.",
+   "Though the market was {volatile}, the investor stayed sanguine about the future."
+  ],
+  "sbn": [
+   "সে তার সম্ভাবনা নিয়ে আশাবাদী (sanguine)।",
+   "খারাপ খবর সত্ত্বেও সে আশাবাদী (sanguine) থাকল।",
+   "বাজার অস্থির থাকলেও বিনিয়োগকারী ভবিষ্যৎ নিয়ে আশাবাদী (sanguine) রইলেন।"
+  ],
+  "tip": "Latin sanguis = blood: a rosy, blood-flushed cheerful face."
+ },
+ {
+  "id": "sarcasm",
+  "word": "Sarcasm",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "mocking words that mean the opposite of what is said",
+  "bn": "ব্যঙ্গ; কটাক্ষ",
+  "s": [
+   "\"Great job!\" he said with sarcasm.",
+   "Her sarcasm hurt more than open anger.",
+   "His {caustic} sarcasm made the new intern afraid to speak at meetings."
+  ],
+  "sbn": [
+   "\"দারুণ কাজ!\" সে ব্যঙ্গ (sarcasm) করে বলল।",
+   "খোলাখুলি রাগের চেয়ে তার কটাক্ষ (sarcasm) বেশি আঘাত করল।",
+   "তার তীক্ষ্ণ ব্যঙ্গ (sarcasm) নতুন ইন্টার্নকে মিটিংয়ে কথা বলতে ভয় পাইয়ে দিল।"
+  ],
+  "tip": "Greek sarkazein = to tear flesh: sarcasm tears."
+ },
+ {
+  "id": "sardonic",
+  "word": "Sardonic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "mocking in a bitter, cynical way",
+  "bn": "তির্যক বিদ্রূপপূর্ণ; তিক্ত ব্যঙ্গাত্মক",
+  "s": [
+   "He gave a sardonic smile.",
+   "The critic is known for his sardonic wit.",
+   "The columnist's sardonic remarks about the {pedantic} professor delighted his readers."
+  ],
+  "sbn": [
+   "সে একটা তির্যক বিদ্রূপের (sardonic) হাসি দিল।",
+   "সমালোচক তাঁর তিক্ত ব্যঙ্গাত্মক (sardonic) রসবোধের জন্য পরিচিত।",
+   "কলামিস্টের বিদ্যা-জাহির করা অধ্যাপক নিয়ে বিদ্রূপাত্মক (sardonic) মন্তব্য পাঠকদের আনন্দ দিল।"
+  ],
+  "tip": "Said to come from Sardinia: a bitter plant causing a grin."
+ },
+ {
+  "id": "savant",
+  "word": "Savant",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a person of great learning",
+  "bn": "মহাপণ্ডিত; জ্ঞানী ব্যক্তি",
+  "s": [
+   "The savant knew seven languages.",
+   "She was a savant in the field of ancient history.",
+   "Though a mathematical savant, he remained {diffident} and rarely spoke in class."
+  ],
+  "sbn": [
+   "মহাপণ্ডিতটি (savant) সাতটি ভাষা জানতেন।",
+   "সে প্রাচীন ইতিহাসের ক্ষেত্রে ছিল মহাপণ্ডিত (savant)।",
+   "গণিতে অসামান্য পণ্ডিত (savant) হয়েও সে লাজুক ছিল আর ক্লাসে কমই কথা বলত।"
+  ],
+  "tip": "French savoir = to know: one who knows a lot."
+ },
+ {
+  "id": "scant",
+  "word": "Scant",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "barely enough; very little",
+  "bn": "অপর্যাপ্ত; সামান্য",
+  "s": [
+   "We have scant time left.",
+   "The village received scant attention from the government.",
+   "Given the {paucity} of evidence and scant cooperation from witnesses, the case collapsed."
+  ],
+  "sbn": [
+   "আমাদের হাতে সামান্য (scant) সময় আছে।",
+   "গ্রামটি সরকারের কাছ থেকে অপর্যাপ্ত (scant) মনোযোগ পেল।",
+   "প্রমাণের অভাব আর সাক্ষীদের সামান্য (scant) সহযোগিতার কারণে মামলাটা ভেঙে পড়ল।"
+  ],
+  "tip": "Not \"scan\": short and thin, hardly enough."
+ },
+ {
+  "id": "schism",
+  "word": "Schism",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a split or division in a group, especially over beliefs",
+  "bn": "বিভেদ; দলে ভাঙন",
+  "s": [
+   "A schism split the party in two.",
+   "The dispute caused a schism in the church.",
+   "The bitter debate over leadership created a schism that the {conciliatory} leaders could not heal."
+  ],
+  "sbn": [
+   "বিভেদ (schism) দলটাকে দুই ভাগ করে দিল।",
+   "বিতর্কটা গির্জায় ভাঙন (schism) ধরাল।",
+   "নেতৃত্ব নিয়ে তিক্ত বিতর্ক এমন বিভেদ (schism) সৃষ্টি করল যা মিটমাটপ্রিয় নেতারাও সারাতে পারলেন না।"
+  ],
+  "tip": "Greek schizein = to split, like \"schizo-\"."
+ },
+ {
+  "id": "scintillate",
+  "word": "Scintillate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to sparkle; to be brilliantly witty",
+  "bn": "ঝলমল করা; প্রতিভায় দীপ্তি ছড়ানো",
+  "s": [
+   "The stars scintillate in the night sky.",
+   "The speaker scintillated with quick jokes and clever remarks.",
+   "The conversation began to scintillate once the {urbane} guest joined the table."
+  ],
+  "sbn": [
+   "রাতের আকাশে তারাগুলো ঝলমল (scintillate) করে।",
+   "বক্তা চটপটে রসিকতা আর বুদ্ধিদীপ্ত মন্তব্যে দীপ্তি (scintillated) ছড়ালেন।",
+   "মার্জিত অতিথি টেবিলে যোগ দিতেই আলাপটা ঝলমল (scintillate) করে উঠল।"
+  ],
+  "tip": "Latin scintilla = spark: a sparkle."
+ },
+ {
+  "id": "scorn",
+  "word": "Scorn",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "open contempt; to treat as worthless",
+  "bn": "তাচ্ছিল্য; অবজ্ঞা",
+  "s": [
+   "She looked at him with scorn.",
+   "He scorned their offer of help.",
+   "The critic poured scorn on the {derivative} film, calling it a lazy copy of better movies."
+  ],
+  "sbn": [
+   "সে তাকে অবজ্ঞার (scorn) চোখে দেখল।",
+   "সে তাদের সাহায্যের প্রস্তাব তাচ্ছিল্য (scorned) করল।",
+   "সমালোচক অনুকরণসর্বস্ব সিনেমাটাকে অবজ্ঞা (scorn) করে ভালো সিনেমার অলস নকল বললেন।"
+  ],
+  "tip": "Sounds like \"scoff\": to sneer at."
+ },
+ {
+  "id": "scrupulous",
+  "word": "Scrupulous",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "very careful about doing right; thorough",
+  "bn": "বিবেকবান; সূক্ষ্ম বিচারী",
+  "s": [
+   "The accountant was scrupulous about every detail.",
+   "She is scrupulous in her honesty.",
+   "The {meticulous} and scrupulous editor checked each fact before the book went to print."
+  ],
+  "sbn": [
+   "হিসাবরক্ষক প্রতিটি খুঁটিনাটি নিয়ে অত্যন্ত সতর্ক (scrupulous) ছিলেন।",
+   "সে সততার ব্যাপারে খুবই বিবেকবান (scrupulous)।",
+   "নিখুঁত ও সূক্ষ্মবিচারী (scrupulous) সম্পাদক বই ছাপার আগে প্রতিটি তথ্য যাচাই করলেন।"
+  ],
+  "tip": "Latin scrupulus = a small sharp stone: a tiny worry about right and wrong."
+ },
+ {
+  "id": "scrutinize",
+  "word": "Scrutinize",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to examine very closely",
+  "bn": "খুঁটিয়ে দেখা; তন্ন তন্ন করে পরীক্ষা করা",
+  "s": [
+   "The teacher scrutinized the paper for mistakes.",
+   "Customs officers scrutinize every bag at the border.",
+   "Auditors will scrutinize the accounts for any hint of {chicanery} before approving them."
+  ],
+  "sbn": [
+   "শিক্ষক ভুল খুঁজতে খাতাটা খুঁটিয়ে (scrutinized) দেখলেন।",
+   "শুল্ক কর্মকর্তারা সীমান্তে প্রতিটি ব্যাগ তন্ন তন্ন করে পরীক্ষা (scrutinize) করেন।",
+   "অনুমোদনের আগে নিরীক্ষকরা প্রতারণার সামান্য আভাস খুঁজতেও হিসাব খুঁটিয়ে (scrutinize) দেখবেন।"
+  ],
+  "tip": "Latin scrutari = to search through rags: look into every bit."
+ },
+ {
+  "id": "seamless",
+  "word": "Seamless",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "smooth with no visible joins or breaks",
+  "bn": "নিরবচ্ছিন্ন; জোড়াহীন",
+  "s": [
+   "The move to the new office was seamless.",
+   "The app offers a seamless experience across all devices.",
+   "The translator's seamless prose was so {lucid} that readers never noticed it was translated."
+  ],
+  "sbn": [
+   "নতুন অফিসে স্থানান্তর ছিল নিরবচ্ছিন্ন (seamless)।",
+   "অ্যাপটা সব ডিভাইসে মসৃণ ও নিরবচ্ছিন্ন (seamless) অভিজ্ঞতা দেয়।",
+   "অনুবাদকের জোড়াহীন (seamless) গদ্য এতটাই স্বচ্ছ ছিল যে পাঠকরা বুঝতেই পারেননি এটা অনূদিত।"
+  ],
+  "tip": "Seam + less: no seam showing."
+ },
+ {
+  "id": "secede",
+  "word": "Secede",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to formally withdraw from a group or country",
+  "bn": "বিচ্ছিন্ন হওয়া; সদস্যপদ ত্যাগ করা",
+  "s": [
+   "The region voted to secede.",
+   "Several states threatened to secede from the union.",
+   "The province sought to secede, unwilling to remain {subordinate} to the capital."
+  ],
+  "sbn": [
+   "অঞ্চলটা বিচ্ছিন্ন (secede) হওয়ার পক্ষে ভোট দিল।",
+   "বেশ কয়েকটি রাজ্য ইউনিয়ন থেকে আলাদা (secede) হওয়ার হুমকি দিল।",
+   "প্রদেশটি রাজধানীর অধীন থাকতে না চেয়ে বিচ্ছিন্ন (secede) হতে চাইল।"
+  ],
+  "tip": "Se- (apart) + cedere (go): go apart."
+ },
+ {
+  "id": "seclusion",
+  "word": "Seclusion",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the state of being private and away from others",
+  "bn": "নির্জনতা; একাকিত্ব",
+  "s": [
+   "She lived in seclusion for years.",
+   "The cabin offered peaceful seclusion in the hills.",
+   "The author sought seclusion in the mountains, preferring to live like a {recluse}."
+  ],
+  "sbn": [
+   "সে বছরের পর বছর নির্জনে (seclusion) বাস করল।",
+   "পাহাড়ের কুটিরটা শান্ত নির্জনতা (seclusion) দিত।",
+   "লেখক নির্জনতা (seclusion) খুঁজে পাহাড়ে গেলেন, সন্ন্যাসীর মতো থাকতে পছন্দ করে।"
+  ],
+  "tip": "Se- (apart) + claudere (shut): shut apart."
+ },
+ {
+  "id": "sect",
+  "word": "Sect",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a small religious or political group with distinct beliefs",
+  "bn": "সম্প্রদায়; উপদল",
+  "s": [
+   "The sect lived apart from the town.",
+   "He joined a small religious sect.",
+   "The {heresy} of the new sect led the church to expel its leaders."
+  ],
+  "sbn": [
+   "সম্প্রদায়টা (sect) শহর থেকে আলাদা থাকত।",
+   "সে একটি ছোট ধর্মীয় সম্প্রদায়ে (sect) যোগ দিল।",
+   "নতুন সম্প্রদায়ের (sect) ধর্মদ্রোহিতার কারণে গির্জা তাদের নেতাদের বহিষ্কার করল।"
+  ],
+  "tip": "Latin sequi = to follow: those who follow a leader."
+ },
+ {
+  "id": "secular",
+  "word": "Secular",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "not religious; worldly",
+  "bn": "ধর্মনিরপেক্ষ; পার্থিব",
+  "s": [
+   "The school is a secular institution.",
+   "Bangladesh is officially a secular state in its early constitution.",
+   "Secular music, once frowned upon by the {devout}, eventually became part of the festival."
+  ],
+  "sbn": [
+   "স্কুলটা একটা ধর্মনিরপেক্ষ (secular) প্রতিষ্ঠান।",
+   "প্রথম সংবিধানে বাংলাদেশ আনুষ্ঠানিকভাবে ধর্মনিরপেক্ষ (secular) রাষ্ট্র ছিল।",
+   "ধর্মনিষ্ঠদের অপছন্দের ধর্মনিরপেক্ষ (secular) সংগীতও শেষমেশ উৎসবের অংশ হয়ে গেল।"
+  ],
+  "tip": "Latin saeculum = age/world: of this world, not the church."
+ },
+ {
+  "id": "sedentary",
+  "word": "Sedentary",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "involving much sitting and little exercise",
+  "bn": "বসে থাকা; অলস জীবনযাপনের",
+  "s": [
+   "A sedentary lifestyle harms your health.",
+   "He has a sedentary desk job.",
+   "Doctors warn that a sedentary routine can leave you {lethargic} and unfit."
+  ],
+  "sbn": [
+   "বসে থাকা (sedentary) জীবনযাত্রা স্বাস্থ্যের ক্ষতি করে।",
+   "তার চাকরিটা সারাদিন ডেস্কে বসে থাকার (sedentary)।",
+   "ডাক্তাররা সতর্ক করেন, বসে থাকা (sedentary) অভ্যাস আপনাকে অলস ও অসুস্থ করে তুলতে পারে।"
+  ],
+  "tip": "Latin sedere = to sit, like \"seat\"."
+ },
+ {
+  "id": "sedition",
+  "word": "Sedition",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "words or acts that stir people to rebel against the government",
+  "bn": "রাষ্ট্রদ্রোহ; উস্কানি",
+  "s": [
+   "He was jailed for sedition.",
+   "The speech was condemned as an act of sedition.",
+   "The writer was charged with sedition for his {incendiary} articles against the regime."
+  ],
+  "sbn": [
+   "তাকে রাষ্ট্রদ্রোহের (sedition) দায়ে জেলে পাঠানো হল।",
+   "ভাষণটাকে রাষ্ট্রদ্রোহিতা (sedition) বলে নিন্দা করা হল।",
+   "শাসকগোষ্ঠীর বিরুদ্ধে উসকানিমূলক লেখার জন্য লেখককে রাষ্ট্রদ্রোহের (sedition) অভিযোগে অভিযুক্ত করা হল।"
+  ],
+  "tip": "Se- (apart) + itio (going): going apart from the state."
+ },
+ {
+  "id": "self-made",
+  "word": "Self-made",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "having succeeded through one's own efforts",
+  "bn": "নিজের চেষ্টায় সফল",
+  "s": [
+   "He is a self-made millionaire.",
+   "She is a self-made woman who started with nothing.",
+   "The self-made entrepreneur, once {destitute}, now employs two hundred people."
+  ],
+  "sbn": [
+   "সে নিজের চেষ্টায় গড়া (self-made) কোটিপতি।",
+   "সে এমন নারী যে শূন্য থেকে নিজের চেষ্টায় (self-made) উঠে এসেছে।",
+   "একসময় নিঃস্ব থাকা নিজের চেষ্টায় গড়া (self-made) উদ্যোক্তা এখন দুইশো জনকে কাজ দেন।"
+  ],
+  "tip": "Plain compound: made by oneself."
+ },
+ {
+  "id": "sensory",
+  "word": "Sensory",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "related to the senses",
+  "bn": "ইন্দ্রিয়সংক্রান্ত",
+  "s": [
+   "The baby loves sensory toys.",
+   "Smell is a powerful sensory experience.",
+   "The museum offered a rich sensory experience, filling the hall with {pungent} spices and music."
+  ],
+  "sbn": [
+   "শিশুটা ইন্দ্রিয়-উদ্দীপক (sensory) খেলনা ভালোবাসে।",
+   "ঘ্রাণ একটা শক্তিশালী ইন্দ্রিয়গত (sensory) অভিজ্ঞতা।",
+   "জাদুঘরটি সমৃদ্ধ ইন্দ্রিয়গত (sensory) অভিজ্ঞতা দিল, ঝাঁঝালো মশলা আর সংগীতে হলঘর ভরে।"
+  ],
+  "tip": "From \"sense\": relating to the five senses."
+ },
+ {
+  "id": "sententious",
+  "word": "Sententious",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "preachy, full of moral sayings",
+  "bn": "উপদেশপূর্ণ; নীতিবাক্য আওড়ানো",
+  "s": [
+   "His sententious speech bored the students.",
+   "The old man was sententious and loved giving advice.",
+   "The speaker's {pedantic} and sententious manner made even simple advice feel tiring."
+  ],
+  "sbn": [
+   "তার উপদেশপূর্ণ (sententious) বক্তৃতা ছাত্রদের বিরক্ত করল।",
+   "বৃদ্ধ লোকটি নীতিবাক্য আওড়ানো (sententious) স্বভাবের ছিলেন, উপদেশ দিতে ভালোবাসতেন।",
+   "বক্তার বিদ্যাজাহিরী ও উপদেশপূর্ণ (sententious) ভঙ্গি সাধারণ পরামর্শকেও ক্লান্তিকর করে তুলল।"
+  ],
+  "tip": "Latin sententia = opinion/saying: always dropping \"sentences\" of wisdom."
+ },
+ {
+  "id": "sentient",
+  "word": "Sentient",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "able to feel and perceive",
+  "bn": "অনুভূতিসম্পন্ন; সচেতন",
+  "s": [
+   "Animals are sentient beings.",
+   "The film imagines a sentient robot with real feelings.",
+   "Many argue that a {cognitive} ability alone does not make a creature sentient."
+  ],
+  "sbn": [
+   "প্রাণীরা অনুভূতিসম্পন্ন (sentient) সত্তা।",
+   "সিনেমাটা বাস্তব অনুভূতিসহ এক সচেতন (sentient) রোবটের কল্পনা করে।",
+   "অনেকে বলেন, শুধু বুদ্ধিবৃত্তিক ক্ষমতা কোনো প্রাণীকে অনুভূতিসম্পন্ন (sentient) করে না।"
+  ],
+  "tip": "Latin sentire = to feel: shares root with \"sense\"."
+ },
+ {
+  "id": "sequester",
+  "word": "Sequester",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to isolate or set apart",
+  "bn": "আলাদা করে রাখা; নির্জনে সরিয়ে রাখা",
+  "s": [
+   "The jury was sequestered during the trial.",
+   "She sequestered herself to finish the book.",
+   "The scientists sequestered the patients to {forestall} the spread of the disease."
+  ],
+  "sbn": [
+   "বিচারের সময় জুরিদের আলাদা করে (sequestered) রাখা হল।",
+   "বইটা শেষ করতে সে নিজেকে সবার থেকে আলাদা (sequestered) করে নিল।",
+   "রোগ ছড়ানো আগে থেকে ঠেকাতে বিজ্ঞানীরা রোগীদের আলাদা (sequestered) করে রাখলেন।"
+  ],
+  "tip": "Latin sequester = a trustee holding something apart."
+ },
+ {
+  "id": "serendipity",
+  "word": "Serendipity",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a happy discovery by chance",
+  "bn": "আকস্মিক সৌভাগ্য; ভাগ্যক্রমে আবিষ্কার",
+  "s": [
+   "Meeting her was pure serendipity.",
+   "Penicillin was found by serendipity.",
+   "It was serendipity that led her to the rare book, hidden among a {plethora} of old magazines."
+  ],
+  "sbn": [
+   "তার সঙ্গে দেখা হওয়াটা ছিল নিছক ভাগ্যক্রমে ঘটা সৌভাগ্য (serendipity)।",
+   "পেনিসিলিন আকস্মিক সৌভাগ্যক্রমে (serendipity) আবিষ্কৃত হয়েছিল।",
+   "পুরনো পত্রিকার স্তূপের মধ্যে লুকিয়ে থাকা দুর্লভ বইটার সন্ধান সে ভাগ্যক্রমে (serendipity) পেল।"
+  ],
+  "tip": "Coined from the tale of the Three Princes of Serendip who kept finding lucky things."
+ },
+ {
+  "id": "serene",
+  "word": "Serene",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "calm, peaceful and untroubled",
+  "bn": "শান্ত; প্রশান্ত",
+  "s": [
+   "The lake was serene at dawn.",
+   "She kept a serene smile even during the crisis.",
+   "His {equanimity} stayed unbroken, and he remained serene while the storm raged outside."
+  ],
+  "sbn": [
+   "ভোরে হ্রদটা শান্ত (serene) ছিল।",
+   "সংকটের সময়েও সে প্রশান্ত (serene) হাসি ধরে রাখল।",
+   "বাইরে ঝড় চললেও তাঁর মনের স্থিরতা অটুট রইল, আর তিনি প্রশান্ত (serene) থাকলেন।"
+  ],
+  "tip": "Latin serenus = clear, calm sky."
+ },
+ {
+  "id": "serpentine",
+  "word": "Serpentine",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "winding and twisting like a snake",
+  "bn": "আঁকাবাঁকা; সর্পিল",
+  "s": [
+   "The road is serpentine and narrow.",
+   "A serpentine river crossed the valley.",
+   "The {tortuous} and serpentine path up the hill left the hikers dizzy."
+  ],
+  "sbn": [
+   "রাস্তাটা আঁকাবাঁকা (serpentine) আর সরু।",
+   "একটা সর্পিল (serpentine) নদী উপত্যকা পার হয়েছে।",
+   "পাহাড়ে ওঠার আঁকাবাঁকা ও সর্পিল (serpentine) পথ পর্যটকদের মাথা ঘুরিয়ে দিল।"
+  ],
+  "tip": "Serpent = snake: moves like a snake."
+ },
+ {
+  "id": "servile",
+  "word": "Servile",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "too eager to obey or please others",
+  "bn": "দাসসুলভ; তোষামোদী",
+  "s": [
+   "He gave a servile bow to the boss.",
+   "The servile clerk agreed with everything the manager said.",
+   "Surrounded by {obsequious} and servile aides, the ruler never heard an honest opinion."
+  ],
+  "sbn": [
+   "সে বসকে দাসসুলভ (servile) মাথা নোয়াল।",
+   "তোষামোদী (servile) কেরানি ম্যানেজারের সব কথায় সায় দিত।",
+   "চাটুকার ও দাসসুলভ (servile) সহকারীদের ঘেরাটোপে শাসক কখনো সৎ মতামত শুনতেন না।"
+  ],
+  "tip": "Latin servus = slave: acts like a slave."
+ },
+ {
+  "id": "shackle",
+  "word": "Shackle",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a ring or chain that restrains; anything that limits freedom",
+  "bn": "শিকল; বন্ধন",
+  "s": [
+   "The prisoner wore heavy shackles.",
+   "Poverty can be a shackle that limits a child's dreams.",
+   "The reformers worked to free workers from the {fetter} of debt and the shackles of unfair contracts."
+  ],
+  "sbn": [
+   "বন্দির পায়ে ভারী শিকল (shackles) ছিল।",
+   "দারিদ্র্য এমন এক বন্ধন (shackle) যা শিশুর স্বপ্নকে সীমিত করে।",
+   "সংস্কারকরা শ্রমিকদের ঋণের শেকল ও অন্যায্য চুক্তির বন্ধন (shackles) থেকে মুক্ত করতে কাজ করলেন।"
+  ],
+  "tip": "Hear \"shack\" + \"lock\": locked up."
+ },
+ {
+  "id": "shibboleth",
+  "word": "Shibboleth",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an old belief or custom that marks a group",
+  "bn": "দলীয় গোঁড়া বিশ্বাস; গোষ্ঠী চিহ্নিতকারী রীতি",
+  "s": [
+   "The old shibboleth no longer worked.",
+   "Party members repeated the same shibboleths at every rally.",
+   "He refused to recite the tired shibboleths and {dogmatic} slogans of his party."
+  ],
+  "sbn": [
+   "পুরনো গোঁড়া বুলিটা (shibboleth) আর কাজ করল না।",
+   "দলের সদস্যরা প্রতিটি সমাবেশে একই বাঁধা বুলি (shibboleths) আওড়াত।",
+   "সে নিজের দলের ক্লান্তিকর বাঁধা বুলি (shibboleths) আর গোঁড়া স্লোগান আওড়াতে অস্বীকার করল।"
+  ],
+  "tip": "From a Hebrew word used in the Bible as a test of which tribe you were from."
+ },
+ {
+  "id": "shrewd",
+  "word": "Shrewd",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "clever and sharp in judging situations",
+  "bn": "চতুর; ধূর্ত; বিচক্ষণ",
+  "s": [
+   "She is a shrewd businesswoman.",
+   "His shrewd guess saved the company money.",
+   "The shrewd negotiator read his opponent's {bluster} and stayed calm."
+  ],
+  "sbn": [
+   "সে একজন চতুর (shrewd) ব্যবসায়ী নারী।",
+   "তার বিচক্ষণ (shrewd) অনুমান কোম্পানির টাকা বাঁচাল।",
+   "চতুর (shrewd) আলোচক প্রতিপক্ষের হম্বিতম্বি বুঝে শান্ত রইলেন।"
+  ],
+  "tip": "Think \"shrew\": a small, sharp, clever-looking animal."
+ },
+ {
+  "id": "singular",
+  "word": "Singular",
+  "src": "WS1+WS2",
+  "pos": "adjective",
+  "en": "unique; extraordinary; single",
+  "bn": "অনন্য; অসাধারণ; একক",
+  "s": [
+   "She has a singular talent for music.",
+   "The dish has a singular flavor I have never tasted before.",
+   "The {prodigy} showed singular skill, unmatched by anyone in her class."
+  ],
+  "sbn": [
+   "গানে তার অনন্য (singular) প্রতিভা আছে।",
+   "খাবারটার এমন অনন্য (singular) স্বাদ যা আগে কখনো চাখিনি।",
+   "বিস্ময়-প্রতিভাটি অসাধারণ (singular) দক্ষতা দেখাল, যা ক্লাসের কারও ছিল না।"
+  ],
+  "tip": "Latin singulus = one by one: one of a kind."
+ },
+ {
+  "id": "skirmish",
+  "word": "Skirmish",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a brief, minor fight",
+  "bn": "ছোটখাটো সংঘর্ষ; খণ্ডযুদ্ধ",
+  "s": [
+   "A small skirmish broke out at the border.",
+   "The two sides fought a brief skirmish before the main battle.",
+   "Each {altercation} was only a skirmish, but together they pushed the nations toward war."
+  ],
+  "sbn": [
+   "সীমান্তে একটা ছোটখাটো সংঘর্ষ (skirmish) বাধল।",
+   "মূল যুদ্ধের আগে দুই পক্ষ একটা ছোট খণ্ডযুদ্ধে (skirmish) লড়ল।",
+   "প্রতিটি বচসা ছিল শুধু ছোট সংঘর্ষ (skirmish), কিন্তু সব মিলিয়ে দেশ দুটিকে যুদ্ধের দিকে ঠেলে দিল।"
+  ],
+  "tip": "Sounds like \"skir-mish\": a quick scuffle."
+ },
+ {
+  "id": "skittish",
+  "word": "Skittish",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "nervous and easily frightened",
+  "bn": "ভিতু; সহজে চমকে ওঠা",
+  "s": [
+   "The horse was skittish in the storm.",
+   "Investors grew skittish after the bank's failure.",
+   "The {timorous} puppy was skittish around strangers, jumping at the slightest noise."
+  ],
+  "sbn": [
+   "ঝড়ে ঘোড়াটা চঞ্চল ও ভীত (skittish) ছিল।",
+   "ব্যাংকের পতনের পর বিনিয়োগকারীরা ভীত (skittish) হয়ে উঠল।",
+   "ভীতু কুকুরছানাটা অচেনা লোকের কাছে সহজে চমকে ওঠা (skittish) ছিল, সামান্য শব্দেই লাফিয়ে উঠত।"
+  ],
+  "tip": "Think of a \"skit\" hopping about nervously."
+ },
+ {
+  "id": "slake",
+  "word": "Slake",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to satisfy a thirst or desire",
+  "bn": "তৃষ্ণা মেটানো; প্রশমিত করা",
+  "s": [
+   "He drank water to slake his thirst.",
+   "Nothing could slake her hunger for knowledge.",
+   "The cool stream helped the hikers slake their thirst and {assuage} their exhaustion."
+  ],
+  "sbn": [
+   "সে তৃষ্ণা মেটাতে (slake) পানি খেল।",
+   "জ্ঞানের ক্ষুধা তার কিছুতেই মিটত (slake) না।",
+   "ঠান্ডা ঝরনা পর্যটকদের তৃষ্ণা মেটাতে (slake) আর ক্লান্তি কমাতে সাহায্য করল।"
+  ],
+  "tip": "Old English slacian = to make slack; thirst is eased."
+ },
+ {
+  "id": "slander",
+  "word": "Slander",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a false spoken statement that harms someone's reputation",
+  "bn": "মানহানিকর মিথ্যা কথা; অপবাদ",
+  "s": [
+   "He sued her for slander.",
+   "The rumor was nothing but cruel slander.",
+   "She refused to {denigrate} her rival, and called the slander spread about him shameful."
+  ],
+  "sbn": [
+   "সে তার বিরুদ্ধে মানহানির (slander) মামলা করল।",
+   "গুজবটা নিষ্ঠুর অপবাদ (slander) ছাড়া কিছু নয়।",
+   "সে প্রতিদ্বন্দ্বীকে হেয় করতে রাজি হল না, আর তাঁর নামে ছড়ানো অপবাদকে (slander) লজ্জাজনক বলল।"
+  ],
+  "tip": "Related to \"scandal\": harmful talk."
+ },
+ {
+  "id": "sloth",
+  "word": "Sloth",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "laziness; a slow-moving tree animal",
+  "bn": "আলস্য; স্লথ (একটি ধীর প্রাণী)",
+  "s": [
+   "Sloth is a bad habit for students.",
+   "The sloth moves slowly through the trees.",
+   "His {indolent} sloth cost him his job, as he let deadlines slip again and again."
+  ],
+  "sbn": [
+   "আলস্য (sloth) ছাত্রদের জন্য খারাপ অভ্যাস।",
+   "স্লথ (sloth) গাছের ডালে ধীরে ধীরে চলে।",
+   "তার কুঁড়ে আলস্য (sloth) তার চাকরি খেয়ে নিল, কারণ সে বারবার সময়সীমা পার করে ফেলল।"
+  ],
+  "tip": "Slow + th: the sloth animal is famously slow and lazy."
+ },
+ {
+  "id": "sobriety",
+  "word": "Sobriety",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the state of being sober; seriousness",
+  "bn": "মাদকমুক্ত অবস্থা; গাম্ভীর্য",
+  "s": [
+   "He celebrated two years of sobriety.",
+   "The judge spoke with great sobriety.",
+   "Her {sage} and calm sobriety steadied the room during the argument."
+  ],
+  "sbn": [
+   "সে দুই বছরের মাদকমুক্ত জীবন (sobriety) উদযাপন করল।",
+   "বিচারক অত্যন্ত গাম্ভীর্যের (sobriety) সঙ্গে কথা বললেন।",
+   "তার প্রাজ্ঞ ও শান্ত গাম্ভীর্য (sobriety) তর্কের মাঝে ঘরটাকে স্থির করল।"
+  ],
+  "tip": "From \"sober\": calm and clear-headed."
+ },
+ {
+  "id": "solace",
+  "word": "Solace",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "comfort in sadness or trouble",
+  "bn": "সান্ত্বনা; স্বস্তি",
+  "s": [
+   "She found solace in music.",
+   "Her friends offered solace after the loss.",
+   "The old poems brought solace to the {bereaved} family in their long grief."
+  ],
+  "sbn": [
+   "সে গানের মধ্যে সান্ত্বনা (solace) পেল।",
+   "ক্ষতির পর বন্ধুরা তাকে সান্ত্বনা (solace) দিল।",
+   "পুরনো কবিতাগুলো শোকাহত পরিবারকে তাদের দীর্ঘ দুঃখে সান্ত্বনা (solace) দিল।"
+  ],
+  "tip": "Latin solari = to comfort; think \"console\"."
+ },
+ {
+  "id": "solidarity",
+  "word": "Solidarity",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "unity and mutual support among people with shared aims",
+  "bn": "সংহতি; ঐক্য",
+  "s": [
+   "The workers showed solidarity with the strikers.",
+   "People gathered in solidarity with the flood victims.",
+   "Their {fraternal} solidarity held firm even when the factory owner tried to divide them."
+  ],
+  "sbn": [
+   "শ্রমিকরা ধর্মঘটীদের সঙ্গে সংহতি (solidarity) দেখাল।",
+   "বন্যার্তদের সঙ্গে সংহতি (solidarity) জানাতে মানুষ জড়ো হল।",
+   "কারখানা মালিক তাদের ভাঙার চেষ্টা করলেও তাদের ভ্রাতৃসুলভ সংহতি (solidarity) অটুট রইল।"
+  ],
+  "tip": "Latin solidus = firm, solid: standing as one solid block."
+ },
+ {
+  "id": "solvent",
+  "word": "Solvent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "having enough money to pay debts; able to dissolve",
+  "bn": "ঋণ শোধে সক্ষম; দ্রবণক্ষম",
+  "s": [
+   "The company is still solvent.",
+   "Water is a universal solvent for many substances.",
+   "Thanks to {frugal} spending, the small shop stayed solvent through the recession."
+  ],
+  "sbn": [
+   "কোম্পানিটা এখনো ঋণ শোধে সক্ষম (solvent)।",
+   "পানি বহু পদার্থের জন্য সর্বজনীন দ্রাবক (solvent)।",
+   "মিতব্যয়ী খরচের কারণে ছোট দোকানটা মন্দার সময়ও ঋণ শোধে সক্ষম (solvent) থাকল।"
+  ],
+  "tip": "Same root as \"solve/dissolve\": loosens or pays off."
+ },
+ {
+  "id": "sophomoric",
+  "word": "Sophomoric",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "immature and overconfident, though poorly informed",
+  "bn": "অপরিপক্ব; অর্ধশিক্ষিতসুলভ",
+  "s": [
+   "His sophomoric jokes annoyed the teacher.",
+   "The essay was full of sophomoric arguments.",
+   "The {callow} writer's sophomoric style mixed big words with shallow ideas."
+  ],
+  "sbn": [
+   "তার অপরিপক্ব (sophomoric) রসিকতা শিক্ষককে বিরক্ত করল।",
+   "প্রবন্ধটা অপরিণত (sophomoric) যুক্তিতে ভরা ছিল।",
+   "অনভিজ্ঞ লেখকের কাঁচা (sophomoric) ধরনে বড় বড় শব্দ আর সস্তা ভাবনা মিশে ছিল।"
+  ],
+  "tip": "From Greek sophos (wise) + moros (foolish): \"wise fool\"."
+ },
+ {
+  "id": "sordid",
+  "word": "Sordid",
+  "src": "WS1+WS2",
+  "pos": "adjective",
+  "en": "dirty, morally low or greedy",
+  "bn": "নোংরা; জঘন্য; হীন",
+  "s": [
+   "The story is a sordid tale of greed.",
+   "The detective uncovered the sordid details of the scandal.",
+   "The sordid affair, full of {venal} officials and secret payments, shocked the nation."
+  ],
+  "sbn": [
+   "গল্পটা লোভের এক জঘন্য (sordid) কাহিনি।",
+   "গোয়েন্দা কেলেঙ্কারির নোংরা (sordid) খুঁটিনাটি বের করলেন।",
+   "ঘুষখোর কর্মকর্তা আর গোপন লেনদেনে ভরা হীন (sordid) ঘটনাটা জাতিকে হতবাক করল।"
+  ],
+  "tip": "Latin sordes = dirt."
+ },
+ {
+  "id": "sovereign",
+  "word": "Sovereign",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "having supreme power; self-governing",
+  "bn": "সার্বভৌম; স্বাধীন",
+  "s": [
+   "Bangladesh is a sovereign nation.",
+   "The king was the sovereign ruler of the land.",
+   "Each {autonomous} and sovereign state has the right to make its own laws."
+  ],
+  "sbn": [
+   "বাংলাদেশ একটি সার্বভৌম (sovereign) রাষ্ট্র।",
+   "রাজা ছিলেন দেশের সার্বভৌম (sovereign) শাসক।",
+   "প্রতিটি স্বশাসিত ও সার্বভৌম (sovereign) রাষ্ট্রের নিজের আইন তৈরির অধিকার আছে।"
+  ],
+  "tip": "Super + regnum: ruler above all."
+ },
+ {
+  "id": "spate",
+  "word": "Spate",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a sudden large number or outburst",
+  "bn": "হঠাৎ প্রবাহ; ঝাঁক",
+  "s": [
+   "A spate of robberies alarmed the town.",
+   "The rain brought a spate of road accidents.",
+   "A spate of resignations followed the scandal, and the board faced a {deluge} of questions."
+  ],
+  "sbn": [
+   "একের পর এক চুরির ঝাঁক (spate) শহরকে আতঙ্কিত করল।",
+   "বৃষ্টি একগাদা সড়ক দুর্ঘটনা (spate) নিয়ে এল।",
+   "কেলেঙ্কারির পর একের পর এক পদত্যাগ (spate) ঘটল, আর বোর্ড প্রশ্নের বন্যার মুখে পড়ল।"
+  ],
+  "tip": "Originally a river flood: a sudden rush."
+ },
+ {
+  "id": "spawn",
+  "word": "Spawn",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to produce in large numbers; to lay eggs",
+  "bn": "জন্ম দেওয়া; ডিম পাড়া",
+  "s": [
+   "Salmon swim upstream to spawn.",
+   "The hit show spawned many copies.",
+   "The failing economy would spawn new problems and {foment} unrest in the cities."
+  ],
+  "sbn": [
+   "স্যামন মাছ ডিম পাড়তে (spawn) উজানে সাঁতার কাটে।",
+   "জনপ্রিয় শোটা অনেক নকল (spawned) জন্ম দিল।",
+   "ভেঙে পড়া অর্থনীতি নতুন সমস্যার জন্ম (spawn) দেবে আর শহরগুলোতে অশান্তি উস্কে দেবে।"
+  ],
+  "tip": "Related to \"spill\": eggs spill out."
+ },
+ {
+  "id": "specter",
+  "word": "Specter",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a ghost; a frightening possibility",
+  "bn": "ভূত; আতঙ্কজনক আশঙ্কা",
+  "s": [
+   "He saw a specter in the old house.",
+   "The specter of war hung over the region.",
+   "The specter of famine, grim and {ominous}, loomed over the drought-stricken villages."
+  ],
+  "sbn": [
+   "সে পুরনো বাড়িতে এক ভূত (specter) দেখল।",
+   "যুদ্ধের আতঙ্ক (specter) অঞ্চলটির ওপর ঝুলে রইল।",
+   "দুর্ভিক্ষের ভয়ংকর ও অশুভ ছায়া (specter) খরাকবলিত গ্রামগুলোর ওপর ঝুলে রইল।"
+  ],
+  "tip": "Latin spectrum = appearance: a ghostly appearance."
+ },
+ {
+  "id": "spurious",
+  "word": "Spurious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "false or fake; not genuine",
+  "bn": "ভুয়া; মেকি",
+  "s": [
+   "The claim was spurious.",
+   "He used a spurious argument to win.",
+   "The news report contained several {specious} and spurious claims about the minister."
+  ],
+  "sbn": [
+   "দাবিটা ভুয়া (spurious) ছিল।",
+   "সে জেতার জন্য একটা মেকি (spurious) যুক্তি দিল।",
+   "খবরে মন্ত্রীকে নিয়ে কয়েকটা বাহ্যত যুক্তিযুক্ত অথচ ভুয়া (spurious) দাবি ছিল।"
+  ],
+  "tip": "Latin spurius = illegitimate: not of true origin."
+ },
+ {
+  "id": "spurn",
+  "word": "Spurn",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to reject with disdain",
+  "bn": "তাচ্ছিল্যভরে প্রত্যাখ্যান করা",
+  "s": [
+   "She spurned his offer.",
+   "He spurned all advice from his friends.",
+   "The proud prince would {disdain} the poor and spurn their pleas for help."
+  ],
+  "sbn": [
+   "সে তার প্রস্তাব তাচ্ছিল্যভরে প্রত্যাখ্যান (spurned) করল।",
+   "সে বন্ধুদের সব উপদেশ অবজ্ঞা করে ফেরাল (spurn)।",
+   "অহংকারী রাজপুত্র গরিবদের ঘৃণা করতেন আর তাদের সাহায্যের আবেদন ঘৃণাভরে ফিরিয়ে দিতেন (spurn)।"
+  ],
+  "tip": "Related to \"spur\": kick away."
+ },
+ {
+  "id": "squalor",
+  "word": "Squalor",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "filthy, wretched living conditions",
+  "bn": "নোংরা দুরবস্থা; দীনহীন অবস্থা",
+  "s": [
+   "The family lived in squalor.",
+   "The city's slums were places of terrible squalor.",
+   "The reporter exposed the squalor in which the {destitute} refugees lived."
+  ],
+  "sbn": [
+   "পরিবারটা নোংরা দুরবস্থায় (squalor) বাস করত।",
+   "শহরের বস্তিগুলো ভয়ংকর দীনহীন অবস্থার (squalor) জায়গা ছিল।",
+   "সাংবাদিক সেই নোংরা দুরবস্থা (squalor) ফাঁস করলেন, যেখানে নিঃস্ব শরণার্থীরা থাকত।"
+  ],
+  "tip": "Latin squalere = to be dirty."
+ },
+ {
+  "id": "squander",
+  "word": "Squander",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to waste foolishly",
+  "bn": "অপচয় করা; উড়িয়ে দেওয়া",
+  "s": [
+   "Do not squander your time.",
+   "He squandered his inheritance on gambling.",
+   "The prince squandered his wealth, and his {profligate} habits left the kingdom bankrupt."
+  ],
+  "sbn": [
+   "সময় অপচয় (squander) কোরো না।",
+   "সে জুয়ায় উত্তরাধিকারের সব টাকা উড়িয়ে (squandered) দিল।",
+   "রাজপুত্র সম্পদ অপচয় (squandered) করলেন, আর তাঁর বেহিসাবি অভ্যাস রাজ্যকে দেউলিয়া করল।"
+  ],
+  "tip": "Spend wildly, like scattering: \"squander\" sounds like \"wander off\"."
+ },
+ {
+  "id": "stagnation",
+  "word": "Stagnation",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a lack of movement or growth",
+  "bn": "স্থবিরতা; অচলাবস্থা",
+  "s": [
+   "The country faced economic stagnation.",
+   "Years of stagnation left the town poor.",
+   "Political stagnation and {apathy} slowed every reform for a decade."
+  ],
+  "sbn": [
+   "দেশটা অর্থনৈতিক স্থবিরতার (stagnation) মুখে পড়ল।",
+   "বছরের পর বছর স্থবিরতা (stagnation) শহরকে গরিব রাখল।",
+   "রাজনৈতিক স্থবিরতা (stagnation) আর উদাসীনতা এক দশক ধরে প্রতিটি সংস্কারকে ধীর করল।"
+  ],
+  "tip": "From \"stagnant\": water that stands still."
+ },
+ {
+  "id": "stalwart",
+  "word": "Stalwart",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "loyal, strong and dependable",
+  "bn": "অনুগত ও দৃঢ়; নির্ভরযোগ্য",
+  "s": [
+   "He is a stalwart supporter of the team.",
+   "The stalwart guard stood firm all night.",
+   "A {steadfast} and stalwart friend, she never abandoned him during his illness."
+  ],
+  "sbn": [
+   "সে দলের এক অনুগত (stalwart) সমর্থক।",
+   "দৃঢ়চেতা (stalwart) প্রহরী সারারাত অবিচল ছিল।",
+   "অবিচল ও নির্ভরযোগ্য (stalwart) বন্ধু হিসেবে সে অসুস্থতার সময় তাকে কখনো ছাড়েনি।"
+  ],
+  "tip": "Old English \"stæl-wierthe\": worthy of a place; stands firm."
+ },
+ {
+  "id": "stark",
+  "word": "Stark",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "plain and bare; severe; complete",
+  "bn": "রুক্ষ; কঠোর; সম্পূর্ণ",
+  "s": [
+   "The room was stark and cold.",
+   "There is a stark difference between rich and poor.",
+   "The {arid} landscape and its stark beauty stunned the photographers."
+  ],
+  "sbn": [
+   "ঘরটা রুক্ষ আর ঠান্ডা (stark) ছিল।",
+   "ধনী আর গরিবের মধ্যে কঠোর (stark) ব্যবধান আছে।",
+   "শুষ্ক প্রান্তরের রুক্ষ (stark) সৌন্দর্য ফটোগ্রাফারদের মুগ্ধ করল।"
+  ],
+  "tip": "Old English \"stearc\": stiff, bare."
+ },
+ {
+  "id": "static",
+  "word": "Static",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "not moving or changing",
+  "bn": "স্থির; অপরিবর্তনশীল",
+  "s": [
+   "The price has been static for months.",
+   "Her career remained static for years.",
+   "Society is never static, and old {tenets} change as people learn."
+  ],
+  "sbn": [
+   "কয়েক মাস ধরে দামটা স্থির (static) আছে।",
+   "বছরের পর বছর তার ক্যারিয়ার অপরিবর্তিত (static) রইল।",
+   "সমাজ কখনো স্থির (static) নয়, মানুষ শেখার সাথে সাথে পুরনো মূলনীতি বদলায়।"
+  ],
+  "tip": "Greek statikos: standing still."
+ },
+ {
+  "id": "staunch",
+  "word": "Staunch",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "very loyal and firm",
+  "bn": "অবিচল; একনিষ্ঠ",
+  "s": [
+   "He is a staunch supporter of the cause.",
+   "She was a staunch friend through hard times.",
+   "The {zealous} and staunch defender of free speech never wavered under pressure."
+  ],
+  "sbn": [
+   "সে আদর্শের এক অবিচল (staunch) সমর্থক।",
+   "কঠিন সময়ে সে ছিল একনিষ্ঠ (staunch) বন্ধু।",
+   "বাকস্বাধীনতার উগ্র ও অবিচল (staunch) রক্ষক চাপের মুখেও টলেননি।"
+  ],
+  "tip": "Related to \"stanch\" (stop a flow): firm, doesn't leak or give way."
+ },
+ {
+  "id": "steadfast",
+  "word": "Steadfast",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "firmly loyal and unwavering",
+  "bn": "অটল; অবিচল",
+  "s": [
+   "She remained steadfast in her beliefs.",
+   "The steadfast nurse never left the patient's side.",
+   "The {obdurate} king ignored every plea, yet his people stayed steadfast in their hope."
+  ],
+  "sbn": [
+   "সে তার বিশ্বাসে অটল (steadfast) রইল।",
+   "অবিচল (steadfast) নার্স রোগীর পাশ ছাড়লেন না।",
+   "একগুঁয়ে রাজা প্রতিটি আবেদন উপেক্ষা করলেন, তবু প্রজারা আশায় অবিচল (steadfast) রইল।"
+  ],
+  "tip": "Steady + fast (firm): firmly fixed."
+ },
+ {
+  "id": "stigmatize",
+  "word": "Stigmatize",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to mark as shameful or disgraceful",
+  "bn": "কলঙ্কিত করা; লজ্জাজনক বলে চিহ্নিত করা",
+  "s": [
+   "We should not stigmatize mental illness.",
+   "The village stigmatized the family after the scandal.",
+   "Society often tends to stigmatize the poor, treating poverty as a {stigma} rather than a misfortune."
+  ],
+  "sbn": [
+   "মানসিক অসুস্থতাকে আমাদের কলঙ্কিত (stigmatize) করা উচিত নয়।",
+   "কেলেঙ্কারির পর গ্রাম পরিবারটাকে কলঙ্কিত (stigmatized) করল।",
+   "সমাজ প্রায়ই গরিবদের লজ্জাজনক বলে চিহ্নিত (stigmatize) করে, দারিদ্র্যকে দুর্ভাগ্য না ভেবে কলঙ্ক ভাবে।"
+  ],
+  "tip": "Greek stigma = a mark: marks someone with shame."
+ },
+ {
+  "id": "stipend",
+  "word": "Stipend",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a fixed regular payment, such as a student's allowance",
+  "bn": "ভাতা; বৃত্তি",
+  "s": [
+   "She receives a monthly stipend from the university.",
+   "The intern's stipend barely covers her rent.",
+   "The scholarship carries a modest stipend, which is {commensurate} with the cost of living."
+  ],
+  "sbn": [
+   "সে বিশ্ববিদ্যালয় থেকে মাসিক ভাতা (stipend) পায়।",
+   "ইন্টার্নের ভাতা (stipend) দিয়ে তার বাড়িভাড়াও কোনোমতে হয়।",
+   "বৃত্তির সাথে সামান্য ভাতা (stipend) আছে, যা জীবনযাত্রার ব্যয়ের সঙ্গে সামঞ্জস্যপূর্ণ।"
+  ],
+  "tip": "Latin stips (small payment) + pendere (to weigh out)."
+ },
+ {
+  "id": "stoic",
+  "word": "Stoic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "calmly enduring pain or hardship without complaint",
+  "bn": "ধৈর্যশীল; আবেগহীনভাবে কষ্ট সহ্যকারী",
+  "s": [
+   "He stayed stoic when he heard the bad news.",
+   "The stoic soldier bore the pain in silence.",
+   "Her {imperturbable} and stoic manner calmed the whole family during the crisis."
+  ],
+  "sbn": [
+   "খারাপ খবর শুনেও সে ধৈর্যশীল (stoic) রইল।",
+   "ধৈর্যশীল (stoic) সৈন্যটি নীরবে ব্যথা সহ্য করল।",
+   "তার অবিচলিত ও আবেগহীন (stoic) ভাব সংকটের সময় পুরো পরিবারকে শান্ত করল।"
+  ],
+  "tip": "From the Stoics, Greek philosophers who taught calm acceptance."
+ },
+ {
+  "id": "stout",
+  "word": "Stout",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "strong and sturdy; brave; somewhat fat",
+  "bn": "মজবুত; সাহসী; স্থূলকায়",
+  "s": [
+   "The stout door held against the wind.",
+   "He put up a stout defense of his team.",
+   "The stout walls of the {citadel} withstood every attack for months."
+  ],
+  "sbn": [
+   "মজবুত (stout) দরজাটা বাতাসে টিকে গেল।",
+   "সে তার দলের পক্ষে সাহসী (stout) প্রতিরক্ষা করল।",
+   "দুর্গের মজবুত (stout) প্রাচীর কয়েক মাস সব আক্রমণ ঠেকাল।"
+  ],
+  "tip": "Think \"stout\" like a sturdy tree trunk."
+ },
+ {
+  "id": "stratagem",
+  "word": "Stratagem",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a clever plan to trick or outwit an opponent",
+  "bn": "কৌশল; চতুর ফন্দি",
+  "s": [
+   "The general used a clever stratagem.",
+   "Hiding the troops was a stratagem to surprise the enemy.",
+   "The queen's cunning stratagem, a mix of {gambit} and bluff, won her the throne."
+  ],
+  "sbn": [
+   "সেনাপতি এক চতুর কৌশল (stratagem) ব্যবহার করলেন।",
+   "সৈন্য লুকিয়ে রাখা ছিল শত্রুকে চমকে দেওয়ার ফন্দি (stratagem)।",
+   "রানির ধূর্ত কৌশল (stratagem), চাল আর ধাপ্পার মিশেলে, তাঁকে সিংহাসন এনে দিল।"
+  ],
+  "tip": "Greek strategos = general; a general's trick."
+ },
+ {
+  "id": "stratum",
+  "word": "Stratum",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a layer, especially of rock or society",
+  "bn": "স্তর",
+  "s": [
+   "The rocks lie in thin strata.",
+   "People from every social stratum attended.",
+   "The report studied the lowest economic stratum, the {proletariat}, and its living conditions."
+  ],
+  "sbn": [
+   "পাথরগুলো পাতলা স্তরে (strata) থাকে।",
+   "প্রতিটি সামাজিক স্তরের (stratum) মানুষ এসেছিল।",
+   "প্রতিবেদনটি সর্বনিম্ন অর্থনৈতিক স্তর (stratum) অর্থাৎ শ্রমজীবী শ্রেণি ও তাদের জীবনযাত্রা নিয়ে গবেষণা করল।"
+  ],
+  "tip": "Latin stratum = something spread out, a layer."
+ },
+ {
+  "id": "stricture",
+  "word": "Stricture",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a strong criticism or a restriction",
+  "bn": "কড়া সমালোচনা; বিধিনিষেধ",
+  "s": [
+   "The law placed strict strictures on trade.",
+   "He ignored the strictures of his critics.",
+   "The writer rebelled against the strictures of society and often faced public {castigation} for it."
+  ],
+  "sbn": [
+   "আইনটা বাণিজ্যের ওপর কড়া বিধিনিষেধ (strictures) আরোপ করল।",
+   "সে সমালোচকদের কড়া সমালোচনা (strictures) উপেক্ষা করল।",
+   "লেখক সমাজের বিধিনিষেধের (strictures) বিরুদ্ধে বিদ্রোহ করলেন এবং এর জন্য প্রায়ই প্রকাশ্য তিরস্কারের মুখে পড়তেন।"
+  ],
+  "tip": "Related to \"strict\": tightness."
+ },
+ {
+  "id": "strife",
+  "word": "Strife",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "bitter conflict or struggle",
+  "bn": "সংঘাত; কলহ",
+  "s": [
+   "The country was torn by strife.",
+   "Family strife ruined their holidays.",
+   "Years of ethnic strife left the region in {turmoil} and mutual suspicion."
+  ],
+  "sbn": [
+   "দেশটা সংঘাতে (strife) ছিন্নভিন্ন ছিল।",
+   "পারিবারিক কলহ (strife) তাদের ছুটি নষ্ট করল।",
+   "বছরের পর বছর জাতিগত সংঘাত (strife) অঞ্চলটাকে অশান্তি ও পারস্পরিক সন্দেহে ফেলে রাখল।"
+  ],
+  "tip": "Related to \"strive\": a struggle."
+ },
+ {
+  "id": "stringent",
+  "word": "Stringent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "strict and demanding; severe",
+  "bn": "কঠোর; কড়া",
+  "s": [
+   "The school has stringent rules.",
+   "The country passed stringent laws on pollution.",
+   "The bank imposed stringent conditions, and no {lax} borrower could meet them."
+  ],
+  "sbn": [
+   "স্কুলের নিয়মকানুন কড়া (stringent)।",
+   "দেশটা দূষণের বিরুদ্ধে কঠোর (stringent) আইন পাশ করল।",
+   "ব্যাংক কড়া (stringent) শর্ত আরোপ করল, আর কোনো ঢিলেঢালা ঋণগ্রহীতা তা পূরণ করতে পারল না।"
+  ],
+  "tip": "Latin stringere = to bind tight."
+ },
+ {
+  "id": "stupendous",
+  "word": "Stupendous",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "amazingly large, impressive or wonderful",
+  "bn": "বিস্ময়কর; বিশাল",
+  "s": [
+   "The view from the peak was stupendous.",
+   "She won by a stupendous margin.",
+   "The {prodigious} and stupendous effort of the volunteers saved the village from the flood."
+  ],
+  "sbn": [
+   "চূড়া থেকে দৃশ্যটা বিস্ময়কর (stupendous) ছিল।",
+   "সে বিশাল (stupendous) ব্যবধানে জিতল।",
+   "স্বেচ্ছাসেবকদের অসাধারণ ও বিস্ময়কর (stupendous) প্রচেষ্টা গ্রামটাকে বন্যা থেকে বাঁচাল।"
+  ],
+  "tip": "Latin stupere = to be amazed; also gives \"stupid\" and \"stupor\"."
+ },
+ {
+  "id": "stupor",
+  "word": "Stupor",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a dazed, half-conscious state",
+  "bn": "হতবুদ্ধি অবস্থা; আচ্ছন্ন ভাব",
+  "s": [
+   "He sat in a stupor after the shock.",
+   "The medicine put her in a drowsy stupor.",
+   "After the accident he drifted in a {lethargic} stupor, barely aware of his surroundings."
+  ],
+  "sbn": [
+   "ধাক্কার পর সে হতবুদ্ধি অবস্থায় (stupor) বসে রইল।",
+   "ওষুধ তাকে তন্দ্রাচ্ছন্ন আচ্ছন্ন ভাবে (stupor) ফেলল।",
+   "দুর্ঘটনার পর সে নিস্তেজ আচ্ছন্ন ভাবে (stupor) ভেসে রইল, আশপাশের খেয়ালই প্রায় ছিল না।"
+  ],
+  "tip": "Same root as \"stupid\": dull, numb."
+ },
+ {
+  "id": "stymie",
+  "word": "Stymie",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to block or prevent progress",
+  "bn": "বাধা দেওয়া; পথ আটকানো",
+  "s": [
+   "Bad weather stymied the rescue.",
+   "Red tape stymied our plans.",
+   "Constant delays and a lack of funds will {impede} the project and stymie its leaders."
+  ],
+  "sbn": [
+   "খারাপ আবহাওয়া উদ্ধারকাজে বাধা (stymied) দিল।",
+   "লাল ফিতার দৌরাত্ম্য আমাদের পরিকল্পনা আটকে (stymied) দিল।",
+   "অবিরাম দেরি আর তহবিলের অভাব প্রকল্পটাকে ব্যাহত করবে এবং এর নেতাদের পথ আটকে (stymie) দেবে।"
+  ],
+  "tip": "From golf: a ball blocking your path to the hole."
+ },
+ {
+  "id": "subjugate",
+  "word": "Subjugate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to bring under control by force",
+  "bn": "পদানত করা; দমন করে বশে আনা",
+  "s": [
+   "The empire sought to subjugate its neighbors.",
+   "The invaders subjugated the local people.",
+   "The conqueror hoped to {vanquish} his rivals and subjugate every tribe."
+  ],
+  "sbn": [
+   "সাম্রাজ্যটা প্রতিবেশীদের পদানত (subjugate) করতে চাইল।",
+   "আক্রমণকারীরা স্থানীয় মানুষকে বশে (subjugated) আনল।",
+   "বিজেতা প্রতিদ্বন্দ্বীদের পরাস্ত আর প্রতিটি গোত্রকে পদানত (subjugate) করার আশা করলেন।"
+  ],
+  "tip": "Sub- (under) + jugum (yoke): put under the yoke."
+ },
+ {
+  "id": "sublime",
+  "word": "Sublime",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "of such beauty that it inspires awe",
+  "bn": "মহিমান্বিত; অতুলনীয় সুন্দর",
+  "s": [
+   "The mountain view was sublime.",
+   "The singer's voice was truly sublime.",
+   "The poet captured the {ethereal} and sublime beauty of the dawn."
+  ],
+  "sbn": [
+   "পাহাড়ের দৃশ্যটা মহিমান্বিত (sublime) ছিল।",
+   "গায়কের কণ্ঠ সত্যিই অতুলনীয় (sublime) ছিল।",
+   "কবি ভোরের অলৌকিক ও মহিমান্বিত (sublime) সৌন্দর্য ধরে রাখলেন।"
+  ],
+  "tip": "Latin sublimis = lofty, raised high."
+ },
+ {
+  "id": "subordinate",
+  "word": "Subordinate",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "lower in rank or importance",
+  "bn": "অধীনস্থ; গৌণ",
+  "s": [
+   "He is subordinate to the manager.",
+   "The needs of the few are subordinate to the needs of the many.",
+   "The clerk, a {servile} subordinate, never questioned his boss's orders."
+  ],
+  "sbn": [
+   "সে ম্যানেজারের অধীনস্থ (subordinate)।",
+   "অল্প মানুষের প্রয়োজন বেশি মানুষের প্রয়োজনের চেয়ে গৌণ (subordinate)।",
+   "কেরানি, এক তোষামোদী অধীনস্থ (subordinate), বসের কোনো আদেশ নিয়ে প্রশ্ন তুলত না।"
+  ],
+  "tip": "Sub- (under) + ordo (rank): lower rank."
+ },
+ {
+  "id": "subsidiary",
+  "word": "Subsidiary",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "less important; owned by a larger company",
+  "bn": "অধস্তন; সহায়ক; অনুসারী প্রতিষ্ঠান",
+  "s": [
+   "Cost is a subsidiary concern here.",
+   "The firm is a subsidiary of a larger group.",
+   "The subsidiary company reported a {deficit}, though its parent firm remained profitable."
+  ],
+  "sbn": [
+   "খরচ এখানে একটা গৌণ (subsidiary) বিবেচনা।",
+   "প্রতিষ্ঠানটি একটা বড় গ্রুপের অধীনস্থ (subsidiary) কোম্পানি।",
+   "অধীনস্থ (subsidiary) কোম্পানি ঘাটতি দেখাল, যদিও মূল প্রতিষ্ঠান লাভজনক থাকল।"
+  ],
+  "tip": "Latin subsidium = reserve troops: help in the background."
+ },
+ {
+  "id": "subsidize",
+  "word": "Subsidize",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to support financially, usually with public money",
+  "bn": "ভর্তুকি দেওয়া",
+  "s": [
+   "The government will subsidize farmers.",
+   "The city subsidizes public transport.",
+   "The state continued to subsidize the {moribund} industry, hoping to save its workers' jobs."
+  ],
+  "sbn": [
+   "সরকার কৃষকদের ভর্তুকি (subsidize) দেবে।",
+   "শহর কর্তৃপক্ষ গণপরিবহনে ভর্তুকি (subsidizes) দেয়।",
+   "রাষ্ট্র মুমূর্ষু শিল্পে ভর্তুকি (subsidize) দিতে থাকল, শ্রমিকদের চাকরি বাঁচানোর আশায়।"
+  ],
+  "tip": "From \"subsidy\": help sitting behind (sub-) the front line."
+ },
+ {
+  "id": "substantive",
+  "word": "Substantive",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "having real importance or meaning",
+  "bn": "সারগর্ভ; বাস্তব গুরুত্বপূর্ণ",
+  "s": [
+   "The talks produced no substantive results.",
+   "She made a substantive contribution to the project.",
+   "The meeting was long but not {cogent}, and produced no substantive decisions."
+  ],
+  "sbn": [
+   "আলোচনায় কোনো সারগর্ভ (substantive) ফল হয়নি।",
+   "প্রকল্পে সে বাস্তবসম্মত (substantive) অবদান রাখল।",
+   "সভাটা দীর্ঘ ছিল কিন্তু বিশ্বাসযোগ্য নয়, আর কোনো সারগর্ভ (substantive) সিদ্ধান্ত বেরোল না।"
+  ],
+  "tip": "From \"substance\": having real substance."
+ },
+ {
+  "id": "subterfuge",
+  "word": "Subterfuge",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a trick used to avoid something or to deceive",
+  "bn": "ছল; ছলচাতুরি",
+  "s": [
+   "He got in through subterfuge.",
+   "The spy used subterfuge to enter the building.",
+   "By clever subterfuge and {artifice}, the thief fooled the guards."
+  ],
+  "sbn": [
+   "সে ছলচাতুরি (subterfuge) করে ঢুকে পড়ল।",
+   "গুপ্তচর ভবনে ঢুকতে ছল (subterfuge) ব্যবহার করল।",
+   "চতুর ছল (subterfuge) আর কৌশলে চোর পাহারাদারদের বোকা বানাল।"
+  ],
+  "tip": "Subter- (secretly/under) + fugere (flee): sneaking away."
+ },
+ {
+  "id": "subtle",
+  "word": "Subtle",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "delicate and hard to notice; clever and indirect",
+  "bn": "সূক্ষ্ম; সূক্ষ্মবুদ্ধিসম্পন্ন",
+  "s": [
+   "There is a subtle difference in meaning.",
+   "She gave him a subtle hint to leave.",
+   "The painter's {nuance} was so subtle that only a trained eye could notice the shift in color."
+  ],
+  "sbn": [
+   "অর্থে একটা সূক্ষ্ম (subtle) পার্থক্য আছে।",
+   "সে তাকে যাওয়ার জন্য সূক্ষ্ম (subtle) ইঙ্গিত দিল।",
+   "চিত্রশিল্পীর সূক্ষ্ম ভাবভেদ এতটাই সূক্ষ্ম (subtle) ছিল যে শুধু প্রশিক্ষিত চোখই রঙের পরিবর্তন ধরতে পারত।"
+  ],
+  "tip": "The \"b\" is silent; from Latin subtilis, finely woven."
+ },
+ {
+  "id": "subversive",
+  "word": "Subversive",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "trying to undermine established authority or ideas",
+  "bn": "ধ্বংসাত্মক; অন্তর্ঘাতমূলক",
+  "s": [
+   "The book was banned as subversive.",
+   "The group was accused of subversive activities.",
+   "The tyrant feared the poet's {caustic} and subversive verses."
+  ],
+  "sbn": [
+   "বইটা অন্তর্ঘাতমূলক (subversive) বলে নিষিদ্ধ হল।",
+   "দলটাকে অন্তর্ঘাতমূলক (subversive) কাজের অভিযোগ দেওয়া হল।",
+   "স্বৈরশাসক কবির তীক্ষ্ণ ও ধ্বংসাত্মক (subversive) কবিতাকে ভয় পেতেন।"
+  ],
+  "tip": "Sub- (from below) + vertere (turn): overturn from below."
+ }
+]

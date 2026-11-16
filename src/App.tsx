@@ -1,20 +1,21 @@
 import { useEffect, useState } from "react";
-import { BookOpen, Brain, ClipboardCheck, Flame, List, Moon, Shapes, Sun, Target } from "lucide-react";
+import { BookOpen, Brain, ClipboardCheck, Flame, GraduationCap, List, Lock, Moon, Sun, Target, Unlock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { StudyView, freshSession, loadSession, shuffled, type Session } from "@/components/StudyView";
+import { StudyView, buildDeck, freshSession, loadSession, shuffled, type Session } from "@/components/StudyView";
 import { TodayStrip, longTermCount } from "@/components/TodayView";
 import { WordList } from "@/components/WordList";
 import { K_TODAY_TEST, QuizView, TODAY_TEST_EVENT } from "@/components/QuizView";
-import { GroupsView } from "@/components/GroupsView";
+import { GreView } from "@/components/GreView";
+import { useWordSmart } from "@/lib/wordSmart";
 import { useProgress } from "@/lib/progress";
 import { useQuizHistory } from "@/lib/quizHistory";
 import { SyncDialog } from "@/components/SyncDialog";
 import { readJSON, writeJSON } from "@/lib/storage";
-import { WORDS } from "@/lib/words";
+import { WORD_BY_ID, WORDS } from "@/lib/words";
 import { cn } from "@/lib/utils";
 
-type Tab = "study" | "quiz" | "groups" | "list";
+type Tab = "study" | "quiz" | "gre" | "list";
 
 const GOALS = [5, 10, 15, 20, 25, 30];
 
@@ -30,12 +31,15 @@ function useTheme() {
 }
 
 export default function App() {
-  const progress = useProgress();
+  // Bumped when the active word list changes (Word Smart locked ↔ unlocked), so everything recounts.
+  const [wordsVersion, setWordsVersion] = useState(0);
+  const progress = useProgress(wordsVersion);
+  const wordSmart = useWordSmart(progress, () => setWordsVersion((v) => v + 1));
   const quizHistory = useQuizHistory(progress.code);
   const [dark, setDark] = useTheme();
   const [tab, setTab] = useState<Tab>(() => {
     const saved = readJSON<string>("gre333.tab.v3", "study");
-    return (["study", "quiz", "groups", "list"] as const).includes(saved as Tab) ? (saved as Tab) : "study";
+    return (["study", "quiz", "gre", "list"] as const).includes(saved as Tab) ? (saved as Tab) : "study";
   });
   const [session, setSession] = useState<Session>(() => loadSession(progress));
   const [goal, setGoalState] = useState<number>(() => readJSON<number>("gre333.goal", 15));
@@ -43,6 +47,14 @@ export default function App() {
   const { counts } = progress;
 
   useEffect(() => writeJSON("gre333.tab.v3", tab), [tab]);
+
+  // Right after Word Smart unlocks, refill the "New" deck so it includes the new words (only once:
+  // if the deck already has Word Smart words, the learner keeps their place).
+  useEffect(() => {
+    if (!wordSmart.ready || session.filter !== "new") return;
+    if (session.deck.some((id) => WORD_BY_ID.get(id)?.deck === "ws")) return;
+    setSession({ filter: "new", shuffle: true, deck: buildDeck("new", true, progress), index: 0 });
+  }, [wordSmart.ready]); // eslint-disable-line react-hooks/exhaustive-deps
   const setGoal = (g: number) => {
     setGoalState(g);
     writeJSON("gre333.goal", g);
@@ -102,6 +114,7 @@ export default function App() {
             progress={progress}
             onReset={() => {
               progress.reset();
+              wordSmart.relock();
               quizHistory.clear();
               writeJSON(K_TODAY_TEST, null);
               window.dispatchEvent(new Event(TODAY_TEST_EVENT));
@@ -143,6 +156,18 @@ export default function App() {
           <Legend color="bg-known" label="Known" value={counts.known} />
           <Legend color="bg-learning" label="Learning" value={counts.learning} />
           <Legend color="bg-new" label="New" value={counts.new} />
+          <button
+            type="button"
+            onClick={() => setTab("quiz")}
+            title={wordSmart.unlocked ? "Word Smart words are mixed into your study" : "Study all 333 words or pass the unlock test"}
+            className="inline-flex items-center gap-1.5 rounded-full hover:text-foreground"
+          >
+            {wordSmart.unlocked ? <Unlock className="size-3.5 text-primary" /> : <Lock className="size-3.5" />}
+            Word Smart{" "}
+            <span className="font-medium tabular-nums text-foreground">
+              {wordSmart.unlocked ? "on" : `${wordSmart.studied333}/${wordSmart.total333}`}
+            </span>
+          </button>
           <span
             className="inline-flex items-center gap-1.5 sm:ml-auto"
             title="Words you remembered after a 2+ week gap: they're in long-term memory"
@@ -154,7 +179,7 @@ export default function App() {
       </section>
 
       {/* Today's plan: review → learn → test */}
-      <TodayStrip progress={progress} goal={goal} onReview={reviewDue} onLearn={learnNew} onTest={quizWords} />
+      <TodayStrip key={`strip-${wordsVersion}`} progress={progress} goal={goal} onReview={reviewDue} onLearn={learnNew} onTest={quizWords} />
 
       {/* Tabs */}
       <nav className="mt-4 grid sm:mt-5 grid-cols-4 rounded-full border border-border bg-card p-1" role="tablist">
@@ -162,7 +187,7 @@ export default function App() {
           [
             ["study", "Cards", <BookOpen key="i" className="size-4 max-sm:hidden" />],
             ["quiz", "Quiz", <ClipboardCheck key="i" className="size-4 max-sm:hidden" />],
-            ["groups", "Groups", <Shapes key="i" className="size-4 max-sm:hidden" />],
+            ["gre", "GRE", <GraduationCap key="i" className="size-4 max-sm:hidden" />],
             ["list", "Words", <List key="i" className="size-4 max-sm:hidden" />],
           ] as const
         ).map(([key, label, icon]) => (
@@ -182,16 +207,16 @@ export default function App() {
         ))}
       </nav>
 
-      <main className={cn("mt-4 sm:mt-5", tab === "study" && "pb-24 sm:pb-0")}>
+      <main key={`main-${wordsVersion}`} className={cn("mt-4 sm:mt-5", tab === "study" && "pb-24 sm:pb-0")}>
         <div hidden={tab !== "study"}>
           <StudyView progress={progress} session={session} setSession={setSession} active={tab === "study"} />
         </div>
         <div hidden={tab !== "quiz"}>
-          <QuizView progress={progress} active={tab === "quiz"} request={quizRequest} history={quizHistory} />
+          <QuizView progress={progress} active={tab === "quiz"} request={quizRequest} history={quizHistory} wordSmart={wordSmart} />
         </div>
-        {tab === "groups" && (
-          <GroupsView progress={progress} onStudy={studyDeck} onQuiz={(ids, title) => quizWords(ids, undefined, `Group: ${title}`)} onOpenWord={openWord} />
-        )}
+        <div hidden={tab !== "gre"}>
+          <GreView progress={progress} history={quizHistory} active={tab === "gre"} />
+        </div>
         {tab === "list" && <WordList progress={progress} onOpen={openWord} />}
       </main>
     </div>

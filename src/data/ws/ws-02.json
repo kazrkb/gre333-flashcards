@@ -1,0 +1,2681 @@
+[
+ {
+  "id": "ascribe",
+  "word": "Ascribe",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to say that something is caused by, or belongs to, a certain person or thing",
+  "bn": "আরোপ করা; কারণ হিসেবে ধরা; কৃতিত্ব দেওয়া",
+  "s": [
+   "She ascribed her success to hard work.",
+   "Many people ascribe the poem to Shakespeare, but no one can prove it.",
+   "Rather than ascribe the failure to bad luck, the manager showed rare {candor}, admitting that her own {capricious} decisions were to blame."
+  ],
+  "sbn": [
+   "সে তার সাফল্যের কারণ হিসেবে কঠোর পরিশ্রমকে ধরল (ascribed)।",
+   "অনেকে কবিতাটিকে শেক্সপিয়ারের লেখা বলে মনে করেন (ascribe), কিন্তু কেউ তা প্রমাণ করতে পারেনি।",
+   "ব্যর্থতাকে দুর্ভাগ্যের ঘাড়ে চাপানোর (ascribe) বদলে ম্যানেজার বিরল খোলামেলা মনোভাব দেখালেন এবং স্বীকার করলেন যে তাঁর নিজের খামখেয়ালি সিদ্ধান্তগুলোই দায়ী।"
+  ],
+  "tip": "Latin ad + scribere ‘to write’: you ‘write’ a cause or author next to something."
+ },
+ {
+  "id": "askance",
+  "word": "Askance",
+  "src": "WS2",
+  "pos": "adverb",
+  "en": "with suspicion or disapproval (literally, looking sideways)",
+  "bn": "সন্দেহের চোখে; বাঁকা চোখে",
+  "s": [
+   "The cat looked askance at the new dog.",
+   "When he showed up late again, his boss looked askance at his excuses.",
+   "Seasoned investors looked askance at the startup's {grandiose} promises, {wary} of yet another overhyped scheme."
+  ],
+  "sbn": [
+   "বিড়ালটা নতুন কুকুরটার দিকে সন্দেহের চোখে (askance) তাকাল।",
+   "সে আবার দেরি করে আসায় বস তার অজুহাতগুলোর দিকে বাঁকা চোখে (askance) তাকালেন।",
+   "অভিজ্ঞ বিনিয়োগকারীরা স্টার্টআপটির বড় বড় প্রতিশ্রুতির দিকে সন্দেহের চোখে (askance) তাকালেন, আরেকটা ফাঁপানো প্রকল্প নিয়ে তাঁরা সতর্ক ছিলেন।"
+  ],
+  "tip": "Picture someone glancing sideways while asking “Really?” — to look askance is to look sideways with doubt."
+ },
+ {
+  "id": "aspersion",
+  "word": "Aspersion",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an attack on someone's good name; a damaging or insulting remark",
+  "bn": "অপবাদ; কলঙ্ক আরোপ; নিন্দা",
+  "s": [
+   "Don't cast aspersions on my family.",
+   "The rival candidate cast aspersions on her honesty without offering any proof.",
+   "Instead of {refuting} her arguments, the senator cast aspersions on her character, a tactic that {undermined} his own credibility."
+  ],
+  "sbn": [
+   "আমার পরিবারের নামে অপবাদ (aspersions) দিও না।",
+   "প্রতিদ্বন্দ্বী প্রার্থী কোনো প্রমাণ ছাড়াই তার সততা নিয়ে কলঙ্ক রটালেন (aspersions)।",
+   "তার যুক্তিগুলো খণ্ডন না করে সিনেটর তার চরিত্রে কালিমা লেপন করলেন (aspersions), আর এই কৌশল তাঁর নিজের বিশ্বাসযোগ্যতাকেই দুর্বল করে দিল।"
+  ],
+  "tip": "Latin aspergere ‘to sprinkle’: aspersions sprinkle dirt on someone's name."
+ },
+ {
+  "id": "assail",
+  "word": "Assail",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to attack violently, with blows or with harsh words",
+  "bn": "আক্রমণ করা; তীব্রভাবে আক্রমণ করা; ঘিরে ধরা",
+  "s": [
+   "Doubts assailed him before the exam.",
+   "The new law was assailed by critics from both parties.",
+   "The reviewer assailed the novel as {banal} and {derivative}, yet readers bought it in record numbers."
+  ],
+  "sbn": [
+   "পরীক্ষার আগে নানা সন্দেহ তাকে ঘিরে ধরল (assailed)।",
+   "নতুন আইনটি দুই দলেরই সমালোচকদের তীব্র আক্রমণের মুখে পড়ল (assailed)।",
+   "সমালোচক উপন্যাসটিকে একঘেয়ে আর নকলধর্মী বলে তুলোধুনো করলেন (assailed), তবু পাঠকেরা রেকর্ড সংখ্যায় বইটি কিনল।"
+  ],
+  "tip": "Latin ad + salire ‘to leap’: to assail is to leap at someone (same family as ‘assault’)."
+ },
+ {
+  "id": "assert",
+  "word": "Assert",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to state something firmly and confidently; to insist on (a right)",
+  "bn": "জোর দিয়ে বলা; দাবি করা",
+  "s": [
+   "He asserted that he was innocent.",
+   "She asserted her right to speak at the meeting, even though others tried to stop her.",
+   "The scientist asserted that her conclusions rested on {empirical} evidence, not on mere {supposition}."
+  ],
+  "sbn": [
+   "সে জোর দিয়ে বলল (asserted) যে সে নির্দোষ।",
+   "অন্যরা থামানোর চেষ্টা করলেও সে সভায় কথা বলার অধিকার দাবি করল (asserted)।",
+   "বিজ্ঞানী জোর দিয়ে বললেন (asserted) যে তাঁর সিদ্ধান্ত পরীক্ষালব্ধ প্রমাণের ওপর দাঁড়িয়ে, নিছক অনুমানের ওপর নয়।"
+  ],
+  "tip": "Latin asserere ‘to claim, join to oneself’: when you assert, you firmly claim something as true."
+ },
+ {
+  "id": "assess",
+  "word": "Assess",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to judge or evaluate the value, quality, or size of something",
+  "bn": "মূল্যায়ন করা; যাচাই করা; নিরূপণ করা",
+  "s": [
+   "The teacher assessed our essays.",
+   "Engineers came to assess the damage after the earthquake.",
+   "A {judicious} reviewer assesses each claim on its merits instead of being swayed by the author's {bombastic} style."
+  ],
+  "sbn": [
+   "শিক্ষক আমাদের রচনাগুলো মূল্যায়ন করলেন (assessed)।",
+   "ভূমিকম্পের পর ক্ষতির পরিমাণ যাচাই করতে (assess) প্রকৌশলীরা এলেন।",
+   "একজন বিচক্ষণ সমালোচক লেখকের আড়ম্বরপূর্ণ ভাষায় প্রভাবিত না হয়ে প্রতিটি দাবিকে তার নিজের যোগ্যতায় যাচাই করেন (assesses)।"
+  ],
+  "tip": "Latin assidere ‘to sit beside’: a judge's assistant sat beside him to assess cases and fines."
+ },
+ {
+  "id": "assimilate",
+  "word": "Assimilate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to take in and fully understand information; to become part of a group or culture",
+  "bn": "আত্মস্থ করা; মিশে যাওয়া; একীভূত হওয়া",
+  "s": [
+   "Children assimilate new languages quickly.",
+   "The immigrants assimilated into the city's life within a few years.",
+   "Students who merely memorize facts rarely assimilate them; it takes {assiduous} practice to make ideas truly one's own."
+  ],
+  "sbn": [
+   "শিশুরা নতুন ভাষা দ্রুত আত্মস্থ করে (assimilate)।",
+   "অভিবাসীরা কয়েক বছরের মধ্যেই শহরের জীবনে মিশে গেল (assimilated)।",
+   "যে শিক্ষার্থীরা শুধু তথ্য মুখস্থ করে, তারা কদাচিৎ সেগুলো আত্মস্থ করতে পারে (assimilate); ধারণাকে সত্যিই নিজের করে নিতে দরকার নিরলস চর্চা।"
+  ],
+  "tip": "Latin ad + similis ‘like’: to assimilate is to make similar — to blend in or absorb."
+ },
+ {
+  "id": "astringent",
+  "word": "Astringent",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "sharp and severe (of words or criticism); causing skin or body tissue to tighten",
+  "bn": "কড়া; তীক্ষ্ণ; সংকোচক",
+  "s": [
+   "Her astringent comments made him blush.",
+   "This astringent lotion tightens the skin and reduces oiliness.",
+   "The critic's astringent prose, sharpened by {caustic} wit, made even the most {complacent} directors nervous."
+  ],
+  "sbn": [
+   "তার কড়া (astringent) মন্তব্যে সে লজ্জায় লাল হয়ে গেল।",
+   "এই সংকোচক (astringent) লোশন ত্বক টানটান করে আর তেলতেলে ভাব কমায়।",
+   "তীব্র ব্যঙ্গে শাণিত সমালোচকের ধারালো (astringent) লেখা সবচেয়ে আত্মতুষ্ট পরিচালকদেরও নার্ভাস করে তুলত।"
+  ],
+  "tip": "Latin astringere ‘to bind tight’: astringents tighten skin; astringent words make you wince."
+ },
+ {
+  "id": "astute",
+  "word": "Astute",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "clever and quick to notice what matters; shrewd",
+  "bn": "বিচক্ষণ; চতুর; তীক্ষ্ণবুদ্ধি",
+  "s": [
+   "She is an astute businesswoman.",
+   "An astute reader will notice the clues the author hides in the early chapters.",
+   "The astute negotiator saw through her rival's {disingenuous} offer and {deftly} turned it to her own advantage."
+  ],
+  "sbn": [
+   "সে একজন বিচক্ষণ (astute) ব্যবসায়ী।",
+   "একজন তীক্ষ্ণবুদ্ধি (astute) পাঠক লেখকের শুরুর অধ্যায়গুলোতে লুকানো ইঙ্গিত ধরে ফেলবেন।",
+   "চতুর (astute) আলোচক প্রতিদ্বন্দ্বীর কপট প্রস্তাবের আসল উদ্দেশ্য ধরে ফেললেন এবং নিপুণভাবে তা নিজের সুবিধায় ঘুরিয়ে নিলেন।"
+  ],
+  "tip": "Latin astutus, from astus ‘cunning’: an astute person is crafty in a smart way."
+ },
+ {
+  "id": "asylum",
+  "word": "Asylum",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "protection given by a country to someone fleeing danger; a safe place (old use: a mental hospital)",
+  "bn": "আশ্রয়; রাজনৈতিক আশ্রয়; আশ্রয়স্থল",
+  "s": [
+   "The refugees asked for asylum.",
+   "After fleeing the war, the journalist was granted asylum in Canada.",
+   "Fleeing a {despotic} regime, the activist sought asylum abroad, where she could {denounce} its crimes without fear."
+  ],
+  "sbn": [
+   "শরণার্থীরা আশ্রয় (asylum) চাইল।",
+   "যুদ্ধ থেকে পালিয়ে আসার পর সাংবাদিকটি কানাডায় রাজনৈতিক আশ্রয় (asylum) পেলেন।",
+   "স্বৈরাচারী শাসন থেকে পালিয়ে কর্মীটি বিদেশে আশ্রয় (asylum) চাইলেন, যেখানে তিনি নির্ভয়ে সেই শাসনের অপরাধগুলোর নিন্দা করতে পারবেন।"
+  ],
+  "tip": "Greek asylon ‘not to be seized’: in an asylum, no one can seize you."
+ },
+ {
+  "id": "atone",
+  "word": "Atone",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make up for a wrong, mistake, or sin",
+  "bn": "প্রায়শ্চিত্ত করা; ক্ষতিপূরণ করা",
+  "s": [
+   "He wants to atone for his mistake.",
+   "To atone for forgetting her birthday, he cooked her a special dinner.",
+   "The {contrite} official tried to atone for the scandal by donating his salary, but critics said no gesture could {expiate} such a betrayal."
+  ],
+  "sbn": [
+   "সে তার ভুলের প্রায়শ্চিত্ত করতে (atone) চায়।",
+   "তার জন্মদিন ভুলে যাওয়ার ক্ষতিপূরণ করতে (atone) সে তার জন্য বিশেষ রাতের খাবার রান্না করল।",
+   "অনুতপ্ত কর্মকর্তা বেতন দান করে কেলেঙ্কারির প্রায়শ্চিত্ত করার (atone) চেষ্টা করলেন, কিন্তু সমালোচকেরা বললেন কোনো অঙ্গভঙ্গিই এমন বিশ্বাসঘাতকতার পাপ মোচন করতে পারে না।"
+  ],
+  "tip": "From ‘at one’: to atone is to become ‘at one’ (reconciled) again after doing wrong."
+ },
+ {
+  "id": "atrophy",
+  "word": "Atrophy",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to waste away or grow weak from lack of use (also a noun: the wasting away)",
+  "bn": "ক্ষয় হওয়া; শুকিয়ে যাওয়া; দুর্বল হয়ে পড়া",
+  "s": [
+   "Unused muscles atrophy quickly.",
+   "After months in a cast, the muscles in his leg had atrophied.",
+   "Without challenging work, her once-sharp skills began to atrophy, leaving her {listless} and bored."
+  ],
+  "sbn": [
+   "ব্যবহার না করলে পেশি দ্রুত ক্ষয়ে যায় (atrophy)।",
+   "কয়েক মাস প্লাস্টারে থাকার পর তার পায়ের পেশি শুকিয়ে গিয়েছিল (atrophied)।",
+   "চ্যালেঞ্জিং কাজ না থাকায় তার একসময়ের ধারালো দক্ষতা ক্ষয়ে যেতে (atrophy) শুরু করল, আর সে হয়ে পড়ল নির্জীব ও বিরক্ত।"
+  ],
+  "tip": "Greek a- ‘without’ + trophē ‘nourishment’: without food, things waste away."
+ },
+ {
+  "id": "attest",
+  "word": "Attest",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to give proof of something; to declare that something is true",
+  "bn": "সাক্ষ্য দেওয়া; প্রমাণ করা; প্রত্যয়ন করা",
+  "s": [
+   "I can attest to his honesty.",
+   "The packed stadium attested to the band's huge popularity.",
+   "Dozens of witnesses attested to the mayor's {probity}, {refuting} the {specious} rumors of bribery."
+  ],
+  "sbn": [
+   "আমি তার সততার পক্ষে সাক্ষ্য দিতে পারি (attest)।",
+   "ভরা স্টেডিয়ামই প্রমাণ করল (attested) ব্যান্ডটি কতটা জনপ্রিয়।",
+   "ডজনখানেক সাক্ষী মেয়রের সততার পক্ষে সাক্ষ্য দিলেন (attested), ঘুষ নিয়ে ছড়ানো আপাত-বিশ্বাসযোগ্য গুজবগুলো খণ্ডন করে।"
+  ],
+  "tip": "Latin ad + testis ‘witness’: to attest is to act as a witness (like ‘testify’)."
+ },
+ {
+  "id": "attribute",
+  "word": "Attribute",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to say that something is caused by someone or something; (noun) a quality or feature",
+  "bn": "আরোপ করা; দায়ী করা; গুণ বা বৈশিষ্ট্য",
+  "s": [
+   "Patience is his best attribute.",
+   "Doctors attribute the rise in illness to polluted water.",
+   "Biographers often attribute her success to luck, but her {meticulous} planning and {tenacious} effort tell another story."
+  ],
+  "sbn": [
+   "ধৈর্য তার সবচেয়ে ভালো গুণ (attribute)।",
+   "ডাক্তাররা অসুস্থতা বেড়ে যাওয়ার জন্য দূষিত পানিকে দায়ী করেন (attribute)।",
+   "জীবনীকারেরা প্রায়ই তার সাফল্যের কৃতিত্ব ভাগ্যকে দেন (attribute), কিন্তু তার নিখুঁত পরিকল্পনা আর অদম্য চেষ্টা অন্য গল্প বলে।"
+  ],
+  "tip": "Latin ad + tribuere ‘to assign, give’: to attribute is to assign a cause or a quality."
+ },
+ {
+  "id": "attrition",
+  "word": "Attrition",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a gradual wearing down or weakening; a slow reduction in numbers (e.g., staff leaving)",
+  "bn": "ক্ষয়; ক্রমশ হ্রাস; শক্তিক্ষয়",
+  "s": [
+   "The war became a battle of attrition.",
+   "The company reduced its staff through attrition, not layoffs.",
+   "Years of attrition {depleted} the rebel army, and its once {zealous} fighters began to desert."
+  ],
+  "sbn": [
+   "যুদ্ধটা ধীরে ধীরে শক্তিক্ষয়ের (attrition) লড়াইয়ে পরিণত হল।",
+   "কোম্পানিটি ছাঁটাই না করে স্বাভাবিকভাবে লোক কমে যাওয়ার (attrition) মাধ্যমে কর্মী সংখ্যা কমাল।",
+   "বছরের পর বছর ক্ষয়ক্ষতিতে (attrition) বিদ্রোহী বাহিনী নিঃশেষ হয়ে পড়ল, আর একসময়ের উদ্যমী যোদ্ধারা পালাতে শুরু করল।"
+  ],
+  "tip": "Latin atterere ‘to rub away’: attrition wears something down by rubbing, bit by bit."
+ },
+ {
+  "id": "augment",
+  "word": "Augment",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to make larger or greater; to increase",
+  "bn": "বৃদ্ধি করা; বাড়ানো; সমৃদ্ধ করা",
+  "s": [
+   "He took a second job to augment his income.",
+   "The museum augmented its collection with paintings from Asia.",
+   "Rather than {mitigate} the crisis, the new policy only augmented public anger and {exacerbated} the shortage."
+  ],
+  "sbn": [
+   "আয় বাড়াতে (augment) সে দ্বিতীয় একটা চাকরি নিল।",
+   "জাদুঘরটি এশিয়ার চিত্রকর্ম দিয়ে তার সংগ্রহ সমৃদ্ধ করল (augmented)।",
+   "সংকট প্রশমন করার বদলে নতুন নীতিটি জনগণের ক্ষোভ কেবল বাড়িয়ে দিল (augmented) এবং ঘাটতিকে আরও তীব্র করল।"
+  ],
+  "tip": "Latin augere ‘to increase’ — also behind ‘auction’, where the bids keep increasing."
+ },
+ {
+  "id": "augur",
+  "word": "Augur",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to be a sign of a future event (often “augur well” or “augur ill”)",
+  "bn": "পূর্বাভাস দেওয়া; ইঙ্গিত দেওয়া",
+  "s": [
+   "Dark clouds augur rain.",
+   "The strong sales in the first week augur well for the new phone.",
+   "The sudden {exodus} of talented staff augurs ill for the company, which already faces a {precarious} financial future."
+  ],
+  "sbn": [
+   "কালো মেঘ বৃষ্টির পূর্বাভাস দেয় (augur)।",
+   "প্রথম সপ্তাহের ভালো বিক্রি নতুন ফোনটির জন্য শুভ ইঙ্গিত দেয় (augur)।",
+   "মেধাবী কর্মীদের হঠাৎ দলে দলে চলে যাওয়া কোম্পানিটির জন্য অশুভ ইঙ্গিত দেয় (augurs), যার আর্থিক ভবিষ্যৎ এমনিতেই নড়বড়ে।"
+  ],
+  "tip": "In ancient Rome, augurs were priests who read the future from the flight of birds."
+ },
+ {
+  "id": "august",
+  "word": "August",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "grand and dignified; inspiring great respect",
+  "bn": "মহিমান্বিত; সম্ভ্রান্ত; গৌরবময়",
+  "s": [
+   "The august judge entered the room.",
+   "She felt nervous speaking before such an august group of scientists.",
+   "The {erudite} professor, an august figure in her field, was {venerated} by generations of students."
+  ],
+  "sbn": [
+   "মহিমান্বিত (august) বিচারক কক্ষে প্রবেশ করলেন।",
+   "এমন সম্মানিত (august) একদল বিজ্ঞানীর সামনে কথা বলতে গিয়ে সে নার্ভাস বোধ করল।",
+   "পাণ্ডিত্যপূর্ণ অধ্যাপক ছিলেন তাঁর ক্ষেত্রের এক সম্ভ্রান্ত (august) ব্যক্তিত্ব, প্রজন্মের পর প্রজন্ম শিক্ষার্থী তাঁকে গভীর শ্রদ্ধা করত।"
+  ],
+  "tip": "Latin augustus ‘venerable’; Rome's first emperor took the title Augustus. Say au-GUST."
+ },
+ {
+  "id": "auspices",
+  "word": "Auspices",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "support, protection, or sponsorship (usually “under the auspices of”)",
+  "bn": "পৃষ্ঠপোষকতা; তত্ত্বাবধান; সহায়তা",
+  "s": [
+   "The festival was held under the auspices of the city.",
+   "Under the auspices of the UN, the two countries began peace talks.",
+   "The research was carried out under the auspices of a {philanthropic} foundation that promised not to {impede} the scientists' independence."
+  ],
+  "sbn": [
+   "উৎসবটি সিটি কর্পোরেশনের পৃষ্ঠপোষকতায় (auspices) অনুষ্ঠিত হয়েছিল।",
+   "জাতিসংঘের তত্ত্বাবধানে (auspices) দুই দেশ শান্তি আলোচনা শুরু করল।",
+   "গবেষণাটি একটি জনহিতৈষী ফাউন্ডেশনের পৃষ্ঠপোষকতায় (auspices) পরিচালিত হয়েছিল, যারা বিজ্ঞানীদের স্বাধীনতায় বাধা না দেওয়ার প্রতিশ্রুতি দিয়েছিল।"
+  ],
+  "tip": "Latin auspex ‘bird-watcher’: Roman officials acted only after good bird omens — so ‘under the auspices’ = with backing."
+ },
+ {
+  "id": "auspicious",
+  "word": "Auspicious",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "showing signs of future success; favorable",
+  "bn": "শুভ; মঙ্গলজনক; অনুকূল",
+  "s": [
+   "It was an auspicious start to the year.",
+   "Winning the first match was an auspicious beginning for the young team.",
+   "Despite an auspicious debut, the singer's career soon {plummeted}, and critics who had once {lauded} her moved on."
+  ],
+  "sbn": [
+   "বছরের শুরুটা শুভ (auspicious) হল।",
+   "প্রথম ম্যাচ জেতা তরুণ দলটির জন্য একটি মঙ্গলজনক (auspicious) সূচনা ছিল।",
+   "শুভ (auspicious) অভিষেক সত্ত্বেও গায়িকার ক্যারিয়ার শিগগিরই হুড়মুড় করে নেমে গেল, আর যে সমালোচকেরা একসময় তার প্রশংসা করতেন, তাঁরাও মুখ ফিরিয়ে নিলেন।"
+  ],
+  "tip": "Same root as auspices (Latin auspex): good bird omens meant an auspicious, lucky sign."
+ },
+ {
+  "id": "autocratic",
+  "word": "Autocratic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "having total power and ruling without consulting others; bossy and controlling",
+  "bn": "স্বৈরাচারী; একনায়কতান্ত্রিক; কর্তৃত্বপরায়ণ",
+  "s": [
+   "The autocratic king ignored his people.",
+   "Her autocratic style of management made the employees afraid to speak up.",
+   "The autocratic ruler {quelled} every protest and sent {dissidents} to prison without trial."
+  ],
+  "sbn": [
+   "স্বৈরাচারী (autocratic) রাজা প্রজাদের কথা উপেক্ষা করতেন।",
+   "তার কর্তৃত্বপরায়ণ (autocratic) ব্যবস্থাপনার কারণে কর্মীরা মুখ খুলতে ভয় পেত।",
+   "স্বৈরাচারী (autocratic) শাসক প্রতিটি প্রতিবাদ দমন করলেন এবং ভিন্নমতাবলম্বীদের বিনা বিচারে কারাগারে পাঠালেন।"
+  ],
+  "tip": "Greek autos ‘self’ + kratos ‘power’: power held by oneself alone."
+ },
+ {
+  "id": "auxiliary",
+  "word": "Auxiliary",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "giving extra help or support; additional or backup",
+  "bn": "সহায়ক; অতিরিক্ত; সাহায্যকারী",
+  "s": [
+   "The hospital has an auxiliary power generator.",
+   "Volunteers formed an auxiliary team to help the firefighters.",
+   "Though the department was meant to be merely auxiliary, its research proved {pivotal} and soon {eclipsed} the work of the main lab."
+  ],
+  "sbn": [
+   "হাসপাতালটিতে একটি সহায়ক (auxiliary) বিদ্যুৎ জেনারেটর আছে।",
+   "দমকলকর্মীদের সাহায্য করতে স্বেচ্ছাসেবকেরা একটি সহায়ক (auxiliary) দল গঠন করল।",
+   "বিভাগটি কেবল সহায়ক (auxiliary) হিসেবে তৈরি হলেও এর গবেষণা হয়ে উঠল অত্যন্ত গুরুত্বপূর্ণ এবং শিগগিরই মূল ল্যাবের কাজকেও ছাপিয়ে গেল।"
+  ],
+  "tip": "Latin auxilium ‘help’: auxiliary = helping. Auxiliary verbs (is, have, will) help other verbs."
+ },
+ {
+  "id": "avail",
+  "word": "Avail",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to be of use or help; avail oneself of = to make use of; (noun) to no avail = without success",
+  "bn": "কাজে লাগা; সুযোগ নেওয়া; লাভ বা ফল",
+  "s": [
+   "We searched for hours, but to no avail.",
+   "Students should avail themselves of the free tutoring at the library.",
+   "She tried to {placate} the angry customer, but her apologies were to no avail; he remained {implacable}."
+  ],
+  "sbn": [
+   "আমরা কয়েক ঘণ্টা খুঁজলাম, কিন্তু কোনো লাভ (avail) হল না।",
+   "শিক্ষার্থীদের উচিত লাইব্রেরির বিনামূল্যের টিউটরিং সুবিধা কাজে লাগানো (avail)।",
+   "সে রাগী গ্রাহককে শান্ত করার চেষ্টা করল, কিন্তু তার দুঃখপ্রকাশে কোনো ফল (avail) হল না; লোকটি কিছুতেই শান্ত হল না।"
+  ],
+  "tip": "Think ‘available’: to avail yourself of something is to use what is available to you."
+ },
+ {
+  "id": "avarice",
+  "word": "Avarice",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "extreme greed for money or wealth",
+  "bn": "অর্থলোভ; লোভ; লালসা",
+  "s": [
+   "His avarice ruined his friendships.",
+   "The company's avarice led it to cut safety costs and put workers in danger.",
+   "Blinded by avarice, the {rapacious} landlord raised the rent again, ignoring the {plight} of his poorest tenants."
+  ],
+  "sbn": [
+   "তার অর্থলোভ (avarice) তার বন্ধুত্বগুলো নষ্ট করে দিল।",
+   "কোম্পানির লোভের (avarice) কারণে তারা নিরাপত্তার খরচ কমাল এবং শ্রমিকদের বিপদে ফেলল।",
+   "লোভে (avarice) অন্ধ হয়ে লুটেরা স্বভাবের বাড়িওয়ালা আবারও ভাড়া বাড়ালেন, সবচেয়ে গরিব ভাড়াটেদের দুর্দশা উপেক্ষা করে।"
+  ],
+  "tip": "Latin avarus ‘greedy’, from avere ‘to crave’ (the same root as avid)."
+ },
+ {
+  "id": "aversion",
+  "word": "Aversion",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a strong feeling of dislike",
+  "bn": "বিতৃষ্ণা; বিরাগ; অনীহা",
+  "s": [
+   "I have an aversion to spiders.",
+   "Her aversion to crowds made her avoid big parties.",
+   "His {innate} aversion to conflict made him {acquiesce} to demands he privately thought unfair."
+  ],
+  "sbn": [
+   "মাকড়সার প্রতি আমার বিতৃষ্ণা (aversion) আছে।",
+   "ভিড়ের প্রতি অনীহার (aversion) কারণে সে বড় পার্টি এড়িয়ে চলত।",
+   "দ্বন্দ্বের প্রতি সহজাত বিরাগের (aversion) কারণে সে এমন দাবিও নীরবে মেনে নিত, যেগুলোকে সে মনে মনে অন্যায্য ভাবত।"
+  ],
+  "tip": "Latin a- ‘away’ + vertere ‘to turn’: an aversion makes you turn away."
+ },
+ {
+  "id": "avert",
+  "word": "Avert",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to prevent something bad from happening; to turn away (one's eyes)",
+  "bn": "এড়ানো; ঠেকানো; চোখ ফিরিয়ে নেওয়া",
+  "s": [
+   "She averted her eyes from the accident.",
+   "Quick action by the pilot averted a terrible crash.",
+   "Last-minute talks averted a strike, as the union's {conciliatory} tone {mollified} the angry managers."
+  ],
+  "sbn": [
+   "সে দুর্ঘটনার দিক থেকে চোখ ফিরিয়ে নিল (averted)।",
+   "পাইলটের দ্রুত পদক্ষেপ একটি ভয়াবহ দুর্ঘটনা ঠেকিয়ে দিল (averted)।",
+   "শেষ মুহূর্তের আলোচনায় ধর্মঘট এড়ানো গেল (averted), কারণ ইউনিয়নের আপসমূলক সুর ক্ষুব্ধ ব্যবস্থাপকদের শান্ত করেছিল।"
+  ],
+  "tip": "Latin a- ‘away’ + vertere ‘to turn’: to avert is to turn danger, or your eyes, away."
+ },
+ {
+  "id": "avid",
+  "word": "Avid",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "very eager and enthusiastic",
+  "bn": "আগ্রহী; উৎসাহী; অনুরাগী",
+  "s": [
+   "He is an avid reader.",
+   "My grandfather is an avid gardener who spends every morning with his roses.",
+   "An avid collector of rare books, she was also a true {connoisseur} whose {discerning} eye spotted fakes instantly."
+  ],
+  "sbn": [
+   "সে একজন আগ্রহী (avid) পাঠক।",
+   "আমার দাদা একজন উৎসাহী (avid) মালি, প্রতিদিন সকালটা কাটান তাঁর গোলাপগুলোর সঙ্গে।",
+   "দুর্লভ বইয়ের অনুরাগী (avid) সংগ্রাহক হওয়ার পাশাপাশি তিনি ছিলেন সত্যিকারের সমঝদার, তাঁর বিচক্ষণ চোখ মুহূর্তেই নকল ধরে ফেলত।"
+  ],
+  "tip": "Latin avidus ‘eager’, from avere ‘to crave’: an avid fan always craves more."
+ },
+ {
+  "id": "avow",
+  "word": "Avow",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to declare or admit something openly",
+  "bn": "প্রকাশ্যে স্বীকার করা; খোলাখুলি ঘোষণা করা",
+  "s": [
+   "He avowed his love for her.",
+   "The minister avowed that she had made a mistake and apologized.",
+   "Though he publicly avowed support for reform, his {covert} efforts to {undermine} it told a different story."
+  ],
+  "sbn": [
+   "সে তার প্রতি ভালোবাসা প্রকাশ্যে স্বীকার করল (avowed)।",
+   "মন্ত্রী খোলাখুলি স্বীকার করলেন (avowed) যে তিনি ভুল করেছেন, এবং ক্ষমা চাইলেন।",
+   "সে প্রকাশ্যে সংস্কারের প্রতি সমর্থন ঘোষণা করলেও (avowed) তা দুর্বল করার জন্য তার গোপন প্রচেষ্টা অন্য গল্প বলত।"
+  ],
+  "tip": "Hear ‘a vow’ inside it: to avow is to state something openly, as if making a vow."
+ },
+ {
+  "id": "avuncular",
+  "word": "Avuncular",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "kind, friendly, and helpful, like a favorite uncle",
+  "bn": "চাচাসুলভ; মামার মতো স্নেহশীল",
+  "s": [
+   "The old coach was warm and avuncular.",
+   "With his avuncular smile, the shopkeeper made every child feel welcome.",
+   "Behind the senator's avuncular charm lay a {shrewd} strategist who never forgot an enemy."
+  ],
+  "sbn": [
+   "বুড়ো কোচ ছিলেন উষ্ণ আর চাচাসুলভ (avuncular)।",
+   "মামার মতো স্নেহমাখা (avuncular) হাসি দিয়ে দোকানদার প্রতিটি শিশুকে আপন করে নিতেন।",
+   "সিনেটরের চাচাসুলভ (avuncular) আকর্ষণের আড়ালে ছিলেন এক ধূর্ত কৌশলী, যিনি কোনো শত্রুকে কখনো ভুলতেন না।"
+  ],
+  "tip": "Latin avunculus ‘mother's brother, uncle’: avuncular = uncle-like."
+ },
+ {
+  "id": "awry",
+  "word": "Awry",
+  "src": "WS1",
+  "pos": "adverb",
+  "en": "away from the planned course, wrong; out of the proper position, crooked",
+  "bn": "বিগড়ে; ভেস্তে; বাঁকা",
+  "s": [
+   "Our plans went awry.",
+   "The picture hung awry after the children bumped into the wall.",
+   "The experiment went awry when a {volatile} chemical reacted unexpectedly, forcing the team to {revamp} their procedures."
+  ],
+  "sbn": [
+   "আমাদের পরিকল্পনা ভেস্তে গেল (awry)।",
+   "বাচ্চারা দেয়ালে ধাক্কা খাওয়ার পর ছবিটা বাঁকা (awry) হয়ে ঝুলছিল।",
+   "একটি অস্থির রাসায়নিক অপ্রত্যাশিতভাবে বিক্রিয়া করায় পরীক্ষাটি বিগড়ে গেল (awry), ফলে দলটিকে তাদের পদ্ধতি নতুন করে ঢেলে সাজাতে হল।"
+  ],
+  "tip": "a- ‘on’ + wry ‘twisted’: something awry is twisted off course. Say uh-RYE."
+ },
+ {
+  "id": "axiom",
+  "word": "Axiom",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a statement accepted as true without proof; a basic principle",
+  "bn": "স্বতঃসিদ্ধ; মূলসূত্র; প্রতিষ্ঠিত নীতি",
+  "s": [
+   "It is an axiom that practice makes perfect.",
+   "In geometry, an axiom is accepted as true and used to prove other ideas.",
+   "The economist questioned the axiom that markets always correct themselves, calling it a {platitude} long {belied} by history."
+  ],
+  "sbn": [
+   "অনুশীলনেই দক্ষতা আসে, এটা একটা স্বতঃসিদ্ধ (axiom) কথা।",
+   "জ্যামিতিতে একটি স্বতঃসিদ্ধকে (axiom) প্রমাণ ছাড়াই সত্য ধরে নিয়ে অন্য ধারণা প্রমাণ করা হয়।",
+   "অর্থনীতিবিদ এই স্বতঃসিদ্ধ (axiom) নিয়ে প্রশ্ন তুললেন যে বাজার সবসময় নিজেই নিজেকে সংশোধন করে, একে তিনি ইতিহাসে বারবার মিথ্যা প্রমাণিত এক গৎবাঁধা বুলি বললেন।"
+  ],
+  "tip": "Greek axiōma ‘what is thought worthy’ (axios ‘worthy’): an axiom is worthy of belief without proof."
+ },
+ {
+  "id": "bacchanal",
+  "word": "Bacchanal",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a wild, noisy, drunken party",
+  "bn": "মদমত্ত উৎসব; উচ্ছৃঙ্খল আমোদ-ফুর্তি",
+  "s": [
+   "The party turned into a bacchanal.",
+   "Neighbors complained after the students' all-night bacchanal kept them awake.",
+   "The victory celebration became a three-day bacchanal of {debauchery} that the town elders loudly {deplored}."
+  ],
+  "sbn": [
+   "পার্টিটা এক উচ্ছৃঙ্খল মদের আসরে (bacchanal) পরিণত হল।",
+   "সারারাত ধরে চলা ছাত্রদের হৈ-হুল্লোড়ের আসর (bacchanal) প্রতিবেশীদের জাগিয়ে রাখায় তারা অভিযোগ করল।",
+   "বিজয় উদযাপনটা তিন দিনের এক লাগামছাড়া মদমত্ত উৎসবে (bacchanal) পরিণত হল, যার তীব্র নিন্দা করলেন শহরের প্রবীণেরা।"
+  ],
+  "tip": "From Bacchus, the Roman god of wine, whose festivals were wild drinking parties."
+ },
+ {
+  "id": "baleful",
+  "word": "Baleful",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "threatening harm; menacing; harmful",
+  "bn": "অশুভ; ভয়ংকর; ক্ষতিকর",
+  "s": [
+   "The dog gave me a baleful look.",
+   "The villain's baleful stare made the children hide behind their mother.",
+   "Critics warn of the baleful effects of social media on teenagers, noting how {pervasive} and {insidious} its influence has become."
+  ],
+  "sbn": [
+   "কুকুরটা আমার দিকে হিংস্র, অশুভ (baleful) দৃষ্টিতে তাকাল।",
+   "খলনায়কের ভয়ংকর (baleful) চাহনি দেখে বাচ্চারা মায়ের পেছনে লুকাল।",
+   "সমালোচকেরা কিশোরদের ওপর সামাজিক মাধ্যমের ক্ষতিকর (baleful) প্রভাব নিয়ে সতর্ক করেন, উল্লেখ করেন এর প্রভাব কতটা সর্বব্যাপী আর চুপিসারে বিধ্বংসী হয়ে উঠেছে।"
+  ],
+  "tip": "Old English bealu ‘evil, harm’ + -ful: baleful = full of harm."
+ },
+ {
+  "id": "balk",
+  "word": "Balk",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to refuse to go on or to accept something; to hesitate or object",
+  "bn": "পিছিয়ে যাওয়া; আপত্তি করা; থমকে দাঁড়ানো",
+  "s": [
+   "The horse balked at the fence.",
+   "Many customers balked at the high price and left the store.",
+   "Even the most {compliant} board members balked at the CEO's {exorbitant} salary demand."
+  ],
+  "sbn": [
+   "ঘোড়াটা বেড়ার সামনে গিয়ে থমকে দাঁড়াল (balked)।",
+   "অনেক ক্রেতা চড়া দাম দেখে পিছিয়ে গেল (balked) এবং দোকান ছেড়ে চলে গেল।",
+   "এমনকি সবচেয়ে বাধ্য বোর্ড সদস্যরাও সিইওর আকাশছোঁয়া বেতনের দাবিতে আপত্তি তুললেন (balked)।"
+  ],
+  "tip": "A ‘balk’ was a ridge left unplowed in a field — an obstacle. To balk is to stop at an obstacle."
+ },
+ {
+  "id": "ballyhoo",
+  "word": "Ballyhoo",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "noisy publicity or excitement; hype",
+  "bn": "হৈচৈ; ঢাকঢোল পেটানো প্রচার",
+  "s": [
+   "The movie came out with a lot of ballyhoo.",
+   "After all the ballyhoo, the new restaurant turned out to be quite ordinary.",
+   "Despite months of ballyhoo, the product proved {mundane}, and buyers who had expected something {novel} felt cheated."
+  ],
+  "sbn": [
+   "অনেক হৈচৈ (ballyhoo) করে সিনেমাটা মুক্তি পেল।",
+   "এত ঢাকঢোল পেটানো প্রচারের (ballyhoo) পর নতুন রেস্তোরাঁটা বেশ সাধারণই বের হল।",
+   "কয়েক মাসের হৈচৈ (ballyhoo) সত্ত্বেও পণ্যটি একেবারে সাধারণ প্রমাণিত হল, আর যারা নতুন কিছু আশা করেছিল তারা প্রতারিত বোধ করল।"
+  ],
+  "tip": "Its origin is unknown, so just hear it as a loud carnival shout: “Bally-HOO!” — pure hype."
+ },
+ {
+  "id": "balm",
+  "word": "Balm",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "something that soothes or heals; a soothing ointment",
+  "bn": "মলম; প্রলেপ; সান্ত্বনা",
+  "s": [
+   "Her kind words were a balm to me.",
+   "The nurse put a cooling balm on the burn.",
+   "For the {bereaved} family, the neighbors' quiet support was a balm that helped {assuage} their grief."
+  ],
+  "sbn": [
+   "তার দয়ালু কথাগুলো আমার কাছে মলমের (balm) মতো ছিল।",
+   "নার্স পোড়া জায়গায় একটা ঠান্ডা মলম (balm) লাগিয়ে দিলেন।",
+   "শোকাহত পরিবারটির কাছে প্রতিবেশীদের নীরব সমর্থন ছিল সান্ত্বনার প্রলেপ (balm), যা তাদের দুঃখ কিছুটা লাঘব করল।"
+  ],
+  "tip": "Lip balm soothes dry lips; a kind word is a balm that soothes a hurting heart."
+ },
+ {
+  "id": "bandy",
+  "word": "Bandy",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to pass words, ideas, or names back and forth casually; to argue back and forth",
+  "bn": "কথা ছোড়াছুড়ি করা; হালকাভাবে আলোচনায় আনা; কথা কাটাকাটি করা",
+  "s": [
+   "Don't bandy words with your boss.",
+   "Several names were bandied about as possible team captains.",
+   "Politicians bandy about words like freedom so loosely that they become {vacuous} {platitudes}."
+  ],
+  "sbn": [
+   "বসের সঙ্গে কথা কাটাকাটি করো না (bandy)।",
+   "সম্ভাব্য দলনেতা হিসেবে কয়েকজনের নাম আলোচনায় ঘুরছিল (bandied)।",
+   "রাজনীতিবিদেরা স্বাধীনতার মতো শব্দ এত হালকাভাবে ছোড়াছুড়ি করেন (bandy) যে সেগুলো অর্থহীন গৎবাঁধা বুলিতে পরিণত হয়।"
+  ],
+  "tip": "Picture players batting a ball back and forth — that is how people bandy words or names about."
+ },
+ {
+  "id": "bane",
+  "word": "Bane",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a cause of great trouble, harm, or misery",
+  "bn": "অভিশাপ; সর্বনাশের কারণ; জ্বালা",
+  "s": [
+   "Mosquitoes are the bane of summer.",
+   "Traffic jams are the bane of every Dhaka commuter's life.",
+   "Corruption has long been the bane of the country's economy, an {endemic} problem that seems almost {ineradicable}."
+  ],
+  "sbn": [
+   "মশা হল গরমকালের অভিশাপ (bane)।",
+   "যানজট প্রত্যেক ঢাকাবাসী যাত্রীর জীবনের জ্বালা (bane)।",
+   "দুর্নীতি দীর্ঘদিন ধরে দেশের অর্থনীতির অভিশাপ (bane), এমন এক শিকড় গেড়ে বসা সমস্যা যা উপড়ে ফেলা প্রায় অসম্ভব মনে হয়।"
+  ],
+  "tip": "Old English bana meant ‘killer’; a bane was also a poison (as in wolfsbane). A bane ruins things."
+ },
+ {
+  "id": "banter",
+  "word": "Banter",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "friendly, playful teasing conversation",
+  "bn": "ঠাট্টা-তামাশা; হাসি-মশকরা; রসালাপ",
+  "s": [
+   "The friends enjoyed some light banter.",
+   "The two hosts kept the audience laughing with their quick banter.",
+   "Their good-natured banter, full of {droll} remarks, showed none of the {rancor} that marked their public debates."
+  ],
+  "sbn": [
+   "বন্ধুরা হালকা ঠাট্টা-তামাশা (banter) উপভোগ করল।",
+   "দুই উপস্থাপক তাদের চটপটে হাসি-মশকরা (banter) দিয়ে দর্শকদের হাসিয়ে রাখলেন।",
+   "মজার মন্তব্যে ভরা তাদের সৌহার্দ্যপূর্ণ রসালাপে (banter) প্রকাশ্য বিতর্কের সেই তিক্ততার ছিটেফোঁটাও ছিল না।"
+  ],
+  "tip": "Memory trick: banter ≈ ‘bandy’ + ‘chatter’ — playful jokes tossed back and forth."
+ },
+ {
+  "id": "baroque",
+  "word": "Baroque",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "very ornate and elaborate; relating to the 17th–18th century European style of art and music",
+  "bn": "অতি অলংকৃত; জমকালো কারুকার্যময়; বারোক শৈলীর",
+  "s": [
+   "The church has a baroque ceiling.",
+   "Bach and Vivaldi are famous composers of baroque music.",
+   "The author's baroque prose, {replete} with {florid} metaphors, exhausted readers who preferred plain language."
+  ],
+  "sbn": [
+   "গির্জাটির ছাদ জমকালো কারুকার্যময় (baroque)।",
+   "বাখ আর ভিভালদি বারোক (baroque) সংগীতের বিখ্যাত সুরকার।",
+   "ফুলেল উপমায় ঠাসা লেখকের অতি অলংকৃত (baroque) গদ্য সহজ ভাষা পছন্দ করা পাঠকদের ক্লান্ত করে তুলল।"
+  ],
+  "tip": "From Portuguese barroco, an oddly shaped pearl: baroque style is lavish, curly and over-the-top."
+ },
+ {
+  "id": "barrage",
+  "word": "Barrage",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a heavy, continuous burst of gunfire; an overwhelming rush of questions, complaints, etc.",
+  "bn": "অবিরাম গোলাবর্ষণ; প্রশ্ন বা অভিযোগের বন্যা",
+  "s": [
+   "The minister faced a barrage of questions.",
+   "The soldiers hid in trenches during the long artillery barrage.",
+   "The actor endured a barrage of {invective} online but refused to {recant} his controversial statement."
+  ],
+  "sbn": [
+   "মন্ত্রী প্রশ্নের বন্যার (barrage) মুখোমুখি হলেন।",
+   "দীর্ঘ কামানের অবিরাম গোলাবর্ষণের (barrage) সময় সৈন্যরা পরিখায় লুকিয়ে ছিল।",
+   "অভিনেতা অনলাইনে গালাগালির অবিরাম ঝড় (barrage) সহ্য করলেন, কিন্তু তাঁর বিতর্কিত বক্তব্য প্রত্যাহার করতে রাজি হলেন না।"
+  ],
+  "tip": "French barrer ‘to bar, block’: a barrage of fire was meant to block the enemy's advance."
+ },
+ {
+  "id": "bastion",
+  "word": "Bastion",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a stronghold; a place or group that strongly defends a principle or way of life",
+  "bn": "দুর্গ; শক্ত ঘাঁটি",
+  "s": [
+   "The castle was a bastion against invaders.",
+   "The old library remains a bastion of quiet study in the noisy city.",
+   "Once a bastion of {orthodox} thinking, the university now welcomes {iconoclastic} scholars."
+  ],
+  "sbn": [
+   "দুর্গটি ছিল আক্রমণকারীদের বিরুদ্ধে এক শক্ত ঘাঁটি (bastion)।",
+   "কোলাহলমুখর শহরে পুরোনো লাইব্রেরিটা এখনও নিরিবিলি পড়াশোনার এক দুর্গ (bastion)।",
+   "একসময় গোঁড়া চিন্তাধারার দুর্গ (bastion) ছিল যে বিশ্ববিদ্যালয়, তা এখন প্রথাভাঙা পণ্ডিতদের স্বাগত জানায়।"
+  ],
+  "tip": "A bastion is the jutting part of a fort's wall; a ‘bastion of’ something defends it firmly."
+ },
+ {
+  "id": "bauble",
+  "word": "Bauble",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a cheap, showy trinket or ornament of little value",
+  "bn": "চটকদার তুচ্ছ জিনিস; সস্তা অলংকার",
+  "s": [
+   "She bought a bauble at the fair.",
+   "The child was happier with the shiny bauble than with the expensive toy.",
+   "To the {ascetic} monk, the jewels the visitors admired were mere baubles, {inconsequential} next to inner peace."
+  ],
+  "sbn": [
+   "মেলা থেকে সে একটা চটকদার জিনিস (bauble) কিনল।",
+   "দামি খেলনার চেয়ে চকচকে সস্তা জিনিসটা (bauble) পেয়েই শিশুটি বেশি খুশি হল।",
+   "সংযমী সন্ন্যাসীর কাছে দর্শনার্থীদের মুগ্ধ করা রত্নগুলো ছিল নিছক তুচ্ছ খেলনা (baubles), অন্তরের শান্তির তুলনায় একেবারেই গুরুত্বহীন।"
+  ],
+  "tip": "Sounds like ‘bubble’: a bauble is a shiny, pretty thing with nothing much inside."
+ },
+ {
+  "id": "bedlam",
+  "word": "Bedlam",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a scene of noisy confusion; chaos",
+  "bn": "হট্টগোল; বিশৃঙ্খলা; হুলুস্থুল",
+  "s": [
+   "The classroom was bedlam.",
+   "When the lights went out, the market turned into bedlam.",
+   "The meeting descended into bedlam as {belligerent} members shouted {invective} at each other."
+  ],
+  "sbn": [
+   "ক্লাসরুমে তখন হট্টগোল (bedlam) চলছিল।",
+   "বাতি নিভে যেতেই বাজারে হুলুস্থুল (bedlam) পড়ে গেল।",
+   "যুদ্ধংদেহী সদস্যরা একে অন্যকে গালাগাল দিতে থাকায় সভাটি চরম বিশৃঙ্খলায় (bedlam) পরিণত হল।"
+  ],
+  "tip": "From ‘Bedlam’, the old nickname of London's Bethlem Hospital for the mentally ill, famous for its chaos."
+ },
+ {
+  "id": "beget",
+  "word": "Beget",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to cause or produce; (old use) to become the father of",
+  "bn": "জন্ম দেওয়া; সৃষ্টি করা; ডেকে আনা",
+  "s": [
+   "Violence begets violence.",
+   "In the old story, the king begets three sons.",
+   "Poverty tends to beget more poverty, and the {indigence} of one generation can {perpetuate} itself in the next."
+  ],
+  "sbn": [
+   "সহিংসতা সহিংসতারই জন্ম দেয় (begets)।",
+   "পুরোনো গল্পে রাজা তিন পুত্রের জন্ম দেন (begets)।",
+   "দারিদ্র্য আরও দারিদ্র্যের জন্ম দেয় (beget), আর এক প্রজন্মের অভাব-অনটন পরের প্রজন্মেও নিজেকে টিকিয়ে রাখতে পারে।"
+  ],
+  "tip": "be- + get: to beget is to ‘get’ something into existence — to produce it."
+ },
+ {
+  "id": "begrudge",
+  "word": "Begrudge",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to resent someone for having something; to give or allow something unwillingly",
+  "bn": "ঈর্ষা করা; অনিচ্ছায় দেওয়া; মনে মনে অসন্তুষ্ট হওয়া",
+  "s": [
+   "I don't begrudge him his success.",
+   "She begrudged every minute she had to spend on boring paperwork.",
+   "Only a {churlish} critic would begrudge the {fledgling} author her first small success."
+  ],
+  "sbn": [
+   "তার সাফল্যে আমি ঈর্ষা করি না (begrudge)।",
+   "বিরক্তিকর কাগজপত্রের কাজে যে প্রতিটা মিনিট দিতে হত, তা সে অনিচ্ছায় দিত (begrudged)।",
+   "কেবল একজন রূঢ় সমালোচকই নবীন লেখিকার প্রথম ছোট্ট সাফল্যে ঈর্ষা করবেন (begrudge)।"
+  ],
+  "tip": "be- + grudge: to begrudge is to hold a grudge about what someone has or gets."
+ },
+ {
+  "id": "behest",
+  "word": "Behest",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a person's order or request (usually “at the behest of”)",
+  "bn": "আদেশ; অনুরোধ; নির্দেশ",
+  "s": [
+   "He came at his mother's behest.",
+   "At the behest of the principal, the students cleaned the schoolyard.",
+   "Acting at the behest of a powerful {magnate}, the editor {suppressed} a story that might have embarrassed him."
+  ],
+  "sbn": [
+   "সে মায়ের অনুরোধে (behest) এসেছিল।",
+   "প্রধান শিক্ষকের নির্দেশে (behest) ছাত্ররা স্কুলের মাঠ পরিষ্কার করল।",
+   "এক প্রভাবশালী শিল্পপতির হুকুমে (behest) সম্পাদক এমন একটি খবর চেপে গেলেন যা ওই শিল্পপতিকে বিব্রত করতে পারত।"
+  ],
+  "tip": "Old English behǣs meant ‘a promise’. Today, at someone's behest = because they asked or ordered it."
+ },
+ {
+  "id": "belabor",
+  "word": "Belabor",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to discuss or explain something far more than necessary",
+  "bn": "অকারণে বারবার বলা; অতিরিক্ত টেনে লম্বা করা",
+  "s": [
+   "Please don't belabor the point.",
+   "The teacher belabored the simple rule until the students grew bored.",
+   "The {verbose} speaker belabored every minor detail, while his {laconic} colleague made the same case in two sentences."
+  ],
+  "sbn": [
+   "দয়া করে বিষয়টা নিয়ে অকারণে বারবার বলো না (belabor)।",
+   "শিক্ষক সহজ নিয়মটা এত টেনে টেনে ব্যাখ্যা করলেন (belabored) যে ছাত্ররা বিরক্ত হয়ে গেল।",
+   "বাগাড়ম্বরপূর্ণ বক্তা প্রতিটি ছোটখাটো খুঁটিনাটি অকারণে টেনে লম্বা করলেন (belabored), অথচ তাঁর স্বল্পভাষী সহকর্মী একই কথা দুই বাক্যে বলে দিলেন।"
+  ],
+  "tip": "be- + labor: to belabor a point is to keep laboring over it long after it is clear."
+ },
+ {
+  "id": "beleaguer",
+  "word": "Beleaguer",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to trouble or harass constantly; (originally) to surround with an army, besiege",
+  "bn": "জর্জরিত করা; ঘিরে ফেলা; বিপদে ফেলা",
+  "s": [
+   "The team was beleaguered by injuries.",
+   "The beleaguered mayor faced protests, lawsuits, and angry reporters every day.",
+   "The beleaguered company, {beset} by debts and lawsuits, could no longer {forestall} bankruptcy."
+  ],
+  "sbn": [
+   "চোটের কারণে দলটি জর্জরিত (beleaguered) ছিল।",
+   "বিপদে জর্জরিত (beleaguered) মেয়রকে প্রতিদিন বিক্ষোভ, মামলা আর ক্ষুব্ধ সাংবাদিকদের মুখোমুখি হতে হত।",
+   "দেনা আর মামলার চাপে বিপর্যস্ত (beleaguered) কোম্পানিটি আর দেউলিয়া হওয়া ঠেকিয়ে রাখতে পারল না।"
+  ],
+  "tip": "Dutch belegeren ‘to besiege’ (leger ‘camp’): a beleaguered town has an enemy camp all around it."
+ },
+ {
+  "id": "belittle",
+  "word": "Belittle",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to make someone or something seem unimportant",
+  "bn": "তুচ্ছ করা; ছোট করে দেখানো; হেয় করা",
+  "s": [
+   "Don't belittle your own achievements.",
+   "He always belittled his younger brother in front of their friends.",
+   "Instead of {lauding} her innovation, jealous colleagues belittled it and {disparaged} her methods."
+  ],
+  "sbn": [
+   "নিজের অর্জনকে ছোট করে দেখো না (belittle)।",
+   "সে বন্ধুদের সামনে সবসময় ছোট ভাইকে হেয় করত (belittled)।",
+   "তার উদ্ভাবনের প্রশংসা না করে ঈর্ষাকাতর সহকর্মীরা সেটিকে তুচ্ছ করল (belittled) এবং তার পদ্ধতির নিন্দা করল।"
+  ],
+  "tip": "be- + little: to belittle is to make something seem little."
+ },
+ {
+  "id": "belligerent",
+  "word": "Belligerent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "hostile and eager to fight or argue",
+  "bn": "যুদ্ধংদেহী; ঝগড়াটে; আক্রমণাত্মক",
+  "s": [
+   "The belligerent man started a fight.",
+   "When asked a simple question, the player became belligerent and stormed off.",
+   "The diplomat's {conciliatory} words did little to {placate} the belligerent general."
+  ],
+  "sbn": [
+   "ঝগড়াটে (belligerent) লোকটা মারামারি বাধাল।",
+   "সাধারণ একটা প্রশ্ন করতেই খেলোয়াড়টি আক্রমণাত্মক (belligerent) হয়ে উঠল এবং রেগে বেরিয়ে গেল।",
+   "কূটনীতিকের আপসমূলক কথাগুলো যুদ্ধংদেহী (belligerent) জেনারেলকে শান্ত করতে খুব একটা কাজে এল না।"
+  ],
+  "tip": "Latin bellum ‘war’ + gerere ‘to wage’: belligerent = waging war, ready to fight."
+ },
+ {
+  "id": "bemoan",
+  "word": "Bemoan",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to complain about or express sorrow over something",
+  "bn": "আক্ষেপ করা; বিলাপ করা; দুঃখ করা",
+  "s": [
+   "He bemoaned his bad luck.",
+   "Older teachers often bemoan students' short attention spans.",
+   "Instead of merely bemoaning the {dearth} of jobs, the {pragmatic} mayor launched a training program."
+  ],
+  "sbn": [
+   "সে তার দুর্ভাগ্য নিয়ে আক্ষেপ করল (bemoaned)।",
+   "বয়স্ক শিক্ষকেরা প্রায়ই ছাত্রদের কম মনোযোগ নিয়ে দুঃখ করেন (bemoan)।",
+   "শুধু চাকরির অভাব নিয়ে বিলাপ না করে (bemoaning) বাস্তববাদী মেয়র একটি প্রশিক্ষণ কর্মসূচি চালু করলেন।"
+  ],
+  "tip": "be- + moan: to bemoan something is to moan about it."
+ },
+ {
+  "id": "bemused",
+  "word": "Bemused",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "puzzled or confused; lost in thought (informally, sometimes mildly amused)",
+  "bn": "হতভম্ব; বিভ্রান্ত; হতবুদ্ধি",
+  "s": [
+   "She looked bemused by the question.",
+   "The tourists were bemused by the complicated bus map.",
+   "Readers were bemused by the poem's {convoluted} syntax and {cryptic} images."
+  ],
+  "sbn": [
+   "প্রশ্নটা শুনে তাকে হতভম্ব (bemused) দেখাল।",
+   "জটিল বাস ম্যাপটা দেখে পর্যটকেরা বিভ্রান্ত (bemused) হয়ে পড়ল।",
+   "কবিতাটির প্যাঁচালো বাক্যগঠন আর রহস্যময় চিত্রকল্পে পাঠকেরা হতবুদ্ধি (bemused) হয়ে গেল।"
+  ],
+  "tip": "be- + muse ‘to ponder’: bemused = lost in puzzled thought. It does not simply mean amused!"
+ },
+ {
+  "id": "benediction",
+  "word": "Benediction",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a blessing, especially one spoken at the end of a religious service",
+  "bn": "আশীর্বাদ; আশীর্বচন; শুভকামনা",
+  "s": [
+   "The priest gave a benediction.",
+   "The ceremony ended with a benediction for the newly married couple.",
+   "The elder's {reverent} benediction brought a moment of {serene} silence to the crowded hall."
+  ],
+  "sbn": [
+   "পুরোহিত আশীর্বাদ (benediction) দিলেন।",
+   "নবদম্পতির জন্য আশীর্বচন (benediction) দিয়ে অনুষ্ঠান শেষ হল।",
+   "প্রবীণের শ্রদ্ধাপূর্ণ আশীর্বাদবাণী (benediction) ভিড়ে ঠাসা হলঘরে এক মুহূর্তের প্রশান্ত নীরবতা নিয়ে এল।"
+  ],
+  "tip": "Latin bene ‘well’ + dicere ‘to speak’: a benediction is speaking well of someone — a blessing."
+ },
+ {
+  "id": "benefactor",
+  "word": "Benefactor",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a person who gives money or other help to a person or cause",
+  "bn": "দানশীল ব্যক্তি; উপকারী; পৃষ্ঠপোষক",
+  "s": [
+   "A kind benefactor paid her school fees.",
+   "The hospital's new wing is named after its generous benefactor.",
+   "The {munificent} benefactor gave millions to the library but, {reticent} about his wealth, asked to remain anonymous."
+  ],
+  "sbn": [
+   "একজন দয়ালু দানশীল ব্যক্তি (benefactor) তার স্কুলের বেতন দিয়ে দিলেন।",
+   "হাসপাতালের নতুন অংশটির নাম রাখা হয়েছে এর উদার পৃষ্ঠপোষকের (benefactor) নামে।",
+   "অত্যন্ত দানশীল ওই উপকারী মানুষটি (benefactor) লাইব্রেরিকে কোটি কোটি টাকা দিলেন, কিন্তু নিজের সম্পদ নিয়ে মুখ খুলতে অনিচ্ছুক হওয়ায় নাম গোপন রাখতে বললেন।"
+  ],
+  "tip": "Latin bene ‘well’ + facere ‘to do’: a benefactor is someone who does good for others."
+ },
+ {
+  "id": "benevolent",
+  "word": "Benevolent",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "kind and wishing to do good to others",
+  "bn": "দয়ালু; পরোপকারী; সদাশয়",
+  "s": [
+   "She is a benevolent teacher.",
+   "The benevolent old man fed stray cats every evening.",
+   "Far from being a {despot}, the king was a benevolent ruler who {assuaged} his subjects' fears during the famine."
+  ],
+  "sbn": [
+   "তিনি একজন দয়ালু (benevolent) শিক্ষক।",
+   "সদাশয় (benevolent) বৃদ্ধ লোকটি প্রতি সন্ধ্যায় রাস্তার বিড়ালদের খাওয়াতেন।",
+   "রাজা মোটেই স্বৈরশাসক ছিলেন না; তিনি ছিলেন এক পরোপকারী (benevolent) শাসক, যিনি দুর্ভিক্ষের সময় প্রজাদের ভয় প্রশমিত করেছিলেন।"
+  ],
+  "tip": "Latin bene ‘well’ + volens ‘wishing’: benevolent = wishing others well."
+ },
+ {
+  "id": "benighted",
+  "word": "Benighted",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "ignorant; living in intellectual or moral darkness",
+  "bn": "অজ্ঞ; অজ্ঞানতার অন্ধকারে থাকা; পশ্চাৎপদ",
+  "s": [
+   "He called the old belief benighted.",
+   "Early explorers wrongly described the people they met as benighted, ignoring their rich cultures.",
+   "Once dismissed as benighted, the region's {indigenous} healing practices are now studied by doctors."
+  ],
+  "sbn": [
+   "সে পুরোনো বিশ্বাসটাকে অজ্ঞতাপূর্ণ (benighted) বলল।",
+   "প্রথম দিকের অভিযাত্রীরা যাদের দেখা পেয়েছিলেন, তাদের সমৃদ্ধ সংস্কৃতি উপেক্ষা করে ভুলভাবে অজ্ঞ (benighted) বলে বর্ণনা করেছিলেন।",
+   "একসময় অজ্ঞতার ফসল (benighted) বলে উড়িয়ে দেওয়া হলেও অঞ্চলটির আদিবাসী চিকিৎসাপদ্ধতি এখন ডাক্তাররা গবেষণা করছেন।"
+  ],
+  "tip": "be- + night: benighted people are figuratively ‘in the night’ — in the darkness of ignorance."
+ },
+ {
+  "id": "benign",
+  "word": "Benign",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "kind and gentle; not harmful (e.g., a benign tumor)",
+  "bn": "নিরীহ; ক্ষতিহীন; সদয়",
+  "s": [
+   "The tumor was benign, not cancer.",
+   "Grandpa looked at us with a benign smile.",
+   "Though the chemical seemed {innocuous}, scientists warned that its long-term effects might not be so benign."
+  ],
+  "sbn": [
+   "টিউমারটা ক্ষতিহীন (benign) ছিল, ক্যান্সার নয়।",
+   "দাদু আমাদের দিকে সদয় (benign) হাসি নিয়ে তাকালেন।",
+   "রাসায়নিকটি নিরীহ মনে হলেও বিজ্ঞানীরা সতর্ক করলেন যে এর দীর্ঘমেয়াদি প্রভাব হয়তো ততটা ক্ষতিহীন (benign) নয়।"
+  ],
+  "tip": "Latin benignus ‘kindly’ (bene ‘well’): benign = kind or harmless. Opposite: malignant."
+ },
+ {
+  "id": "bequest",
+  "word": "Bequest",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "money or property left to someone in a will",
+  "bn": "উইলে দেওয়া সম্পত্তি; উইলসূত্রে দান",
+  "s": [
+   "She left a bequest to the school.",
+   "Thanks to a large bequest, the village built a new clinic.",
+   "The {eccentric} millionaire's bequest to his cats {confounded} his relatives."
+  ],
+  "sbn": [
+   "তিনি উইলে স্কুলের জন্য কিছু সম্পত্তি দান করে গেলেন (bequest)।",
+   "উইলসূত্রে পাওয়া বড় একটা দানের (bequest) কল্যাণে গ্রামটি একটি নতুন ক্লিনিক বানাল।",
+   "খ্যাপাটে কোটিপতি উইলে নিজের বিড়ালদের জন্য যে সম্পত্তি রেখে গেলেন (bequest), তা তার আত্মীয়দের হতভম্ব করে দিল।"
+  ],
+  "tip": "Related to ‘bequeath’ (to give in a will): a bequest is what you bequeath."
+ },
+ {
+  "id": "bereaved",
+  "word": "Bereaved",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "having lost a close relative or friend to death",
+  "bn": "শোকাহত; স্বজনহারা",
+  "s": [
+   "We visited the bereaved family.",
+   "The bereaved mother found comfort in her friends' visits.",
+   "Friends offered {solace} to the bereaved widower, though nothing could {alleviate} his grief."
+  ],
+  "sbn": [
+   "আমরা শোকাহত (bereaved) পরিবারটিকে দেখতে গেলাম।",
+   "স্বজনহারা (bereaved) মা বন্ধুদের আসা-যাওয়ায় কিছুটা সান্ত্বনা পেলেন।",
+   "বন্ধুরা শোকাহত (bereaved) বিপত্নীককে সান্ত্বনা দিলেন, যদিও কোনো কিছুই তাঁর দুঃখ লাঘব করতে পারছিল না।"
+  ],
+  "tip": "be- + reave ‘to rob’: the bereaved have been robbed of someone they love."
+ },
+ {
+  "id": "beset",
+  "word": "Beset",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to trouble or attack from all sides (often “beset by” or “beset with”)",
+  "bn": "ঘিরে ধরা; জর্জরিত করা",
+  "s": [
+   "Problems beset the new project.",
+   "The village was beset by floods every monsoon.",
+   "Beset by doubts, the {irresolute} leader kept {vacillating} between the two plans."
+  ],
+  "sbn": [
+   "নানা সমস্যা নতুন প্রকল্পটাকে ঘিরে ধরল (beset)।",
+   "প্রতি বর্ষায় গ্রামটি বন্যায় জর্জরিত (beset) হত।",
+   "সন্দেহে জর্জরিত (beset) সিদ্ধান্তহীন নেতা দুই পরিকল্পনার মাঝে কেবল দোদুল্যমান থাকলেন।"
+  ],
+  "tip": "be- + set: if you are beset, troubles are set all around you."
+ },
+ {
+  "id": "bestow",
+  "word": "Bestow",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to give something, such as an honor, gift, or right, to someone",
+  "bn": "প্রদান করা; অর্পণ করা; দান করা",
+  "s": [
+   "The king bestowed a medal on him.",
+   "The university bestowed an honorary degree on the famous writer.",
+   "The committee bestowed its highest {accolade} on the scientist, whose {prodigious} research had transformed the field."
+  ],
+  "sbn": [
+   "রাজা তাকে একটি পদক প্রদান করলেন (bestowed)।",
+   "বিশ্ববিদ্যালয় বিখ্যাত লেখককে সম্মানসূচক ডিগ্রি প্রদান করল (bestowed)।",
+   "কমিটি বিজ্ঞানীকে তাদের সর্বোচ্চ সম্মাননা প্রদান করল (bestowed), যাঁর বিস্ময়কর গবেষণা পুরো ক্ষেত্রটিকে বদলে দিয়েছিল।"
+  ],
+  "tip": "be- + stow ‘to place’: to bestow is to place a gift or honor upon someone."
+ },
+ {
+  "id": "bilious",
+  "word": "Bilious",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "bad-tempered and irritable; (literally) feeling sick, as if from too much bile",
+  "bn": "খিটখিটে; বদমেজাজি; পিত্তজনিত অসুস্থ",
+  "s": [
+   "The bilious old man yelled at us.",
+   "After the rich meal, he felt bilious and lay down.",
+   "The columnist's bilious attacks on the government were so {vitriolic} that even his allies {cringed}."
+  ],
+  "sbn": [
+   "খিটখিটে (bilious) বুড়ো লোকটা আমাদের ধমকাল।",
+   "ভারী খাবারের পর তার পেট গুলিয়ে উঠল (bilious), আর সে শুয়ে পড়ল।",
+   "সরকারের বিরুদ্ধে কলামলেখকের বদমেজাজি (bilious) আক্রমণ এতটাই বিষাক্ত ছিল যে তার মিত্ররাও অস্বস্তিতে কুঁকড়ে গেল।"
+  ],
+  "tip": "From bile, the bitter liquid from the liver; old medicine blamed too much bile for a bad temper."
+ },
+ {
+  "id": "bivouac",
+  "word": "Bivouac",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a temporary camp with little or no shelter, used by soldiers or climbers",
+  "bn": "অস্থায়ী শিবির; খোলা আকাশের নিচে ছাউনি",
+  "s": [
+   "The soldiers set up a bivouac.",
+   "The climbers made a bivouac on a narrow ledge for the night.",
+   "After an {arduous} climb, the team spent a freezing night in a makeshift bivouac, too {lethargic} even to cook."
+  ],
+  "sbn": [
+   "সৈন্যরা একটি অস্থায়ী শিবির (bivouac) গাড়ল।",
+   "পর্বতারোহীরা রাতের জন্য সরু একটা পাথরের কার্নিশে অস্থায়ী ছাউনি (bivouac) বানাল।",
+   "কষ্টসাধ্য আরোহণের পর দলটি জোড়াতালির এক অস্থায়ী শিবিরে (bivouac) হিমশীতল রাত কাটাল, এতটাই অবসন্ন ছিল যে রান্না করারও শক্তি ছিল না।"
+  ],
+  "tip": "Say BIV-oo-ak. Climbers carry a ‘bivy bag’ for a bivouac — a rough night camp under the open sky."
+ },
+ {
+  "id": "blanch",
+  "word": "Blanch",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to turn pale from shock or fear; to make white; (cooking) to dip briefly in boiling water",
+  "bn": "ফ্যাকাশে হয়ে যাওয়া; সাদা করা; ফুটন্ত পানিতে হালকা সেদ্ধ করা",
+  "s": [
+   "He blanched when he saw the bill.",
+   "Blanch the almonds in boiling water to loosen their skins.",
+   "Even the {imperturbable} detective blanched at the {ghastly} scene."
+  ],
+  "sbn": [
+   "বিলটা দেখে তার মুখ ফ্যাকাশে হয়ে গেল (blanched)।",
+   "বাদামের খোসা আলগা করতে সেগুলো ফুটন্ত পানিতে অল্পক্ষণ ডুবিয়ে নাও (blanch)।",
+   "কখনো বিচলিত না হওয়া গোয়েন্দাও বীভৎস দৃশ্যটি দেখে ফ্যাকাশে হয়ে গেলেন (blanched)।"
+  ],
+  "tip": "French blanc ‘white’: to blanch is to go white."
+ },
+ {
+  "id": "bland",
+  "word": "Bland",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "lacking strong flavor or interest; dull; mild",
+  "bn": "স্বাদহীন; নিরস; একঘেয়ে",
+  "s": [
+   "The soup was bland.",
+   "The doctor told him to eat bland food until his stomach healed.",
+   "The politician's bland speech, full of {hackneyed} phrases, failed to {galvanize} the crowd."
+  ],
+  "sbn": [
+   "স্যুপটা স্বাদহীন (bland) ছিল।",
+   "পেট সেরে না ওঠা পর্যন্ত ডাক্তার তাকে মশলাহীন হালকা (bland) খাবার খেতে বললেন।",
+   "জীর্ণ বুলিতে ভরা রাজনীতিবিদের নিরস (bland) ভাষণ জনতাকে চাঙ্গা করতে ব্যর্থ হল।"
+  ],
+  "tip": "Think ‘bland = blah’: no spice, no excitement."
+ },
+ {
+  "id": "blandishment",
+  "word": "Blandishment",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "flattering or coaxing words or actions used to persuade someone",
+  "bn": "তোষামোদ; চাটুকারিতা; মিষ্টি কথায় ভোলানো",
+  "s": [
+   "She ignored his blandishments.",
+   "Despite the salesman's blandishments, we did not buy the car.",
+   "The {sycophant}'s blandishments failed to {cajole} the shrewd minister into signing the deal."
+  ],
+  "sbn": [
+   "সে তার তোষামোদে (blandishments) কান দিল না।",
+   "বিক্রেতার মিষ্টি কথায় ভোলানোর চেষ্টা (blandishments) সত্ত্বেও আমরা গাড়িটা কিনলাম না।",
+   "চাটুকারের তোষামোদ (blandishments) বিচক্ষণ মন্ত্রীকে ভুলিয়ে-ভালিয়ে চুক্তিতে সই করাতে পারল না।"
+  ],
+  "tip": "Latin blandus ‘smooth, flattering’: blandishments are smooth, sweet words meant to win you over."
+ },
+ {
+  "id": "blasphemy",
+  "word": "Blasphemy",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "speech or action that shows disrespect for God or sacred things",
+  "bn": "ঈশ্বরনিন্দা; ধর্মদ্রোহিতা; পবিত্র জিনিসের অবমাননা",
+  "s": [
+   "In the past, blasphemy was a crime.",
+   "Some villagers considered his joke about the temple to be blasphemy.",
+   "To the {devout} elders, the young artist's painting was pure blasphemy, a {sacrilege} that had to be removed at once."
+  ],
+  "sbn": [
+   "অতীতে ঈশ্বরনিন্দা (blasphemy) ছিল অপরাধ।",
+   "কিছু গ্রামবাসী মন্দির নিয়ে তার কৌতুককে ধর্মের অবমাননা (blasphemy) মনে করল।",
+   "ধর্মপ্রাণ প্রবীণদের কাছে তরুণ শিল্পীর ছবিটি ছিল নিখাদ ধর্মদ্রোহিতা (blasphemy), পবিত্রতার এমন অবমাননা যা এখনই সরিয়ে ফেলা দরকার।"
+  ],
+  "tip": "Greek blasphēmia ‘evil speaking, slander’: blasphemy is speaking badly of what is holy."
+ },
+ {
+  "id": "blatant",
+  "word": "Blatant",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "very obvious and shameless (usually about something bad)",
+  "bn": "নির্লজ্জ; প্রকাশ্য; সুস্পষ্ট",
+  "s": [
+   "That was a blatant lie.",
+   "The referee ignored a blatant foul right in front of him.",
+   "The minister's blatant {nepotism}, giving top jobs to his relatives, drew {censure} even from his own party."
+  ],
+  "sbn": [
+   "ওটা ছিল নির্লজ্জ (blatant) মিথ্যা।",
+   "রেফারি ঠিক তার সামনে ঘটা একটা স্পষ্ট (blatant) ফাউল উপেক্ষা করলেন।",
+   "আত্মীয়দের শীর্ষ পদে বসিয়ে মন্ত্রীর নির্লজ্জ (blatant) স্বজনপ্রীতি তাঁর নিজের দলেরও তিরস্কার কুড়াল।"
+  ],
+  "tip": "Memory trick: blatant sounds like ‘blaring’ — so loud and obvious no one can miss it."
+ },
+ {
+  "id": "bliss",
+  "word": "Bliss",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "perfect happiness; great joy",
+  "bn": "পরম সুখ; পরমানন্দ; আনন্দ",
+  "s": [
+   "A day at the beach is pure bliss.",
+   "After weeks of exams, sleeping late felt like bliss.",
+   "The newlyweds' {halcyon} first months of bliss gave way to {mundane} arguments about money."
+  ],
+  "sbn": [
+   "সমুদ্রসৈকতে একটা দিন কাটানো মানে পরম সুখ (bliss)।",
+   "কয়েক সপ্তাহ পরীক্ষার পর দেরি করে ঘুমানোটা পরমানন্দের (bliss) মতো লাগল।",
+   "নবদম্পতির শান্তিময় প্রথম কয়েক মাসের পরম সুখ (bliss) একসময় টাকাপয়সা নিয়ে সাধারণ ঝগড়াঝাঁটিতে গড়াল।"
+  ],
+  "tip": "Old English blīths came from blīthe ‘happy’, so bliss and blithe are cousins: both are about joy."
+ },
+ {
+  "id": "blithe",
+  "word": "Blithe",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "cheerful and carefree; casually unconcerned (showing too little care)",
+  "bn": "হাসিখুশি; নিশ্চিন্ত; বেপরোয়া উদাসীন",
+  "s": [
+   "She has a blithe spirit.",
+   "He showed a blithe disregard for the rules and parked in the fire lane.",
+   "The CEO's blithe dismissal of safety warnings seemed {cavalier}, and critics called his optimism {fatuous}."
+  ],
+  "sbn": [
+   "তার মনটা হাসিখুশি আর নিশ্চিন্ত (blithe)।",
+   "সে নিয়মকানুনের প্রতি বেপরোয়া উদাসীনতা (blithe) দেখিয়ে ফায়ার লেনে গাড়ি রাখল।",
+   "নিরাপত্তা সতর্কতাকে সিইওর নির্বিকারভাবে উড়িয়ে দেওয়াটা (blithe) দায়িত্বজ্ঞানহীন মনে হল, আর সমালোচকেরা তাঁর আশাবাদকে নির্বোধ বললেন।"
+  ],
+  "tip": "Old English blīthe ‘joyful’: a blithe person is so carefree they may not even notice danger."
+ },
+ {
+  "id": "bluster",
+  "word": "Bluster",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to talk loudly and aggressively but with little real effect; (of wind) to blow in strong gusts",
+  "bn": "হম্বিতম্বি করা; গলাবাজি করা; ঝোড়ো হাওয়া বওয়া",
+  "s": [
+   "He blustered, but nobody was scared.",
+   "The manager blustered about firing everyone, then calmed down by lunch.",
+   "The dictator blustered about crushing his enemies, but analysts saw his {bombastic} threats as mere {bravado}."
+  ],
+  "sbn": [
+   "সে হম্বিতম্বি করল (blustered), কিন্তু কেউ ভয় পেল না।",
+   "ম্যানেজার সবাইকে চাকরিচ্যুত করার হুমকি দিয়ে গলাবাজি করলেন (blustered), তারপর দুপুরের মধ্যেই শান্ত হয়ে গেলেন।",
+   "স্বৈরশাসক শত্রুদের গুঁড়িয়ে দেওয়ার কথা বলে হম্বিতম্বি করলেন (blustered), কিন্তু বিশ্লেষকেরা তাঁর আড়ম্বরপূর্ণ হুমকিগুলোকে নিছক ফাঁকা সাহস দেখানো বলে ধরলেন।"
+  ],
+  "tip": "Bluster sounds like ‘blast’ + ‘blow’: lots of loud wind, little real force."
+ },
+ {
+  "id": "bon-vivant",
+  "word": "Bon vivant",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a person who enjoys good food, drink, and a lively, luxurious social life",
+  "bn": "ভোজনরসিক ও আমুদে মানুষ; বিলাসী জীবনপ্রেমী",
+  "s": [
+   "My uncle is a true bon vivant.",
+   "A famous bon vivant, he knew the best restaurants in every city he visited.",
+   "The {gregarious} bon vivant threw {lavish} dinners every week, never worrying about the bill."
+  ],
+  "sbn": [
+   "আমার চাচা একজন সত্যিকারের ভোজনরসিক আমুদে মানুষ (bon vivant)।",
+   "বিখ্যাত জীবনরসিক (bon vivant) হিসেবে তিনি যে শহরেই যেতেন, সেখানকার সেরা রেস্তোরাঁগুলো চিনতেন।",
+   "মিশুক ওই বিলাসী জীবনপ্রেমী (bon vivant) প্রতি সপ্তাহে জমকালো নৈশভোজের আয়োজন করতেন, বিল নিয়ে কখনো মাথা ঘামাতেন না।"
+  ],
+  "tip": "French bon ‘good’ + vivant ‘living’: a bon vivant lives the good life."
+ },
+ {
+  "id": "bona-fide",
+  "word": "Bona fide",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "genuine and real; done honestly, in good faith",
+  "bn": "খাঁটি; প্রকৃত; সরল বিশ্বাসে করা",
+  "s": [
+   "Is this a bona fide diamond?",
+   "Only bona fide students with valid ID cards may use the library.",
+   "Experts {corroborated} that the letter was a bona fide historical document, not a clever {fabrication}."
+  ],
+  "sbn": [
+   "এটা কি খাঁটি (bona fide) হীরা?",
+   "বৈধ আইডি কার্ডধারী প্রকৃত (bona fide) শিক্ষার্থীরাই কেবল লাইব্রেরি ব্যবহার করতে পারবে।",
+   "বিশেষজ্ঞরা নিশ্চিত করলেন যে চিঠিটি একটি খাঁটি (bona fide) ঐতিহাসিক দলিল, চতুর কোনো জালিয়াতি নয়।"
+  ],
+  "tip": "Latin bona fide ‘in good faith’: a bona fide offer is honest and real."
+ },
+ {
+  "id": "boon",
+  "word": "Boon",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "something helpful or beneficial; a blessing",
+  "bn": "আশীর্বাদ; বর; উপকার",
+  "s": [
+   "The new bridge is a boon to the village.",
+   "Online classes were a boon for students who lived far from the city.",
+   "Cheap solar panels have been a boon to rural families, though skeptics once {derided} the technology as {quixotic}."
+  ],
+  "sbn": [
+   "নতুন সেতুটা গ্রামের জন্য আশীর্বাদ (boon)।",
+   "শহর থেকে দূরে থাকা শিক্ষার্থীদের জন্য অনলাইন ক্লাস ছিল বড় উপকার (boon)।",
+   "সস্তা সোলার প্যানেল গ্রামের পরিবারগুলোর জন্য আশীর্বাদ (boon) হয়ে এসেছে, যদিও সন্দেহবাদীরা একসময় এই প্রযুক্তিকে অবাস্তব কল্পনা বলে উপহাস করতেন।"
+  ],
+  "tip": "Opposite of bane: a boon blesses, a bane curses. Old Norse bón meant ‘a request, prayer’."
+ },
+ {
+  "id": "boor",
+  "word": "Boor",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a rude, ill-mannered person",
+  "bn": "অভদ্র লোক; গোঁয়ার; অমার্জিত মানুষ",
+  "s": [
+   "Only a boor would talk during the movie.",
+   "The boor at the next table shouted at the waiter and threw his napkin on the floor.",
+   "His {crass} jokes and {insolent} manner marked him as a boor, despite his expensive suit."
+  ],
+  "sbn": [
+   "শুধু একজন অভদ্র লোকই (boor) সিনেমা চলার সময় কথা বলবে।",
+   "পাশের টেবিলের অভদ্র লোকটা (boor) ওয়েটারকে ধমকাল আর ন্যাপকিন মেঝেতে ছুড়ে ফেলল।",
+   "দামি স্যুট পরা থাকলেও তার স্থূল রসিকতা আর ঔদ্ধত্যপূর্ণ আচরণ বুঝিয়ে দিল যে সে একজন অমার্জিত মানুষ (boor)।"
+  ],
+  "tip": "Dutch boer ‘farmer, peasant’ — snobs once used it for anyone they thought rough-mannered."
+ },
+ {
+  "id": "booty",
+  "word": "Booty",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "valuable goods taken by force, especially by soldiers or thieves; loot",
+  "bn": "লুটের মাল; লুণ্ঠিত সম্পদ",
+  "s": [
+   "The pirates hid their booty.",
+   "After the battle, the soldiers carried off gold and jewels as booty.",
+   "The invaders {plundered} the temple, and the booty was {apportioned} among the generals."
+  ],
+  "sbn": [
+   "জলদস্যুরা তাদের লুটের মাল (booty) লুকিয়ে রাখল।",
+   "যুদ্ধের পর সৈন্যরা লুটের মাল (booty) হিসেবে সোনা আর রত্ন নিয়ে গেল।",
+   "আক্রমণকারীরা মন্দিরটি লুট করল, আর লুণ্ঠিত সম্পদ (booty) সেনাপতিদের মধ্যে ভাগ করে দেওয়া হল।"
+  ],
+  "tip": "Memory trick: picture pirates stuffing their boots with booty — the loot they grabbed."
+ },
+ {
+  "id": "botch",
+  "word": "Botch",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to do something badly; to spoil it through clumsiness",
+  "bn": "গুবলেট করা; তালগোল পাকানো; নষ্ট করে ফেলা",
+  "s": [
+   "I botched the exam.",
+   "The plumber botched the repair, and water leaked all over the kitchen.",
+   "The {inept} contractor botched the renovation, and the {dilapidated} house became even worse."
+  ],
+  "sbn": [
+   "আমি পরীক্ষায় গুবলেট করে ফেললাম (botched)।",
+   "প্লাম্বার মেরামতের কাজটা তালগোল পাকিয়ে ফেলল (botched), আর পুরো রান্নাঘরে পানি চুইয়ে পড়ল।",
+   "অদক্ষ ঠিকাদার সংস্কারের কাজটা নষ্ট করে ফেলল (botched), ফলে জরাজীর্ণ বাড়িটার অবস্থা আরও খারাপ হল।"
+  ],
+  "tip": "Memory trick: botch sounds like ‘blotch’ — the messy stain you leave when you botch a job."
+ },
+ {
+  "id": "bourgeois",
+  "word": "Bourgeois",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "typical of the middle class, especially caring too much about money, comfort, and respectability",
+  "bn": "মধ্যবিত্তসুলভ; বুর্জোয়া",
+  "s": [
+   "He mocked their bourgeois lifestyle.",
+   "The young poet rejected his parents' bourgeois values and moved to a tiny room downtown.",
+   "Rebellious artists {disdained} bourgeois comfort, yet many of them later embraced the very {materialistic} life they had mocked."
+  ],
+  "sbn": [
+   "সে তাদের মধ্যবিত্তসুলভ (bourgeois) জীবনযাপন নিয়ে ঠাট্টা করল।",
+   "তরুণ কবি বাবা-মায়ের বুর্জোয়া (bourgeois) মূল্যবোধ প্রত্যাখ্যান করে শহরের এক ছোট্ট ঘরে উঠে গেলেন।",
+   "বিদ্রোহী শিল্পীরা বুর্জোয়া (bourgeois) আরাম-আয়েশকে তুচ্ছ করতেন, অথচ পরে তাঁদের অনেকেই সেই বস্তুবাদী জীবনই গ্রহণ করলেন যা নিয়ে তাঁরা ঠাট্টা করতেন।"
+  ],
+  "tip": "French bourg ‘town’: the bourgeois were town-dwellers — the merchant middle class."
+ },
+ {
+  "id": "bovine",
+  "word": "Bovine",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "relating to cows or cattle; slow, dull, and placid like a cow",
+  "bn": "গরু-সংক্রান্ত; গরুর মতো জড় ও ভাবলেশহীন",
+  "s": [
+   "Milk is a bovine product.",
+   "The bored students stared at the board with bovine expressions.",
+   "The audience's bovine {apathy} {exasperated} the speaker, who had hoped for a lively debate."
+  ],
+  "sbn": [
+   "দুধ গরু থেকে পাওয়া (bovine) একটি পণ্য।",
+   "বিরক্ত ছাত্ররা গরুর মতো ভাবলেশহীন (bovine) মুখে বোর্ডের দিকে তাকিয়ে ছিল।",
+   "শ্রোতাদের গরুর মতো জড় (bovine) উদাসীনতা বক্তাকে অতিষ্ঠ করে তুলল, তিনি একটি প্রাণবন্ত বিতর্কের আশা করেছিলেন।"
+  ],
+  "tip": "Latin bos, bovis ‘ox, cow’: bovine = cow-like."
+ },
+ {
+  "id": "bracing",
+  "word": "Bracing",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "fresh and invigorating; refreshing",
+  "bn": "চাঙ্গা করা; সতেজকারী; উদ্দীপক",
+  "s": [
+   "We took a bracing walk by the sea.",
+   "The cold morning air was bracing after a night in the stuffy train.",
+   "After months of {torpor}, the coach's bracing speech {galvanized} the team."
+  ],
+  "sbn": [
+   "আমরা সমুদ্রের ধারে এক চাঙ্গা করা (bracing) হাঁটা দিলাম।",
+   "গুমোট ট্রেনে রাত কাটানোর পর সকালের ঠান্ডা বাতাস ছিল দারুণ সতেজকারী (bracing)।",
+   "কয়েক মাসের ঝিমুনির পর কোচের উদ্দীপক (bracing) বক্তৃতা দলটিকে চাঙ্গা করে তুলল।"
+  ],
+  "tip": "To brace is to tighten up and get ready; bracing air makes you sit up, alert and refreshed."
+ },
+ {
+  "id": "brandish",
+  "word": "Brandish",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to wave something, especially a weapon, in a threatening or showy way",
+  "bn": "উঁচিয়ে দেখানো; আস্ফালন করা; দোলানো",
+  "s": [
+   "The robber brandished a knife.",
+   "The fans brandished flags and banners as the team entered the stadium.",
+   "Brandishing a stack of papers, the senator {harangued} his opponents, though his evidence proved {tenuous}."
+  ],
+  "sbn": [
+   "ডাকাত একটা ছুরি উঁচিয়ে দেখাল (brandished)।",
+   "দল স্টেডিয়ামে ঢুকতেই সমর্থকেরা পতাকা আর ব্যানার দোলাতে লাগল (brandished)।",
+   "একগাদা কাগজ নাড়াতে নাড়াতে (brandishing) সিনেটর প্রতিপক্ষদের উদ্দেশে তীব্র বক্তৃতা দিলেন, যদিও তাঁর প্রমাণ দুর্বল বলে প্রমাণিত হল।"
+  ],
+  "tip": "Old French brand ‘sword’: to brandish is to wave a sword around."
+ },
+ {
+  "id": "bravado",
+  "word": "Bravado",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a show of boldness meant to impress others, often hiding fear",
+  "bn": "ফাঁকা সাহস; বাহাদুরি; লোকদেখানো সাহস",
+  "s": [
+   "His bravado hid his fear.",
+   "With teenage bravado, he jumped off the high rock into the river.",
+   "Beneath the boxer's bravado lay deep {trepidation}, which he {dissembled} with loud boasts."
+  ],
+  "sbn": [
+   "তার ফাঁকা সাহস (bravado) ভয়টাকে ঢেকে রেখেছিল।",
+   "কিশোরসুলভ বাহাদুরি (bravado) দেখিয়ে সে উঁচু পাথর থেকে নদীতে লাফ দিল।",
+   "বক্সারের লোকদেখানো সাহসের (bravado) নিচে ছিল গভীর আতঙ্ক, যা সে জোরালো বড়াই দিয়ে লুকিয়ে রাখত।"
+  ],
+  "tip": "From Spanish bravo ‘brave’ — bravado is fake bravery put on for show."
+ },
+ {
+  "id": "brawn",
+  "word": "Brawn",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "physical strength; muscle power",
+  "bn": "শারীরিক শক্তি; পেশিশক্তি",
+  "s": [
+   "The job needs brains, not brawn.",
+   "The farmer's brawn came from years of carrying heavy sacks of rice.",
+   "The team relied on brawn rather than strategy, a {myopic} approach that collapsed against more {astute} opponents."
+  ],
+  "sbn": [
+   "কাজটার জন্য পেশিশক্তি (brawn) নয়, বুদ্ধি দরকার।",
+   "বছরের পর বছর ভারী চালের বস্তা বয়ে কৃষকের এই শারীরিক শক্তি (brawn) তৈরি হয়েছিল।",
+   "দলটি কৌশলের বদলে পেশিশক্তির (brawn) ওপর নির্ভর করত, এক অদূরদর্শী পদ্ধতি যা বেশি বিচক্ষণ প্রতিপক্ষের সামনে ভেঙে পড়ল।"
+  ],
+  "tip": "‘Brains vs. brawn’: brawn (rhymes with ‘lawn’) is muscle power. Brawny = muscular."
+ },
+ {
+  "id": "brazen",
+  "word": "Brazen",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "bold and shameless",
+  "bn": "নির্লজ্জ; বেহায়া; বেপরোয়া",
+  "s": [
+   "That was a brazen lie.",
+   "In a brazen robbery, thieves stole a car in broad daylight outside the police station.",
+   "With brazen {effrontery}, the official denied taking the bribe even after the video was released."
+  ],
+  "sbn": [
+   "ওটা ছিল নির্লজ্জ (brazen) মিথ্যা।",
+   "এক বেপরোয়া (brazen) ডাকাতিতে চোরেরা দিনদুপুরে থানার সামনে থেকেই একটা গাড়ি চুরি করল।",
+   "ভিডিও প্রকাশ হওয়ার পরও কর্মকর্তা নির্লজ্জ (brazen) ধৃষ্টতায় ঘুষ নেওয়ার কথা অস্বীকার করলেন।"
+  ],
+  "tip": "Brazen first meant ‘made of brass’: a brazen person has a face as hard and shiny as brass."
+ },
+ {
+  "id": "breach",
+  "word": "Breach",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the breaking of a rule, law, or agreement; a gap or opening, as in a wall",
+  "bn": "লঙ্ঘন; ভঙ্গ; ফাটল",
+  "s": [
+   "That is a breach of the rules.",
+   "The flood water poured through a breach in the river wall.",
+   "The company's data breach exposed millions of users, and its {perfunctory} apology did little to {mollify} angry customers."
+  ],
+  "sbn": [
+   "এটা নিয়মের লঙ্ঘন (breach)।",
+   "নদীর বাঁধের একটা ফাটল (breach) দিয়ে বন্যার পানি হু হু করে ঢুকল।",
+   "কোম্পানিটির তথ্য ফাঁসের ঘটনা (breach) লাখ লাখ ব্যবহারকারীকে ঝুঁকিতে ফেলল, আর তাদের দায়সারা ক্ষমাপ্রার্থনা ক্ষুব্ধ গ্রাহকদের শান্ত করতে খুব একটা কাজে এল না।"
+  ],
+  "tip": "Related to ‘break’: a breach is a break in a wall, a law, or a promise."
+ },
+ {
+  "id": "brevity",
+  "word": "Brevity",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "shortness of time; the use of few words",
+  "bn": "সংক্ষিপ্ততা; স্বল্পস্থায়িত্ব",
+  "s": [
+   "I liked the brevity of his speech.",
+   "Because of the brevity of the visit, we only saw two museums.",
+   "The editor prized brevity and cut every {superfluous} word from the {verbose} draft."
+  ],
+  "sbn": [
+   "তার বক্তৃতার সংক্ষিপ্ততা (brevity) আমার ভালো লেগেছে।",
+   "সফরটি স্বল্পস্থায়ী (brevity) হওয়ায় আমরা মাত্র দুটো জাদুঘর দেখতে পেলাম।",
+   "সম্পাদক সংক্ষিপ্ততাকে (brevity) খুব মূল্য দিতেন, তাই তিনি বাগাড়ম্বরপূর্ণ খসড়া থেকে প্রতিটি অপ্রয়োজনীয় শব্দ কেটে দিলেন।"
+  ],
+  "tip": "Latin brevis ‘short’ (also in ‘brief’ and ‘abbreviate’). “Brevity is the soul of wit.”"
+ },
+ {
+  "id": "brink",
+  "word": "Brink",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the edge of a steep place; the point just before something (often bad) happens",
+  "bn": "কিনারা; প্রান্ত; দ্বারপ্রান্ত",
+  "s": [
+   "The company is on the brink of collapse.",
+   "They stood at the brink of the cliff and looked down at the sea.",
+   "The two nations were on the brink of war until a skilled {emissary} {mediated} a ceasefire."
+  ],
+  "sbn": [
+   "কোম্পানিটি পতনের দ্বারপ্রান্তে (brink)।",
+   "তারা পাহাড়ের কিনারায় (brink) দাঁড়িয়ে নিচের সমুদ্রের দিকে তাকাল।",
+   "এক দক্ষ দূত মধ্যস্থতা করে যুদ্ধবিরতি না আনা পর্যন্ত দুই দেশ যুদ্ধের দ্বারপ্রান্তে (brink) ছিল।"
+  ],
+  "tip": "Picture standing on the brink of a cliff: one more step and you fall. ‘Brinkmanship’ = pushing to that edge."
+ },
+ {
+  "id": "bristle",
+  "word": "Bristle",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to react with anger or offense; (of hair or fur) to stand up stiffly",
+  "bn": "রেগে ওঠা; ফুঁসে ওঠা; লোম খাড়া হয়ে যাওয়া",
+  "s": [
+   "She bristled at his rude remark.",
+   "The cat's fur bristled when the strange dog came near.",
+   "The proud scholar bristled at the reviewer's {condescending} tone and wrote a sharp {rebuttal}."
+  ],
+  "sbn": [
+   "তার অভদ্র মন্তব্যে সে রেগে উঠল (bristled)।",
+   "অচেনা কুকুরটা কাছে আসতেই বিড়ালটার লোম খাড়া হয়ে গেল (bristled)।",
+   "অহংকারী পণ্ডিত সমালোচকের তাচ্ছিল্যপূর্ণ সুরে ফুঁসে উঠলেন (bristled) এবং একটি ধারালো খণ্ডন লিখলেন।"
+  ],
+  "tip": "Bristles are stiff hairs, like a brush's; when you bristle, your ‘hair stands up’ in anger."
+ },
+ {
+  "id": "broach",
+  "word": "Broach",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to bring up a subject, especially a sensitive one, for discussion",
+  "bn": "প্রসঙ্গ তোলা; কথা পাড়া",
+  "s": [
+   "She broached the topic of money.",
+   "He was nervous about how to broach the subject of moving abroad with his parents.",
+   "The {diffident} employee waited weeks before she dared to broach the issue of her {paltry} salary."
+  ],
+  "sbn": [
+   "সে টাকাপয়সার প্রসঙ্গ তুলল (broached)।",
+   "বিদেশে চলে যাওয়ার কথা বাবা-মায়ের কাছে কীভাবে পাড়বে (broach), তা নিয়ে সে চিন্তিত ছিল।",
+   "আত্মবিশ্বাসহীন কর্মীটি তার নগণ্য বেতনের বিষয়টি তোলার (broach) সাহস জোগাতে কয়েক সপ্তাহ অপেক্ষা করল।"
+  ],
+  "tip": "To broach a barrel was to pierce it and open it; to broach a topic is to open it up. Not ‘brooch’ (a pin)."
+ },
+ {
+  "id": "bromide",
+  "word": "Bromide",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a dull, overused remark meant to comfort or calm; a cliché",
+  "bn": "গৎবাঁধা বুলি; জীর্ণ সান্ত্বনাবাক্য",
+  "s": [
+   "Spare me your bromides.",
+   "The speaker offered tired bromides like ‘follow your dreams’ and ‘never give up.’",
+   "Instead of a concrete plan, the candidate offered {hackneyed} bromides, {exasperating} voters who wanted real answers."
+  ],
+  "sbn": [
+   "তোমার গৎবাঁধা বুলি (bromides) শুনতে চাই না।",
+   "বক্তা ‘স্বপ্নের পেছনে ছোটো’ আর ‘কখনো হাল ছেড়ো না’-র মতো জীর্ণ বুলি (bromides) আওড়ালেন।",
+   "সুনির্দিষ্ট পরিকল্পনার বদলে প্রার্থী জীর্ণ গৎবাঁধা বুলি (bromides) আওড়ালেন, যা আসল উত্তর চাওয়া ভোটারদের অতিষ্ঠ করে তুলল।"
+  ],
+  "tip": "Bromide was once used as a sedative; a bromide remark is meant to calm you but just puts you to sleep."
+ },
+ {
+  "id": "brouhaha",
+  "word": "Brouhaha",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a noisy fuss or uproar, often over something minor",
+  "bn": "হৈচৈ; শোরগোল; তুলকালাম",
+  "s": [
+   "What a brouhaha over nothing!",
+   "The singer's comment caused a brouhaha on social media.",
+   "The brouhaha over the minister's minor {gaffe} soon {subsided}, and everyone forgot the incident."
+  ],
+  "sbn": [
+   "সামান্য ব্যাপারে কী হৈচৈ (brouhaha)!",
+   "গায়িকার মন্তব্য সামাজিক মাধ্যমে তুলকালাম (brouhaha) বাধিয়ে দিল।",
+   "মন্ত্রীর ছোট্ট বেফাঁস কথাটি নিয়ে শোরগোল (brouhaha) শিগগিরই থিতিয়ে গেল, আর সবাই ঘটনাটা ভুলে গেল।"
+  ],
+  "tip": "Say it out loud: ‘BROO-ha-ha’ sounds like a noisy crowd laughing and shouting."
+ },
+ {
+  "id": "brusque",
+  "word": "Brusque",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "abrupt and blunt in speech or manner; curt",
+  "bn": "রূঢ়; কাটখোট্টা; রুক্ষ",
+  "s": [
+   "The clerk gave a brusque reply.",
+   "The doctor's brusque manner upset patients who wanted more explanation.",
+   "Though his {laconic}, brusque replies seemed rude, colleagues knew he was simply shy and {reticent}."
+  ],
+  "sbn": [
+   "কেরানি একটা রূঢ় (brusque) উত্তর দিল।",
+   "ডাক্তারের কাটখোট্টা (brusque) আচরণ সেইসব রোগীর মন খারাপ করিয়ে দিত যারা আরও ব্যাখ্যা চাইত।",
+   "তার স্বল্পভাষী, রুক্ষ (brusque) উত্তরগুলো অভদ্র মনে হলেও সহকর্মীরা জানতেন যে সে আসলে লাজুক আর চাপা স্বভাবের।"
+  ],
+  "tip": "Memory trick: brusque sounds like ‘brush’ — a brusque person brushes you off quickly."
+ },
+ {
+  "id": "bucolic",
+  "word": "Bucolic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "relating to the countryside and rural life; pleasantly rural",
+  "bn": "গ্রাম্য; পল্লী; রাখালিয়া",
+  "s": [
+   "They live in a bucolic village.",
+   "The painting shows a bucolic scene of cows grazing by a river.",
+   "Tired of the city's {cacophony}, she retreated to a bucolic cottage where the {idyllic} silence calmed her."
+  ],
+  "sbn": [
+   "তারা ছবির মতো এক গ্রাম্য (bucolic) গ্রামে থাকে।",
+   "ছবিটিতে নদীর ধারে গরু চরার এক পল্লী-দৃশ্য (bucolic) আঁকা আছে।",
+   "শহরের কর্কশ কোলাহলে ক্লান্ত হয়ে সে এক গ্রাম্য (bucolic) কুটিরে চলে গেল, যেখানে স্বপ্নের মতো নীরবতা তাকে শান্ত করল।"
+  ],
+  "tip": "Greek boukolos ‘cowherd’ (bous ‘cow’): bucolic = the cowherd's country life."
+ },
+ {
+  "id": "buffoon",
+  "word": "Buffoon",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a ridiculous but amusing person; a clown or fool",
+  "bn": "ভাঁড়; সং; বোকা লোক",
+  "s": [
+   "He acted like a buffoon at the party.",
+   "The comedian played a buffoon who kept tripping over his own feet.",
+   "Critics mocked the minister as a buffoon, but his {ludicrous} public image {belied} a sharp political mind."
+  ],
+  "sbn": [
+   "পার্টিতে সে ভাঁড়ের (buffoon) মতো আচরণ করল।",
+   "কৌতুকাভিনেতা এমন এক বোকা ভাঁড়ের (buffoon) চরিত্রে অভিনয় করলেন যে বারবার নিজের পায়েই হোঁচট খায়।",
+   "সমালোচকেরা মন্ত্রীকে ভাঁড় (buffoon) বলে ঠাট্টা করতেন, কিন্তু তাঁর হাস্যকর ভাবমূর্তি তাঁর তীক্ষ্ণ রাজনৈতিক বুদ্ধিকে আড়াল করে রাখত।"
+  ],
+  "tip": "Italian buffone ‘jester’ (from buffa ‘joke’): a buffoon is a clown."
+ },
+ {
+  "id": "bulwark",
+  "word": "Bulwark",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a strong defense or protection; a defensive wall",
+  "bn": "রক্ষাকবচ; প্রাচীর; প্রতিরক্ষা",
+  "s": [
+   "The wall was a bulwark against floods.",
+   "A free press is a bulwark against corruption.",
+   "The constitution serves as a bulwark against {autocratic} rule, {curbing} any leader who tries to seize total power."
+  ],
+  "sbn": [
+   "দেয়ালটা ছিল বন্যার বিরুদ্ধে রক্ষাকবচ (bulwark)।",
+   "স্বাধীন সংবাদমাধ্যম দুর্নীতির বিরুদ্ধে এক প্রাচীর (bulwark)।",
+   "সংবিধান স্বৈরশাসনের বিরুদ্ধে রক্ষাকবচ (bulwark) হিসেবে কাজ করে, পূর্ণ ক্ষমতা দখল করতে চাওয়া যেকোনো নেতার লাগাম টেনে ধরে।"
+  ],
+  "tip": "Memory trick: picture a bulwark as a ‘bull wall’ — strong enough to stop a charging bull."
+ },
+ {
+  "id": "bureaucracy",
+  "word": "Bureaucracy",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a system of government or management run by many officials with complicated rules; red tape",
+  "bn": "আমলাতন্ত্র; লাল ফিতার দৌরাত্ম্য",
+  "s": [
+   "The bureaucracy slowed everything down.",
+   "Getting a passport meant dealing with a huge bureaucracy of forms and offices.",
+   "Reformers vowed to {curtail} the bloated bureaucracy, whose {labyrinthine} rules frustrated ordinary citizens."
+  ],
+  "sbn": [
+   "আমলাতন্ত্র (bureaucracy) সবকিছু ধীর করে দিল।",
+   "পাসপোর্ট পেতে ফরম আর অফিসের এক বিশাল আমলাতান্ত্রিক জট (bureaucracy) সামলাতে হল।",
+   "সংস্কারকেরা ফুলেফেঁপে ওঠা আমলাতন্ত্র (bureaucracy) কাটছাঁট করার প্রতিজ্ঞা করলেন, যার গোলকধাঁধার মতো নিয়মকানুন সাধারণ নাগরিকদের হয়রান করত।"
+  ],
+  "tip": "French bureau ‘desk, office’ + Greek kratos ‘power’: rule by offices and desks."
+ },
+ {
+  "id": "burlesque",
+  "word": "Burlesque",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a mocking imitation that makes something serious look ridiculous; a parody (also a kind of comic variety show)",
+  "bn": "ব্যঙ্গাত্মক অনুকরণ; প্রহসন; ব্যঙ্গনাট্য",
+  "s": [
+   "The play was a burlesque of royal life.",
+   "Students staged a burlesque of their teachers' strict rules.",
+   "The film is a clever burlesque of spy movies, {lampooning} their {grandiose} villains."
+  ],
+  "sbn": [
+   "নাটকটি ছিল রাজকীয় জীবনের এক ব্যঙ্গাত্মক অনুকরণ (burlesque)।",
+   "ছাত্ররা শিক্ষকদের কড়া নিয়ম নিয়ে এক প্রহসন (burlesque) মঞ্চস্থ করল।",
+   "ছবিটি গুপ্তচর সিনেমার এক চমৎকার ব্যঙ্গনাট্য (burlesque), যা সেগুলোর বড়াইসর্বস্ব খলনায়কদের নিয়ে তীব্র ঠাট্টা করে।"
+  ],
+  "tip": "Italian burla ‘joke, mockery’: a burlesque turns serious things into a joke."
+ },
+ {
+  "id": "cabal",
+  "word": "Cabal",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a small secret group that plots, especially to gain political power",
+  "bn": "চক্র; গোপন ষড়যন্ত্রকারী দল",
+  "s": [
+   "A cabal planned to seize power.",
+   "A cabal of officers secretly met at night to plan the coup.",
+   "The {clandestine} cabal used {chicanery} to rig the election."
+  ],
+  "sbn": [
+   "একটা গোপন চক্র (cabal) ক্ষমতা দখলের পরিকল্পনা করল।",
+   "অফিসারদের একটা চক্র (cabal) অভ্যুত্থানের পরিকল্পনা করতে রাতে গোপনে মিলিত হত।",
+   "গোপন ষড়যন্ত্রকারী দলটি (cabal) ধূর্ত প্রতারণার আশ্রয় নিয়ে নির্বাচনে কারচুপি করল।"
+  ],
+  "tip": "Memory trick: a cabal is a secret ‘club’ that plots in whispers behind closed doors."
+ },
+ {
+  "id": "cache",
+  "word": "Cache",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a hidden store of valuable things, such as weapons or food; (computing) stored data for quick access",
+  "bn": "গোপন মজুত; লুকানো ভান্ডার",
+  "s": [
+   "Police found a cache of weapons.",
+   "The squirrel kept a cache of nuts under the old tree.",
+   "Archaeologists unearthed a cache of {archaic} coins, a find that could {substantiate} theories about ancient trade."
+  ],
+  "sbn": [
+   "পুলিশ অস্ত্রের একটা গোপন মজুত (cache) খুঁজে পেল।",
+   "কাঠবিড়ালিটা পুরোনো গাছের নিচে বাদামের একটা লুকানো ভান্ডার (cache) রেখেছিল।",
+   "প্রত্নতাত্ত্বিকেরা প্রাচীন মুদ্রার একটি গোপন ভান্ডার (cache) খুঁড়ে বের করলেন, যা প্রাচীন বাণিজ্য নিয়ে তত্ত্বগুলোকে প্রমাণ দিয়ে সমর্থন করতে পারে।"
+  ],
+  "tip": "French cacher ‘to hide’: a cache is a hiding place. Say it like ‘cash’ — you might hide cash in one!"
+ },
+ {
+  "id": "cacophony",
+  "word": "Cacophony",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a harsh, unpleasant mixture of sounds",
+  "bn": "কর্কশ কোলাহল; বেসুরো আওয়াজ",
+  "s": [
+   "The traffic made a cacophony.",
+   "The cacophony of horns, shouting vendors, and loudspeakers gave me a headache.",
+   "The orchestra's warm-up was a {discordant} cacophony, but once the concert began, the music became {mellifluous}."
+  ],
+  "sbn": [
+   "যানবাহনের শব্দে কর্কশ কোলাহল (cacophony) তৈরি হল।",
+   "হর্ন, ফেরিওয়ালার চিৎকার আর মাইকের বেসুরো আওয়াজে (cacophony) আমার মাথা ধরে গেল।",
+   "অর্কেস্ট্রার প্রস্তুতিপর্ব ছিল এক বেসুরো কর্কশ কোলাহল (cacophony), কিন্তু কনসার্ট শুরু হতেই সুর হয়ে উঠল মধুর আর সাবলীল।"
+  ],
+  "tip": "Greek kakos ‘bad’ + phōnē ‘sound’: cacophony = bad sound. Opposite: euphony."
+ },
+ {
+  "id": "cadence",
+  "word": "Cadence",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the rhythm and rise and fall of a voice, speech, or music",
+  "bn": "ছন্দ; সুরের ওঠানামা; লয়",
+  "s": [
+   "I love the cadence of her voice.",
+   "The soldiers marched to the steady cadence of the drum.",
+   "The poet's {lyrical} lines had a gentle cadence that seemed almost {soporific} when read aloud."
+  ],
+  "sbn": [
+   "তার কণ্ঠস্বরের ছন্দ (cadence) আমার খুব ভালো লাগে।",
+   "ঢোলের স্থির লয়ে (cadence) সৈন্যরা কুচকাওয়াজ করল।",
+   "কবির গীতিময় পঙ্‌ক্তিগুলোর ছিল কোমল এক ছন্দ (cadence), জোরে পড়লে যা প্রায় ঘুমপাড়ানি মনে হত।"
+  ],
+  "tip": "Latin cadere ‘to fall’: cadence is the rise and fall of sound."
+ },
+ {
+  "id": "cajole",
+  "word": "Cajole",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to persuade someone gently, using flattery or sweet talk",
+  "bn": "মিষ্টি কথায় রাজি করানো; ভুলিয়ে-ভালিয়ে রাজি করানো",
+  "s": [
+   "She cajoled her dad into buying ice cream.",
+   "After much cajoling, the shy boy agreed to sing at the party.",
+   "Neither threats nor {blandishments} could cajole the {obdurate} witness into testifying."
+  ],
+  "sbn": [
+   "সে মিষ্টি কথায় বাবাকে আইসক্রিম কিনে দিতে রাজি করাল (cajoled)।",
+   "অনেক ভুলিয়ে-ভালিয়ে অনুরোধের (cajoling) পর লাজুক ছেলেটি পার্টিতে গান গাইতে রাজি হল।",
+   "হুমকি বা তোষামোদ, কোনোটাই অনড় সাক্ষীকে ভুলিয়ে সাক্ষ্য দিতে রাজি করাতে পারল না (cajole)।"
+  ],
+  "tip": "Memory trick: ca-JOLE ≈ coax + jolly — you coax someone with jolly, sweet talk."
+ },
+ {
+  "id": "calamity",
+  "word": "Calamity",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a terrible event that causes great damage or suffering; a disaster",
+  "bn": "বিপর্যয়; দুর্যোগ; মহাবিপদ",
+  "s": [
+   "The flood was a calamity.",
+   "Losing the harvest to drought was a calamity for the farmers.",
+   "Experts warned that the {impending} storm could become a calamity unless officials acted to {mitigate} its effects."
+  ],
+  "sbn": [
+   "বন্যাটা ছিল এক মহাবিপদ (calamity)।",
+   "খরায় ফসল নষ্ট হওয়া কৃষকদের জন্য ছিল এক বিপর্যয় (calamity)।",
+   "বিশেষজ্ঞরা সতর্ক করলেন যে কর্মকর্তারা এর প্রভাব কমাতে ব্যবস্থা না নিলে আসন্ন ঝড়টি একটি দুর্যোগে (calamity) পরিণত হতে পারে।"
+  ],
+  "tip": "Latin calamitas ‘disaster, loss’. Calamitous = disastrous."
+ },
+ {
+  "id": "callous",
+  "word": "Callous",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "cruel and uncaring about other people's feelings or suffering",
+  "bn": "নির্মম; হৃদয়হীন; অনুভূতিহীন",
+  "s": [
+   "His callous remark made her cry.",
+   "The callous landlord evicted the family in the middle of winter.",
+   "The official's callous {indifference} to the flood victims' {plight} sparked public outrage."
+  ],
+  "sbn": [
+   "তার নির্মম (callous) মন্তব্যে মেয়েটি কেঁদে ফেলল।",
+   "হৃদয়হীন (callous) বাড়িওয়ালা শীতের মাঝখানে পরিবারটিকে উচ্ছেদ করল।",
+   "বন্যাদুর্গতদের দুর্দশার প্রতি কর্মকর্তার নির্মম (callous) উদাসীনতা জনমনে ব্যাপক ক্ষোভের জন্ম দিল।"
+  ],
+  "tip": "Latin callum ‘hard skin’: like a callus on your hand, a callous heart has grown hard."
+ },
+ {
+  "id": "callow",
+  "word": "Callow",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "young and inexperienced; immature",
+  "bn": "অনভিজ্ঞ; কাঁচা; অপরিপক্ক",
+  "s": [
+   "He was a callow boy.",
+   "The callow intern made a few silly mistakes on his first day.",
+   "Her {arduous} climb up the ranks turned a callow trainee into a respected leader."
+  ],
+  "sbn": [
+   "সে ছিল এক অনভিজ্ঞ (callow) ছেলে।",
+   "অনভিজ্ঞ (callow) ইন্টার্নটা প্রথম দিনেই কয়েকটা বোকামি করে ফেলল।",
+   "কঠিন (arduous) পথ পাড়ি দিয়ে সে কাঁচা (callow) শিক্ষানবিশ থেকে সম্মানিত নেতা হয়ে উঠল।"
+  ],
+  "tip": "Callow originally meant 'bald' (unfeathered bird): a bird not ready to fly."
+ },
+ {
+  "id": "calumny",
+  "word": "Calumny",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a false statement meant to damage someone's reputation; slander",
+  "bn": "অপবাদ; কুৎসা; মানহানিকর মিথ্যা",
+  "s": [
+   "The rumor was pure calumny.",
+   "He sued the paper for spreading calumny about his business.",
+   "The senator, a victim of vicious calumny, calmly {refuted} every false charge."
+  ],
+  "sbn": [
+   "গুজবটা ছিল নিছক অপবাদ (calumny)।",
+   "ব্যবসা নিয়ে কুৎসা (calumny) ছড়ানোর জন্য সে পত্রিকার বিরুদ্ধে মামলা করল।",
+   "জঘন্য অপবাদের (calumny) শিকার সিনেটর শান্তভাবে প্রতিটি মিথ্যা অভিযোগ খণ্ডন করলেন।"
+  ],
+  "tip": "Calumny sounds like 'column' of lies printed in a paper; false words that harm."
+ },
+ {
+  "id": "candor",
+  "word": "Candor",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "honesty and openness in speech",
+  "bn": "খোলামেলা সততা; স্পষ্টবাদিতা",
+  "s": [
+   "I admire her candor.",
+   "He spoke with candor about his past failures.",
+   "The CEO's unvarnished candor about the losses {bolstered} investors' trust."
+  ],
+  "sbn": [
+   "আমি তার স্পষ্টবাদিতার (candor) প্রশংসা করি।",
+   "সে নিজের অতীত ব্যর্থতা নিয়ে খোলামেলাভাবে (candor) কথা বলল।",
+   "লোকসান নিয়ে সিইওর রাখঢাক-হীন সততা (candor) বিনিয়োগকারীদের আস্থা বাড়াল।"
+  ],
+  "tip": "Latin candere 'to shine, be white': pure, clear, nothing hidden."
+ },
+ {
+  "id": "canon",
+  "word": "Canon",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "an accepted set of rules or principles; a body of works regarded as authoritative",
+  "bn": "বিধি; মানদণ্ড; স্বীকৃত সাহিত্যসমগ্র",
+  "s": [
+   "Shakespeare is in the literary canon.",
+   "Honesty is a basic canon of good journalism.",
+   "Critics argued that the traditional canon {marginalized} women writers for centuries."
+  ],
+  "sbn": [
+   "শেক্সপিয়র সাহিত্যের স্বীকৃত সমগ্রের (canon) অংশ।",
+   "সততা ভালো সাংবাদিকতার একটি মৌলিক বিধি (canon)।",
+   "সমালোচকরা বললেন, প্রথাগত সাহিত্যসমগ্র (canon) শতাব্দী ধরে নারী লেখকদের প্রান্তিক করে রেখেছে।"
+  ],
+  "tip": "Greek kanon 'rule, measuring rod'. Do not confuse with 'cannon' (gun)."
+ },
+ {
+  "id": "cant",
+  "word": "Cant",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "insincere talk, often moral or religious; special jargon of a group",
+  "bn": "ভণ্ডামিপূর্ণ বুলি; গোষ্ঠীর গূঢ় ভাষা",
+  "s": [
+   "His speech was full of cant.",
+   "I am tired of the politician's empty cant about honesty.",
+   "The {strident} cant of the campaign hid its {ambiguous} aims."
+  ],
+  "sbn": [
+   "তার বক্তৃতা ছিল ফাঁকা বুলিতে ভরা (cant)।",
+   "রাজনীতিকের সততা নিয়ে ফাঁপা বুলি (cant) শুনে আমি ক্লান্ত।",
+   "প্রচারণার কর্কশ ভণ্ড বুলি (cant) এর অস্পষ্ট (ambiguous) উদ্দেশ্য আড়াল করে রাখল।"
+  ],
+  "tip": "Cant is 'can't' with no real meaning: talk that sounds good but is hollow."
+ },
+ {
+  "id": "canvass",
+  "word": "Canvass",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to go around asking people for votes or opinions; to examine carefully",
+  "bn": "ভোট বা মতামত চেয়ে বেড়ানো; খুঁটিয়ে যাচাই করা",
+  "s": [
+   "They canvass voters door to door.",
+   "Volunteers canvassed the neighborhood before the election.",
+   "The committee canvassed opinions widely before deciding on the {contentious} proposal."
+  ],
+  "sbn": [
+   "তারা বাড়ি বাড়ি গিয়ে ভোটারদের কাছে ভোট চায় (canvass)।",
+   "নির্বাচনের আগে স্বেচ্ছাসেবকরা পাড়ায় পাড়ায় ভোট চেয়ে বেড়াল (canvassed)।",
+   "বিতর্কিত (contentious) প্রস্তাবটি নিয়ে সিদ্ধান্তের আগে কমিটি ব্যাপকভাবে মতামত যাচাই করল (canvassed)।"
+  ],
+  "tip": "Think of walking with a canvas bag, asking every door for votes."
+ },
+ {
+  "id": "capacious",
+  "word": "Capacious",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "having a lot of space inside; roomy",
+  "bn": "প্রশস্ত; বিশাল ধারণক্ষমতার",
+  "s": [
+   "She carried a capacious bag.",
+   "The old house had a capacious attic full of boxes.",
+   "His capacious memory held every {obscure} date in the {compendium} of history."
+  ],
+  "sbn": [
+   "সে একটা প্রশস্ত (capacious) ব্যাগ বয়ে নিয়ে যাচ্ছিল।",
+   "পুরনো বাড়িটার বিশাল (capacious) চিলেকোঠা বাক্সে ভরা ছিল।",
+   "তার বিশাল (capacious) স্মৃতিতে ইতিহাসের সংকলনের (compendium) প্রতিটি অজানা তারিখ জমা ছিল।"
+  ],
+  "tip": "Latin capere 'to take, hold': same root as capacity; it can hold much."
+ },
+ {
+  "id": "capitalism",
+  "word": "Capitalism",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "an economic system where private owners run businesses for profit",
+  "bn": "পুঁজিবাদ",
+  "s": [
+   "Capitalism is based on private ownership.",
+   "Some critics say capitalism widens the gap between rich and poor.",
+   "Defenders of capitalism praise its capacity to {foster} innovation."
+  ],
+  "sbn": [
+   "পুঁজিবাদ (capitalism) ব্যক্তিগত মালিকানার ওপর দাঁড়িয়ে।",
+   "কেউ কেউ বলেন পুঁজিবাদ (capitalism) ধনী-গরিবের ব্যবধান বাড়ায়।",
+   "পুঁজিবাদের (capitalism) সমর্থকরা উদ্ভাবনকে লালন করার এর ক্ষমতার প্রশংসা করেন।"
+  ],
+  "tip": "Latin caput 'head': capital (money, 'head' of wealth) drives the system."
+ },
+ {
+  "id": "capitulate",
+  "word": "Capitulate",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to give up resisting; to surrender",
+  "bn": "আত্মসমর্পণ করা; হার মেনে নেওয়া",
+  "s": [
+   "The rebels had to capitulate.",
+   "After weeks of pressure, the company capitulated to the union's demands.",
+   "The general refused to capitulate despite the {dire} shortage of supplies."
+  ],
+  "sbn": [
+   "বিদ্রোহীদের আত্মসমর্পণ (capitulate) করতে হলো।",
+   "কয়েক সপ্তাহের চাপের পর কোম্পানি ইউনিয়নের দাবি মেনে নিল (capitulated)।",
+   "রসদের ভয়াবহ (dire) ঘাটতি সত্ত্বেও জেনারেল আত্মসমর্পণ (capitulate) করতে রাজি হলেন না।"
+  ],
+  "tip": "Latin capitulum 'chapter/heading': surrendering on agreed 'headings' of terms."
+ },
+ {
+  "id": "captivate",
+  "word": "Captivate",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to attract and hold someone's attention; to charm",
+  "bn": "মুগ্ধ করা; মোহিত করা",
+  "s": [
+   "The story captivated the children.",
+   "Her voice captivated the whole audience.",
+   "The {charismatic} speaker captivated the crowd with a {cogent} argument."
+  ],
+  "sbn": [
+   "গল্পটা বাচ্চাদের মুগ্ধ (captivated) করে রাখল।",
+   "তার কণ্ঠ পুরো শ্রোতাকে মোহিত (captivated) করল।",
+   "ক্যারিশমাময় বক্তা যুক্তিপূর্ণ (cogent) বক্তব্যে ভিড়কে মুগ্ধ (captivated) করলেন।"
+  ],
+  "tip": "Captive: a captivating thing makes your attention a prisoner."
+ },
+ {
+  "id": "carcinogenic",
+  "word": "Carcinogenic",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "causing cancer",
+  "bn": "ক্যানসার সৃষ্টিকারী",
+  "s": [
+   "Smoking is carcinogenic.",
+   "Some chemicals in the factory were found to be carcinogenic.",
+   "Scientists warned that the {pervasive} use of the carcinogenic dye must be {curtailed}."
+  ],
+  "sbn": [
+   "ধূমপান ক্যানসার সৃষ্টি করে (carcinogenic)।",
+   "কারখানার কিছু রাসায়নিক ক্যানসার সৃষ্টিকারী (carcinogenic) বলে ধরা পড়ল।",
+   "বিজ্ঞানীরা সতর্ক করলেন, ক্যানসার সৃষ্টিকারী (carcinogenic) রঙের ব্যাপক ব্যবহার কমাতে হবে।"
+  ],
+  "tip": "Greek karkinos 'crab' = cancer, + gen 'produce': it produces cancer."
+ },
+ {
+  "id": "cardinal",
+  "word": "Cardinal",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "most important; fundamental",
+  "bn": "মূল; সর্বপ্রধান; মৌলিক",
+  "s": [
+   "Honesty is a cardinal virtue.",
+   "The cardinal rule of the lab is to wear goggles.",
+   "Ignoring the audience was the cardinal error, and no {cogent} argument could save the talk."
+  ],
+  "sbn": [
+   "সততা একটি মৌলিক (cardinal) গুণ।",
+   "ল্যাবের প্রধান (cardinal) নিয়ম হলো চশমা পরা।",
+   "শ্রোতাদের উপেক্ষা করাই ছিল মূল (cardinal) ভুল, কোনো জোরালো (cogent) যুক্তিই বক্তৃতাটা বাঁচাতে পারত না।"
+  ],
+  "tip": "Latin cardo 'hinge': everything turns on it, so it is the key thing."
+ },
+ {
+  "id": "careen",
+  "word": "Careen",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to rush forward in an uncontrolled way; to lurch or tilt",
+  "bn": "বেপরোয়াভাবে ছুটে যাওয়া; কাত হয়ে টলে যাওয়া",
+  "s": [
+   "The car careened down the hill.",
+   "The bus careened off the road and hit a tree.",
+   "The economy careened toward {anarchy} as the government lost control."
+  ],
+  "sbn": [
+   "গাড়িটা বেপরোয়াভাবে ঢাল বেয়ে ছুটে গেল (careened)।",
+   "বাসটা টলতে টলতে (careened) রাস্তা থেকে নেমে গাছে ধাক্কা খেল।",
+   "সরকার নিয়ন্ত্রণ হারালে অর্থনীতি অরাজকতার (anarchy) দিকে ছুটে গেল (careened)।"
+  ],
+  "tip": "Careen sounds like 'career': to career wildly out of control."
+ },
+ {
+  "id": "caricature",
+  "word": "Caricature",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "an exaggerated picture or description of someone that makes them look funny",
+  "bn": "ব্যঙ্গচিত্র; অতিরঞ্জিত বর্ণনা",
+  "s": [
+   "The cartoon was a caricature of the president.",
+   "The artist drew a caricature of his teacher with a huge nose.",
+   "The film offers a {banal} caricature of village life rather than a true portrait."
+  ],
+  "sbn": [
+   "কার্টুনটা ছিল রাষ্ট্রপতির ব্যঙ্গচিত্র (caricature)।",
+   "শিল্পী শিক্ষকের বিশাল নাকওয়ালা একটা ব্যঙ্গচিত্র (caricature) আঁকল।",
+   "সিনেমাটা গ্রামজীবনের সত্যিকার ছবির বদলে একটা সাদামাটা ব্যঙ্গচিত্র (caricature) দেখায়।"
+  ],
+  "tip": "Italian caricare 'to load': a face loaded with exaggerated features."
+ },
+ {
+  "id": "cartography",
+  "word": "Cartography",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "the science or art of making maps",
+  "bn": "মানচিত্র অঙ্কনবিদ্যা",
+  "s": [
+   "Cartography is the art of making maps.",
+   "He studied cartography at university.",
+   "Advances in satellite cartography made once-{obscure} regions precisely mappable."
+  ],
+  "sbn": [
+   "মানচিত্র আঁকার বিদ্যাই কার্টোগ্রাফি (cartography)।",
+   "সে বিশ্ববিদ্যালয়ে মানচিত্রবিদ্যা (cartography) পড়েছে।",
+   "উপগ্রহভিত্তিক মানচিত্রবিদ্যার (cartography) উন্নতিতে আগে অজানা (obscure) অঞ্চলও নিখুঁতভাবে আঁকা সম্ভব হলো।"
+  ],
+  "tip": "Greek chartes 'map/paper' + graphia 'writing': map-writing."
+ },
+ {
+  "id": "cascade",
+  "word": "Cascade",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a small waterfall, or a series of things falling or flowing one after another",
+  "bn": "ঝরনা; একের পর এক পতন বা প্রবাহ",
+  "s": [
+   "Water fell in a cascade.",
+   "A cascade of questions followed her announcement.",
+   "The bank's collapse set off a cascade of failures, and the {capricious} market panicked."
+  ],
+  "sbn": [
+   "পানি ঝরনার মতো (cascade) নেমে এল।",
+   "তার ঘোষণার পর প্রশ্নের স্রোত (cascade) নেমে এল।",
+   "ব্যাংকটির পতন একের পর এক ধসের ঢেউ (cascade) শুরু করল, আর খামখেয়ালি (capricious) বাজারে আতঙ্ক ছড়িয়ে পড়ল।"
+  ],
+  "tip": "Italian cascare 'to fall': things falling step by step like a waterfall."
+ },
+ {
+  "id": "cataclysm",
+  "word": "Cataclysm",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a sudden violent disaster or upheaval",
+  "bn": "মহাবিপর্যয়; ভয়ংকর উথাল-পাথাল",
+  "s": [
+   "The flood was a terrible cataclysm.",
+   "The war was a cataclysm that changed the whole region.",
+   "Some scientists believe a cosmic cataclysm {precipitated} the end of the dinosaurs."
+  ],
+  "sbn": [
+   "বন্যাটা ছিল এক ভয়াবহ মহাবিপর্যয় (cataclysm)।",
+   "যুদ্ধটা ছিল এমন মহাবিপর্যয় (cataclysm), যা পুরো অঞ্চলকে বদলে দিল।",
+   "কিছু বিজ্ঞানী মনে করেন মহাজাগতিক মহাবিপর্যয় (cataclysm) ডাইনোসর বিলুপ্তি ত্বরান্বিত করেছিল।"
+  ],
+  "tip": "Greek kata 'down' + klyzein 'to wash': a flood washing everything down."
+ },
+ {
+  "id": "categorical",
+  "word": "Categorical",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "absolute and without any conditions or doubt",
+  "bn": "দ্ব্যর্থহীন; শর্তহীন; নিঃসন্দেহ",
+  "s": [
+   "She gave a categorical denial.",
+   "The minister made a categorical statement that taxes would not rise.",
+   "His unequivocal and categorical refusal left no room to {appease} the critics."
+  ],
+  "sbn": [
+   "সে সরাসরি দ্ব্যর্থহীন (categorical) অস্বীকার করল।",
+   "মন্ত্রী স্পষ্টভাবে জানালেন (categorical) যে কর বাড়বে না।",
+   "তার দ্ব্যর্থহীন (categorical) প্রত্যাখ্যান সমালোচকদের শান্ত (appease) করার কোনো সুযোগই রাখল না।"
+  ],
+  "tip": "Category: a categorical statement puts things in a firm box, no 'maybe'."
+ },
+ {
+  "id": "catharsis",
+  "word": "Catharsis",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "emotional release that brings relief",
+  "bn": "মানসিক মুক্তি; আবেগের নিষ্কাশন",
+  "s": [
+   "Crying gave her catharsis.",
+   "Writing about the loss was a catharsis for him.",
+   "The tragedy offered the audience a {profound} catharsis, {alleviating} their pent-up grief."
+  ],
+  "sbn": [
+   "কান্না তাকে মানসিক মুক্তি (catharsis) দিল।",
+   "ক্ষতির কথা লেখা তার জন্য ছিল আবেগের মুক্তি (catharsis)।",
+   "ট্র্যাজেডিটি দর্শকদের গভীর মানসিক মুক্তি (catharsis) দিল এবং জমে থাকা শোক লাঘব (alleviating) করল।"
+  ],
+  "tip": "Greek katharos 'pure': cleansing the emotions, like a clean-out."
+ },
+ {
+  "id": "catholic",
+  "word": "Catholic",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "wide-ranging; including many kinds of things (lowercase c)",
+  "bn": "সর্বব্যাপী; উদার; বিচিত্র বিষয়ে আগ্রহী",
+  "s": [
+   "She has catholic tastes in music.",
+   "His catholic interests range from art to physics.",
+   "A scholar of {eclectic} and catholic curiosity, she read in a dozen fields."
+  ],
+  "sbn": [
+   "গানের ব্যাপারে তার রুচি বিচিত্র (catholic)।",
+   "শিল্প থেকে পদার্থবিদ্যা পর্যন্ত তার আগ্রহ সর্বব্যাপী (catholic)।",
+   "বিচিত্র (eclectic) ও উদার (catholic) কৌতূহলের এই পণ্ডিত ডজনখানেক বিষয়ে পড়েছেন।"
+  ],
+  "tip": "Greek katholikos 'universal': open to everything, so broad."
+ },
+ {
+  "id": "cavalier",
+  "word": "Cavalier",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "showing no proper concern about something serious; offhand",
+  "bn": "বেপরোয়া; অবজ্ঞাপূর্ণ; অগুরুত্বপূর্ণভাবে নেওয়া",
+  "s": [
+   "He had a cavalier attitude to rules.",
+   "She was cavalier about her friends' feelings.",
+   "The manager's cavalier dismissal of safety warnings proved {calamitous}."
+  ],
+  "sbn": [
+   "নিয়মকানুন নিয়ে তার মনোভাব ছিল বেপরোয়া (cavalier)।",
+   "বন্ধুদের অনুভূতি নিয়ে সে ছিল অবজ্ঞাপূর্ণ (cavalier)।",
+   "নিরাপত্তা সতর্কতাকে ম্যানেজারের অবজ্ঞাভরে (cavalier) উড়িয়ে দেওয়া শেষে সর্বনাশা (calamitous) হলো।"
+  ],
+  "tip": "Cavalier = horse rider, a carefree knight who looks down on others."
+ },
+ {
+  "id": "cavil",
+  "word": "Cavil",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to make petty, unnecessary objections",
+  "bn": "তুচ্ছ খুঁত ধরা; ছোটখাটো আপত্তি তোলা",
+  "s": [
+   "Don't cavil over small things.",
+   "He cavils at every minor detail of the plan.",
+   "Critics may cavil at the cost, but the plan's merits {bolster} the case for approval."
+  ],
+  "sbn": [
+   "ছোটখাটো বিষয়ে খুঁত ধরো (cavil) না।",
+   "পরিকল্পনার প্রতিটি ছোট বিষয়ে সে খুঁত ধরে (cavils)।",
+   "সমালোচকরা খরচ নিয়ে খুঁত ধরতে (cavil) পারেন, কিন্তু পরিকল্পনার গুণাবলি অনুমোদনের পক্ষে যুক্তিকে শক্তিশালী (bolster) করে।"
+  ],
+  "tip": "Latin cavilla 'jest, quibble': picks at tiny faults."
+ },
+ {
+  "id": "celibacy",
+  "word": "Celibacy",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "the state of not marrying or having sex, often for religious reasons",
+  "bn": "ব্রহ্মচর্য; অবিবাহিত জীবন",
+  "s": [
+   "The monk lives in celibacy.",
+   "He chose celibacy to devote himself to his faith.",
+   "Her vow of celibacy, an {ascetic} choice, shaped her entire life."
+  ],
+  "sbn": [
+   "সন্ন্যাসী ব্রহ্মচর্যে (celibacy) জীবন কাটান।",
+   "ধর্মের প্রতি নিবেদিত থাকতে সে ব্রহ্মচর্য (celibacy) বেছে নিল।",
+   "ব্রহ্মচর্যের (celibacy) শপথ, এক কঠোর সংযমী (ascetic) সিদ্ধান্ত, তার সারা জীবন গড়ে দিল।"
+  ],
+  "tip": "Latin caelebs 'unmarried'. Link: celibate = single by choice."
+ },
+ {
+  "id": "censure",
+  "word": "Censure",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to criticize strongly and formally",
+  "bn": "কড়া নিন্দা করা; তিরস্কার করা",
+  "s": [
+   "The teacher censured the rude boy.",
+   "Parliament voted to censure the minister for misconduct.",
+   "The board publicly censured him for his {egregious} breach of ethics."
+  ],
+  "sbn": [
+   "শিক্ষক বেয়াদব ছেলেটিকে তিরস্কার (censured) করলেন।",
+   "অসদাচরণের জন্য সংসদ মন্ত্রীকে নিন্দা (censure) করার পক্ষে ভোট দিল।",
+   "চরম নীতিলঙ্ঘনের জন্য বোর্ড প্রকাশ্যে তাকে কড়া নিন্দা (censured) করল।"
+  ],
+  "tip": "Latin censere 'to judge': a formal judgment, usually against someone."
+ },
+ {
+  "id": "cerebral",
+  "word": "Cerebral",
+  "src": "WS1",
+  "pos": "adjective",
+  "en": "relating to the brain; intellectual rather than emotional",
+  "bn": "মস্তিষ্ক-সংক্রান্ত; বুদ্ধিবৃত্তিক",
+  "s": [
+   "He is a cerebral person.",
+   "She prefers cerebral films that make you think.",
+   "The professor's {abstruse}, cerebral lectures left emotion and practicality aside."
+  ],
+  "sbn": [
+   "সে একজন বুদ্ধিজীবী ধরনের (cerebral) মানুষ।",
+   "সে ভাবায় এমন বুদ্ধিদীপ্ত (cerebral) সিনেমা পছন্দ করে।",
+   "অধ্যাপকের দুর্বোধ্য (abstruse), বুদ্ধিবৃত্তিক (cerebral) লেকচারে আবেগ আর ব্যবহারিকতা বাদ পড়ে যেত।"
+  ],
+  "tip": "Latin cerebrum 'brain'. Cerebral = of the head, not the heart."
+ },
+ {
+  "id": "chaff",
+  "word": "Chaff",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "husks of grain; worthless stuff separated from the good",
+  "bn": "তুষ; আবর্জনা; অসার জিনিস",
+  "s": [
+   "Farmers separate wheat from chaff.",
+   "Sort the useful facts from the chaff.",
+   "Reading the report, he sifted the vital data from the {extraneous} chaff."
+  ],
+  "sbn": [
+   "কৃষকরা গম থেকে তুষ আলাদা (chaff) করে।",
+   "কাজের তথ্যগুলো অসার জিনিস (chaff) থেকে বেছে নাও।",
+   "রিপোর্ট পড়ে সে অপ্রাসঙ্গিক (extraneous) আবর্জনা (chaff) থেকে জরুরি তথ্য ছেঁকে বের করল।"
+  ],
+  "tip": "Wheat vs chaff: the part you throw away."
+ },
+ {
+  "id": "chagrin",
+  "word": "Chagrin",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "annoyance or embarrassment at failure",
+  "bn": "হতাশাজনিত লজ্জা; বিরক্তি ও ক্ষোভ",
+  "s": [
+   "To his chagrin, he lost the game.",
+   "She felt chagrin when she forgot his name.",
+   "Much to the coach's chagrin, the team's {complacent} play cost them the title."
+  ],
+  "sbn": [
+   "তার বড় আফসোসের (chagrin) বিষয়, সে খেলায় হেরে গেল।",
+   "তার নাম ভুলে যাওয়ায় সে লজ্জিত ও বিরক্ত (chagrin) বোধ করল।",
+   "কোচের চরম ক্ষোভে (chagrin), দলের আত্মতুষ্ট (complacent) খেলা শিরোপা খুইয়ে দিল।"
+  ],
+  "tip": "French word for grief; say 'sha-GRIN' and think a grin that fails."
+ },
+ {
+  "id": "chameleon",
+  "word": "Chameleon",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a lizard that changes color; a person who changes to fit the situation",
+  "bn": "গিরগিটি; পরিস্থিতি বুঝে রং বদলানো মানুষ",
+  "s": [
+   "A chameleon changes its color.",
+   "He is a chameleon who agrees with everyone.",
+   "Like a chameleon, the {capricious} politician shifted views with every audience."
+  ],
+  "sbn": [
+   "গিরগিটি রং বদলায় (chameleon)।",
+   "সে গিরগিটির (chameleon) মতো, সবার সঙ্গেই একমত হয়।",
+   "গিরগিটির (chameleon) মতো খামখেয়ালি (capricious) রাজনীতিক প্রতিটি শ্রোতার সামনে মত বদলাতেন।"
+  ],
+  "tip": "Greek chamai 'on the ground' + leon 'lion': a ground-lion that blends in."
+ },
+ {
+  "id": "champion",
+  "word": "Champion",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to support and fight for a cause or person",
+  "bn": "পক্ষ নিয়ে লড়া; জোরালো সমর্থন করা",
+  "s": [
+   "She champions the rights of children.",
+   "The mayor championed a plan for free schools.",
+   "He tirelessly championed reform despite {caustic} opposition."
+  ],
+  "sbn": [
+   "সে শিশুদের অধিকারের জন্য লড়ে (champions)।",
+   "মেয়র বিনা পয়সার স্কুলের পরিকল্পনার পক্ষে জোরালো সমর্থন (championed) দিলেন।",
+   "কড়া বিষাক্ত (caustic) বিরোধিতা সত্ত্বেও সে অক্লান্তভাবে সংস্কারের পক্ষে লড়ে (championed) গেল।"
+  ],
+  "tip": "A champion wins; to champion a cause is to fight for it like a hero."
+ },
+ {
+  "id": "channel",
+  "word": "Channel",
+  "src": "WS2",
+  "pos": "verb",
+  "en": "to direct something toward a particular goal",
+  "bn": "কোনো লক্ষ্যে চালিত করা; প্রবাহিত করা",
+  "s": [
+   "She channeled her anger into art.",
+   "The charity channels money to poor schools.",
+   "He channeled his surplus energy into a {burgeoning} business."
+  ],
+  "sbn": [
+   "সে নিজের রাগকে শিল্পে রূপ (channeled) দিল।",
+   "দাতব্য সংস্থাটি গরিব স্কুলে অর্থ পৌঁছে দেয় (channels)।",
+   "সে তার বাড়তি (surplus) শক্তি ফুলেফেঁপে ওঠা (burgeoning) ব্যবসায় ঢেলে দিল (channeled)।"
+  ],
+  "tip": "A channel carries water along a path: to channel is to give direction."
+ },
+ {
+  "id": "charisma",
+  "word": "Charisma",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a special charm that attracts and inspires others",
+  "bn": "ব্যক্তিত্বের আকর্ষণ; মোহনীয় প্রভাব",
+  "s": [
+   "The leader had great charisma.",
+   "Her charisma made everyone want to follow her.",
+   "The candidate's {palpable} charisma outweighed her lack of experience."
+  ],
+  "sbn": [
+   "নেতার ব্যক্তিত্বে ছিল দারুণ আকর্ষণ (charisma)।",
+   "তার মোহনীয় প্রভাবে (charisma) সবাই তাকে অনুসরণ করতে চাইত।",
+   "প্রার্থীর স্পষ্ট অনুভব করা যায় এমন আকর্ষণ (charisma) অভিজ্ঞতার অভাবকে ছাপিয়ে গেল।"
+  ],
+  "tip": "Greek charis 'grace, gift': a gift of grace that draws people."
+ },
+ {
+  "id": "charlatan",
+  "word": "Charlatan",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a person who falsely claims skill or knowledge; a fraud",
+  "bn": "ভণ্ড; হাতুড়ে; প্রতারক",
+  "s": [
+   "The doctor was a charlatan.",
+   "The charlatan sold fake medicine to poor villagers.",
+   "The {gullible} public was fooled by a charlatan with forged degrees."
+  ],
+  "sbn": [
+   "ডাক্তারটা ছিল হাতুড়ে (charlatan)।",
+   "ভণ্ড (charlatan) লোকটা গরিব গ্রামবাসীদের নকল ওষুধ বেচত।",
+   "সহজে বিশ্বাস করা (gullible) জনগণ জাল ডিগ্রিধারী এক প্রতারকের (charlatan) ফাঁদে পড়ল।"
+  ],
+  "tip": "Italian ciarlare 'to chatter': a smooth-talking fake who sells big claims."
+ },
+ {
+  "id": "chasm",
+  "word": "Chasm",
+  "src": "WS1",
+  "pos": "noun",
+  "en": "a deep gap in the earth; a wide difference between people or ideas",
+  "bn": "গভীর খাদ; বিশাল ব্যবধান",
+  "s": [
+   "They stood at the edge of a chasm.",
+   "A chasm separates the rich from the poor in the city.",
+   "A {profound} chasm of mistrust divided the two antagonists."
+  ],
+  "sbn": [
+   "তারা এক গভীর খাদের (chasm) কিনারায় দাঁড়াল।",
+   "শহরে ধনী আর গরিবের মাঝে বিশাল ব্যবধান (chasm) রয়েছে।",
+   "অবিশ্বাসের এক গভীর ফাটল (chasm) দুই প্রতিপক্ষকে (antagonists) আলাদা করে রেখেছিল।"
+  ],
+  "tip": "Greek chasma 'yawning gap': say 'KAZ-um', a gap that swallows."
+ },
+ {
+  "id": "chaste",
+  "word": "Chaste",
+  "src": "WS2",
+  "pos": "adjective",
+  "en": "pure; modest and restrained, especially in sexual conduct",
+  "bn": "পবিত্র; সংযমী; শালীন",
+  "s": [
+   "She led a chaste life.",
+   "The poem is chaste in language and simple in style.",
+   "The monk's {austere}, chaste existence was far from worldly pleasures."
+  ],
+  "sbn": [
+   "সে পবিত্র (chaste) জীবনযাপন করত।",
+   "কবিতাটি ভাষায় শালীন (chaste) আর ধরনে সরল।",
+   "সন্ন্যাসীর কঠোর (austere) ও সংযমী (chaste) জীবন ছিল দুনিয়ার ভোগসুখ থেকে অনেক দূরে।"
+  ],
+  "tip": "Latin castus 'pure'. Related to 'chastity'."
+ },
+ {
+  "id": "chastise",
+  "word": "Chastise",
+  "src": "WS1",
+  "pos": "verb",
+  "en": "to scold or punish severely",
+  "bn": "কড়া বকা দেওয়া; শাস্তি দেওয়া",
+  "s": [
+   "The teacher chastised the lazy students.",
+   "He was chastised for coming late again.",
+   "The editor harshly chastised the reporter, and the {contrite} writer promised to be careful."
+  ],
+  "sbn": [
+   "শিক্ষক কুঁড়ে ছাত্রদের কড়া বকা (chastised) দিলেন।",
+   "আবার দেরিতে আসায় তাকে বকা (chastised) খেতে হলো।",
+   "সম্পাদক রিপোর্টারকে কড়া ভর্ৎসনা (chastised) করলেন, আর অনুতপ্ত (contrite) লেখক সাবধান থাকার প্রতিশ্রুতি দিল।"
+  ],
+  "tip": "Same root as chaste (purify): punish to make someone 'clean' and correct."
+ },
+ {
+  "id": "cherub",
+  "word": "Cherub",
+  "src": "WS2",
+  "pos": "noun",
+  "en": "a plump, angelic child; a type of angel",
+  "bn": "দেবশিশু; ফুটফুটে মিষ্টি শিশু",
+  "s": [
+   "The baby looked like a cherub.",
+   "The painting showed a cherub with tiny wings.",
+   "The child, a rosy-cheeked cherub, could {assuage} any angry guest with one smile."
+  ],
+  "sbn": [
+   "শিশুটাকে দেবশিশুর (cherub) মতো লাগছিল।",
+   "ছবিতে ছোট ডানাওয়ালা এক দেবশিশু (cherub) আঁকা ছিল।",
+   "গোলাপি গালের দেবশিশুর (cherub) মতো বাচ্চাটা এক হাসিতেই যেকোনো রাগী অতিথির রাগ প্রশমিত (assuage) করতে পারত।"
+  ],
+  "tip": "Hebrew kerub, an angel; sweet round-faced baby-angel in art."
+ }
+]
