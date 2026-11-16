@@ -8,6 +8,7 @@ import { WordList } from "@/components/WordList";
 import { K_TODAY_TEST, QuizView } from "@/components/QuizView";
 import { GroupsView } from "@/components/GroupsView";
 import { useProgress } from "@/lib/progress";
+import { useQuizHistory } from "@/lib/quizHistory";
 import { SyncDialog } from "@/components/SyncDialog";
 import { readJSON, writeJSON } from "@/lib/storage";
 import { WORDS } from "@/lib/words";
@@ -30,11 +31,12 @@ function useTheme() {
 
 export default function App() {
   const progress = useProgress();
+  const quizHistory = useQuizHistory(progress.code);
   const [dark, setDark] = useTheme();
   const [tab, setTab] = useState<Tab>(() => readJSON<Tab>("gre333.tab.v2", "today"));
   const [session, setSession] = useState<Session>(() => loadSession(progress));
   const [goal, setGoalState] = useState<number>(() => readJSON<number>("gre333.goal", 15));
-  const [quizRequest, setQuizRequest] = useState<{ ids: string[]; key: number; source?: "today" } | null>(null);
+  const [quizRequest, setQuizRequest] = useState<{ ids: string[]; key: number; source?: "today"; title?: string } | null>(null);
   const { counts } = progress;
 
   useEffect(() => writeJSON("gre333.tab.v2", tab), [tab]);
@@ -49,8 +51,8 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const quizWords = (ids: string[], source?: "today") => {
-    setQuizRequest({ ids, key: Date.now(), source });
+  const quizWords = (ids: string[], source?: "today", title?: string) => {
+    setQuizRequest({ ids, key: Date.now(), source, title: title ?? (source === "today" ? "Today's words" : "Quiz") });
     setTab("quiz");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -97,6 +99,7 @@ export default function App() {
             progress={progress}
             onReset={() => {
               progress.reset();
+              quizHistory.clear();
               writeJSON(K_TODAY_TEST, null);
               setSession(freshSession());
             }}
@@ -174,10 +177,10 @@ export default function App() {
           <StudyView progress={progress} session={session} setSession={setSession} active={tab === "study"} />
         </div>
         <div hidden={tab !== "quiz"}>
-          <QuizView progress={progress} active={tab === "quiz"} request={quizRequest} />
+          <QuizView progress={progress} active={tab === "quiz"} request={quizRequest} history={quizHistory} />
         </div>
         {tab === "groups" && (
-          <GroupsView progress={progress} onStudy={studyDeck} onQuiz={quizWords} onOpenWord={openWord} />
+          <GroupsView progress={progress} onStudy={studyDeck} onQuiz={(ids, title) => quizWords(ids, undefined, `Group: ${title}`)} onOpenWord={openWord} />
         )}
         {tab === "list" && <WordList progress={progress} onOpen={openWord} />}
       </main>

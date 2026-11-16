@@ -17,6 +17,8 @@ a Bangla meaning (বাংলা অর্থ) and an example sentence.
 - **Daily review (spaced repetition):** right answers come back after 3, 7, 16, 35, 90 days; wrong ones tomorrow
 - **Quiz:** word → meaning, meaning → word, বাংলা → English, fill in the blank, type the word, GRE "pick 2"
 - **Word groups:** 40 families of synonyms (with opposites) and GRE Sentence Equivalence practice
+- **"I know it" needs a spelling check:** type the word from memory (2 tries) before it counts as known
+- **Quiz history:** every finished quiz (title, type, score, missed words) is saved on the server and synced; retry missed words from any past quiz
 - **Daily goal** ring for new words, day streak, weak-words list
 - Works offline and opens instantly (service worker); can be added to the phone home screen
 
@@ -84,7 +86,9 @@ and optionally `PORT`.
 | GET | `/api/progress` | This learner's progress and review days |
 | PUT | `/api/progress/{word_id}` | Set `status` (`new`/`learning`/`known`) and/or `starred` |
 | POST | `/api/progress/sync` | Merge changes saved while offline (newer change wins) |
-| DELETE | `/api/progress` | Reset this learner's progress |
+| DELETE | `/api/progress` | Reset this learner's progress and quiz history |
+| GET | `/api/quizzes` | Quiz history, newest first |
+| POST | `/api/quizzes` | Save a finished quiz (same `client_id` twice is ignored) |
 
 Progress endpoints need the header `X-Sync-Code: XXXX-XXXX`.
 

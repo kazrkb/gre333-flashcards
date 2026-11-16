@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowDownAZ, ArrowLeft, ArrowRight, CalendarCheck, Check, PartyPopper, RotateCcw, Shuffle, Star, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Flashcard } from "@/components/Flashcard";
+import { SpellCheck } from "@/components/SpellCheck";
 import { cn } from "@/lib/utils";
 import { readJSON, writeJSON } from "@/lib/storage";
 import { speak, WORD_BY_ID, WORDS } from "@/lib/words";
@@ -73,6 +74,8 @@ export function StudyView({
   active: boolean;
 }) {
   const [flipped, setFlipped] = useState(false);
+  /** "I know it" opens a spelling check; only a correct spelling counts as known. */
+  const [spelling, setSpelling] = useState(false);
   const touch = useRef<{ x: number; y: number } | null>(null);
   const { deck, index, filter, shuffle } = session;
   const id = deck[index];
@@ -80,7 +83,10 @@ export function StudyView({
   const done = deck.length > 0 && index >= deck.length;
 
   useEffect(() => writeJSON(K_SESSION, session), [session]);
-  useEffect(() => setFlipped(false), [index, deck]);
+  useEffect(() => {
+    setFlipped(false);
+    setSpelling(false);
+  }, [index, deck]);
 
   const go = useCallback(
     (to: number) => setSession({ ...session, index: Math.max(0, Math.min(to, deck.length)) }),
@@ -108,20 +114,20 @@ export function StudyView({
     const onKey = (e: KeyboardEvent) => {
       const t = e.target as HTMLElement;
       if (t.closest("input, textarea, [role=dialog]") || e.metaKey || e.ctrlKey || e.altKey) return;
-      if (done || !id) return;
+      if (done || !id || spelling) return; // the spelling check handles its own keys
       if (e.key === " ") {
         e.preventDefault();
         setFlipped((f) => !f);
       } else if (e.key === "ArrowRight") go(index + 1);
       else if (e.key === "ArrowLeft") go(index - 1);
       else if (e.key === "1") mark(false);
-      else if (e.key === "2") mark(true);
+      else if (e.key === "2") setSpelling(true);
       else if (e.key.toLowerCase() === "s") progress.toggleStar(id);
       else if (e.key.toLowerCase() === "p" && word) speak(word.word);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [active, done, id, index, go, mark, progress, word]);
+  }, [active, done, id, index, go, mark, progress, word, spelling]);
 
   const learningCount = progress.counts.learning;
   const pct = deck.length ? Math.round((Math.min(index, deck.length) / deck.length) * 100) : 0;
@@ -262,6 +268,13 @@ export function StudyView({
             </Button>
           </div>
         </div>
+      ) : word && spelling ? (
+        <SpellCheck
+          key={`spell-${word.id}`}
+          word={word}
+          onResult={(correct) => mark(correct)}
+          onCancel={() => setSpelling(false)}
+        />
       ) : (
         word && (
           <div
@@ -294,7 +307,7 @@ export function StudyView({
 
 
       {/* Actions */}
-      {!done && word && (
+      {!done && word && !spelling && (
         <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/85 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur-md sm:static sm:z-auto sm:border-0 sm:bg-transparent sm:p-0 sm:backdrop-blur-none">
         <div className="mx-auto flex max-w-2xl items-center gap-2 sm:gap-3">
           <Button variant="ghost" size="icon" aria-label="Previous card" onClick={() => go(index - 1)} disabled={index === 0}>
@@ -303,7 +316,7 @@ export function StudyView({
           <Button variant="outline" size="lg" className="flex-1" onClick={() => mark(false)}>
             <RotateCcw /> Still learning
           </Button>
-          <Button size="lg" className="flex-1" onClick={() => mark(true)}>
+          <Button size="lg" className="flex-1" onClick={() => setSpelling(true)}>
             <Check /> I know it
           </Button>
           <Button variant="ghost" size="icon" aria-label="Next card" onClick={() => go(index + 1)}>
@@ -314,7 +327,7 @@ export function StudyView({
       )}
 
       <p className="hidden text-center font-mono text-[11px] text-muted-foreground/80 md:block pointer-coarse:hidden">
-        <Kbd>Space</Kbd> flip · <Kbd>←</Kbd> <Kbd>→</Kbd> move · <Kbd>1</Kbd> still learning · <Kbd>2</Kbd> know it ·{" "}
+        <Kbd>Space</Kbd> flip · <Kbd>←</Kbd> <Kbd>→</Kbd> move · <Kbd>1</Kbd> still learning · <Kbd>2</Kbd> know it (spell it) ·{" "}
         <Kbd>S</Kbd> star · <Kbd>P</Kbd> pronounce
       </p>
     </div>

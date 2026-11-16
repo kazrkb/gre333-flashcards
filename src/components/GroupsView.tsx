@@ -19,7 +19,7 @@ export function GroupsView({
 }: {
   progress: Progress;
   onStudy: (title: string, ids: string[]) => void;
-  onQuiz: (ids: string[]) => void;
+  onQuiz: (ids: string[], title: string) => void;
   onOpenWord: (id: string) => void;
 }) {
   const [query, setQuery] = useState("");
@@ -99,7 +99,7 @@ export function GroupsView({
                 <Button variant="outline" size="sm" onClick={() => onStudy(g.title, g.words)}>
                   <BookOpen /> Study
                 </Button>
-                <Button variant="outline" size="sm" onClick={() => onQuiz(g.words)}>
+                <Button variant="outline" size="sm" onClick={() => onQuiz(g.words, g.title)}>
                   <ClipboardCheck /> Quiz me
                 </Button>
               </div>

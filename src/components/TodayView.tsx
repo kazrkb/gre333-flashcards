@@ -24,7 +24,7 @@ export function TodayView({
   goal: number;
   onReview: (ids: string[]) => void;
   onLearn: (count: number) => void;
-  onTest: (ids: string[], source?: "today") => void;
+  onTest: (ids: string[], source?: "today", title?: string) => void;
 }) {
   const today = localDay();
   const testedToday = readJSON<string | null>(K_TODAY_TEST, null) === today;
@@ -232,7 +232,7 @@ export function TodayView({
                 {" "}
                 <button
                   type="button"
-                  onClick={() => onTest(s.lastWeek)}
+                  onClick={() => onTest(s.lastWeek, undefined, "Last week's words")}
                   className="font-medium text-primary underline-offset-2 hover:underline"
                 >
                   Test {s.lastWeek.length} words →

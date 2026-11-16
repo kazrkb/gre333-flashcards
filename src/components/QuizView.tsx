@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ArrowRight, Check, ChevronDown, ClipboardCheck, Minus, Plus, RotateCcw, Trophy, Volume2, X } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, ClipboardCheck, History, Minus, Plus, RotateCcw, Trophy, Volume2, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -7,6 +7,7 @@ import { readJSON, writeJSON } from "@/lib/storage";
 import { plainSentence, speak, stemRegex, WORD_BY_ID, WORDS, type Word } from "@/lib/words";
 import { GROUPS } from "@/data/groups";
 import { addDays, isDue, localDay, type useProgress } from "@/lib/progress";
+import type { QuizHistory, QuizRecord } from "@/lib/quizHistory";
 
 type Progress = ReturnType<typeof useProgress>;
 
@@ -26,11 +27,9 @@ type Answer = { correct: boolean; chosen: string[]; typed?: string; close?: bool
 
 export type { Mode as QuizMode };
 
-export type QuizState = { questions: Question[]; answers: Answer[]; index: number };
-type LastResult = { score: number; total: number; at: string };
+export type QuizState = { questions: Question[]; answers: Answer[]; index: number; title: string; mode: Mode };
 
 const K_SETTINGS = "gre333.quiz.settings.v3";
-const K_LAST = "gre333.quiz.last.v1";
 /** Day the "test today's words" step of the daily plan was last finished. */
 export const K_TODAY_TEST = "gre333.todayTest.v1";
 
@@ -131,11 +130,13 @@ export function QuizView({
   progress,
   active,
   request,
+  history,
 }: {
   progress: Progress;
   active: boolean;
   /** Start a quiz on these words right away (e.g. from the Groups or Today tab). */
-  request?: { ids: string[]; key: number; mode?: Mode; source?: "today" } | null;
+  request?: { ids: string[]; key: number; mode?: Mode; source?: "today"; title?: string } | null;
+  history: QuizHistory;
 }) {
   const saved = readJSON<{ pool: Pool; count: number; lastN: number; period: number; mode: Mode }>(K_SETTINGS, {
     pool: "due",
@@ -152,7 +153,6 @@ export function QuizView({
   const [lastN, setLastN] = useState<number>(saved.lastN);
   const [mode, setMode] = useState<Mode>(saved.mode);
   const [quiz, setQuiz] = useState<QuizState | null>(null);
-  const [last, setLast] = useState<LastResult | null>(() => readJSON<LastResult | null>(K_LAST, null));
 
   useEffect(() => writeJSON(K_SETTINGS, { pool, count, lastN, period, mode }), [pool, count, lastN, period, mode]);
 
@@ -194,29 +194,49 @@ export function QuizView({
 
   const source = useRef<"today" | null>(null);
 
-  const begin = (questions: Question[]) => {
+  const begin = (questions: Question[], title: string, qMode: Mode = mode) => {
     if (!questions.length) return;
     source.current = null;
-    setQuiz({ questions, answers: [], index: 0 });
+    setQuiz({ questions, answers: [], index: 0, title, mode: qMode });
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   /** Quiz these exact words (in the chosen question type). */
-  const startWith = (ids: string[]) => {
+  const startWith = (ids: string[], title: string) => {
     if (!ids.length) return;
-    if (mode === "se") return begin(makeGreQuestions(Math.max(ids.length, MIN_WORDS), new Set(ids)));
-    begin(makeQuestions(shuffle(ids), mode));
+    if (mode === "se") return begin(makeGreQuestions(Math.max(ids.length, MIN_WORDS), new Set(ids)), title);
+    begin(makeQuestions(shuffle(ids), mode), title);
   };
 
   const startPool = () => {
-    if (mode === "se") return begin(makeGreQuestions(poolCount, new Set(available)));
+    const title = POOLS.find((x) => x.key === pool)?.label ?? "Quiz";
+    if (mode === "se") return begin(makeGreQuestions(poolCount, new Set(available)), title);
     const chosen = pool === "weak" ? available.slice(0, poolCount) : shuffle(available).slice(0, poolCount);
-    begin(makeQuestions(shuffle(chosen), mode));
+    begin(makeQuestions(shuffle(chosen), mode), title);
   };
 
   const retry = (q: QuizState) => {
     const missed = q.questions.filter((_, i) => !q.answers[i]?.correct);
-    begin(shuffle(missed).map((m) => (m.kind === "type" ? m : { ...m, options: shuffle(m.options) })));
+    begin(
+      shuffle(missed).map((m) => (m.kind === "type" ? m : { ...m, options: shuffle(m.options) })),
+      `Retry: ${q.title}`.slice(0, 80),
+      q.mode,
+    );
+  };
+
+  /** Save a finished quiz to the history. */
+  const saveResult = (q: QuizState) => {
+    const ids = (qq: Question) => (qq.kind === "se" ? qq.answers! : [qq.id]);
+    const words = [...new Set(q.questions.flatMap(ids))];
+    const missed = [...new Set(q.questions.filter((_, i) => !q.answers[i]?.correct).flatMap(ids))];
+    history.add({
+      title: q.title,
+      mode: q.mode,
+      score: q.answers.filter((a) => a.correct).length,
+      total: q.questions.length,
+      words,
+      missed,
+    });
   };
 
   // Quiz requested from another tab (e.g. "Quiz this group").
@@ -224,7 +244,7 @@ export function QuizView({
   useEffect(() => {
     if (!request || request.key === lastRequest.current) return;
     lastRequest.current = request.key;
-    begin(makeQuestions(shuffle(request.ids), request.mode ?? "mixed"));
+    begin(makeQuestions(shuffle(request.ids), request.mode ?? "mixed"), request.title ?? "Quiz", request.mode ?? "mixed");
     source.current = request.source ?? null;
   }, [request]);
 
@@ -266,7 +286,7 @@ export function QuizView({
                 onChange={setPeriod}
                 label="Time period"
               />
-              <Button disabled={periodCount === 0} onClick={() => startWith(periodIds)}>
+              <Button disabled={periodCount === 0} onClick={() => startWith(periodIds, `Words learned · ${p.label}`)}>
                 Start
               </Button>
             </div>
@@ -294,7 +314,7 @@ export function QuizView({
               <Button
                 variant="dark"
                 disabled={studiedCount < MIN_WORDS}
-                onClick={() => startWith(pools.recent.slice(0, lastCount))}
+                onClick={() => startWith(pools.recent.slice(0, lastCount), `Your last ${lastCount} words`)}
               >
                 Start
               </Button>
@@ -369,12 +389,6 @@ export function QuizView({
               )}
             </div>
           </details>
-          {last && (
-            <p className="mt-3 text-[13px] text-muted-foreground">
-              Last quiz: <span className="font-medium text-foreground">{last.score} / {last.total}</span> correct ·{" "}
-              {new Date(last.at).toLocaleDateString(undefined, { day: "numeric", month: "short" })}
-            </p>
-          )}
         </section>
 
         <Section title="Question type">
@@ -400,6 +414,7 @@ export function QuizView({
           </div>
         </Section>
 
+        <HistoryList items={history.items} onRetry={(r) => startWith(r.missed, `Retry: ${r.title}`.slice(0, 80))} />
       </div>
     );
   }
@@ -410,10 +425,8 @@ export function QuizView({
       setQuiz={setQuiz}
       progress={progress}
       active={active}
-      onFinish={(score, n) => {
-        const r = { score, total: n, at: new Date().toISOString() };
-        setLast(r);
-        writeJSON(K_LAST, r);
+      onFinish={() => {
+        saveResult(quiz);
         if (source.current === "today") writeJSON(K_TODAY_TEST, localDay());
       }}
       onRetry={() => retry(quiz)}
@@ -930,5 +943,116 @@ function Stepper({
         <Plus className="size-4" />
       </button>
     </div>
+  );
+}
+
+function formatWhen(iso: string) {
+  const d = new Date(iso);
+  const today = localDay();
+  const day = localDay(d);
+  const time = d.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
+  if (day === today) return `Today, ${time}`;
+  if (day === addDays(today, -1)) return `Yesterday, ${time}`;
+  return `${d.toLocaleDateString(undefined, { day: "numeric", month: "short" })}, ${time}`;
+}
+
+/** Past quizzes, newest first. Tap one to see the missed words and retry them. */
+function HistoryList({ items, onRetry }: { items: QuizRecord[]; onRetry: (r: QuizRecord) => void }) {
+  const [showAll, setShowAll] = useState(false);
+  const [open, setOpen] = useState<string | null>(null);
+  const shown = showAll ? items : items.slice(0, 8);
+  const totals = items.reduce((t, r) => ({ score: t.score + r.score, total: t.total + r.total }), { score: 0, total: 0 });
+
+  return (
+    <section className="rounded-xl border border-border bg-card">
+      <div className="flex items-center justify-between gap-3 px-5 pt-4">
+        <h3 className="flex items-center gap-2 text-[15px] font-semibold tracking-tight">
+          <History className="size-4 text-primary" /> Quiz history
+        </h3>
+        {items.length > 0 && (
+          <span className="font-mono text-[12px] tabular-nums text-muted-foreground">
+            {items.length} {items.length === 1 ? "quiz" : "quizzes"} · {Math.round((totals.score / totals.total) * 100)}% overall
+          </span>
+        )}
+      </div>
+
+      {items.length === 0 ? (
+        <p className="px-5 pb-5 pt-2 text-sm text-muted-foreground">
+          No quizzes yet. Every quiz you finish is saved here with your score and the words you missed.
+        </p>
+      ) : (
+        <ul className="mt-3 border-t border-border">
+          {shown.map((r) => {
+            const pct = Math.round((r.score / r.total) * 100);
+            const isOpen = open === r.clientId;
+            const modeLabel = MODES.find((m) => m.key === r.mode)?.label ?? r.mode;
+            return (
+              <li key={r.clientId} className="border-b border-border last:border-b-0">
+                <button
+                  type="button"
+                  onClick={() => setOpen(isOpen ? null : r.clientId)}
+                  aria-expanded={isOpen}
+                  className="flex w-full items-center gap-3 px-5 py-3 text-left transition hover:bg-muted/50 focus-visible:bg-muted focus-visible:outline-none"
+                >
+                  <span
+                    className={cn(
+                      "grid h-9 w-12 shrink-0 place-items-center rounded-lg font-mono text-[13px] font-medium tabular-nums",
+                      pct >= 80 ? "bg-primary text-primary-foreground" : pct >= 50 ? "bg-accent-soft text-primary" : "bg-muted text-foreground",
+                    )}
+                  >
+                    {pct}%
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate text-[15px] font-medium">{r.title}</span>
+                    <span className="block truncate text-[12px] text-muted-foreground">
+                      {formatWhen(r.takenAt)} · <span className={cn(r.mode === "bangla" && "font-bangla")}>{modeLabel}</span> ·{" "}
+                      {r.score}/{r.total} right
+                    </span>
+                  </span>
+                  <ChevronDown className={cn("size-4 shrink-0 text-muted-foreground transition", isOpen && "rotate-180")} />
+                </button>
+                {isOpen && (
+                  <div className="px-5 pb-4">
+                    {r.missed.length === 0 ? (
+                      <p className="text-sm text-muted-foreground">No mistakes in this quiz. 🎉</p>
+                    ) : (
+                      <>
+                        <p className="text-[13px] text-muted-foreground">Missed {r.missed.length === 1 ? "word" : "words"}:</p>
+                        <ul className="mt-2 flex flex-col gap-1.5">
+                          {r.missed.map((id) => {
+                            const w = WORD_BY_ID.get(id);
+                            if (!w) return null;
+                            return (
+                              <li key={id} className="text-sm">
+                                <span className="font-medium">{w.word}</span>
+                                <span className="text-muted-foreground"> — {w.en} · </span>
+                                <span lang="bn" className="font-bangla text-primary">
+                                  {w.bn}
+                                </span>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                        <Button size="sm" className="mt-3" onClick={() => onRetry(r)}>
+                          <RotateCcw /> Retry these {r.missed.length}
+                        </Button>
+                      </>
+                    )}
+                  </div>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+
+      {items.length > 8 && (
+        <div className="border-t border-border px-5 py-3">
+          <Button variant="ghost" size="sm" onClick={() => setShowAll((v) => !v)}>
+            {showAll ? "Show fewer" : `Show all ${items.length}`}
+          </Button>
+        </div>
+      )}
+    </section>
   );
 }

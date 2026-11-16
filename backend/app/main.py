@@ -7,6 +7,7 @@ the same progress.
 Uses Postgres when DATABASE_URL is set, otherwise a local SQLite file.
 """
 
+import json
 import os
 import secrets
 import time
@@ -108,6 +109,22 @@ class ReviewDay(Base):
     learner: Mapped[str] = mapped_column(String(9), primary_key=True)
     day: Mapped[date] = mapped_column(Date, primary_key=True)
     count: Mapped[int] = mapped_column(Integer, default=0)
+
+
+class QuizResult(Base):
+    """One finished quiz. `client_id` is made by the browser so a result saved offline is never stored twice."""
+
+    __tablename__ = "quiz_results"
+
+    learner: Mapped[str] = mapped_column(String(9), primary_key=True)
+    client_id: Mapped[str] = mapped_column(String(40), primary_key=True)
+    taken_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    title: Mapped[str] = mapped_column(String(80), default="Quiz")
+    mode: Mapped[str] = mapped_column(String(24), default="mixed")
+    score: Mapped[int] = mapped_column(Integer, default=0)
+    total: Mapped[int] = mapped_column(Integer, default=0)
+    words: Mapped[str] = mapped_column(Text, default="[]")  # JSON list of word ids
+    missed: Mapped[str] = mapped_column(Text, default="[]")  # JSON list of word ids
 
 
 Base.metadata.create_all(engine)
@@ -333,8 +350,74 @@ def reset_progress(code: str = Depends(learner_code)):
     with Session(engine) as db:
         db.execute(delete(Progress).where(Progress.learner == code))
         db.execute(delete(ReviewDay).where(ReviewDay.learner == code))
+        db.execute(delete(QuizResult).where(QuizResult.learner == code))
         db.commit()
     return {"ok": True}
+
+
+class QuizIn(BaseModel):
+    client_id: str = Field(min_length=6, max_length=40)
+    taken_at: datetime
+    title: str = Field(max_length=80)
+    mode: str = Field(max_length=24)
+    score: int = Field(ge=0, le=1000)
+    total: int = Field(ge=1, le=1000)
+    words: list[str] = Field(default_factory=list, max_length=500)
+    missed: list[str] = Field(default_factory=list, max_length=500)
+
+
+class QuizOut(QuizIn):
+    pass
+
+
+def quiz_out(q: QuizResult) -> QuizOut:
+    return QuizOut(
+        client_id=q.client_id,
+        taken_at=as_aware(q.taken_at),
+        title=q.title,
+        mode=q.mode,
+        score=q.score,
+        total=q.total,
+        words=json.loads(q.words or "[]"),
+        missed=json.loads(q.missed or "[]"),
+    )
+
+
+@app.get("/api/quizzes", response_model=list[QuizOut])
+def list_quizzes(limit: int = 200, code: str = Depends(learner_code)):
+    """Quiz history, newest first."""
+    with Session(engine) as db:
+        rows = db.scalars(
+            select(QuizResult)
+            .where(QuizResult.learner == code)
+            .order_by(QuizResult.taken_at.desc())
+            .limit(max(1, min(limit, 500)))
+        )
+        return [quiz_out(q) for q in rows]
+
+
+@app.post("/api/quizzes", response_model=QuizOut)
+def save_quiz(body: QuizIn, code: str = Depends(learner_code)):
+    if body.score > body.total:
+        raise HTTPException(400, "score is larger than total")
+    with Session(engine) as db:
+        row = db.get(QuizResult, (code, body.client_id))
+        if row is None:  # saving the same quiz twice (e.g. a retry after being offline) is a no-op
+            row = QuizResult(
+                learner=code,
+                client_id=body.client_id,
+                taken_at=as_aware(body.taken_at),
+                title=body.title,
+                mode=body.mode,
+                score=body.score,
+                total=body.total,
+                words=json.dumps(body.words),
+                missed=json.dumps(body.missed),
+            )
+            db.add(row)
+            db.commit()
+            db.refresh(row)
+        return quiz_out(row)
 
 
 # Serve the built frontend (npm run build) so one server runs the whole app.
