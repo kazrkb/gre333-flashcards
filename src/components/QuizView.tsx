@@ -63,6 +63,7 @@ const MODE_LABELS: Record<string, string> = {
   ...Object.fromEntries(MODES.map((m) => [m.key, m.label])),
   se: "GRE: pick 2",
   unlock: "Unlock test",
+  "gre-tc": "Text Completion",
   "gre-tc1": "Text Completion",
   "gre-tcm": "Text Completion (2–3 blanks)",
   "gre-se": "Sentence Equivalence",

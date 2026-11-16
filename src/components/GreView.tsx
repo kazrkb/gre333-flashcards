@@ -6,6 +6,7 @@ import { readJSON, writeJSON } from "@/lib/storage";
 import { plainSentence, stemRegex, WORD_BY_ID, WORDS, wordForForm, type Word } from "@/lib/words";
 import { GROUPS } from "@/data/groups";
 import GRE_ITEMS from "@/data/gre-items.json";
+import GRE_HARD from "@/data/gre-hard.json";
 import type { useProgress } from "@/lib/progress";
 import type { QuizHistory } from "@/lib/quizHistory";
 import { Stepper } from "@/components/QuizView";
@@ -14,22 +15,28 @@ type Progress = ReturnType<typeof useProgress>;
 
 type TcItem = { id: string; text: string; blanks: { choices: string[]; answer: number }[]; explanation: string };
 type AnItem = { id: string; stem: [string, string]; choices: [string, string][]; answer: number; relation: string };
+type Tc1Item = { id: string; text: string; choices: string[]; answer: number; explanation: string };
+type SeItem = { id: string; text: string; choices: string[]; answers: number[]; explanation: string };
+const HARD = GRE_HARD as unknown as { tc1: Tc1Item[]; tc2: TcItem[]; tc3: TcItem[]; se: SeItem[] };
 const ITEMS = GRE_ITEMS as unknown as { textCompletion: TcItem[]; analogies: AnItem[] };
+/** All hand-written 2–3 blank Text Completions (original set + GRE-hard set). */
+const TCM_POOL: TcItem[] = [...ITEMS.textCompletion, ...HARD.tc2, ...HARD.tc3];
 
 type GreKind = "tc1" | "tcm" | "se" | "an";
 type GreQ =
-  | { kind: "tc1"; text: string; options: string[]; answer: string }
+  | { kind: "tc1"; text: string; options: string[]; answer: string; explanation?: string }
   | { kind: "tcm"; item: TcItem }
-  | { kind: "se"; text: string; options: string[]; answers: string[] }
+  | { kind: "se"; text: string; options: string[]; answers: string[]; explanation?: string }
   | { kind: "an"; item: AnItem };
 type GreAnswer = { correct: boolean; picks: string[] };
-type GreSet = { kind: GreKind | "mix"; title: string; questions: GreQ[]; answers: GreAnswer[]; index: number };
+/** A practice section: Text Completion (1–3 blanks mixed), Sentence Equivalence, Analogies, or a mixed set. */
+type Section = "tc" | "se" | "an" | "mix";
+type GreSet = { kind: Section; title: string; questions: GreQ[]; answers: GreAnswer[]; index: number };
 
 const K_COUNTS = "gre333.gre.counts.v1";
 
-const SECTIONS: { key: GreKind | "mix"; title: string; hint: string; onGre: boolean }[] = [
-  { key: "tc1", title: "Text Completion · 1 blank", hint: "One blank, five choices. Pick the word that fits the logic.", onGre: true },
-  { key: "tcm", title: "Text Completion · 2–3 blanks", hint: "Three choices per blank. Every blank must be right.", onGre: true },
+const SECTIONS: { key: Section; title: string; hint: string; onGre: boolean }[] = [
+  { key: "tc", title: "Text Completion", hint: "1, 2 or 3 blanks, mixed like the real test. Every blank must be right.", onGre: true },
   { key: "se", title: "Sentence Equivalence", hint: "One blank, six choices. Pick the two words that both fit.", onGre: true },
   { key: "an", title: "Analogies", hint: "Find the pair with the same relationship (A : B). Not on today's GRE, but used in many other exams.", onGre: false },
   { key: "mix", title: "Mixed GRE set", hint: "A bit of each type, like a real Verbal section.", onGre: true },
@@ -52,7 +59,22 @@ function synonymsOf(id: string) {
 /** Resolve a word written in an item (e.g. "lucid") to a list word, if it is one. */
 const listWord = (text: string): Word | undefined => WORD_BY_ID.get(text.toLowerCase()) ?? wordForForm(text);
 
+/** Hand-written GRE-hard items first; sentences made from the word list fill any remaining slots. */
 function makeTc1(count: number): GreQ[] {
+  const hard: GreQ[] = shuffle(HARD.tc1)
+    .slice(0, count)
+    .map((it) => ({
+      kind: "tc1" as const,
+      text: it.text,
+      options: it.choices.map((c) => listWord(c)?.id ?? c),
+      answer: listWord(it.choices[it.answer])?.id ?? it.choices[it.answer],
+      explanation: it.explanation,
+    }));
+  return [...hard, ...makeTc1Auto(count - hard.length)];
+}
+
+function makeTc1Auto(count: number): GreQ[] {
+  if (count <= 0) return [];
   return shuffle(WORDS)
     .filter((w) => stemRegex(w.word).test(plainSentence(w.sentences[2])))
     .slice(0, count)
@@ -67,6 +89,20 @@ function makeTc1(count: number): GreQ[] {
 }
 
 function makeSe(count: number): GreQ[] {
+  const hard: GreQ[] = shuffle(HARD.se)
+    .slice(0, count)
+    .map((it) => ({
+      kind: "se" as const,
+      text: it.text,
+      options: it.choices.map((c) => listWord(c)?.id ?? c),
+      answers: it.answers.map((i) => listWord(it.choices[i])?.id ?? it.choices[i]),
+      explanation: it.explanation,
+    }));
+  return shuffle([...hard, ...makeSeGroups(count - hard.length)]);
+}
+
+function makeSeGroups(count: number): GreQ[] {
+  if (count <= 0) return [];
   const items = shuffle(GROUPS.flatMap((g) => g.sentences.map((s) => ({ g, s }))));
   return items.slice(0, count).map(({ g, s }) => {
     const answers = shuffle(s.answers).slice(0, 2);
@@ -81,27 +117,29 @@ function makeSe(count: number): GreQ[] {
   });
 }
 
-const makeTcm = (count: number): GreQ[] => shuffle(ITEMS.textCompletion).slice(0, count).map((item) => ({ kind: "tcm" as const, item }));
+const makeTcm = (count: number): GreQ[] => shuffle(TCM_POOL).slice(0, count).map((item) => ({ kind: "tcm" as const, item }));
 const makeAn = (count: number): GreQ[] => shuffle(ITEMS.analogies).slice(0, count).map((item) => ({ kind: "an" as const, item }));
 
-const MAX: Record<GreKind | "mix", number> = {
-  tc1: 30,
-  tcm: ITEMS.textCompletion.length,
-  se: GROUPS.reduce((n, g) => n + g.sentences.length, 0),
+const MAX: Record<Section, number> = {
+  tc: 30,
+  se: 30,
   an: ITEMS.analogies.length,
   mix: 20,
 };
 
-function makeSet(kind: GreKind | "mix", count: number): GreQ[] {
-  if (kind === "tc1") return makeTc1(count);
-  if (kind === "tcm") return makeTcm(count);
+/** Text Completion with 1, 2 and 3 blanks mixed (about half single-blank, as on the GRE). */
+function makeTc(count: number): GreQ[] {
+  const one = Math.round(count / 2);
+  return shuffle([...makeTc1(one), ...makeTcm(count - one)]);
+}
+
+function makeSet(kind: Section, count: number): GreQ[] {
+  if (kind === "tc") return makeTc(count);
   if (kind === "se") return makeSe(count);
   if (kind === "an") return makeAn(count);
   // Mixed: roughly the real Verbal balance (without reading comprehension).
-  const tc1 = Math.round(count * 0.35);
-  const tcm = Math.round(count * 0.3);
-  const se = Math.max(count - tc1 - tcm, 1);
-  return shuffle([...makeTc1(tc1), ...makeTcm(tcm), ...makeSe(se)]);
+  const tc = Math.round(count * 0.65);
+  return shuffle([...makeTc(tc), ...makeSe(Math.max(count - tc, 1))]);
 }
 
 /** Word ids a question tests (for the review schedule and history). */
@@ -116,9 +154,9 @@ export function GreView({ progress, history, active }: { progress: Progress; his
   const [counts, setCounts] = useState<Record<string, number>>(() => readJSON(K_COUNTS, {}));
   const [set, setSet] = useState<GreSet | null>(null);
   useEffect(() => writeJSON(K_COUNTS, counts), [counts]);
-  const countFor = (k: GreKind | "mix") => Math.min(counts[k] ?? 10, MAX[k]);
+  const countFor = (k: Section) => Math.min(counts[k] ?? 10, MAX[k]);
 
-  const start = (kind: GreKind | "mix", questions?: GreQ[], title?: string) => {
+  const start = (kind: Section, questions?: GreQ[], title?: string) => {
     const qs = questions ?? makeSet(kind, countFor(kind));
     if (!qs.length) return;
     setSet({ kind, title: title ?? `GRE · ${SECTIONS.find((s) => s.key === kind)!.title}`, questions: qs, answers: [], index: 0 });
@@ -603,6 +641,9 @@ function GreRunner({
           </p>
           <div className="mt-2 space-y-1.5">
             {q.kind === "tcm" && <p className="text-sm text-muted-foreground">{q.item.explanation}</p>}
+            {(q.kind === "tc1" || q.kind === "se") && q.explanation && (
+              <p className="text-sm text-muted-foreground">{q.explanation}</p>
+            )}
             {q.kind === "an" && <p className="text-sm">{q.item.relation}</p>}
             {testedWords(q).map((id) => {
               const w = WORD_BY_ID.get(id);
