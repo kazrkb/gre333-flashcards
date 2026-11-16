@@ -1,4 +1,4 @@
-# GRE 333 Flashcards
+# GRE Words
 
 Flashcards for Barron's 333 high-frequency GRE words. Each card has a simple English meaning,
 a Bangla meaning (বাংলা অর্থ) and an example sentence.

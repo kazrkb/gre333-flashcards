@@ -105,8 +105,8 @@ export default function App() {
             <div className="relative h-[15px] w-[19px] translate-x-[-1px] translate-y-[1px] rounded-[3px] bg-cream" />
           </div>
           <div className="min-w-0 leading-tight">
-            <h1 className="text-[17px] font-semibold tracking-tight">GRE 333</h1>
-            <p className="truncate text-xs text-muted-foreground">Barron's high-frequency words</p>
+            <h1 className="text-[17px] font-semibold tracking-tight">GRE Words</h1>
+            <p className="truncate text-xs text-muted-foreground">Vocabulary · English + <span lang="bn" className="font-bangla">বাংলা</span></p>
           </div>
         </div>
         <div className="flex shrink-0 items-center gap-1">
