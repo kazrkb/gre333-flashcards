@@ -1,16 +1,16 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ArrowRight, Check, ClipboardCheck, RotateCcw, Trophy, Volume2, X } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, ClipboardCheck, Minus, Plus, RotateCcw, Trophy, Volume2, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { readJSON, writeJSON } from "@/lib/storage";
 import { speak, WORD_BY_ID, WORDS, type Word } from "@/lib/words";
 import { GROUPS } from "@/data/groups";
-import { isDue, localDay, type useProgress } from "@/lib/progress";
+import { addDays, isDue, localDay, type useProgress } from "@/lib/progress";
 
 type Progress = ReturnType<typeof useProgress>;
 
-type Pool = "recent" | "due" | "learning" | "weak" | "known" | "starred" | "all";
+type Pool = "due" | "learning" | "weak" | "known" | "starred" | "all";
 type Kind = "meaning" | "word" | "bangla" | "blank" | "type" | "se";
 type Mode = Kind | "mixed";
 
@@ -26,10 +26,18 @@ type Answer = { correct: boolean; chosen: string[]; typed?: string; close?: bool
 export type QuizState = { questions: Question[]; answers: Answer[]; index: number };
 type LastResult = { score: number; total: number; at: string };
 
-const K_SETTINGS = "gre333.quiz.settings.v2";
+const K_SETTINGS = "gre333.quiz.settings.v3";
 const K_LAST = "gre333.quiz.last.v1";
 
-const COUNTS = [10, 20, 30, 50];
+const MIN_WORDS = 5;
+
+const PERIODS = [
+  { days: 1, label: "Today", phrase: "today" },
+  { days: 3, label: "Last 3 days", phrase: "in the last 3 days" },
+  { days: 7, label: "Last week", phrase: "in the last week" },
+  { days: 14, label: "Last 2 weeks", phrase: "in the last 2 weeks" },
+  { days: 28, label: "Last 4 weeks", phrase: "in the last 4 weeks" },
+];
 
 const MODES: { key: Mode; label: string; hint: string }[] = [
   { key: "mixed", label: "Mixed", hint: "A bit of everything" },
@@ -123,18 +131,22 @@ export function QuizView({
   /** Start a quiz on these words right away (e.g. from the Groups tab). */
   request?: { ids: string[]; key: number } | null;
 }) {
-  const saved = readJSON<{ pool: Pool; count: number; mode: Mode }>(K_SETTINGS, {
-    pool: "recent",
+  const saved = readJSON<{ pool: Pool; count: number; lastN: number; period: number; mode: Mode }>(K_SETTINGS, {
+    pool: "due",
     count: 10,
+    lastN: 5,
+    period: 0,
     mode: "mixed",
   });
+  const [period, setPeriod] = useState<number>(Math.min(Math.max(saved.period ?? 0, 0), PERIODS.length - 1));
   const [pool, setPool] = useState<Pool>(saved.pool);
   const [count, setCount] = useState<number>(saved.count);
+  const [lastN, setLastN] = useState<number>(saved.lastN);
   const [mode, setMode] = useState<Mode>(saved.mode);
   const [quiz, setQuiz] = useState<QuizState | null>(null);
   const [last, setLast] = useState<LastResult | null>(() => readJSON<LastResult | null>(K_LAST, null));
 
-  useEffect(() => writeJSON(K_SETTINGS, { pool, count, mode }), [pool, count, mode]);
+  useEffect(() => writeJSON(K_SETTINGS, { pool, count, lastN, period, mode }), [pool, count, lastN, period, mode]);
 
   const pools = useMemo(() => {
     const today = localDay();
@@ -143,6 +155,13 @@ export function QuizView({
     );
     return {
       recent: studied.map((w) => w.id),
+      // Day each word was learned. Words studied before learn dates were recorded use their last study day.
+      learned: WORDS.flatMap((w) => {
+        const e = progress.get(w.id);
+        if (e.status === "new") return [];
+        const day = e.firstSeen ?? localDay(new Date(e.updatedAt));
+        return [{ id: w.id, day }];
+      }),
       due: WORDS.filter((w) => isDue(progress.get(w.id), today)).map((w) => w.id),
       learning: WORDS.filter((w) => progress.get(w.id).status === "learning").map((w) => w.id),
       weak: WORDS.filter((w) => progress.get(w.id).misses > 0)
@@ -151,11 +170,10 @@ export function QuizView({
       known: WORDS.filter((w) => progress.get(w.id).status === "known").map((w) => w.id),
       starred: WORDS.filter((w) => progress.get(w.id).starred).map((w) => w.id),
       all: WORDS.map((w) => w.id),
-    } satisfies Record<Pool, string[]>;
+    };
   }, [progress]);
 
   const POOLS: { key: Pool; label: string; hint: string }[] = [
-    { key: "recent", label: "Recently studied", hint: `The last ${count} words you studied` },
     { key: "due", label: "Due for review", hint: "Words scheduled for today" },
     { key: "weak", label: "Weak words", hint: "The words you miss most" },
     { key: "learning", label: "Learning", hint: "Words you're still learning" },
@@ -164,8 +182,11 @@ export function QuizView({
     { key: "all", label: "All words", hint: "Random words from all 333" },
   ];
 
+  const studiedCount = pools.recent.length;
+  const lastCount = Math.min(Math.max(lastN, MIN_WORDS), studiedCount);
   const available = pools[pool];
-  const total = mode === "se" ? Math.min(count, GRE_TOTAL) : Math.min(count, available.length);
+  const poolMax = mode === "se" ? GRE_TOTAL : available.length;
+  const poolCount = Math.min(Math.max(count, MIN_WORDS), poolMax);
 
   const begin = (questions: Question[]) => {
     if (!questions.length) return;
@@ -173,20 +194,22 @@ export function QuizView({
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const start = () => {
-    if (mode === "se") return begin(makeGreQuestions(count, new Set(available)));
-    const chosen =
-      pool === "recent" || pool === "weak" ? shuffle(available.slice(0, count)) : shuffle(available).slice(0, count);
-    begin(makeQuestions(chosen, mode));
+  /** Quiz these exact words (in the chosen question type). */
+  const startWith = (ids: string[]) => {
+    if (!ids.length) return;
+    if (mode === "se") return begin(makeGreQuestions(Math.max(ids.length, MIN_WORDS), new Set(ids)));
+    begin(makeQuestions(shuffle(ids), mode));
+  };
+
+  const startPool = () => {
+    if (mode === "se") return begin(makeGreQuestions(poolCount, new Set(available)));
+    const chosen = pool === "weak" ? available.slice(0, poolCount) : shuffle(available).slice(0, poolCount);
+    begin(makeQuestions(shuffle(chosen), mode));
   };
 
   const retry = (q: QuizState) => {
     const missed = q.questions.filter((_, i) => !q.answers[i]?.correct);
-    begin(
-      shuffle(missed).map((m) =>
-        m.kind === "se" ? { ...m, options: shuffle(m.options) } : m.kind === "type" ? m : { ...m, options: shuffle(m.options) },
-      ),
-    );
+    begin(shuffle(missed).map((m) => (m.kind === "type" ? m : { ...m, options: shuffle(m.options) })));
   };
 
   // Quiz requested from another tab (e.g. "Quiz this group").
@@ -198,23 +221,80 @@ export function QuizView({
   }, [request]);
 
   if (!quiz) {
+    const p = PERIODS[period];
+    const since = addDays(localDay(), -(p.days - 1));
+    const periodIds = pools.learned.filter((x) => x.day >= since).map((x) => x.id);
+    const periodCount = periodIds.length;
     return (
       <div className="flex flex-col gap-4">
+        {/* Quick tests */}
         <section className="rounded-xl border border-border bg-card p-5">
           <div className="flex items-start gap-3">
             <div className="grid size-10 shrink-0 place-items-center rounded-full bg-accent-soft text-primary">
               <ClipboardCheck className="size-5" />
             </div>
-            <div>
+            <div className="min-w-0">
               <h2 className="text-lg font-semibold tracking-tight">Test yourself</h2>
               <p className="mt-0.5 text-sm text-muted-foreground">
-                Right answers move a word to <b className="font-medium text-foreground">Known</b> and schedule it for a later
-                review. Wrong answers move it to <b className="font-medium text-foreground">Learning</b> so it comes back tomorrow.
+                Right answers schedule a word for a later review; wrong ones bring it back tomorrow.
               </p>
             </div>
           </div>
+
+          {/* Words learned in a period: today, last 3 days, last week… */}
+          <div className="mt-5 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-primary/40 bg-accent-soft/50 p-4">
+            <div className="min-w-0">
+              <p className="text-[15px] font-medium">Words you learned</p>
+              <p className="text-[13px] text-muted-foreground">
+                {periodCount > 0
+                  ? `${periodCount} ${periodCount === 1 ? "word" : "words"} learned ${p.phrase}`
+                  : `No words learned ${p.phrase} yet`}
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <OptionStepper
+                labels={PERIODS.map((x) => x.label)}
+                index={period}
+                onChange={setPeriod}
+                label="Time period"
+              />
+              <Button disabled={periodCount === 0} onClick={() => startWith(periodIds)}>
+                Start
+              </Button>
+            </div>
+          </div>
+
+          {/* Last N words */}
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-border p-4">
+            <div className="min-w-0">
+              <p className="text-[15px] font-medium">Your last words</p>
+              <p className="text-[13px] text-muted-foreground">
+                {studiedCount >= MIN_WORDS
+                  ? `The last ${lastCount} words you studied`
+                  : `Study at least ${MIN_WORDS} words to unlock (${studiedCount} so far)`}
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <Stepper
+                value={lastCount}
+                min={MIN_WORDS}
+                max={studiedCount}
+                onChange={setLastN}
+                label="Number of words"
+                disabled={studiedCount < MIN_WORDS}
+              />
+              <Button
+                variant="dark"
+                disabled={studiedCount < MIN_WORDS}
+                onClick={() => startWith(pools.recent.slice(0, lastCount))}
+              >
+                Start
+              </Button>
+            </div>
+          </div>
+
           {last && (
-            <p className="mt-4 rounded-lg bg-muted/70 px-3 py-2 text-[13px] text-muted-foreground">
+            <p className="mt-3 text-[13px] text-muted-foreground">
               Last quiz: <span className="font-medium text-foreground">{last.score} / {last.total}</span> correct ·{" "}
               {new Date(last.at).toLocaleDateString(undefined, { day: "numeric", month: "short" })}
             </p>
@@ -244,71 +324,74 @@ export function QuizView({
           </div>
         </Section>
 
-        <Section title={mode === "se" ? "Focus on (sentences using these words come first)" : "Which words?"}>
-          <div className="grid gap-2 sm:grid-cols-2">
-            {POOLS.map((p) => {
-              const n = pools[p.key].length;
-              const selected = pool === p.key;
-              return (
-                <button
-                  key={p.key}
-                  type="button"
-                  onClick={() => setPool(p.key)}
-                  aria-pressed={selected}
-                  className={cn(
-                    "flex items-center justify-between gap-3 rounded-lg border px-4 py-3 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                    selected ? "border-primary bg-accent-soft/60" : "border-border bg-card hover:border-border-strong",
-                    n === 0 && !selected && "opacity-60",
-                  )}
-                >
-                  <span className="min-w-0">
-                    <span className="block text-[15px] font-medium">{p.label}</span>
-                    <span className="block truncate text-[13px] text-muted-foreground">{p.hint}</span>
-                  </span>
-                  <span
+        {/* Other word groups, folded away */}
+        <details className="group rounded-xl border border-border bg-card">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded-xl px-5 py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring [&::-webkit-details-marker]:hidden">
+            <span>
+              <span className="block text-[15px] font-medium">More tests</span>
+              <span className="block text-[13px] text-muted-foreground">Review, weak words, known, starred, all words</span>
+            </span>
+            <ChevronDown className="size-4 shrink-0 text-muted-foreground transition group-open:rotate-180" />
+          </summary>
+          <div className="flex flex-col gap-3 border-t border-border p-4">
+            <div className="grid gap-2 sm:grid-cols-2">
+              {POOLS.map((p) => {
+                const n = pools[p.key].length;
+                const selected = pool === p.key;
+                return (
+                  <button
+                    key={p.key}
+                    type="button"
+                    onClick={() => setPool(p.key)}
+                    aria-pressed={selected}
                     className={cn(
-                      "shrink-0 rounded-full px-2 py-0.5 font-mono text-xs tabular-nums",
-                      selected ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground",
+                      "flex items-center justify-between gap-3 rounded-lg border px-4 py-3 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                      selected ? "border-primary bg-accent-soft/60" : "border-border bg-card hover:border-border-strong",
+                      n === 0 && !selected && "opacity-60",
                     )}
                   >
-                    {n}
-                  </span>
-                </button>
-              );
-            })}
+                    <span className="min-w-0">
+                      <span className="block text-[15px] font-medium">{p.label}</span>
+                      <span className="block truncate text-[13px] text-muted-foreground">{p.hint}</span>
+                    </span>
+                    <span
+                      className={cn(
+                        "shrink-0 rounded-full px-2 py-0.5 font-mono text-xs tabular-nums",
+                        selected ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground",
+                      )}
+                    >
+                      {n}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+            {poolMax === 0 ? (
+              <p className="rounded-lg border border-dashed border-border-strong/60 p-4 text-center text-sm text-muted-foreground">
+                {pool === "starred"
+                  ? "You haven't starred any words yet."
+                  : pool === "due"
+                    ? "Nothing is due for review today."
+                    : pool === "weak"
+                      ? "No weak words yet. Words you get wrong will show up here."
+                      : "No words here yet. Study some flashcards first."}
+              </p>
+            ) : (
+              <div className="flex items-center justify-between gap-3">
+                <Stepper
+                  value={poolCount}
+                  min={Math.min(MIN_WORDS, poolMax)}
+                  max={poolMax}
+                  onChange={setCount}
+                  label="Number of questions"
+                />
+                <Button className="flex-1" onClick={startPool}>
+                  Start · {poolCount} {poolCount === 1 ? "question" : "questions"}
+                </Button>
+              </div>
+            )}
           </div>
-        </Section>
-
-        <Section title="How many questions?">
-          <div className="grid grid-cols-4 gap-2">
-            {COUNTS.map((c) => (
-              <Chip key={c} selected={count === c} onClick={() => setCount(c)}>
-                {c}
-              </Chip>
-            ))}
-          </div>
-        </Section>
-
-        {mode !== "se" && available.length === 0 ? (
-          <p className="rounded-xl border border-dashed border-border-strong/60 bg-card/50 p-5 text-center text-[15px] text-muted-foreground">
-            {pool === "starred"
-              ? "You haven't starred any words yet. Star words on the flashcards, or pick another group."
-              : pool === "due"
-                ? "Nothing is due for review today. Pick another group of words."
-                : pool === "weak"
-                  ? "No weak words yet. Words you get wrong will show up here."
-                  : "No words here yet. Study some flashcards first, or choose “All words”."}
-          </p>
-        ) : (
-          <Button size="lg" className="w-full" onClick={start}>
-            Start quiz · {total} {total === 1 ? "question" : "questions"}
-          </Button>
-        )}
-        {mode !== "se" && available.length > 0 && available.length < count && (
-          <p className="-mt-2 text-center text-[13px] text-muted-foreground">
-            Only {available.length} {available.length === 1 ? "word is" : "words are"} in this group, so the quiz has {total}.
-          </p>
-        )}
+        </details>
       </div>
     );
   }
@@ -770,20 +853,73 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
-function Chip({ selected, onClick, children }: { selected: boolean; onClick: () => void; children: React.ReactNode }) {
+/** − label + control that steps through a list of choices (e.g. Today → Last 3 days → Last week). */
+function OptionStepper({
+  labels,
+  index,
+  onChange,
+  label,
+}: {
+  labels: string[];
+  index: number;
+  onChange: (i: number) => void;
+  label: string;
+}) {
+  const btn =
+    "grid size-9 place-items-center rounded-full text-foreground transition hover:bg-muted disabled:pointer-events-none disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-pressed={selected}
-      className={cn(
-        "h-11 rounded-full border px-3 text-sm font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-        selected
-          ? "border-foreground bg-foreground text-background"
-          : "border-border bg-card text-muted-foreground hover:border-border-strong hover:text-foreground",
-      )}
-    >
-      {children}
-    </button>
+    <div className="flex items-center rounded-full border border-border bg-card p-0.5" role="group" aria-label={label}>
+      <button type="button" className={btn} onClick={() => onChange(index - 1)} disabled={index <= 0} aria-label="Shorter period">
+        <Minus className="size-4" />
+      </button>
+      <span className="min-w-[6.75rem] text-center text-[14px] font-medium" aria-live="polite">
+        {labels[index]}
+      </span>
+      <button
+        type="button"
+        className={btn}
+        onClick={() => onChange(index + 1)}
+        disabled={index >= labels.length - 1}
+        aria-label="Longer period"
+      >
+        <Plus className="size-4" />
+      </button>
+    </div>
+  );
+}
+
+/** − value + control. Steps by 5 (snapping to multiples of 5), always able to reach min and max. */
+function Stepper({
+  value,
+  min,
+  max,
+  onChange,
+  label,
+  disabled,
+}: {
+  value: number;
+  min: number;
+  max: number;
+  onChange: (n: number) => void;
+  label: string;
+  disabled?: boolean;
+}) {
+  const step = 5;
+  const down = () => onChange(Math.max(min, Math.ceil(value / step) * step - step));
+  const up = () => onChange(Math.min(max, Math.floor(value / step) * step + step));
+  const btn =
+    "grid size-9 place-items-center rounded-full text-foreground transition hover:bg-muted disabled:pointer-events-none disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
+  return (
+    <div className="flex items-center rounded-full border border-border bg-card p-0.5" role="group" aria-label={label}>
+      <button type="button" className={btn} onClick={down} disabled={disabled || value <= min} aria-label="Fewer">
+        <Minus className="size-4" />
+      </button>
+      <span className="min-w-9 text-center font-mono text-[15px] font-medium tabular-nums" aria-live="polite">
+        {disabled ? "–" : value}
+      </span>
+      <button type="button" className={btn} onClick={up} disabled={disabled || value >= max} aria-label="More">
+        <Plus className="size-4" />
+      </button>
+    </div>
   );
 }
