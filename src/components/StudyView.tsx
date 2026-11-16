@@ -300,6 +300,7 @@ export function StudyView({
               flipped={flipped}
               onFlip={() => setFlipped((f) => !f)}
               onStar={() => progress.toggleStar(word.id)}
+              active={active}
             />
           </div>
         )
@@ -308,7 +309,7 @@ export function StudyView({
 
       {/* Actions */}
       {!done && word && !spelling && (
-        <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/85 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur-md sm:static sm:z-auto sm:border-0 sm:bg-transparent sm:p-0 sm:backdrop-blur-none">
+        <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/85 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur-md sm:sticky sm:bottom-0 sm:z-20 sm:border-0 sm:px-0 sm:pb-3">
         <div className="mx-auto flex max-w-2xl items-center gap-2 sm:gap-3">
           <Button variant="ghost" size="icon" aria-label="Previous card" onClick={() => go(index - 1)} disabled={index === 0}>
             <ArrowLeft />

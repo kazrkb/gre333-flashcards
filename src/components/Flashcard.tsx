@@ -9,26 +9,24 @@ import { Badge } from "@/components/ui/badge";
 const LEVELS = ["Easy", "Medium", "GRE level"];
 
 /**
- * Height left on screen below the card's top edge, minus room for the answer buttons,
- * so the whole card is visible without scrolling the page.
+ * Keep the whole card in view: center it on screen when it appears and after each flip.
+ * If it's taller than the space available (small phones), align its top just below the top of the screen.
  */
-function useFitHeight(ref: React.RefObject<HTMLDivElement | null>) {
-  const [h, setH] = useState(520);
+function useCenterOnScreen(ref: React.RefObject<HTMLDivElement | null>, flipped: boolean, active: boolean) {
   useEffect(() => {
-    const measure = () => {
-      const el = ref.current;
-      if (!el) return;
-      const top = el.getBoundingClientRect().top + window.scrollY;
-      const below = window.innerWidth < 640 ? 96 : 84; // sticky answer bar on phones / buttons + hint on larger screens
-      const next = Math.max(300, Math.round(window.innerHeight - top - below));
-      setH((prev) => (Math.abs(prev - next) > 2 ? next : prev));
-    };
-    measure();
-    window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
-  });
-  return h;
+    const el = ref.current;
+    if (!el || !active) return;
+    const t = window.setTimeout(() => {
+      const r = el.getBoundingClientRect();
+      const bottomBar = window.innerWidth < 640 ? 88 : 76; // answer buttons: pinned at the bottom on phones, just below the card on larger screens
+      const visible = window.innerHeight - bottomBar;
+      const offset = r.height < visible - 24 ? (visible - r.height) / 2 : 12;
+      window.scrollTo({ top: Math.max(0, window.scrollY + r.top - offset), behavior: "smooth" });
+    }, 120); // after the flip has started, so the new height is known
+    return () => window.clearTimeout(t);
+  }, [ref, flipped, active]);
 }
+
 
 /** Near-synonyms and opposites from the synonym families (the GRE often tests these together). */
 function relatedWords(id: string) {
@@ -165,7 +163,10 @@ export function Flashcard({
   flipped,
   onFlip,
   onStar,
+  active = true,
 }: {
+  /** False while the Cards tab is hidden (then it can't be measured or centered). */
+  active?: boolean;
   word: Word;
   entry: Entry;
   flipped: boolean;
@@ -174,7 +175,7 @@ export function Flashcard({
 }) {
   const [peek, setPeek] = useState<Word | null>(null);
   const sceneRef = useRef<HTMLDivElement>(null);
-  const maxH = useFitHeight(sceneRef);
+  useCenterOnScreen(sceneRef, flipped, active);
   const related = useMemo(() => relatedWords(word.id), [word.id]);
   const [openBn, setOpenBn] = useState<Set<number>>(new Set());
   const toggleBn = (i: number) =>
@@ -216,9 +217,8 @@ export function Flashcard({
         {/* Front */}
         <div
           aria-hidden={flipped}
-          style={{ minHeight: Math.min(380, maxH), maxHeight: maxH }}
-          className={cn(
-            "flip-face flex flex-col overflow-y-auto overscroll-contain rounded-xl border border-border bg-card p-5 sm:p-7",
+                    className={cn(
+            "flip-face flex min-h-[340px] flex-col rounded-xl border border-border bg-card p-5 sm:min-h-[380px] sm:p-7",
             shadow,
             flipped && "pointer-events-none",
           )}
@@ -242,9 +242,8 @@ export function Flashcard({
         {/* Back */}
         <div
           aria-hidden={!flipped}
-          style={{ maxHeight: maxH }}
           className={cn(
-            "flip-face flip-back flex flex-col overflow-y-auto overscroll-contain rounded-xl border border-border bg-card-back p-5 sm:p-7",
+            "flip-face flip-back flex flex-col rounded-xl border border-border bg-card-back p-4 sm:px-6 sm:py-5",
             shadow,
             !flipped && "pointer-events-none",
           )}
@@ -257,15 +256,15 @@ export function Flashcard({
             {actions}
           </div>
 
-          <div className="mt-4 flex flex-1 flex-col gap-4">
+          <div className="mt-3 flex flex-1 flex-col gap-3">
             <section>
               <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Meaning</p>
-              <p className="mt-1.5 text-xl font-medium leading-snug text-card-foreground">{word.en}</p>
+              <p className="mt-1 text-lg font-medium leading-snug text-card-foreground sm:mt-1.5 sm:text-xl">{word.en}</p>
             </section>
 
             <section>
               <p lang="bn" className="font-bangla text-[13px] font-medium text-muted-foreground">বাংলা অর্থ</p>
-              <p lang="bn" className="mt-1.5 font-bangla text-[22px] font-medium leading-snug text-primary">
+              <p lang="bn" className="mt-1 font-bangla text-[19px] font-medium leading-snug text-primary sm:mt-1.5 sm:text-[22px]">
                 {word.bn}
               </p>
             </section>
@@ -277,9 +276,9 @@ export function Flashcard({
               </section>
             )}
 
-            <section className="rounded-lg border border-border-strong/40 bg-card/60 p-4">
+            <section className="rounded-lg border border-border-strong/40 bg-card/60 p-3 sm:p-4">
               <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">In sentences</p>
-              <ol className="mt-2 flex flex-col gap-2.5">
+              <ol className="mt-2 flex flex-col gap-2 sm:gap-2.5">
                 {word.sentences.map((s, i) => {
                   const bn = word.bnSentences?.[i];
                   const open = openBn.has(i);
@@ -296,7 +295,7 @@ export function Flashcard({
                       {i + 1}
                     </span>
                     <div className="min-w-0 flex-1">
-                      <p className="text-[15px] leading-relaxed text-card-foreground">
+                      <p className="text-[14px] leading-snug text-card-foreground sm:text-[15px] sm:leading-relaxed">
                         <Sentence text={s} word={word.word} onPeek={setPeek} />
                       </p>
                       {bn && open && (
