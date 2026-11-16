@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ArrowDownAZ, ArrowLeft, ArrowRight, CalendarCheck, Check, PartyPopper, RotateCcw, Shuffle, Star, X } from "lucide-react";
+import { ArrowDownAZ, ArrowLeft, ArrowRight, CalendarCheck, PenLine, Check, PartyPopper, RotateCcw, Shuffle, Star, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Flashcard } from "@/components/Flashcard";
 import { cn } from "@/lib/utils";
@@ -40,7 +40,7 @@ function buildDeck(filter: Filter, shuffle: boolean, p: Progress): string[] {
   return shuffle ? shuffled(ids) : ids;
 }
 
-function shuffled<T>(items: T[]): T[] {
+export function shuffled<T>(items: T[]): T[] {
   const a = [...items];
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -292,6 +292,11 @@ export function StudyView({
         )
       )}
 
+      {/* Your own sentence: writing it yourself is one of the strongest memory aids */}
+      {!done && word && flipped && (
+        <NoteBox key={`note-${word.id}`} word={word.word} initial={progress.get(word.id).note ?? ""} onSave={(t) => progress.setNote(word.id, t)} />
+      )}
+
       {/* Actions */}
       {!done && word && (
         <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/85 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur-md sm:static sm:z-auto sm:border-0 sm:bg-transparent sm:p-0 sm:backdrop-blur-none">
@@ -315,6 +320,56 @@ export function StudyView({
       <p className="hidden text-center font-mono text-[11px] text-muted-foreground/80 md:block pointer-coarse:hidden">
         <Kbd>Space</Kbd> flip · <Kbd>←</Kbd> <Kbd>→</Kbd> move · <Kbd>1</Kbd> still learning · <Kbd>2</Kbd> know it ·{" "}
         <Kbd>S</Kbd> star · <Kbd>P</Kbd> pronounce
+      </p>
+    </div>
+  );
+}
+
+function NoteBox({ word, initial, onSave }: { word: string; initial: string; onSave: (text: string) => void }) {
+  const [text, setText] = useState(initial);
+  const [saved, setSaved] = useState(false);
+  const timer = useRef<number | undefined>(undefined);
+
+  const save = (value: string) => {
+    window.clearTimeout(timer.current);
+    onSave(value);
+    if (value.trim() !== initial.trim()) {
+      setSaved(true);
+      window.setTimeout(() => setSaved(false), 1500);
+    }
+  };
+
+  // Save shortly after typing stops, and when leaving the box or the card.
+  useEffect(() => () => window.clearTimeout(timer.current), []);
+  const latest = useRef(text);
+  latest.current = text;
+  useEffect(() => () => onSave(latest.current), []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  return (
+    <div className="animate-card-in rounded-xl border border-border bg-card p-4">
+      <div className="flex items-center justify-between gap-2">
+        <label htmlFor="note" className="flex items-center gap-1.5 text-sm font-medium">
+          <PenLine className="size-4 text-primary" /> Your sentence
+        </label>
+        <span className="text-[12px] text-muted-foreground">{saved ? "Saved ✓" : "Saved to your progress"}</span>
+      </div>
+      <textarea
+        id="note"
+        value={text}
+        maxLength={500}
+        rows={2}
+        onChange={(e) => {
+          setText(e.target.value);
+          window.clearTimeout(timer.current);
+          const v = e.target.value;
+          timer.current = window.setTimeout(() => save(v), 900);
+        }}
+        onBlur={() => save(text)}
+        placeholder={`Use “${word}” in a sentence about your own life…`}
+        className="mt-2 w-full resize-none rounded-lg border border-input bg-background/60 px-3 py-2 text-base leading-relaxed outline-none transition placeholder:text-muted-foreground/70 focus:border-primary focus:ring-2 focus:ring-primary/20 sm:text-[15px]"
+      />
+      <p className="mt-1.5 text-[12px] text-muted-foreground">
+        A sentence about your own life, or your own trick, makes the word much easier to remember.
       </p>
     </div>
   );

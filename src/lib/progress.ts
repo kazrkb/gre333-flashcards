@@ -12,6 +12,7 @@ export type Entry = {
   due: string | null; // next review day, YYYY-MM-DD
   misses: number; // times answered wrong
   firstSeen: string | null; // day first studied, YYYY-MM-DD
+  note: string | null; // learner's own sentence or memory trick
   updatedAt: string; // ISO
 };
 
@@ -23,10 +24,11 @@ type ServerEntry = {
   due: string | null;
   misses: number;
   first_seen: string | null;
+  note: string | null;
   updated_at: string;
 };
 
-type Patch = Partial<Pick<Entry, "status" | "starred" | "level" | "due" | "misses" | "firstSeen">>;
+type Patch = Partial<Pick<Entry, "status" | "starred" | "level" | "due" | "misses" | "firstSeen" | "note">>;
 
 /** Days until the next review for each box. Right answers move a word up a box, wrong answers back to box 1. */
 export const INTERVALS = [0, 1, 3, 7, 16, 35, 90];
@@ -57,6 +59,7 @@ const EMPTY: Entry = {
   due: null,
   misses: 0,
   firstSeen: null,
+  note: null,
   updatedAt: new Date(0).toISOString(),
 };
 
@@ -83,6 +86,7 @@ function fromServer(map: Record<string, ServerEntry>): Record<string, Entry> {
       due: e.due ?? null,
       misses: e.misses ?? 0,
       firstSeen: e.first_seen ?? null,
+      note: e.note ?? null,
       updatedAt: e.updated_at,
     };
   }
@@ -164,6 +168,7 @@ export function useProgress() {
           due: e.due,
           misses: e.misses,
           first_seen: e.firstSeen,
+          note: e.note ?? "",
           updated_at: e.updatedAt,
         };
     }
@@ -259,6 +264,7 @@ export function useProgress() {
           due: patch.due,
           misses: patch.misses,
           first_seen: patch.firstSeen,
+          note: patch.note === undefined ? undefined : (patch.note ?? ""),
           reviewed,
           updated_at: next.updatedAt,
           day,
@@ -297,6 +303,12 @@ export function useProgress() {
     },
     [update],
   );
+  const setNote = useCallback((id: string, note: string) => {
+    const clean = note.trim().slice(0, 500);
+    if ((progressRef.current[id]?.note ?? "") === clean) return;
+    update(id, { note: clean || null });
+  }, [update]);
+
   const toggleStar = useCallback(
     (id: string) => update(id, { starred: !(progressRef.current[id]?.starred ?? false) }),
     [update],
@@ -374,5 +386,5 @@ export function useProgress() {
   const today = days[localDay()] ?? 0;
   const streak = useMemo(() => computeStreak(days), [days]);
 
-  return { code, get, grade, toggleStar, reset, switchCode, counts, sync, today, streak, retry: connect };
+  return { code, get, grade, setNote, toggleStar, reset, switchCode, counts, sync, today, streak, retry: connect };
 }

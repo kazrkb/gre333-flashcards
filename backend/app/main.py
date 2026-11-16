@@ -20,7 +20,7 @@ from fastapi import Depends, FastAPI, Header, HTTPException, Request
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
-from sqlalchemy import Boolean, Date, DateTime, Integer, String, create_engine, delete, inspect, select, text
+from sqlalchemy import Boolean, Date, DateTime, Integer, String, Text, create_engine, delete, inspect, select, text
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -95,6 +95,7 @@ class Progress(Base):
     due: Mapped[date | None] = mapped_column(Date, nullable=True)  # next review date
     misses: Mapped[int] = mapped_column(Integer, default=0)  # times answered wrong
     first_seen: Mapped[date | None] = mapped_column(Date, nullable=True)  # day first studied (daily goal)
+    note: Mapped[str | None] = mapped_column(Text, nullable=True)  # learner's own sentence / memory trick
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 
@@ -119,6 +120,7 @@ def migrate():
         "due": "DATE",
         "misses": "INTEGER NOT NULL DEFAULT 0",
         "first_seen": "DATE",
+        "note": "TEXT",
     }
     with engine.begin() as conn:
         for name, ddl in added.items():
@@ -153,6 +155,7 @@ class ProgressIn(BaseModel):
     due: date | None = None
     misses: int | None = Field(default=None, ge=0, le=100000)
     first_seen: date | None = None
+    note: str | None = Field(default=None, max_length=500)
     reviewed: bool = False  # true when the learner just answered this card
     updated_at: datetime | None = None
     day: date | None = None  # learner's local date, for the streak
@@ -166,6 +169,7 @@ class ProgressOut(BaseModel):
     due: date | None
     misses: int
     first_seen: date | None
+    note: str | None
     updated_at: datetime
 
 
@@ -208,6 +212,7 @@ def to_out(p: Progress) -> ProgressOut:
         due=p.due,
         misses=p.misses or 0,
         first_seen=p.first_seen,
+        note=p.note,
         updated_at=as_aware(p.updated_at),
     )
 
@@ -252,6 +257,8 @@ def apply(db: Session, code: str, word_id: str, body: ProgressIn, *, only_if_new
         row.misses = body.misses
     if body.first_seen is not None and row.first_seen is None:
         row.first_seen = body.first_seen
+    if body.note is not None:
+        row.note = body.note.strip() or None  # empty text clears the note
     if body.reviewed:
         row.reviews = (row.reviews or 0) + 1
         add_reviews(db, code, body.day or date.today(), 1)

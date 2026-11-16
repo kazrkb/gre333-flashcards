@@ -11,6 +11,8 @@ a Bangla meaning (বাংলা অর্থ) and an example sentence.
 
 ## Features
 
+- **Today** tab: a daily plan (review → learn new words → test them) and a memory-strength bar (learning / getting stronger / long-term)
+- **Your sentence** under each card: write your own sentence or trick; saved and synced
 - **Flashcards** with simple English meaning, Bangla meaning, an example sentence and a memory tip (word root or trick)
 - **Daily review (spaced repetition):** right answers come back after 3, 7, 16, 35, 90 days; wrong ones tomorrow
 - **Quiz:** word → meaning, meaning → word, বাংলা → English, fill in the blank, type the word, GRE "pick 2"

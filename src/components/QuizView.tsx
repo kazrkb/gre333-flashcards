@@ -23,11 +23,15 @@ type Question = {
 };
 type Answer = { correct: boolean; chosen: string[]; typed?: string; close?: boolean };
 
+export type { Mode as QuizMode };
+
 export type QuizState = { questions: Question[]; answers: Answer[]; index: number };
 type LastResult = { score: number; total: number; at: string };
 
 const K_SETTINGS = "gre333.quiz.settings.v3";
 const K_LAST = "gre333.quiz.last.v1";
+/** Day the "test today's words" step of the daily plan was last finished. */
+export const K_TODAY_TEST = "gre333.todayTest.v1";
 
 const MIN_WORDS = 5;
 
@@ -128,8 +132,8 @@ export function QuizView({
 }: {
   progress: Progress;
   active: boolean;
-  /** Start a quiz on these words right away (e.g. from the Groups tab). */
-  request?: { ids: string[]; key: number } | null;
+  /** Start a quiz on these words right away (e.g. from the Groups or Today tab). */
+  request?: { ids: string[]; key: number; mode?: Mode; source?: "today" } | null;
 }) {
   const saved = readJSON<{ pool: Pool; count: number; lastN: number; period: number; mode: Mode }>(K_SETTINGS, {
     pool: "due",
@@ -188,8 +192,11 @@ export function QuizView({
   const poolMax = mode === "se" ? GRE_TOTAL : available.length;
   const poolCount = Math.min(Math.max(count, MIN_WORDS), poolMax);
 
+  const source = useRef<"today" | null>(null);
+
   const begin = (questions: Question[]) => {
     if (!questions.length) return;
+    source.current = null;
     setQuiz({ questions, answers: [], index: 0 });
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -217,7 +224,8 @@ export function QuizView({
   useEffect(() => {
     if (!request || request.key === lastRequest.current) return;
     lastRequest.current = request.key;
-    begin(makeQuestions(shuffle(request.ids), "mixed"));
+    begin(makeQuestions(shuffle(request.ids), request.mode ?? "mixed"));
+    source.current = request.source ?? null;
   }, [request]);
 
   if (!quiz) {
@@ -406,6 +414,7 @@ export function QuizView({
         const r = { score, total: n, at: new Date().toISOString() };
         setLast(r);
         writeJSON(K_LAST, r);
+        if (source.current === "today") writeJSON(K_TODAY_TEST, localDay());
       }}
       onRetry={() => retry(quiz)}
       onExit={() => setQuiz(null)}
@@ -818,6 +827,15 @@ function QuizRunner({
             );
           })}
           {q.kind !== "se" && <p className="mt-1.5 text-sm text-muted-foreground">{word.example}</p>}
+          {(q.kind === "se" ? q.answers! : [q.id]).map((id) => {
+            const note = progress.get(id).note;
+            return note ? (
+              <p key={`note-${id}`} className="mt-2 rounded-md bg-card/70 px-3 py-2 text-sm">
+                <span className="font-medium">Your sentence: </span>
+                {note}
+              </p>
+            ) : null;
+          })}
         </section>
       )}
 

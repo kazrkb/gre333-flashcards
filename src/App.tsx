@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { BookOpen, ClipboardCheck, Flame, List, Moon, RotateCcw, Shapes, Sun, Target } from "lucide-react";
+import { BookOpen, ClipboardCheck, Flame, List, Moon, RotateCcw, Shapes, Sun, Sunrise, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { StudyView, freshSession, loadSession, type Session } from "@/components/StudyView";
+import { StudyView, freshSession, loadSession, shuffled, type Session } from "@/components/StudyView";
+import { TodayView } from "@/components/TodayView";
 import { WordList } from "@/components/WordList";
 import { QuizView } from "@/components/QuizView";
 import { GroupsView } from "@/components/GroupsView";
@@ -12,7 +13,7 @@ import { readJSON, writeJSON } from "@/lib/storage";
 import { WORDS } from "@/lib/words";
 import { cn } from "@/lib/utils";
 
-type Tab = "study" | "quiz" | "groups" | "list";
+type Tab = "today" | "study" | "quiz" | "groups" | "list";
 
 const GOALS = [5, 10, 15, 20, 25, 30];
 
@@ -30,13 +31,13 @@ function useTheme() {
 export default function App() {
   const progress = useProgress();
   const [dark, setDark] = useTheme();
-  const [tab, setTab] = useState<Tab>(() => readJSON<Tab>("gre333.tab", "study"));
+  const [tab, setTab] = useState<Tab>(() => readJSON<Tab>("gre333.tab.v2", "today"));
   const [session, setSession] = useState<Session>(() => loadSession(progress));
   const [goal, setGoalState] = useState<number>(() => readJSON<number>("gre333.goal", 15));
-  const [quizRequest, setQuizRequest] = useState<{ ids: string[]; key: number } | null>(null);
+  const [quizRequest, setQuizRequest] = useState<{ ids: string[]; key: number; source?: "today" } | null>(null);
   const { counts } = progress;
 
-  useEffect(() => writeJSON("gre333.tab", tab), [tab]);
+  useEffect(() => writeJSON("gre333.tab.v2", tab), [tab]);
   const setGoal = (g: number) => {
     setGoalState(g);
     writeJSON("gre333.goal", g);
@@ -48,9 +49,23 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const quizWords = (ids: string[]) => {
-    setQuizRequest({ ids, key: Date.now() });
+  const quizWords = (ids: string[], source?: "today") => {
+    setQuizRequest({ ids, key: Date.now(), source });
     setTab("quiz");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const reviewDue = (ids: string[]) => {
+    setSession({ filter: "due", shuffle: true, deck: shuffled(ids), index: 0 });
+    setTab("study");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const learnNew = (count: number) => {
+    const fresh = shuffled(WORDS.filter((w) => progress.get(w.id).status === "new").map((w) => w.id)).slice(0, count);
+    setSession({ filter: "custom", title: "Today's new words", shuffle: true, deck: fresh, index: 0 });
+    setTab("study");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const openWord = (id: string) => {
@@ -146,9 +161,10 @@ export default function App() {
       </section>
 
       {/* Tabs */}
-      <nav className="mt-4 grid sm:mt-5 grid-cols-4 rounded-full border border-border bg-card p-1" role="tablist">
+      <nav className="mt-4 grid sm:mt-5 grid-cols-5 rounded-full border border-border bg-card p-1" role="tablist">
         {(
           [
+            ["today", "Today", <Sunrise key="i" className="size-4 max-sm:hidden" />],
             ["study", "Cards", <BookOpen key="i" className="size-4 max-sm:hidden" />],
             ["quiz", "Quiz", <ClipboardCheck key="i" className="size-4 max-sm:hidden" />],
             ["groups", "Groups", <Shapes key="i" className="size-4 max-sm:hidden" />],
@@ -161,7 +177,7 @@ export default function App() {
             aria-selected={tab === key}
             onClick={() => setTab(key)}
             className={cn(
-              "inline-flex h-10 items-center justify-center gap-2 rounded-full text-sm font-medium transition sm:h-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+              "inline-flex h-10 items-center justify-center gap-1.5 rounded-full text-[13px] font-medium transition sm:h-9 sm:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
               tab === key ? "bg-foreground text-background shadow-sm" : "text-muted-foreground hover:text-foreground",
             )}
           >
@@ -172,6 +188,9 @@ export default function App() {
       </nav>
 
       <main className={cn("mt-4 sm:mt-5", tab === "study" && "pb-24 sm:pb-0")}>
+        {tab === "today" && (
+          <TodayView progress={progress} goal={goal} onReview={reviewDue} onLearn={learnNew} onTest={quizWords} />
+        )}
         <div hidden={tab !== "study"}>
           <StudyView progress={progress} session={session} setSession={setSession} active={tab === "study"} />
         </div>
