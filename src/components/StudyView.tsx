@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, CalendarCheck, Check, PartyPopper, RotateCcw, Shuffle, Star, X } from "lucide-react";
+import { ArrowDownAZ, ArrowLeft, ArrowRight, CalendarCheck, Check, PartyPopper, RotateCcw, Shuffle, Star, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Flashcard } from "@/components/Flashcard";
 import { cn } from "@/lib/utils";
@@ -12,7 +12,7 @@ export type Filter = "all" | "due" | "new" | "learning" | "known" | "weak" | "st
 /** `title` is set when studying a custom deck (e.g. a word group). */
 export type Session = { filter: Filter; shuffle: boolean; deck: string[]; index: number; title?: string };
 
-const K_SESSION = "gre333.session.v1";
+const K_SESSION = "gre333.session.v2";
 
 const FILTERS: { key: Filter; label: string }[] = [
   { key: "all", label: "All" },
@@ -28,7 +28,7 @@ type Progress = ReturnType<typeof useProgress>;
 
 function buildDeck(filter: Filter, shuffle: boolean, p: Progress): string[] {
   const today = localDay();
-  let ids = WORDS.filter((w) => {
+  const ids = WORDS.filter((w) => {
     const e = p.get(w.id);
     if (filter === "all") return true;
     if (filter === "starred") return e.starred;
@@ -37,20 +37,28 @@ function buildDeck(filter: Filter, shuffle: boolean, p: Progress): string[] {
     return e.status === filter;
   }).map((w) => w.id);
   if (filter === "weak") ids.sort((a, b) => p.get(b).misses - p.get(a).misses);
-  if (shuffle) {
-    ids = [...ids];
-    for (let i = ids.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [ids[i], ids[j]] = [ids[j], ids[i]];
-    }
-  }
-  return ids;
+  return shuffle ? shuffled(ids) : ids;
 }
 
-export function loadSession(): Session {
+function shuffled<T>(items: T[]): T[] {
+  const a = [...items];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+/** Start state: new words in random order (alphabetical order puts look-alike words next to each other). */
+export function freshSession(): Session {
+  return { filter: "new", shuffle: true, deck: shuffled(WORDS.map((w) => w.id)), index: 0 };
+}
+
+export function loadSession(p: Progress): Session {
   const s = readJSON<Session | null>(K_SESSION, null);
   if (s && Array.isArray(s.deck) && s.deck.every((id) => WORD_BY_ID.has(id))) return s;
-  return { filter: "all", shuffle: false, deck: WORDS.map((w) => w.id), index: 0 };
+  const deck = buildDeck("new", true, p);
+  return deck.length ? { filter: "new", shuffle: true, deck, index: 0 } : { filter: "all", shuffle: true, deck: buildDeck("all", true, p), index: 0 };
 }
 
 export function StudyView({
@@ -164,14 +172,15 @@ export function StudyView({
           })}
         </div>
         <Button
-          variant={shuffle ? "dark" : "outline"}
+          variant="outline"
           size="sm"
           onClick={() => rebuild(filter, !shuffle)}
-          aria-pressed={shuffle}
+          title={shuffle ? "Cards are in random order. Tap for A–Z." : "Cards are in A–Z order. Tap to shuffle."}
+          aria-label={shuffle ? "Order: shuffled. Switch to A to Z" : "Order: A to Z. Switch to shuffled"}
           className="shrink-0"
         >
-          <Shuffle className="!size-3.5" />
-          <span className="hidden sm:inline">Shuffle</span>
+          {shuffle ? <Shuffle className="!size-3.5" /> : <ArrowDownAZ className="!size-3.5" />}
+          <span className="hidden sm:inline">{shuffle ? "Shuffled" : "A–Z"}</span>
         </Button>
       </div>
 

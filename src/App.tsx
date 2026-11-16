@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BookOpen, ClipboardCheck, Flame, List, Moon, RotateCcw, Shapes, Sun, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { StudyView, loadSession, type Session } from "@/components/StudyView";
+import { StudyView, freshSession, loadSession, type Session } from "@/components/StudyView";
 import { WordList } from "@/components/WordList";
 import { QuizView } from "@/components/QuizView";
 import { GroupsView } from "@/components/GroupsView";
@@ -31,7 +31,7 @@ export default function App() {
   const progress = useProgress();
   const [dark, setDark] = useTheme();
   const [tab, setTab] = useState<Tab>(() => readJSON<Tab>("gre333.tab", "study"));
-  const [session, setSession] = useState<Session>(loadSession);
+  const [session, setSession] = useState<Session>(() => loadSession(progress));
   const [goal, setGoalState] = useState<number>(() => readJSON<number>("gre333.goal", 15));
   const [quizRequest, setQuizRequest] = useState<{ ids: string[]; key: number } | null>(null);
   const { counts } = progress;
@@ -101,7 +101,7 @@ export default function App() {
                   <Button
                     onClick={() => {
                       progress.reset();
-                      setSession(loadSessionFresh());
+                      setSession(freshSession());
                     }}
                   >
                     Reset progress
@@ -185,10 +185,6 @@ export default function App() {
       </main>
     </div>
   );
-}
-
-function loadSessionFresh(): Session {
-  return { filter: "all", shuffle: false, deck: WORDS.map((w) => w.id), index: 0 };
 }
 
 function GoalTile({
