@@ -17,7 +17,7 @@ type Kind = "meaning" | "word" | "bangla" | "blank" | "type" | "spell" | "se";
 /** A question type the learner can choose. */
 type Pick = Kind | "mixed";
 /** Recorded on a quiz: a chosen type, or "unlock" for the Word Smart unlock test. */
-type Mode = Pick | "unlock";
+type Mode = Pick | "unlock" | "spell";
 
 type Question = {
   id: string; // main word
@@ -56,7 +56,6 @@ const MODES: { key: Pick; label: string; hint: string }[] = [
   { key: "bangla", label: "বাংলা → English", hint: "See the Bangla, pick the word" },
   { key: "blank", label: "Fill in the blank", hint: "Complete the sentence" },
   { key: "type", label: "Type the word", hint: "Hardest: spell it yourself" },
-  { key: "spell", label: "Spelling", hint: "Listen and type the word exactly" },
 ];
 
 /** Labels for quiz history (includes GRE tab sets and the unlock test). */
@@ -64,6 +63,7 @@ const MODE_LABELS: Record<string, string> = {
   ...Object.fromEntries(MODES.map((m) => [m.key, m.label])),
   se: "GRE: pick 2",
   unlock: "Unlock test",
+  spell: "Spelling test",
   "gre-tc": "Text Completion",
   "gre-tc1": "Text Completion",
   "gre-tcm": "Text Completion (2–3 blanks)",
@@ -73,8 +73,6 @@ const MODE_LABELS: Record<string, string> = {
 };
 
 const MIXED: Kind[] = ["meaning", "word", "bangla", "blank", "type"];
-/** Today's test (daily plan): the usual mix, with every third question a spelling question. */
-const MIXED_SPELL: Kind[] = ["meaning", "word", "spell", "bangla", "blank", "spell"];
 
 const K_SPELL_HINT = "gre333.spellHint.v1";
 
@@ -129,11 +127,10 @@ function editDistance(a: string, b: string) {
   return dp[a.length][b.length];
 }
 
-function makeQuestions(ids: string[], mode: Pick | "mixed-spell"): Question[] {
+function makeQuestions(ids: string[], mode: Pick | "spell"): Question[] {
   return ids.map((id, i) => {
     const w = WORD_BY_ID.get(id)!;
-    let kind: Kind =
-      mode === "mixed" ? MIXED[i % MIXED.length] : mode === "mixed-spell" ? MIXED_SPELL[i % MIXED_SPELL.length] : mode;
+    let kind: Kind = mode === "mixed" ? MIXED[i % MIXED.length] : mode;
     if (kind === "blank" && !stemRegex(w.word).test(w.example)) kind = "meaning";
     const level = Math.floor(Math.random() * 3);
     return { id, kind, level, options: kind === "type" || kind === "spell" ? [] : shuffle([id, ...pickDistractors(w, 3)]) };
@@ -300,9 +297,7 @@ export function QuizView({
   useEffect(() => {
     if (!request || request.key === lastRequest.current) return;
     lastRequest.current = request.key;
-    // The daily-plan test folds spelling in: every third question asks you to spell the word.
-    const qMode = request.mode ?? (request.source === "today" ? "mixed-spell" : "mixed");
-    begin(makeQuestions(shuffle(request.ids), qMode), request.title ?? "Quiz", request.mode ?? "mixed");
+    begin(makeQuestions(shuffle(request.ids), request.mode ?? "mixed"), request.title ?? "Quiz", request.mode ?? "mixed");
     source.current = request.source ?? null;
   }, [request]);
 
@@ -314,6 +309,16 @@ export function QuizView({
     return (
       <div className="flex flex-col gap-4">
         <UnlockCard wordSmart={wordSmart} onStart={startUnlockTest} />
+
+        <SpellingCard
+          sources={[
+            { key: "today", label: "Learned today", ids: pools.learned.filter((x) => x.day === localDay()).map((x) => x.id) },
+            { key: "week", label: "Last week", ids: pools.learned.filter((x) => x.day >= addDays(localDay(), -6)).map((x) => x.id) },
+            { key: "misspelled", label: "Misspelled", ids: pools.misspelled },
+            { key: "all", label: "All words", ids: pools.all },
+          ]}
+          onStart={(ids, label) => begin(makeQuestions(shuffle(ids), "spell"), `Spelling test · ${label}`, "spell")}
+        />
 
         {/* Quick tests */}
         <section className="rounded-xl border border-border bg-card p-5">
@@ -1276,5 +1281,81 @@ function UnlockResult({ quiz }: { quiz: QuizState }) {
           : `You scored ${pct}%; you need ${need}% to unlock Word Smart. Your missed words are in Learning; review them and try again.`}
       </span>
     </p>
+  );
+}
+
+/** A separate spelling test: hear the word, type it exactly. */
+function SpellingCard({
+  sources,
+  onStart,
+}: {
+  sources: { key: string; label: string; ids: string[] }[];
+  onStart: (ids: string[], label: string) => void;
+}) {
+  const [source, setSource] = useState<string>(() => readJSON<string>("gre333.spellSource.v1", "today"));
+  const [count, setCount] = useState<number>(() => readJSON<number>("gre333.spellCount.v1", 10));
+  const current = sources.find((s) => s.key === source) ?? sources[0];
+  const available = current.ids.length;
+  const n = Math.min(Math.max(count, Math.min(5, available)), available);
+  return (
+    <section className="rounded-xl border border-border bg-card p-5">
+      <div className="flex items-start gap-3">
+        <div className="grid size-10 shrink-0 place-items-center rounded-full bg-accent-soft text-primary">
+          <Volume2 className="size-5" />
+        </div>
+        <div className="min-w-0">
+          <h2 className="text-lg font-semibold tracking-tight">Spelling test</h2>
+          <p className="mt-0.5 text-sm text-muted-foreground">
+            Listen to the word and type it exactly. Wrong spellings go to your Misspelled list; your review schedule
+            isn't changed.
+          </p>
+        </div>
+      </div>
+      <div className="mt-4 flex flex-wrap gap-1.5">
+        {sources.map((s) => (
+          <button
+            key={s.key}
+            type="button"
+            aria-pressed={s.key === current.key}
+            onClick={() => {
+              setSource(s.key);
+              writeJSON("gre333.spellSource.v1", s.key);
+            }}
+            className={cn(
+              "inline-flex h-9 items-center gap-1.5 rounded-full border px-3.5 text-[13px] font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+              s.key === current.key
+                ? "border-foreground bg-foreground text-background"
+                : "border-border bg-card text-muted-foreground hover:border-border-strong hover:text-foreground",
+            )}
+          >
+            {s.label}
+            <span className={cn("font-mono text-[11px] tabular-nums", s.key === current.key ? "text-background/70" : "")}>
+              {s.ids.length}
+            </span>
+          </button>
+        ))}
+      </div>
+      <div className="mt-3 flex items-center justify-between gap-3">
+        {available > 0 ? (
+          <>
+            <Stepper
+              value={n}
+              min={Math.min(5, available)}
+              max={available}
+              onChange={(v) => {
+                setCount(v);
+                writeJSON("gre333.spellCount.v1", v);
+              }}
+              label="Number of words"
+            />
+            <Button onClick={() => onStart(shuffle(current.ids).slice(0, n), current.label)}>Start · {n}</Button>
+          </>
+        ) : (
+          <p className="text-sm text-muted-foreground">
+            {current.key === "misspelled" ? "No misspelled words yet." : "No words here yet. Learn some words first."}
+          </p>
+        )}
+      </div>
+    </section>
   );
 }
