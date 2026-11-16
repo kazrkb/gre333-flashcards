@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ChevronDown, Lightbulb, Star, Volume2, X } from "lucide-react";
 import type { Entry } from "@/lib/progress";
 import { speak, stemRegex, WORD_BY_ID, wordForForm, type Word } from "@/lib/words";
@@ -7,6 +7,28 @@ import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 
 const LEVELS = ["Easy", "Medium", "GRE level"];
+
+/**
+ * Height left on screen below the card's top edge, minus room for the answer buttons,
+ * so the whole card is visible without scrolling the page.
+ */
+function useFitHeight(ref: React.RefObject<HTMLDivElement | null>) {
+  const [h, setH] = useState(520);
+  useEffect(() => {
+    const measure = () => {
+      const el = ref.current;
+      if (!el) return;
+      const top = el.getBoundingClientRect().top + window.scrollY;
+      const below = window.innerWidth < 640 ? 96 : 84; // sticky answer bar on phones / buttons + hint on larger screens
+      const next = Math.max(300, Math.round(window.innerHeight - top - below));
+      setH((prev) => (Math.abs(prev - next) > 2 ? next : prev));
+    };
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  });
+  return h;
+}
 
 /** Near-synonyms and opposites from the synonym families (the GRE often tests these together). */
 function relatedWords(id: string) {
@@ -151,6 +173,8 @@ export function Flashcard({
   onStar: () => void;
 }) {
   const [peek, setPeek] = useState<Word | null>(null);
+  const sceneRef = useRef<HTMLDivElement>(null);
+  const maxH = useFitHeight(sceneRef);
   const related = useMemo(() => relatedWords(word.id), [word.id]);
   const [openBn, setOpenBn] = useState<Set<number>>(new Set());
   const toggleBn = (i: number) =>
@@ -175,7 +199,7 @@ export function Flashcard({
   const shadow = "shadow-[0_1px_2px_rgba(0,0,0,0.04),0_12px_32px_-12px_rgba(60,60,50,0.18)]";
 
   return (
-    <div className="flip-scene">
+    <div className="flip-scene" ref={sceneRef}>
       <div
         role="button"
         tabIndex={0}
@@ -192,8 +216,9 @@ export function Flashcard({
         {/* Front */}
         <div
           aria-hidden={flipped}
+          style={{ minHeight: Math.min(380, maxH), maxHeight: maxH }}
           className={cn(
-            "flip-face flex min-h-[400px] flex-col rounded-xl border border-border bg-card p-5 sm:min-h-[380px] sm:p-7",
+            "flip-face flex flex-col overflow-y-auto overscroll-contain rounded-xl border border-border bg-card p-5 sm:p-7",
             shadow,
             flipped && "pointer-events-none",
           )}
@@ -217,8 +242,9 @@ export function Flashcard({
         {/* Back */}
         <div
           aria-hidden={!flipped}
+          style={{ maxHeight: maxH }}
           className={cn(
-            "flip-face flip-back flex flex-col rounded-xl border border-border bg-card-back p-5 sm:p-7",
+            "flip-face flip-back flex flex-col overflow-y-auto overscroll-contain rounded-xl border border-border bg-card-back p-5 sm:p-7",
             shadow,
             !flipped && "pointer-events-none",
           )}

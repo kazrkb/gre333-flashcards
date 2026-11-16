@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BookOpen, Brain, ClipboardCheck, Flame, GraduationCap, List, Lock, Moon, Sun, Target, Unlock } from "lucide-react";
+import { BookOpen, Brain, ChevronDown, ChevronUp, ClipboardCheck, Flame, GraduationCap, List, Lock, Moon, Sun, Target, Unlock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { StudyView, buildDeck, freshSession, loadSession, shuffled, type Session } from "@/components/StudyView";
@@ -42,6 +42,7 @@ export default function App() {
     return (["study", "quiz", "gre", "list"] as const).includes(saved as Tab) ? (saved as Tab) : "study";
   });
   const [session, setSession] = useState<Session>(() => loadSession(progress));
+  const [statsOpen, setStatsOpen] = useState(false);
   const [goal, setGoalState] = useState<number>(() => readJSON<number>("gre333.goal", 15));
   const [quizRequest, setQuizRequest] = useState<{ ids: string[]; key: number; source?: "today"; title?: string } | null>(null);
   const { counts } = progress;
@@ -127,7 +128,30 @@ export default function App() {
         </div>
       </header>
 
-      {/* Stats */}
+      {/* On the Cards tab the stats collapse into one slim line, so the card fits on screen. */}
+      {tab === "study" && !statsOpen ? (
+        <button
+          type="button"
+          onClick={() => setStatsOpen(true)}
+          className="mt-3 flex w-full items-center gap-x-3 gap-y-1 overflow-hidden rounded-full border border-border bg-card px-4 py-2 text-left text-[13px] text-muted-foreground transition hover:border-border-strong"
+          aria-label="Show stats and today's plan"
+        >
+          <span className="whitespace-nowrap">
+            <span className="font-semibold tabular-nums text-foreground">{counts.known}</span>/{counts.total} known
+          </span>
+          <span className="whitespace-nowrap">
+            <Target className="mr-1 inline size-3.5" />
+            <span className="tabular-nums text-foreground">{counts.newToday}</span>/{goal}
+          </span>
+          <span className="whitespace-nowrap">
+            <Flame className={cn("mr-1 inline size-3.5", progress.streak > 0 && "text-primary")} />
+            <span className="tabular-nums text-foreground">{progress.streak}</span>
+          </span>
+          {counts.due > 0 && <span className="whitespace-nowrap text-primary">{counts.due} to review</span>}
+          <ChevronDown className="ml-auto size-4 shrink-0" />
+        </button>
+      ) : (
+        <>
       <section className="mt-4 rounded-xl border border-border bg-card p-4 sm:mt-5 sm:p-5">
         <div className="flex items-end justify-between gap-3 sm:gap-4">
           <div className="min-w-0">
@@ -180,6 +204,17 @@ export default function App() {
 
       {/* Today's plan: review → learn → test */}
       <TodayStrip key={`strip-${wordsVersion}`} progress={progress} goal={goal} onReview={reviewDue} onLearn={learnNew} onTest={quizWords} />
+          {tab === "study" && (
+            <button
+              type="button"
+              onClick={() => setStatsOpen(false)}
+              className="mx-auto mt-2 flex items-center gap-1 text-[12px] text-muted-foreground hover:text-foreground"
+            >
+              <ChevronUp className="size-3.5" /> Hide
+            </button>
+          )}
+        </>
+      )}
 
       {/* Tabs */}
       <nav className="mt-4 grid sm:mt-5 grid-cols-4 rounded-full border border-border bg-card p-1" role="tablist">
