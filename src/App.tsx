@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { BookOpen, ClipboardCheck, Flame, List, Moon, Shapes, Sun, Sunrise, Target } from "lucide-react";
+import { BookOpen, Brain, ClipboardCheck, Flame, List, Moon, Shapes, Sun, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { StudyView, freshSession, loadSession, shuffled, type Session } from "@/components/StudyView";
-import { TodayView } from "@/components/TodayView";
+import { TodayStrip, longTermCount } from "@/components/TodayView";
 import { WordList } from "@/components/WordList";
-import { K_TODAY_TEST, QuizView } from "@/components/QuizView";
+import { K_TODAY_TEST, QuizView, TODAY_TEST_EVENT } from "@/components/QuizView";
 import { GroupsView } from "@/components/GroupsView";
 import { useProgress } from "@/lib/progress";
 import { useQuizHistory } from "@/lib/quizHistory";
@@ -14,7 +14,7 @@ import { readJSON, writeJSON } from "@/lib/storage";
 import { WORDS } from "@/lib/words";
 import { cn } from "@/lib/utils";
 
-type Tab = "today" | "study" | "quiz" | "groups" | "list";
+type Tab = "study" | "quiz" | "groups" | "list";
 
 const GOALS = [5, 10, 15, 20, 25, 30];
 
@@ -33,13 +33,16 @@ export default function App() {
   const progress = useProgress();
   const quizHistory = useQuizHistory(progress.code);
   const [dark, setDark] = useTheme();
-  const [tab, setTab] = useState<Tab>(() => readJSON<Tab>("gre333.tab.v2", "today"));
+  const [tab, setTab] = useState<Tab>(() => {
+    const saved = readJSON<string>("gre333.tab.v3", "study");
+    return (["study", "quiz", "groups", "list"] as const).includes(saved as Tab) ? (saved as Tab) : "study";
+  });
   const [session, setSession] = useState<Session>(() => loadSession(progress));
   const [goal, setGoalState] = useState<number>(() => readJSON<number>("gre333.goal", 15));
   const [quizRequest, setQuizRequest] = useState<{ ids: string[]; key: number; source?: "today"; title?: string } | null>(null);
   const { counts } = progress;
 
-  useEffect(() => writeJSON("gre333.tab.v2", tab), [tab]);
+  useEffect(() => writeJSON("gre333.tab.v3", tab), [tab]);
   const setGoal = (g: number) => {
     setGoalState(g);
     writeJSON("gre333.goal", g);
@@ -101,6 +104,7 @@ export default function App() {
               progress.reset();
               quizHistory.clear();
               writeJSON(K_TODAY_TEST, null);
+              window.dispatchEvent(new Event(TODAY_TEST_EVENT));
               setSession(freshSession());
             }}
           />
@@ -139,14 +143,23 @@ export default function App() {
           <Legend color="bg-known" label="Known" value={counts.known} />
           <Legend color="bg-learning" label="Learning" value={counts.learning} />
           <Legend color="bg-new" label="New" value={counts.new} />
+          <span
+            className="inline-flex items-center gap-1.5 sm:ml-auto"
+            title="Words you remembered after a 2+ week gap: they're in long-term memory"
+          >
+            <Brain className="size-3.5 text-primary" />
+            Long-term <span className="font-medium tabular-nums text-foreground">{longTermCount(progress)}</span>
+          </span>
         </div>
       </section>
 
+      {/* Today's plan: review → learn → test */}
+      <TodayStrip progress={progress} goal={goal} onReview={reviewDue} onLearn={learnNew} onTest={quizWords} />
+
       {/* Tabs */}
-      <nav className="mt-4 grid sm:mt-5 grid-cols-5 rounded-full border border-border bg-card p-1" role="tablist">
+      <nav className="mt-4 grid sm:mt-5 grid-cols-4 rounded-full border border-border bg-card p-1" role="tablist">
         {(
           [
-            ["today", "Today", <Sunrise key="i" className="size-4 max-sm:hidden" />],
             ["study", "Cards", <BookOpen key="i" className="size-4 max-sm:hidden" />],
             ["quiz", "Quiz", <ClipboardCheck key="i" className="size-4 max-sm:hidden" />],
             ["groups", "Groups", <Shapes key="i" className="size-4 max-sm:hidden" />],
@@ -170,9 +183,6 @@ export default function App() {
       </nav>
 
       <main className={cn("mt-4 sm:mt-5", tab === "study" && "pb-24 sm:pb-0")}>
-        {tab === "today" && (
-          <TodayView progress={progress} goal={goal} onReview={reviewDue} onLearn={learnNew} onTest={quizWords} />
-        )}
         <div hidden={tab !== "study"}>
           <StudyView progress={progress} session={session} setSession={setSession} active={tab === "study"} />
         </div>

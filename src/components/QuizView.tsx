@@ -32,6 +32,8 @@ export type QuizState = { questions: Question[]; answers: Answer[]; index: numbe
 const K_SETTINGS = "gre333.quiz.settings.v3";
 /** Day the "test today's words" step of the daily plan was last finished. */
 export const K_TODAY_TEST = "gre333.todayTest.v1";
+/** Fired when that step changes, so the Today strip updates right away. */
+export const TODAY_TEST_EVENT = "gre333:today-test";
 
 const MIN_WORDS = 5;
 
@@ -427,7 +429,10 @@ export function QuizView({
       active={active}
       onFinish={() => {
         saveResult(quiz);
-        if (source.current === "today") writeJSON(K_TODAY_TEST, localDay());
+        if (source.current === "today") {
+          writeJSON(K_TODAY_TEST, localDay());
+          window.dispatchEvent(new Event(TODAY_TEST_EVENT));
+        }
       }}
       onRetry={() => retry(quiz)}
       onExit={() => setQuiz(null)}

@@ -11,7 +11,7 @@ a Bangla meaning (বাংলা অর্থ) and an example sentence.
 
 ## Features
 
-- **Today** tab: a daily plan (review → learn new words → test them) and a memory-strength bar (learning / getting stronger / long-term)
+- **Today's plan** strip on every tab: review → learn new words → test them, ticking off as you go; the stats card shows how many words are in long-term memory
 - **3 example sentences per word** (easy → medium → GRE level). GRE-level sentences use other list words (tap to see their meaning); each sentence has a Bangla translation behind a ⌄ button
 - **Flashcards** with simple English meaning, Bangla meaning, an example sentence and a memory tip (word root or trick)
 - **Daily review (spaced repetition):** right answers come back after 3, 7, 16, 35, 90 days; wrong ones tomorrow
