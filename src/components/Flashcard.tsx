@@ -191,26 +191,38 @@ export function Flashcard({
       return next;
     });
 
+  const chooseVoice = (g: VoiceGender) => {
+    setVoiceGender(g);
+    setVoice(g);
+    speak(word.word);
+  };
+
   const actions = (
-    <div className="flex items-center gap-0.5">
+    <div className="flex items-center gap-1">
+      {/* Voice: Female / Male (saved; Female by default) */}
+      <div className="flex rounded-full border border-border p-0.5" role="group" aria-label="Pronunciation voice">
+        {(["female", "male"] as const).map((g) => (
+          <button
+            key={g}
+            type="button"
+            aria-pressed={voice === g}
+            title={g === "female" ? "Female voice" : "Male voice"}
+            onClick={(e) => {
+              e.stopPropagation();
+              chooseVoice(g);
+            }}
+            className={cn(
+              "h-7 rounded-full px-2.5 text-[12px] font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+              voice === g ? "bg-foreground text-background" : "text-muted-foreground hover:text-foreground",
+            )}
+          >
+            {g === "female" ? "Female" : "Male"}
+          </button>
+        ))}
+      </div>
       <IconAction label="Pronounce (P)" onClick={() => speak(word.word)}>
         <Volume2 className="size-[18px]" />
       </IconAction>
-      <button
-        type="button"
-        onClick={(e) => {
-          e.stopPropagation();
-          const g: VoiceGender = voice === "male" ? "female" : "male";
-          setVoiceGender(g);
-          setVoice(g);
-          speak(word.word);
-        }}
-        title={`Voice: ${voice === "male" ? "male (Spike)" : "female (Poppy)"}. Tap to switch.`}
-        aria-label={`Pronunciation voice: ${voice}. Switch to ${voice === "male" ? "female" : "male"}`}
-        className="-ml-1 grid h-7 min-w-7 place-items-center rounded-full border border-border px-1.5 font-mono text-[11px] font-semibold text-muted-foreground transition hover:border-border-strong hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-      >
-        {voice === "male" ? "M" : "F"}
-      </button>
       <IconAction label={entry.starred ? "Remove star (S)" : "Star this word (S)"} onClick={onStar} active={entry.starred}>
         <Star className={cn("size-[18px]", entry.starred && "fill-current")} />
       </IconAction>

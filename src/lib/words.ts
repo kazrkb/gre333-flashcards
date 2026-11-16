@@ -116,12 +116,12 @@ export const plainSentence = (s: string) => s.replace(/[{}]/g, "");
 
 /** Male or female British voice, chosen by the learner (saved in this browser). */
 export type VoiceGender = "male" | "female";
-const K_VOICE = "gre333.voice.v1";
+const K_VOICE = "gre333.voice.v2"; // v2: default changed to female
 export function getVoiceGender(): VoiceGender {
   try {
-    return localStorage.getItem(K_VOICE) === "\"female\"" ? "female" : "male";
+    return localStorage.getItem(K_VOICE) === "\"male\"" ? "male" : "female";
   } catch {
-    return "male";
+    return "female";
   }
 }
 export function setVoiceGender(g: VoiceGender) {
