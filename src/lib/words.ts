@@ -133,10 +133,15 @@ export function setVoiceGender(g: VoiceGender) {
   ukVoice = undefined;
 }
 
-// Best-sounding British voices first (Apple, Google, Microsoft); Apple's basic voices only as a last resort.
+// Most natural-sounding British voices first: Microsoft "Natural"/neural (Edge), Apple Premium/Enhanced,
+// Google UK English (Chrome), then standard ones. Apple's basic robotic voices only if nothing else exists.
 const UK_VOICES: Record<VoiceGender, RegExp[]> = {
-  male: [/Daniel/i, /Arthur/i, /Google UK English Male/i, /Ryan/i, /George/i, /Oliver/i, /\bMale\b/i, /Reed/i, /Eddy/i, /Rocko/i, /Grandpa/i],
-  female: [/Serena/i, /Kate/i, /Martha/i, /Stephanie/i, /Google UK English Female/i, /Libby/i, /Sonia/i, /Hazel/i, /Susan/i, /\bFemale\b/i, /Flo\b/i, /Shelley/i, /Sandy/i, /Grandma/i],
+  male: [/Ryan.*Natural|Thomas.*Natural|Natural.*Ryan/i, /Daniel.*(Premium|Enhanced)/i, /Arthur.*(Premium|Enhanced)/i, /Google UK English Male/i, /Daniel/i, /Arthur/i, /Ryan/i, /George/i, /Oliver/i, /\bMale\b/i],
+  female: [/(Sonia|Libby|Maisie|Bella|Hollie).*Natural|Natural.*(Sonia|Libby)/i, /(Serena|Kate|Martha|Stephanie).*(Premium|Enhanced)/i, /Google UK English Female/i, /Serena/i, /Kate/i, /Martha/i, /Stephanie/i, /Libby/i, /Sonia/i, /Hazel/i, /Susan/i, /\bFemale\b/i],
+};
+const ROBOTIC: Record<VoiceGender, RegExp[]> = {
+  male: [/Reed/i, /Eddy/i, /Rocko/i, /Grandpa/i],
+  female: [/Flo\b/i, /Shelley/i, /Sandy/i, /Grandma/i],
 };
 
 /** The British English voice to use on this device, matching the chosen gender when possible. */
@@ -154,7 +159,9 @@ function britishVoice(): SpeechSynthesisVoice | null {
     return undefined;
   };
   const g = getVoiceGender();
-  ukVoice = pick(UK_VOICES[g]) ?? pick(UK_VOICES[g === "male" ? "female" : "male"]) ?? gb[0] ?? null;
+  const other = g === "male" ? "female" : "male";
+  // Natural voice of the chosen gender → robotic one of that gender → natural one of the other gender.
+  ukVoice = pick(UK_VOICES[g]) ?? pick(ROBOTIC[g]) ?? pick(UK_VOICES[other]) ?? gb[0] ?? null;
   return ukVoice;
 }
 if (typeof window !== "undefined" && window.speechSynthesis) {
