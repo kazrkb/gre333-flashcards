@@ -177,8 +177,53 @@ export function currentVoiceName(): string | null {
   }
 }
 
-/** Say a word aloud in British English. The default is a little slow so it is easy to catch; 0.5 is very slow. */
+/** Natural recorded voices (Piper TTS, "semaine" voice): one MP3 per word in /audio/m and /audio/f. */
+export function recordedVoiceName(): string {
+  return getVoiceGender() === "female" ? "Poppy (natural British female)" : "Spike (natural British male)";
+}
+
+let player: HTMLAudioElement | null = null;
+let textIndex: { size: number; map: Map<string, string> } | null = null;
+function idForText(text: string): string | undefined {
+  if (!textIndex || textIndex.size !== WORD_BY_ID.size) {
+    const map = new Map<string, string>();
+    for (const w of WORD_BY_ID.values()) if (!map.has(w.word.toLowerCase())) map.set(w.word.toLowerCase(), w.id);
+    textIndex = { size: WORD_BY_ID.size, map };
+  }
+  return textIndex.map.get(text.trim().toLowerCase());
+}
+
+/**
+ * Say a word aloud in British English. List words play their natural recording in the chosen voice;
+ * anything else (or a recording that can't load) uses the device's British voice.
+ * The default rate is a little slow so it's easy to catch; 0.5 is very slow.
+ */
 export function speak(text: string, rate = 0.75) {
+  const id = idForText(text);
+  if (id && typeof Audio !== "undefined") {
+    try {
+      window.speechSynthesis?.cancel();
+      player?.pause();
+      const audio = new Audio(`/audio/${getVoiceGender() === "female" ? "f" : "m"}/${encodeURIComponent(id)}.mp3`);
+      audio.playbackRate = Math.max(0.5, rate / 0.75); // the recordings are already slightly slowed
+      let fellBack = false;
+      const fallback = () => {
+        if (fellBack) return;
+        fellBack = true;
+        speakWithDevice(text, rate);
+      };
+      audio.onerror = fallback;
+      player = audio;
+      audio.play().catch(fallback);
+      return;
+    } catch {
+      /* fall through to the device voice */
+    }
+  }
+  speakWithDevice(text, rate);
+}
+
+function speakWithDevice(text: string, rate: number) {
   try {
     const synth = window.speechSynthesis;
     if (!synth) return;

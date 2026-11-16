@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { BookOpen, Brain, ClipboardCheck, Flame, Volume2, GraduationCap, List, Lock, Moon, Sun, Target, Unlock } from "lucide-react";
+import { BookOpen, Brain, ClipboardCheck, Flame, GraduationCap, List, Lock, Moon, Sun, Target, Unlock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { StudyView, buildDeck, freshSession, loadSession, shuffled, type Session } from "@/components/StudyView";
@@ -12,7 +12,7 @@ import { useProgress } from "@/lib/progress";
 import { useQuizHistory } from "@/lib/quizHistory";
 import { SyncDialog } from "@/components/SyncDialog";
 import { readJSON, writeJSON } from "@/lib/storage";
-import { currentVoiceName, getVoiceGender, setVoiceGender, speak, WORD_BY_ID, WORDS, type VoiceGender } from "@/lib/words";
+import { WORD_BY_ID, WORDS } from "@/lib/words";
 import { cn } from "@/lib/utils";
 
 type Tab = "study" | "quiz" | "gre" | "list";
@@ -37,9 +37,6 @@ export default function App() {
   const wordSmart = useWordSmart(progress, () => setWordsVersion((v) => v + 1));
   const quizHistory = useQuizHistory(progress.code);
   const [dark, setDark] = useTheme();
-  const [voice, setVoice] = useState<VoiceGender>(getVoiceGender);
-  const [voiceNote, setVoiceNote] = useState<string | null>(null);
-  const noteTimer = useRef<number | undefined>(undefined);
   const [tab, setTab] = useState<Tab>(() => {
     const saved = readJSON<string>("gre333.tab.v3", "study");
     return (["study", "quiz", "gre", "list"] as const).includes(saved as Tab) ? (saved as Tab) : "study";
@@ -131,40 +128,11 @@ export default function App() {
               setSession(freshSession());
             }}
           />
-          <button
-            type="button"
-            onClick={() => {
-              const g: VoiceGender = voice === "male" ? "female" : "male";
-              setVoiceGender(g);
-              setVoice(g);
-              speak("Welcome");
-              // Say which voice is really used, so it's clear when the browser hides its voices.
-              const name = currentVoiceName();
-              setVoiceNote(
-                name
-                  ? `Voice: ${name}`
-                  : "Your browser isn't sharing its voices, so it uses its default voice. In Brave, turn Shields' fingerprint blocking off for this site.",
-              );
-              window.clearTimeout(noteTimer.current);
-              noteTimer.current = window.setTimeout(() => setVoiceNote(null), name ? 2500 : 9000);
-            }}
-            title={`Pronunciation voice: British ${voice}. Tap to switch.`}
-            aria-label={`Pronunciation voice: ${voice}. Switch to ${voice === "male" ? "female" : "male"}`}
-            className="inline-flex h-9 items-center gap-1 rounded-full px-2.5 text-xs font-medium text-muted-foreground transition hover:bg-muted hover:text-foreground sm:h-8"
-          >
-            <Volume2 className="size-4" />
-            {voice === "male" ? "Male" : "Female"}
-          </button>
           <Button variant="ghost" size="icon-sm" aria-label="Toggle dark mode" onClick={() => setDark(!dark)}>
             {dark ? <Sun /> : <Moon />}
           </Button>
         </div>
       </header>
-      {voiceNote && (
-        <p role="status" className="mt-2 rounded-lg bg-card px-3 py-2 text-right text-[13px] text-muted-foreground animate-card-in">
-          {voiceNote}
-        </p>
-      )}
 
       <section className="mt-4 rounded-xl border border-border bg-card p-4 sm:mt-5 sm:p-5">
         <div className="flex items-end justify-between gap-3 sm:gap-4">

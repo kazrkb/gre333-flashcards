@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ChevronDown, Lightbulb, Star, Volume2, X } from "lucide-react";
 import type { Entry } from "@/lib/progress";
-import { speak, stemRegex, WORD_BY_ID, wordForForm, type Word } from "@/lib/words";
+import { getVoiceGender, setVoiceGender, speak, stemRegex, WORD_BY_ID, wordForForm, type VoiceGender, type Word } from "@/lib/words";
 import { GROUPS } from "@/data/groups";
 import PRON_DATA from "@/data/pron.json";
 
@@ -178,6 +178,7 @@ export function Flashcard({
   onStar: () => void;
 }) {
   const [peek, setPeek] = useState<Word | null>(null);
+  const [voice, setVoice] = useState<VoiceGender>(getVoiceGender);
   const sceneRef = useRef<HTMLDivElement>(null);
   useCenterOnScreen(sceneRef, flipped, active);
   const related = useMemo(() => relatedWords(word.id), [word.id]);
@@ -195,6 +196,21 @@ export function Flashcard({
       <IconAction label="Pronounce (P)" onClick={() => speak(word.word)}>
         <Volume2 className="size-[18px]" />
       </IconAction>
+      <button
+        type="button"
+        onClick={(e) => {
+          e.stopPropagation();
+          const g: VoiceGender = voice === "male" ? "female" : "male";
+          setVoiceGender(g);
+          setVoice(g);
+          speak(word.word);
+        }}
+        title={`Voice: ${voice === "male" ? "male (Spike)" : "female (Poppy)"}. Tap to switch.`}
+        aria-label={`Pronunciation voice: ${voice}. Switch to ${voice === "male" ? "female" : "male"}`}
+        className="-ml-1 grid h-7 min-w-7 place-items-center rounded-full border border-border px-1.5 font-mono text-[11px] font-semibold text-muted-foreground transition hover:border-border-strong hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      >
+        {voice === "male" ? "M" : "F"}
+      </button>
       <IconAction label={entry.starred ? "Remove star (S)" : "Star this word (S)"} onClick={onStar} active={entry.starred}>
         <Star className={cn("size-[18px]", entry.starred && "fill-current")} />
       </IconAction>

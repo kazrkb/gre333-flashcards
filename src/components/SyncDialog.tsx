@@ -179,6 +179,9 @@ export function SyncDialog({ progress, onReset }: { progress: Progress; onReset:
             </div>
           </div>
         </details>
+        <p className="mt-5 text-center text-[11px] leading-relaxed text-muted-foreground/70">
+          Pronunciation audio made with Piper TTS, voice “semaine” (DFKI SEMAINE database, CC BY-NC-SA 4.0).
+        </p>
       </DialogContent>
     </Dialog>
   );
