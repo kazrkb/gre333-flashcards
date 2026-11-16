@@ -3,6 +3,10 @@ import { ChevronDown, Lightbulb, Star, Volume2, X } from "lucide-react";
 import type { Entry } from "@/lib/progress";
 import { speak, stemRegex, WORD_BY_ID, wordForForm, type Word } from "@/lib/words";
 import { GROUPS } from "@/data/groups";
+import PRON_DATA from "@/data/pron.json";
+
+/** British pronunciation guide per word: learner respelling (stress in capitals) and IPA. */
+const PRON = PRON_DATA as Record<string, { r: string; ipa: string }>;
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 
@@ -232,6 +236,12 @@ export function Flashcard({
             <h2 className="mt-3 max-w-full break-words text-[2.75rem] font-semibold leading-tight tracking-tight text-card-foreground sm:text-6xl">
               {word.word}
             </h2>
+            {PRON[word.id] && (
+              <p className="mt-2 text-lg text-muted-foreground" title="British pronunciation">
+                <span className="font-medium text-card-foreground/80">{PRON[word.id].r}</span>
+                <span className="ml-2 font-mono text-[15px]">{PRON[word.id].ipa}</span>
+              </p>
+            )}
           </div>
           <p className="text-center text-sm text-muted-foreground">
             <span className="pointer-coarse:hidden">Click the card to see the meaning</span>
@@ -252,6 +262,12 @@ export function Flashcard({
             <div className="min-w-0 pt-1">
               <h3 className="truncate text-2xl font-semibold tracking-tight text-card-foreground">{word.word}</h3>
               <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">{word.pos}</span>
+              {PRON[word.id] && (
+                <span className="ml-2 text-[13px] text-muted-foreground" title="British pronunciation">
+                  · <span className="font-medium text-card-foreground/80">{PRON[word.id].r}</span>{" "}
+                  <span className="font-mono">{PRON[word.id].ipa}</span>
+                </span>
+              )}
             </div>
             {actions}
           </div>

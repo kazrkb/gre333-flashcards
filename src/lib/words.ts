@@ -114,14 +114,32 @@ export function wordForForm(form: string): Word | undefined {
 /** Sentence without the {braces} used to mark other list words. */
 export const plainSentence = (s: string) => s.replace(/[{}]/g, "");
 
-/** Say a word aloud. The default is a little slow so it is easy to catch; 0.5 is very slow. */
+/** Best British English voice on this device (Google UK English, Apple's Daniel/Serena, Microsoft's Libby/Ryan…). */
+let ukVoice: SpeechSynthesisVoice | null | undefined;
+const PREFERRED_UK = /Google UK English|Daniel|Serena|Kate|Arthur|Martha|Stephanie|Libby|Sonia|Ryan|Hazel|George|Susan/i;
+
+function britishVoice(): SpeechSynthesisVoice | null {
+  if (ukVoice !== undefined) return ukVoice;
+  const voices = window.speechSynthesis?.getVoices() ?? [];
+  if (!voices.length) return null; // voices not loaded yet; try again next time
+  const gb = voices.filter((v) => /^en[-_]GB/i.test(v.lang));
+  ukVoice = gb.find((v) => PREFERRED_UK.test(v.name) && v.localService) ?? gb.find((v) => PREFERRED_UK.test(v.name)) ?? gb[0] ?? null;
+  return ukVoice;
+}
+if (typeof window !== "undefined" && window.speechSynthesis) {
+  window.speechSynthesis.addEventListener?.("voiceschanged", () => (ukVoice = undefined));
+}
+
+/** Say a word aloud in British English. The default is a little slow so it is easy to catch; 0.5 is very slow. */
 export function speak(text: string, rate = 0.75) {
   try {
     const synth = window.speechSynthesis;
     if (!synth) return;
     synth.cancel();
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = "en-US";
+    u.lang = "en-GB";
+    const voice = britishVoice();
+    if (voice) u.voice = voice;
     u.rate = rate;
     synth.speak(u);
   } catch {
