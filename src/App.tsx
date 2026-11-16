@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { BookOpen, ClipboardCheck, Flame, List, Moon, RotateCcw, Shapes, Sun, Sunrise, Target } from "lucide-react";
+import { BookOpen, ClipboardCheck, Flame, List, Moon, Shapes, Sun, Sunrise, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { StudyView, freshSession, loadSession, shuffled, type Session } from "@/components/StudyView";
 import { TodayView } from "@/components/TodayView";
 import { WordList } from "@/components/WordList";
-import { QuizView } from "@/components/QuizView";
+import { K_TODAY_TEST, QuizView } from "@/components/QuizView";
 import { GroupsView } from "@/components/GroupsView";
 import { useProgress } from "@/lib/progress";
 import { SyncDialog } from "@/components/SyncDialog";
@@ -93,38 +93,17 @@ export default function App() {
           </div>
         </div>
         <div className="flex shrink-0 items-center gap-1">
-          <SyncDialog progress={progress} />
+          <SyncDialog
+            progress={progress}
+            onReset={() => {
+              progress.reset();
+              writeJSON(K_TODAY_TEST, null);
+              setSession(freshSession());
+            }}
+          />
           <Button variant="ghost" size="icon-sm" aria-label="Toggle dark mode" onClick={() => setDark(!dark)}>
             {dark ? <Sun /> : <Moon />}
           </Button>
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button variant="ghost" size="icon-sm" aria-label="Reset progress" title="Reset progress">
-                <RotateCcw />
-              </Button>
-            </DialogTrigger>
-            <DialogContent>
-              <DialogTitle>Reset all progress?</DialogTitle>
-              <DialogDescription>
-                This marks all {counts.total} words as new, removes your stars and clears your streak on every device that uses your sync code. You can't undo this.
-              </DialogDescription>
-              <div className="mt-6 flex justify-end gap-2">
-                <DialogClose asChild>
-                  <Button variant="outline">Cancel</Button>
-                </DialogClose>
-                <DialogClose asChild>
-                  <Button
-                    onClick={() => {
-                      progress.reset();
-                      setSession(freshSession());
-                    }}
-                  >
-                    Reset progress
-                  </Button>
-                </DialogClose>
-              </div>
-            </DialogContent>
-          </Dialog>
         </div>
       </header>
 

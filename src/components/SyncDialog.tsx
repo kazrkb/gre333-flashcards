@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Check, Cloud, CloudOff, Copy, Loader2, Smartphone } from "lucide-react";
+import { Check, ChevronDown, Cloud, CloudOff, Copy, Loader2, Smartphone, TriangleAlert } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -8,7 +8,8 @@ import type { useProgress } from "@/lib/progress";
 
 type Progress = ReturnType<typeof useProgress>;
 
-export function SyncDialog({ progress }: { progress: Progress }) {
+export function SyncDialog({ progress, onReset }: { progress: Progress; onReset: () => void }) {
+  const [confirmText, setConfirmText] = useState("");
   const { sync, code } = progress;
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
@@ -56,6 +57,7 @@ export function SyncDialog({ progress }: { progress: Progress }) {
         if (o) {
           setError(null);
           setSwitched(false);
+          setConfirmText("");
           if (sync === "offline") progress.retry();
         }
       }}
@@ -134,6 +136,49 @@ export function SyncDialog({ progress }: { progress: Progress }) {
             Progress on this device is merged in, so nothing is lost.
           </p>
         </form>
+
+        {/* Reset is tucked away and needs typing RESET, so it can't happen by accident */}
+        <details className="group mt-6 rounded-lg border border-border">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-sm text-muted-foreground [&::-webkit-details-marker]:hidden">
+            Reset progress
+            <ChevronDown className="size-4 transition group-open:rotate-180" />
+          </summary>
+          <div className="border-t border-border px-4 pb-4 pt-3">
+            <p className="flex gap-2 text-[13px] text-muted-foreground">
+              <TriangleAlert className="mt-0.5 size-4 shrink-0 text-primary" />
+              <span>
+                This marks all words as new and deletes your stars, sentences, review schedule and streak, on every
+                device that uses this sync code. It can't be undone.
+              </span>
+            </p>
+            <label htmlFor="reset-confirm" className="mt-3 block text-[13px]">
+              Type <span className="font-mono font-medium">RESET</span> to confirm
+            </label>
+            <div className="mt-1.5 flex gap-2">
+              <Input
+                id="reset-confirm"
+                value={confirmText}
+                onChange={(e) => setConfirmText(e.target.value)}
+                autoComplete="off"
+                autoCapitalize="characters"
+                spellCheck={false}
+                className="h-10 font-mono uppercase"
+              />
+              <Button
+                variant="outline"
+                className="h-10 shrink-0 border-stone text-foreground"
+                disabled={confirmText.trim().toUpperCase() !== "RESET"}
+                onClick={() => {
+                  onReset();
+                  setConfirmText("");
+                  setOpen(false);
+                }}
+              >
+                Reset everything
+              </Button>
+            </div>
+          </div>
+        </details>
       </DialogContent>
     </Dialog>
   );

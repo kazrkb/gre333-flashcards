@@ -88,7 +88,7 @@ export function TodayView({
       key: "test",
       icon: <ClipboardCheck className="size-[18px]" />,
       title: "Test today's words",
-      done: testedToday,
+      done: testedToday && s.learnedToday.length > 0,
       text:
         s.learnedToday.length === 0
           ? "Learn some new words first, then test yourself on them."
