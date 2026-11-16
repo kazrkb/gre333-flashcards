@@ -17,7 +17,7 @@ type TcItem = { id: string; text: string; blanks: { choices: string[]; answer: n
 type AnItem = { id: string; stem: [string, string]; choices: [string, string][]; answer: number; relation: string };
 type Tc1Item = { id: string; text: string; choices: string[]; answer: number; explanation: string };
 type SeItem = { id: string; text: string; choices: string[]; answers: number[]; explanation: string };
-const HARD = GRE_HARD as unknown as { tc1: Tc1Item[]; tc2: TcItem[]; tc3: TcItem[]; se: SeItem[] };
+const HARD = GRE_HARD as unknown as { tc1: Tc1Item[]; tc2: TcItem[]; tc3: TcItem[]; se: SeItem[]; an: AnItem[] };
 const ITEMS = GRE_ITEMS as unknown as { textCompletion: TcItem[]; analogies: AnItem[] };
 /** All hand-written 2–3 blank Text Completions (original set + GRE-hard set). */
 const TCM_POOL: TcItem[] = [...ITEMS.textCompletion, ...HARD.tc2, ...HARD.tc3];
@@ -118,12 +118,12 @@ function makeSeGroups(count: number): GreQ[] {
 }
 
 const makeTcm = (count: number): GreQ[] => shuffle(TCM_POOL).slice(0, count).map((item) => ({ kind: "tcm" as const, item }));
-const makeAn = (count: number): GreQ[] => shuffle(ITEMS.analogies).slice(0, count).map((item) => ({ kind: "an" as const, item }));
+const makeAn = (count: number): GreQ[] => shuffle([...ITEMS.analogies, ...HARD.an]).slice(0, count).map((item) => ({ kind: "an" as const, item }));
 
 const MAX: Record<Section, number> = {
   tc: 30,
   se: 30,
-  an: ITEMS.analogies.length,
+  an: 30,
   mix: 20,
 };
 
