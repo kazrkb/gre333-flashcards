@@ -237,7 +237,7 @@ export function Flashcard({
               {word.word}
             </h2>
             {PRON[word.id] && (
-              <p className="mt-2 text-xl font-medium tracking-wide text-muted-foreground" title={`British pronunciation · IPA ${PRON[word.id].ipa}`}>
+              <p className="mt-3 font-mono text-[13px] italic tracking-[0.08em] text-muted-foreground" title={`British pronunciation · IPA ${PRON[word.id].ipa}`}>
                 {PRON[word.id].r}
               </p>
             )}
@@ -262,7 +262,7 @@ export function Flashcard({
               <h3 className="truncate text-2xl font-semibold tracking-tight text-card-foreground">{word.word}</h3>
               <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">{word.pos}</span>
               {PRON[word.id] && (
-                <span className="ml-2 text-[13px] font-medium tracking-wide text-muted-foreground" title={`British pronunciation · IPA ${PRON[word.id].ipa}`}>
+                <span className="ml-2 font-mono text-[11px] italic tracking-[0.08em] text-muted-foreground" title={`British pronunciation · IPA ${PRON[word.id].ipa}`}>
                   · {PRON[word.id].r}
                 </span>
               )}
