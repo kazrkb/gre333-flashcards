@@ -2,7 +2,7 @@
 // - Page (index.html): served from cache right away, refreshed in the background.
 // - Built assets (hashed file names) and fonts: cache first.
 // - /api requests: never cached (the app keeps its own offline copy of progress).
-const CACHE = "gre333-v2"; // v2: steadier female recordings
+const CACHE = "gre333-v3"; // v3: male voice only
 const SHELL = ["/", "/manifest.webmanifest", "/icon-192.png", "/apple-touch-icon.png"];
 
 self.addEventListener("install", (event) => {

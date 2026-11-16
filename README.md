@@ -100,7 +100,7 @@ Word data lives in `src/data/words-*.ts`. Edit a meaning there to change it.
 
 ## Credits
 
-Pronunciation audio (`public/audio/m` = male "spike", `public/audio/f` = female "poppy") was generated
+Pronunciation audio (`public/audio/m`, male voice "spike") was generated
 with [Piper TTS](https://github.com/rhasspy/piper) using the `en_GB-semaine-medium` voice, trained on the
 DFKI SEMAINE database, licensed [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 (non-commercial use).

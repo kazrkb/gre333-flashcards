@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ChevronDown, Lightbulb, Star, Volume2, X } from "lucide-react";
 import type { Entry } from "@/lib/progress";
-import { getVoiceGender, setVoiceGender, speak, stemRegex, WORD_BY_ID, wordForForm, type VoiceGender, type Word } from "@/lib/words";
+import { speak, stemRegex, WORD_BY_ID, wordForForm, type Word } from "@/lib/words";
 import { GROUPS } from "@/data/groups";
 import PRON_DATA from "@/data/pron.json";
 
@@ -178,7 +178,6 @@ export function Flashcard({
   onStar: () => void;
 }) {
   const [peek, setPeek] = useState<Word | null>(null);
-  const [voice, setVoice] = useState<VoiceGender>(getVoiceGender);
   const sceneRef = useRef<HTMLDivElement>(null);
   useCenterOnScreen(sceneRef, flipped, active);
   const related = useMemo(() => relatedWords(word.id), [word.id]);
@@ -191,35 +190,8 @@ export function Flashcard({
       return next;
     });
 
-  const chooseVoice = (g: VoiceGender) => {
-    setVoiceGender(g);
-    setVoice(g);
-    speak(word.word);
-  };
-
   const actions = (
     <div className="flex items-center gap-1">
-      {/* Voice: Female / Male (saved; Female by default) */}
-      <div className="flex rounded-full border border-border p-0.5" role="group" aria-label="Pronunciation voice">
-        {(["female", "male"] as const).map((g) => (
-          <button
-            key={g}
-            type="button"
-            aria-pressed={voice === g}
-            title={g === "female" ? "Female voice" : "Male voice"}
-            onClick={(e) => {
-              e.stopPropagation();
-              chooseVoice(g);
-            }}
-            className={cn(
-              "h-7 rounded-full px-2.5 text-[12px] font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-              voice === g ? "bg-foreground text-background" : "text-muted-foreground hover:text-foreground",
-            )}
-          >
-            {g === "female" ? "Female" : "Male"}
-          </button>
-        ))}
-      </div>
       <IconAction label="Pronounce (P)" onClick={() => speak(word.word)}>
         <Volume2 className="size-[18px]" />
       </IconAction>

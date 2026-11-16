@@ -114,37 +114,12 @@ export function wordForForm(form: string): Word | undefined {
 /** Sentence without the {braces} used to mark other list words. */
 export const plainSentence = (s: string) => s.replace(/[{}]/g, "");
 
-/** Male or female British voice, chosen by the learner (saved in this browser). */
-export type VoiceGender = "male" | "female";
-const K_VOICE = "gre333.voice.v2"; // v2: default changed to female
-export function getVoiceGender(): VoiceGender {
-  try {
-    return localStorage.getItem(K_VOICE) === "\"male\"" ? "male" : "female";
-  } catch {
-    return "female";
-  }
-}
-export function setVoiceGender(g: VoiceGender) {
-  try {
-    localStorage.setItem(K_VOICE, JSON.stringify(g));
-  } catch {
-    /* ignore */
-  }
-  ukVoice = undefined;
-}
-
 // Most natural-sounding British voices first: Microsoft "Natural"/neural (Edge), Apple Premium/Enhanced,
 // Google UK English (Chrome), then standard ones. Apple's basic robotic voices only if nothing else exists.
-const UK_VOICES: Record<VoiceGender, RegExp[]> = {
-  male: [/Ryan.*Natural|Thomas.*Natural|Natural.*Ryan/i, /Daniel.*(Premium|Enhanced)/i, /Arthur.*(Premium|Enhanced)/i, /Google UK English Male/i, /Daniel/i, /Arthur/i, /Ryan/i, /George/i, /Oliver/i, /\bMale\b/i],
-  female: [/(Sonia|Libby|Maisie|Bella|Hollie).*Natural|Natural.*(Sonia|Libby)/i, /(Serena|Kate|Martha|Stephanie).*(Premium|Enhanced)/i, /Google UK English Female/i, /Serena/i, /Kate/i, /Martha/i, /Stephanie/i, /Libby/i, /Sonia/i, /Hazel/i, /Susan/i, /\bFemale\b/i],
-};
-const ROBOTIC: Record<VoiceGender, RegExp[]> = {
-  male: [/Reed/i, /Eddy/i, /Rocko/i, /Grandpa/i],
-  female: [/Flo\b/i, /Shelley/i, /Sandy/i, /Grandma/i],
-};
+const UK_VOICES: RegExp[] = [/Ryan.*Natural|Thomas.*Natural|Natural.*Ryan/i, /Daniel.*(Premium|Enhanced)/i, /Arthur.*(Premium|Enhanced)/i, /Google UK English Male/i, /Daniel/i, /Arthur/i, /Ryan/i, /George/i, /Oliver/i, /\bMale\b/i];
+const ROBOTIC: RegExp[] = [/Reed/i, /Eddy/i, /Rocko/i, /Grandpa/i];
 
-/** The British English voice to use on this device, matching the chosen gender when possible. */
+/** The British English voice to use on this device: a male one when possible, to match the recordings. */
 let ukVoice: SpeechSynthesisVoice | null | undefined;
 function britishVoice(): SpeechSynthesisVoice | null {
   if (ukVoice !== undefined) return ukVoice;
@@ -158,28 +133,11 @@ function britishVoice(): SpeechSynthesisVoice | null {
     }
     return undefined;
   };
-  const g = getVoiceGender();
-  const other = g === "male" ? "female" : "male";
-  // Natural voice of the chosen gender → robotic one of that gender → natural one of the other gender.
-  ukVoice = pick(UK_VOICES[g]) ?? pick(ROBOTIC[g]) ?? pick(UK_VOICES[other]) ?? gb[0] ?? null;
+  ukVoice = pick(UK_VOICES) ?? pick(ROBOTIC) ?? gb[0] ?? null;
   return ukVoice;
 }
 if (typeof window !== "undefined" && window.speechSynthesis) {
   window.speechSynthesis.addEventListener?.("voiceschanged", () => (ukVoice = undefined));
-}
-
-/** Name of the voice that will actually speak, or null when the browser hides its voice list. */
-export function currentVoiceName(): string | null {
-  try {
-    return britishVoice()?.name.replace(/\s*\(.*\)$/, "") ?? null;
-  } catch {
-    return null;
-  }
-}
-
-/** Natural recorded voices (Piper TTS, "semaine" voice): one MP3 per word in /audio/m and /audio/f. */
-export function recordedVoiceName(): string {
-  return getVoiceGender() === "female" ? "Poppy (natural British female)" : "Spike (natural British male)";
 }
 
 let player: HTMLAudioElement | null = null;
@@ -194,7 +152,7 @@ function idForText(text: string): string | undefined {
 }
 
 /**
- * Say a word aloud in British English. List words play their natural recording in the chosen voice;
+ * Say a word aloud in British English. List words play their natural recording (male British voice);
  * anything else (or a recording that can't load) uses the device's British voice.
  * The default rate is a little slow so it's easy to catch; 0.5 is very slow.
  */
@@ -204,7 +162,7 @@ export function speak(text: string, rate = 0.75) {
     try {
       window.speechSynthesis?.cancel();
       player?.pause();
-      const audio = new Audio(`/audio/${getVoiceGender() === "female" ? "f" : "m"}/${encodeURIComponent(id)}.mp3`);
+      const audio = new Audio(`/audio/m/${encodeURIComponent(id)}.mp3`);
       audio.playbackRate = Math.max(0.5, rate / 0.75); // the recordings are already slightly slowed
       let fellBack = false;
       const fallback = () => {
