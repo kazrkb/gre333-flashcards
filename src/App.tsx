@@ -5,7 +5,7 @@ import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle, Dia
 import { StudyView, buildDeck, freshSession, loadSession, shuffled, type Session } from "@/components/StudyView";
 import { TodayStrip, longTermCount } from "@/components/TodayView";
 import { WordList } from "@/components/WordList";
-import { K_TODAY_TEST, QuizView, TODAY_TEST_EVENT } from "@/components/QuizView";
+import { K_TODAY_SPELL, K_TODAY_TEST, QuizView, TODAY_TEST_EVENT } from "@/components/QuizView";
 import { GreView } from "@/components/GreView";
 import { useWordSmart } from "@/lib/wordSmart";
 import { useProgress } from "@/lib/progress";
@@ -43,7 +43,7 @@ export default function App() {
   });
   const [session, setSession] = useState<Session>(() => loadSession(progress));
   const [goal, setGoalState] = useState<number>(() => readJSON<number>("gre333.goal", 15));
-  const [quizRequest, setQuizRequest] = useState<{ ids: string[]; key: number; source?: "today"; title?: string } | null>(null);
+  const [quizRequest, setQuizRequest] = useState<{ ids: string[]; key: number; mode?: "spell"; source?: "today" | "today-spell"; title?: string } | null>(null);
   const { counts } = progress;
 
   useEffect(() => writeJSON("gre333.tab.v3", tab), [tab]);
@@ -68,6 +68,12 @@ export default function App() {
 
   const quizWords = (ids: string[], source?: "today", title?: string) => {
     setQuizRequest({ ids, key: Date.now(), source, title: title ?? (source === "today" ? "Today's words" : "Quiz") });
+    setTab("quiz");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const spellToday = (ids: string[]) => {
+    setQuizRequest({ ids, key: Date.now(), mode: "spell", source: "today-spell", title: "Spelling · today's words" });
     setTab("quiz");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -117,6 +123,7 @@ export default function App() {
               wordSmart.relock();
               quizHistory.clear();
               writeJSON(K_TODAY_TEST, null);
+              writeJSON(K_TODAY_SPELL, null);
               window.dispatchEvent(new Event(TODAY_TEST_EVENT));
               setSession(freshSession());
             }}
@@ -178,7 +185,7 @@ export default function App() {
       </section>
 
       {/* Today's plan: review → learn → test */}
-      <TodayStrip key={`strip-${wordsVersion}`} progress={progress} goal={goal} onReview={reviewDue} onLearn={learnNew} onTest={quizWords} />
+      <TodayStrip key={`strip-${wordsVersion}`} progress={progress} goal={goal} onReview={reviewDue} onLearn={learnNew} onTest={quizWords} onSpell={spellToday} />
 
 
       {/* Tabs */}

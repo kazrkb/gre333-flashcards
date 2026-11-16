@@ -12,7 +12,7 @@ import type { QuizHistory, QuizRecord } from "@/lib/quizHistory";
 
 type Progress = ReturnType<typeof useProgress>;
 
-type Pool = "due" | "weak" | "misspelled" | "starred" | "all";
+type Pool = "due" | "weak" | "starred" | "all";
 type Kind = "meaning" | "word" | "bangla" | "blank" | "type" | "spell" | "se";
 /** A question type the learner can choose. */
 type Pick = Kind | "mixed";
@@ -38,6 +38,8 @@ const K_SETTINGS = "gre333.quiz.settings.v3";
 export const K_TODAY_TEST = "gre333.todayTest.v1";
 /** Fired when that step changes, so the Today strip updates right away. */
 export const TODAY_TEST_EVENT = "gre333:today-test";
+/** Day the "spell today's words" step of the daily plan was last finished. */
+export const K_TODAY_SPELL = "gre333.todaySpell.v1";
 
 const MIN_WORDS = 5;
 
@@ -175,7 +177,7 @@ export function QuizView({
   progress: Progress;
   active: boolean;
   /** Start a quiz on these words right away (e.g. from the Groups or Today tab). */
-  request?: { ids: string[]; key: number; mode?: Pick; source?: "today"; title?: string } | null;
+  request?: { ids: string[]; key: number; mode?: Pick | "spell"; source?: "today" | "today-spell"; title?: string } | null;
   history: QuizHistory;
   wordSmart: WordSmart;
 }) {
@@ -188,7 +190,7 @@ export function QuizView({
   });
   const [period, setPeriod] = useState<number>(Math.min(Math.max(saved.period ?? 0, 0), PERIODS.length - 1));
   const [pool, setPool] = useState<Pool>(
-    (["due", "weak", "misspelled", "starred", "all"] as const).includes(saved.pool) ? saved.pool : "due",
+    (["due", "weak", "starred", "all"] as const).includes(saved.pool) ? saved.pool : "due",
   );
   const [count, setCount] = useState<number>(saved.count);
   const [lastN, setLastN] = useState<number>(saved.lastN);
@@ -226,7 +228,6 @@ export function QuizView({
   const POOLS: { key: Pool; label: string; hint: string }[] = [
     { key: "due", label: "Due for review", hint: "Words scheduled for today" },
     { key: "weak", label: "Weak words", hint: "The words you miss most" },
-    { key: "misspelled", label: "Misspelled", hint: "Words you spelled wrong" },
     { key: "starred", label: "Starred", hint: "Your saved words" },
     { key: "all", label: "All words", hint: "Random words from all 333" },
   ];
@@ -237,7 +238,7 @@ export function QuizView({
   const poolMax = mode === "se" ? GRE_TOTAL : available.length;
   const poolCount = Math.min(Math.max(count, MIN_WORDS), poolMax);
 
-  const source = useRef<"today" | null>(null);
+  const source = useRef<"today" | "today-spell" | null>(null);
 
   const begin = (questions: Question[], title: string, qMode: Mode = mode) => {
     if (!questions.length) return;
@@ -310,15 +311,6 @@ export function QuizView({
       <div className="flex flex-col gap-4">
         <UnlockCard wordSmart={wordSmart} onStart={startUnlockTest} />
 
-        <SpellingCard
-          sources={[
-            { key: "today", label: "Learned today", ids: pools.learned.filter((x) => x.day === localDay()).map((x) => x.id) },
-            { key: "week", label: "Last week", ids: pools.learned.filter((x) => x.day >= addDays(localDay(), -6)).map((x) => x.id) },
-            { key: "misspelled", label: "Misspelled", ids: pools.misspelled },
-            { key: "all", label: "All words", ids: pools.all },
-          ]}
-          onStart={(ids, label) => begin(makeQuestions(shuffle(ids), "spell"), `Spelling test · ${label}`, "spell")}
-        />
 
         {/* Quick tests */}
         <section className="rounded-xl border border-border bg-card p-5">
@@ -382,6 +374,45 @@ export function QuizView({
                 onClick={() => startWith(pools.recent.slice(0, lastCount), `Your last ${lastCount} words`)}
               >
                 Start
+              </Button>
+            </div>
+          </div>
+
+          {/* Spelling: a separate test, using the same word choices as the two rows above */}
+          <div className="mt-3 rounded-lg border border-border p-4">
+            <div className="flex items-start gap-2">
+              <Volume2 className="mt-0.5 size-4 shrink-0 text-primary" />
+              <div className="min-w-0">
+                <p className="text-[15px] font-medium">Spelling test</p>
+                <p className="text-[13px] text-muted-foreground">
+                  Hear the word, type it exactly. Mistakes go to your Misspelled list; reviews aren't changed.
+                </p>
+              </div>
+            </div>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <Button
+                size="sm"
+                variant="outline"
+                disabled={periodCount === 0}
+                onClick={() => begin(makeQuestions(shuffle(periodIds), "spell"), `Spelling · learned ${p.label.toLowerCase()}`, "spell")}
+              >
+                Words learned · {p.label} ({periodCount})
+              </Button>
+              <Button
+                size="sm"
+                variant="outline"
+                disabled={studiedCount < MIN_WORDS}
+                onClick={() => begin(makeQuestions(shuffle(pools.recent.slice(0, lastCount)), "spell"), `Spelling · your last ${lastCount} words`, "spell")}
+              >
+                Your last {studiedCount >= MIN_WORDS ? lastCount : MIN_WORDS} words
+              </Button>
+              <Button
+                size="sm"
+                variant="outline"
+                disabled={pools.misspelled.length === 0}
+                onClick={() => begin(makeQuestions(shuffle(pools.misspelled), "spell"), "Spelling · misspelled words", "spell")}
+              >
+                Misspelled ({pools.misspelled.length})
               </Button>
             </div>
           </div>
@@ -497,8 +528,8 @@ export function QuizView({
           const correct = quiz.answers.filter((a) => a.correct).length;
           if (correct / quiz.questions.length >= UNLOCK_PASS) wordSmart.unlock("test");
         }
-        if (source.current === "today") {
-          writeJSON(K_TODAY_TEST, localDay());
+        if (source.current === "today" || source.current === "today-spell") {
+          writeJSON(source.current === "today" ? K_TODAY_TEST : K_TODAY_SPELL, localDay());
           window.dispatchEvent(new Event(TODAY_TEST_EVENT));
         }
       }}
@@ -1281,81 +1312,5 @@ function UnlockResult({ quiz }: { quiz: QuizState }) {
           : `You scored ${pct}%; you need ${need}% to unlock Word Smart. Your missed words are in Learning; review them and try again.`}
       </span>
     </p>
-  );
-}
-
-/** A separate spelling test: hear the word, type it exactly. */
-function SpellingCard({
-  sources,
-  onStart,
-}: {
-  sources: { key: string; label: string; ids: string[] }[];
-  onStart: (ids: string[], label: string) => void;
-}) {
-  const [source, setSource] = useState<string>(() => readJSON<string>("gre333.spellSource.v1", "today"));
-  const [count, setCount] = useState<number>(() => readJSON<number>("gre333.spellCount.v1", 10));
-  const current = sources.find((s) => s.key === source) ?? sources[0];
-  const available = current.ids.length;
-  const n = Math.min(Math.max(count, Math.min(5, available)), available);
-  return (
-    <section className="rounded-xl border border-border bg-card p-5">
-      <div className="flex items-start gap-3">
-        <div className="grid size-10 shrink-0 place-items-center rounded-full bg-accent-soft text-primary">
-          <Volume2 className="size-5" />
-        </div>
-        <div className="min-w-0">
-          <h2 className="text-lg font-semibold tracking-tight">Spelling test</h2>
-          <p className="mt-0.5 text-sm text-muted-foreground">
-            Listen to the word and type it exactly. Wrong spellings go to your Misspelled list; your review schedule
-            isn't changed.
-          </p>
-        </div>
-      </div>
-      <div className="mt-4 flex flex-wrap gap-1.5">
-        {sources.map((s) => (
-          <button
-            key={s.key}
-            type="button"
-            aria-pressed={s.key === current.key}
-            onClick={() => {
-              setSource(s.key);
-              writeJSON("gre333.spellSource.v1", s.key);
-            }}
-            className={cn(
-              "inline-flex h-9 items-center gap-1.5 rounded-full border px-3.5 text-[13px] font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-              s.key === current.key
-                ? "border-foreground bg-foreground text-background"
-                : "border-border bg-card text-muted-foreground hover:border-border-strong hover:text-foreground",
-            )}
-          >
-            {s.label}
-            <span className={cn("font-mono text-[11px] tabular-nums", s.key === current.key ? "text-background/70" : "")}>
-              {s.ids.length}
-            </span>
-          </button>
-        ))}
-      </div>
-      <div className="mt-3 flex items-center justify-between gap-3">
-        {available > 0 ? (
-          <>
-            <Stepper
-              value={n}
-              min={Math.min(5, available)}
-              max={available}
-              onChange={(v) => {
-                setCount(v);
-                writeJSON("gre333.spellCount.v1", v);
-              }}
-              label="Number of words"
-            />
-            <Button onClick={() => onStart(shuffle(current.ids).slice(0, n), current.label)}>Start · {n}</Button>
-          </>
-        ) : (
-          <p className="text-sm text-muted-foreground">
-            {current.key === "misspelled" ? "No misspelled words yet." : "No words here yet. Learn some words first."}
-          </p>
-        )}
-      </div>
-    </section>
   );
 }

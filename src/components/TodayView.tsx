@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
-import { BookOpen, CalendarCheck, Check, ClipboardCheck, Sparkles } from "lucide-react";
+import { BookOpen, CalendarCheck, Check, ClipboardCheck, Sparkles, Volume2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { readJSON } from "@/lib/storage";
 import { WORDS } from "@/lib/words";
 import { isDue, localDay, type useProgress } from "@/lib/progress";
-import { K_TODAY_TEST, TODAY_TEST_EVENT } from "@/components/QuizView";
+import { K_TODAY_SPELL, K_TODAY_TEST, TODAY_TEST_EVENT } from "@/components/QuizView";
 
 type Progress = ReturnType<typeof useProgress>;
 
@@ -23,17 +23,23 @@ export function TodayStrip({
   onReview,
   onLearn,
   onTest,
+  onSpell,
 }: {
   progress: Progress;
   goal: number;
   onReview: (ids: string[]) => void;
   onLearn: (count: number) => void;
   onTest: (ids: string[], source?: "today") => void;
+  onSpell: (ids: string[]) => void;
 }) {
   const today = localDay();
   const [testedDay, setTestedDay] = useState<string | null>(() => readJSON<string | null>(K_TODAY_TEST, null));
+  const [spelledDay, setSpelledDay] = useState<string | null>(() => readJSON<string | null>(K_TODAY_SPELL, null));
   useEffect(() => {
-    const refresh = () => setTestedDay(readJSON<string | null>(K_TODAY_TEST, null));
+    const refresh = () => {
+      setTestedDay(readJSON<string | null>(K_TODAY_TEST, null));
+      setSpelledDay(readJSON<string | null>(K_TODAY_SPELL, null));
+    };
     window.addEventListener(TODAY_TEST_EVENT, refresh);
     return () => window.removeEventListener(TODAY_TEST_EVENT, refresh);
   }, []);
@@ -53,6 +59,7 @@ export function TodayStrip({
   const newToday = progress.counts.newToday;
   const newLeft = Math.min(Math.max(goal - newToday, 0), progress.counts.new);
   const tested = testedDay === today && learnedToday.length > 0;
+  const spelled = spelledDay === today && learnedToday.length > 0;
 
   const steps = [
     {
@@ -79,6 +86,14 @@ export function TodayStrip({
       done: tested,
       run: learnedToday.length > 0 ? () => onTest(learnedToday, "today") : undefined,
     },
+    {
+      key: "spell",
+      icon: Volume2,
+      label: "Spell",
+      detail: spelled ? "Done" : learnedToday.length > 0 ? `${learnedToday.length} words` : "Learn first",
+      done: spelled,
+      run: learnedToday.length > 0 ? () => onSpell(learnedToday) : undefined,
+    },
   ];
   const current = steps.findIndex((s) => !s.done);
   const doneCount = steps.filter((s) => s.done).length;
@@ -95,9 +110,9 @@ export function TodayStrip({
             "Today's plan"
           )}
         </p>
-        <span className="font-mono text-[11px] tabular-nums text-muted-foreground">{doneCount}/3 done</span>
+        <span className="font-mono text-[11px] tabular-nums text-muted-foreground">{doneCount}/{steps.length} done</span>
       </div>
-      <ol className="mt-2 grid grid-cols-3 gap-2">
+      <ol className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
         {steps.map((s, i) => {
           const active = i === current;
           const Icon = s.icon;
