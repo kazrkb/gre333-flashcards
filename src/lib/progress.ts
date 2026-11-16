@@ -38,6 +38,26 @@ export function addDays(day: string, n: number) {
   return localDay(new Date(y, m - 1, d + n));
 }
 
+/**
+ * Where a word goes after an answer.
+ * - Right, and the word was due (or new): move up a level and wait longer (3 → 7 → 16 → 35 → 90 days).
+ * - Right but before it was due (e.g. testing a word the same day you learned it): good practice, but no
+ *   real time gap has passed, so the schedule stays as it is.
+ * - Wrong: back to level 1, due tomorrow.
+ */
+export function nextSchedule(
+  prev: Pick<Entry, "status" | "level" | "due">,
+  correct: boolean,
+  today: string,
+): Pick<Entry, "status" | "level" | "due"> {
+  const status = correct ? "known" : "learning";
+  if (!correct) return { status, level: 1, due: addDays(today, INTERVALS[1]) };
+  const early = prev.status !== "new" && prev.due !== null && today < prev.due;
+  if (early) return { status, level: prev.level, due: prev.due };
+  const level = prev.level === 0 ? 2 : Math.min(prev.level + 1, INTERVALS.length - 1);
+  return { status, level, due: addDays(today, INTERVALS[level]) };
+}
+
 export function isDue(e: Entry, today = localDay()) {
   return e.status !== "new" && (!e.due || e.due <= today);
 }
@@ -291,13 +311,7 @@ export function useProgress() {
     (id: string, correct: boolean) => {
       const prev = progressRef.current[id] ?? EMPTY;
       const today = localDay();
-      const level = correct ? (prev.level === 0 ? 2 : Math.min(prev.level + 1, INTERVALS.length - 1)) : 1;
-      const patch: Patch = {
-        status: correct ? "known" : "learning",
-        level,
-        due: addDays(today, INTERVALS[level]),
-        misses: prev.misses + (correct ? 0 : 1),
-      };
+      const patch: Patch = { ...nextSchedule(prev, correct, today), misses: prev.misses + (correct ? 0 : 1) };
       if (!prev.firstSeen && prev.status === "new") patch.firstSeen = today;
       update(id, patch, true);
     },
