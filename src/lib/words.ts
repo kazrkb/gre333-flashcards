@@ -114,14 +114,15 @@ export function wordForForm(form: string): Word | undefined {
 /** Sentence without the {braces} used to mark other list words. */
 export const plainSentence = (s: string) => s.replace(/[{}]/g, "");
 
-export function speak(text: string) {
+/** Say a word aloud. The default is a little slow so it is easy to catch; 0.5 is very slow. */
+export function speak(text: string, rate = 0.75) {
   try {
     const synth = window.speechSynthesis;
     if (!synth) return;
     synth.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "en-US";
-    u.rate = 0.9;
+    u.rate = rate;
     synth.speak(u);
   } catch {
     /* speech not supported */

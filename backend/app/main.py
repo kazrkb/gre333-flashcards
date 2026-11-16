@@ -101,6 +101,7 @@ class Progress(Base):
     misses: Mapped[int] = mapped_column(Integer, default=0)  # times answered wrong
     first_seen: Mapped[date | None] = mapped_column(Date, nullable=True)  # day first studied (daily goal)
     note: Mapped[str | None] = mapped_column(Text, nullable=True)  # learner's own sentence / memory trick
+    misspells: Mapped[int] = mapped_column(Integer, default=0)  # wrong spellings since last correct one
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 
@@ -142,6 +143,7 @@ def migrate():
             "misses": "INTEGER NOT NULL DEFAULT 0",
             "first_seen": "DATE",
             "note": "TEXT",
+            "misspells": "INTEGER NOT NULL DEFAULT 0",
         },
         "learners": {
             "ws_unlocked_at": "TIMESTAMP WITH TIME ZONE" if engine.dialect.name == "postgresql" else "DATETIME",
@@ -184,6 +186,7 @@ class ProgressIn(BaseModel):
     misses: int | None = Field(default=None, ge=0, le=100000)
     first_seen: date | None = None
     note: str | None = Field(default=None, max_length=500)
+    misspells: int | None = Field(default=None, ge=0, le=100000)
     reviewed: bool = False  # true when the learner just answered this card
     updated_at: datetime | None = None
     day: date | None = None  # learner's local date, for the streak
@@ -198,6 +201,7 @@ class ProgressOut(BaseModel):
     misses: int
     first_seen: date | None
     note: str | None
+    misspells: int = 0
     updated_at: datetime
 
 
@@ -243,6 +247,7 @@ def to_out(p: Progress) -> ProgressOut:
         misses=p.misses or 0,
         first_seen=p.first_seen,
         note=p.note,
+        misspells=p.misspells or 0,
         updated_at=as_aware(p.updated_at),
     )
 
@@ -287,6 +292,8 @@ def apply(db: Session, code: str, word_id: str, body: ProgressIn, *, only_if_new
         row.misses = body.misses
     if body.first_seen is not None and row.first_seen is None:
         row.first_seen = body.first_seen
+    if body.misspells is not None:
+        row.misspells = body.misspells
     if body.note is not None:
         row.note = body.note.strip() or None  # empty text clears the note
     if body.reviewed:

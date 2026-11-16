@@ -13,6 +13,7 @@ export type Entry = {
   misses: number; // times answered wrong
   firstSeen: string | null; // day first studied, YYYY-MM-DD
   note: string | null; // learner's own sentence or memory trick
+  misspells: number; // wrong spellings since the last correct one ("Misspelled" list)
   updatedAt: string; // ISO
 };
 
@@ -25,10 +26,11 @@ type ServerEntry = {
   misses: number;
   first_seen: string | null;
   note: string | null;
+  misspells?: number;
   updated_at: string;
 };
 
-type Patch = Partial<Pick<Entry, "status" | "starred" | "level" | "due" | "misses" | "firstSeen" | "note">>;
+type Patch = Partial<Pick<Entry, "status" | "starred" | "level" | "due" | "misses" | "firstSeen" | "note" | "misspells">>;
 
 /** Days until the next review for each box. Right answers move a word up a box, wrong answers back to box 1. */
 export const INTERVALS = [0, 1, 3, 7, 16, 35, 90];
@@ -80,6 +82,7 @@ const EMPTY: Entry = {
   misses: 0,
   firstSeen: null,
   note: null,
+  misspells: 0,
   updatedAt: new Date(0).toISOString(),
 };
 
@@ -107,6 +110,7 @@ function fromServer(map: Record<string, ServerEntry>): Record<string, Entry> {
       misses: e.misses ?? 0,
       firstSeen: e.first_seen ?? null,
       note: e.note ?? null,
+      misspells: e.misspells ?? 0,
       updatedAt: e.updated_at,
     };
   }
@@ -190,6 +194,7 @@ export function useProgress(wordsVersion = 0) {
           misses: e.misses,
           first_seen: e.firstSeen,
           note: e.note ?? "",
+          misspells: e.misspells,
           updated_at: e.updatedAt,
         };
     }
@@ -286,6 +291,7 @@ export function useProgress(wordsVersion = 0) {
           misses: patch.misses,
           first_seen: patch.firstSeen,
           note: patch.note === undefined ? undefined : (patch.note ?? ""),
+          misspells: patch.misspells,
           reviewed,
           updated_at: next.updatedAt,
           day,
@@ -318,6 +324,21 @@ export function useProgress(wordsVersion = 0) {
     },
     [update],
   );
+  /**
+   * Record a spelling answer. Right: counts as a review (same rules as grade) and clears the word from
+   * the Misspelled list. Wrong: adds it to the Misspelled list without touching the review schedule.
+   */
+  const spelled = useCallback(
+    (id: string, correct: boolean) => {
+      const prev = progressRef.current[id] ?? EMPTY;
+      if (correct) {
+        grade(id, true);
+        if (prev.misspells > 0) update(id, { misspells: 0 });
+      } else update(id, { misspells: prev.misspells + 1 });
+    },
+    [grade, update],
+  );
+
   const setNote = useCallback((id: string, note: string) => {
     const clean = note.trim().slice(0, 500);
     if ((progressRef.current[id]?.note ?? "") === clean) return;
@@ -401,5 +422,5 @@ export function useProgress(wordsVersion = 0) {
   const today = days[localDay()] ?? 0;
   const streak = useMemo(() => computeStreak(days), [days]);
 
-  return { code, get, grade, setNote, toggleStar, reset, switchCode, counts, sync, today, streak, retry: connect };
+  return { code, get, grade, spelled, setNote, toggleStar, reset, switchCode, counts, sync, today, streak, retry: connect };
 }

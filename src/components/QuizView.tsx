@@ -12,8 +12,8 @@ import type { QuizHistory, QuizRecord } from "@/lib/quizHistory";
 
 type Progress = ReturnType<typeof useProgress>;
 
-type Pool = "due" | "weak" | "starred" | "all";
-type Kind = "meaning" | "word" | "bangla" | "blank" | "type" | "se";
+type Pool = "due" | "weak" | "misspelled" | "starred" | "all";
+type Kind = "meaning" | "word" | "bangla" | "blank" | "type" | "spell" | "se";
 /** A question type the learner can choose. */
 type Pick = Kind | "mixed";
 /** Recorded on a quiz: a chosen type, or "unlock" for the Word Smart unlock test. */
@@ -56,6 +56,7 @@ const MODES: { key: Pick; label: string; hint: string }[] = [
   { key: "bangla", label: "বাংলা → English", hint: "See the Bangla, pick the word" },
   { key: "blank", label: "Fill in the blank", hint: "Complete the sentence" },
   { key: "type", label: "Type the word", hint: "Hardest: spell it yourself" },
+  { key: "spell", label: "Spelling", hint: "Listen and type the word exactly" },
 ];
 
 /** Labels for quiz history (includes GRE tab sets and the unlock test). */
@@ -72,6 +73,28 @@ const MODE_LABELS: Record<string, string> = {
 };
 
 const MIXED: Kind[] = ["meaning", "word", "bangla", "blank", "type"];
+/** Today's test (daily plan): the usual mix, with every third question a spelling question. */
+const MIXED_SPELL: Kind[] = ["meaning", "word", "spell", "bangla", "blank", "spell"];
+
+const K_SPELL_HINT = "gre333.spellHint.v1";
+
+/** Mark each letter of the right spelling as matched or not, by aligning it with what was typed. */
+function spellingMarks(guess: string, target: string): { ch: string; ok: boolean }[] {
+  const g = guess.toLowerCase(), t = target.toLowerCase();
+  const dp = Array.from({ length: g.length + 1 }, (_, i) => Array.from({ length: t.length + 1 }, (_, j) => (i === 0 ? j : j === 0 ? i : 0)));
+  for (let i = 1; i <= g.length; i++)
+    for (let j = 1; j <= t.length; j++)
+      dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + (g[i - 1] === t[j - 1] ? 0 : 1));
+  const marks = t.split("").map((ch) => ({ ch, ok: false }));
+  let i = g.length, j = t.length;
+  while (i > 0 && j > 0) {
+    if (g[i - 1] === t[j - 1] && dp[i][j] === dp[i - 1][j - 1]) { marks[j - 1].ok = true; i--; j--; }
+    else if (dp[i][j] === dp[i - 1][j - 1] + 1) { i--; j--; }
+    else if (dp[i][j] === dp[i - 1][j] + 1) i--;
+    else j--;
+  }
+  return marks.map((m, k) => ({ ch: target[k], ok: m.ok }));
+}
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -106,13 +129,14 @@ function editDistance(a: string, b: string) {
   return dp[a.length][b.length];
 }
 
-function makeQuestions(ids: string[], mode: Pick): Question[] {
+function makeQuestions(ids: string[], mode: Pick | "mixed-spell"): Question[] {
   return ids.map((id, i) => {
     const w = WORD_BY_ID.get(id)!;
-    let kind: Kind = mode === "mixed" ? MIXED[i % MIXED.length] : mode;
+    let kind: Kind =
+      mode === "mixed" ? MIXED[i % MIXED.length] : mode === "mixed-spell" ? MIXED_SPELL[i % MIXED_SPELL.length] : mode;
     if (kind === "blank" && !stemRegex(w.word).test(w.example)) kind = "meaning";
     const level = Math.floor(Math.random() * 3);
-    return { id, kind, level, options: kind === "type" ? [] : shuffle([id, ...pickDistractors(w, 3)]) };
+    return { id, kind, level, options: kind === "type" || kind === "spell" ? [] : shuffle([id, ...pickDistractors(w, 3)]) };
   });
 }
 
@@ -167,7 +191,7 @@ export function QuizView({
   });
   const [period, setPeriod] = useState<number>(Math.min(Math.max(saved.period ?? 0, 0), PERIODS.length - 1));
   const [pool, setPool] = useState<Pool>(
-    (["due", "weak", "starred", "all"] as const).includes(saved.pool) ? saved.pool : "due",
+    (["due", "weak", "misspelled", "starred", "all"] as const).includes(saved.pool) ? saved.pool : "due",
   );
   const [count, setCount] = useState<number>(saved.count);
   const [lastN, setLastN] = useState<number>(saved.lastN);
@@ -191,6 +215,9 @@ export function QuizView({
         return [{ id: w.id, day }];
       }),
       due: WORDS.filter((w) => isDue(progress.get(w.id), today)).map((w) => w.id),
+      misspelled: WORDS.filter((w) => progress.get(w.id).misspells > 0)
+        .sort((a, b) => progress.get(b.id).misspells - progress.get(a.id).misspells)
+        .map((w) => w.id),
       weak: WORDS.filter((w) => progress.get(w.id).misses > 0)
         .sort((a, b) => progress.get(b.id).misses - progress.get(a.id).misses)
         .map((w) => w.id),
@@ -202,6 +229,7 @@ export function QuizView({
   const POOLS: { key: Pool; label: string; hint: string }[] = [
     { key: "due", label: "Due for review", hint: "Words scheduled for today" },
     { key: "weak", label: "Weak words", hint: "The words you miss most" },
+    { key: "misspelled", label: "Misspelled", hint: "Words you spelled wrong" },
     { key: "starred", label: "Starred", hint: "Your saved words" },
     { key: "all", label: "All words", hint: "Random words from all 333" },
   ];
@@ -272,7 +300,9 @@ export function QuizView({
   useEffect(() => {
     if (!request || request.key === lastRequest.current) return;
     lastRequest.current = request.key;
-    begin(makeQuestions(shuffle(request.ids), request.mode ?? "mixed"), request.title ?? "Quiz", request.mode ?? "mixed");
+    // The daily-plan test folds spelling in: every third question asks you to spell the word.
+    const qMode = request.mode ?? (request.source === "today" ? "mixed-spell" : "mixed");
+    begin(makeQuestions(shuffle(request.ids), qMode), request.title ?? "Quiz", request.mode ?? "mixed");
     source.current = request.source ?? null;
   }, [request]);
 
@@ -500,18 +530,24 @@ function QuizRunner({
   const score = answers.filter((a) => a.correct).length;
   const [picked, setPicked] = useState<string[]>([]); // GRE "pick 2" selection
   const [typed, setTyped] = useState("");
+  const [spellRetry, setSpellRetry] = useState(false); // second (last) try at a spelling question
+  const [spellHint, setSpellHint] = useState<boolean>(() => readJSON<boolean>(K_SPELL_HINT, true));
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     setPicked([]);
     setTyped("");
-    if (q?.kind === "type") window.setTimeout(() => inputRef.current?.focus(), 50);
-  }, [index, q?.kind]);
+    setSpellRetry(false);
+    if (q?.kind === "type" || q?.kind === "spell") window.setTimeout(() => inputRef.current?.focus(), 50);
+    // Spelling: say the word as soon as the question appears.
+    if (q?.kind === "spell" && word) window.setTimeout(() => speak(word.word), 250);
+  }, [index, q?.kind]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const record = useCallback(
     (a: Answer) => {
       if (!q || answer) return;
       if (q.kind === "se") q.answers!.forEach((id) => progress.grade(id, a.correct));
+      else if (q.kind === "spell") progress.spelled(q.id, a.correct); // wrong → Misspelled list only
       else progress.grade(q.id, a.correct);
       setQuiz({ ...quiz, answers: [...answers, a] });
     },
@@ -536,6 +572,25 @@ function QuizRunner({
       record({ correct: !giveUp && (exact || close), chosen: [], typed: typed.trim(), close });
     },
     [word, typed, record],
+  );
+
+  /** Spelling: exact match only. Two tries, then the right spelling is shown. */
+  const checkSpell = useCallback(
+    (giveUp = false) => {
+      if (!word) return;
+      const guess = typed.trim();
+      if (!guess && !giveUp) return;
+      const right = guess.toLowerCase() === word.word.toLowerCase();
+      if (!right && !giveUp && !spellRetry) {
+        setSpellRetry(true);
+        setTyped("");
+        speak(word.word);
+        window.setTimeout(() => inputRef.current?.focus(), 50);
+        return;
+      }
+      record({ correct: right && !giveUp, chosen: [], typed: guess });
+    },
+    [word, typed, spellRetry, record],
   );
 
   const togglePick = useCallback(
@@ -705,6 +760,45 @@ function QuizRunner({
             <p className="mt-2 text-[13px] text-muted-foreground">The word may change form here (for example, -ed or -s).</p>
           </>
         );
+      case "spell":
+        return (
+          <>
+            <Label>Spelling · listen and type</Label>
+            <div className="mt-3 flex flex-wrap items-center gap-2">
+              <Button type="button" variant="dark" onClick={() => speak(word.word)}>
+                <Volume2 /> Hear it again
+              </Button>
+              <Button type="button" variant="outline" onClick={() => speak(word.word, 0.5)} title="Very slow">
+                🐢 Slowly
+              </Button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSpellHint((h) => !h);
+                  writeJSON(K_SPELL_HINT, !spellHint);
+                }}
+                className="ml-auto text-[13px] text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
+              >
+                {spellHint ? "Hide meaning" : "Show meaning"}
+              </button>
+            </div>
+            {spellHint && (
+              <p className="mt-3 text-[15px]">
+                {word.en} ·{" "}
+                <span lang="bn" className="font-bangla text-primary">
+                  {word.bn}
+                </span>
+              </p>
+            )}
+            <p className="mt-3 font-mono text-lg tracking-[0.3em] text-muted-foreground" aria-label={`${word.word.length} letters`}>
+              {word.word.split("").map((c) => (c === " " ? "  " : "_")).join(" ")}
+              <span className="ml-2 align-middle text-[12px] tracking-normal">{word.word.length} letters</span>
+            </p>
+            {spellRetry && !answer && (
+              <p className="mt-2 text-[14px] font-medium">Not quite. Listen again and try once more.</p>
+            )}
+          </>
+        );
       case "type":
         return (
           <>
@@ -756,11 +850,12 @@ function QuizRunner({
         {prompt}
       </section>
 
-      {q.kind === "type" ? (
+      {q.kind === "type" || q.kind === "spell" ? (
         <form
           onSubmit={(e) => {
             e.preventDefault();
             if (answer) next();
+            else if (q.kind === "spell") checkSpell();
             else checkTyped();
           }}
           className="flex flex-col gap-2"
@@ -786,7 +881,7 @@ function QuizRunner({
               <Button type="submit" className="flex-1" disabled={!typed.trim()}>
                 Check
               </Button>
-              <Button type="button" variant="outline" onClick={() => checkTyped(true)}>
+              <Button type="button" variant="outline" onClick={() => (q.kind === "spell" ? checkSpell(true) : checkTyped(true))}>
                 I don't know
               </Button>
             </div>
@@ -865,8 +960,22 @@ function QuizRunner({
                 : "Correct!"
               : q.kind === "se"
                 ? "Not quite. Both answers must fit."
-                : `Not quite. The answer is “${word.word}”.`}
+                : q.kind === "spell"
+                  ? "Not quite. It's added to your Misspelled list."
+                  : `Not quite. The answer is “${word.word}”.`}
           </p>
+          {q.kind === "spell" && !answer.correct && (
+            <div className="mt-2 space-y-1 font-mono text-lg tracking-wider">
+              <p className="text-muted-foreground line-through decoration-stone/60">{answer.typed || "—"}</p>
+              <p aria-label={`Correct spelling: ${word.word}`}>
+                {spellingMarks(answer.typed ?? "", word.word).map((m, i) => (
+                  <span key={i} className={cn(m.ok ? "text-foreground" : "rounded bg-primary/15 font-semibold text-primary")}>
+                    {m.ch}
+                  </span>
+                ))}
+              </p>
+            </div>
+          )}
           {(q.kind === "se" ? q.answers! : [q.id]).map((id) => {
             const w = WORD_BY_ID.get(id)!;
             return (
