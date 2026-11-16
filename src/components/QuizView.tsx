@@ -198,6 +198,11 @@ export function QuizView({
   const [quiz, setQuiz] = useState<QuizState | null>(null);
 
   useEffect(() => writeJSON(K_SETTINGS, { pool, count, lastN, period, mode }), [pool, count, lastN, period, mode]);
+  // The spelling row has its own period and count (independent of the rows above).
+  const [spellPeriod, setSpellPeriodState] = useState<number>(() => Math.min(readJSON<number>("gre333.spellPeriod.v1", 0), PERIODS.length - 1));
+  const [spellLastN, setSpellLastNState] = useState<number>(() => readJSON<number>("gre333.spellLastN.v1", 5));
+  const setSpellPeriod = (i: number) => (setSpellPeriodState(i), writeJSON("gre333.spellPeriod.v1", i));
+  const setSpellLastN = (n: number) => (setSpellLastNState(n), writeJSON("gre333.spellLastN.v1", n));
 
   const pools = useMemo(() => {
     const today = localDay();
@@ -307,6 +312,9 @@ export function QuizView({
     const since = addDays(localDay(), -(p.days - 1));
     const periodIds = pools.learned.filter((x) => x.day >= since).map((x) => x.id);
     const periodCount = periodIds.length;
+    const spellSince = addDays(localDay(), -(PERIODS[spellPeriod].days - 1));
+    const spellPeriodIds = pools.learned.filter((x) => x.day >= spellSince).map((x) => x.id);
+    const spellLastCount = Math.min(Math.max(spellLastN, MIN_WORDS), studiedCount);
     return (
       <div className="flex flex-col gap-4">
         <UnlockCard wordSmart={wordSmart} onStart={startUnlockTest} />
@@ -389,31 +397,46 @@ export function QuizView({
                 </p>
               </div>
             </div>
-            <div className="mt-3 flex flex-wrap gap-2">
-              <Button
-                size="sm"
-                variant="outline"
-                disabled={periodCount === 0}
-                onClick={() => begin(makeQuestions(shuffle(periodIds), "spell"), `Spelling · learned ${p.label.toLowerCase()}`, "spell")}
-              >
-                Words learned · {p.label} ({periodCount})
-              </Button>
-              <Button
-                size="sm"
-                variant="outline"
-                disabled={studiedCount < MIN_WORDS}
-                onClick={() => begin(makeQuestions(shuffle(pools.recent.slice(0, lastCount)), "spell"), `Spelling · your last ${lastCount} words`, "spell")}
-              >
-                Your last {studiedCount >= MIN_WORDS ? lastCount : MIN_WORDS} words
-              </Button>
-              <Button
-                size="sm"
-                variant="outline"
-                disabled={pools.misspelled.length === 0}
-                onClick={() => begin(makeQuestions(shuffle(pools.misspelled), "spell"), "Spelling · misspelled words", "spell")}
-              >
-                Misspelled ({pools.misspelled.length})
-              </Button>
+            <div className="mt-3 flex flex-col gap-2">
+              <SpellLine label="Words learned" note={`${spellPeriodIds.length} words`}>
+                <OptionStepper labels={PERIODS.map((x) => x.label)} index={spellPeriod} onChange={setSpellPeriod} label="Spelling time period" />
+                <Button
+                  disabled={spellPeriodIds.length === 0}
+                  onClick={() =>
+                    begin(makeQuestions(shuffle(spellPeriodIds), "spell"), `Spelling · learned ${PERIODS[spellPeriod].label.toLowerCase()}`, "spell")
+                  }
+                >
+                  Start
+                </Button>
+              </SpellLine>
+              <SpellLine label="Your last words" note={studiedCount >= MIN_WORDS ? `last ${spellLastCount} studied` : `study ${MIN_WORDS}+ first`}>
+                <Stepper
+                  value={spellLastCount}
+                  min={MIN_WORDS}
+                  max={studiedCount}
+                  onChange={setSpellLastN}
+                  label="Spelling: number of words"
+                  disabled={studiedCount < MIN_WORDS}
+                />
+                <Button
+                  variant="dark"
+                  disabled={studiedCount < MIN_WORDS}
+                  onClick={() =>
+                    begin(makeQuestions(shuffle(pools.recent.slice(0, spellLastCount)), "spell"), `Spelling · your last ${spellLastCount} words`, "spell")
+                  }
+                >
+                  Start
+                </Button>
+              </SpellLine>
+              <SpellLine label="Misspelled" note={`${pools.misspelled.length} words`}>
+                <Button
+                  variant="outline"
+                  disabled={pools.misspelled.length === 0}
+                  onClick={() => begin(makeQuestions(shuffle(pools.misspelled), "spell"), "Spelling · misspelled words", "spell")}
+                >
+                  Start
+                </Button>
+              </SpellLine>
             </div>
           </div>
 
@@ -1312,5 +1335,17 @@ function UnlockResult({ quiz }: { quiz: QuizState }) {
           : `You scored ${pct}%; you need ${need}% to unlock Word Smart. Your missed words are in Learning; review them and try again.`}
       </span>
     </p>
+  );
+}
+
+function SpellLine({ label, note, children }: { label: string; note: string; children: React.ReactNode }) {
+  return (
+    <div className="flex flex-wrap items-center justify-between gap-2 rounded-md bg-muted/40 px-3 py-2">
+      <div className="min-w-0">
+        <p className="text-[14px] font-medium">{label}</p>
+        <p className="text-[12px] text-muted-foreground">{note}</p>
+      </div>
+      <div className="flex items-center gap-2">{children}</div>
+    </div>
   );
 }
