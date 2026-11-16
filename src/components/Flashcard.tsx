@@ -1,20 +1,52 @@
-import { Lightbulb, Star, Volume2 } from "lucide-react";
+import { useState } from "react";
+import { ChevronDown, Lightbulb, Star, Volume2, X } from "lucide-react";
 import type { Entry } from "@/lib/progress";
-import { speak, type Word } from "@/lib/words";
+import { speak, stemRegex, wordForForm, type Word } from "@/lib/words";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 
-function Highlight({ sentence, word }: { sentence: string; word: string }) {
-  const stem = word.slice(0, Math.max(4, word.length - 2)).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const match = new RegExp(`\\b(${stem}\\w*)`, "i").exec(sentence);
-  if (!match) return <>{sentence}</>;
+const LEVELS = ["Easy", "Medium", "GRE level"];
+
+/** Highlight the card's own word inside a piece of text. */
+function HighlightTarget({ text, word }: { text: string; word: string }) {
+  const match = stemRegex(word).exec(text);
+  if (!match) return <>{text}</>;
   const start = match.index;
   const end = start + match[0].length;
   return (
     <>
-      {sentence.slice(0, start)}
-      <mark className="rounded-[4px] bg-accent-soft px-1 font-medium text-primary">{sentence.slice(start, end)}</mark>
-      {sentence.slice(end)}
+      {text.slice(0, start)}
+      <mark className="rounded-[4px] bg-accent-soft px-1 font-medium text-primary">{text.slice(start, end)}</mark>
+      {text.slice(end)}
+    </>
+  );
+}
+
+/** A sentence where {braced} words are other GRE words you can tap to see their meaning. */
+function Sentence({ text, word, onPeek }: { text: string; word: string; onPeek: (w: Word) => void }) {
+  const parts = text.split(/(\{[^}]+\})/g);
+  return (
+    <>
+      {parts.map((part, i) => {
+        if (!part.startsWith("{")) return <HighlightTarget key={i} text={part} word={word} />;
+        const form = part.slice(1, -1);
+        const other = wordForForm(form);
+        if (!other) return <span key={i}>{form}</span>;
+        return (
+          <button
+            key={i}
+            type="button"
+            title={`${other.word}: ${other.en}`}
+            onClick={(e) => {
+              e.stopPropagation();
+              onPeek(other);
+            }}
+            className="cursor-help font-medium text-card-foreground underline decoration-primary/60 decoration-dotted decoration-2 underline-offset-[3px] hover:decoration-primary focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            {form}
+          </button>
+        );
+      })}
     </>
   );
 }
@@ -83,6 +115,16 @@ export function Flashcard({
   onFlip: () => void;
   onStar: () => void;
 }) {
+  const [peek, setPeek] = useState<Word | null>(null);
+  const [openBn, setOpenBn] = useState<Set<number>>(new Set());
+  const toggleBn = (i: number) =>
+    setOpenBn((prev) => {
+      const next = new Set(prev);
+      if (next.has(i)) next.delete(i);
+      else next.add(i);
+      return next;
+    });
+
   const actions = (
     <div className="flex items-center gap-0.5">
       <IconAction label="Pronounce (P)" onClick={() => speak(word.word)}>
@@ -94,8 +136,10 @@ export function Flashcard({
     </div>
   );
 
+  const shadow = "shadow-[0_1px_2px_rgba(0,0,0,0.04),0_12px_32px_-12px_rgba(60,60,50,0.18)]";
+
   return (
-    <div className="flip-scene h-[470px] sm:h-[440px]">
+    <div className="flip-scene">
       <div
         role="button"
         tabIndex={0}
@@ -112,7 +156,11 @@ export function Flashcard({
         {/* Front */}
         <div
           aria-hidden={flipped}
-          className={cn("flip-face flex flex-col rounded-xl border border-border bg-card p-5 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_12px_32px_-12px_rgba(60,60,50,0.18)] sm:p-7", flipped && "pointer-events-none")}
+          className={cn(
+            "flip-face flex min-h-[400px] flex-col rounded-xl border border-border bg-card p-5 sm:min-h-[380px] sm:p-7",
+            shadow,
+            flipped && "pointer-events-none",
+          )}
         >
           <div className="flex items-start justify-between">
             <StatusBadge status={entry.status} />
@@ -134,7 +182,8 @@ export function Flashcard({
         <div
           aria-hidden={!flipped}
           className={cn(
-            "flip-face flip-back flex flex-col rounded-xl border border-border bg-card-back p-5 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_12px_32px_-12px_rgba(60,60,50,0.18)] sm:p-7",
+            "flip-face flip-back flex flex-col rounded-xl border border-border bg-card-back p-5 sm:p-7",
+            shadow,
             !flipped && "pointer-events-none",
           )}
         >
@@ -159,11 +208,89 @@ export function Flashcard({
               </p>
             </section>
 
-            <section className="mt-auto rounded-lg border border-border-strong/40 bg-card/60 p-4">
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">In a sentence</p>
-              <p className="mt-1.5 text-[15px] leading-relaxed text-card-foreground">
-                <Highlight sentence={word.example} word={word.word} />
-              </p>
+            <section className="rounded-lg border border-border-strong/40 bg-card/60 p-4">
+              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">In sentences</p>
+              <ol className="mt-2 flex flex-col gap-2.5">
+                {word.sentences.map((s, i) => {
+                  const bn = word.bnSentences?.[i];
+                  const open = openBn.has(i);
+                  return (
+                  <li key={i} className="flex gap-2.5">
+                    <span
+                      className={cn(
+                        "mt-[3px] grid size-5 shrink-0 place-items-center rounded-full font-mono text-[10px] font-medium",
+                        i === 0 ? "bg-muted text-muted-foreground" : i === 1 ? "bg-accent-soft text-primary" : "bg-primary text-primary-foreground",
+                      )}
+                      title={LEVELS[i]}
+                      aria-label={LEVELS[i]}
+                    >
+                      {i + 1}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <p className="text-[15px] leading-relaxed text-card-foreground">
+                        <Sentence text={s} word={word.word} onPeek={setPeek} />
+                      </p>
+                      {bn && open && (
+                        <p
+                          lang="bn"
+                          id={`bn-${word.id}-${i}`}
+                          className="mt-1 animate-card-in rounded-md bg-card-back px-2.5 py-1.5 font-bangla text-[15px] leading-relaxed text-card-foreground"
+                        >
+                          {bn}
+                        </p>
+                      )}
+                    </div>
+                    {bn && (
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleBn(i);
+                        }}
+                        aria-expanded={open}
+                        aria-controls={`bn-${word.id}-${i}`}
+                        aria-label={open ? "Hide Bangla meaning" : "Show Bangla meaning"}
+                        title={open ? "Hide Bangla meaning" : "বাংলা অর্থ দেখুন"}
+                        className={cn(
+                          "grid size-8 shrink-0 place-items-center self-start rounded-full text-muted-foreground transition hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                          open && "bg-muted text-foreground",
+                        )}
+                      >
+                        <ChevronDown className={cn("size-4 transition-transform", open && "rotate-180")} />
+                      </button>
+                    )}
+                  </li>
+                  );
+                })}
+              </ol>
+
+              {peek ? (
+                <div
+                  className="mt-3 flex items-start justify-between gap-2 rounded-md bg-card-back px-3 py-2 text-[13px]"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <span>
+                    <span className="font-semibold">{peek.word}</span> — {peek.en} ·{" "}
+                    <span lang="bn" className="font-bangla text-primary">
+                      {peek.bn}
+                    </span>
+                  </span>
+                  <button
+                    type="button"
+                    aria-label="Close"
+                    onClick={() => setPeek(null)}
+                    className="grid size-6 shrink-0 place-items-center rounded-full text-muted-foreground hover:bg-muted"
+                  >
+                    <X className="size-3.5" />
+                  </button>
+                </div>
+              ) : (
+                <p className="mt-3 text-[12px] text-muted-foreground">
+                  <span className="pointer-coarse:hidden">Click</span>
+                  <span className="hidden pointer-coarse:inline">Tap</span> an underlined word to see its meaning.
+                </p>
+              )}
+
               {word.tip && (
                 <p className="mt-3 flex gap-2 border-t border-border-strong/30 pt-3 text-[13px] leading-snug text-muted-foreground">
                   <Lightbulb className="mt-px size-3.5 shrink-0 text-primary" aria-hidden />

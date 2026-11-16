@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { BookOpen, Brain, CalendarCheck, Check, ClipboardCheck, PenLine, Repeat, Sparkles } from "lucide-react";
+import { BookOpen, BookText, Brain, CalendarCheck, Check, ClipboardCheck, Repeat, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { readJSON } from "@/lib/storage";
@@ -221,9 +221,9 @@ export function TodayView({
           <Tip icon={<Repeat className="size-4" />} title="Recall before you look">
             Say the meaning out loud before flipping a card. If you hesitated, choose “Still learning”.
           </Tip>
-          <Tip icon={<PenLine className="size-4" />} title="Write your own sentence">
-            After flipping a card, use the word in a sentence about your life.{" "}
-            {s.notes > 0 ? `You've written ${s.notes} so far.` : "You haven't written any yet."}
+          <Tip icon={<BookText className="size-4" />} title="Read all three sentences">
+            Each card has an easy, a medium and a GRE-level sentence. Underlined words are other GRE words: tap
+            them to review those too.
           </Tip>
           <Tip icon={<ClipboardCheck className="size-4" />} title="Test the whole week">
             Once a week, test every word you learned in the last 7 days.

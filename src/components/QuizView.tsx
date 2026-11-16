@@ -4,18 +4,19 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { readJSON, writeJSON } from "@/lib/storage";
-import { speak, WORD_BY_ID, WORDS, type Word } from "@/lib/words";
+import { plainSentence, speak, stemRegex, WORD_BY_ID, WORDS, type Word } from "@/lib/words";
 import { GROUPS } from "@/data/groups";
 import { addDays, isDue, localDay, type useProgress } from "@/lib/progress";
 
 type Progress = ReturnType<typeof useProgress>;
 
-type Pool = "due" | "learning" | "weak" | "known" | "starred" | "all";
+type Pool = "due" | "weak" | "starred" | "all";
 type Kind = "meaning" | "word" | "bangla" | "blank" | "type" | "se";
 type Mode = Kind | "mixed";
 
 type Question = {
   id: string; // main word
+  level?: number; // which example sentence a fill-in-the-blank uses (0 easy … 2 GRE level)
   kind: Kind;
   options: string[]; // word ids (multiple choice / GRE)
   answers?: string[]; // GRE "pick 2": the two right words
@@ -64,12 +65,12 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function stemRegex(word: string) {
-  const stem = word.slice(0, Math.max(4, word.length - 2)).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return new RegExp(`\\b${stem}\\w*`, "i");
+/** Pick one of the word's three sentences (easy, medium or GRE level) and blank out the word. */
+function blankSentence(w: Word, level: number) {
+  const usable = w.sentences.map(plainSentence).filter((s) => stemRegex(w.word).test(s));
+  const s = usable[Math.min(level, usable.length - 1)] ?? plainSentence(w.example);
+  return s.replace(stemRegex(w.word), "_____");
 }
-
-const blankSentence = (w: Word) => w.example.replace(stemRegex(w.word), "_____");
 
 function pickDistractors(target: Word, n: number): string[] {
   const valid = (w: Word) =>
@@ -93,7 +94,8 @@ function makeQuestions(ids: string[], mode: Mode): Question[] {
     const w = WORD_BY_ID.get(id)!;
     let kind: Kind = mode === "mixed" ? MIXED[i % MIXED.length] : mode;
     if (kind === "blank" && !stemRegex(w.word).test(w.example)) kind = "meaning";
-    return { id, kind, options: kind === "type" ? [] : shuffle([id, ...pickDistractors(w, 3)]) };
+    const level = Math.floor(Math.random() * 3);
+    return { id, kind, level, options: kind === "type" ? [] : shuffle([id, ...pickDistractors(w, 3)]) };
   });
 }
 
@@ -143,7 +145,9 @@ export function QuizView({
     mode: "mixed",
   });
   const [period, setPeriod] = useState<number>(Math.min(Math.max(saved.period ?? 0, 0), PERIODS.length - 1));
-  const [pool, setPool] = useState<Pool>(saved.pool);
+  const [pool, setPool] = useState<Pool>(
+    (["due", "weak", "starred", "all"] as const).includes(saved.pool) ? saved.pool : "due",
+  );
   const [count, setCount] = useState<number>(saved.count);
   const [lastN, setLastN] = useState<number>(saved.lastN);
   const [mode, setMode] = useState<Mode>(saved.mode);
@@ -167,11 +171,9 @@ export function QuizView({
         return [{ id: w.id, day }];
       }),
       due: WORDS.filter((w) => isDue(progress.get(w.id), today)).map((w) => w.id),
-      learning: WORDS.filter((w) => progress.get(w.id).status === "learning").map((w) => w.id),
       weak: WORDS.filter((w) => progress.get(w.id).misses > 0)
         .sort((a, b) => progress.get(b.id).misses - progress.get(a.id).misses)
         .map((w) => w.id),
-      known: WORDS.filter((w) => progress.get(w.id).status === "known").map((w) => w.id),
       starred: WORDS.filter((w) => progress.get(w.id).starred).map((w) => w.id),
       all: WORDS.map((w) => w.id),
     };
@@ -180,8 +182,6 @@ export function QuizView({
   const POOLS: { key: Pool; label: string; hint: string }[] = [
     { key: "due", label: "Due for review", hint: "Words scheduled for today" },
     { key: "weak", label: "Weak words", hint: "The words you miss most" },
-    { key: "learning", label: "Learning", hint: "Words you're still learning" },
-    { key: "known", label: "Known", hint: "Check you really remember them" },
     { key: "starred", label: "Starred", hint: "Your saved words" },
     { key: "all", label: "All words", hint: "Random words from all 333" },
   ];
@@ -306,7 +306,7 @@ export function QuizView({
             <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded-lg p-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring [&::-webkit-details-marker]:hidden">
               <span>
                 <span className="block text-[15px] font-medium">More tests</span>
-                <span className="block text-[13px] text-muted-foreground">Review, weak words, known, starred, all words</span>
+                <span className="block text-[13px] text-muted-foreground">Review, weak words, starred, all words</span>
               </span>
               <ChevronDown className="size-4 shrink-0 text-muted-foreground transition group-open:rotate-180" />
             </summary>
@@ -647,7 +647,7 @@ function QuizRunner({
         return (
           <>
             <Label>Fill in the blank</Label>
-            <p className="mt-3 text-xl font-medium leading-relaxed sm:text-2xl">{blankSentence(word)}</p>
+            <p className="mt-3 text-xl font-medium leading-relaxed sm:text-2xl">{blankSentence(word, q.level ?? 0)}</p>
             <p className="mt-2 text-[13px] text-muted-foreground">The word may change form here (for example, -ed or -s).</p>
           </>
         );
@@ -827,15 +827,6 @@ function QuizRunner({
             );
           })}
           {q.kind !== "se" && <p className="mt-1.5 text-sm text-muted-foreground">{word.example}</p>}
-          {(q.kind === "se" ? q.answers! : [q.id]).map((id) => {
-            const note = progress.get(id).note;
-            return note ? (
-              <p key={`note-${id}`} className="mt-2 rounded-md bg-card/70 px-3 py-2 text-sm">
-                <span className="font-medium">Your sentence: </span>
-                {note}
-              </p>
-            ) : null;
-          })}
         </section>
       )}
 

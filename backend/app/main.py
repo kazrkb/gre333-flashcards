@@ -17,6 +17,7 @@ from typing import Literal
 
 from dotenv import load_dotenv
 from fastapi import Depends, FastAPI, Header, HTTPException, Request
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
@@ -188,6 +189,8 @@ class LearnerOut(BaseModel):
 
 
 app = FastAPI(title="GRE 333 Flashcards API")
+# Compress responses (the app bundle with all word data shrinks ~70%).
+app.add_middleware(GZipMiddleware, minimum_size=1000)
 
 
 def learner_code(x_sync_code: str = Header(default="")) -> str:

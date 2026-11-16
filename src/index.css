@@ -120,7 +120,7 @@
 }
 .flip-inner {
   position: relative;
-  height: 100%;
+  display: grid; /* both faces share one cell, so the card is as tall as its taller face */
   transform-style: preserve-3d;
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -128,8 +128,7 @@
   transform: rotateY(180deg);
 }
 .flip-face {
-  position: absolute;
-  inset: 0;
+  grid-area: 1 / 1;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
