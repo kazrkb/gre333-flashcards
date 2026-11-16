@@ -5,7 +5,7 @@ import { speak, stemRegex, WORD_BY_ID, wordForForm, type Word } from "@/lib/word
 import { GROUPS } from "@/data/groups";
 import PRON_DATA from "@/data/pron.json";
 
-/** British pronunciation (IPA, as in the Oxford and Cambridge dictionaries) for each word. */
+/** British pronunciation for each word: easy respelling (stressed part in CAPITALS) shown on the card, IPA as a tooltip. */
 const PRON = PRON_DATA as Record<string, { r: string; ipa: string }>;
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
@@ -237,8 +237,8 @@ export function Flashcard({
               {word.word}
             </h2>
             {PRON[word.id] && (
-              <p className="mt-2 font-mono text-lg text-muted-foreground" title="British pronunciation (IPA)">
-                {PRON[word.id].ipa}
+              <p className="mt-2 text-xl font-medium tracking-wide text-muted-foreground" title={`British pronunciation · IPA ${PRON[word.id].ipa}`}>
+                {PRON[word.id].r}
               </p>
             )}
           </div>
@@ -262,8 +262,8 @@ export function Flashcard({
               <h3 className="truncate text-2xl font-semibold tracking-tight text-card-foreground">{word.word}</h3>
               <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">{word.pos}</span>
               {PRON[word.id] && (
-                <span className="ml-2 font-mono text-[13px] text-muted-foreground" title="British pronunciation (IPA)">
-                  · {PRON[word.id].ipa}
+                <span className="ml-2 text-[13px] font-medium tracking-wide text-muted-foreground" title={`British pronunciation · IPA ${PRON[word.id].ipa}`}>
+                  · {PRON[word.id].r}
                 </span>
               )}
             </div>
