@@ -301,6 +301,74 @@ export function QuizView({
             </div>
           </div>
 
+          {/* More tests: other word groups, folded away */}
+          <details className="group mt-3 rounded-lg border border-border">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded-lg p-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring [&::-webkit-details-marker]:hidden">
+              <span>
+                <span className="block text-[15px] font-medium">More tests</span>
+                <span className="block text-[13px] text-muted-foreground">Review, weak words, known, starred, all words</span>
+              </span>
+              <ChevronDown className="size-4 shrink-0 text-muted-foreground transition group-open:rotate-180" />
+            </summary>
+            <div className="flex flex-col gap-3 border-t border-border p-3 sm:p-4">
+              <div className="grid gap-2 sm:grid-cols-2">
+                {POOLS.map((p) => {
+                  const n = pools[p.key].length;
+                  const selected = pool === p.key;
+                  return (
+                    <button
+                      key={p.key}
+                      type="button"
+                      onClick={() => setPool(p.key)}
+                      aria-pressed={selected}
+                      className={cn(
+                        "flex items-center justify-between gap-3 rounded-lg border px-4 py-3 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                        selected ? "border-primary bg-accent-soft/60" : "border-border bg-card hover:border-border-strong",
+                        n === 0 && !selected && "opacity-60",
+                      )}
+                    >
+                      <span className="min-w-0">
+                        <span className="block text-[15px] font-medium">{p.label}</span>
+                        <span className="block truncate text-[13px] text-muted-foreground">{p.hint}</span>
+                      </span>
+                      <span
+                        className={cn(
+                          "shrink-0 rounded-full px-2 py-0.5 font-mono text-xs tabular-nums",
+                          selected ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground",
+                        )}
+                      >
+                        {n}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+              {poolMax === 0 ? (
+                <p className="rounded-lg border border-dashed border-border-strong/60 p-4 text-center text-sm text-muted-foreground">
+                  {pool === "starred"
+                    ? "You haven't starred any words yet."
+                    : pool === "due"
+                      ? "Nothing is due for review today."
+                      : pool === "weak"
+                        ? "No weak words yet. Words you get wrong will show up here."
+                        : "No words here yet. Study some flashcards first."}
+                </p>
+              ) : (
+                <div className="flex items-center justify-between gap-3">
+                  <Stepper
+                    value={poolCount}
+                    min={Math.min(MIN_WORDS, poolMax)}
+                    max={poolMax}
+                    onChange={setCount}
+                    label="Number of questions"
+                  />
+                  <Button className="flex-1" onClick={startPool}>
+                    Start · {poolCount} {poolCount === 1 ? "question" : "questions"}
+                  </Button>
+                </div>
+              )}
+            </div>
+          </details>
           {last && (
             <p className="mt-3 text-[13px] text-muted-foreground">
               Last quiz: <span className="font-medium text-foreground">{last.score} / {last.total}</span> correct ·{" "}
@@ -332,74 +400,6 @@ export function QuizView({
           </div>
         </Section>
 
-        {/* Other word groups, folded away */}
-        <details className="group rounded-xl border border-border bg-card">
-          <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded-xl px-5 py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring [&::-webkit-details-marker]:hidden">
-            <span>
-              <span className="block text-[15px] font-medium">More tests</span>
-              <span className="block text-[13px] text-muted-foreground">Review, weak words, known, starred, all words</span>
-            </span>
-            <ChevronDown className="size-4 shrink-0 text-muted-foreground transition group-open:rotate-180" />
-          </summary>
-          <div className="flex flex-col gap-3 border-t border-border p-4">
-            <div className="grid gap-2 sm:grid-cols-2">
-              {POOLS.map((p) => {
-                const n = pools[p.key].length;
-                const selected = pool === p.key;
-                return (
-                  <button
-                    key={p.key}
-                    type="button"
-                    onClick={() => setPool(p.key)}
-                    aria-pressed={selected}
-                    className={cn(
-                      "flex items-center justify-between gap-3 rounded-lg border px-4 py-3 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                      selected ? "border-primary bg-accent-soft/60" : "border-border bg-card hover:border-border-strong",
-                      n === 0 && !selected && "opacity-60",
-                    )}
-                  >
-                    <span className="min-w-0">
-                      <span className="block text-[15px] font-medium">{p.label}</span>
-                      <span className="block truncate text-[13px] text-muted-foreground">{p.hint}</span>
-                    </span>
-                    <span
-                      className={cn(
-                        "shrink-0 rounded-full px-2 py-0.5 font-mono text-xs tabular-nums",
-                        selected ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground",
-                      )}
-                    >
-                      {n}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-            {poolMax === 0 ? (
-              <p className="rounded-lg border border-dashed border-border-strong/60 p-4 text-center text-sm text-muted-foreground">
-                {pool === "starred"
-                  ? "You haven't starred any words yet."
-                  : pool === "due"
-                    ? "Nothing is due for review today."
-                    : pool === "weak"
-                      ? "No weak words yet. Words you get wrong will show up here."
-                      : "No words here yet. Study some flashcards first."}
-              </p>
-            ) : (
-              <div className="flex items-center justify-between gap-3">
-                <Stepper
-                  value={poolCount}
-                  min={Math.min(MIN_WORDS, poolMax)}
-                  max={poolMax}
-                  onChange={setCount}
-                  label="Number of questions"
-                />
-                <Button className="flex-1" onClick={startPool}>
-                  Start · {poolCount} {poolCount === 1 ? "question" : "questions"}
-                </Button>
-              </div>
-            )}
-          </div>
-        </details>
       </div>
     );
   }
