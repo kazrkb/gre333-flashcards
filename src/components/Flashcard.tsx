@@ -5,7 +5,7 @@ import { speak, stemRegex, WORD_BY_ID, wordForForm, type Word } from "@/lib/word
 import { GROUPS } from "@/data/groups";
 import PRON_DATA from "@/data/pron.json";
 
-/** British pronunciation guide per word: learner respelling (stress in capitals) and IPA. */
+/** British pronunciation (IPA, as in the Oxford and Cambridge dictionaries) for each word. */
 const PRON = PRON_DATA as Record<string, { r: string; ipa: string }>;
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
@@ -237,9 +237,8 @@ export function Flashcard({
               {word.word}
             </h2>
             {PRON[word.id] && (
-              <p className="mt-2 text-lg text-muted-foreground" title="British pronunciation">
-                <span className="font-medium text-card-foreground/80">{PRON[word.id].r}</span>
-                <span className="ml-2 font-mono text-[15px]">{PRON[word.id].ipa}</span>
+              <p className="mt-2 font-mono text-lg text-muted-foreground" title="British pronunciation (IPA)">
+                {PRON[word.id].ipa}
               </p>
             )}
           </div>
@@ -263,9 +262,8 @@ export function Flashcard({
               <h3 className="truncate text-2xl font-semibold tracking-tight text-card-foreground">{word.word}</h3>
               <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">{word.pos}</span>
               {PRON[word.id] && (
-                <span className="ml-2 text-[13px] text-muted-foreground" title="British pronunciation">
-                  · <span className="font-medium text-card-foreground/80">{PRON[word.id].r}</span>{" "}
-                  <span className="font-mono">{PRON[word.id].ipa}</span>
+                <span className="ml-2 font-mono text-[13px] text-muted-foreground" title="British pronunciation (IPA)">
+                  · {PRON[word.id].ipa}
                 </span>
               )}
             </div>
