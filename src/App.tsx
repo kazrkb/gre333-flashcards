@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BookOpen, Brain, ClipboardCheck, Flame, GraduationCap, List, Lock, Moon, Sun, Target, Unlock } from "lucide-react";
+import { BookOpen, Brain, ClipboardCheck, Flame, Volume2, GraduationCap, List, Lock, Moon, Sun, Target, Unlock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { StudyView, buildDeck, freshSession, loadSession, shuffled, type Session } from "@/components/StudyView";
@@ -12,7 +12,7 @@ import { useProgress } from "@/lib/progress";
 import { useQuizHistory } from "@/lib/quizHistory";
 import { SyncDialog } from "@/components/SyncDialog";
 import { readJSON, writeJSON } from "@/lib/storage";
-import { WORD_BY_ID, WORDS } from "@/lib/words";
+import { getVoiceGender, setVoiceGender, speak, WORD_BY_ID, WORDS, type VoiceGender } from "@/lib/words";
 import { cn } from "@/lib/utils";
 
 type Tab = "study" | "quiz" | "gre" | "list";
@@ -37,6 +37,7 @@ export default function App() {
   const wordSmart = useWordSmart(progress, () => setWordsVersion((v) => v + 1));
   const quizHistory = useQuizHistory(progress.code);
   const [dark, setDark] = useTheme();
+  const [voice, setVoice] = useState<VoiceGender>(getVoiceGender);
   const [tab, setTab] = useState<Tab>(() => {
     const saved = readJSON<string>("gre333.tab.v3", "study");
     return (["study", "quiz", "gre", "list"] as const).includes(saved as Tab) ? (saved as Tab) : "study";
@@ -128,6 +129,21 @@ export default function App() {
               setSession(freshSession());
             }}
           />
+          <button
+            type="button"
+            onClick={() => {
+              const g: VoiceGender = voice === "male" ? "female" : "male";
+              setVoiceGender(g);
+              setVoice(g);
+              speak("Welcome");
+            }}
+            title={`Pronunciation voice: British ${voice}. Tap to switch.`}
+            aria-label={`Pronunciation voice: ${voice}. Switch to ${voice === "male" ? "female" : "male"}`}
+            className="inline-flex h-9 items-center gap-1 rounded-full px-2.5 text-xs font-medium text-muted-foreground transition hover:bg-muted hover:text-foreground sm:h-8"
+          >
+            <Volume2 className="size-4" />
+            {voice === "male" ? "Male" : "Female"}
+          </button>
           <Button variant="ghost" size="icon-sm" aria-label="Toggle dark mode" onClick={() => setDark(!dark)}>
             {dark ? <Sun /> : <Moon />}
           </Button>

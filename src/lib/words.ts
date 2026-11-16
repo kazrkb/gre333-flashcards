@@ -114,16 +114,47 @@ export function wordForForm(form: string): Word | undefined {
 /** Sentence without the {braces} used to mark other list words. */
 export const plainSentence = (s: string) => s.replace(/[{}]/g, "");
 
-/** Best British English voice on this device (Google UK English, Apple's Daniel/Serena, Microsoft's Libby/Ryan…). */
-let ukVoice: SpeechSynthesisVoice | null | undefined;
-const PREFERRED_UK = /Google UK English|Daniel|Serena|Kate|Arthur|Martha|Stephanie|Libby|Sonia|Ryan|Hazel|George|Susan/i;
+/** Male or female British voice, chosen by the learner (saved in this browser). */
+export type VoiceGender = "male" | "female";
+const K_VOICE = "gre333.voice.v1";
+export function getVoiceGender(): VoiceGender {
+  try {
+    return localStorage.getItem(K_VOICE) === "\"female\"" ? "female" : "male";
+  } catch {
+    return "male";
+  }
+}
+export function setVoiceGender(g: VoiceGender) {
+  try {
+    localStorage.setItem(K_VOICE, JSON.stringify(g));
+  } catch {
+    /* ignore */
+  }
+  ukVoice = undefined;
+}
 
+// Best-sounding British voices first (Apple, Google, Microsoft); Apple's basic voices only as a last resort.
+const UK_VOICES: Record<VoiceGender, RegExp[]> = {
+  male: [/Daniel/i, /Arthur/i, /Google UK English Male/i, /Ryan/i, /George/i, /Oliver/i, /\bMale\b/i, /Reed/i, /Eddy/i, /Rocko/i, /Grandpa/i],
+  female: [/Serena/i, /Kate/i, /Martha/i, /Stephanie/i, /Google UK English Female/i, /Libby/i, /Sonia/i, /Hazel/i, /Susan/i, /\bFemale\b/i, /Flo\b/i, /Shelley/i, /Sandy/i, /Grandma/i],
+};
+
+/** The British English voice to use on this device, matching the chosen gender when possible. */
+let ukVoice: SpeechSynthesisVoice | null | undefined;
 function britishVoice(): SpeechSynthesisVoice | null {
   if (ukVoice !== undefined) return ukVoice;
   const voices = window.speechSynthesis?.getVoices() ?? [];
   if (!voices.length) return null; // voices not loaded yet; try again next time
   const gb = voices.filter((v) => /^en[-_]GB/i.test(v.lang));
-  ukVoice = gb.find((v) => PREFERRED_UK.test(v.name) && v.localService) ?? gb.find((v) => PREFERRED_UK.test(v.name)) ?? gb[0] ?? null;
+  const pick = (patterns: RegExp[]) => {
+    for (const p of patterns) {
+      const v = gb.find((x) => p.test(x.name));
+      if (v) return v;
+    }
+    return undefined;
+  };
+  const g = getVoiceGender();
+  ukVoice = pick(UK_VOICES[g]) ?? pick(UK_VOICES[g === "male" ? "female" : "male"]) ?? gb[0] ?? null;
   return ukVoice;
 }
 if (typeof window !== "undefined" && window.speechSynthesis) {
