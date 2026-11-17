@@ -1,27 +1,26 @@
-# Android app build (Trusted Web Activity, shared as an .apk; not on the Play Store)
+# GRE Words Android app
 
-The Android app is a thin wrapper that opens https://gre333-flashcards.onrender.com full screen.
-Website updates reach the app automatically. Rebuild only to change the app's name, icon, colours or version.
+A plain WebView app with the **whole web app built in**: code, words, fonts and all 1,735 word
+recordings. It needs no internet to open or work. Only progress sync (`/api/...`) uses the network.
 
-- Settings: `twa-manifest.json` (package `com.onrender.gre333_flashcards.twa`, can never change)
-- Build tools: `Dockerfile` (JDK 17, Android SDK, Bubblewrap), amd64 image
-- Upload signing key: `../../android-signing/` (outside the repo; never commit it). Back it up.
-- `public/.well-known/assetlinks.json` must list this key's SHA-256, or the app shows a browser address bar.
-- Users download it from https://gre333-flashcards.onrender.com/GRE-Words.apk (`public/GRE-Words.apk`).
-  Always sign with the same key: Android refuses to update an installed app signed with a different one.
+- The built web app (`dist/`) is copied to `app/src/main/assets/www` and served at
+  `https://gre333-flashcards.onrender.com/`, so the page and its saved data live at the real site
+  address and `/api` calls go to the real server.
+- Progress is saved on the phone (WebView storage) and synced to the cloud when online.
+- **Reinstall restores progress:** the app links a SHA-256 hash of the phone's per-app Android ID to
+  the sync code (`/api/devices/<hash>`). The ID stays the same across reinstalls (same signing key);
+  it changes only after a factory reset. A sync code still moves progress to another phone.
+- Package `com.onrender.gre333_flashcards.twa` (kept from the first release; it can never change).
+- Signing key: `../../android-signing/` (outside the repo; never commit it). Back it up. Android
+  refuses to update an installed app that is signed with a different key.
 
-## Rebuild
+## Release a new version
 
-1. Bump `appVersionCode` (+1) and `appVersionName` in `twa-manifest.json`.
-2. From `android/`:
+Content and feature changes reach the app only through a new APK.
 
-```sh
-docker build -t twa-build .
-P=$(sed -n 's/^Password (keystore and key): //p' ../../android-signing/PASSWORD.txt)
-docker run --rm -v "$PWD":/work -v twa-gradle:/root/.gradle \
-  -v /Users/rakib/Downloads/GRE333/android-signing:/keys:ro \
-  -e BUBBLEWRAP_KEYSTORE_PASSWORD="$P" -e BUBBLEWRAP_KEY_PASSWORD="$P" \
-  twa-build sh -c 'bubblewrap update --skipVersionUpgrade && bubblewrap build --skipPwaValidation'
-```
-
-Output: `app-release-signed.apk`. Copy it to `public/GRE-Words.apk` and push.
+1. Bump `versionCode` (+1) and `versionName` in `app/build.gradle`.
+2. Run `./build.sh` (needs Docker). It builds the web app, then the APK, and copies it to
+   `public/GRE-Words.apk`.
+3. Set the same numbers in `APP_VERSION` in `backend/app/main.py`, so installed apps show the
+   "new version available" banner.
+4. Commit and push. Users download from https://gre333-flashcards.onrender.com/GRE-Words.apk.
