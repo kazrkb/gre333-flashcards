@@ -12,7 +12,7 @@ import { useProgress } from "@/lib/progress";
 import { useQuizHistory } from "@/lib/quizHistory";
 import { SyncDialog } from "@/components/SyncDialog";
 import { UpdateBanner } from "@/components/UpdateBanner";
-import { AppDownloadFooter } from "@/components/AppDownload";
+import { AppDownloadButton } from "@/components/AppDownload";
 import { readJSON, writeJSON } from "@/lib/storage";
 import { WORD_BY_ID, WORDS } from "@/lib/words";
 import { cn } from "@/lib/utils";
@@ -137,6 +137,7 @@ export default function App() {
               setSession(freshSession());
             }}
           />
+          <AppDownloadButton />
           <Button variant="ghost" size="icon-sm" aria-label="Toggle dark mode" onClick={() => setDark(!dark)}>
             {dark ? <Sun /> : <Moon />}
           </Button>
@@ -226,7 +227,6 @@ export default function App() {
       <main key={`main-${wordsVersion}`} className={cn("mt-4 sm:mt-5", tab === "study" && "pb-24 sm:pb-0")}>
         <div hidden={tab !== "study"}>
           <StudyView progress={progress} session={session} setSession={setSession} active={tab === "study"} />
-          <AppDownloadFooter />
         </div>
         <div hidden={tab !== "quiz"}>
           <QuizView progress={progress} active={tab === "quiz"} request={quizRequest} history={quizHistory} wordSmart={wordSmart} />

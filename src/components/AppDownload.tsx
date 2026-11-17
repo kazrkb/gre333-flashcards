@@ -1,23 +1,20 @@
 import { Download } from "lucide-react";
 import { nativeApp } from "@/lib/native";
+import { Button } from "@/components/ui/button";
 
 export const APK_URL = "/GRE-Words.apk";
-const isIos = () => typeof navigator !== "undefined" && /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-/** Bottom of the Cards page (website only; iPhones can't install an APK): one small orange word. */
-export function AppDownloadFooter() {
-  if (nativeApp || isIos()) return null;
+const isAndroidBrowser = () => typeof navigator !== "undefined" && /Android/i.test(navigator.userAgent) && !nativeApp;
+
+/** Header icon next to sync and dark mode: website on Android phones only. */
+export function AppDownloadButton() {
+  if (!isAndroidBrowser()) return null;
   return (
-    <p className="mt-6 text-center font-mono text-[11px]">
-      <a
-        href={APK_URL}
-        download="GRE-Words.apk"
-        title="Download the Android app (works with no internet)"
-        className="text-primary hover:underline hover:underline-offset-4"
-      >
-        Download
+    <Button variant="ghost" size="icon-sm" asChild>
+      <a href={APK_URL} download="GRE-Words.apk" aria-label="Get the Android app" title="Get the Android app (works with no internet)">
+        <Download />
       </a>
-    </p>
+    </Button>
   );
 }
 
