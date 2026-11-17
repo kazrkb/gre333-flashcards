@@ -10,6 +10,7 @@ Uses Postgres when DATABASE_URL is set, otherwise a local SQLite file.
 import json
 import mimetypes
 import os
+import re
 import secrets
 import time
 from collections import defaultdict, deque
@@ -130,6 +131,15 @@ class QuizResult(Base):
     total: Mapped[int] = mapped_column(Integer, default=0)
     words: Mapped[str] = mapped_column(Text, default="[]")  # JSON list of word ids
     missed: Mapped[str] = mapped_column(Text, default="[]")  # JSON list of word ids
+
+
+class DeviceLink(Base):
+    """Android app: a one-way hash of the phone's app ID -> sync code, so reinstalling restores progress."""
+
+    __tablename__ = "device_links"
+    device: Mapped[str] = mapped_column(String(64), primary_key=True)
+    code: Mapped[str] = mapped_column(String(9))
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 
 Base.metadata.create_all(engine)
@@ -329,6 +339,44 @@ def check_learner(code: str):
         if not norm or db.get(Learner, norm) is None:
             raise HTTPException(404, "Sync code not found")
     return LearnerOut(code=norm)
+
+
+DEVICE_RE = re.compile(r"^[0-9a-f]{64}$")
+
+# Latest Android app (public/GRE-Words.apk). Bump together with versionCode in android/app/build.gradle.
+APP_VERSION = {"versionCode": 2, "versionName": "2.0", "url": "/GRE-Words.apk"}
+
+
+@app.get("/api/app-version")
+def app_version():
+    return APP_VERSION
+
+
+@app.get("/api/devices/{device}", response_model=LearnerOut, dependencies=[Depends(rate_limit)])
+def device_code(device: str):
+    """Android app: the sync code this phone used before (after a reinstall)."""
+    if not DEVICE_RE.match(device):
+        raise HTTPException(400, "Invalid device")
+    with Session(engine) as db:
+        link = db.get(DeviceLink, device)
+        if link is None or db.get(Learner, link.code) is None:
+            raise HTTPException(404, "Not linked")
+        return LearnerOut(code=link.code)
+
+
+@app.put("/api/devices/{device}", dependencies=[Depends(rate_limit)])
+def link_device(device: str, code: str = Depends(learner_code)):
+    """Android app: remember which sync code this phone uses."""
+    if not DEVICE_RE.match(device):
+        raise HTTPException(400, "Invalid device")
+    with Session(engine) as db:
+        link = db.get(DeviceLink, device)
+        if link is None:
+            db.add(DeviceLink(device=device, code=code))
+        else:
+            link.code, link.updated_at = code, utcnow()
+        db.commit()
+    return {"ok": True}
 
 
 @app.get("/api/progress", response_model=SyncOut)

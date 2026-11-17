@@ -7,10 +7,12 @@ __pycache__
 .work
 .DS_Store
 
-# Android (Play Store) build: generated project and outputs; the signing key lives outside the repo
-android/*
-!android/Dockerfile
-!android/twa-manifest.json
-!android/BUILD.md
+# Android app: build outputs and the copied web app; the signing key lives outside the repo
+android/.gradle/
+android/build/
+android/app/build/
+android/app/src/main/assets/
+android/*.apk
+android/local.properties
 *.keystore
 *.jks

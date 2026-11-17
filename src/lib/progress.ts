@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { readJSON, writeJSON } from "./storage";
+import { nativeDeviceId } from "./native";
 import { WORDS } from "./words";
 
 export type Status = "new" | "learning" | "known";
@@ -73,6 +74,7 @@ const K_PENDING = "gre333.pending.v1"; // word ids changed but not yet saved on 
 const K_DAYS = "gre333.days.v1";
 const K_PENDING_DAYS = "gre333.pendingDays.v1"; // reviews done while offline
 const K_PENDING_RESET = "gre333.pendingReset.v1"; // progress was reset while offline: clear the server copy first
+const K_DEVICE_LINK = "gre333.deviceLink.v1"; // Android app: sync code last linked to this phone on the server
 
 const EMPTY: Entry = {
   status: "new",
@@ -230,9 +232,18 @@ export function useProgress(wordsVersion = 0) {
     busy.current = true;
     try {
       let c = codeRef.current;
+      const device = nativeDeviceId();
       if (!c) {
+        // Android app reinstalled on the same phone: pick up the sync code it used before.
+        if (device) {
+          try {
+            c = (await api<{ code: string }>(`/api/devices/${device}`, null)).code;
+          } catch (e) {
+            if (!(e instanceof HttpError && e.status === 404)) throw e;
+          }
+        }
         // First visit: get a sync code. Anything already in this browser counts as unsaved.
-        c = (await api<{ code: string }>("/api/learners", null, { method: "POST" })).code;
+        c ??= (await api<{ code: string }>("/api/learners", null, { method: "POST" })).code;
         for (const id of Object.keys(progressRef.current)) pending.current.add(id);
         for (const [d, n] of Object.entries(readJSON<Record<string, number>>(K_DAYS, {})))
           pendingDays.current[d] = Math.max(pendingDays.current[d] ?? 0, n);
@@ -257,6 +268,11 @@ export function useProgress(wordsVersion = 0) {
           return connect();
         }
         throw e;
+      }
+      if (device && readJSON<string | null>(K_DEVICE_LINK, null) !== c) {
+        // Remember this phone's sync code on the server, so reinstalling the app restores progress.
+        await api(`/api/devices/${device}`, c, { method: "PUT" });
+        writeJSON(K_DEVICE_LINK, c);
       }
       setSync("synced");
     } catch {
@@ -416,6 +432,13 @@ export function useProgress(wordsVersion = 0) {
         await pushAndPull(target);
         setCode(target);
         setSync("synced");
+        const device = nativeDeviceId();
+        if (device) {
+          // Android app: reinstalling on this phone should now restore this code's progress.
+          api(`/api/devices/${device}`, target, { method: "PUT" })
+            .then(() => writeJSON(K_DEVICE_LINK, target))
+            .catch(() => {}); // linked on the next sync instead
+        }
         return null;
       } catch {
         return "Something went wrong while syncing. Please try again.";

@@ -1,0 +1,17 @@
+// GRE Words Android app: a WebView with the whole web app (code, words, sounds, fonts) built in.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.9.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}

@@ -6,7 +6,7 @@
 //   all of them in the background (src/lib/offline.ts); range requests from audio players are answered
 //   from the full cached file.
 // - /api requests: never cached (the app keeps its own offline copy of progress and syncs it later).
-const CACHE = "gre333-v5"; // v5: full offline support
+const CACHE = "gre333-v6"; // v6: bundled fonts cached too
 const AUDIO_CACHE = "gre-audio-v1"; // keep in sync with src/lib/offline.ts; bump only if recordings change
 const SHELL = ["/manifest.webmanifest", "/icon-192.png", "/apple-touch-icon.png"];
 
@@ -35,11 +35,14 @@ self.addEventListener("activate", (event) => {
 async function assetsFor(html, cache) {
   const found = new Set([...html.matchAll(/(?:src|href)="(\/assets\/[^"]+)"/g)].map((m) => m[1]));
   for (const url of [...found]) {
-    if (!url.endsWith(".js")) continue;
+    const isJs = url.endsWith(".js");
+    if (!isJs && !url.endsWith(".css")) continue;
     const res = (await cache.match(url)) ?? (await fetch(url));
     if (!res.ok) continue;
-    const js = await res.clone().text();
-    for (const m of js.matchAll(/["'`]\.\/([\w.-]+\.(?:js|css))["'`]/g)) found.add(`/assets/${m[1]}`);
+    const text = await res.clone().text();
+    if (isJs) for (const m of text.matchAll(/["'`]\.\/([\w.-]+\.(?:js|css))["'`]/g)) found.add(`/assets/${m[1]}`);
+    // Bundled fonts (woff2 is what every current browser uses).
+    else for (const m of text.matchAll(/url\((\/assets\/[\w.-]+\.woff2)\)/g)) found.add(m[1]);
   }
   return [...found];
 }

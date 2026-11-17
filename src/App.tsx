@@ -11,9 +11,11 @@ import { useWordSmart } from "@/lib/wordSmart";
 import { useProgress } from "@/lib/progress";
 import { useQuizHistory } from "@/lib/quizHistory";
 import { SyncDialog } from "@/components/SyncDialog";
+import { UpdateBanner } from "@/components/UpdateBanner";
 import { readJSON, writeJSON } from "@/lib/storage";
 import { WORD_BY_ID, WORDS } from "@/lib/words";
 import { cn } from "@/lib/utils";
+import { nativeApp } from "@/lib/native";
 
 type Tab = "study" | "quiz" | "gre" | "list";
 
@@ -26,6 +28,11 @@ function useTheme() {
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
     document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#161614" : "#EDEDF0");
+    try {
+      nativeApp?.setDark(dark); // Android app: match the status and navigation bars
+    } catch {
+      /* older app version */
+    }
   }, [dark]);
   return [dark, (v: boolean) => (setDark(v), writeJSON("gre333.dark", v))] as const;
 }
@@ -104,6 +111,7 @@ export default function App() {
   return (
     <div className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-10 pt-5 sm:px-6 sm:pt-6">
       {/* Header */}
+      <UpdateBanner />
       <header className="flex items-center justify-between gap-3">
         <div className="flex min-w-0 items-center gap-3">
           <div className="relative grid size-10 shrink-0 place-items-center rounded-[12px] bg-primary shadow-sm shadow-primary/30">

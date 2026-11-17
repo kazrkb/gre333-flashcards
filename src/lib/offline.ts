@@ -1,5 +1,6 @@
 import { useSyncExternalStore } from "react";
 import PRON from "@/data/pron.json";
+import { nativeApp } from "@/lib/native";
 
 /**
  * Full offline use: keep this device's data from being cleared, and download every word recording
@@ -66,6 +67,7 @@ async function downloadSounds() {
 
 /** Call once at startup (production only). */
 export function prepareOffline() {
+  if (nativeApp) return set({ status: "ready", done: IDS.length }); // Android app: sounds are built in
   if (!("serviceWorker" in navigator) || !("caches" in window)) return set({ status: "unsupported" });
   // Ask the browser to never clear this app's saved data when the phone runs low on space.
   navigator.storage?.persist?.().catch(() => {});
