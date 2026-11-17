@@ -6,6 +6,7 @@ import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } 
 import { cn } from "@/lib/utils";
 import type { useProgress } from "@/lib/progress";
 import { useOfflineState } from "@/lib/offline";
+import { AppDownloadRow } from "@/components/AppDownload";
 
 type Progress = ReturnType<typeof useProgress>;
 
@@ -153,6 +154,8 @@ export function SyncDialog({ progress, onReset }: { progress: Progress; onReset:
             Progress on this device is merged in, so nothing is lost.
           </p>
         </form>
+
+        <AppDownloadRow />
 
         {/* Reset is tucked away and needs typing RESET, so it can't happen by accident */}
         <details className="group mt-6 rounded-lg border border-border">
