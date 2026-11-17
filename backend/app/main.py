@@ -351,7 +351,7 @@ def put_progress(word_id: str, body: ProgressIn, code: str = Depends(learner_cod
 @app.post("/api/progress/sync", response_model=SyncOut)
 def sync_progress(body: SyncIn, code: str = Depends(learner_code)):
     """Merge progress saved in the browser while offline; the newer change wins."""
-    if len(body.items) > 1000 or len(body.days) > 3660:
+    if len(body.items) > 5000 or len(body.days) > 3660:  # every word list together is ~1,750 words
         raise HTTPException(400, "too many items")
     with Session(engine) as db:
         for word_id, item in body.items.items():
@@ -364,11 +364,15 @@ def sync_progress(body: SyncIn, code: str = Depends(learner_code)):
 
 
 @app.delete("/api/progress")
-def reset_progress(code: str = Depends(learner_code)):
+def reset_progress(code: str = Depends(learner_code), before: datetime | None = None):
+    """Reset everything. `before` (a reset made offline, sent later): keep quizzes taken after that time."""
     with Session(engine) as db:
         db.execute(delete(Progress).where(Progress.learner == code))
         db.execute(delete(ReviewDay).where(ReviewDay.learner == code))
-        db.execute(delete(QuizResult).where(QuizResult.learner == code))
+        quizzes = delete(QuizResult).where(QuizResult.learner == code)
+        if before is not None:
+            quizzes = quizzes.where(QuizResult.taken_at < as_aware(before))
+        db.execute(quizzes)
         learner = db.get(Learner, code)
         if learner is not None:  # a full reset also locks Word Smart again
             learner.ws_unlocked_at = None

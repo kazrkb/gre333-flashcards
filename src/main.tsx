@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import { prepareOffline } from "./lib/offline";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -15,5 +16,6 @@ if (import.meta.env.PROD && "serviceWorker" in navigator) {
     navigator.serviceWorker.register("/sw.js").catch(() => {
       /* not supported or blocked: the app still works normally */
     });
+    prepareOffline(); // keep data safe and download every word recording for offline use
   });
 }

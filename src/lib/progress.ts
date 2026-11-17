@@ -72,6 +72,7 @@ const K_PROGRESS = "gre333.progress.v1";
 const K_PENDING = "gre333.pending.v1"; // word ids changed but not yet saved on the server
 const K_DAYS = "gre333.days.v1";
 const K_PENDING_DAYS = "gre333.pendingDays.v1"; // reviews done while offline
+const K_PENDING_RESET = "gre333.pendingReset.v1"; // progress was reset while offline: clear the server copy first
 
 const EMPTY: Entry = {
   status: "new",
@@ -180,11 +181,17 @@ export function useProgress(wordsVersion = 0) {
     writeJSON(K_CODE, c);
   };
 
-  /** Push everything saved only in this browser to `target`, then load the server's copy. */
+  /**
+   * Push everything saved only on this device to `target`, then load the server's merged copy.
+   * Changes made while this request is in flight stay pending and are kept, so nothing is lost.
+   */
   const pushAndPull = useCallback(async (target: string) => {
     const items: Record<string, Record<string, unknown>> = {};
+    const sent = new Map<string, string | undefined>(); // word id -> version sent
+    const sentDays = { ...pendingDays.current };
     for (const id of pending.current) {
       const e = progressRef.current[id];
+      sent.set(id, e?.updatedAt);
       if (e)
         items[id] = {
           status: e.status,
@@ -200,13 +207,22 @@ export function useProgress(wordsVersion = 0) {
     }
     const snap = await api<Snapshot>("/api/progress/sync", target, {
       method: "POST",
-      body: JSON.stringify({ items, days: pendingDays.current }),
+      body: JSON.stringify({ items, days: sentDays }),
     });
-    pending.current.clear();
-    pendingDays.current = {};
+    for (const [id, version] of sent) if (progressRef.current[id]?.updatedAt === version) pending.current.delete(id);
+    for (const [d, n] of Object.entries(sentDays)) {
+      const left = (pendingDays.current[d] ?? 0) - n;
+      if (left > 0) pendingDays.current[d] = left;
+      else delete pendingDays.current[d];
+    }
     savePending();
-    setProgress(fromServer(snap.progress));
-    setDays(snap.days);
+    const merged = fromServer(snap.progress);
+    for (const id of pending.current) if (progressRef.current[id]) merged[id] = progressRef.current[id];
+    progressRef.current = merged;
+    setProgress(merged);
+    const days = { ...snap.days };
+    for (const [d, n] of Object.entries(pendingDays.current)) days[d] = (days[d] ?? 0) + n;
+    setDays(days);
   }, []);
 
   const connect = useCallback(async () => {
@@ -221,6 +237,15 @@ export function useProgress(wordsVersion = 0) {
         for (const [d, n] of Object.entries(readJSON<Record<string, number>>(K_DAYS, {})))
           pendingDays.current[d] = Math.max(pendingDays.current[d] ?? 0, n);
         setCode(c);
+      }
+      const resetAt = readJSON<string | null>(K_PENDING_RESET, null);
+      if (resetAt) {
+        // Reset happened offline: clear the server copy before sending anything new
+        // (quizzes taken after the reset are kept).
+        await api(`/api/progress?before=${encodeURIComponent(resetAt)}`, c, { method: "DELETE" }).catch((e) => {
+          if (!(e instanceof HttpError && e.status === 404)) throw e;
+        });
+        writeJSON(K_PENDING_RESET, null);
       }
       try {
         await pushAndPull(c);
@@ -357,8 +382,11 @@ export function useProgress(wordsVersion = 0) {
     pendingDays.current = {};
     savePending();
     if (!codeRef.current) return;
+    const resetAt = new Date().toISOString();
+    writeJSON(K_PENDING_RESET, resetAt); // cleared once the server confirms
     try {
-      await api("/api/progress", codeRef.current, { method: "DELETE" });
+      await api(`/api/progress?before=${encodeURIComponent(resetAt)}`, codeRef.current, { method: "DELETE" });
+      writeJSON(K_PENDING_RESET, null);
       setSync("synced");
     } catch {
       setSync("offline");

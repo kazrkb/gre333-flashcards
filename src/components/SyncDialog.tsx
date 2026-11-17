@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Check, ChevronDown, Cloud, CloudOff, Copy, Loader2, Smartphone, TriangleAlert } from "lucide-react";
+import { Check, ChevronDown, Cloud, CloudOff, Copy, Loader2, Smartphone, TriangleAlert, WifiOff } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import type { useProgress } from "@/lib/progress";
+import { useOfflineState } from "@/lib/offline";
 
 type Progress = ReturnType<typeof useProgress>;
 
@@ -17,6 +18,7 @@ export function SyncDialog({ progress, onReset }: { progress: Progress; onReset:
   const [busy, setBusy] = useState(false);
   const [copied, setCopied] = useState(false);
   const [switched, setSwitched] = useState(false);
+  const offline = useOfflineState();
 
   const pill = {
     connecting: { icon: <Loader2 className="size-3.5 animate-spin" />, text: "Connecting…", cls: "text-muted-foreground" },
@@ -100,6 +102,21 @@ export function SyncDialog({ progress, onReset }: { progress: Progress; onReset:
             Keep this code. Enter it on another device (or after clearing your browser) to get your progress back.
           </p>
         </div>
+
+        {offline.status !== "unsupported" && (
+          <p className="mt-3 flex items-start gap-2 text-[13px] text-muted-foreground">
+            <WifiOff className="mt-0.5 size-4 shrink-0" />
+            <span>
+              {offline.status === "ready"
+                ? "Ready to use offline, including the sound of every word. Progress made offline is saved when you're back online."
+                : offline.status === "downloading"
+                  ? `Getting ready for offline use: downloading word sounds (${offline.done.toLocaleString()} of ${offline.total.toLocaleString()})…`
+                  : offline.status === "paused"
+                    ? `Word sounds for offline use: ${offline.done.toLocaleString()} of ${offline.total.toLocaleString()} saved. The rest download when you're online.`
+                    : "Preparing offline use…"}
+            </span>
+          </p>
+        )}
 
         <form onSubmit={submit} className="mt-5">
           <label htmlFor="sync-code" className="flex items-center gap-1.5 text-sm font-medium">
