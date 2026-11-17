@@ -309,18 +309,20 @@ export function StudyView({
 
       {/* Actions */}
       {!done && word && !spelling && (
-        <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/85 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur-md sm:sticky sm:bottom-0 sm:z-20 sm:border-0 sm:px-0 sm:pb-3">
-        <div className="mx-auto flex max-w-2xl items-center gap-2 sm:gap-3">
-          <Button variant="ghost" size="icon" aria-label="Previous card" onClick={() => go(index - 1)} disabled={index === 0}>
+        <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/85 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur-md max-[420px]:px-3 sm:sticky sm:bottom-0 sm:z-20 sm:border-0 sm:px-0 sm:pb-3">
+        {/* Buttons shrink (min-w-0) and arrows never do, so the row always fits. Narrow phones (≤420px, e.g. 360px
+            wide) get a compact row: no icons inside the two buttons, slightly smaller text and arrows. */}
+        <div className="mx-auto flex max-w-2xl items-center gap-1.5 sm:gap-3">
+          <Button variant="ghost" size="icon" className="shrink-0 max-[420px]:size-9" aria-label="Previous card" onClick={() => go(index - 1)} disabled={index === 0}>
             <ArrowLeft />
           </Button>
-          <Button variant="outline" size="lg" className="flex-1" onClick={() => mark(false)}>
-            <RotateCcw /> Still learning
+          <Button variant="outline" size="lg" className={COMPACT} onClick={() => mark(false)}>
+            <RotateCcw /> <span className="truncate">Still learning</span>
           </Button>
-          <Button size="lg" className="flex-1" onClick={() => setSpelling(true)}>
-            <Check /> I know it
+          <Button size="lg" className={COMPACT} onClick={() => setSpelling(true)}>
+            <Check /> <span className="truncate">I know it</span>
           </Button>
-          <Button variant="ghost" size="icon" aria-label="Next card" onClick={() => go(index + 1)}>
+          <Button variant="ghost" size="icon" className="shrink-0 max-[420px]:size-9" aria-label="Next card" onClick={() => go(index + 1)}>
             <ArrowRight />
           </Button>
         </div>
@@ -334,6 +336,8 @@ export function StudyView({
     </div>
   );
 }
+
+const COMPACT = "min-w-0 flex-1 px-3 sm:px-6 max-[420px]:gap-1.5 max-[420px]:text-sm max-[420px]:[&_svg]:hidden";
 
 function Kbd({ children }: { children: React.ReactNode }) {
   return (
