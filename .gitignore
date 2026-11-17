@@ -6,3 +6,11 @@ backend/gre.db
 __pycache__
 .work
 .DS_Store
+
+# Android (Play Store) build: generated project and outputs; the signing key lives outside the repo
+android/*
+!android/Dockerfile
+!android/twa-manifest.json
+!android/BUILD.md
+*.keystore
+*.jks

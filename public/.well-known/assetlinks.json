@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.onrender.gre333_flashcards.twa",
+      "sha256_cert_fingerprints": ["04:1F:03:28:F0:5F:E3:67:50:2A:E6:F9:61:C3:BE:62:30:F7:FA:23:1D:0D:39:DA:A3:8B:25:91:3D:91:1F:50"]
+    }
+  }
+]
