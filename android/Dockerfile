@@ -13,4 +13,6 @@ RUN mkdir -p $ANDROID_HOME/cmdline-tools && cd /tmp \
 RUN npm install -g @bubblewrap/cli \
  && mkdir -p /root/.bubblewrap \
  && echo '{"jdkPath":"/opt/java/openjdk","androidSdkPath":"/opt/android"}' > /root/.bubblewrap/config.json
+# Bubblewrap looks for the SDK tools under the legacy "tools" folder
+RUN ln -s /opt/android/cmdline-tools/latest /opt/android/tools
 WORKDIR /work
