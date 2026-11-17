@@ -2,7 +2,7 @@
 // - Page (index.html): served from cache right away, refreshed in the background.
 // - Built assets (hashed file names) and fonts: cache first.
 // - /api requests: never cached (the app keeps its own offline copy of progress).
-const CACHE = "gre333-v3"; // v3: male voice only
+const CACHE = "gre333-v4"; // v4: real files (app download, privacy page) bypass the app shell
 const SHELL = ["/", "/manifest.webmanifest", "/icon-192.png", "/apple-touch-icon.png"];
 
 self.addEventListener("install", (event) => {
@@ -46,6 +46,9 @@ self.addEventListener("fetch", (event) => {
 
   if (url.origin === self.location.origin) {
     if (url.pathname.startsWith("/api/")) return; // always live
+    if (url.pathname.endsWith(".apk")) return; // Android app download: straight from the server, never cached
+    // Links to real files (privacy.html etc.) load the file itself, not the app.
+    if (request.mode === "navigate" && /\.[a-z0-9]+$/i.test(url.pathname)) return;
     if (request.mode === "navigate") {
       event.respondWith(staleWhileRevalidate(request, "/"));
       return;

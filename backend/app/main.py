@@ -8,6 +8,7 @@ Uses Postgres when DATABASE_URL is set, otherwise a local SQLite file.
 """
 
 import json
+import mimetypes
 import os
 import secrets
 import time
@@ -479,6 +480,7 @@ def save_quiz(body: QuizIn, code: str = Depends(learner_code)):
 
 
 # Serve the built frontend (npm run build) so one server runs the whole app.
+mimetypes.add_type("application/vnd.android.package-archive", ".apk")  # Android app download
 DIST = Path(os.getenv("FRONTEND_DIST", BASE_DIR.parent / "dist"))
 if DIST.exists():
     app.mount("/assets", StaticFiles(directory=DIST / "assets"), name="assets")

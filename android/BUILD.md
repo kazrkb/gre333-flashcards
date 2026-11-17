@@ -1,4 +1,4 @@
-# Play Store build (Trusted Web Activity)
+# Android app build (Trusted Web Activity, shared as an .apk; not on the Play Store)
 
 The Android app is a thin wrapper that opens https://gre333-flashcards.onrender.com full screen.
 Website updates reach the app automatically. Rebuild only to change the app's name, icon, colours or version.
@@ -6,8 +6,9 @@ Website updates reach the app automatically. Rebuild only to change the app's na
 - Settings: `twa-manifest.json` (package `com.onrender.gre333_flashcards.twa`, can never change)
 - Build tools: `Dockerfile` (JDK 17, Android SDK, Bubblewrap), amd64 image
 - Upload signing key: `../../android-signing/` (outside the repo; never commit it). Back it up.
-- `public/.well-known/assetlinks.json` must list the SHA-256 of the upload key **and** of Google's
-  app signing key (Play Console → App integrity), or the app shows a browser address bar.
+- `public/.well-known/assetlinks.json` must list this key's SHA-256, or the app shows a browser address bar.
+- Users download it from https://gre333-flashcards.onrender.com/GRE-Words.apk (`public/GRE-Words.apk`).
+  Always sign with the same key: Android refuses to update an installed app signed with a different one.
 
 ## Rebuild
 
@@ -23,4 +24,4 @@ docker run --rm -v "$PWD":/work -v twa-gradle:/root/.gradle \
   twa-build sh -c 'bubblewrap update --skipVersionUpgrade && bubblewrap build --skipPwaValidation'
 ```
 
-Output: `app-release-bundle.aab` (upload to Play) and `app-release-signed.apk` (install directly).
+Output: `app-release-signed.apk`. Copy it to `public/GRE-Words.apk` and push.
