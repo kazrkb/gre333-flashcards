@@ -947,7 +947,7 @@ function QuizRunner({
           )}
         </form>
       ) : (
-        <div className={cn("grid gap-2", q.kind === "se" && "grid-cols-2")} role="group" aria-label="Answer choices">
+        <div className={cn("grid gap-2", q.kind === "se" && "sm:grid-cols-2")} role="group" aria-label="Answer choices">
           {q.options.map((optId, i) => {
             const opt = WORD_BY_ID.get(optId)!;
             const { right, chosen } = optionState(optId);

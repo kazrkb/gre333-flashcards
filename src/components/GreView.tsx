@@ -11,6 +11,9 @@ import type { useProgress } from "@/lib/progress";
 import type { QuizHistory } from "@/lib/quizHistory";
 import { Stepper } from "@/components/QuizView";
 
+/** Analogy pairs are shown capitalized: "impair" -> "Impair", "sense of humor" -> "Sense of humor". */
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
 type Progress = ReturnType<typeof useProgress>;
 
 type TcItem = { id: string; text: string; blanks: { choices: string[]; answer: number }[]; explanation: string };
@@ -429,8 +432,8 @@ function GreRunner({
                 <span className="min-w-0">
                   {qq.kind === "an" ? (
                     <>
-                      <span className="font-medium uppercase">
-                        {qq.item.stem[0]} : {qq.item.stem[1]}
+                      <span className="font-medium">
+                        {cap(qq.item.stem[0])} : {cap(qq.item.stem[1])}
                       </span>
                       <span className="block text-muted-foreground">{qq.item.relation}</span>
                     </>
@@ -468,7 +471,7 @@ function GreRunner({
         ? "Pick one word for each blank. All blanks must be right."
         : q.kind === "se"
           ? "Pick the two words that both complete the sentence and give it the same meaning."
-          : "Pick the pair that shows the same relationship as the pair in capitals.";
+          : "Pick the pair that shows the same relationship as the pair above.";
 
   const optionClass = (isRight: boolean, isPicked: boolean) =>
     cn(
@@ -524,8 +527,8 @@ function GreRunner({
       <section key={index} className="animate-card-in rounded-xl border border-border bg-card p-5 sm:p-7">
         <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">{label}</p>
         {q.kind === "an" ? (
-          <p className="mt-3 text-2xl font-semibold uppercase tracking-wide sm:text-3xl">
-            {q.item.stem[0]} <span className="text-muted-foreground">:</span> {q.item.stem[1]}
+          <p className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
+            {cap(q.item.stem[0])} <span className="text-muted-foreground">:</span> {cap(q.item.stem[1])}
           </p>
         ) : (
           <p className="mt-3 text-lg font-medium leading-relaxed sm:text-xl">
@@ -561,7 +564,7 @@ function GreRunner({
               <button key={i} type="button" disabled={!!answer} onClick={() => pickOne(String(i))} className={optionClass(isRight, isPicked)}>
                 {badge(i, isRight, isPicked)}
                 <span className="text-[16px] font-medium">
-                  {pair[0]} <span className="text-muted-foreground">:</span> {pair[1]}
+                  {cap(pair[0])} <span className="text-muted-foreground">:</span> {cap(pair[1])}
                 </span>
               </button>
             );
@@ -570,7 +573,7 @@ function GreRunner({
       )}
 
       {q.kind === "se" && (
-        <div className="grid grid-cols-2 gap-2" role="group" aria-label="Answer choices">
+        <div className="grid gap-2 sm:grid-cols-2" role="group" aria-label="Answer choices">
           {q.options.map((id, i) => {
             const w = WORD_BY_ID.get(id)!;
             const isRight = q.answers.includes(id);
