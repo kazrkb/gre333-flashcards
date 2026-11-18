@@ -344,7 +344,7 @@ def check_learner(code: str):
 DEVICE_RE = re.compile(r"^[0-9a-f]{64}$")
 
 # Latest Android app (public/GRE-Words.apk). Bump together with versionCode in android/app/build.gradle.
-APP_VERSION = {"versionCode": 4, "versionName": "2.2", "url": "/GRE-Words.apk"}
+APP_VERSION = {"versionCode": 5, "versionName": "3.0", "url": "/GRE-Words.apk"}
 
 
 @app.get("/api/app-version")

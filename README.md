@@ -98,9 +98,8 @@ Progress endpoints need the header `X-Sync-Code: XXXX-XXXX`.
 
 Word data lives in `src/data/words-*.ts`. Edit a meaning there to change it.
 
-## Credits
+## Pronunciation
 
-Pronunciation audio (`public/audio/m`, male voice "spike") was generated
-with [Piper TTS](https://github.com/rhasspy/piper) using the `en_GB-semaine-medium` voice, trained on the
-DFKI SEMAINE database, licensed [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-(non-commercial use).
+Words are spoken with the device's own text-to-speech voice (British English, male or female,
+chosen on the card): Android's engine in the app, the Web Speech API in browsers. There are no
+sound files, and it works offline wherever the voice is installed on the device.

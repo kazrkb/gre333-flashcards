@@ -12,6 +12,7 @@ import { bnSentences1 } from "@/data/bn-sentences-1";
 import { bnSentences2 } from "@/data/bn-sentences-2";
 import { bnSentences3 } from "@/data/bn-sentences-3";
 import { bnSentences4 } from "@/data/bn-sentences-4";
+import { nativeApp } from "./native";
 
 const MORE = { ...sentences1, ...sentences2, ...sentences3, ...sentences4 };
 const BN_SENTENCES = { ...bnSentences1, ...bnSentences2, ...bnSentences3, ...bnSentences4 };
@@ -114,82 +115,106 @@ export function wordForForm(form: string): Word | undefined {
 /** Sentence without the {braces} used to mark other list words. */
 export const plainSentence = (s: string) => s.replace(/[{}]/g, "");
 
-// Most natural-sounding British voices first: Microsoft "Natural"/neural (Edge), Apple Premium/Enhanced,
-// Google UK English (Chrome), then standard ones. Apple's basic robotic voices only if nothing else exists.
-const UK_VOICES: RegExp[] = [/Ryan.*Natural|Thomas.*Natural|Natural.*Ryan/i, /Daniel.*(Premium|Enhanced)/i, /Arthur.*(Premium|Enhanced)/i, /Google UK English Male/i, /Daniel/i, /Arthur/i, /Ryan/i, /George/i, /Oliver/i, /\bMale\b/i];
-const ROBOTIC: RegExp[] = [/Reed/i, /Eddy/i, /Rocko/i, /Grandpa/i];
+// ---------- Pronunciation: the device's own voice (no recordings) ----------
+// Android app: Android's text-to-speech engine (usually Google's), via the app bridge.
+// Browser: the Web Speech API. Both work offline when the voice is installed on the device.
 
-/** The British English voice to use on this device: a male one when possible, to match the recordings. */
-let ukVoice: SpeechSynthesisVoice | null | undefined;
-function britishVoice(): SpeechSynthesisVoice | null {
-  if (ukVoice !== undefined) return ukVoice;
+/** Male or female voice, chosen by the learner (saved on this device). Male by default. */
+export type VoiceGender = "male" | "female";
+const K_VOICE = "gre333.voice.v3"; // v3: device voices, male by default
+export function getVoiceGender(): VoiceGender {
+  try {
+    return localStorage.getItem(K_VOICE) === '"female"' ? "female" : "male";
+  } catch {
+    return "male";
+  }
+}
+export function setVoiceGender(g: VoiceGender) {
+  try {
+    localStorage.setItem(K_VOICE, JSON.stringify(g));
+  } catch {
+    /* ignore */
+  }
+  chosen = undefined;
+}
+
+// Best-sounding British voices first: Microsoft "Natural" (Edge), Apple Premium/Enhanced, Google UK English
+// (Chrome), then standard ones. Apple's novelty voices only if nothing else exists.
+const VOICE_NAMES: Record<VoiceGender, RegExp[]> = {
+  male: [/Ryan.*Natural|Thomas.*Natural|Natural.*Ryan/i, /Daniel.*(Premium|Enhanced)/i, /Arthur.*(Premium|Enhanced)/i, /Google UK English Male/i, /Daniel/i, /Arthur/i, /Ryan/i, /George/i, /Oliver/i, /\bMale\b/i],
+  female: [/(Sonia|Libby|Maisie|Bella|Hollie).*Natural|Natural.*(Sonia|Libby)/i, /(Serena|Kate|Martha|Stephanie).*(Premium|Enhanced)/i, /Google UK English Female/i, /Serena/i, /Kate/i, /Martha/i, /Stephanie/i, /Libby/i, /Sonia/i, /Hazel/i, /Susan/i, /\bFemale\b/i],
+};
+// Good voices with another English accent: better than a novelty British voice when no proper British one exists.
+const OTHER_ENGLISH: Record<VoiceGender, RegExp[]> = {
+  male: [/Guy.*Natural|Andrew.*Natural|Brian.*Natural/i, /Google US English Male/i, /Rishi/i, /Aaron/i, /Lee\b/i, /David/i, /Mark\b/i, /Alex\b/i],
+  female: [/Aria.*Natural|Jenny.*Natural|Emma.*Natural|Natasha.*Natural/i, /Moira/i, /Karen/i, /Tessa/i, /Samantha/i, /Google US English\b/i, /Zira/i],
+};
+const NOVELTY: Record<VoiceGender, RegExp[]> = {
+  male: [/Reed/i, /Eddy/i, /Rocko/i, /Grandpa/i],
+  female: [/Flo\b/i, /Shelley/i, /Sandy/i, /Grandma/i],
+};
+
+let chosen: SpeechSynthesisVoice | null | undefined;
+function browserVoice(): SpeechSynthesisVoice | null {
+  if (chosen !== undefined) return chosen;
   const voices = window.speechSynthesis?.getVoices() ?? [];
-  if (!voices.length) return null; // voices not loaded yet; try again next time
-  const gb = voices.filter((v) => /^en[-_]GB/i.test(v.lang));
-  const pick = (patterns: RegExp[]) => {
+  if (!voices.length) return null; // not loaded yet (or hidden by the browser): try again next time
+  const en = voices.filter((v) => /^en/i.test(v.lang));
+  const gb = en.filter((v) => /^en[-_]GB/i.test(v.lang));
+  const g = getVoiceGender();
+  const other: VoiceGender = g === "male" ? "female" : "male";
+  const pick = (list: SpeechSynthesisVoice[], patterns: RegExp[]) => {
     for (const p of patterns) {
-      const v = gb.find((x) => p.test(x.name));
+      const v = list.find((x) => p.test(x.name));
       if (v) return v;
     }
     return undefined;
   };
-  ukVoice = pick(UK_VOICES) ?? pick(ROBOTIC) ?? gb[0] ?? null;
-  return ukVoice;
+  // Proper British voice of the chosen gender → proper English voice of that gender (other accent) →
+  // novelty British voice of that gender → any British voice not of the other gender → any English voice.
+  const novelty = (v: SpeechSynthesisVoice) => [...NOVELTY.male, ...NOVELTY.female].some((p) => p.test(v.name));
+  chosen =
+    pick(gb, VOICE_NAMES[g]) ??
+    pick(en, OTHER_ENGLISH[g]) ??
+    pick(gb, NOVELTY[g]) ??
+    gb.find((v) => !novelty(v) && !VOICE_NAMES[other].some((p) => p.test(v.name))) ??
+    gb[0] ??
+    en[0] ??
+    null;
+  return chosen;
 }
 if (typeof window !== "undefined" && window.speechSynthesis) {
-  window.speechSynthesis.addEventListener?.("voiceschanged", () => (ukVoice = undefined));
+  window.speechSynthesis.addEventListener?.("voiceschanged", () => (chosen = undefined));
 }
 
-let player: HTMLAudioElement | null = null;
-let textIndex: { size: number; map: Map<string, string> } | null = null;
-function idForText(text: string): string | undefined {
-  if (!textIndex || textIndex.size !== WORD_BY_ID.size) {
-    const map = new Map<string, string>();
-    for (const w of WORD_BY_ID.values()) if (!map.has(w.word.toLowerCase())) map.set(w.word.toLowerCase(), w.id);
-    textIndex = { size: WORD_BY_ID.size, map };
+/** Name of the voice this device will use, or null if none was found. */
+export function currentVoiceName(): string | null {
+  try {
+    if (nativeApp?.voiceName) return nativeApp.voiceName(getVoiceGender()) || null;
+    return browserVoice()?.name.replace(/\s*\(.*\)$/, "") ?? null;
+  } catch {
+    return null;
   }
-  return textIndex.map.get(text.trim().toLowerCase());
 }
 
-/**
- * Say a word aloud in British English. List words play their natural recording (male British voice);
- * anything else (or a recording that can't load) uses the device's British voice.
- * The default rate is a little slow so it's easy to catch; 0.5 is very slow.
- */
+/** Say a word aloud in British English. The default rate is a little slow so it's easy to catch; 0.5 is very slow. */
 export function speak(text: string, rate = 0.75) {
-  const id = idForText(text);
-  if (id && typeof Audio !== "undefined") {
-    try {
-      window.speechSynthesis?.cancel();
-      player?.pause();
-      const audio = new Audio(`/audio/m/${encodeURIComponent(id)}.mp3`);
-      audio.playbackRate = Math.max(0.5, rate / 0.75); // the recordings are already slightly slowed
-      let fellBack = false;
-      const fallback = () => {
-        if (fellBack) return;
-        fellBack = true;
-        speakWithDevice(text, rate);
-      };
-      audio.onerror = fallback;
-      player = audio;
-      audio.play().catch(fallback);
-      return;
-    } catch {
-      /* fall through to the device voice */
-    }
+  try {
+    if (nativeApp?.speak?.(text, getVoiceGender(), rate)) return; // Android app
+  } catch {
+    /* older app version: fall through */
   }
-  speakWithDevice(text, rate);
-}
-
-function speakWithDevice(text: string, rate: number) {
   try {
     const synth = window.speechSynthesis;
     if (!synth) return;
     synth.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "en-GB";
-    const voice = britishVoice();
-    if (voice) u.voice = voice;
+    const voice = browserVoice();
+    if (voice) {
+      u.voice = voice;
+      u.lang = voice.lang;
+    }
     u.rate = rate;
     synth.speak(u);
   } catch {

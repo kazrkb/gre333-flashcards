@@ -13,6 +13,8 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.speech.tts.TextToSpeech;
+import android.speech.tts.Voice;
 import android.view.View;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
@@ -31,6 +33,8 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.util.HashMap;
+import java.util.Locale;
+import java.util.Set;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -39,6 +43,7 @@ import java.util.regex.Pattern;
  * GRE Words: the whole web app (code, words, fonts and every word recording) is built into the APK
  * under assets/www and served at the real site address, so it works with no internet at all.
  * Only /api requests (saving progress to the cloud) go to the network.
+ * Words are pronounced with the phone's own text-to-speech voice (British English, male or female).
  */
 public class MainActivity extends Activity {
     static final String HOST = "gre333-flashcards.onrender.com";
@@ -48,6 +53,14 @@ public class MainActivity extends Activity {
 
     private WebView web;
     private FrameLayout root;
+
+    // Text-to-speech (the phone's own voice engine, usually Google's)
+    private TextToSpeech tts;
+    private volatile boolean ttsReady = false;
+    private volatile boolean ttsFailed = false;
+    private final Map<String, Voice> voiceCache = new HashMap<>();
+    private Voice currentVoice;
+    private String[] pending; // a word tapped before the engine finished starting: {text, gender, rate}
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
@@ -74,6 +87,18 @@ public class MainActivity extends Activity {
         web.setBackgroundColor(Color.TRANSPARENT);
         web.addJavascriptInterface(new Bridge(), "GREWordsApp");
         web.setWebViewClient(new Client());
+
+        tts = new TextToSpeech(getApplicationContext(), status -> {
+            if (status == TextToSpeech.SUCCESS) {
+                ttsReady = true;
+                requestBritishVoice();
+                String[] p = pending;
+                pending = null;
+                if (p != null) say(p[0], p[1], Double.parseDouble(p[2]));
+            } else {
+                ttsFailed = true;
+            }
+        });
 
         if (savedInstanceState != null) web.restoreState(savedInstanceState);
         else web.loadUrl(START);
@@ -210,11 +235,176 @@ public class MainActivity extends Activity {
             return MainActivity.this.versionCode();
         }
 
+        /** Say a word with the phone's voice. False only if the phone has no working voice engine. */
+        @JavascriptInterface
+        public boolean speak(String text, String gender, double rate) {
+            if (tts == null || ttsFailed) return false;
+            if (!ttsReady) {
+                pending = new String[]{text, gender, String.valueOf(rate)};
+                return true;
+            }
+            say(text, gender, rate);
+            return true;
+        }
+
+        /** Describes the voice that will be used, e.g. "British male voice (Google, offline)"; "" if none. */
+        @JavascriptInterface
+        public String voiceName(String gender) {
+            Voice v = pickVoice(gender);
+            if (v == null) return "";
+            Locale l = v.getLocale();
+            String accent = "GB".equals(l.getCountry()) ? "British" : l.getDisplayCountry(Locale.UK) + " English";
+            String g = genderOf(v.getName());
+            String engine = tts.getDefaultEngine();
+            String who = engine == null ? "" : engine.contains("google") ? "Google, " : engine.contains("samsung") ? "Samsung, " : "";
+            return accent + (g == null ? "" : " " + g) + " voice (" + who + (v.isNetworkConnectionRequired() ? "needs internet" : "offline") + ")";
+        }
+
+        /** Test builds only: list English voices and record one word with each (to check their gender). */
+        @JavascriptInterface
+        public String debugVoices() {
+            if ((getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE) == 0 || !ttsReady) return "";
+            StringBuilder sb = new StringBuilder();
+            int i = 0;
+            for (Voice v : tts.getVoices()) {
+                if (v.getLocale() == null || !"en".equals(v.getLocale().getLanguage()) || !"GB".equals(v.getLocale().getCountry())) continue;
+                boolean installed = v.getFeatures() == null || !v.getFeatures().contains(TextToSpeech.Engine.KEY_FEATURE_NOT_INSTALLED);
+                sb.append(v.getName()).append(" net=").append(v.isNetworkConnectionRequired()).append(" installed=").append(installed).append("\n");
+                if (installed && !v.isNetworkConnectionRequired()) {
+                    tts.setVoice(v);
+                    Bundle params = new Bundle();
+                    tts.synthesizeToFile("Ubiquitous, obdurate, harangue.", params,
+                            new java.io.File(getExternalFilesDir(null), v.getName() + ".wav"), "f" + (i++));
+                }
+            }
+            currentVoice = null;
+            return sb.toString();
+        }
+
         /** The web app tells us its theme so the status and navigation bars match. */
         @JavascriptInterface
         public void setDark(boolean dark) {
             runOnUiThread(() -> applyTheme(dark));
         }
+    }
+
+    // ---------- pronunciation ----------
+
+    private static final Pattern GOOGLE_ID = Pattern.compile("en-gb-x-([a-z]{3})");
+    private static final Pattern SAMSUNG_ID = Pattern.compile("smt([fm])\\d");
+    // Google's British voices are named by code. Genders measured by pitch on Android 15 (Nov 2026):
+    // gba 211 Hz, gbc 206, gbg 257 (female); rjs 134, gbb 142, gbd 110 (male).
+    private static final Map<String, String> GOOGLE_GENDER = new HashMap<>();
+    // Preferred order within each gender (higher first).
+    private static final Map<String, Integer> GOOGLE_RANK = new HashMap<>();
+    static {
+        GOOGLE_GENDER.put("gba", "female");
+        GOOGLE_GENDER.put("gbc", "female");
+        GOOGLE_GENDER.put("gbg", "female");
+        GOOGLE_GENDER.put("rjs", "male");
+        GOOGLE_GENDER.put("gbb", "male");
+        GOOGLE_GENDER.put("gbd", "male");
+        GOOGLE_RANK.put("gba", 3);
+        GOOGLE_RANK.put("gbc", 2);
+        GOOGLE_RANK.put("gbg", 1);
+        GOOGLE_RANK.put("rjs", 3);
+        GOOGLE_RANK.put("gbb", 2);
+        GOOGLE_RANK.put("gbd", 1);
+    }
+
+    static String genderOf(String voiceName) {
+        String n = voiceName.toLowerCase(Locale.ROOT);
+        if (n.contains("female")) return "female";
+        if (n.contains("male")) return "male";
+        Matcher g = GOOGLE_ID.matcher(n);
+        if (g.find() && GOOGLE_GENDER.containsKey(g.group(1))) return GOOGLE_GENDER.get(g.group(1));
+        Matcher s = SAMSUNG_ID.matcher(n);
+        if (s.find()) return s.group(1).equals("f") ? "female" : "male";
+        return null;
+    }
+
+    /** Best installed English voice: British first, then offline, then the chosen gender, then quality. */
+    private Voice pickVoice(String gender) {
+        if (!ttsReady) return null;
+        synchronized (voiceCache) {
+            if (voiceCache.containsKey(gender)) return voiceCache.get(gender);
+        }
+        Set<Voice> all;
+        try {
+            all = tts.getVoices();
+        } catch (Exception e) {
+            return null;
+        }
+        Voice best = null;
+        int bestScore = Integer.MIN_VALUE;
+        if (all != null) {
+            for (Voice v : all) {
+                Locale l = v.getLocale();
+                if (l == null || !"en".equals(l.getLanguage())) continue;
+                Set<String> f = v.getFeatures();
+                if (f != null && f.contains(TextToSpeech.Engine.KEY_FEATURE_NOT_INSTALLED)) continue;
+                int score = 0;
+                if ("GB".equals(l.getCountry())) score += 100;
+                if (!v.isNetworkConnectionRequired()) score += 40; // works offline
+                String g = genderOf(v.getName());
+                if (g != null) score += g.equals(gender) ? 30 : -30;
+                score += Math.min(v.getQuality(), 500) / 50;
+                Matcher id = GOOGLE_ID.matcher(v.getName().toLowerCase(Locale.ROOT));
+                if (id.find() && GOOGLE_RANK.containsKey(id.group(1))) score += GOOGLE_RANK.get(id.group(1));
+                if (score > bestScore) {
+                    bestScore = score;
+                    best = v;
+                }
+            }
+        }
+        synchronized (voiceCache) {
+            voiceCache.put(gender, best);
+        }
+        return best;
+    }
+
+    /** True if a British voice is installed on the phone (works offline). */
+    private boolean hasBritishVoice() {
+        try {
+            for (Voice v : tts.getVoices()) {
+                Locale l = v.getLocale();
+                Set<String> f = v.getFeatures();
+                boolean installed = f == null || !f.contains(TextToSpeech.Engine.KEY_FEATURE_NOT_INSTALLED);
+                if (l != null && "en".equals(l.getLanguage()) && "GB".equals(l.getCountry()) && installed
+                        && !v.isNetworkConnectionRequired()) return true;
+            }
+        } catch (Exception ignored) {
+        }
+        return false;
+    }
+
+    /**
+     * No British voice yet: ask the engine for British English. Google's engine then downloads the
+     * British voices in the background when the phone is online (tested: about 30 seconds), and they
+     * work offline from then on. Until then the best installed English voice is used.
+     */
+    private void requestBritishVoice() {
+        if (!ttsReady || hasBritishVoice()) return;
+        try {
+            tts.setLanguage(Locale.UK);
+        } catch (Exception ignored) {
+        }
+        currentVoice = null;
+    }
+
+    private void say(String text, String gender, double rate) {
+        Voice v = pickVoice(gender);
+        if (v != null) {
+            if (!v.equals(currentVoice)) {
+                tts.setVoice(v);
+                currentVoice = v;
+            }
+        } else {
+            tts.setLanguage(Locale.UK);
+            currentVoice = null;
+        }
+        tts.setSpeechRate((float) Math.max(0.3, Math.min(rate, 2.0)));
+        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, "word");
     }
 
     private int versionCode() {
@@ -283,12 +473,17 @@ public class MainActivity extends Activity {
     protected void onPause() {
         super.onPause();
         web.onPause();
+        if (tts != null) tts.stop();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         web.onResume();
+        synchronized (voiceCache) {
+            voiceCache.clear(); // voices may have been installed meanwhile
+        }
+        requestBritishVoice();
     }
 
     @Override
@@ -300,6 +495,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onDestroy() {
+        if (tts != null) tts.shutdown();
         if (web != null) {
             root.removeView(web);
             web.destroy();

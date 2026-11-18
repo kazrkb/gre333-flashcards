@@ -5,7 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import type { useProgress } from "@/lib/progress";
-import { useOfflineState } from "@/lib/offline";
+import { offlineSupported } from "@/lib/offline";
+import { currentVoiceName } from "@/lib/words";
 import { AppDownloadRow } from "@/components/AppDownload";
 
 type Progress = ReturnType<typeof useProgress>;
@@ -19,7 +20,7 @@ export function SyncDialog({ progress, onReset }: { progress: Progress; onReset:
   const [busy, setBusy] = useState(false);
   const [copied, setCopied] = useState(false);
   const [switched, setSwitched] = useState(false);
-  const offline = useOfflineState();
+  const voiceName = open ? currentVoiceName() : null;
 
   const pill = {
     connecting: { icon: <Loader2 className="size-3.5 animate-spin" />, text: "Connecting…", cls: "text-muted-foreground" },
@@ -104,17 +105,12 @@ export function SyncDialog({ progress, onReset }: { progress: Progress; onReset:
           </p>
         </div>
 
-        {offline.status !== "unsupported" && (
+        {offlineSupported() && (
           <p className="mt-3 flex items-start gap-2 text-[13px] text-muted-foreground">
             <WifiOff className="mt-0.5 size-4 shrink-0" />
             <span>
-              {offline.status === "ready"
-                ? "Ready to use offline, including the sound of every word. Progress made offline is saved when you're back online."
-                : offline.status === "downloading"
-                  ? `Getting ready for offline use: downloading word sounds (${offline.done.toLocaleString()} of ${offline.total.toLocaleString()})…`
-                  : offline.status === "paused"
-                    ? `Word sounds for offline use: ${offline.done.toLocaleString()} of ${offline.total.toLocaleString()} saved. The rest download when you're online.`
-                    : "Preparing offline use…"}
+              Works offline. Progress made offline is saved when you're back online.
+              {voiceName ? ` Pronunciation: ${voiceName}, from this device.` : " No English voice found on this device: on Android, install English (UK) in Settings → Text-to-speech."}
             </span>
           </p>
         )}
@@ -199,9 +195,6 @@ export function SyncDialog({ progress, onReset }: { progress: Progress; onReset:
             </div>
           </div>
         </details>
-        <p className="mt-5 text-center text-[11px] leading-relaxed text-muted-foreground/70">
-          Pronunciation audio made with Piper TTS, voice “semaine” (DFKI SEMAINE database, CC BY-NC-SA 4.0).
-        </p>
       </DialogContent>
     </Dialog>
   );

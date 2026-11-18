@@ -7,6 +7,10 @@ type Bridge = {
   deviceId(): string;
   versionCode(): number;
   setDark(dark: boolean): void;
+  /** Speak with Android's text-to-speech; false if the engine isn't ready (app 3.0+). */
+  speak?(text: string, gender: string, rate: number): boolean;
+  /** The Android voice that would be used for this gender, or "" if none (app 3.0+). */
+  voiceName?(gender: string): string;
 };
 
 declare global {

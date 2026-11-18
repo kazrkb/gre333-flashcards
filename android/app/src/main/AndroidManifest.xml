@@ -5,6 +5,13 @@
     <!-- Lets the app notice when the phone goes online, to upload progress saved offline right away. -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <!-- Android 11+: lets the app find the phone's text-to-speech engine (word pronunciation). -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"

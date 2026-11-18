@@ -2,12 +2,8 @@
 // - Page (index.html): served from cache right away, refreshed in the background. A new version of the
 //   page is only stored once all the code files it needs are cached, so the app always opens offline.
 // - Code files (/assets, hashed names), including lazily loaded ones: cached up front, cache first.
-// - Word recordings (/audio): kept in their own cache, which survives app updates. The app downloads
-//   all of them in the background (src/lib/offline.ts); range requests from audio players are answered
-//   from the full cached file.
 // - /api requests: never cached (the app keeps its own offline copy of progress and syncs it later).
-const CACHE = "gre333-v6"; // v6: bundled fonts cached too
-const AUDIO_CACHE = "gre-audio-v1"; // keep in sync with src/lib/offline.ts; bump only if recordings change
+const CACHE = "gre333-v7"; // v7: no recordings (device voice); old sound cache removed
 const SHELL = ["/manifest.webmanifest", "/icon-192.png", "/apple-touch-icon.png"];
 
 self.addEventListener("install", (event) => {
@@ -26,7 +22,7 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE && k !== AUDIO_CACHE).map((k) => caches.delete(k))))
+      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
       .then(() => self.clients.claim()),
   );
 });
@@ -100,36 +96,6 @@ async function staleWhileRevalidate(request) {
   return cached ?? (await network) ?? new Response("Offline", { status: 503 });
 }
 
-/** Word recording: from the audio cache (downloading the whole file if needed), honouring Range requests. */
-async function audio(request) {
-  const url = new URL(request.url).pathname;
-  const cache = await caches.open(AUDIO_CACHE);
-  let res = await cache.match(url);
-  if (!res) {
-    res = await fetch(url); // whole file, no Range header, so it can be cached
-    if (!res.ok) return res;
-    await cache.put(url, res.clone());
-  }
-  const range = request.headers.get("range");
-  const m = range && /bytes=(\d*)-(\d*)/.exec(range);
-  if (!m) return res;
-  const buf = await res.arrayBuffer();
-  const size = buf.byteLength;
-  let start = m[1] === "" ? size - Number(m[2]) : Number(m[1]);
-  let end = m[1] === "" || m[2] === "" ? size - 1 : Math.min(Number(m[2]), size - 1);
-  start = Math.max(0, start);
-  if (start > end) return new Response(null, { status: 416, headers: { "Content-Range": `bytes */${size}` } });
-  return new Response(buf.slice(start, end + 1), {
-    status: 206,
-    headers: {
-      "Content-Type": "audio/mpeg",
-      "Content-Range": `bytes ${start}-${end}/${size}`,
-      "Content-Length": String(end - start + 1),
-      "Accept-Ranges": "bytes",
-    },
-  });
-}
-
 self.addEventListener("fetch", (event) => {
   const { request } = event;
   if (request.method !== "GET") return;
@@ -138,10 +104,6 @@ self.addEventListener("fetch", (event) => {
   if (url.origin === self.location.origin) {
     if (url.pathname.startsWith("/api/")) return; // always live
     if (url.pathname.endsWith(".apk")) return; // Android app download: straight from the server, never cached
-    if (url.pathname.startsWith("/audio/")) {
-      event.respondWith(audio(request).catch(() => new Response("Offline", { status: 503 })));
-      return;
-    }
     if (request.mode === "navigate") {
       // Links to real files (privacy.html etc.) load the file itself, not the app.
       if (/\.[a-z0-9]+$/i.test(url.pathname)) return;
