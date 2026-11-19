@@ -152,7 +152,7 @@ function IconAction({
         onClick();
       }}
       className={cn(
-        "grid size-10 place-items-center rounded-full text-muted-foreground transition hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-95",
+        "grid size-9 shrink-0 place-items-center rounded-full text-muted-foreground sm:size-10 transition hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-95",
         active && "text-primary hover:text-primary",
       )}
     >
@@ -197,10 +197,12 @@ export function Flashcard({
     speak(word.word);
   };
 
-  const actions = (
-    <div className="flex items-center gap-1">
+  // Never wider than the card: shrink-0 keeps the buttons whole; the badge/word next to it gives way.
+  // back: on phones the back face shows only the speaker and star, so the word has room (the choice applies to both).
+  const actionsFor = (back: boolean) => (
+    <div className="ml-auto flex shrink-0 items-center gap-0.5 sm:gap-1">
       {/* Voice: Female / Male (saved on this device; Male by default) */}
-      <div className="flex rounded-full border border-border p-0.5" role="group" aria-label="Pronunciation voice">
+      <div className={cn("flex rounded-full border border-border p-0.5", back && "max-sm:hidden")} role="group" aria-label="Pronunciation voice">
         {(["female", "male"] as const).map((g) => (
           <button
             key={g}
@@ -212,7 +214,7 @@ export function Flashcard({
               chooseVoice(g);
             }}
             className={cn(
-              "h-7 rounded-full px-2.5 text-[12px] font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+              "h-7 rounded-full px-2 text-[12px] font-medium transition sm:px-2.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
               voice === g ? "bg-foreground text-background" : "text-muted-foreground hover:text-foreground",
             )}
           >
@@ -255,9 +257,10 @@ export function Flashcard({
             flipped && "pointer-events-none",
           )}
         >
-          <div className="flex items-start justify-between">
+          {/* With very large phone text the buttons move to a second line instead of widening the card. */}
+          <div className="flex min-w-0 flex-wrap items-start justify-between gap-2">
             <StatusBadge status={entry.status} />
-            {actions}
+            {actionsFor(false)}
           </div>
           <div className="flex flex-1 flex-col items-center justify-center text-center">
             <span className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">{word.pos}</span>
@@ -290,12 +293,12 @@ export function Flashcard({
               <h3 className="truncate text-2xl font-semibold tracking-tight text-card-foreground">{word.word}</h3>
               <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">{word.pos}</span>
               {PRON[word.id] && (
-                <span className="ml-2 font-mono text-[13px] italic tracking-[0.08em] text-muted-foreground" title={`British pronunciation · IPA ${PRON[word.id].ipa}`}>
+                <span className="ml-2 whitespace-nowrap font-mono text-[13px] italic tracking-[0.08em] text-muted-foreground" title={`British pronunciation · IPA ${PRON[word.id].ipa}`}>
                   · {PRON[word.id].r}
                 </span>
               )}
             </div>
-            {actions}
+            {actionsFor(true)}
           </div>
 
           <div className="mt-3 flex flex-1 flex-col gap-3">

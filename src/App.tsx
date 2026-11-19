@@ -110,7 +110,8 @@ export default function App() {
   const learningPct = (counts.learning / counts.total) * 100;
 
   return (
-    <div className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-10 pt-5 sm:px-6 sm:pt-6">
+    <div className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col overflow-x-clip px-4 pb-10 pt-5 sm:px-6 sm:pt-6">
+      {/* overflow-x-clip: the page never scrolls sideways, even if something is too wide on a small phone */}
       {/* Header */}
       <UpdateBanner />
       <header className="flex items-center justify-between gap-3">

@@ -121,6 +121,7 @@
 .flip-inner {
   position: relative;
   display: grid; /* both faces share one cell, so the card is as tall as its taller face */
+  grid-template-columns: minmax(0, 1fr); /* never wider than the screen, whatever is inside */
   transform-style: preserve-3d;
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -129,6 +130,7 @@
 }
 .flip-face {
   grid-area: 1 / 1;
+  min-width: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
