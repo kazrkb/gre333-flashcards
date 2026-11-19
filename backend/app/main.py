@@ -344,7 +344,9 @@ def check_learner(code: str):
 DEVICE_RE = re.compile(r"^[0-9a-f]{64}$")
 
 # Latest Android app (public/GRE-Words.apk). Bump together with versionCode in android/app/build.gradle.
-APP_VERSION = {"versionCode": 6, "versionName": "3.1", "url": "/GRE-Words.apk"}
+APP_VERSION = {"versionCode": 6, "versionName": "3.1"}
+# A different address per version, so a phone's browser can never hand back an old cached copy.
+APP_VERSION["url"] = f"/GRE-Words.apk?v={APP_VERSION['versionCode']}"
 
 
 @app.get("/api/app-version")
@@ -543,5 +545,13 @@ if DIST.exists():
             raise HTTPException(404)
         file = (DIST / path).resolve()
         if path and file.is_file() and DIST.resolve() in file.parents:
+            if file.suffix == ".apk":
+                # Android app: never cached, and saved with its version in the name (GRE-Words-3.1.apk).
+                return FileResponse(
+                    file,
+                    media_type="application/vnd.android.package-archive",
+                    filename=f"GRE-Words-{APP_VERSION['versionName']}.apk",
+                    headers={"Cache-Control": "no-store, max-age=0"},
+                )
             return FileResponse(file)
         return FileResponse(DIST / "index.html")
